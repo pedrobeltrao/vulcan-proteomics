@@ -1,0 +1,174 @@
+{
+ "what": "E12 L1 index build speedup (vulcan/index/build.py fast path + vulcan/index/_fastbuild.py), d2_phospho_prod (human SwissProt + contaminants + D2 dev libraries; STY phospho, M-ox, pep-N-term acetyl, <=3 var mods)",
+ "n_peptidoforms": 184527638,
+ "threads": 32,
+ "before_prior_M4_unlocked": {
+  "digest_s": 4.655786597635597,
+  "families_s": 3.8923881738446653,
+  "expand_s": 21.423025586176664,
+  "arrays_s": 321.44926972780377,
+  "total_s": 444.14549124101177
+ },
+ "before_same_session_reference_unlocked": {
+  "n_peptidoforms": 184527638,
+  "timing_s": {
+   "digest_s": 4.6401302381418645,
+   "families_s": 3.8560571679845452,
+   "expand_s": 53.144678860902786,
+   "arrays_sub_s": {
+    "prep_s": 3.6140353931114078,
+    "unique_s": 251.86711543006822,
+    "sort_s": 102.57055475702509,
+    "partner_residues_s": 51.02412920212373,
+    "columns_s": 6.862842029891908
+   },
+   "arrays_s": 415.9386947080493,
+   "labels_s": 57.543869437184185,
+   "total_s": 548.6256155460142
+  },
+  "wall_s": 549.3,
+  "loadavg_end": [
+   12.55712890625,
+   19.6904296875,
+   17.55078125
+  ]
+ },
+ "after_fast_locked": {
+  "timing_s": {
+   "digest_s": 4.688521499745548,
+   "families_s": 3.8841192428953946,
+   "expand_s": 35.12303984584287,
+   "arrays_sub_s": {
+    "prep_s": 1.4677588669583201,
+    "unique_s": 2.9466574830003083,
+    "sort_s": 5.522975574247539,
+    "partner_residues_s": 4.046362987719476,
+    "columns_s": 1.6035678167827427
+   },
+   "arrays_s": 15.587347424123436,
+   "labels_s": 6.854532042052597,
+   "total_s": 81.00654239067808
+  },
+  "build_wall_s": 81.64743791613728,
+  "process_wall_incl_imports_and_lock_wait_s": 111.62,
+  "process_user_s": 516.4,
+  "process_sys_s": 46.72,
+  "max_rss_kb": 54229908,
+  "loadavg_before": "12:14:13 up 30 days,  5:36,  0 user,  load average: 19.71, 20.83, 13.10",
+  "loadavg_after": "12:16:05 up 30 days,  5:38,  0 user,  load average: 19.21, 21.54, 14.33",
+  "lock": "flock /tmp/vulcan_bench.lock",
+  "out_dir": "/dev/shm/vulcan_e12_idx (deleted after)"
+ },
+ "sha256_old_M4": {
+  "accessions.txt": "0ead909aa5fdf6aced7335faa7b245893e5304376fd9598730da91640d81f2f9",
+  "labels.arrow": "a91415097ebdae9ff58f648af90dbb04ab876dbfc85006c6dd8fb8083759fad6",
+  "peptidoforms.arrow": "65f18ccf4ebd5338547846afc5da7aa59277184701a7fb0fceed482a5ba2d701",
+  "protein_idx.npy": "fb340f2dc9a28236e2b1d2270eedb30ad490d836f9dc72392f8307edc509ca74",
+  "proteins.arrow": "2231f5c26611794b7d0ebb307e23ceb8690e90c5681d0a7f9d2c1c802215fc2d",
+  "residues.npy": "fee676c45aebc63cc76b20521c7904978e39b6cab327df5dc53a3dbd865ce786",
+  "meta_without_timing": "c7776cb0c05a4dd5f2cb678d82dc1d1b9bdc42863e18d1c75e804dcec5063ee1"
+ },
+ "sha256_new_fast": {
+  "accessions.txt": "0ead909aa5fdf6aced7335faa7b245893e5304376fd9598730da91640d81f2f9",
+  "labels.arrow": "a91415097ebdae9ff58f648af90dbb04ab876dbfc85006c6dd8fb8083759fad6",
+  "peptidoforms.arrow": "65f18ccf4ebd5338547846afc5da7aa59277184701a7fb0fceed482a5ba2d701",
+  "protein_idx.npy": "fb340f2dc9a28236e2b1d2270eedb30ad490d836f9dc72392f8307edc509ca74",
+  "proteins.arrow": "2231f5c26611794b7d0ebb307e23ceb8690e90c5681d0a7f9d2c1c802215fc2d",
+  "residues.npy": "fee676c45aebc63cc76b20521c7904978e39b6cab327df5dc53a3dbd865ce786",
+  "meta_without_timing": "c7776cb0c05a4dd5f2cb678d82dc1d1b9bdc42863e18d1c75e804dcec5063ee1"
+ },
+ "sha256_same_session_reference": {
+  "accessions.txt": "0ead909aa5fdf6aced7335faa7b245893e5304376fd9598730da91640d81f2f9",
+  "labels.arrow": "a91415097ebdae9ff58f648af90dbb04ab876dbfc85006c6dd8fb8083759fad6",
+  "peptidoforms.arrow": "65f18ccf4ebd5338547846afc5da7aa59277184701a7fb0fceed482a5ba2d701",
+  "protein_idx.npy": "fb340f2dc9a28236e2b1d2270eedb30ad490d836f9dc72392f8307edc509ca74",
+  "proteins.arrow": "2231f5c26611794b7d0ebb307e23ceb8690e90c5681d0a7f9d2c1c802215fc2d",
+  "residues.npy": "fee676c45aebc63cc76b20521c7904978e39b6cab327df5dc53a3dbd865ce786",
+  "meta_without_timing": "c7776cb0c05a4dd5f2cb678d82dc1d1b9bdc42863e18d1c75e804dcec5063ee1"
+ },
+ "equal": {
+  "accessions.txt": true,
+  "labels.arrow": true,
+  "peptidoforms.arrow": true,
+  "protein_idx.npy": true,
+  "proteins.arrow": true,
+  "residues.npy": true,
+  "meta_without_timing": true
+ },
+ "equal_reference_vs_fast": {
+  "accessions.txt": true,
+  "labels.arrow": true,
+  "peptidoforms.arrow": true,
+  "protein_idx.npy": true,
+  "proteins.arrow": true,
+  "residues.npy": true,
+  "meta_without_timing": true
+ },
+ "all_equal": true,
+ "note_meta": "meta_without_timing = sha256 of meta.json minus timing_s and fasta path list (fasta paths equal too)",
+ "speedup_total": 5.482834819674051,
+ "l1index_load_phospho": {
+  "index": "/tmp/vulcan_m4/index/d2_phospho_prod",
+  "lock": "flock /tmp/vulcan_bench.lock",
+  "page_cache": "warm",
+  "mmap_open_wall_s": [
+   0.2006,
+   0.0013
+  ],
+  "mmap_touch_all_pages_wall_s": [
+   2.458,
+   2.45
+  ],
+  "eager_wall_s": [
+   2.113
+  ],
+  "loadavg": [
+   29.15,
+   23.91,
+   16.09
+  ],
+  "note": "parent-reported eager 14.4 s (8.0 + 6.2) was not reproduced warm; likely cold page cache or load"
+ },
+ "hw": {
+  "VULCAN_THREADS": null,
+  "affinity_count": 32,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "cgroup_mem_limit_gb": null,
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "cuda_driver": "13.0",
+  "driver": "580.178.04",
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04",
+  "gpus": [
+   {
+    "compute_cap": "8.0",
+    "mem_mib": 81920,
+    "name": "NVIDIA A100 80GB PCIe"
+   }
+  ],
+  "hostname": "gpu-node",
+  "kernel": "5.15.0-194-generic",
+  "n_threads": 32,
+  "nvcc": null,
+  "os_cpu_count": 64,
+  "physical_cores_in_affinity": 32,
+  "python": "3.12.16",
+  "ram_gb": 1503.3,
+  "sockets_in_affinity": 2,
+  "torch_cuda": null
+ },
+ "tests": "tests/index/test_build_fast_exact.py (10 tests: 5 synthetic configs closed/phospho/entrapment/G0 shuffle/G0 swap byte-equal ref vs fast, D2 600-protein phospho subset byte-equal, sort/unique/string kernels, L1Index mmap equality)"
+}

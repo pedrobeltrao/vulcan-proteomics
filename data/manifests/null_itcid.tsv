@@ -1,0 +1,5 @@
+id	accession	filename	url	expected_size	instrument	year	lab	role	set_id
+DN3c_00	PXD008785	b023p018_OE3_TR01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/04/PXD008785/b023p018_OE3_TR01.raw	675269969	LTQ Orbitrap Velos	2018	Tobias Warnecke	dev	DN3c
+DN3c_01	PXD008785	b023p018_MSS2_TR01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/04/PXD008785/b023p018_MSS2_TR01.raw	678814945	LTQ Orbitrap Velos	2018	Tobias Warnecke	dev	DN3c
+DN3c_02	PXD010849	150225_S_ACVM_11_01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010849/150225_S_ACVM_11_01.raw	177022542	LTQ Orbitrap XL	2018	Amy Curwin	dev	DN3c
+DN3c_03	PXD010849	150225_S_ACVM_12_01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010849/150225_S_ACVM_12_01.raw	180852378	LTQ Orbitrap XL	2018	Amy Curwin	dev	DN3c

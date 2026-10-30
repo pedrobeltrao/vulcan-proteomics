@@ -1,0 +1,268 @@
+{
+ "raw": "data/raw/PXD001077/Velos005137.raw",
+ "e1_reference_core_s_per_1e5_ms2": 17.8,
+ "e1_node": "4-core EPYC 7742 (old node)",
+ "cases": [
+  {
+   "n_concurrent": 1,
+   "batch_wall_s": 4.610298878047615,
+   "total_core_s": 4.16,
+   "core_s_per_1e5_ms2_mean": 27.05867048263302,
+   "files_per_hour_per_node": 780.8604377346876,
+   "members": [
+    {
+     "user_s": 3.13,
+     "sys_s": 1.03,
+     "wall_s": 4.59,
+     "max_rss_mb": 457.8828125,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.07997897500172257,
+      "runtime_load": 0.6840606811456382,
+      "decode": 1.291365117765963,
+      "arrow_write": 0.9576719389297068,
+      "close": 0.0006149592809379101,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.16,
+     "core_s_per_1e5_ms2": 27.05867048263302
+    }
+   ],
+   "rep": 0
+  },
+  {
+   "n_concurrent": 1,
+   "batch_wall_s": 4.561008629389107,
+   "total_core_s": 3.86,
+   "core_s_per_1e5_ms2_mean": 25.107324053596983,
+   "files_per_hour_per_node": 789.2990986255111,
+   "members": [
+    {
+     "user_s": 2.88,
+     "sys_s": 0.98,
+     "wall_s": 4.53,
+     "max_rss_mb": 457.28515625,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.03835992608219385,
+      "runtime_load": 0.9487715321592987,
+      "decode": 1.2157198279164732,
+      "arrow_write": 0.941962281242013,
+      "close": 0.0005063270218670368,
+      "stage_copy": 0.0
+     },
+     "core_s": 3.86,
+     "core_s_per_1e5_ms2": 25.107324053596983
+    }
+   ],
+   "rep": 1
+  },
+  {
+   "n_concurrent": 8,
+   "batch_wall_s": 7.190641570836306,
+   "total_core_s": 35.379999999999995,
+   "core_s_per_1e5_ms2_mean": 28.76609860803955,
+   "files_per_hour_per_node": 4005.2058938393757,
+   "members": [
+    {
+     "user_s": 3.48,
+     "sys_s": 1.16,
+     "wall_s": 6.76,
+     "max_rss_mb": 455.203125,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.069257244002074,
+      "runtime_load": 0.5997992982156575,
+      "decode": 1.3673071707598865,
+      "arrow_write": 2.11349975829944,
+      "close": 0.000689270906150341,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.64,
+     "core_s_per_1e5_ms2": 30.180824769090673
+    },
+    {
+     "user_s": 3.83,
+     "sys_s": 1.18,
+     "wall_s": 7.1,
+     "max_rss_mb": 452.59375,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.08855406800284982,
+      "runtime_load": 0.5490504079498351,
+      "decode": 1.7270680107176304,
+      "arrow_write": 2.298436106648296,
+      "close": 0.00044494587928056717,
+      "stage_copy": 0.0
+     },
+     "core_s": 5.01,
+     "core_s_per_1e5_ms2": 32.58748536490178
+    },
+    {
+     "user_s": 3.08,
+     "sys_s": 1.12,
+     "wall_s": 6.38,
+     "max_rss_mb": 459.5234375,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.09897241601720452,
+      "runtime_load": 0.5725132301449776,
+      "decode": 1.3152996767312288,
+      "arrow_write": 1.9016803833656013,
+      "close": 0.0004526670090854168,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.2,
+     "core_s_per_1e5_ms2": 27.318850006504487
+    },
+    {
+     "user_s": 3.11,
+     "sys_s": 1.2,
+     "wall_s": 6.47,
+     "max_rss_mb": 458.0078125,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.09651577239856124,
+      "runtime_load": 0.5385680543258786,
+      "decode": 1.2972029480151832,
+      "arrow_write": 2.4582043341360986,
+      "close": 0.0006338478997349739,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.31,
+     "core_s_per_1e5_ms2": 28.03434369715103
+    },
+    {
+     "user_s": 3.09,
+     "sys_s": 1.09,
+     "wall_s": 6.42,
+     "max_rss_mb": 458.07421875,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.05292832991108298,
+      "runtime_load": 0.5858582733199,
+      "decode": 1.3474770104512572,
+      "arrow_write": 2.210415349341929,
+      "close": 0.0006110039539635181,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.18,
+     "core_s_per_1e5_ms2": 27.18876024456875
+    },
+    {
+     "user_s": 3.26,
+     "sys_s": 1.18,
+     "wall_s": 6.54,
+     "max_rss_mb": 457.203125,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.09841103572398424,
+      "runtime_load": 0.5699563571251929,
+      "decode": 1.343572019599378,
+      "arrow_write": 2.060483899898827,
+      "close": 0.0005326364189386368,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.4399999999999995,
+     "core_s_per_1e5_ms2": 28.879927149733316
+    },
+    {
+     "user_s": 2.97,
+     "sys_s": 1.1,
+     "wall_s": 6.24,
+     "max_rss_mb": 455.44140625,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.08410934172570705,
+      "runtime_load": 0.5530808940529823,
+      "decode": 1.2203449797816575,
+      "arrow_write": 2.384896985720843,
+      "close": 0.00048035895451903343,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.07,
+     "core_s_per_1e5_ms2": 26.47326655392221
+    },
+    {
+     "user_s": 3.37,
+     "sys_s": 1.16,
+     "wall_s": 6.69,
+     "max_rss_mb": 458.02734375,
+     "rc": 0,
+     "n_ms2": 15374,
+     "n_spectra": 18949,
+     "timing_s": {
+      "prefetch": 0.09945449605584145,
+      "runtime_load": 0.5696756769903004,
+      "decode": 1.3160928534343839,
+      "arrow_write": 1.9981460915878415,
+      "close": 0.000512637197971344,
+      "stage_copy": 0.0
+     },
+     "core_s": 4.53,
+     "core_s_per_1e5_ms2": 29.46533107844413
+    }
+   ],
+   "rep": 0
+  }
+ ],
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": "12.9",
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

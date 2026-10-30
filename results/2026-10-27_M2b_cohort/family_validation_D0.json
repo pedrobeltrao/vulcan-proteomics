@@ -1,0 +1,131 @@
+{
+ "index": "$VULCAN_SCRATCH/vulcan_m2b/index/human_contam_E2001-2002_D1001-1002",
+ "index_meta": {
+  "n_peptidoforms": 31748031,
+  "n_peptidoforms_by_family": {
+   "T": 3527535,
+   "E": 7055142,
+   "DT": 7055070,
+   "DE": 14110284
+  },
+  "decoy_sets": {
+   "1001": {
+    "n": 7252701,
+    "redrawn": 28554,
+    "dropped": 287
+   },
+   "1002": {
+    "n": 7248289,
+    "redrawn": 43150,
+    "dropped": 4699
+   }
+  },
+  "entrapment": {
+   "2001": {
+    "n": 2417755,
+    "redrawn": 6091,
+    "dropped_unpairable": 138
+   },
+   "2002": {
+    "n": 2417340,
+    "redrawn": 10226,
+    "dropped_unpairable": 553
+   }
+  },
+  "timing_s": {
+   "digest_s": 4.630499419290572,
+   "families_s": 192.43066871818155,
+   "expand_s": 19.715323194861412,
+   "arrays_s": 58.8762509287335,
+   "total_s": 303.5739566972479
+  }
+ },
+ "combined_gpu_index_build_s": 3.073184604290873,
+ "combined_postings": 789072199,
+ "entrap_seeds": [
+  2001,
+  2002
+ ],
+ "decoy_seeds": [
+  1001,
+  1002
+ ],
+ "runs": [
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "n_spectra": 41820,
+   "combined_search_s": 0.3517892570234835,
+   "combined_gpu_ms": {
+    "k0": 36.61033630371094,
+    "hyp": 62.32726287841797,
+    "k1": 22.97929573059082,
+    "topk": 113.07698822021484,
+    "k2": 27.495424270629883,
+    "features": 88.5244140625
+   },
+   "combined_rows": 694543,
+   "combined_rescored": 67253353,
+   "replicates": [
+    {
+     "decoy_seed": 1001,
+     "entrap_seed": 2001,
+     "n_rows_subset": 14110234,
+     "n_top2_rows": 70140,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 0.9997250329960404
+    },
+    {
+     "decoy_seed": 1001,
+     "entrap_seed": 2002,
+     "n_rows_subset": 14110190,
+     "n_top2_rows": 70189,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 0.9997250859106529
+    },
+    {
+     "decoy_seed": 1002,
+     "entrap_seed": 2001,
+     "n_rows_subset": 14110234,
+     "n_top2_rows": 70221,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 0.9996980013178124
+    },
+    {
+     "decoy_seed": 1002,
+     "entrap_seed": 2002,
+     "n_rows_subset": 14110190,
+     "n_top2_rows": 70236,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 0.9996154585656605
+    }
+   ],
+   "separate_searches_total_s_incl_index_build": 4.7784746629185975,
+   "all_exact": true
+  }
+ ],
+ "all_exact": true
+}

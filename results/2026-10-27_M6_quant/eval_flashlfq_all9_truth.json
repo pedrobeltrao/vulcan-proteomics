@@ -1,0 +1,55 @@
+{
+ "columns": [
+  "File Name",
+  "Base Sequence",
+  "Full Sequence",
+  "Protein Group",
+  "Organism",
+  "Peptide Monoisotopic Mass",
+  "MS2 Retention Time",
+  "Precursor Charge",
+  "Theoretical MZ",
+  "Peak intensity",
+  "Peak RT Start",
+  "Peak RT Apex",
+  "Peak RT End",
+  "Peak FWHM",
+  "Peak FWHM Status",
+  "Peak MZ",
+  "Peak Charge",
+  "Num Charge States Observed",
+  "Peak Detection Type",
+  "PIP Q-Value",
+  "PIP PEP",
+  "PSMs Mapped",
+  "Base Sequences Mapped",
+  "Full Sequences Mapped",
+  "Peak Split Valley RT",
+  "Peak Apex Mass Error (ppm)",
+  "Decoy Peptide",
+  "Random RT",
+  "sp"
+ ],
+ "detection_types": {
+  "MSMS": 174788,
+  "MBR": 124892
+ },
+ "all_mbr": {
+  "mbr_peaks_in_H": 34406,
+  "YE_false": 8661,
+  "HUMAN": 24982,
+  "false_fraction_lower_bound": 0.2574383972891835
+ },
+ "PIP Q-Value<=0.01": {
+  "mbr_peaks_in_H": 15714,
+  "YE_false": 298,
+  "HUMAN": 15001,
+  "false_fraction_lower_bound": 0.01947839728086803
+ },
+ "PIP Q-Value<=0.05": {
+  "mbr_peaks_in_H": 23022,
+  "YE_false": 1717,
+  "HUMAN": 20723,
+  "false_fraction_lower_bound": 0.07651515151515151
+ }
+}

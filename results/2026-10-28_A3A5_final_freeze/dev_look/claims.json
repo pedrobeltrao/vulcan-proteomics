@@ -1,0 +1,898 @@
+{
+ "P1": {
+  "claim_level_void_i": false,
+  "headline_comparator": "comet+mokapot",
+  "headline_row": {
+   "bar": "\u22650.97",
+   "beaten": false,
+   "ci95": [
+    0.9935544755861836,
+    0.9987190080264512
+   ],
+   "comparator": "comet+mokapot",
+   "evaluable": true,
+   "kind": "matched_fdp",
+   "lb": 0.9935544755861836,
+   "level": "peptidoform",
+   "loo_min": null,
+   "not_evaluable_reason": null,
+   "ratio": 0.9964041537995413,
+   "thr": "0.01",
+   "why": "LOO minimum undefined"
+  },
+  "i": [
+   {
+    "bar": "\u22650.97",
+    "beaten": false,
+    "ci95": [
+     1.0028301906776333,
+     1.005122771032139
+    ],
+    "comparator": "sage",
+    "evaluable": true,
+    "kind": "matched_fdp",
+    "lb": 1.0028301906776333,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 1.004057179094895,
+    "thr": "0.01",
+    "why": "LOO minimum undefined"
+   },
+   {
+    "bar": "\u22650.97",
+    "beaten": false,
+    "ci95": [
+     0.9992427446237331,
+     1.002308399080817
+    ],
+    "comparator": "sage+mokapot",
+    "evaluable": true,
+    "kind": "matched_fdp",
+    "lb": 0.9992427446237331,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 1.001443092179978,
+    "thr": "0.01",
+    "why": "LOO minimum undefined"
+   },
+   {
+    "bar": "\u22650.97",
+    "beaten": false,
+    "ci95": [
+     0.9964704717242344,
+     0.9992898674091436
+    ],
+    "comparator": "sage+pred+mokapot",
+    "evaluable": true,
+    "kind": "matched_fdp",
+    "lb": 0.9964704717242344,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 0.9979794559186259,
+    "thr": "0.01",
+    "why": "LOO minimum undefined"
+   },
+   {
+    "bar": "\u22650.97",
+    "beaten": false,
+    "ci95": [
+     0.9935544755861836,
+     0.9987190080264512
+    ],
+    "comparator": "comet+mokapot",
+    "evaluable": true,
+    "kind": "matched_fdp",
+    "lb": 0.9935544755861836,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 0.9964041537995413,
+    "thr": "0.01",
+    "why": "LOO minimum undefined"
+   }
+  ],
+  "i_met": false,
+  "ii": [
+   {
+    "bar": "\u22650.97",
+    "beaten": true,
+    "ci95": [
+     1.0013948854201262,
+     1.004982726547967
+    ],
+    "comparator": "sage",
+    "evaluable": true,
+    "kind": "own_q",
+    "lb": 1.0013948854201262,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 1.003188627229548,
+    "thr": "0.01",
+    "why": ""
+   },
+   {
+    "bar": "\u22650.97",
+    "beaten": true,
+    "ci95": [
+     0.9960681953346989,
+     1.0003305020325874
+    ],
+    "comparator": "sage+pred+mokapot",
+    "evaluable": true,
+    "kind": "own_q",
+    "lb": 0.9960681953346989,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 0.9982482813326283,
+    "thr": "0.01",
+    "why": ""
+   },
+   {
+    "bar": "\u22650.97",
+    "beaten": true,
+    "ci95": [
+     0.9957384955898384,
+     1.0028839460337455
+    ],
+    "comparator": "comet+mokapot",
+    "evaluable": true,
+    "kind": "own_q",
+    "lb": 0.9957384955898384,
+    "level": "peptidoform",
+    "loo_min": null,
+    "not_evaluable_reason": null,
+    "ratio": 0.9993713189067568,
+    "thr": "0.01",
+    "why": ""
+   }
+  ],
+  "ii_met": true,
+  "ii_note": null,
+  "ii_supported": [
+   "sage",
+   "sage+pred+mokapot",
+   "comet+mokapot"
+  ],
+  "outcome": "not met",
+  "void_reason": null
+ },
+ "S": [
+  {
+   "claim_level_void": [],
+   "hypothesis": "non-inferiority",
+   "id": "S1",
+   "notes": [],
+   "outcome": "not rejected",
+   "rows": [
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.161004473145778,
+      1.1812171217574814
+     ],
+     "comparator": "sage",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.161004473145778,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.177904938951673,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1567276498118237,
+      1.1777224152519228
+     ],
+     "comparator": "sage+mokapot",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.1567276498118237,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.1748382352299733,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.154705125411129,
+      1.1745324404784028
+     ],
+     "comparator": "sage+pred+mokapot",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.154705125411129,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.170774886703691,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1522446134103221,
+      1.1736249141619226
+     ],
+     "comparator": "comet+mokapot",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.1522446134103221,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.16892682846055,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1445805710863701,
+      1.165811583133194
+     ],
+     "comparator": "sage_chim2",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.1445805710863701,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.162731855772973,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1206719863668522,
+      1.1413727969213678
+     ],
+     "comparator": "sage_chim2+pred+mokapot",
+     "evaluable": true,
+     "kind": "matched_fdp",
+     "lb": 1.1206719863668522,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.1378835443502944,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1453096463556367,
+      1.1782119007275988
+     ],
+     "comparator": "sage",
+     "evaluable": true,
+     "kind": "own_q",
+     "lb": 1.1453096463556367,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.1617564021656093,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1398592154400342,
+      1.1722143258519817
+     ],
+     "comparator": "sage+pred+mokapot",
+     "evaluable": true,
+     "kind": "own_q",
+     "lb": 1.1398592154400342,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.1560351665785298,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1392944440774262,
+      1.1754391779913822
+     ],
+     "comparator": "comet+mokapot",
+     "evaluable": true,
+     "kind": "own_q",
+     "lb": 1.1392944440774262,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.157335715703792,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    },
+    {
+     "bar": "\u22650.97",
+     "beaten": false,
+     "ci95": [
+      1.1096776269223345,
+      1.138459069020867
+     ],
+     "comparator": "sage_chim2+pred+mokapot",
+     "evaluable": true,
+     "kind": "own_q",
+     "lb": 1.1096776269223345,
+     "level": "peptidoform",
+     "loo_min": null,
+     "not_evaluable_reason": null,
+     "ratio": 1.1240840725028924,
+     "thr": "0.01",
+     "why": "LOO minimum undefined"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "hypothesis": "more IDs",
+   "id": "S2",
+   "outcome": "not tested (S1 not rejected)",
+   "rows": [],
+   "tested": false
+  },
+  {
+   "hypothesis": "more protein groups",
+   "id": "S3",
+   "outcome": "not tested (S1 not rejected)",
+   "rows": [],
+   "tested": false
+  },
+  {
+   "hypothesis": "more IDs at 5%",
+   "id": "S4",
+   "outcome": "not tested (S1 not rejected)",
+   "rows": [],
+   "tested": false
+  },
+  {
+   "hypothesis": "more IDs at own q",
+   "id": "S5",
+   "outcome": "not tested (S1 not rejected)",
+   "rows": [],
+   "tested": false
+  }
+ ],
+ "S_void": null,
+ "a6": {
+  "reason": "read at base commit",
+  "status": "not completed",
+  "step5_commit": null
+ },
+ "block_names": {
+  "1": "merged stratum {1}",
+  "2": "merged stratum {2}",
+  ">=3": "merged stratum {\u22653}"
+ },
+ "gates": {
+  "v1": {
+   "rows": [
+    {
+     "data": "D0/D1 engine + scorer",
+     "gate": "G0 label blindness",
+     "result": "PASS (bit-identical)",
+     "source": "3a"
+    },
+    {
+     "data": "A1 null set (6 projects, 894k species nulls, RT-mapped; offset nulls)",
+     "gate": "G2-original",
+     "result": "PASS, with and without RT; nearly vacuous for a re-scorer (winner changed on 0.08% of nulls)",
+     "source": "3e"
+    },
+    {
+     "data": "A1 null set, clean subset",
+     "gate": "tail-G2",
+     "result": "**FAILED** (n_tail 751; UCB of target fraction 0.742 > 0.60; UCB of diff vs hyperscore 0.124 > 0.10)",
+     "source": "3e, D12"
+    },
+    {
+     "data": "A1 null set",
+     "gate": "G1",
+     "result": "**FAILED** (\u03c1 0.048 [0.019, 0.076])",
+     "source": "3e, D12"
+    },
+    {
+     "data": "A1 null set, clean subset",
+     "gate": "G3",
+     "result": "**FAILED** (one bin 1.03 pp)",
+     "source": "3e, D12"
+    },
+    {
+     "data": "dev/training decoys",
+     "gate": "G4",
+     "result": "PASS",
+     "source": "3e"
+    },
+    {
+     "data": "A1 null set",
+     "gate": "G5",
+     "result": "PASS",
+     "source": "3e"
+    },
+    {
+     "data": "D7 yeast + human entrapment, r = 1",
+     "gate": "Arm M (dev)",
+     "result": "inconclusive, not violated (FDP\u0302_C 1.05%, equal to hyperscore)",
+     "source": "3e"
+    },
+    {
+     "data": "synthetic",
+     "gate": "\u00a76.7 MC (estimators)",
+     "result": "PASS",
+     "source": "1c"
+    },
+    {
+     "data": "\u2014",
+     "gate": "A2 (DN2)",
+     "result": "**not evaluable before any test** (6/10 projects)",
+     "source": "D24"
+    },
+    {
+     "data": "\u2014",
+     "gate": "A4 (DN3)",
+     "result": "**not run** (provenance A5.0.4)",
+     "source": "D28"
+    },
+    {
+     "data": "removed-peptide human nulls",
+     "gate": "C9 / A6",
+     "result": "NO-GO pilot, not run; or A6's verdict; or \"A6 not completed (time box)\"",
+     "source": "A5.1"
+    }
+   ],
+   "title": "v1 `static_gbm_pred` (sha256 31bfe685\u2026)"
+  },
+  "v2_sep": {
+   "rows": [
+    {
+     "data": "D1 + E2001, at the freeze commit",
+     "gate": "G0",
+     "result": "recorded at the freeze (A3.1.4; precondition)",
+     "source": "A3.1.4"
+    },
+    {
+     "data": "M3 mixture design through the chimeric search (208k null competitions)",
+     "gate": "G2-original",
+     "result": "PASS",
+     "source": "E7 \u00a76"
+    },
+    {
+     "data": "same",
+     "gate": "G5",
+     "result": "PASS (AUC 0.504)",
+     "source": "E7 \u00a76"
+    },
+    {
+     "data": "stratum \u00d7 charge partition, training decoys",
+     "gate": "G4",
+     "result": "PASS (weak, \u03c4 = 0.298)",
+     "source": "D23"
+    },
+    {
+     "data": "D7, chimeric, raw strata",
+     "gate": "Arm M (dev)",
+     "result": "no \"violated\" in any list",
+     "source": "D23"
+    },
+    {
+     "data": "synthetic",
+     "gate": "\u00a76.7 MC (full v2_sep competition, pooled picked groups)",
+     "result": "PASS",
+     "source": "D23"
+    },
+    {
+     "data": "\u2014",
+     "gate": "tail-G2, G1, G3, V-rows",
+     "result": "**never tested** (DN2 not evaluable before step 4; A4 not run)",
+     "source": "D24, D28"
+    },
+    {
+     "data": "removed-peptide human nulls",
+     "gate": "C9 / A6",
+     "result": "as for v1",
+     "source": "A5.1"
+    }
+   ],
+   "title": "v2_sep (model sha256 3f2c69cc\u2026, frozen pipeline per A3.1.3)"
+  }
+ },
+ "inputs": {
+  "a3_1_8_sha256": "176ebcdee3d799b999e4b0626d64557e4e6669d2f8fcdf0604bed6ab81930347",
+  "base_commit": "26123ec470b178cedcbe3d5a94460a3f0a0149c5",
+  "config_sha256": "eeb3af0c4d947eb9b16a7537f37d3dba52deb0bcdf054b90952a50afeb06ebc4",
+  "t1_metrics_sha256": "a3f637f9219f8fc465453569e89d7566ddb2ef80356cc493ce9d404b03c4acce",
+  "t5_armM_sha256": "07c42e0248b2163d14e310b4364c4cca71aaab96aca16abecbc6ef39edce0ad6"
+ },
+ "labels_rendered": {
+  "A1.8_statement": "top-K re-ranking by the static scorer is used although A1.8's precondition (tail-G2/G1/G3 pass) is not met.",
+  "D14_limitation": "on dev, the natural-proteome (arm C) estimate sat at 1.1\u20131.2% at \u03b1 = 1% (D14); 3g found no decoy-realism defect (D18); human paralog neighbours are unmeasured (D18)",
+  "D25_s3_dev": "D8h's 0.999 [0.951, 1.039]",
+  "E7b_rank_caveat": "the comparator's rank \u2265 2 IDs were miscalibrated on dev (4\u201313% FDP at nominal 1%), so these ratios favour the comparator",
+  "L-2": "pre-registered secondary arm; not gate-validated; compared against every comparator in the look, including Sage chimera at narrow precursor tolerance; per-stratum statements name the merged block.",
+  "L-D": "v1: engine default, FDR not validated by null-spectrum tests. v2_sep: candidate. No OT-HCD scorer has gate-validated FDR claims.",
+  "L-E v1 peptidoform 0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 1%)",
+  "L-E v1 peptidoform 0.05": "arm P: inconclusive (consistent with control); arm C: inconclusive; arm M (T5): inconclusive (peptidoform, \u03b1 = 5%)",
+  "L-E v1 protein 0.01": "arm P: not evaluable; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 1%)",
+  "L-E v1 protein 0.05": "arm P: supported; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 5%)",
+  "L-E v1 sequence 0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 1%)",
+  "L-E v1 sequence 0.05": "arm P: inconclusive (consistent with control); arm C: inconclusive; arm M (T5): inconclusive (sequence, \u03b1 = 5%)",
+  "L-E v2_sep peptidoform 0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 1%)",
+  "L-E v2_sep peptidoform 0.05": "arm P: inconclusive (consistent with control); arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 5%)",
+  "L-E v2_sep protein 0.01": "arm P: not evaluable; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 1%)",
+  "L-E v2_sep protein 0.05": "arm P: supported; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 5%)",
+  "L-E v2_sep sequence 0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 1%)",
+  "L-E v2_sep sequence 0.05": "arm P: inconclusive (consistent with control); arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 5%)",
+  "L-G_v1": "Null-spectrum gates: A1 (2026-10-27): tail-G2, G1, G3 FAILED; final for those nulls. A post-hoc contamination explanation exists, is unconfirmed, and is not used. A2 (DN2): not evaluable before any test (D24). A4 (DN3): drafted and reviewed twice, then not run by PI decision D28 (2026-10-28), made before any DN3 listing and before any T1 look, on label-free feasibility grounds: P(v1 evaluable) 0.08\u20130.43 in the reference cell (grid 0.01\u20130.98). A6 (removed-peptide human nulls, test 2 at \u03b1/2): not completed (commit none), before T1. Passed: G0 (D0/D1), G4 (dev decoys), G2-original and G5 (A1 null set; G2-original nearly vacuous for a re-scorer), \u00a76.7 estimator simulations; arm M (dev D7): inconclusive, not violated.",
+  "L-G_v2_sep": "v2_sep: no null-spectrum test completed (DN2 not evaluable before any test; A4 not run); C9 pilot: GO (commit 3097ef5); A6 gates v1 only (D32) and was not run for v2_sep. Passed: G0 at freeze (D1), G2-original and G5 (M3 mixtures, chimeric), G4 (weak, training decoys), \u00a76.7 MC; arm M (dev D7): no violated list.",
+  "L-M head": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 0.927%, LB lower CI = 0.703%.",
+  "L-M v2": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 0.984%, LB lower CI = 0.748%.",
+  "L-M v2 5%": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 5%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 4.67%, LB lower CI = 3.97%.",
+  "L-M v2 protein": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: not computed at protein level.",
+  "L-Q_v1": "at the method's own q; estimator validity for this scorer is not established by null-spectrum tests (A1 FAILED).",
+  "L-Q_v2_sep": "at the method's own q; estimator validity for this scorer is not established by null-spectrum tests (A1 FAILED).",
+  "L-R v1": "top-K re-ranking by the static scorer is used although A1.8's precondition (tail-G2/G1/G3 pass) is not met (rank-1 changed in 0.134% of spectra, 0.0762% of accepted units).",
+  "L-R v2_sep": "top-K re-ranking by the static scorer is used although A1.8's precondition (tail-G2/G1/G3 pass) is not met (rank-1 changed in \u2014 (not defined for this pipeline) of spectra, 0.728% of accepted units).",
+  "L-R_pass": "top-K re-ranking by the static scorer; A1.8's precondition met at test 2 (A6), before T1.",
+  "L-S": "FDR-filtered at the method's own threshold and checked by entrapment (verdicts as stated); not validated by null-spectrum tests: the only completed test (A1) FAILED.",
+  "R4": "secondary arm C (D18 screen); reported only",
+  "narrow_tolerance": "compared against Sage chimera at narrow precursor tolerance",
+  "stratum1_title": "v2_sep stratum-1 list (descriptive; not family S)",
+  "v2_sep_title": "Secondary arm; not gate-validated",
+  "void_power": "\"Violated\" needs the lower CI of LB above \u03b1. At r \u2248 1, LB \u2248 FDP\u0302_C / 2. So the void rules fire only against a gross violation: true FDP of roughly \u2265 2\u03b1 in arm C, and similarly for arm M. They are a backstop, not a validation.",
+  "void_title_v1": ""
+ },
+ "le": {
+  "v1": {
+   "peptidoform": {
+    "0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 1%)",
+    "0.05": "arm P: inconclusive (consistent with control); arm C: inconclusive; arm M (T5): inconclusive (peptidoform, \u03b1 = 5%)"
+   },
+   "protein": {
+    "0.01": "arm P: not evaluable; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 1%)",
+    "0.05": "arm P: supported; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 5%)"
+   },
+   "sequence": {
+    "0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 1%)",
+    "0.05": "arm P: inconclusive (consistent with control); arm C: inconclusive; arm M (T5): inconclusive (sequence, \u03b1 = 5%)"
+   }
+  },
+  "v2_sep": {
+   "peptidoform": {
+    "0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 1%)",
+    "0.05": "arm P: inconclusive (consistent with control); arm C: supported; arm M (T5): inconclusive (peptidoform, \u03b1 = 5%)"
+   },
+   "protein": {
+    "0.01": "arm P: not evaluable; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 1%)",
+    "0.05": "arm P: supported; arm C: not computed at protein level; arm M (T5): not applicable to this unit (protein, \u03b1 = 5%)"
+   },
+   "sequence": {
+    "0.01": "arm P: supported; arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 1%)",
+    "0.05": "arm P: inconclusive (consistent with control); arm C: supported; arm M (T5): inconclusive (sequence, \u03b1 = 5%)"
+   }
+  }
+ },
+ "lm_head": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 0.927%, LB lower CI = 0.703%.",
+ "lm_v2": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 0.984%, LB lower CI = 0.748%.",
+ "lm_v2_05": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 5%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: mean FDP\u0302 = 4.67%, LB lower CI = 3.97%.",
+ "lm_v2_prot": "compared at matched arm-P (shuffled paired entrapment) FDP\u0302 = 1%; each method's own q is used only to order its list, not as an error estimate; the comparison rests on the entrapment assumptions; arm P cannot detect a preference for natural sequences; arm C for the same list at the same threshold: not computed at protein level.",
+ "lr_v1": "top-K re-ranking by the static scorer is used although A1.8's precondition (tail-G2/G1/G3 pass) is not met (rank-1 changed in 0.134% of spectra, 0.0762% of accepted units).",
+ "lr_v2": "top-K re-ranking by the static scorer is used although A1.8's precondition (tail-G2/G1/G3 pass) is not met (rank-1 changed in \u2014 (not defined for this pipeline) of spectra, 0.728% of accepted units).",
+ "merge_maps": {
+  "prod_1001": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "prod_1002": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "prod_1003": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "prod_1004": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "prod_1005": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  }
+ },
+ "p7": "quant (\u03b5, CV, DE pAUC) on q-filtered lists: not recorded by the T1 driver (no 'quant' key in metrics.json); no quant claim",
+ "p8": "driver wall 2536 s, core-s 1.276e+04 (all stages, all methods, 1 runs); per-stage timing in metrics.json driver_timing; claims-grade only if the node was idle (A5.5.1.7)",
+ "rows": [
+  {
+   "claim": "v1 no loss (\u00a71): (i) matched FDP\u0302 1% LB and LOO min \u2265 0.97 vs every A1 comparator; (ii) own q 1% LB \u2265 0.97 vs supported A1 comparators",
+   "id": "P1",
+   "labels": "L-S, L-M (i), L-Q (ii), L-E, L-R, L-G",
+   "outcome": "not met",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 vs each comparator at 5%, sequence and protein level, 0.1% own q",
+   "id": "P2",
+   "labels": "L-M or L-Q, L-E, L-R",
+   "outcome": "reported (Table P2)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 IDs at own q {0.1, 1, 5}%",
+   "id": "P3",
+   "labels": "L-Q, L-E, L-R",
+   "outcome": "reported (Table P3)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 vs C2 and sage_chim2 (A3 Q2; not a claim)",
+   "id": "P4",
+   "labels": "L-M, narrow tolerance, E7b rank caveat",
+   "outcome": "reported (Table P2)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 entrapment verdicts",
+   "id": "P5",
+   "labels": "literal",
+   "outcome": "literal (Table P5)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 arm M (T5)",
+   "id": "P6",
+   "labels": "literal",
+   "outcome": "literal (Table P5)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v1 quant on q-filtered lists",
+   "id": "P7",
+   "labels": "L-Q",
+   "outcome": "not recorded by the T1 driver (no 'quant' key in metrics.json); no quant claim",
+   "void": "\u2014"
+  },
+  {
+   "claim": "speed (core-s, runs/h)",
+   "id": "P8",
+   "labels": "none",
+   "outcome": "reported",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep non-inferiority (family S; Secondary arm; not gate-validated)",
+   "id": "S1",
+   "labels": "title, L-2, L-M/L-Q, L-E, L-R, L-G (v2_sep)",
+   "outcome": "not rejected",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep more IDs (family S; Secondary arm; not gate-validated)",
+   "id": "S2",
+   "labels": "title, L-2, L-M/L-Q, L-E, L-R, L-G (v2_sep)",
+   "outcome": "not tested (S1 not rejected)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep more protein groups (family S; Secondary arm; not gate-validated)",
+   "id": "S3",
+   "labels": "title, L-2, L-M/L-Q, L-E, L-R, L-G (v2_sep)",
+   "outcome": "not tested (S1 not rejected)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep more IDs at 5% (family S; Secondary arm; not gate-validated)",
+   "id": "S4",
+   "labels": "title, L-2, L-M/L-Q, L-E, L-R, L-G (v2_sep)",
+   "outcome": "not tested (S1 not rejected)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep more IDs at own q (family S; Secondary arm; not gate-validated)",
+   "id": "S5",
+   "labels": "title, L-2, L-M/L-Q, L-E, L-R, L-G (v2_sep)",
+   "outcome": "not tested (S1 not rejected)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep stratum-1-only list",
+   "id": "R1",
+   "labels": "descriptive; not family S, L-2",
+   "outcome": "descriptive; not family S (Table R1)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep per-merged-stratum verdicts",
+   "id": "R2",
+   "labels": "literal; merged block named; raw \u22653 shown",
+   "outcome": "literal (Table R2)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "v2_sep/v1 ratio, per-stratum IDs, sequence level",
+   "id": "R3",
+   "labels": "L-M or L-Q, L-2",
+   "outcome": "reported (Table R3)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "D18 screened arm C",
+   "id": "R4",
+   "labels": "secondary arm C (D18 screen); reported only",
+   "outcome": "reported only (Table R4)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "designations",
+   "id": "D",
+   "labels": "L-D",
+   "outcome": "fixed (F3)",
+   "void": "\u2014"
+  },
+  {
+   "claim": "gate-status tables",
+   "id": "G",
+   "labels": "verbatim",
+   "outcome": "A5.4 verbatim",
+   "void": "\u2014"
+  }
+ ],
+ "state": "GO, A6 other",
+ "stricter_readings": [
+  "LOO minimum None (one run or an undefined LOO ratio) does not clear any bar (family S, P1(i)).",
+  "Matched-FDP ratio not evaluable also when fdp_reached is not True on both sides or the CI is not finite (A5.5.4 names only >5% NaN draws).",
+  "v2_sep void: union of a3_secondary.void_flags and a recomputation from the per-arm verdicts.",
+  "Family S S1 with no 'supported' own-q comparator: S1's own-q part is not met, so S1 is not rejected and the sequence stops (A3.3.5 gives the 'not tested' rule for S5 only; A5.9.2's 'rests on (i)' is written for P1 only).",
+  "A6 FAILED keeps the FAILED state even if its gate output cannot be verified (it can only void); this departs from A6.2's literal 'unverifiable -> stopped' and needs PI confirmation as a deviation. PASS needs a verifiable gate output and a step-5 commit that is an ancestor of the look base commit, else 'stopped: node time limit'.",
+  "A6 PASS also needs its step-5 commit dated no later than the A6 clock's step-5 deadline (config a6.pass_deadline, 17:55 CET 2026-10-28; A6.8.2/D31.3), else 'stopped: node time limit'.",
+  "A6 is v1-only (D32): v2_sep wording (L-Q, L-R, title) is always the no-A6 wording; its C9 clause says so; the A5.7.2 'v2_sep FAILED a completed null-spectrum test' trigger has no input and cannot fire (stated in claims.md).",
+  "In the A6 PASS state the designation is not changed by this script (A5.10.6 is a separate act); the L-D label is printed unchanged with that note.",
+  "Arm M (T5) verdicts enter L-E for v1/v2_sep lists at peptidoform and sequence; 'not applicable to this unit' at protein level.  Arm M has no paired control, so '(consistent with control)' is never attached to it.",
+  "Sealed run counts (6 T1, 2 T5) and 15 arm-M replicates are part of the completeness rule; sealed inputs require the ledger manifest hashes (run() refuses without them).",
+  "Claim-level arm-C void also when the arm-C LB lower CI is missing or not finite.",
+  "Headline comparator: the lowest FINITE P1(i) point ratio; a None ratio (0 comparator IDs) never headlines; ties by comparator name; with no finite ratio the first A1 comparator by name is named.",
+  "A5.9.3 PASS wording: the '(\u2026)' of L-S's pass clause is filled with '(A1, 2026-10-27: tail-G2, G1, G3)', the gates named in A5.4.",
+  "Own-q ratios carry no n_boot_nan: evaluate.py floors the comparator denominator at 1e-9, so an own-q bootstrap draw cannot be NaN; A5.5.4's 'every bootstrap's n_boot_nan' is read as every matched-FDP bootstrap.",
+  "A void (scorer-level or claim-level) is reported as 'VOID', never as 'not met'/'not rejected'; voided numbers are printed in full under captions titled 'VOID under \u00a76.0d A5.7 (reason)'."
+ ],
+ "version": "claims-a5-1",
+ "voids": {
+  "claim_level": {
+   "vulcan": {
+    "peptidoform/0.01": {
+     "lb_lower_ci": 0.0070336840922368025,
+     "mean_fdp_c": 0.009273485031976489,
+     "mean_lb": 0.008636568426302848,
+     "ours_q_at_match": 0.011082851817457495,
+     "reason": "",
+     "void": false
+    },
+    "peptidoform/0.05": {
+     "lb_lower_ci": 0.042258772483627915,
+     "mean_fdp_c": 0.0486516247232045,
+     "mean_lb": 0.045310159505720156,
+     "ours_q_at_match": 0.048846059597183786,
+     "reason": "",
+     "void": false
+    },
+    "sequence/0.01": {
+     "lb_lower_ci": 0.0069297579840358605,
+     "mean_fdp_c": 0.009257578836436811,
+     "mean_lb": 0.008594314458291992,
+     "ours_q_at_match": 0.010928581864564533,
+     "reason": "",
+     "void": false
+    },
+    "sequence/0.05": {
+     "lb_lower_ci": 0.042223651181526475,
+     "mean_fdp_c": 0.04892514287542751,
+     "mean_lb": 0.045419873837134694,
+     "ours_q_at_match": 0.04811305858164668,
+     "reason": "",
+     "void": false
+    }
+   },
+   "vulcan_v2_sep": {
+    "peptidoform/0.01": {
+     "lb_lower_ci": 0.0074756518134181165,
+     "mean_fdp_c": 0.009844329042766681,
+     "mean_lb": 0.009168206029958298,
+     "ours_q_at_match": 0.011659554426772021,
+     "reason": "",
+     "void": false
+    },
+    "peptidoform/0.05": {
+     "lb_lower_ci": 0.03968189774719384,
+     "mean_fdp_c": 0.046743928610167164,
+     "mean_lb": 0.043533486770494165,
+     "ours_q_at_match": 0.048968797680230554,
+     "reason": "",
+     "void": false
+    },
+    "sequence/0.01": {
+     "lb_lower_ci": 0.007319722195450792,
+     "mean_fdp_c": 0.009729573004755566,
+     "mean_lb": 0.0090324923422378,
+     "ours_q_at_match": 0.011110492524376287,
+     "reason": "",
+     "void": false
+    },
+    "sequence/0.05": {
+     "lb_lower_ci": 0.04013193170109569,
+     "mean_fdp_c": 0.047404242351516065,
+     "mean_lb": 0.04400793907609009,
+     "ours_q_at_match": 0.048159715724740135,
+     "reason": "",
+     "void": false
+    }
+   }
+  },
+  "v1": [],
+  "v1_void": false,
+  "v2_sep": [],
+  "v2_sep_protein_violated": [],
+  "v2_sep_void": false
+ }
+}

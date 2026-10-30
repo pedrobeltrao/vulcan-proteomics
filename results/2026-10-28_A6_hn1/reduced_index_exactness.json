@@ -1,0 +1,15 @@
+{
+ "store": "/tmp/vulcan_e2/store/b1906_293T_proteinID_01A_QE3_122212.vspec.arrow",
+ "n_spec": 3000,
+ "empty_R_prod_bit_identical": true,
+ "reduced_gpuindex_build_s": 0.19716374995186925,
+ "R_rows": 9576,
+ "exh_rows_outside_R": true,
+ "prod_rows_outside_R": true,
+ "exh_hyperscore_equal_full": true,
+ "prod_keys_found_in_full": 0.9997370496976071,
+ "prod_hyperscore_equal_full": true,
+ "exh_equals_full_minus_R": true,
+ "pass": true,
+ "wall_s": 2.409799215849489
+}

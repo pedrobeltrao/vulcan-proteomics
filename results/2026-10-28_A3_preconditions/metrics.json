@@ -1,0 +1,394 @@
+{
+ "A3.1.8_i_G4": {
+  "pass": true,
+  "tau": 0.2976350850853497,
+  "max_ks": 0.26550935302132045,
+  "commit": "8bfb431"
+ },
+ "A3.1.8_ii_armM": {
+  "pass": true,
+  "violated_conv_a": [],
+  "violated_conv_b": [],
+  "v2_sep": {
+   "overall": {
+    "0.01": {
+     "mean_fdp": 0.010403460551927242,
+     "ci95": [
+      0.008415384316696107,
+      0.012391536787158377
+     ],
+     "verdict_a": "inconclusive",
+     "verdict_b": "inconclusive"
+    },
+    "0.05": {
+     "mean_fdp": 0.05389009858687549,
+     "ci95": [
+      0.0507407403486826,
+      0.05703945682506838
+     ],
+     "verdict_a": "inconclusive",
+     "verdict_b": "inconclusive"
+    }
+   },
+   "1": {
+    "0.01": {
+     "mean_fdp": 0.00998178980483913,
+     "ci95": [
+      0.007449481873997564,
+      0.012514097735680697
+     ],
+     "verdict_a": "supported",
+     "verdict_b": "supported"
+    },
+    "0.05": {
+     "mean_fdp": 0.05490773939229191,
+     "ci95": [
+      0.050874354247606474,
+      0.05894112453697735
+     ],
+     "verdict_a": "inconclusive",
+     "verdict_b": "inconclusive"
+    }
+   },
+   "2": {
+    "0.01": {
+     "mean_fdp": 0.01257045798906005,
+     "ci95": [
+      0.007650992259381684,
+      0.017489923718738414
+     ],
+     "verdict_a": "inconclusive",
+     "verdict_b": "inconclusive"
+    },
+    "0.05": {
+     "mean_fdp": 0.05288502161825303,
+     "ci95": [
+      0.04283525320580289,
+      0.06293479003070317
+     ],
+     "verdict_a": "inconclusive",
+     "verdict_b": "inconclusive"
+    }
+   },
+   ">=3": {
+    "0.01": {
+     "mean_fdp": 0.01102461932339248,
+     "ci95": [
+      0.0038823809334988125,
+      0.018166857713286147
+     ],
+     "verdict_a": "not-evaluable",
+     "verdict_b": "not-evaluable"
+    },
+    "0.05": {
+     "mean_fdp": 0.04296937958991189,
+     "ci95": [
+      0.02884781654250137,
+      0.057090942637322416
+     ],
+     "verdict_a": "supported",
+     "verdict_b": "supported"
+    }
+   }
+  },
+  "commit": "f258a9d"
+ },
+ "A3.1.8_iii_MC": {
+  "pass": true,
+  "reps_per_scenario": 10000,
+  "scenarios": {
+   "S1_dev_like": {
+    "pass": true,
+    "worst": [
+     "union@0.01",
+     -0.0003544059562375374
+    ],
+    "merge_patterns": {
+     "1|2|3": 10000
+    }
+   },
+   "S2_small_merge": {
+    "pass": true,
+    "worst": [
+     "union@0.01",
+     -0.0004606306367258336
+    ],
+    "merge_patterns": {
+     "1|2_3": 7853,
+     "1|2|3": 2147
+    }
+   },
+   "S3_strong_heterogeneity": {
+    "pass": true,
+    "worst": [
+     "union@0.01",
+     -0.0003399054285216467
+    ],
+    "merge_patterns": {
+     "1|2|3": 10000
+    }
+   },
+   "S4_cross_rank_pairs": {
+    "pass": true,
+    "worst": [
+     "merged:1@0.01",
+     -0.0012714086769269987
+    ],
+    "merge_patterns": {
+     "1|2|3": 10000
+    }
+   }
+  },
+  "commit": "f293526"
+ },
+ "V12_dev_truncation": {
+  "pooled_miss_rate": 0.08888162197514715,
+  "max_variance_decile_miss_rate": 0.09810333551340744,
+  "per_label": {
+   "T": {
+    "n": 7650,
+    "kept": 6987,
+    "miss_rate": 0.08666666666666667
+   },
+   "D": {
+    "n": 7640,
+    "kept": 6944,
+    "miss_rate": 0.09109947643979055
+   }
+  },
+  "production_nce": 23.0,
+  "commit": "d5291cc"
+ },
+ "A3.1.9_power": {
+  "n_min": {
+   "V6": 22700,
+   "V12": 19200,
+   "V14": 7200,
+   "V8": 107570,
+   "V11": "unused"
+  },
+  "scenarios": {
+   "96000_J16_B1.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V2",
+     "V6.class1",
+     "V6.class2",
+     "V8"
+    ]
+   },
+   "96000_J16_B3.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V2",
+     "V6.class1",
+     "V6.class2",
+     "V8"
+    ]
+   },
+   "120000_J10_B1.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V6.class1",
+     "V6.class2",
+     "V8"
+    ]
+   },
+   "120000_J10_B3.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V6.class1",
+     "V6.class2"
+    ]
+   },
+   "240000_J10_B1.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V6.class1",
+     "V6.class2",
+     "V8"
+    ]
+   },
+   "240000_J10_B3.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V12",
+     "V6.class1",
+     "V6.class2"
+    ]
+   },
+   "450000_J10_B1.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V6.class1",
+     "V6.class2"
+    ]
+   },
+   "450000_J10_B3.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V6.class1",
+     "V6.class2"
+    ]
+   },
+   "750000_J10_B1.0": {
+    "tier1": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "tier2": {
+     "independence": 0.0,
+     "frechet_lower": 0.0,
+     "upper_min": 0.0
+    },
+    "not_evaluable": [
+     "V6.class1",
+     "V6.class2"
+    ]
+   },
+   "750000_J10_B3.0": {
+    "tier1": {
+     "independence": 0.8909606697750001,
+     "frechet_lower": 0.887083333333333,
+     "upper_min": 0.9483333333333334
+    },
+    "tier2": {
+     "independence": 0.8382722952382499,
+     "frechet_lower": 0.8269999988911216,
+     "upper_min": 0.9483333333333334
+    },
+    "not_evaluable": []
+   }
+  },
+  "flags": {
+   "reachable_points": [
+    {
+     "J": 16,
+     "n_A": 96000
+    },
+    {
+     "J": 10,
+     "n_A": 120000
+    },
+    {
+     "J": 10,
+     "n_A": 240000
+    },
+    {
+     "J": 10,
+     "n_A": 450000
+    },
+    {
+     "J": 10,
+     "n_A": 750000
+    }
+   ],
+   "rule": "row: clean pass prob < 0.05 at every reachable point; tier: joint upper bound < 0.05 at every reachable point",
+   "all_B_ratios": {
+    "rows_never_passable": [],
+    "tier1_expected_not_evaluable": false,
+    "tier2_expected_not_evaluable": false
+   },
+   "B_over_A_1.0": {
+    "rows_never_passable": [
+     "V6.class1",
+     "V6.class2"
+    ],
+    "tier1_expected_not_evaluable": true,
+    "tier2_expected_not_evaluable": true
+   },
+   "B_over_A_3.0": {
+    "rows_never_passable": [],
+    "tier1_expected_not_evaluable": false,
+    "tier2_expected_not_evaluable": false
+   },
+   "design_point_A120k": {
+    "not_evaluable_rows": [
+     "V12",
+     "V6.class1",
+     "V6.class2"
+    ],
+    "tier1_not_evaluable": true
+   },
+   "smallest_reachable_A_with_tier1_upper_bound_ge_0.05": 750000
+  }
+ }
+}

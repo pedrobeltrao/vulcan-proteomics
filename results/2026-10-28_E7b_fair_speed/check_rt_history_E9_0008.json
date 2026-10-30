@@ -1,0 +1,26 @@
+{
+ "run": "E9_0008__lgg1",
+ "replicate": "prod_1001",
+ "nce": 29.0,
+ "columns": {
+  "rt_abs_resid": {
+   "slow_vs_fast_bitwise": true,
+   "slow_vs_E7_bitwise": false,
+   "fast_vs_E7_n_diff": 1,
+   "max_abs_diff_vs_E7": 0.00047576427459716797
+  },
+  "rt_resid_z": {
+   "slow_vs_fast_bitwise": true,
+   "slow_vs_E7_bitwise": false,
+   "fast_vs_E7_n_diff": 1,
+   "max_abs_diff_vs_E7": 0.00012239813804626465
+  },
+  "pred_sa": {
+   "slow_vs_fast_bitwise": true,
+   "slow_vs_E7_bitwise": true,
+   "fast_vs_E7_n_diff": 0,
+   "max_abs_diff_vs_E7": 0.0
+  },
+  "rt_pred_slow_vs_fast_bitwise": true
+ }
+}

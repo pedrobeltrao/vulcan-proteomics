@@ -1,0 +1,186 @@
+{
+ "admitted": [
+  "PXD006818",
+  "PXD018953",
+  "PXD044078",
+  "PXD011591",
+  "PXD062500",
+  "PXD038243"
+ ],
+ "per_project": {
+  "PXD006818": {
+   "upid": "UP000028682",
+   "runs": [
+    "SL203_set1_rep1",
+    "SL203_set1_rep6",
+    "SL322_set1_rep5"
+   ],
+   "counts": {
+    "n_spectra": 40150,
+    "n_certified": 1983,
+    "removed_b_f": 1029,
+    "removed_b_hamming": 4,
+    "removed_d_family": 0,
+    "removed_c_pre": 598,
+    "n_A": 352,
+    "n_B_candidates": 39798,
+    "n_A_with_candidate": 143,
+    "tail_proxy": 3
+   },
+   "membership_sha256": "a05b78f952acb012b88d86e9ef04d3cffcb26053477bb961bb8c1e706a6837a2"
+  },
+  "PXD018953": {
+   "upid": "UP000035963",
+   "runs": [
+    "Q06711_MS18-007_Biotite_GB1",
+    "Q06717_MS18-007_Biotite_GBB3",
+    "Q06722_MS18-007_Biotite_MBB4"
+   ],
+   "counts": {
+    "n_spectra": 141124,
+    "n_certified": 62234,
+    "removed_b_f": 35371,
+    "removed_b_hamming": 202,
+    "removed_d_family": 10,
+    "removed_c_pre": 21090,
+    "n_A": 5561,
+    "n_B_candidates": 135563,
+    "n_A_with_candidate": 1634,
+    "tail_proxy": 2
+   },
+   "membership_sha256": "ce1fe0584bb812a3ba04a34e843d22f2bd08b0bb8539fc593a84e6569cab998c"
+  },
+  "PXD044078": {
+   "upid": "UP000001355",
+   "runs": [
+    "Q12238_MS21-015_Bp2",
+    "Q12239_MS21-015_Bp3",
+    "Q12240_MS21-015_Bp4"
+   ],
+   "counts": {
+    "n_spectra": 160805,
+    "n_certified": 49889,
+    "removed_b_f": 29489,
+    "removed_b_hamming": 105,
+    "removed_d_family": 5,
+    "removed_c_pre": 13796,
+    "n_A": 6494,
+    "n_B_candidates": 154311,
+    "n_A_with_candidate": 2975,
+    "tail_proxy": 4
+   },
+   "membership_sha256": "e95ca10e638806a23c0f2cdc65c7b5308076e7ee6faaadfc4f386011caec2fc5"
+  },
+  "PXD011591": {
+   "upid": "UP000002361",
+   "runs": [
+    "1010_1",
+    "101_G",
+    "D2_G"
+   ],
+   "counts": {
+    "n_spectra": 194576,
+    "n_certified": 32954,
+    "removed_b_f": 19078,
+    "removed_b_hamming": 164,
+    "removed_d_family": 4,
+    "removed_c_pre": 10958,
+    "n_A": 2750,
+    "n_B_candidates": 191826,
+    "n_A_with_candidate": 2022,
+    "tail_proxy": 2
+   },
+   "membership_sha256": "e7e966d968e10b2cb20a932883f5bcebce076f44d60d00cd1565b1c253f1abc8"
+  },
+  "PXD062500": {
+   "upid": "UP000002524",
+   "runs": [
+    "HFX_BIT_LF_DR1_20231107",
+    "HFX_BIT_LF_DR2_20231107",
+    "HFX_BIT_LF_pprI4_20231107"
+   ],
+   "counts": {
+    "n_spectra": 382856,
+    "n_certified": 47923,
+    "removed_b_f": 23567,
+    "removed_b_hamming": 170,
+    "removed_d_family": 2,
+    "removed_c_pre": 15147,
+    "n_A": 9037,
+    "n_B_candidates": 373819,
+    "n_A_with_candidate": 2771,
+    "tail_proxy": 10
+   },
+   "membership_sha256": "72e3f8179ece29d7373ca775dc36efd292b59f0e5bc9a7a2dc9ae01d821adbb6"
+  },
+  "PXD038243": {
+   "upid": "UP000013827",
+   "runs": [
+    "RCC911_23_SubOpt_1",
+    "RCC911_28_SupraOpt_1",
+    "RCC911_28_SupraOpt_2"
+   ],
+   "counts": {
+    "n_spectra": 86929,
+    "n_certified": 8516,
+    "removed_b_f": 3253,
+    "removed_b_hamming": 168,
+    "removed_d_family": 0,
+    "removed_c_pre": 4708,
+    "n_A": 387,
+    "n_B_candidates": 86542,
+    "n_A_with_candidate": 63,
+    "tail_proxy": 1
+   },
+   "membership_sha256": "2a703755356faf5eb6f38d87f51b2d0893e2e3f52ad439b9d80b683b008664c9"
+  }
+ },
+ "totals": {
+  "n_spectra": 1006440,
+  "n_certified": 203499,
+  "n_A": 24581,
+  "n_B_candidates": 981859,
+  "n_A_with_candidate": 9608,
+  "tail_proxy": 22,
+  "removed_b_f": 111787,
+  "removed_b_hamming": 813,
+  "removed_d_family": 21,
+  "removed_c_pre": 66297
+ },
+ "final_state": {
+  "n_admitted": 6,
+  "totals": {
+   "n_A": 24581,
+   "n_A_with_candidate": 9608,
+   "tail_proxy": 22
+  },
+  "criteria": {
+   "projects": false,
+   "n_A": false,
+   "n_A_with_candidate": false,
+   "tail_proxy": false
+  },
+  "stop": false,
+  "reason": "continue"
+ },
+ "fs_donors_equal_n_A": 24581,
+ "host_threshold": {
+  "host_hyperscore_1pct": {
+   "b1906_293T_proteinID_01A_QE3_122212": 33.874883688117755,
+   "b1937_293T_proteinID_01B_QE3_122212": 33.40910697734692
+  },
+  "tail_proxy_threshold": 33.874883688117755,
+  "rule": "max over D0 hosts"
+ },
+ "swap_test": {
+  "project": "PXD006818",
+  "label_free_files_identical": {
+   "peptidoforms.arrow": true,
+   "residues.npy": true
+  },
+  "membership_sha256_ref": "a05b78f952acb012b88d86e9ef04d3cffcb26053477bb961bb8c1e706a6837a2",
+  "membership_sha256_swapped": "a05b78f952acb012b88d86e9ef04d3cffcb26053477bb961bb8c1e706a6837a2",
+  "pass": true
+ },
+ "note": "label-free counts only (A2.9.4); B candidates are final only after (c-final) in step 5"
+}

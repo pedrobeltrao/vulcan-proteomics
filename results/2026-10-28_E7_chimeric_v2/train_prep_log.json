@@ -1,0 +1,451 @@
+{
+ "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE": {
+  "species": "human",
+  "accession": "PXD068465",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 21136,
+  "n_psms": 178051,
+  "n_secondary_groups": 26382,
+  "nce": 29.0,
+  "wall_s": 22.03281601285562
+ },
+ "KA121LQ_CSF_65": {
+  "species": "human",
+  "accession": "PXD026663",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 47141,
+  "n_psms": 72389,
+  "n_secondary_groups": 28959,
+  "nce": 29.0,
+  "wall_s": 4.599295859690756
+ },
+ "30min_LPS_2": {
+  "species": "human",
+  "accession": "PXD074418",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 17579,
+  "n_psms": 72564,
+  "n_secondary_groups": 15046,
+  "nce": 20.0,
+  "wall_s": 6.362548096105456
+ },
+ "PT10402-292_190921044254": {
+  "species": "human",
+  "accession": "PXD044783",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 41067,
+  "n_psms": 122326,
+  "n_secondary_groups": 37149,
+  "nce": 29.0,
+  "wall_s": 5.432450060267001
+ },
+ "Ctrl_JH_repli1_SCX4": {
+  "species": "human",
+  "accession": "PXD009743",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 36106,
+  "n_psms": 186457,
+  "n_secondary_groups": 14848,
+  "nce": 26.0,
+  "wall_s": 4.574808640405536
+ },
+ "P22_081_Singapur_Smim26_SampleII_02": {
+  "species": "human",
+  "accession": "PXD047664",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 20714,
+  "n_psms": 59939,
+  "n_secondary_groups": 14420,
+  "nce": 32.0,
+  "wall_s": 3.952245348598808
+ },
+ "No_guide_control_2_promoter_reporter": {
+  "species": "human",
+  "accession": "PXD047868",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 23153,
+  "n_psms": 136484,
+  "n_secondary_groups": 30458,
+  "nce": 29.0,
+  "wall_s": 6.41713862773031
+ },
+ "c3": {
+  "species": "human",
+  "accession": "PXD045252",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 36229,
+  "n_psms": 83283,
+  "n_secondary_groups": 17521,
+  "nce": 29.0,
+  "wall_s": 4.073736578691751
+ },
+ "211221_LL_17183_1": {
+  "species": "human",
+  "accession": "PXD031264",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 22426,
+  "n_psms": 96033,
+  "n_secondary_groups": 20571,
+  "nce": 20.0,
+  "wall_s": 4.545507237315178
+ },
+ "shRB-1": {
+  "species": "human",
+  "accession": "PXD042073",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 66100,
+  "n_psms": 322318,
+  "n_secondary_groups": 18981,
+  "nce": 32.0,
+  "wall_s": 23.3946672831662
+ },
+ "20151118_HER2_04": {
+  "species": "human",
+  "accession": "PXD021865",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 41754,
+  "n_psms": 23965,
+  "n_secondary_groups": 14353,
+  "nce": 26.0,
+  "wall_s": 13.577301358338445
+ },
+ "YIG_130_L012_05_SoL_014_U01": {
+  "species": "human",
+  "accession": "PXD071247",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 67738,
+  "n_psms": 434629,
+  "n_secondary_groups": 44569,
+  "nce": 23.0,
+  "wall_s": 17.28207560814917
+ },
+ "QEAGF160127_112": {
+  "species": "human",
+  "accession": "PXD043497",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 174,
+  "n_psms": 34,
+  "n_secondary_groups": 46,
+  "nce": 32.0,
+  "wall_s": 5.91414488106966
+ },
+ "q104758a": {
+  "species": "human",
+  "accession": "PXD013968",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 31781,
+  "n_psms": 201836,
+  "n_secondary_groups": 34440,
+  "nce": 26.0,
+  "wall_s": 17.16707240510732
+ },
+ "20171221_KW_KK_Ex229_KO_S_2_91": {
+  "species": "human",
+  "accession": "PXD037793",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 15973,
+  "n_psms": 28658,
+  "n_secondary_groups": 6029,
+  "nce": 23.0,
+  "wall_s": 8.120737168937922
+ },
+ "QE1_160915_OPL4019_GK_ALT_splice_SW480_I9": {
+  "species": "human",
+  "accession": "PXD006486",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 26755,
+  "n_psms": 63001,
+  "n_secondary_groups": 19967,
+  "nce": 23.0,
+  "wall_s": 15.440434837248176
+ },
+ "220912_25_Orbi3_KN_SER_G30_T55_Hart_UP1": {
+  "species": "human",
+  "accession": "PXD047127",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 39892,
+  "n_psms": 211875,
+  "n_secondary_groups": 77773,
+  "nce": 26.0,
+  "wall_s": 12.82538885017857
+ },
+ "oecf3-CP0480-07": {
+  "species": "human",
+  "accession": "PXD029658",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 53806,
+  "n_psms": 241811,
+  "n_secondary_groups": 54006,
+  "nce": 23.0,
+  "wall_s": 16.933061704970896
+ },
+ "A549_LPS": {
+  "species": "human",
+  "accession": "PXD032209",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 33147,
+  "n_psms": 176745,
+  "n_secondary_groups": 20322,
+  "nce": 32.0,
+  "wall_s": 11.951072423253208
+ },
+ "Christine_TPA_180223_LysC_H27": {
+  "species": "human",
+  "accession": "PXD014131",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 69934,
+  "n_psms": 2120,
+  "n_secondary_groups": 25807,
+  "nce": 32.0,
+  "wall_s": 11.162498073186725
+ },
+ "MEC2878-S30-LRRK2-BioID2-Rab29": {
+  "species": "human",
+  "accession": "PXD048808",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 38117,
+  "n_psms": 311460,
+  "n_secondary_groups": 62959,
+  "nce": 26.0,
+  "wall_s": 20.709307197947055
+ },
+ "uzorak_07": {
+  "excluded": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)"
+ },
+ "55603_1_EXP_1171_hs_plasma_20_WT_1ug": {
+  "species": "human",
+  "accession": "PXD077276",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 156044,
+  "n_psms": 606649,
+  "n_secondary_groups": 182307,
+  "nce": 29.0,
+  "wall_s": 33.94204696919769
+ },
+ "20160930_AR_YE_10": {
+  "species": "human",
+  "accession": "PXD020844",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 49839,
+  "n_psms": 150440,
+  "n_secondary_groups": 28868,
+  "nce": 29.0,
+  "wall_s": 13.528477178886533
+ },
+ "1MLDCS-HBSS_OA": {
+  "species": "human",
+  "accession": "PXD035813",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 83286,
+  "n_psms": 263298,
+  "n_secondary_groups": 8356,
+  "nce": 26.0,
+  "wall_s": 16.033530110958964
+ },
+ "PP185_186AA_3": {
+  "species": "human",
+  "accession": "PXD042242",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 28130,
+  "n_psms": 54212,
+  "n_secondary_groups": 23469,
+  "nce": 29.0,
+  "wall_s": 17.996404814068228
+ },
+ "QE1123_MSQ1631_20190401_DOB_TAU_A4": {
+  "species": "human",
+  "accession": "PXD041199",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 18517,
+  "n_psms": 114185,
+  "n_secondary_groups": 18274,
+  "nce": 29.0,
+  "wall_s": 12.669538866262883
+ },
+ "aral2": {
+  "species": "human",
+  "accession": "PXD053278",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 11297,
+  "n_psms": 57316,
+  "n_secondary_groups": 22443,
+  "nce": 26.0,
+  "wall_s": 13.886644231155515
+ },
+ "BT474_H1": {
+  "species": "human",
+  "accession": "PXD040532",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 84801,
+  "n_psms": 171264,
+  "n_secondary_groups": 20924,
+  "nce": 26.0,
+  "wall_s": 24.639200410805643
+ },
+ "Sh-271": {
+  "excluded": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)"
+ },
+ "EH8725": {
+  "species": "human",
+  "accession": "PXD033125",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 339,
+  "n_psms": 275,
+  "n_secondary_groups": 67,
+  "nce": 29.0,
+  "wall_s": 11.264256126247346
+ },
+ "CD1524_Marsh3B_Anti-TG2_2": {
+  "species": "human",
+  "accession": "PXD013777",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 17561,
+  "n_psms": 101817,
+  "n_secondary_groups": 23819,
+  "nce": 23.0,
+  "wall_s": 19.299858371261507
+ },
+ "E20212002382a": {
+  "species": "human",
+  "accession": "PXD037401",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 56128,
+  "n_psms": 307092,
+  "n_secondary_groups": 58143,
+  "nce": 29.0,
+  "wall_s": 22.0837917807512
+ },
+ "210521-MClass-21_0844-14-BAZ": {
+  "species": "mouse",
+  "accession": "PXD059835",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 81552,
+  "n_psms": 164202,
+  "n_secondary_groups": 40471,
+  "nce": 26.0,
+  "wall_s": 8.530773028265685
+ },
+ "MN-WT1-Frac8": {
+  "excluded": "not OT-HCD (FTMS+HCD fraction of MS2 = 0.00)"
+ },
+ "20151103_Qep8_MiWi_SA_074350_FR2_50": {
+  "species": "mouse",
+  "accession": "PXD006752",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 87599,
+  "n_psms": 196248,
+  "n_secondary_groups": 47756,
+  "nce": 26.0,
+  "wall_s": 27.39976703422144
+ },
+ "QEHF_20180116_LSantambrogio_S12_1": {
+  "species": "mouse",
+  "accession": "PXD015865",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 49552,
+  "n_psms": 193983,
+  "n_secondary_groups": 36655,
+  "nce": 29.0,
+  "wall_s": 20.939880921971053
+ },
+ "F1_TA": {
+  "species": "mouse",
+  "accession": "PXD035034",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 60022,
+  "n_psms": 268649,
+  "n_secondary_groups": 59486,
+  "nce": 29.0,
+  "wall_s": 27.34230264602229
+ },
+ "XS_Shura_High_pH_Frac12_api05_4": {
+  "species": "ecoli",
+  "accession": "PXD019012",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 62274,
+  "n_psms": 144267,
+  "n_secondary_groups": 60741,
+  "nce": 32.0,
+  "wall_s": 7.370681561063975
+ },
+ "005_ECOLI72_F20": {
+  "species": "ecoli",
+  "accession": "PXD029006",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 33991,
+  "n_psms": 66899,
+  "n_secondary_groups": 28107,
+  "nce": 26.0,
+  "wall_s": 6.655850109644234
+ },
+ "hm_5265_CB_072718_pt5ul_07": {
+  "species": "ecoli",
+  "accession": "PXD024782",
+  "fold": 0,
+  "ot_hcd": 1.0,
+  "n_spectra": 47524,
+  "n_psms": 128854,
+  "n_secondary_groups": 46823,
+  "nce": 29.0,
+  "wall_s": 20.706572650931776
+ },
+ "qExHF01_05548_Chymo_B3": {
+  "species": "ecoli",
+  "accession": "PXD007556",
+  "fold": 1,
+  "ot_hcd": 1.0,
+  "n_spectra": 16081,
+  "n_psms": 201,
+  "n_secondary_groups": 6174,
+  "nce": 35.0,
+  "wall_s": 9.369513042271137
+ },
+ "20210921_HF1_MaRa_SA_P0114B_3": {
+  "species": "ecoli",
+  "accession": "PXD039702",
+  "fold": 2,
+  "ot_hcd": 1.0,
+  "n_spectra": 39160,
+  "n_psms": 45610,
+  "n_secondary_groups": 15338,
+  "nce": 26.0,
+  "wall_s": 20.02861246978864
+ }
+}

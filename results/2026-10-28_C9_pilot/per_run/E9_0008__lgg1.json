@@ -1,0 +1,103 @@
+{
+ "project": "PXD026819",
+ "run": "E9_0008__lgg1",
+ "n_ms2": 65101,
+ "n_searched": 63717,
+ "n_rank1": 41912,
+ "n_certified": 3848,
+ "n_identified_peptides_run": 6002,
+ "search_full_gpu_wall_s": 0.19267836911603808,
+ "n_candidate_rows": 32567,
+ "removed_rows_homolog": 9984,
+ "removed_rows_ladder": 5478,
+ "kept_rows": 17105,
+ "spectra_with_any_candidate_before_removal": 3847,
+ "n_identified_peptides_project": 6002,
+ "host_thr_own_run": 31.680323000562545,
+ "host_thr_D0max": 33.874883688117755,
+ "A_cand": 3029,
+ "frac_certified_with_candidate": 0.7871621621621622,
+ "tail_proxy_own_thr": 8,
+ "tail_proxy_D0max_thr": 5,
+ "certified_single_ms1_feature": 1121,
+ "A_cand_single_ms1_feature": 852,
+ "tail_proxy_own_thr_single_ms1_feature": 3,
+ "ms1_mapped_fraction": 1.0,
+ "timing_wall_cpu_s": {
+  "load_store": [
+   0.52,
+   0.25
+  ],
+  "search_full": [
+   0.19,
+   0.19
+  ],
+  "certify": [
+   3.78,
+   3.78
+  ],
+  "search_null_exhaustive": [
+   0.07,
+   0.07
+  ],
+  "removal_homolog": [
+   1.97,
+   1.97
+  ],
+  "removal_ladder": [
+   0.3,
+   0.3
+  ]
+ },
+ "project_I_filter_wall_cpu_s": {
+  "build_I_filter": [
+   0.08,
+   0.08
+  ]
+ },
+ "diag_ladder_threshold": {
+  "0.15": {
+   "A_cand": 2788,
+   "tail_proxy_own_thr": 7
+  },
+  "0.1": {
+   "A_cand": 2452,
+   "tail_proxy_own_thr": 5
+  },
+  "0.05": {
+   "A_cand": 1675,
+   "tail_proxy_own_thr": 3
+  }
+ },
+ "diag_winner_f_hist_bins": [
+  0,
+  0.05,
+  0.1,
+  0.15,
+  0.2
+ ],
+ "diag_winner_f_hist_A_cand": [
+  641,
+  720,
+  745,
+  923
+ ],
+ "diag_winner_f_hist_tail": [
+  3,
+  2,
+  2,
+  1
+ ],
+ "diag_coisolation": {
+  "single_A_cand": 852,
+  "single_tail": 3,
+  "multi_A_cand": 2177,
+  "multi_tail": 5
+ },
+ "max_hs_A_cand_quantiles": {
+  "0.5": 23.13315856875838,
+  "0.9": 26.17316504302148,
+  "0.99": 29.562295801004566,
+  "0.999": 36.6144666925615
+ }
+}

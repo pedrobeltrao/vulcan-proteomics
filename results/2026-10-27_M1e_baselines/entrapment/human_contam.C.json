@@ -1,0 +1,59 @@
+{
+ "arm": "C",
+ "estimator": "combined",
+ "target_fasta": "data/cache/M1e/entrapment/inputs/human_contam.fasta",
+ "target_fasta_sha256": "2b644426120213f1adde66f87e9dbafae624d4681a7da7bc71563906988b7234",
+ "foreign_fastas": [
+  "data/fasta/arath_UP000006548.fasta"
+ ],
+ "foreign_fasta_sha256": [
+  "63edb51070a0f51cfce737f0ea84b186f2b511a5b7820a694139a04b30607464"
+ ],
+ "n_foreign_peptides_raw": 2547591,
+ "removed": {
+  "IL_identical_to_target": 4533,
+  "isobaric_NGG_QAG": 441,
+  "single_substitution_neighbour": 67175,
+  "equal_to_target_decoy": 408,
+  "equal_to_shuffled_target_decoy_1001_1005": 1807,
+  "shuffled_decoy_collides_with_target_or_foreign": 4782
+ },
+ "r": 1.0224900512720814,
+ "n_target_eff": 2345526,
+ "n_entrapment_eff": 2398277,
+ "decile_mass_edges_da": [
+  988.5553098163,
+  1202.7287979163002,
+  1435.6663423963003,
+  1689.8474691563001,
+  1978.0011691963002,
+  2308.0218815662997,
+  2702.5193294062997,
+  3195.8091803363,
+  3864.1937291563
+ ],
+ "r_per_mass_decile": [
+  0.7738208421977122,
+  1.0225237900337665,
+  1.0614658520675497,
+  1.058728981206726,
+  1.066769557413463,
+  1.0576503291381016,
+  1.0690124151574065,
+  1.0625786069672953,
+  1.0404642021206294,
+  1.0118864393122238
+ ],
+ "n_target_nonstandard_dropped": 151,
+ "name": "human_contam.C",
+ "n_target": 2417893,
+ "n_entrapment": 2468445,
+ "n_decoy": 4886297,
+ "n_decoy_replaced_by_shuffle": 2459,
+ "n_forward_without_decoy": 41,
+ "decoy_recipe": "pseudo-reverse C-term fixed; collisions/palindromes -> hash(peptide,1001) shuffle",
+ "fasta": "data/cache/M1e/entrapment/db/human_contam.C.fasta",
+ "fasta_sha256": "e281590eb83c4a07f32499ed89a961860ff2450ae38574ce865376b049623592",
+ "peptides_tsv": "data/cache/M1e/entrapment/db/human_contam.C.peptides.tsv",
+ "peptides_tsv_sha256": "479646a66ed91633d694f2489e88141d6b6706a65d7a0ccd8284dfa96c05691e"
+}

@@ -1,0 +1,1375 @@
+{
+ "cohort": "$VULCAN_SCRATCH/vulcan_e11/out/chim_gpu",
+ "reference_cohort": "$VULCAN_SCRATCH/vulcan_e7b/out/base12",
+ "runs": {
+  "E9_0000__H0799BL": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0000__H0799BL_r01": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r02": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r03": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r04": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r05": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r06": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0000__H0799BL_r07": {
+   "base": "E9_0000__H0799BL",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r01": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r02": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r03": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r04": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r05": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r06": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm_r07": {
+   "base": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0002__MGP2_r01": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r02": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r03": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r04": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r05": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r06": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0002__MGP2_r07": {
+   "base": "E9_0002__MGP2",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r01": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r02": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r03": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r04": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r05": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r06": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1_r07": {
+   "base": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r01": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r02": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r03": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r04": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r05": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r06": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3_r07": {
+   "base": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r01": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r02": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r03": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r04": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r05": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r06": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r_r07": {
+   "base": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r01": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r02": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r03": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r04": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r05": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r06": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1_r07": {
+   "base": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r01": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r02": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r03": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r04": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r05": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r06": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B_r07": {
+   "base": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0008__lgg1_r01": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r02": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r03": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r04": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r05": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r06": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0008__lgg1_r07": {
+   "base": "E9_0008__lgg1",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r01": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r02": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r03": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r04": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r05": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r06": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b_r07": {
+   "base": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r01": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r02": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r03": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r04": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r05": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r06": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212_r07": {
+   "base": "b1906_293T_proteinID_01A_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [],
+   ".hypotheses.arrow": [],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r01": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r02": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r03": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r04": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r05": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r06": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212_r07": {
+   "base": "b1937_293T_proteinID_01B_QE3_122212",
+   ".features.arrow": [
+    "run_id"
+   ],
+   ".hypotheses.arrow": [
+    "spectrum_id",
+    "<schema metadata>"
+   ],
+   ".chim.psms.parquet": [],
+   ".peptides.parquet": [],
+   ".proteins.parquet": [],
+   "ok": false,
+   "identity_only": true
+  }
+ },
+ "n_runs": 96,
+ "n_bases": 12,
+ "all_ok": false,
+ "n_base_named_runs_bitwise_equal": 12,
+ "n_copies_identity_only": 84,
+ "all_ok_up_to_run_identity": true,
+ "differing_columns_any_run": {
+  ".features.arrow": [
+   "run_id"
+  ],
+  ".hypotheses.arrow": [
+   "<schema metadata>",
+   "spectrum_id"
+  ]
+ }
+}

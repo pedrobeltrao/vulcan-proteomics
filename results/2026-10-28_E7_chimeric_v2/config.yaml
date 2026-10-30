@@ -1,0 +1,100 @@
+# E7 chimeric search + scorer v2 (dev only).  PRE-REGISTERED 2026-10-27 22:00, before any chimeric search, any v2
+# training and any dev evaluation.  Changing anything below after results exist requires a dated note in NOTES.md.
+experiment: E7 (DESIGN §10) + new scorer version v2 (frozen static_gbm_pred v1 untouched, DESIGN §6.0 A1.1)
+data:
+  dev: [D0, D1]                  # selection set (A1.1)
+  confirmation: D8h              # D8 holdout = first 10 human runs of data/manifests/e9_d8.tsv (A1.1)
+  sealed: none
+  dn2: not used                  # A2 DN2 data are not read
+chimeric_search:
+  hypotheses_source: vulcan.ms1 hypothesis table (features v0.2, hypotheses v1.0; default FeatureParams /
+    HypothesisParams; no calibration)
+  primary_group: the closed search, unchanged (instrument precursor m/z + charge, isotope errors 0..2) -> chimeric rank 1
+  secondary_groups: every ms1_feature group with instrument_agrees == false (charge 2-6, MS1 chimeric_rank <= 5,
+    isolation_fraction >= 0.01: the table defaults); precursor = feature mono m/z (uncalibrated), feature charge
+  secondary_isotope_errors: [0, 1]
+  secondary_rank: 1 + order of the secondary groups by MS1 chimeric_rank (label-free) -> 2, 3, ...
+  candidate_lists: each (spectrum, precursor group) is its own K1 query unit with its own top-K (K=500) + pair
+    closure + K2 ranking (implemented as a virtual spectrum carrying the same peaks); kernels unchanged
+  report_psms_per_group: 5
+  closed_mode_bit_identical_when_off: required (tests/gpu/test_chimeric.py)
+competition:
+  stage1: per (run, spectrum, precursor group): best PSM by the scorer (hash tie-break, seed 11)
+  neighbour_filter: CONGA (DESIGN §4 L4): within a spectrum, in descending score order over the group winners, drop a
+    winner whose peptide shares > 5% (of min(|A|,|B|)) of its b/y ions with a higher-scoring kept winner.
+    Ion set = singly charged b and y ions with ion index >= 3 (b1,b2,y1,y2 excluded: the K1 fragment-index
+    convention min_ion_index = 2; y1/y2 are shared by construction between tryptic peptides with the same C-term),
+    binned at 0.02 Da, static C+57.021, variable M+15.995 as in the peptidoform.
+  stage2_3: paired double competition (peptidoform units, pair = tdc_pair, hash tie-break 11)
+  strata: chimeric rank of the pair winner, pooled as {1, 2, >=3} (pre-registered §4 L4), merged by
+    groupwalk.merge_adjacent over label-blind pair counts (min 200, order 1,2,3)
+  q: Group-walk (K = 40, seed 11) over the strata = primary; pooled TDC reported alongside
+arms_and_methods:
+  vulcan: closed + frozen static_gbm_pred (v1) [T1 driver, unchanged]
+  vulcan_chim_v1: chimeric search + frozen v1 model (isolates the chimeric search; E7 gain)
+  vulcan_v2: chimeric search + v2 model (the new scorer version)
+  comparators: sage, sage+mokapot, sage+pred+mokapot (strongest, A1.9), comet+mokapot (T1 driver outputs, unchanged)
+e7_gain:
+  metric: peptidoforms (run-level, summed over runs, mean over 5 decoy seeds) at matched arm-P FDP 1% and 5% and at own
+    q 1%; ratio vulcan_chim_v1 / vulcan with run x decoy-shuffle bootstrap CI (T1 driver estimator, unchanged)
+  by_rank: accepted IDs by stratum of the pair winner at the matched threshold; per-stratum arm P and arm C FDP
+    estimates and §6.3 verdicts (counts restricted to the stratum; the paired target's score/acceptance from the full
+    list), convention (a) deciding
+  decision (E7, DESIGN §10): chimeric search stays default for v2 iff the matched-FDP-1% ratio lower CI > 1.0 on D0
+    AND no stratum has a "violated" verdict at 1% on D0 or D1
+v2_features:
+  v1: BASE_FEATURES + PRED_FEATURES (31; vulcan/rescore/static.py)
+  added_label_blind:
+    - pred_sa_b, pred_sa_y, pred_pearson_b, pred_pearson_y   # per-ion-series predicted-vs-observed (MS2Rescore-style)
+    - cleave_cov, longest_by_frac                            # backbone cleavages covered by any b/y (z1 or z2)
+    - prec_ppm_resid, prec_ppm_resid_z                       # signed precursor ppm minus per-run label-blind
+                                                             # calibration curve (binned median vs m/z, top-decile
+                                                             # hyperscore rank-1 PSMs of both labels)
+    - ms1_has_feature, ms1_iso_cos, ms1_trace_cos, ms1_n_iso, ms1_log_int_runz, ms1_isolation_fraction,
+      ms1_rt_offset_rel                                      # MS1 feature quality of the PSM's precursor
+    - chim_rank, n_groups, n_features_in_window              # chimeric context (label-free)
+    - z_inst_agree                                           # charge-state consistency with the instrument charge
+  excluded: rt_pred (sequence-only; G1 risk as in v1), any cross-spectrum aggregation (sibling counts)
+training:
+  runs: data/manifests/train.tsv (M3, 13 runs / 13 projects) + every row of data/manifests/train_m7.tsv with
+    source == m7_new whose RAW is complete (size == expected_size) at the training-data freeze; OT-HCD fraction >= 0.95
+    (as M3); the frozen list + fold map are committed as results/2026-10-28_E7_chimeric_v2/train_v2_folds.tsv
+  folds: M3 projects keep their M3 fold (0-2); new projects round-robin over 0-2 in train_m7.tsv order
+  labels: as M3 (rank-1 per query unit, PSM-level TDC q <= 1% positives; negatives = rank-1 decoys + rank>=2 candidates
+    of positive units; 3 iterations from hyperscore), query unit = (spectrum, precursor group), chimeric search
+  candidates: {linear, gbm} x {v1 feature set, v2 feature set}; grids linear C in {0.01, 0.1, 1}, gbm max_iter in
+    {50, 150, 300} (other gbm settings as M3)
+  model_choice_rule: leave-one-fold-out over project folds; metric = sum over held-out runs of target peptidoforms at
+    q <= 1% after the full pipeline (stage 1 + neighbour filter + double competition, pooled TDC, per run).  Pick the
+    highest; if another candidate is within 0.5% of the best, prefer the v1 feature set, then linear (simpler).
+    The chosen candidate is refit on all folds and frozen as models/static_v2.pkl (sha256 recorded) BEFORE any dev
+    evaluation of v2.
+evaluation:
+  t1_driver: bench/t1_driver.py --dataset D0|D1|D8h (25 replicate DBs; §1 ratio CIs; §6.3 verdicts, conventions a/b)
+  ours_for_ratios: vulcan_v2 (driver --ours); every comparator incl. vulcan v1 and sage+pred+mokapot
+  d8h: methods vulcan, vulcan_v2, sage+pred+mokapot (D8 = confirmation; D0/D1 are a selection set)
+gates_v2:
+  G0: label swap (D1 + E2001 vs the E2 swapped index): chimeric PSM tables, v2 features, v2 scores bit-identical
+  G2_original: M3 G2 mixture design (D0 runs + 2 offset copies + Pfu/yeast species nulls, M3 homolog filter), v2
+    pipeline (chimeric search; offset copies shift EVERY precursor group by the copy's mass offset so secondary
+    hypotheses are non-physical too) vs hyperscore on the same null competitions; vulcan.stats.g2 unchanged
+  G5: leak AUC of the v2 score, null target vs decoy winners <= 0.55
+  pending: tail-G2, G1, G3 (A2 DN2 nulls not yet available; DN2 data not used)
+seeds: {general: 11, decoy: [1001, 1002, 1003, 1004, 1005], entrap_dev: [2001, 2002, 2003]}
+# ---------------------------------------------------------------------------------------------------------------------
+# AMENDMENT E7-A1 (dated 2026-10-27 22:40, AFTER the D0/D1 vulcan_chim_v1 stratum results were seen; BEFORE any v2
+# model exists, before any v2 dev result and before ANY chimeric result on D8h).  Nothing above is changed.
+amendment_E7_A1:
+  recorded_outcome_of_the_preregistered_rule: >-
+    vulcan_chim_v1 (Group-walk q over strata) on D0: matched-FDP-1% ratio vs closed v1 = 1.208 [1.206, 1.211] (LB > 1),
+    but stratum >=3 is "violated" at 1% (arm P mean 3.09%, LB CI [1.23%, 1.94%] > 1%).  Per the pre-registered E7
+    rule, chimeric search with Group-walk q does NOT become the default.  Final for that configuration.
+  added_variant: >-
+    "sep" competition: identical pipeline (group winners, neighbour filter, double competition, same strata and merge
+    rule), but q = plain TDC computed SEPARATELY within each merged chimeric-rank stratum, so every stratum list is
+    controlled at alpha (and the union too).  Methods vulcan_chim_v1_sep and vulcan_v2_sep.  Chosen after seeing D0/D1,
+    so D0/D1 numbers for "sep" are TUNED; D8h is the confirmation.
+  decision_for_sep: >-
+    sep becomes the v2 default iff (D0) matched-FDP-1% ratio vs closed v1 has LB > 1 and no stratum is "violated" at
+    1% on D0 or D1, AND (D8h confirmation) no stratum and no overall verdict is "violated" at 1%.
+  reporting: v2 is reported with both competitions; the variant that passes its rule is the one quoted vs comparators.

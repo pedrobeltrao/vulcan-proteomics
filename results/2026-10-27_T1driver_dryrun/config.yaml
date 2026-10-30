@@ -1,0 +1,26 @@
+# 3f T1 driver dry run (dev data only: D0 = PXD001468 2 HEK runs, D1 = PXD001077 1 Pfu run). No sealed file was read.
+driver: bench/t1_driver.py (modules bench/t1/{dbs,ours,comparators,evaluate,report,mokapot_seeded}.py)
+commands:
+  D1: python3 bench/t1_driver.py --dataset D1 --rt-off-control --mzml-cache /tmp/vulcan_m1e/mzml --out results/2026-10-27_T1driver_dryrun/D1
+  D0: python3 bench/t1_driver.py --dataset D0 --rt-off-control --mzml-cache /tmp/vulcan_m1e/mzml --out results/2026-10-27_T1driver_dryrun/D0
+  T1 (NOT executed): python3 bench/sealed_run.py --dataset T1 --verify --purpose "<see NOTES>" -- python3 bench/t1_driver.py --dataset T1 --rt-off-control
+seeds:
+  decoy: [1001, 1002, 1003, 1004, 1005]          # DESIGN 6.1 DECOY_SEEDS, C-term-fixed hash shuffles
+  entrapment_dev: [2001, 2002, 2003]             # dev; T1 uses 2004-2006 (enforced by the driver)
+  bootstrap: 11                                   # 2000 draws (entrapment CIs and ratio CIs)
+replicate_dbs: {production: 5, arm_P: 15, arm_C: 5}  # one multi-replicate index; identical peptide FASTAs for every method
+search_space: {enzyme: trypsin KR/P, missed: 2, length: 7-50, mass_da: 500-5000, fixed: C+57.021464, variable: M+15.9949 (<=2),
+               precursor_ppm: 10, fragment_ppm: 20, charges_if_unknown: 2-4, isotope_errors: 0-2}
+ours: {pipeline: vulcan.cohort + vulcan.gpu.engine (report_psms 5) + vulcan.rescore.features + static_gbm_pred.pkl,
+       model_sha256_prefix: 31bfe685, estimator: paired double competition, peptidoform units, hash tie-break 11}
+comparators:
+  sage: {version: 0.14.7, predict_rt: true, report_psms: 1, chimera: false, input: TRFP 2.0 mzML}
+  sage+mokapot: {mokapot: 0.10.0 via bench/t1/mokapot_seeded.py, seed: 11, max_workers: 1, pin_rows: canonical order}
+  sage+pred+mokapot: {features: [pred_sa, pred_sa_sqrt, pred_pearson, pred_entropy, pred_frac_obs, pred_top6, pred_obs_tic,
+                                 rt_abs_resid, rt_resid_z], predictor: AlphaPeptDeep generic (same cache/model as ours)}
+  comet+mokapot: {comet: 2026.01, spectrum_batch_size: 0, threads: 4 per job, mokapot: --aggregate}
+levels: [peptidoform, sequence, protein]
+alphas: [0.001, 0.005, 0.01, 0.05]
+matched_fdp: [0.01, 0.05]   # arm-P FDP estimate, first crossing on a 160-point log grid of each method's own q
+noninferiority_margin: 0.97
+ci_convention_deciding: a    # A1.6, chosen by results/2026-10-27_M3e_hardening/ci_convention_sim.json; (b) reported

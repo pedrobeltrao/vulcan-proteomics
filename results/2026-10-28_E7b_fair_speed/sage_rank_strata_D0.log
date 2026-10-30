@@ -1,0 +1,4 @@
+sage_chim2 {"rank_1": {"0.01": [0.0103, "inconclusive", 23535], "0.05": [0.0435, "supported", 24985]}, "rank_ge2": {"0.01": [0.0434, "not-evaluable", 409], "0.05": [0.3476, "violated", 810]}}
+sage_chim2+pred+mokapot {"rank_1": {"0.01": [0.0077, "supported", 24406], "0.05": [0.03, "supported", 25070]}, "rank_ge2": {"0.01": [0.083, "not-evaluable", 887], "0.05": [0.4013, "violated", 1444]}}
+sage_chim5 {"rank_1": {"0.01": [0.0097, "supported", 23369], "0.05": [0.0404, "supported", 24789]}, "rank_ge2": {"0.01": [0.053, "not-evaluable", 453], "0.05": [0.3777, "violated", 963]}}
+sage_chim5+pred+mokapot {"rank_1": {"0.01": [0.007, "supported", 24336], "0.05": [0.0239, "supported", 24869]}, "rank_ge2": {"0.01": [0.0942, "not-evaluable", 1122], "0.05": [0.3844, "violated", 1925]}}

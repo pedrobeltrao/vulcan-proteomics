@@ -1,0 +1,59 @@
+{
+ "strict_10ppm": {
+  "n_ours": 587833,
+  "n_biosaur2": 370943,
+  "recall": 0.849106196908959,
+  "precision": 0.6347925346144228,
+  "recall_by_biosaur2_intensity_quartile": {
+   "Q1(low)": 0.822851966873706,
+   "Q2": 0.8346165458937198,
+   "Q3": 0.8479754138135548,
+   "Q4(high)": 0.8909808488612836
+  },
+  "precision_by_our_intensity_quartile": {
+   "Q1(low)": 0.6634979824304738,
+   "Q2": 0.6623457042148096,
+   "Q3": 0.5902366662583868,
+   "Q4(high)": 0.6230895902230569
+  },
+  "recall_biosaur2_nIsotopes>=3": 0.9318715225918692,
+  "precision_ours_nIsotopes>=3": 0.7129809406823315,
+  "unmatched_biosaur2_matched_with_mono_shift": {
+   "-1": 6099,
+   "+1": 12176
+  },
+  "mass_diff_ppm": {
+   "median": 0.0003345200670994022,
+   "mad_sd": 0.08809841203634462,
+   "p95_abs": 0.8929141466185334
+  },
+  "rt_apex_diff_min": {
+   "median": 1.593017628920279e-08,
+   "mad_sd": 4.886951470298584e-06,
+   "p95_abs": 0.10574643577880348
+  },
+  "log10_mono_apex_intensity_pearson": 0.9915044710360346,
+  "params": {
+   "ppm": 10.0,
+   "rt_apex_tol_min": 0.5,
+   "matching": "any-match, same charge, RT overlap"
+  }
+ },
+ "ours_nIso>=3_vs_biosaur2_nIso>=3": {
+  "n_ours": 100948,
+  "n_biosaur2": 60929,
+  "recall": 0.832592033350293,
+  "precision": 0.5638645639339066
+ },
+ "id_support": {
+  "n_psms": 22584,
+  "ours": {
+   "frac_psm_on_feature_mono": 0.8679596174282678,
+   "frac_psm_on_feature_isotope_shifted_only": 0.07956960680127524
+  },
+  "biosaur2": {
+   "frac_psm_on_feature_mono": 0.8592366277010273,
+   "frac_psm_on_feature_isotope_shifted_only": 0.078064116188452
+  }
+ }
+}

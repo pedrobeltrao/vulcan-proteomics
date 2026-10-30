@@ -1,0 +1,115 @@
+status	kind	id	set	role	path	size	expected_size	sha	note
+OK	raw	S0	D0	dev	raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw	3470679015	3470679015	cached	
+OK	raw	S0	D0	dev	raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw	3368964863	3368964863	cached	
+OK	meta	S0-meta	D0	dev	raw/PXD001468/PXD001468_community_annotated.sdrf.tsv	26349	26349	cached	
+OK	raw	S1	D1	dev	raw/PXD001077/Velos005137.raw	334619250	334619250	cached	
+OK	raw	S2	D2	dev	raw/PXD007058/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.raw	202338736	202338736	cached	
+OK	truth	S2-truth	D2	dev	truth/PXD007058/pool1_HCDOT_rep1_txt.zip	2269526	2269526	cached	
+OK	raw	S2	D2	dev	raw/PXD007058/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.raw	218563894	218563894	cached	
+OK	truth	S2-truth	D2	dev	truth/PXD007058/pool2_HCDOT_rep1_txt.zip	2263646	2263646	cached	
+OK	raw	S2	D2	dev	raw/PXD007058/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.raw	218366958	218366958	cached	
+OK	truth	S2-truth	D2	dev	truth/PXD007058/pool3_HCDOT_rep1_txt.zip	2574824	2574824	cached	
+OK	raw	S2	D2	dev	raw/PXD007058/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.raw	210734906	210734906	cached	
+OK	truth	S2-truth	D2	dev	truth/PXD007058/pool4_HCDOTrep1_txt.zip	2384791	2384791	cached	
+OK	raw	S3	D3	dev	raw/PXD014337/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw	960697429	960697429	cached	
+OK	truth	S3-truth	D3	dev	truth/PXD014337/PXD014337_community_annotated.sdrf.tsv	9733	9733	cached	
+OK	truth	S3-truth	D3	dev	truth/IMP-X-FDR@92b2e29/peplib_Cas9_Beveridge.xlsx	10662	10662	cached	
+OK	truth	S4-truth	T3	sealed	truth/sealed/PXD029252/20210203_QExHFX3_RSLC10__DSSO_mainlib_1_5HEK_ctrl_KK_1FDR_linkandCSM_Xi1.7.6.5.mzid	17093244	17093244	cached	
+OK	truth	S4-truth	T3	sealed	truth/sealed/PXD029252/Ribosome_EColi_SG_AND_human_abundant500excl-ribosomal_671sequences.fasta	315573	315573	cached	
+OK	truth	S4-truth	T3	sealed	truth/sealed/PXD029252/Ribosome_for_XL_all_contained_Proteins_from_shotgun_comb_rever.fasta	144532	144532	cached	
+OK	truth	S4-truth	T3	sealed	truth/sealed/PXD029252/PXD029252_community_annotated.sdrf.tsv	29546	29546	cached	
+OK	truth	S4-truth	T3	sealed	truth/sealed/IMP-X-FDR@92b2e29/main_library.xlsx	14228	14228	cached	
+OK	raw	S5	D5	dev	raw/ProteoBench-DIA-plasma/A9_G_DIA_nLC_tTOF_R1.d.zip	1112972541	1112972541	cached	
+OK	raw	S5	D5	dev	raw/ProteoBench-DIA-plasma/A9_G_DIA_nLC_tTOF_R2.d.zip	1148906243	1148906243	cached	
+OK	raw	S5	D5	dev	raw/ProteoBench-DIA-plasma/B9_G_DIA_nLC_tTOF_R1.d.zip	1138659226	1138659226	cached	
+OK	raw	S5	D5	dev	raw/ProteoBench-DIA-plasma/B9_G_DIA_nLC_tTOF_R2.d.zip	963587638	963587638	cached	
+OK	truth	S5-truth	D5	dev	truth/ProteoBench-DIA-plasma/ProteoBenchFASTA_Distler_PYE.zip	10362559	10362559	cached	
+OK	raw	S6	D6	dev	raw/PXD059608/B20240606lyumg_thyroid_complex_FTC238_NO2_30minDIA_55.raw	207201600	207201600	cached	
+OK	raw	S6	D6	dev	raw/PXD059608/B20240606lyumg_thyroid_complex_FTC238_NO2_30minDIA_56.raw	226705766	226705766	cached	
+OK	raw	S6	D6	dev	raw/PXD059608/B20240606lyumg_thyroid_complex_FTC238_NO2_30minDIA_57.raw	235499737	235499737	cached	
+OK	raw	S6	D6	dev	raw/PXD059608/B20240606lyumg_thyroid_complex_FTC238_NO2_30minDIA_58.raw	185638012	185638012	cached	
+OK	raw	S6	D6	dev	raw/PXD059608/B20240606lyumg_thyroid_complex_FTC238_NO2_30minDIA_59.raw	208162800	208162800	cached	
+OK	meta	S6-meta	D6	dev	raw/PXD059608/PXD059608_community_annotated.sdrf.tsv	352269	352269	cached	
+OK	raw	D2	D2	dev	raw/PXD000138/58.raw	417126672	417126672	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD000138/phosphoRS_HCD_58.csv	2603544	2603544	cached	
+OK	raw	D2	D2	dev	raw/PXD000138/72.raw	495419780	495419780	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD000138/phosphoRS_HCD_72.csv	1942739	1942739	cached	
+OK	raw	D2	D2	dev	raw/PXD000138/60.raw	460032922	460032922	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD000138/phosphoRS_HCD_60.csv	2982489	2982489	cached	
+OK	raw	D2	D2	dev	raw/PXD000138/66.raw	495419462	495419462	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD000138/phosphoRS_HCD_66.csv	1292099	1292099	cached	
+OK	raw	D2	D2	dev	raw/PXD009449/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.raw	636373246	636373246	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD009449/Ymod_Phospho_evidence.txt	4361072	4361072	cached	
+OK	raw	D2	D2	dev	raw/PXD009449/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.raw	552477520	552477520	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD009449/Kmod_Dimethyl_evidence.txt	2539947	2539947	cached	
+OK	raw	D2	D2	dev	raw/PXD009449/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.raw	518683564	518683564	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD009449/Rmod_Citrullin_evidence.txt	2144902	2144902	cached	
+OK	raw	D2	D2	dev	raw/PXD009449/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.raw	521663368	521663368	cached	
+OK	truth	D2-truth	D2	dev	truth/PXD009449/Kmod_Formyl_evidence.txt	2721971	2721971	cached	
+OK	raw	D3b	D3b	dev	raw/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw	1425918096	1425918096	cached	
+OK	truth	D3b-truth	D3b	dev	truth/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2_KK_1FDR_linkandCSM_Xi1.7.6.5.mzid	40876971	40876971	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00095_11cell_90min_sps_A1.raw	209342012	209342012	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00096_11cell_90min_sps_A3.raw	203822033	203822033	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00097_11cell_90min_sps_A5.raw	221882856	221882856	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00098_11cell_90min_sps_A7.raw	234723755	234723755	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00099_11cell_90min_sps_A9.raw	235081101	235081101	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00100_11cell_90min_sps_A11.raw	231970426	231970426	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00101_11cell_90min_sps_B1.raw	229691147	229691147	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00102_11cell_90min_sps_B3.raw	209226080	209226080	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00103_11cell_90min_sps_B5.raw	209090667	209090667	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00104_11cell_90min_sps_B7.raw	208561029	208561029	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00105_11cell_90min_sps_B9.raw	215470314	215470314	cached	
+OK	raw	D4	D4	dev	raw/PXD016766/dq_00106_11cell_90min_sps_B11.raw	232375511	232375511	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2481_DDA.raw	1365148534	1365148534	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2486_DDA.raw	1279637792	1279637792	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2492_DDA.raw	1348489012	1348489012	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2490_DDA.raw	1270724976	1270724976	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2480_DDA.raw	1477148524	1477148524	cached	
+OK	raw	D7	D7	dev	raw/PXD031616/LM2487_DDA.raw	1355740750	1355740750	cached	
+OK	truth	D7-truth	D7	dev	truth/PXD031616/PXD031616_community_annotated.sdrf.tsv	24007	24007	cached	
+OK	sealed_raw	T5	T5	sealed	sealed/PXD052597/HFX_19152_EL_298-1_DDA_191223.raw	1532412808	1532412808	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T5	T5	sealed	sealed/PXD052597/HFX_19152_EL_298-2_DDA_191223.raw	1558908720	1558908720	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T5-truth	T5	sealed	truth/sealed/PXD052597/PXD052597_community_annotated.sdrf.tsv	44522	44522	cached	
+OK	truth	T5-truth	T5	sealed	truth/sealed/PXD052597/Sample_info.xlsx	10035	10035	cached	
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_A_Sample_Alpha_01.raw	3459277876	3459277876	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_A_Sample_Alpha_02.raw	3612100302	3612100302	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_A_Sample_Alpha_03.raw	3701529661	3701529661	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_B_Sample_Alpha_01.raw	3501153502	3501153502	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_B_Sample_Alpha_02.raw	3904127239	3904127239	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	sealed_raw	T1	T1	sealed	sealed/ProteoBench-DDA-QExactive/LFQ_Orbitrap_DDA_Condition_B_Sample_Alpha_03.raw	3693116392	3693116392	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T1-truth	T1	sealed	truth/sealed/ProteoBench-DDA-QExactive/ProteoBenchFASTA_MixedSpecies_HYE.zip	9455814	9455814	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD000138/76.raw	483033470	483033470	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD000138/phosphoRS_HCD_76.csv	1777575	1777575	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD000138/25.raw	436181432	436181432	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD000138/phosphoRS_HCD_25.csv	4052856	4052856	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD000138/24.raw	439844190	439844190	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD000138/phosphoRS_HCD_24.csv	3563875	3563875	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD000138/61.raw	439875376	439875376	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD000138/phosphoRS_HCD_61.csv	571721	571721	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD009449/02330a_GG1_3990_07_PTM_TrainKit_Kmod_Acetyl_200fmol_3xHCD_R1.raw	540363056	540363056	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD009449/Kmod_Acetyl_evidence.txt	2125271	2125271	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD009449/02330a_GF2_3991_03_PTM_TrainKit_Kmod_Succinyl_200fmol_3xHCD_R1.raw	536698096	536698096	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD009449/Kmod_Succinyl_evidence.txt	2728832	2728832	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD009449/02330a_GD3_3991_09_PTM_TrainKit_Kmod_Ubiquitinyl_200fmol_3xHCD_R1.raw	571151246	571151246	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD009449/Kmod_Ubiquitinyl_evidence.txt	2711513	2711513	cached	
+OK	sealed_raw	T2	T2	sealed	sealed/PXD009449/02330a_GA3_3991_06_PTM_TrainKit_Kmod_Crotonyl_200fmol_3xHCD_R1.raw	545493856	545493856	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD009449/Kmod_Crotonyl_evidence.txt	2487737	2487737	cached	
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD000138/009606_IPI_v3_72_with_P_Lib_062111.fasta	50734628	50734628	cached	
+OK	truth	T2-truth	T2	sealed	truth/sealed/PXD009449/sequences.fasta	9867	9867	cached	
+OK	sealed_raw	T3	T3	sealed	sealed/PXD029252/20210203_QExHFX3_RSLC10__DSSO_mainlib_1_5HEK_ctrl.raw	1350506891	1350506891	sealed-stat-only	sha in sealed.sha256 not re-verified (stat only)
+OK	truth	derived	D2/T2	dev	truth/PXD000138/pool_E10.fasta	14694		verified	
+OK	truth	derived	D2/T2	dev	truth/PXD000138/pool_E12.fasta	15914		verified	
+OK	truth	derived	D2/T2	dev	truth/PXD000138/pool_F12.fasta	19574		verified	
+OK	truth	derived	D2/T2	dev	truth/PXD000138/pool_F6.fasta	18352		verified	
+OK	truth	derived	D2/T2	sealed	truth/sealed/PXD000138/pool_B12.fasta	22014		verified	
+OK	truth	derived	D2/T2	sealed	truth/sealed/PXD000138/pool_C1.fasta	22012		verified	
+OK	truth	derived	D2/T2	sealed	truth/sealed/PXD000138/pool_F1.fasta	845		verified	
+OK	truth	derived	D2/T2	sealed	truth/sealed/PXD000138/pool_G4.fasta	22012		verified	
+OK	fasta	human_sp_canonical	-	ref	fasta/human_sp_canonical.fasta	13666795	13666795	cached	
+OK	fasta	human_proteome_canonical	-	ref	fasta/human_proteome_canonical.fasta	86650690	86650690	cached	
+OK	fasta	human_opg	-	ref	fasta/human_opg.fasta	13735313	13735313	cached	
+OK	fasta	pfu_UP000001013	-	ref	fasta/pfu_UP000001013.fasta	910677	910677	cached	
+OK	fasta	ecoli_K12_UP000000625	-	ref	fasta/ecoli_K12_UP000000625.fasta	1891178	1891178	cached	
+OK	fasta	yeast_UP000002311	-	ref	fasta/yeast_UP000002311.fasta	3855343	3855343	cached	
+OK	fasta	arath_UP000006548	-	ref	fasta/arath_UP000006548.fasta	21435495	21435495	cached	
+OK	fasta	contaminants_frankenfield2022	-	ref	fasta/contaminants_frankenfield2022.fasta	201365	201365	cached	

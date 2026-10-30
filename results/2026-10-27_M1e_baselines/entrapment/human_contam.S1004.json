@@ -1,0 +1,16 @@
+{
+ "arm": "S",
+ "decoy_seed": 1004,
+ "name": "human_contam.S1004",
+ "n_target": 2417893,
+ "n_decoy": 2417852,
+ "n_forward_without_decoy": 41,
+ "n_redraws": 11757,
+ "target_fasta": "data/cache/M1e/entrapment/inputs/human_contam.fasta",
+ "target_fasta_sha256": "2b644426120213f1adde66f87e9dbafae624d4681a7da7bc71563906988b7234",
+ "decoy_recipe": "C-term-fixed hash(peptide,1004,k) shuffle, k re-drawn on collision",
+ "fasta": "data/cache/M1e/entrapment/db/human_contam.S1004.fasta",
+ "fasta_sha256": "0f52e1228b0f140e292a591b1d0d04d5dce42e9317ba3bff619650c6e2e50cf4",
+ "peptides_tsv": "data/cache/M1e/entrapment/db/human_contam.S1004.peptides.tsv",
+ "peptides_tsv_sha256": "c2a5ac629dc469a96f954737bcef93a9c412374134d46a638c08f2083e7cdf11"
+}

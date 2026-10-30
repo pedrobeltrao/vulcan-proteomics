@@ -1,0 +1,41 @@
+# E2: GPU closed search (K0 + K1 + K2) vs Sage 0.14.7 — dev data only (D0 PXD001468 x2 HEK, D1 PXD001077 Pfu)
+experiment: E2 (DESIGN.md v0.4 §10)
+node: see metrics.json:hw (vulcan.hw.fingerprint) — A100 80GB PCIe + 32 Zen4 cores (affinity)
+work_dir: /tmp/vulcan_e2   # rebuilt by scripts/m2/e2_prepare.py (idempotent)
+datasets:
+  D0: {accession: PXD001468, files: [b1906_293T_proteinID_01A_QE3_122212, b1937_293T_proteinID_01B_QE3_122212], fasta: human_sp_canonical + contaminants_frankenfield2022}
+  D1: {accession: PXD001077, files: [Velos005137], fasta: pfu_UP000001013 + contaminants_frankenfield2022}
+spectra: Arrow store (vulcan.io direct Thermo reader); Sage reads an MGF written from the same store (f32-exact text)
+index:   # vulcan.index.build (sage-core 99407db6 digestion + mod enumeration); Sage gets the same peptides as a no-cleavage FASTA
+  enzyme: {cleave_at: KR, restrict: P, missed_cleavages: 2, min_len: 7, max_len: 50}
+  static_mods: {C: 57.021464}
+  variable_mods: {M: 15.9949}
+  max_variable_mods: 2
+  peptide_mass: [500, 5000]
+  il_collapse: true
+  decoys: pseudo-reverse, C-term fixed; collision/palindrome -> hash(peptide, 1001, k) shuffle (scripts/entrapment/peptides.py recipe)
+  kinds:
+    prod: T + dec(T)                    # speed + ID comparison with Sage
+    E2001: T + E_2001 + dec(T) + dec(E) # paired shuffled entrapment r=1 (hash(target, 2001, k) C-term-fixed shuffle)
+  ids: xxhash64(canonical peptidoform string), rows sorted by (Sage f32 mass, id)
+search:   # vulcan.gpu.engine.SearchParams (Sage config written by vulcan.gpu.sage_bridge.sage_config)
+  precursor_ppm: [-10, 10]
+  fragment_ppm: [-20, 20]
+  isotope_errors: [0, 2]
+  precursor_charge: [2, 4]   # only when the instrument gives none
+  max_peaks: 150             # K0 'global' view = Sage's top-N
+  min_peaks: 15
+  fragment_mz: [150, 2000]
+  min_ion_index: 2
+  max_fragment_charge: 1
+  min_matched_peaks: 4
+  deisotope: false
+  chimera: false
+  topk: 500                  # Sage: 50 (also run as 'sage_equivalent_K50' in the oracle test)
+  k1_threshold: 1
+  pair_closure: true
+  k1_layout: {chunk_size: 8192, bin_ppm: 20, tile: 1024, posting: u32 (u16 local id | u16 fine log-ppm offset)}
+statistics:
+  ids: vulcan.stats.tdc.double_competition (paired, peptidoform units, hash tie-break seed 11), q <= 0.01, score = hyperscore
+  sage_reference: Sage's own peptide_q (LDA discriminant) — reference only
+timing: scripts/baselines/timed.py --lock (flock /tmp/vulcan_bench.lock), GNU time -v; ours also CUDA-event per phase

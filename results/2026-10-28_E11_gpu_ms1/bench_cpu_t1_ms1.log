@@ -1,0 +1,73 @@
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+D0 b1906_293T_proteinID_01A_QE3 0 {'ms1': 13.592, 'total': 13.592} 12.86
+D0 b1906_293T_proteinID_01A_QE3 1 {'ms1': 13.163, 'total': 13.163} 13.02
+D0 b1906_293T_proteinID_01A_QE3 2 {'ms1': 12.112, 'total': 12.112} 12.1
+D0 b1906_293T_proteinID_01A_QE3 3 {'ms1': 14.69, 'total': 14.69} 14.63
+D0 b1937_293T_proteinID_01B_QE3 0 {'ms1': 13.167, 'total': 13.167} 13.12
+D0 b1937_293T_proteinID_01B_QE3 1 {'ms1': 12.107, 'total': 12.107} 11.96
+D0 b1937_293T_proteinID_01B_QE3 2 {'ms1': 13.007, 'total': 13.007} 12.23
+D0 b1937_293T_proteinID_01B_QE3 3 {'ms1': 15.556, 'total': 15.556} 12.31
+D1 Velos005137 0 {'ms1': 1.343, 'total': 1.343} 1.32
+D1 Velos005137 1 {'ms1': 1.322, 'total': 1.322} 1.32
+D1 Velos005137 2 {'ms1': 1.317, 'total': 1.317} 1.32
+D1 Velos005137 3 {'ms1': 1.413, 'total': 1.413} 1.41
+D8h E9_0000__H0799BL 0 {'ms1': 24.392, 'total': 24.392} 24.31
+D8h E9_0000__H0799BL 1 {'ms1': 25.692, 'total': 25.692} 24.03
+D8h E9_0000__H0799BL 2 {'ms1': 23.867, 'total': 23.867} 23.71
+D8h E9_0000__H0799BL 3 {'ms1': 28.736, 'total': 28.736} 26.22
+D8h E9_0001__QE-B_2018-09_E02_Pr 0 {'ms1': 0.599, 'total': 0.599} 0.51
+D8h E9_0001__QE-B_2018-09_E02_Pr 1 {'ms1': 0.339, 'total': 0.339} 0.34
+D8h E9_0001__QE-B_2018-09_E02_Pr 2 {'ms1': 0.336, 'total': 0.336} 0.31
+D8h E9_0001__QE-B_2018-09_E02_Pr 3 {'ms1': 0.37, 'total': 0.37} 0.32
+D8h E9_0002__MGP2 0 {'ms1': 7.559, 'total': 7.559} 7.55
+D8h E9_0002__MGP2 1 {'ms1': 7.333, 'total': 7.333} 7.33
+D8h E9_0002__MGP2 2 {'ms1': 7.166, 'total': 7.166} 7.13
+D8h E9_0002__MGP2 3 {'ms1': 7.659, 'total': 7.659} 7.66
+D8h E9_0003__20180623_PC463-Grav 0 {'ms1': 5.954, 'total': 5.954} 5.95
+D8h E9_0003__20180623_PC463-Grav 1 {'ms1': 5.484, 'total': 5.484} 5.48
+D8h E9_0003__20180623_PC463-Grav 2 {'ms1': 6.495, 'total': 6.495} 5.92
+D8h E9_0003__20180623_PC463-Grav 3 {'ms1': 7.68, 'total': 7.68} 6.06
+D8h E9_0004__20210122-YP20210447 0 {'ms1': 4.398, 'total': 4.398} 4.39
+D8h E9_0004__20210122-YP20210447 1 {'ms1': 4.249, 'total': 4.249} 4.25
+D8h E9_0004__20210122-YP20210447 2 {'ms1': 4.411, 'total': 4.411} 4.41
+D8h E9_0004__20210122-YP20210447 3 {'ms1': 4.303, 'total': 4.303} 4.3
+D8h E9_0005__20240423_LennonR_Ha 0 {'ms1': 1.391, 'total': 1.391} 1.39
+D8h E9_0005__20240423_LennonR_Ha 1 {'ms1': 1.371, 'total': 1.371} 1.37
+D8h E9_0005__20240423_LennonR_Ha 2 {'ms1': 1.37, 'total': 1.37} 1.37
+D8h E9_0005__20240423_LennonR_Ha 3 {'ms1': 1.423, 'total': 1.423} 1.42
+D8h E9_0006__CL_CTL_p53_ZNF_0610 0 {'ms1': 0.965, 'total': 0.965} 0.97
+D8h E9_0006__CL_CTL_p53_ZNF_0610 1 {'ms1': 0.988, 'total': 0.988} 0.99
+D8h E9_0006__CL_CTL_p53_ZNF_0610 2 {'ms1': 0.978, 'total': 0.978} 0.98
+D8h E9_0006__CL_CTL_p53_ZNF_0610 3 {'ms1': 0.949, 'total': 0.949} 0.95
+D8h E9_0007__170413_gc_M5-013-14 0 {'ms1': 6.484, 'total': 6.484} 6.48
+D8h E9_0007__170413_gc_M5-013-14 1 {'ms1': 6.291, 'total': 6.291} 6.29
+D8h E9_0007__170413_gc_M5-013-14 2 {'ms1': 6.51, 'total': 6.51} 6.21
+D8h E9_0007__170413_gc_M5-013-14 3 {'ms1': 6.544, 'total': 6.544} 6.39
+D8h E9_0008__lgg1 0 {'ms1': 4.502, 'total': 4.502} 3.74
+D8h E9_0008__lgg1 1 {'ms1': 4.592, 'total': 4.592} 3.51
+D8h E9_0008__lgg1 2 {'ms1': 3.361, 'total': 3.361} 3.36
+D8h E9_0008__lgg1 3 {'ms1': 3.433, 'total': 3.433} 3.43
+D8h E9_0009__20170210_MCF7_LysC_ 0 {'ms1': 2.711, 'total': 2.711} 2.71
+D8h E9_0009__20170210_MCF7_LysC_ 1 {'ms1': 2.832, 'total': 2.832} 2.83
+D8h E9_0009__20170210_MCF7_LysC_ 2 {'ms1': 2.784, 'total': 2.784} 2.78
+D8h E9_0009__20170210_MCF7_LysC_ 3 {'ms1': 2.684, 'total': 2.684} 2.68
+{
+ "ms1": {
+  "wall_s": 86.73086526384577,
+  "core_s": 83.33130000000001,
+  "sub_wall_s": {
+   "load": 3.965921786148101,
+   "link": 10.869986021891236,
+   "split_filter": 9.741856125649065,
+   "summaries": 1.2743419208563864,
+   "isotopes": 51.25869664968923,
+   "table": 5.694046097807586,
+   "total": 83.94206105917692
+  }
+ },
+ "total": {
+  "wall_s": 86.73086526384577,
+  "core_s": 83.33130000000001
+ }
+}

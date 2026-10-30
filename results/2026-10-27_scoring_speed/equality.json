@@ -1,0 +1,1435 @@
+{
+ "runs": {
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "ds": "D0",
+   "n_psms": 147151,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 23.0,
+   "nce_old_code": 23.0,
+   "nce_reference": 23.0,
+   "new_cache_stats": {
+    "rt_hits": 147151,
+    "rt_miss": 0,
+    "ms2_hits": 147151,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0023250062949955463
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 10852,
+    "new": 10852,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 11269,
+    "new": 11269,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 11758,
+    "new": 11758,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 4701,
+    "new": 4701
+   }
+  },
+  "E9_0000__H0799BL": {
+   "ds": "D8",
+   "n_psms": 230809,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 26.0,
+   "nce_old_code": 26.0,
+   "nce_reference": 26.0,
+   "new_cache_stats": {
+    "rt_hits": 230809,
+    "rt_miss": 0,
+    "ms2_hits": 230809,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0009271008893847466
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 27528,
+    "new": 27528,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 32623,
+    "new": 32623,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 35555,
+    "new": 35555,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 3722,
+    "new": 3722
+   }
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "ds": "D8",
+   "n_psms": 49022,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 23.0,
+   "nce_old_code": 23.0,
+   "nce_reference": 23.0,
+   "new_cache_stats": {
+    "rt_hits": 49022,
+    "rt_miss": 0,
+    "ms2_hits": 49022,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 9652,
+    "new": 9652,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 9936,
+    "new": 9936,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 10384,
+    "new": 10384,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 2621,
+    "new": 2621
+   }
+  },
+  "E9_0002__MGP2": {
+   "ds": "D8",
+   "n_psms": 22953,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 22953,
+    "rt_miss": 0,
+    "ms2_hits": 22953,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 3615,
+    "new": 3615,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 4127,
+    "new": 4127,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 4402,
+    "new": 4402,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 1158,
+    "new": 1158
+   }
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "ds": "D8",
+   "n_psms": 60526,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 32.0,
+   "nce_old_code": 32.0,
+   "nce_reference": 32.0,
+   "new_cache_stats": {
+    "rt_hits": 60526,
+    "rt_miss": 0,
+    "ms2_hits": 60526,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0008733007125556469
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 7792,
+    "new": 7792,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 8519,
+    "new": 8519,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 9013,
+    "new": 9013,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 1037,
+    "new": 1037
+   }
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "ds": "D8",
+   "n_psms": 248031,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 248031,
+    "rt_miss": 0,
+    "ms2_hits": 248031,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 5042,
+    "new": 5042,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 6789,
+    "new": 6789,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 7365,
+    "new": 7365,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 1247,
+    "new": 1247
+   }
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "ds": "D8",
+   "n_psms": 83611,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 26.0,
+   "nce_old_code": 26.0,
+   "nce_reference": 26.0,
+   "new_cache_stats": {
+    "rt_hits": 83611,
+    "rt_miss": 0,
+    "ms2_hits": 83611,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 12238,
+    "new": 12238,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 13778,
+    "new": 13778,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 14646,
+    "new": 14646,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 1885,
+    "new": 1885
+   }
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "ds": "D8",
+   "n_psms": 97756,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 32.0,
+   "nce_old_code": 32.0,
+   "nce_reference": 32.0,
+   "new_cache_stats": {
+    "rt_hits": 97756,
+    "rt_miss": 0,
+    "ms2_hits": 97756,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 6659,
+    "new": 6659,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 7102,
+    "new": 7102,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 7450,
+    "new": 7450,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 1280,
+    "new": 1280
+   }
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "ds": "D8",
+   "n_psms": 1042,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 1042,
+    "rt_miss": 0,
+    "ms2_hits": 1042,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 0,
+    "new": 0,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 200,
+    "new": 200,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 207,
+    "new": 207,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 115,
+    "new": 115
+   }
+  },
+  "E9_0008__lgg1": {
+   "ds": "D8",
+   "n_psms": 159757,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 159757,
+    "rt_miss": 0,
+    "ms2_hits": 159757,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0008527589961886406
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 10813,
+    "new": 10813,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 12532,
+    "new": 12532,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 13436,
+    "new": 13436,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 2049,
+    "new": 2049
+   }
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "ds": "D8",
+   "n_psms": 126517,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 126517,
+    "rt_miss": 0,
+    "ms2_hits": 126517,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0013381671160459518
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 13752,
+    "new": 13752,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 14499,
+    "new": 14499,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 15207,
+    "new": 15207,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 3353,
+    "new": 3353
+   }
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "ds": "D0",
+   "n_psms": 152335,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 23.0,
+   "nce_old_code": 23.0,
+   "nce_reference": 23.0,
+   "new_cache_stats": {
+    "rt_hits": 152335,
+    "rt_miss": 0,
+    "ms2_hits": 152335,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0008370657451450825
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 13051,
+    "new": 13051,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 13646,
+    "new": 13646,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 14338,
+    "new": 14338,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 5167,
+    "new": 5167
+   }
+  },
+  "Velos005137": {
+   "ds": "D1",
+   "n_psms": 25345,
+   "search_reproduces_reference_psms": true,
+   "nce_new": 29.0,
+   "nce_old_code": 29.0,
+   "nce_reference": 29.0,
+   "new_cache_stats": {
+    "rt_hits": 25345,
+    "rt_miss": 0,
+    "ms2_hits": 25345,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "features": {
+    "pred_sa": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_sa_sqrt": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_pearson": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_entropy": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_frac_obs": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_top6": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "pred_obs_tic": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_abs_resid": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_resid_z": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    },
+    "rt_pred": {
+     "bitwise_eq_reference": true,
+     "n_differ_reference": 0,
+     "max_abs_diff_reference": 0.0,
+     "bitwise_eq_old_code_same_library": true
+    }
+   },
+   "gbm_gpu_vs_sklearn_same_features_bitwise": true,
+   "score_bitwise_eq_reference": true,
+   "score_max_abs_diff_reference": 0.0,
+   "ids_q0.001": {
+    "reference": 5917,
+    "new": 5917,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.01": {
+    "reference": 6052,
+    "new": 6052,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "ids_q0.05": {
+    "reference": 6297,
+    "new": 6297,
+    "identical": true,
+    "only_ref": 0,
+    "only_new": 0
+   },
+   "winners_identical": true,
+   "protein_glue_identical_n_groups_1pct": true,
+   "proteins_1pct": {
+    "reference": 838,
+    "new": 838
+   }
+  }
+ },
+ "library_root": "/tmp/vulcan_ss/predlib"
+}

@@ -1,0 +1,92 @@
+{
+ "PXD006818/SL203_set1_rep1": {
+  "n_ms1": 5137,
+  "n_ms2": 13414,
+  "store": "data/cache/a2/store_dn2/SL203_set1_rep1.vspec.arrow"
+ },
+ "PXD006818/SL203_set1_rep6": {
+  "n_ms1": 5255,
+  "n_ms2": 12752,
+  "store": "data/cache/a2/store_dn2/SL203_set1_rep6.vspec.arrow"
+ },
+ "PXD006818/SL322_set1_rep5": {
+  "n_ms1": 4997,
+  "n_ms2": 13984,
+  "store": "data/cache/a2/store_dn2/SL322_set1_rep5.vspec.arrow"
+ },
+ "PXD018953/Q06711_MS18-007_Biotite_GB1": {
+  "n_ms1": 4770,
+  "n_ms2": 46320,
+  "store": "data/cache/a2/store_dn2/Q06711_MS18-007_Biotite_GB1.vspec.arrow"
+ },
+ "PXD018953/Q06717_MS18-007_Biotite_GBB3": {
+  "n_ms1": 4968,
+  "n_ms2": 42409,
+  "store": "data/cache/a2/store_dn2/Q06717_MS18-007_Biotite_GBB3.vspec.arrow"
+ },
+ "PXD018953/Q06722_MS18-007_Biotite_MBB4": {
+  "n_ms1": 4272,
+  "n_ms2": 52395,
+  "store": "data/cache/a2/store_dn2/Q06722_MS18-007_Biotite_MBB4.vspec.arrow"
+ },
+ "PXD044078/Q12238_MS21-015_Bp2": {
+  "n_ms1": 7778,
+  "n_ms2": 53724,
+  "store": "data/cache/a2/store_dn2/Q12238_MS21-015_Bp2.vspec.arrow"
+ },
+ "PXD044078/Q12239_MS21-015_Bp3": {
+  "n_ms1": 7443,
+  "n_ms2": 54947,
+  "store": "data/cache/a2/store_dn2/Q12239_MS21-015_Bp3.vspec.arrow"
+ },
+ "PXD044078/Q12240_MS21-015_Bp4": {
+  "n_ms1": 8227,
+  "n_ms2": 52134,
+  "store": "data/cache/a2/store_dn2/Q12240_MS21-015_Bp4.vspec.arrow"
+ },
+ "PXD011591/1010_1": {
+  "n_ms1": 4351,
+  "n_ms2": 64969,
+  "store": "data/cache/a2/store_dn2/1010_1.vspec.arrow"
+ },
+ "PXD011591/101_G": {
+  "n_ms1": 4455,
+  "n_ms2": 66712,
+  "store": "data/cache/a2/store_dn2/101_G.vspec.arrow"
+ },
+ "PXD011591/D2_G": {
+  "n_ms1": 4278,
+  "n_ms2": 62895,
+  "store": "data/cache/a2/store_dn2/D2_G.vspec.arrow"
+ },
+ "PXD062500/HFX_BIT_LF_DR1_20231107": {
+  "n_ms1": 8985,
+  "n_ms2": 125930,
+  "store": "data/cache/a2/store_dn2/HFX_BIT_LF_DR1_20231107.vspec.arrow"
+ },
+ "PXD062500/HFX_BIT_LF_DR2_20231107": {
+  "n_ms1": 9062,
+  "n_ms2": 126171,
+  "store": "data/cache/a2/store_dn2/HFX_BIT_LF_DR2_20231107.vspec.arrow"
+ },
+ "PXD062500/HFX_BIT_LF_pprI4_20231107": {
+  "n_ms1": 8520,
+  "n_ms2": 130755,
+  "store": "data/cache/a2/store_dn2/HFX_BIT_LF_pprI4_20231107.vspec.arrow"
+ },
+ "PXD038243/RCC911_23_SubOpt_1": {
+  "n_ms1": 7125,
+  "n_ms2": 29043,
+  "store": "data/cache/a2/store_dn2/RCC911_23_SubOpt_1.vspec.arrow"
+ },
+ "PXD038243/RCC911_28_SupraOpt_1": {
+  "n_ms1": 6962,
+  "n_ms2": 28890,
+  "store": "data/cache/a2/store_dn2/RCC911_28_SupraOpt_1.vspec.arrow"
+ },
+ "PXD038243/RCC911_28_SupraOpt_2": {
+  "n_ms1": 6928,
+  "n_ms2": 28996,
+  "store": "data/cache/a2/store_dn2/RCC911_28_SupraOpt_2.vspec.arrow"
+ }
+}

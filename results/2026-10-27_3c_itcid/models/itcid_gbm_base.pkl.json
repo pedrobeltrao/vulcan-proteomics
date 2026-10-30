@@ -1,0 +1,91 @@
+{
+ "name": "itcid_gbm_base",
+ "instrument_class": "IT-CID",
+ "hyperparams": {
+  "n": 150
+ },
+ "cv_heldout_psms_at_1pct": {
+  "{\"n\": 50}": 101850,
+  "{\"n\": 150}": 106480,
+  "{\"n\": 300}": 106221
+ },
+ "cv_heldout_per_fold": {
+  "{\"n\": 50}": {
+   "0": 68227,
+   "1": 18613,
+   "2": 15010
+  },
+  "{\"n\": 150}": {
+   "0": 70939,
+   "1": 19630,
+   "2": 15911
+  },
+  "{\"n\": 300}": {
+   "0": 70850,
+   "1": 19421,
+   "2": 15950
+  }
+ },
+ "train_positives_per_iter": [
+  84091,
+  94724,
+  100490
+ ],
+ "train_psms_at_1pct_final": 106393,
+ "train_psms_at_1pct_hyperscore": 84091,
+ "training_runs": [
+  "m06973_PMQ_02",
+  "270120-Urine-Set31",
+  "Fraction_4",
+  "m21032",
+  "Set3_6",
+  "Req111-SM-Nik-Zainal_A_24",
+  "141210_Christiano_plantaris_3hit_tech1_141216070912",
+  "MH_2",
+  "20210527_3d_mito_totalprot1",
+  "110804_110530_ProstateLMW_N_226_38",
+  "62598",
+  "ath017934",
+  "20150114_ZhongshanHospital_Af_1_240min_2ug"
+ ],
+ "search": {
+  "report_psms": 5,
+  "fragment_unit": "da",
+  "fragment_ppm": [
+   -0.5,
+   0.5
+  ],
+  "precursor_ppm": [
+   -10.0,
+   10.0
+  ],
+  "bin_ppm": 200.0
+ },
+ "predictor": null,
+ "sha256": "834bafe9348aea8cb13972c27f4ce765ea139c6ad51c050cf06e748e0ba44e02",
+ "kind": "gbm",
+ "features": [
+  "hyperscore",
+  "hs_runz",
+  "delta_next",
+  "delta_best",
+  "matched_peaks",
+  "matched_b",
+  "matched_y",
+  "matched_intensity_pct",
+  "abs_average_ppm",
+  "abs_delta_mass_ppm",
+  "longest_b",
+  "longest_y",
+  "longest_y_pct",
+  "peptide_len",
+  "missed_cleavages",
+  "n_var",
+  "z2",
+  "z3",
+  "z4p",
+  "isotope_error",
+  "log_scored_candidates",
+  "poisson"
+ ]
+}

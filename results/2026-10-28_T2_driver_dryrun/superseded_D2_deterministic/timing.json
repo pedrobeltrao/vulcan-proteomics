@@ -1,0 +1,21 @@
+{
+ "stages": {
+  "convert": {
+   "wall_s": 0.0001971721649169922,
+   "parallel_workers": 0,
+   "threads_per_run": 4
+  },
+  "index_build": {
+   "wall_s": 4.200527667999268,
+   "core_s": 4.184584000000001
+  },
+  "search": {
+   "wall_s": 235.6264626979828
+  },
+  "e8": {
+   "wall_s": 53.35169792175293
+  }
+ },
+ "total_wall_s": 296.38639736175537,
+ "total_core_s": 71.765155
+}

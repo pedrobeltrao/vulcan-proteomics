@@ -1,0 +1,120 @@
+{
+ "status": "candidate (rehearsal; not final; no tag)",
+ "candidate_commit": "e0b94aa",
+ "g0": {
+  "commit": "e0b94aa7a635fed98f54dc794c58d4518aa2271e",
+  "pass": true,
+  "n_psms": 42833,
+  "n_secondary_psms": 9704,
+  "ms1_hypotheses_bit_identical": true,
+  "ms1_features_bit_identical": true,
+  "features_all_bit_identical": true,
+  "scores_bit_identical": {
+   "v1": true,
+   "v2": true
+  }
+ },
+ "dry_run": {
+  "D1": {
+   "v1_artefacts_identical": true,
+   "n_v1_files": 51,
+   "v1_metrics_identical_on_common_keys": true,
+   "a1_comparator_artefacts_identical": true,
+   "same_commit_without_a3_identical": true,
+   "independent_3f_v1_identical": true,
+   "independent_3f_sage_based": {
+    "sage": {
+     "max_arm_P_delta": 2.3898985704816876e-08,
+     "max_ratio_delta": 0.0,
+     "within_documented": true
+    },
+    "sage+mokapot": {
+     "max_arm_P_delta": 2.3081993951817002e-05,
+     "max_ratio_delta": 2.2209977663223412e-05,
+     "within_documented": true
+    },
+    "sage+pred+mokapot": {
+     "max_arm_P_delta": 0.00015947801544081378,
+     "max_ratio_delta": 0.00042887717276685056,
+     "within_documented": false
+    }
+   },
+   "v2_sep_record_identical_to_e7b": true
+  },
+  "D0": {
+   "a1_comparator_artefacts": {
+    "n_files": 425,
+    "n_not_identical": 0,
+    "not_identical": []
+   },
+   "metrics_comparison": {
+    "v1_metrics_identical_on_common_keys": true,
+    "a1_comparator_artefacts_identical": true,
+    "independent_3f_v1_identical": true,
+    "independent_3f_sage_based_by_level": {
+     "sage": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 1.2613272476494353e-05,
+       "max_abs_delta_v1_ratio": 1.5494009997896185e-05
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 1.3211623603175127e-05,
+       "max_abs_delta_v1_ratio": 8.135730259706264e-06
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 1.0578990092794012e-05,
+       "max_abs_delta_v1_ratio": 1.9069219608924826e-05
+      }
+     },
+     "sage+mokapot": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 1.2967758659761762e-05,
+       "max_abs_delta_v1_ratio": 0.0022562366861902383
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 1.3833354161438445e-05,
+       "max_abs_delta_v1_ratio": 0.0021794311540517253
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 0.0001473928284432633,
+       "max_abs_delta_v1_ratio": 0.00018970360746939363
+      }
+     },
+     "sage+pred+mokapot": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 0.00040411919399028357,
+       "max_abs_delta_v1_ratio": 0.0003694751574572219
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 0.00042730821731808144,
+       "max_abs_delta_v1_ratio": 0.00038142769866733595
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 0.00018786453958145616,
+       "max_abs_delta_v1_ratio": 0.0009066988270410858
+      }
+     }
+    },
+    "v2_sep_record_identical_to_e7b": true
+   },
+   "v1_artefacts": {
+    "n_files": 102,
+    "n_not_identical": 0
+   }
+  }
+ },
+ "closure_guard": {
+  "at_e0b94aa": true,
+  "at_HEAD": false,
+  "unallowed_at_HEAD": [
+   "vulcan/cohort.py",
+   "vulcan/ms1/features.py",
+   "vulcan/ms1/gpu.py"
+  ]
+ },
+ "sage_chim_R": [
+  2
+ ],
+ "wide_window": "none",
+ "e7b_config_commit": "7a2d6ee"
+}

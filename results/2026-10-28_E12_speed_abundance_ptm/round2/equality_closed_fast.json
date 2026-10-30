@@ -1,0 +1,14 @@
+{
+ "a": "/dev/shm/vulcan_e12_<uid>/out_r2/closed",
+ "b": "/dev/shm/vulcan_e12_<uid>/out_r2/closed_fast",
+ "only_a": [],
+ "only_b": [],
+ "n_compared": 288,
+ "diff": {},
+ "files_by_kind": {
+  "peptides.parquet": 96,
+  "proteins.parquet": 96,
+  "psms.parquet": 96
+ },
+ "all_equal": true
+}

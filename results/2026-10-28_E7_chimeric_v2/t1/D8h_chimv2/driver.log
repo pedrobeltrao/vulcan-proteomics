@@ -1,0 +1,38 @@
+[23:33:24] t1_driver D8h sha=6607ecdac3be dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h_chimv2
+[23:33:24] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[23:33:24] ms1 E9_0000__H0799BL: {'wall_s': 30.19869593018666, 'process_cpu_s': 76.09961099499999}
+[23:33:24] ms1 E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm: {'wall_s': 2.109117789193988, 'process_cpu_s': 1.7748104740000001}
+[23:33:24] ms1 E9_0002__MGP2: {'wall_s': 6.755297505762428, 'process_cpu_s': 14.512678431}
+[23:33:24] ms1 E9_0003__20180623_PC463-Graves-McDonald_Sample1: {'wall_s': 5.688091928139329, 'process_cpu_s': 10.648335290999999}
+[23:33:24] ms1 E9_0004__20210122-YP202104470-xh-BT1-3: {'wall_s': 5.499187842011452, 'process_cpu_s': 8.411900383}
+[23:33:24] ms1 E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r: {'wall_s': 2.2154106949456036, 'process_cpu_s': 3.138896169}
+[23:33:24] ms1 E9_0006__CL_CTL_p53_ZNF_061025_1: {'wall_s': 2.426053961738944, 'process_cpu_s': 2.5653732700000003}
+[23:33:24] ms1 E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B: {'wall_s': 7.078904943075031, 'process_cpu_s': 15.107409366}
+[23:33:24] ms1 E9_0008__lgg1: {'wall_s': 3.7966317967511714, 'process_cpu_s': 7.048044085}
+[23:33:24] ms1 E9_0009__20170210_MCF7_LysC_WT_2b: {'wall_s': 3.5226243538782, 'process_cpu_s': 5.497369484}
+[23:33:52] chimeric scored prod_1001: 15.0s
+[23:34:16] chimeric scored P_1001_2001: 24.8s
+[23:34:36] chimeric scored P_1001_2002: 19.2s
+[23:34:52] chimeric scored P_1001_2003: 16.8s
+[23:35:08] chimeric scored C_1001: 15.3s
+[23:35:23] chimeric scored prod_1002: 14.8s
+[23:35:48] chimeric scored P_1002_2001: 25.2s
+[23:36:13] chimeric scored P_1002_2002: 25.7s
+[23:36:29] chimeric scored P_1002_2003: 15.7s
+[23:36:55] chimeric scored C_1002: 25.4s
+[23:37:11] chimeric scored prod_1003: 16.7s
+[23:37:39] chimeric scored P_1003_2001: 28.1s
+[23:38:04] chimeric scored P_1003_2002: 25.0s
+[23:38:22] chimeric scored P_1003_2003: 18.2s
+[23:38:49] chimeric scored C_1003: 26.4s
+[23:39:03] chimeric scored prod_1004: 14.4s
+[23:39:28] chimeric scored P_1004_2001: 25.2s
+[23:40:04] chimeric scored P_1004_2002: 35.8s
+[23:40:28] chimeric scored P_1004_2003: 24.0s
+[23:40:47] chimeric scored C_1004: 19.2s
+[23:41:03] chimeric scored prod_1005: 15.2s
+[23:41:20] chimeric scored P_1005_2001: 17.6s
+[23:41:41] chimeric scored P_1005_2002: 20.9s
+[23:41:55] chimeric scored P_1005_2003: 13.9s
+[23:42:11] chimeric scored C_1005: 15.8s
+[23:42:11] driver total 527s

@@ -1,0 +1,26 @@
+FDRBench - FDR Control Evaluation Tool for Proteomics
+https://github.com/Noble-Lab/FDRBench
+
+Checking for duplicates and then random shuffling
+2026-10-27 10:57:38 [INFO ] main.java.FDR.DBGear[getEnzymeByIndex:56] - Use enzyme:Trypsin
+2026-10-27 10:57:38 [INFO ] main.java.FDR.FDREval[generate_peptide_file:723] - Protein sequences:2425, total unique peptide sequences:180831
+Fix C terminal amino acid
+Ignore peptide: ELEELEK, 2
+2026-10-27 10:57:40 [INFO ] main.java.FDR.FDREval[generate_peptide_file:953] - Time used for protein digestion:2 s.
+================== parameters ==================
+2026-10-27 10:57:40 [INFO ] main.java.FDR.DBGear[getEnzymeByIndex:56] - Use enzyme:Trypsin
+Enzyme: Trypsin
+Max allowed missed cleavages: 2
+Peptide length range: 7 - 50
+Clip N-terminal M: false
+Fix N/C terminal amino acid: Only fix C terminal amino acid
+Add decoy: false
+Convert I to L: true
+N fold:1
+No shared peptides between target and entrapment proteins when using foreign species: false
+Reverse order of generated random peptides:false
+Max number of tries for generating decoy peptides: 20
+For DIA-NN: false
+Use Uniprot format protein ID: false
+Global random seed: 2002
+================================================

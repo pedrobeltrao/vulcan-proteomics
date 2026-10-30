@@ -1,0 +1,65 @@
+# E7b: fair chimeric comparator + v2_sep speed (dev only).  PRE-REGISTERED 2026-10-28, before any Sage chimera search,
+# any comparator evaluation and any speed change.  Changing anything below after results exist requires a dated note in
+# NOTES.md.  Follows D21 (ii) and (iii).
+data:
+  dev: [D0, D1, D8h]          # D0/D1 = E7 selection set, D8h = E7 confirmation set (same 25 replicate DBs per set)
+  sealed: none                # T1-T5 and bench/sealed_run.py not touched
+  dn2: not used               # A2 DN2 data and /tmp/vulcan_a2 are not read
+seeds: DESIGN 6.1 via vulcan.stats._util (DECOY_SEEDS 1001-1005, ENTRAP_SEEDS_DEV 2001-2003); mokapot --seed 11
+  through bench/t1/mokapot_seeded.py; bootstrap SEED of bench/t1/evaluate.py (unchanged)
+frozen_untouched: [static_gbm_pred v1 (sha 31bfe685), v2_sep model (sha 3f2c69cc), their training, the metrics,
+  controls, labels, estimators (bench/t1/evaluate.py), tests]
+
+# ------------------------------------------------------------------------------------------------- task 1
+fair_comparator:
+  name: sage_chim{R}+pred+mokapot
+  base: the existing strongest comparator sage+pred+mokapot (bench/t1/comparators.py: sage_config, sage_pred_pin,
+    run_mokapot) -- identical DB (the same 25 replicate peptide FASTAs), tolerances, mods, enzyme, predict_rt true,
+    mzML, threads, Sage 0.14.6 binary, the same 9 AlphaPeptDeep-derived features from the same PredCache/scorer,
+    the same seeded mokapot 0.10.0 wrapper (seed 11, --max_workers 1, --keep_decoys, canonical PIN row order)
+  sage_changes:
+    chimera: true
+    report_psms: R             # Sage's chimera mode (score_chimera_fast) iterates "best PSM, remove its matched
+                               # peaks, re-score" until report_psms PSMs exist; with report_psms 1 it is a no-op, so
+                               # R >= 2 is required for the option to do anything.  Precursor window unchanged
+                               # (narrow, +-10 ppm, isotope errors 0..2; wide_window stays false: "otherwise identical")
+  R:
+    primary: 2                 # run on D0, D1, D8h
+    sensitivity: 5             # run on D0 and D1.  Rule (fixed now): if sage_chim5+pred+mokapot has MORE peptidoforms
+                               # than sage_chim2+pred+mokapot at matched arm-P FDP 1% (point estimate) on BOTH D0 and
+                               # D1, R=5 is also run on D8h; the headline comparator on each dataset is then whichever R
+                               # has more peptidoforms at matched FDP 1% there (choice favours the comparator)
+  necessary_adaptations:       # without these, the chimeric PSMs never reach the comparator's output
+    mokapot_spectrum_key: mokapot 0.10 keeps one PSM per (FileName, ScanNr, ExpMass) before peptide aggregation, which
+      would delete every Sage rank >= 2 PSM.  In the chimeric PIN handed to mokapot ScanNr is rewritten to
+      ScanNr * 16 + rank, so each (spectrum, Sage rank) is its own spectrum unit -- exactly how Sage's own LDA treats
+      chimeric PSMs.  Recorded side effect: mokapot's fold split groups by the same key, so two ranks of one spectrum
+      can fall in different folds.  The Sage `rank` PIN column stays a feature (as in Sage's own LDA).
+    pred_feature_calibration: sage_pred_pin passes Sage's rank instead of all-ones, so the label-blind per-run
+      calibrations (NCE choice, RT fit; vulcan.rescore.features.calibration_mask uses rank == 1) use Sage's rank-1
+      PSMs only -- the analogue of v2's primary-only calibration.  For R = 1 this is identical to the existing arm.
+  also_evaluated:
+    sage_chim{R}: Sage's own LDA output of the same chimera search, ALL ranks kept (the existing `sage` loader keeps
+      rank 1 only, which would discard the chimeric PSMs), peptide_q as q.  This answers "does Sage's chimeric output
+      stay calibrated" (arm-P / arm-C FDP at its own q).
+    sage+pred+mokapot: re-evaluated from the existing outputs as the reference (must reproduce E7 numbers).
+  numerator: vulcan_v2_sep (unchanged E7 outputs in the D0/D1/D8h work dirs)
+  readouts: bench/t1/evaluate.py unchanged -- peptidoform, sequence and protein-group IDs; ratio v2_sep/comparator at
+    own q 1% (with the comparator's deciding verdict) and at matched arm-P FDP 0.1%, 1%, 5%, run x decoy-shuffle
+    bootstrap 95% CI; entrapment verdicts (arm P, arm C, convention a decides) for every comparator arm at 0.1/1/5%.
+  additional_calibration_readout: for sage_chim{R} and sage_chim{R}+pred+mokapot at own q 1%, arm-P FDP split by the
+    Sage rank of the peptide's best PSM (1 vs >= 2), descriptive only.
+
+# ------------------------------------------------------------------------------------------------- task 2
+speed:
+  target: v2_sep chimeric production path per run (MS1 features + hypotheses, closed + secondary search, v2 features +
+    model, sep competition) and end-to-end cohort runs/h RAW -> protein groups in chimeric mode
+  measurement: persistent warm process; timed sections under `flock /tmp/vulcan_bench.lock`; record loadavg and
+    bench/hwinfo; thread pools from vulcan.hw; per-stage wall, core-s, GPU-s; median over runs
+  equivalence_rule: every speedup must give IDENTICAL v2_sep ID sets at q <= 1% (peptidoform units, prod replicates,
+    sep q) on D0, D1, D8h versus the current exact path; also compared: q <= 0.1% / 5% sets, score columns bitwise,
+    MS1 feature / hypothesis tables bitwise.  If a numeric change is unavoidable, the change is reported with ID-set
+    Jaccard at q <= 1% and the ratio change vs sage+pred+mokapot, and the exact path is kept as the reference
+    implementation (not the default unless decided separately).
+  cohort: same design as 3i (D8 + D0 RAWs cycled, page-cached, persistent cohort process, post workers), chimeric
+    mode on, outputs checked against the per-run reference for every base run

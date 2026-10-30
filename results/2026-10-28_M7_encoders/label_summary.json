@@ -1,0 +1,282 @@
+{
+ "211221_LL_17183_1": {
+  "species": "human",
+  "n_spectra_with_psm": 14210,
+  "n_peptidoforms_q0.001": 5445,
+  "n_pos_psms": 7697,
+  "n_target_peptidoforms_q0.01": 5736
+ },
+ "30min_LPS_2": {
+  "species": "human",
+  "n_spectra_with_psm": 11458,
+  "n_peptidoforms_q0.001": 6267,
+  "n_pos_psms": 7630,
+  "n_target_peptidoforms_q0.01": 6380
+ },
+ "Ctrl_JH_repli1_SCX4": {
+  "species": "human",
+  "n_spectra_with_psm": 31632,
+  "n_peptidoforms_q0.001": 9830,
+  "n_pos_psms": 24409,
+  "n_target_peptidoforms_q0.01": 9975
+ },
+ "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE": {
+  "species": "human",
+  "n_spectra_with_psm": 18092,
+  "n_peptidoforms_q0.001": 5611,
+  "n_pos_psms": 7648,
+  "n_target_peptidoforms_q0.01": 5776
+ },
+ "KA121LQ_CSF_65": {
+  "species": "human",
+  "n_spectra_with_psm": 21946,
+  "n_peptidoforms_q0.001": 4248,
+  "n_pos_psms": 11133,
+  "n_target_peptidoforms_q0.01": 4618
+ },
+ "No_guide_control_2_promoter_reporter": {
+  "species": "human",
+  "n_spectra_with_psm": 16906,
+  "n_peptidoforms_q0.001": 9651,
+  "n_pos_psms": 12125,
+  "n_target_peptidoforms_q0.01": 10272
+ },
+ "P22_081_Singapur_Smim26_SampleII_02": {
+  "species": "human",
+  "n_spectra_with_psm": 9001,
+  "n_peptidoforms_q0.001": 2648,
+  "n_pos_psms": 3232,
+  "n_target_peptidoforms_q0.01": 2813
+ },
+ "PT10402-292_190921044254": {
+  "species": "human",
+  "n_spectra_with_psm": 18919,
+  "n_peptidoforms_q0.001": 10162,
+  "n_pos_psms": 11656,
+  "n_target_peptidoforms_q0.01": 12024
+ },
+ "c3": {
+  "species": "human",
+  "n_spectra_with_psm": 17466,
+  "n_peptidoforms_q0.001": 2243,
+  "n_pos_psms": 6427,
+  "n_target_peptidoforms_q0.01": 2462
+ },
+ "210521-MClass-21_0844-14-BAZ": {
+  "species": "mouse",
+  "n_spectra_with_psm": 42689,
+  "n_peptidoforms_q0.001": 10619,
+  "n_pos_psms": 26272,
+  "n_target_peptidoforms_q0.01": 11284
+ },
+ "005_ECOLI72_F20": {
+  "species": "ecoli",
+  "n_spectra_with_psm": 21737,
+  "n_peptidoforms_q0.001": 13149,
+  "n_pos_psms": 18822,
+  "n_target_peptidoforms_q0.01": 13531
+ },
+ "XS_Shura_High_pH_Frac12_api05_4": {
+  "species": "ecoli",
+  "n_spectra_with_psm": 32959,
+  "n_peptidoforms_q0.001": 5596,
+  "n_pos_psms": 26091,
+  "n_target_peptidoforms_q0.01": 5729
+ },
+ "1MLDCS-HBSS_OA": {
+  "species": "human",
+  "n_spectra_with_psm": 59583,
+  "n_peptidoforms_q0.001": 28917,
+  "n_pos_psms": 33577,
+  "n_target_peptidoforms_q0.01": 30472
+ },
+ "20151118_HER2_04": {
+  "species": "human",
+  "n_spectra_with_psm": 8067,
+  "n_peptidoforms_q0.001": 3773,
+  "n_pos_psms": 5523,
+  "n_target_peptidoforms_q0.01": 4436
+ },
+ "20160930_AR_YE_10": {
+  "species": "human",
+  "n_spectra_with_psm": 31722,
+  "n_peptidoforms_q0.001": 7898,
+  "n_pos_psms": 14681,
+  "n_target_peptidoforms_q0.01": 8901
+ },
+ "20171221_KW_KK_Ex229_KO_S_2_91": {
+  "species": "human",
+  "n_spectra_with_psm": 6711,
+  "n_peptidoforms_q0.001": 1713,
+  "n_pos_psms": 2071,
+  "n_target_peptidoforms_q0.01": 1955
+ },
+ "220912_25_Orbi3_KN_SER_G30_T55_Hart_UP1": {
+  "species": "human",
+  "n_spectra_with_psm": 12659,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 0
+ },
+ "55603_1_EXP_1171_hs_plasma_20_WT_1ug": {
+  "species": "human",
+  "n_spectra_with_psm": 65724,
+  "n_peptidoforms_q0.001": 1445,
+  "n_pos_psms": 11921,
+  "n_target_peptidoforms_q0.01": 1777
+ },
+ "A549_LPS": {
+  "species": "human",
+  "n_spectra_with_psm": 28937,
+  "n_peptidoforms_q0.001": 9450,
+  "n_pos_psms": 13293,
+  "n_target_peptidoforms_q0.01": 9817
+ },
+ "BT474_H1": {
+  "species": "human",
+  "n_spectra_with_psm": 42645,
+  "n_peptidoforms_q0.001": 18355,
+  "n_pos_psms": 24510,
+  "n_target_peptidoforms_q0.01": 20053
+ },
+ "CD1524_Marsh3B_Anti-TG2_2": {
+  "species": "human",
+  "n_spectra_with_psm": 11919,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 669
+ },
+ "Christine_TPA_180223_LysC_H27": {
+  "species": "human",
+  "n_spectra_with_psm": 877,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 564
+ },
+ "E20212002382a": {
+  "species": "human",
+  "n_spectra_with_psm": 33518,
+  "n_peptidoforms_q0.001": 13892,
+  "n_pos_psms": 15440,
+  "n_target_peptidoforms_q0.01": 14718
+ },
+ "EH8725": {
+  "species": "human",
+  "n_spectra_with_psm": 94,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 0
+ },
+ "MEC2878-S30-LRRK2-BioID2-Rab29": {
+  "species": "human",
+  "n_spectra_with_psm": 30631,
+  "n_peptidoforms_q0.001": 10771,
+  "n_pos_psms": 14756,
+  "n_target_peptidoforms_q0.01": 11910
+ },
+ "PP185_186AA_3": {
+  "species": "human",
+  "n_spectra_with_psm": 13892,
+  "n_peptidoforms_q0.001": 6456,
+  "n_pos_psms": 10734,
+  "n_target_peptidoforms_q0.01": 6945
+ },
+ "QE1123_MSQ1631_20190401_DOB_TAU_A4": {
+  "species": "human",
+  "n_spectra_with_psm": 13989,
+  "n_peptidoforms_q0.001": 9239,
+  "n_pos_psms": 10225,
+  "n_target_peptidoforms_q0.01": 9633
+ },
+ "QE1_160915_OPL4019_GK_ALT_splice_SW480_I9": {
+  "species": "human",
+  "n_spectra_with_psm": 14196,
+  "n_peptidoforms_q0.001": 3266,
+  "n_pos_psms": 4609,
+  "n_target_peptidoforms_q0.01": 3905
+ },
+ "QEAGF160127_112": {
+  "species": "human",
+  "n_spectra_with_psm": 22,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 0
+ },
+ "YIG_130_L012_05_SoL_014_U01": {
+  "species": "human",
+  "n_spectra_with_psm": 60720,
+  "n_peptidoforms_q0.001": 32931,
+  "n_pos_psms": 40208,
+  "n_target_peptidoforms_q0.01": 34205
+ },
+ "aral2": {
+  "species": "human",
+  "n_spectra_with_psm": 6357,
+  "n_peptidoforms_q0.001": 4439,
+  "n_pos_psms": 5016,
+  "n_target_peptidoforms_q0.01": 4671
+ },
+ "oecf3-CP0480-07": {
+  "species": "human",
+  "n_spectra_with_psm": 34600,
+  "n_peptidoforms_q0.001": 3514,
+  "n_pos_psms": 6951,
+  "n_target_peptidoforms_q0.01": 4207
+ },
+ "q104758a": {
+  "species": "human",
+  "n_spectra_with_psm": 24673,
+  "n_peptidoforms_q0.001": 5044,
+  "n_pos_psms": 6584,
+  "n_target_peptidoforms_q0.01": 5340
+ },
+ "shRB-1": {
+  "species": "human",
+  "n_spectra_with_psm": 59345,
+  "n_peptidoforms_q0.001": 30825,
+  "n_pos_psms": 32939,
+  "n_target_peptidoforms_q0.01": 32578
+ },
+ "20151103_Qep8_MiWi_SA_074350_FR2_50": {
+  "species": "mouse",
+  "n_spectra_with_psm": 46899,
+  "n_peptidoforms_q0.001": 20463,
+  "n_pos_psms": 32634,
+  "n_target_peptidoforms_q0.01": 21574
+ },
+ "F1_TA": {
+  "species": "mouse",
+  "n_spectra_with_psm": 32844,
+  "n_peptidoforms_q0.001": 14065,
+  "n_pos_psms": 17866,
+  "n_target_peptidoforms_q0.01": 15103
+ },
+ "QEHF_20180116_LSantambrogio_S12_1": {
+  "species": "mouse",
+  "n_spectra_with_psm": 31853,
+  "n_peptidoforms_q0.001": 3883,
+  "n_pos_psms": 6555,
+  "n_target_peptidoforms_q0.01": 4367
+ },
+ "20210921_HF1_MaRa_SA_P0114B_3": {
+  "species": "ecoli",
+  "n_spectra_with_psm": 14868,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 1409
+ },
+ "hm_5265_CB_072718_pt5ul_07": {
+  "species": "ecoli",
+  "n_spectra_with_psm": 27596,
+  "n_peptidoforms_q0.001": 13878,
+  "n_pos_psms": 19176,
+  "n_target_peptidoforms_q0.01": 14247
+ },
+ "qExHF01_05548_Chymo_B3": {
+  "species": "ecoli",
+  "n_spectra_with_psm": 117,
+  "n_peptidoforms_q0.001": 0,
+  "n_pos_psms": 0,
+  "n_target_peptidoforms_q0.01": 0
+ }
+}

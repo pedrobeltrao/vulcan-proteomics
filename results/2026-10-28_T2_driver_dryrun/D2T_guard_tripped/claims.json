@@ -1,0 +1,725 @@
+{
+ "dataset": "D2T",
+ "e8_gate": "not passed (inconclusive or not evaluable cells)",
+ "git_sha": "7bebe3222e8a77886386d5b3c51b050568bca604",
+ "incomplete": false,
+ "labels": {
+  "L-D-A5": "v1: engine default, FDR not validated by null-spectrum tests. v2_sep: candidate. No OT-HCD scorer has gate-validated FDR claims.",
+  "L-DESC": "descriptive; not a claim",
+  "L-E8-VOID": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim)",
+  "L-PSM": "Phospho PSM list: localization-agnostic peptidoform FDR by hyperscore paired double competition at the method's own q <= 1% (no learned scorer, no top-K re-ranking; neither v1 nor v2_sep is used). This list is not entrapment-checked on T2 and no null-spectrum test covers this pipeline on phospho data; FLR numbers are conditional on it.",
+  "L-TRUTH": "Truth as declared in results/2026-10-27_M4_ptm/NOTES.md \u00a70 (97daf98): PXD000138 pool design (one {S,T,Y} slot per pool); PXD009449 phospho truth exists only for Ymod_Phospho kits, so the T2 K-acyl pools carry no phospho truth.",
+  "L-TUNE": "Localization parameters were tuned on dev PXD000138 pools and PXD009449 Ymod_Phospho with truth (M4, disclosed); T2 pools are held out and were never searched before this look."
+ },
+ "look_id": "dev-d2t-3",
+ "metrics_sha256": "7a2c8af48d43027748b3e1046fe8f1ed7c2fbdc6be97ce0daae1c8f2d51283ef",
+ "missing": [],
+ "rows": [
+  {
+   "id": "G-E8",
+   "kind": "E8 gate (DESIGN \u00a76.5), Ala, mono-phospho, PSM level (D8)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "cells 4: PASS; inconclusive",
+   "verdict": "not passed (inconclusive or not evaluable cells)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "E8-PXD000138-A-0.01",
+   "kind": "E8 cell",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 0.29% [0.29%\u20130.29% over 11 runs] (n 1739 [1739\u20131739 over 11 runs] accepted eligible STY sites, 5 wrong); one-sided 95% UCB 0.63% [0.63%\u20130.63% over 11 runs] (CP 0.60%, cluster bootstrap 0.63%)",
+   "verdict": "PASS (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "E8-PXD000138-A-0.05",
+   "kind": "E8 cell",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 3.43% [3.43%\u20133.71% over 11 runs] (n 2156 [2154\u20132157 over 11 runs] accepted eligible STY sites, 74 wrong); one-sided 95% UCB 4.58% [4.58%\u20134.91% over 11 runs] (CP 4.15%, cluster bootstrap 4.58%)",
+   "verdict": "PASS (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "E8-PXD000138-L-0.01",
+   "kind": "E8 cell (Leu, secondary; reported, not a gate input)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 1.41% [1.31%\u20131.50% over 11 runs] (n 2133 [2131\u20132136 over 11 runs] accepted eligible STY sites, 30 wrong); one-sided 95% UCB 1.98% [1.88%\u20132.10% over 11 runs] (CP 1.90%, cluster bootstrap 1.98%)",
+   "verdict": "FAILED (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "E8-PXD000138-L-0.05",
+   "kind": "E8 cell (Leu, secondary; reported, not a gate input)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 1.73% [1.72%\u20133.73% over 11 runs] (n 2144 [2144\u20132230 over 11 runs] accepted eligible STY sites, 37 wrong); one-sided 95% UCB 2.33% [2.33%\u20134.85% over 11 runs] (CP 2.26%, cluster bootstrap 2.33%)",
+   "verdict": "PASS (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "E8-PXD009449-A-0.01",
+   "kind": "E8 cell",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 0.83% [0.83%\u20130.91% over 11 runs] (n 22476 [22467\u201322500 over 11 runs] accepted eligible STY sites, 187 wrong); one-sided 95% UCB 1.30% [1.29%\u20131.41% over 11 runs] (CP 0.94%, cluster bootstrap 1.30%)",
+   "verdict": "inconclusive (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "E8-PXD009449-A-0.05",
+   "kind": "E8 cell",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 4.22% [4.21%\u20134.27% over 11 runs] (n 24386 [24379\u201324398 over 11 runs] accepted eligible STY sites, 1030 wrong); one-sided 95% UCB 6.64% [6.60%\u20136.72% over 11 runs] (CP 4.44%, cluster bootstrap 6.64%)",
+   "verdict": "inconclusive (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "E8-PXD009449-L-0.01",
+   "kind": "E8 cell (Leu, secondary; reported, not a gate input)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 0.82% [0.74%\u20130.89% over 11 runs] (n 22212 [22187\u201322231 over 11 runs] accepted eligible STY sites, 182 wrong); one-sided 95% UCB 1.28% [1.16%\u20131.40% over 11 runs] (CP 0.93%, cluster bootstrap 1.28%)",
+   "verdict": "inconclusive (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "E8-PXD009449-L-0.05",
+   "kind": "E8 cell (Leu, secondary; reported, not a gate input)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "true FLR 4.23% [4.17%\u20134.25% over 11 runs] (n 24465 [24465\u201324493 over 11 runs] accepted eligible STY sites, 1035 wrong); one-sided 95% UCB 6.65% [6.55%\u20136.71% over 11 runs] (CP 4.45%, cluster bootstrap 6.65%)",
+   "verdict": "inconclusive (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "R-true-PXD000138-A-0.01",
+   "kind": "site recall at matched true FLR 0.01",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8801 [0.8801\u20130.8801 over 11 runs] vs pyAscore 0.8735; diff 0.0066 [0.0066\u20130.0066 over 11 runs] [-0.0202, 0.0577] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "no difference shown (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "R-true-PXD000138-A-0.05",
+   "kind": "site recall at matched true FLR 0.05",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9144 [0.9117\u20130.9148 over 11 runs] vs pyAscore 0.9302; diff -0.0158 [-0.0184\u2013-0.0154 over 11 runs] [-0.0307, -0.0032] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "lower (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "R-estimated-PXD000138-A-0.01",
+   "kind": "site recall at estimated FLR\u0302 0.01",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.7615 [0.7615\u20130.7615 over 11 runs] vs pyAscore 0.4594; diff 0.3022 [0.3022\u20130.3022 over 11 runs] [0.2651, 0.3423] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: higher)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "A",
+   "id": "R-estimated-PXD000138-A-0.05",
+   "kind": "site recall at estimated FLR\u0302 0.05",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9144 [0.9117\u20130.9148 over 11 runs] vs pyAscore 0.9302; diff -0.0158 [-0.0184\u2013-0.0154 over 11 runs] [-0.0299, -0.0032] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: lower)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "R-true-PXD000138-L-0.01",
+   "kind": "site recall at matched true FLR 0.01 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8898 [0.8898\u20130.8898 over 11 runs] vs pyAscore 0.8551; diff 0.0347 [0.0347\u20130.0347 over 11 runs] [-0.0283, 0.1101] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "no difference shown (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "R-true-PXD000138-L-0.05",
+   "kind": "site recall at matched true FLR 0.05 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9403 [0.9403\u20130.9442 over 11 runs] vs pyAscore 0.9570; diff -0.0167 [-0.0167\u2013-0.0127 over 11 runs] [-0.0414, 0.0000] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "no difference shown (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "R-estimated-PXD000138-L-0.01",
+   "kind": "site recall at estimated FLR\u0302 0.01 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9236 [0.9236\u20130.9240 over 11 runs] vs pyAscore 0.8353; diff 0.0883 [0.0883\u20130.0887 over 11 runs] [0.0711, 0.1063] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: higher)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD000138",
+   "decoy": "L",
+   "id": "R-estimated-PXD000138-L-0.05",
+   "kind": "site recall at estimated FLR\u0302 0.05 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9253 [0.9253\u20130.9442 over 11 runs] vs pyAscore 0.9570; diff -0.0316 [-0.0316\u2013-0.0127 over 11 runs] [-0.0479, -0.0165] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: lower)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "R-true-PXD009449-A-0.01",
+   "kind": "site recall at matched true FLR 0.01",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8949 [0.8944\u20130.8951 over 11 runs] vs pyAscore 0.8745; diff 0.0204 [0.0200\u20130.0207 over 11 runs] [0.0103, 0.0285] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "higher (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "R-true-PXD009449-A-0.05",
+   "kind": "site recall at matched true FLR 0.05",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9377 [0.9372\u20130.9381 over 11 runs] vs pyAscore 0.9334; diff 0.0043 [0.0039\u20130.0047 over 11 runs] [-0.0695, 0.1015] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "no difference shown (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "R-estimated-PXD009449-A-0.01",
+   "kind": "site recall at estimated FLR\u0302 0.01",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8949 [0.8944\u20130.8951 over 11 runs] vs pyAscore 0.8500; diff 0.0448 [0.0444\u20130.0451 over 11 runs] [0.0308, 0.0601] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: higher)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "A",
+   "id": "R-estimated-PXD009449-A-0.05",
+   "kind": "site recall at estimated FLR\u0302 0.05",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9377 [0.9372\u20130.9381 over 11 runs] vs pyAscore 0.9334; diff 0.0043 [0.0039\u20130.0047 over 11 runs] [-0.0435, 0.0563] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: no difference shown)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "R-true-PXD009449-L-0.01",
+   "kind": "site recall at matched true FLR 0.01 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8845 [0.8841\u20130.8852 over 11 runs] vs pyAscore 0.8658; diff 0.0186 [0.0183\u20130.0194 over 11 runs] [0.0096, 0.0262] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "higher (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "R-true-PXD009449-L-0.05",
+   "kind": "site recall at matched true FLR 0.05 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9407 [0.9407\u20130.9423 over 11 runs] vs pyAscore 0.9132; diff 0.0275 [0.0275\u20130.0291 over 11 runs] [-0.0577, 0.1191] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "no difference shown (same verdict in all 11 runs)"
+  },
+  {
+   "alpha": "0.01",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "R-estimated-PXD009449-L-0.01",
+   "kind": "site recall at estimated FLR\u0302 0.01 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.8845 [0.8841\u20130.8852 over 11 runs] vs pyAscore 0.8658; diff 0.0186 [0.0183\u20130.0194 over 11 runs] [0.0122, 0.0258] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: higher)"
+  },
+  {
+   "alpha": "0.05",
+   "component": "PXD009449",
+   "decoy": "L",
+   "id": "R-estimated-PXD009449-L-0.05",
+   "kind": "site recall at estimated FLR\u0302 0.05 (Leu, secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "ours 0.9407 [0.9407\u20130.9423 over 11 runs] vs pyAscore 0.8658; diff 0.0748 [0.0748\u20130.0764 over 11 runs] [0.0354, 0.1230] (paired sequence-cluster bootstrap, run 0)",
+   "verdict": "void: E8 gate not passed on this data (DESIGN \u00a76.5: E8 is a gate before any FLR claim) (computed: higher)"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-ids-PXD000138",
+   "kind": "phospho PSMs localized (q <= 1%)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "rank-1 PSMs 28073; peptidoforms q<=1% 3090; phospho PSMs 3858 (mono 3827, multi 31); truth-eligible 2277; per run 58: 9, 60: 1551, 66: 934, 72: 1364",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-multi-PXD000138-A",
+   "kind": "multi-phospho (reported separately, \u00a76.5)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "sites 62, STY 47, decoy 15, STY at FLR\u0302 1% 39, 5% 39",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-strata-PXD000138-A-0.01",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 619 true FLR 0.81% (own-stratum FLR\u0302: n 963, true 3.12%); not_close: n_elig 1120 true FLR 0.00% (own-stratum FLR\u0302: n 1116, true 0.00%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-strata-PXD000138-A-0.05",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 1024 true FLR 7.23% (own-stratum FLR\u0302: n 1024, true 7.23%); not_close: n_elig 1132 true FLR 0.00% (own-stratum FLR\u0302: n 1129, true 0.00%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-site-PXD000138-A",
+   "kind": "site-level FLR\u0302 (D8 secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "FLR\u0302 0.01: STY sites 488, eligible 268, true 0.00%; FLR\u0302 0.05: STY sites 1020, eligible 703, true 2.28%",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-multi-PXD000138-L",
+   "kind": "multi-phospho (reported separately, \u00a76.5)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "sites 62, STY 46, decoy 16, STY at FLR\u0302 1% 7, 5% 7",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-strata-PXD000138-L-0.01",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 649 true FLR 3.39% (own-stratum FLR\u0302: n 630, true 3.17%); not_close: n_elig 1484 true FLR 0.54% (own-stratum FLR\u0302: n 1485, true 0.61%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-strata-PXD000138-L-0.05",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 659 true FLR 4.25% (own-stratum FLR\u0302: n 659, true 4.25%); not_close: n_elig 1485 true FLR 0.61% (own-stratum FLR\u0302: n 1487, true 0.67%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "D-site-PXD000138-L",
+   "kind": "site-level FLR\u0302 (D8 secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "FLR\u0302 0.01: STY sites 997, eligible 703, true 2.42%; FLR\u0302 0.05: STY sites 1064, eligible 730, true 4.25%",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-ids-PXD009449",
+   "kind": "phospho PSMs localized (q <= 1%)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "rank-1 PSMs 145320; peptidoforms q<=1% 247; phospho PSMs 44245 (mono 44245, multi 0); truth-eligible 24908; per run 02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1: 44245, 02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1: 0, 02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1: 0, 02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1: 0",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-multi-PXD009449-A",
+   "kind": "multi-phospho (reported separately, \u00a76.5)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "none",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-strata-PXD009449-A-0.01",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 13133 true FLR 1.42% (own-stratum FLR\u0302: n 13025, true 1.11%); not_close: n_elig 9343 true FLR 0.00% (own-stratum FLR\u0302: n 9365, true 0.15%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-strata-PXD009449-A-0.05",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 15021 true FLR 6.76% (own-stratum FLR\u0302: n 13133, true 1.42%); not_close: n_elig 9365 true FLR 0.15% (own-stratum FLR\u0302: n 9365, true 0.15%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-site-PXD009449-A",
+   "kind": "site-level FLR\u0302 (D8 secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "FLR\u0302 0.01: STY sites 150, eligible 81, true 2.47%; FLR\u0302 0.05: STY sites 165, eligible 88, true 5.68%",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-multi-PXD009449-L",
+   "kind": "multi-phospho (reported separately, \u00a76.5)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "none",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-strata-PXD009449-L-0.01",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 12347 true FLR 1.47% (own-stratum FLR\u0302: n 12079, true 0.68%); not_close: n_elig 9865 true FLR 0.01% (own-stratum FLR\u0302: n 9885, true 0.15%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-strata-PXD009449-L-0.05",
+   "kind": "acceptor within 2 residues (\u00a76.5 strata)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "close: n_elig 14580 true FLR 7.00% (own-stratum FLR\u0302: n 12347, true 1.47%); not_close: n_elig 9885 true FLR 0.15% (own-stratum FLR\u0302: n 9885, true 0.15%)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-site-PXD009449-L",
+   "kind": "site-level FLR\u0302 (D8 secondary)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "FLR\u0302 0.01: STY sites 147, eligible 81, true 1.23%; FLR\u0302 0.05: STY sites 161, eligible 87, true 5.75%",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "D-nonphospho-PXD009449",
+   "kind": "phospho PSMs at q<=1% in pools without phospho (kit design)",
+   "labels": [
+    "L-PSM",
+    "L-D-A5",
+    "L-TRUTH",
+    "L-TUNE"
+   ],
+   "statistic": "Kmod_Dimethyl: 0, Kmod_Formyl: 0, Rmod_Citrullin: 0",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1",
+   "id": "S-run-02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 6.2 s (MS2 55131), search 0.78 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1",
+   "id": "S-run-02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 5.7 s (MS2 47913), search 0.19 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1",
+   "id": "S-run-02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 6.1 s (MS2 51861), search 0.21 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1",
+   "id": "S-run-02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 6.5 s (MS2 50088), search 0.19 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "58",
+   "id": "S-run-58",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 5.2 s (MS2 10777), search 0.11 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "60",
+   "id": "S-run-60",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 5.1 s (MS2 10611), search 0.10 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "66",
+   "id": "S-run-66",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 5.6 s (MS2 10841), search 0.12 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "72",
+   "id": "S-run-72",
+   "kind": "runtime per run",
+   "labels": [],
+   "statistic": "convert 5.5 s (MS2 10155), search 0.10 s",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD000138",
+   "id": "S-loc-PXD000138",
+   "kind": "localization throughput",
+   "labels": [],
+   "statistic": "ours_A 0.2 s (18178 PSM/s); ours_L 0.2 s (21847 PSM/s); pyascore_A 0.2 s (15901 PSM/s); pyascore_L 0.2 s (16150 PSM/s)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "component": "PXD009449",
+   "id": "S-loc-PXD009449",
+   "kind": "localization throughput",
+   "labels": [],
+   "statistic": "ours_A 2.0 s (22497 PSM/s); ours_L 2.0 s (22303 PSM/s); pyascore_A 2.1 s (21464 PSM/s); pyascore_L 2.2 s (20039 PSM/s)",
+   "verdict": "descriptive; not a claim"
+  },
+  {
+   "id": "S-total",
+   "kind": "driver total",
+   "labels": [],
+   "statistic": "wall 1057 s, core-s 1334; stages convert 7 s, e8 351 s, index_build 674 s, search 10 s",
+   "verdict": "descriptive; not a claim"
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "identical": {
+  "search_fasta_sha256": true,
+  "psm_tables": {
+   "58": true,
+   "60": true,
+   "66": true,
+   "72": true,
+   "SF_200217_pPeptideLibrary_pool1_HCDOT_rep1": true,
+   "SF_200217_pPeptideLibrary_pool2_HCDOT_rep1": true,
+   "SF_200217_pPeptideLibrary_pool3_HCDOT_rep1": true,
+   "SF_200217_pPeptideLibrary_pool4_HCDOT_rep1": true,
+   "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1": true
+  },
+  "PXD000138.n_rank1_psms": true,
+  "PXD000138.n_peptidoforms_q01": true,
+  "PXD000138.n_phospho_psms_localized": true,
+  "PXD000138.n_mono": true,
+  "PXD000138.n_multi": true,
+  "PXD000138.n_truth_eligible_psms": true,
+  "PXD000138.search_rank1_site_correct_frac_on_eligible": true,
+  "PXD000138.search_mode_counts": true,
+  "PXD000138.pyascore_A.eval": true,
+  "PXD000138.pyascore_L.eval": true,
+  "PXD007058.n_rank1_psms": true,
+  "PXD007058.n_peptidoforms_q01": true,
+  "PXD007058.n_phospho_psms_localized": true,
+  "PXD007058.n_mono": true,
+  "PXD007058.n_multi": true,
+  "PXD007058.n_truth_eligible_psms": true,
+  "PXD007058.search_rank1_site_correct_frac_on_eligible": true,
+  "PXD007058.search_mode_counts": true,
+  "PXD007058.pyascore_A.eval": true,
+  "PXD007058.pyascore_L.eval": true,
+  "PXD009449.n_rank1_psms": true,
+  "PXD009449.n_peptidoforms_q01": true,
+  "PXD009449.n_phospho_psms_localized": true,
+  "PXD009449.n_mono": true,
+  "PXD009449.n_multi": true,
+  "PXD009449.n_truth_eligible_psms": true,
+  "PXD009449.search_rank1_site_correct_frac_on_eligible": true,
+  "PXD009449.search_mode_counts": true,
+  "PXD009449.pyascore_A.eval": true,
+  "PXD009449.pyascore_L.eval": true
+ },
+ "ours_diffs": {
+  "PXD000138.ours_A": {
+   "n_fields": 31,
+   "n_diff": 12,
+   "m4_vs_driver": {
+    "mono.all_thr_0.05.true_flr": [
+     0.037122969837587005,
+     0.03619489559164733
+    ],
+    "mono.best_site_correct_frac": [
+     0.9112867808519982,
+     0.9121651295564339
+    ],
+    "mono.correct_sites_at_true_flr_0.05": [
+     2075,
+     2077
+    ],
+    "mono.elig_thr_0.05.flrhat_at_thr": [
+     0.042688149871656096,
+     0.04249752606108256
+    ],
+    "mono.elig_thr_0.05.n_sty": [
+     2093,
+     2078
+    ],
+    "mono.elig_thr_0.05.true_flr": [
+     0.015766841853798376,
+     0.01203079884504331
+    ],
+    "mono.elig_whole_list.true_flr": [
+     0.037122969837587005,
+     0.03619489559164733
+    ],
+    "mono.n_decoy": [
+     141,
+     140
+    ],
+    "mono.n_sty": [
+     3686,
+     3687
+    ],
+    "mono.n_sty_at_flrhat_0.05": [
+     3686,
+     3687
+    ],
+    "mono.recall_any_threshold": [
+     0.9112867808519982,
+     0.9121651295564339
+    ],
+    "mono.recall_at_true_flr_0.05": [
+     0.9112867808519982,
+     0.9121651295564339
+    ]
+   }
+  },
+  "PXD000138.ours_L": {
+   "n_fields": 31,
+   "n_diff": 20,
+   "m4_vs_driver": {
+    "mono.all_thr_0.05.n_sty_eligible": [
+     2228,
+     2131
+    ],
+    "mono.all_thr_0.05.true_flr": [
+     0.03590664272890485,
+     0.01313937118723604
+    ],
+    "mono.best_site_correct_frac": [
+     0.9433465085638999,
+     0.9407114624505929
+    ],
+    "mono.correct_sites_at_true_flr_0.05": [
+     2148,
+     2142
+    ],
+    "mono.elig_thr_0.01.flrhat_at_thr": [
+     0.0038495706248149247,
+     0.001659931221415214
+    ],
+    "mono.elig_thr_0.01.n_sty": [
+     2149,
+     2131
+    ],
+    "mono.elig_thr_0.01.true_flr": [
+     0.01675197766402978,
+     0.01313937118723604
+    ],
+    "mono.elig_thr_0.05.flrhat_at_thr": [
+     0.02622014878105248,
+     0.02841157730749707
+    ],
+    "mono.elig_thr_0.05.n_sty": [
+     2228,
+     2224
+    ],
+    "mono.elig_thr_0.05.true_flr": [
+     0.03590664272890485,
+     0.0368705035971223
+    ],
+    "mono.elig_whole_list.flrhat": [
+     0.02622014878105248,
+     0.02841157730749707
+    ],
+    "mono.elig_whole_list.n_decoy": [
+     49,
+     53
+    ],
+    "mono.elig_whole_list.n_sty": [
+     2228,
+     2224
+    ],
+    "mono.elig_whole_list.true_flr": [
+     0.03590664272890485,
+     0.0368705035971223
+    ],
+    "mono.n_decoy": [
+     170,
+     172
+    ],
+    "mono.n_sty": [
+     3657,
+     3655
+    ],
+    "mono.n_sty_at_flrhat_0.01": [
+     3445,
+     3444
+    ],
+    "mono.n_sty_at_flrhat_0.05": [
+     3657,
+     3444
+    ],
+    "mono.recall_any_threshold": [
+     0.9433465085638999,
+     0.9407114624505929
+    ],
+    "mono.recall_at_true_flr_0.05": [
+     0.9433465085638999,
+     0.9407114624505929
+    ]
+   }
+  },
+  "PXD007058.ours_A": {
+   "n_fields": 31,
+   "n_diff": 2,
+   "m4_vs_driver": {
+    "mono.n_sty_at_flrhat_0.05": [
+     367,
+     365
+    ],
+    "multi.n_sty_at_flrhat_0.05": [
+     101,
+     100
+    ]
+   }
+  },
+  "PXD007058.ours_L": {
+   "n_fields": 31,
+   "n_diff": 1,
+   "m4_vs_driver": {
+    "mono.n_sty_at_flrhat_0.05": [
+     381,
+     372
+    ]
+   }
+  },
+  "PXD009449.ours_A": {
+   "n_fields": 26,
+   "n_diff": 24,
+   "m4_vs_driver": {
+    "mono.all_thr_0.01.n_sty_eligible": [
+     23678,
+     23326
+    ],
+    "mono.all_thr_0.01.true_flr": [
+     0.008700059126615424,
+     0.003172425619480408
+    ],
+    "mono.all_thr_0.05.n_sty_eligible": [
+     25924,
+     25919
+    ],
+    "mono.all_thr_0.05.true_flr": [
+     0.04428328961580003,
+     0.044291832246614454
+    ],
+    "mono.best_site_correct_frac": [
+     0.935543556243628,
+     0.9353547558811313
+    ],
+    "mono.correct_sites_at_true_flr_0.01": [
+     23472,
+     23252
+    ],
+    "mono.correct_sites_at_true_flr_0.05": [
+     24776,
+     24771
+    ],
+    "mono.elig_thr_0.01.flrhat_at_thr": [
+     0.007786891394293375,
+     0.000850845638391167
+    ],
+    "mono.elig_thr_0.01.n_sty": [
+     23678,
+     23326
+    ],
+    "mono.elig_thr_0.01.true_flr": [
+     0.008700059126615424,
+     0.003172425619480408
+    ],
+    "mono.elig_thr_0.05.flrhat_at_thr": [
+     0.007786891394293375,
+     0.000850845638391167
+    ],
+    "mono.elig_thr_0.05.n_sty": [
+     23678,
+     23326
+    ],
+    "mono.elig_thr_0.05.true_flr": [
+     0.008700059126615424,
+     0.003172425619480408
+    ],
+    "mono.elig_whole_list.flrhat": [
+     0.055600325962102536,
+     0.0561084672371172
+    ],
+    "mono.elig_whole_list.n_decoy": [
+     559,
+     564
+    ],
+    "mono.elig_whole_list.n_sty": [
+     25924,
+     25919
+    ],
+    "mono.elig_whole_list.true_flr": [
+     0.04428328961580003,
+     0.044291832246614454
+    ],
+    "mono.n_decoy": [
+     684,
+     683
+    ],
+    "mono.n_sty": [
+     45161,
+     45162
+    ],
+    "mono.n_sty_at_flrhat_0.01": [
+     41341,
+     40712
+    ],
+    "mono.n_sty_at_flrhat_0.05": [
+     45161,
+     45162
+    ],
+    "mono.recall_any_threshold": [
+     0.935543556243628,
+     0.9353547558811313
+    ],
+    "mono.recall_at_true_flr_0.01": [
+     0.8863044217044896,
+     0.877997205754635
+    ],
+    "mono.recall_at_true_flr_0.05": [
+     0.935543556243628,
+     0.9353547558811313
+    ]
+   }
+  },
+  "PXD009449.ours_L": {
+   "n_fields": 26,
+   "n_diff": 24,
+   "m4_vs_driver": {
+    "mono.all_thr_0.01.n_sty_eligible": [
+     23429,
+     23108
+    ],
+    "mono.all_thr_0.01.true_flr": [
+     0.008707157795893978,
+     0.003202354163060412
+    ],
+    "mono.all_thr_0.05.n_sty_eligible": [
+     26039,
+     26070
+    ],
+    "mono.all_thr_0.05.true_flr": [
+     0.04454856177272553,
+     0.04418872266973533
+    ],
+    "mono.best_site_correct_frac": [
+     0.93943284371106,
+     0.9409054865385341
+    ],
+    "mono.correct_sites_at_true_flr_0.01": [
+     23225,
+     23034
+    ],
+    "mono.correct_sites_at_true_flr_0.05": [
+     24879,
+     24918
+    ],
+    "mono.elig_thr_0.01.flrhat_at_thr": [
+     0.009622376467499985,
+     0.0014009021322254449
+    ],
+    "mono.elig_thr_0.01.n_sty": [
+     23429,
+     23108
+    ],
+    "mono.elig_thr_0.01.true_flr": [
+     0.008707157795893978,
+     0.003202354163060412
+    ],
+    "mono.elig_thr_0.05.flrhat_at_thr": [
+     0.03855894966645815,
+     0.035824121346954424
+    ],
+    "mono.elig_thr_0.05.n_sty": [
+     26039,
+     26070
+    ],
+    "mono.elig_thr_0.05.true_flr": [
+     0.04454856177272553,
+     0.04418872266973533
+    ],
+    "mono.elig_whole_list.flrhat": [
+     0.03855894966645815,
+     0.035824121346954424
+    ],
+    "mono.elig_whole_list.n_decoy": [
+     444,
+     413
+    ],
+    "mono.elig_whole_list.n_sty": [
+     26039,
+     26070
+    ],
+    "mono.elig_whole_list.true_flr": [
+     0.04454856177272553,
+     0.04418872266973533
+    ],
+    "mono.n_decoy": [
+     964,
+     928
+    ],
+    "mono.n_sty": [
+     44881,
+     44917
+    ],
+    "mono.n_sty_at_flrhat_0.01": [
+     40265,
+     39601
+    ],
+    "mono.n_sty_at_flrhat_0.05": [
+     44881,
+     44917
+    ],
+    "mono.recall_any_threshold": [
+     0.93943284371106,
+     0.9409054865385341
+    ],
+    "mono.recall_at_true_flr_0.01": [
+     0.8769776837971529,
+     0.8697655099497791
+    ],
+    "mono.recall_at_true_flr_0.05": [
+     0.93943284371106,
+     0.9409054865385341
+    ]
+   }
+  }
+ },
+ "all_deterministic_identical": true
+}

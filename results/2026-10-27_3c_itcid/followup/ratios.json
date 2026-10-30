@@ -1,0 +1,564 @@
+{
+ "unit": "sequence (I/L-collapsed); run-level IDs summed over runs",
+ "scorer": "itcid_linear_pred",
+ "bootstrap": "2000 percentile, seed 11, runs resampled (J = 1)",
+ "datasets": {
+  "D4": {
+   "runs": [
+    "dq_00095_11cell_90min_sps_A1",
+    "dq_00096_11cell_90min_sps_A3",
+    "dq_00097_11cell_90min_sps_A5",
+    "dq_00098_11cell_90min_sps_A7",
+    "dq_00099_11cell_90min_sps_A9",
+    "dq_00100_11cell_90min_sps_A11",
+    "dq_00101_11cell_90min_sps_B1",
+    "dq_00102_11cell_90min_sps_B3",
+    "dq_00103_11cell_90min_sps_B5",
+    "dq_00104_11cell_90min_sps_B7",
+    "dq_00105_11cell_90min_sps_B9",
+    "dq_00106_11cell_90min_sps_B11"
+   ],
+   "ids_dataset_level_seq": {
+    "vulcan": {
+     "0.001": 54778,
+     "0.01": 59082,
+     "0.05": 62817
+    },
+    "sage+pred+mokapot": {
+     "0.001": 53890,
+     "0.01": 57764,
+     "0.05": 60514
+    },
+    "sage+mokapot(seeded)": {
+     "0.001": 47813,
+     "0.01": 55622,
+     "0.05": 60091
+    },
+    "sage": {
+     "0.001": 47154,
+     "0.01": 55151,
+     "0.05": 60029
+    }
+   },
+   "ratios": {
+    "sage+pred+mokapot": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 68855.0,
+        "comparator_ids": 66491.0,
+        "ratio": 1.0355536839572272,
+        "ci95": [
+         1.0329350032420264,
+         1.0385290813283135
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 73352.0,
+        "comparator_ids": 69894.0,
+        "ratio": 1.0494749191633044,
+        "ci95": [
+         1.0458667215038178,
+         1.0528534288908429
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 63945.0,
+        "comparator_ids": 62038.0,
+        "ratio": 1.0307392243463684,
+        "ci95": [
+         1.0263363527232996,
+         1.0354735113160494
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 66247.68958253796,
+        "ratio": 1.0336063361140666,
+        "ci95": [
+         1.0302252542915498,
+         1.0373167230110938
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008333704996779361,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 69410.17921349387,
+        "ratio": 1.0466158424730196,
+        "ci95": [
+         1.0421707167793572,
+         1.0506994565231655
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.04408387464055321,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    },
+    "sage+mokapot(seeded)": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 68855.0,
+        "comparator_ids": 64141.0,
+        "ratio": 1.0734943327980544,
+        "ci95": [
+         1.0686507976769895,
+         1.078133452834849
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 73352.0,
+        "comparator_ids": 69509.0,
+        "ratio": 1.055287804456977,
+        "ci95": [
+         1.0517438455601358,
+         1.0597575604425935
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 63945.0,
+        "comparator_ids": 55342.0,
+        "ratio": 1.15545155578042,
+        "ci95": [
+         1.143974317839898,
+         1.168144318982117
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 63577.423293069114,
+        "ratio": 1.0770180381452132,
+        "ci95": [
+         1.0716673512426982,
+         1.081009024440429
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008428527718005101,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 68855.79398639932,
+        "ratio": 1.055042560515437,
+        "ci95": [
+         1.050610764579134,
+         1.0595183369229322
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.043051754235422644,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    },
+    "sage": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 68855.0,
+        "comparator_ids": 63712.0,
+        "ratio": 1.080722626820693,
+        "ci95": [
+         1.0768905041801107,
+         1.084884058986566
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 73352.0,
+        "comparator_ids": 69658.0,
+        "ratio": 1.0530305205432255,
+        "ci95": [
+         1.0492804474764368,
+         1.0574935094496218
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 63945.0,
+        "comparator_ids": 54758.0,
+        "ratio": 1.1677745717520727,
+        "ci95": [
+         1.1605656838433502,
+         1.1756655440760124
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 63092.508185275976,
+        "ratio": 1.085295761334291,
+        "ci95": [
+         1.0814973719074161,
+         1.089932623711374
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008231070104715871,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 68847.54296089702,
+        "ratio": 1.0551690019641575,
+        "ci95": [
+         1.0504695006373106,
+         1.0608250364973426
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.04205910537451785,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    }
+   },
+   "arm_P_seq_fdp": {
+    "vulcan": {
+     "fdp_P_mean_at_1pct_own_q": 0.012923609118165967
+    },
+    "sage+pred+mokapot": {
+     "fdp_P_mean_at_1pct_own_q": 0.01147230200364687
+    },
+    "sage+mokapot(seeded)": {
+     "fdp_P_mean_at_1pct_own_q": 0.011571113502932037
+    },
+    "sage": {
+     "fdp_P_mean_at_1pct_own_q": 0.012140247936390252
+    }
+   }
+  },
+  "D10cf": {
+   "runs": [
+    "Control_HEK_SEC_020118_10b",
+    "Control_HEK_SEC_020118_11b",
+    "Control_HEK_SEC_020118_12b",
+    "Control_HEK_SEC_020118_13b",
+    "Control_HEK_SEC_020118_14b",
+    "Control_HEK_SEC_020118_15b",
+    "Control_HEK_SEC_020118_16b",
+    "Control_HEK_SEC_020118_17b",
+    "Control_HEK_SEC_020118_18b",
+    "Control_HEK_SEC_020118_19b",
+    "Control_HEK_SEC_020118_20b",
+    "Control_HEK_SEC_020118_21b",
+    "Control_HEK_SEC_020118_22b",
+    "Control_HEK_SEC_020118_23b",
+    "Control_HEK_SEC_020118_24b",
+    "Control_HEK_SEC_020118_25c",
+    "Control_HEK_SEC_020118_26b",
+    "Control_HEK_SEC_020118_27b",
+    "Control_HEK_SEC_020118_28b",
+    "Control_HEK_SEC_020118_29b",
+    "Control_HEK_SEC_020118_30b",
+    "Control_HEK_SEC_020118_31b",
+    "Control_HEK_SEC_020118_32b",
+    "Control_HEK_SEC_020118_33b",
+    "Control_HEK_SEC_020118_34b",
+    "Control_HEK_SEC_020118_35b",
+    "Control_HEK_SEC_020118_36c",
+    "Control_HEK_SEC_020118_37c",
+    "Control_HEK_SEC_020118_38b"
+   ],
+   "ids_dataset_level_seq": {
+    "vulcan": {
+     "0.001": 58324,
+     "0.01": 65786,
+     "0.05": 71455
+    },
+    "sage+pred+mokapot": {
+     "0.001": 56845,
+     "0.01": 63347,
+     "0.05": 67042
+    },
+    "sage+mokapot(seeded)": {
+     "0.001": 44355,
+     "0.01": 55393,
+     "0.05": 63623
+    },
+    "sage": {
+     "0.001": 45054,
+     "0.01": 55640,
+     "0.05": 63795
+    }
+   },
+   "ratios": {
+    "sage+pred+mokapot": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 311318.0,
+        "comparator_ids": 285720.0,
+        "ratio": 1.0895912081758365,
+        "ci95": [
+         1.0853754565608094,
+         1.0939446673526394
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 320892.0,
+        "comparator_ids": 291976.0,
+        "ratio": 1.0990355371674385,
+        "ci95": [
+         1.0948229756036783,
+         1.1035647846895484
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 297290.0,
+        "comparator_ids": 275070.0,
+        "ratio": 1.0807794379612463,
+        "ci95": [
+         1.0766356680177944,
+         1.0851020115891286
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 288312.7090973438,
+        "ratio": 1.0926699952173589,
+        "ci95": [
+         1.0882269844780863,
+         1.097137995092096
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.024348568148094774,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 302341.4401962503,
+        "ratio": 1.0978795091384106,
+        "ci95": [
+         1.0933333117235335,
+         1.1031659013481208
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.12739591862155977,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    },
+    "sage+mokapot(seeded)": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 311318.0,
+        "comparator_ids": 273054.0,
+        "ratio": 1.140133453456093,
+        "ci95": [
+         1.1353271947966788,
+         1.1454579020160638
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 320892.0,
+        "comparator_ids": 287923.0,
+        "ratio": 1.1145063089784422,
+        "ci95": [
+         1.1098168650026012,
+         1.119557697169583
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 297290.0,
+        "comparator_ids": 244712.0,
+        "ratio": 1.214856647814574,
+        "ci95": [
+         1.2074677590661378,
+         1.222204870477225
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 279369.02009923523,
+        "ratio": 1.1276506119346938,
+        "ci95": [
+         1.1230314138633202,
+         1.132608975009233
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.019769232402552357,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 299319.40373100265,
+        "ratio": 1.1089640959366864,
+        "ci95": [
+         1.103919167364473,
+         1.1141603526220818
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.11388792399446468,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    },
+    "sage": {
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ours_ids": 311318.0,
+        "comparator_ids": 273761.0,
+        "ratio": 1.1371890079302749,
+        "ci95": [
+         1.132730369379196,
+         1.1423547535004435
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.05": {
+        "ours_ids": 320892.0,
+        "comparator_ids": 288478.0,
+        "ratio": 1.1123621212016168,
+        "ci95": [
+         1.1080891976877165,
+         1.1172785579977396
+        ],
+        "lower_ci_ge_0.97": true
+       },
+       "0.001": {
+        "ours_ids": 297290.0,
+        "comparator_ids": 248005.0,
+        "ratio": 1.198725832140481,
+        "ci95": [
+         1.1922175448386685,
+         1.20547648059381
+        ],
+        "lower_ci_ge_0.97": true
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 279770.41390399256,
+        "ratio": 1.126032742613756,
+        "ci95": [
+         1.1218254689989184,
+         1.1307853688288663
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.019823374698312142,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       },
+       "0.05": {
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 300227.4196211602,
+        "ratio": 1.1056101150711302,
+        "ci95": [
+         1.1007914266388485,
+         1.1109518833868788
+        ],
+        "lower_ci_ge_0.97": true,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.11134030953213071,
+        "fdp_reached": [
+         true,
+         true
+        ],
+        "n_boot_nan": 0
+       }
+      }
+     }
+    }
+   },
+   "arm_P_seq_fdp": {
+    "vulcan": {
+     "fdp_P_mean_at_1pct_own_q": 0.004995857743236354
+    },
+    "sage+pred+mokapot": {
+     "fdp_P_mean_at_1pct_own_q": 0.00452648111287436
+    },
+    "sage+mokapot(seeded)": {
+     "fdp_P_mean_at_1pct_own_q": 0.00544114582161112
+    },
+    "sage": {
+     "fdp_P_mean_at_1pct_own_q": 0.0052630535742395615
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,77 @@
+[04:21:18] t1_driver D1 sha=7a2d6ee8a220 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-28_E7b_fair_speed/t1/D1
+[04:21:19] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[04:21:19] mzML Velos005137: {'cached': True}
+[04:24:32] sage chimera R=2 done
+[04:27:44] sage chimera R=5 done
+[04:27:59] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/prod_1001: 14203 PSMs, unmapped 0
+[04:28:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1001_2001: 15751 PSMs, unmapped 0
+[04:28:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1001_2002: 15754 PSMs, unmapped 0
+[04:28:07] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1001_2003: 15697 PSMs, unmapped 0
+[04:28:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/C_1001: 19958 PSMs, unmapped 0
+[04:28:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/prod_1002: 14149 PSMs, unmapped 0
+[04:28:24] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1002_2001: 15660 PSMs, unmapped 0
+[04:28:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1002_2002: 15698 PSMs, unmapped 0
+[04:28:30] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1002_2003: 15761 PSMs, unmapped 0
+[04:28:38] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/C_1002: 20021 PSMs, unmapped 0
+[04:28:40] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/prod_1003: 14185 PSMs, unmapped 0
+[04:28:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1003_2001: 15808 PSMs, unmapped 0
+[04:28:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1003_2002: 15729 PSMs, unmapped 0
+[04:28:48] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1003_2003: 15686 PSMs, unmapped 0
+[04:29:00] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/C_1003: 19977 PSMs, unmapped 0
+[04:29:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/prod_1004: 14176 PSMs, unmapped 0
+[04:29:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1004_2001: 15669 PSMs, unmapped 0
+[04:29:07] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1004_2002: 15687 PSMs, unmapped 0
+[04:29:09] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1004_2003: 15728 PSMs, unmapped 0
+[04:29:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/C_1004: 19910 PSMs, unmapped 0
+[04:29:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/prod_1005: 14239 PSMs, unmapped 0
+[04:29:22] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1005_2001: 15741 PSMs, unmapped 0
+[04:29:24] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1005_2002: 15675 PSMs, unmapped 0
+[04:29:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/P_1005_2003: 15745 PSMs, unmapped 0
+[04:29:35] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim2_pred_mokapot/C_1005: 19954 PSMs, unmapped 0
+[04:29:37] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/prod_1001: 14940 PSMs, unmapped 0
+[04:29:39] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1001_2001: 17480 PSMs, unmapped 0
+[04:29:42] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1001_2002: 17454 PSMs, unmapped 0
+[04:29:44] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1001_2003: 17379 PSMs, unmapped 0
+[04:29:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/C_1001: 28259 PSMs, unmapped 0
+[04:29:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/prod_1002: 14850 PSMs, unmapped 0
+[04:29:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1002_2001: 17322 PSMs, unmapped 0
+[04:30:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1002_2002: 17313 PSMs, unmapped 0
+[04:30:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1002_2003: 17443 PSMs, unmapped 0
+[04:30:14] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/C_1002: 28338 PSMs, unmapped 0
+[04:30:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/prod_1003: 14913 PSMs, unmapped 0
+[04:30:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1003_2001: 17526 PSMs, unmapped 0
+[04:30:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1003_2002: 17440 PSMs, unmapped 0
+[04:30:23] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1003_2003: 17389 PSMs, unmapped 0
+[04:30:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/C_1003: 28381 PSMs, unmapped 0
+[04:30:34] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/prod_1004: 14842 PSMs, unmapped 0
+[04:30:37] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1004_2001: 17363 PSMs, unmapped 0
+[04:30:39] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1004_2002: 17317 PSMs, unmapped 0
+[04:30:42] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1004_2003: 17375 PSMs, unmapped 0
+[04:30:51] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/C_1004: 28118 PSMs, unmapped 0
+[04:30:53] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/prod_1005: 14953 PSMs, unmapped 0
+[04:30:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1005_2001: 17495 PSMs, unmapped 0
+[04:30:59] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1005_2002: 17361 PSMs, unmapped 0
+[04:31:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/P_1005_2003: 17477 PSMs, unmapped 0
+[04:31:11] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_chim5_pred_mokapot/C_1005: 28368 PSMs, unmapped 0
+[04:31:20] sage RT check: {'n_confident': 10827, 'frac_predicted_rt_nonzero': 0.9900774654016886, 'sd_predicted_rt': 0.20851611616966198, 'median_abs_delta_rt_model_confident': 0.043854356, 'spearman_aligned_vs_predicted_confident': 0.9426438660677244, 'pin_has_rt_features': True}
+[04:31:20] driver total 603s
+[04:34:55] t1_driver D1 sha=7a2d6ee8a220 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-28_E7b_fair_speed/t1/D1
+[04:34:55] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[04:34:55] evaluate vulcan_v2_sep
+[04:37:56] evaluate sage+pred+mokapot
+[04:38:37] evaluate sage_chim2
+[04:39:27] evaluate sage_chim2+pred+mokapot
+[04:40:20] evaluate sage_chim5
+[04:41:19] evaluate sage_chim5+pred+mokapot
+[04:42:37] driver total 462s
+[04:42:37] wrote metrics.json and tables.md
+[05:03:59] t1_driver D1 sha=31af0bec2e0f dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-28_E7b_fair_speed/t1/D1
+[05:03:59] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[05:03:59] evaluate vulcan_v2_sep
+[05:07:28] evaluate sage+pred+mokapot
+[05:08:18] evaluate sage_chim2
+[05:09:12] evaluate sage_chim2+pred+mokapot
+[05:10:05] evaluate sage_chim5
+[05:11:04] evaluate sage_chim5+pred+mokapot
+[05:12:23] driver total 506s
+[05:12:23] wrote metrics.json and tables.md

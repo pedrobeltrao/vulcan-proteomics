@@ -1,0 +1,8 @@
+{
+ "accepted_projects": [
+  "PXD008785",
+  "PXD010849"
+ ],
+ "deviation": "stopped at 2 of 3 pre-specified projects: the next candidate in walk order (PXD002607, after PXD041682/PXD041908/PXD029363 failed the IT-CID check) stalled at ~13 kB/s on PRIDE FTP for >1.5 h; decided before any null spectrum was searched",
+ "runs": "see /tmp/vulcan_3c/logs/fetch_nulls*.log"
+}

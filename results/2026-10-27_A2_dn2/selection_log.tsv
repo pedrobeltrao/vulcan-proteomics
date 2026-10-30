@@ -1,0 +1,83 @@
+walk_pos	accession	organism	result	reason_or_slot	upid	file	size	sha256	sha1	pride_sha1_source	sha1_status
+0	PXD055378	Komagataella pastoris (strain gs115 / atcc 20864) (yeast) (pichia pastoris)	protocol	protocol text (sampleProcessingProtocol): standard							
+1	PXD054269	Fervidobacterium gondwanense dsm 13020	marker screen exclude	B|ALB|9913,B|SERPINA1|9913,H|ALB|9606,H|C3|9606,H|CALML5|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|IGHG1|9606,H|IGKC|9606,H|LTF|9606,H|LYZ|9606,H|S100A8|9606,H|SERPINB3|9606,H|TF|9606	UP000184207	E04224_MS23-009_32.raw	1124168945	cfbdc95263777ade62b5f82279a60b0d70357d6303228b77ac13d4cd8bfbc763	2401f47df0260f4d1b599fe3f46cfe9dc1716a7f	none	no_pride_checksum
+1	PXD054269	Fervidobacterium gondwanense dsm 13020	marker screen exclude	B|ALB|9913,B|SERPINA1|9913,H|ALB|9606,H|C3|9606,H|CALML5|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|IGHG1|9606,H|IGKC|9606,H|LTF|9606,H|LYZ|9606,H|S100A8|9606,H|SERPINB3|9606,H|TF|9606	UP000184207	E04227_MS23-009_35.raw	1169100267	a752fad75fbd81a388d625341aab3cf7c7a664cfaf102402bde85e3e02ea5b28	4db12f6c8c60cdba142bd706a2271e1cf97ee423	none	no_pride_checksum
+1	PXD054269	Fervidobacterium gondwanense dsm 13020	marker screen exclude	B|ALB|9913,B|SERPINA1|9913,H|ALB|9606,H|C3|9606,H|CALML5|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|IGHG1|9606,H|IGKC|9606,H|LTF|9606,H|LYZ|9606,H|S100A8|9606,H|SERPINB3|9606,H|TF|9606	UP000184207	E04266_MS23-009_69.raw	1466882906	e618a76eb617385179714485d48820ae55ccb7c92fdc2575b9da9f41376eeb3b	305cbb0a9b6b6d704c0bb9f95746d3c5504ee7f6	none	no_pride_checksum
+2	PXD003639	Sorangium cellulosum (strain so ce56) (polyangium cellulosum (strain so ce56))	protocol	protocol text (sampleProcessingProtocol): serum							
+3	PXD054285	Fervidobacterium changbaicum	marker screen exclude	B|AHSG|9913,B|ALB|9913,B|HBA|9913,B|SERPINA1|9913,H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSG1|9606,H|DSP|9606,H|FLG2|9606,H|HBA1|9606,H|HRNR|9606,H|JUP|9606,H|PKP1|9606,H|SPRR2A|9606	UP000288947	E04184_MS23-009_1.raw	1056905699	c478097457a97533ff8a7071d8c0aaf0c724a04031db680e53660e6e451a781b	bdbad1ae18b35c211b9b89695222ce365aa63c76	none	no_pride_checksum
+3	PXD054285	Fervidobacterium changbaicum	marker screen exclude	B|AHSG|9913,B|ALB|9913,B|HBA|9913,B|SERPINA1|9913,H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSG1|9606,H|DSP|9606,H|FLG2|9606,H|HBA1|9606,H|HRNR|9606,H|JUP|9606,H|PKP1|9606,H|SPRR2A|9606	UP000288947	E04231_MS23-009_39.raw	1365993574	6ffe645affcc0ae3e39f55834697ce41c71a7d9a7d800fcf1f9f0317bd297eea	a6cc63ff76c51abc3203a674cb1ee0f5b271d598	none	no_pride_checksum
+3	PXD054285	Fervidobacterium changbaicum	marker screen exclude	B|AHSG|9913,B|ALB|9913,B|HBA|9913,B|SERPINA1|9913,H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSG1|9606,H|DSP|9606,H|FLG2|9606,H|HBA1|9606,H|HRNR|9606,H|JUP|9606,H|PKP1|9606,H|SPRR2A|9606	UP000288947	E04234_MS23-009_42.raw	1346034796	ad12f75c8de08a6a8ca9166fb4b007b8ac192ed707eea2017e683c23daf9f251	2335af3f434a8ebe73dff43f8adefa0fd2f9d154	none	no_pride_checksum
+4	PXD006818	Streptomyces lividans tk24	admitted	Streptomyces	UP000028682	SL203_set1_rep1.raw	580829183	2369e190a7295d7c3bf83e43dff0a95fef9602ed9780feff2fb54a5acb0d1e04	c940539b6bc5627ceb18cd0d6091bb17c4c1ae4c	api	OK
+4	PXD006818	Streptomyces lividans tk24	admitted	Streptomyces	UP000028682	SL203_set1_rep6.raw	623186987	1f7dbc2c707644688e2dfcabd9c1fa8f2dcdd5e838d9783ffd097ce3da68a414	5f6b0f98891eb2b642143dd69f1203d5b7aea0be	api	OK
+4	PXD006818	Streptomyces lividans tk24	admitted	Streptomyces	UP000028682	SL322_set1_rep5.raw	632534029	1584d3e7d4ddc1da374d261cee4a0cb190d7692881f1e3f5079c198b9a94298f	6d4b8e56e90160a8f82170e3a675f658e8d12b79	api	OK
+5	PXD022955	Synechocystis sp. pcc 6803	protocol	protocol text (dataProcessingProtocol): acetyl							
+6	PXD018953	Caballeronia mineralivorans	admitted	Caballeronia	UP000035963	Q06711_MS18-007_Biotite_GB1.raw	568422658	1db14e5367e20983d9d6c6dcac896d5ee46fcfa9b2e0d6d843bc9bc1e02767f3	150c4860702bf7968883522e57241fbaa3a04560	api	OK
+6	PXD018953	Caballeronia mineralivorans	admitted	Caballeronia	UP000035963	Q06717_MS18-007_Biotite_GBB3.raw	557052061	94ca424a7d9698efd820c4969d48846e70f59feea189f31af8ed44543671911e	ea35aa05df6049ba888b74fca902d2cb2f228a6d	api	OK
+6	PXD018953	Caballeronia mineralivorans	admitted	Caballeronia	UP000035963	Q06722_MS18-007_Biotite_MBB4.raw	610791957	b2f23a3ee390cab783252ba7c137e8da948a5b1874eebc4b5bb126ca99b33e26	df97cff10dfd64dfc7c17fd938c3cc0907ca9fc5	api	OK
+7	PXD054278	Fervidobacterium	no reference proteome								
+8	PXD020025	Synechocystis sp. pcc 6803	protocol	protocol text (sampleProcessingProtocol): standard							
+9	PXD054267	Fervidobacterium pennivorans	marker screen exclude	H|ALB|9606,H|DSP|9606	UP000007384	E21285_MS23-015_9.raw	1194146880	d79cb59998153fb52f3a6de6a6655934ab62c365feafb8d610afcf93b0c3d8e4	6c6d5fdfe733c1e69d044fad7104ecf749ea9193	none	no_pride_checksum
+9	PXD054267	Fervidobacterium pennivorans	marker screen exclude	H|ALB|9606,H|DSP|9606	UP000007384	E21294_MS23-015_18.raw	1183824104	48fc3e54c28c6d0d5993591a0ae07685d163a104cd92fcd0351bb29b5fd85acc	e00181ef1ba6b38ef4463d75fa4ba2283dcc14f5	none	no_pride_checksum
+9	PXD054267	Fervidobacterium pennivorans	marker screen exclude	H|ALB|9606,H|DSP|9606	UP000007384	E21298_MS23-015_10.raw	1004404568	820bb0a13306726e00b521f44c770caa834191dcaa4027e0cf8302e7abfeefc8	a57b010c7f2878b1c45daae1f75fe8c64c692b7f	none	no_pride_checksum
+10	PXD054280	Fervidobacterium	no reference proteome								
+11	PXD003139	Acaryochloris marina (strain mbic 11017)	2 usable raw								
+12	PXD009626	Synechocystis sp.	protocol	protocol text (dataProcessingProtocol): N-termin							
+13	PXD044078	Bacillus pumilus	admitted	Bacillus	UP000001355	Q12238_MS21-015_Bp2.raw	1174258877	199c59ad7928d72dfbd9005c861d1c720f974cd0851b24796dd295d973f635c8	a974c421f0b63017f87a9c0b5628ff5af40d06a9	api	OK
+13	PXD044078	Bacillus pumilus	admitted	Bacillus	UP000001355	Q12239_MS21-015_Bp3.raw	1184320832	49173346782c8d30e0cd6108f26a9248a303d8d70e95017a65abb309ff935b2f	45d9d6469d11fb8fa35f25620a7b3ffc8417c9c0	api	OK
+13	PXD044078	Bacillus pumilus	admitted	Bacillus	UP000001355	Q12240_MS21-015_Bp4.raw	1175302694	edd809ff0585e22a7ee3146342fef81494fbef85f4c7cfdd16f4ce222a073095	eee2fbf2bed26972e9f5082ab3b4bf9dae05b6b8	api	OK
+14	PXD020167	Phaeodactylum tricornutum (strain ccap 1055/1)	protocol	protocol text (sampleProcessingProtocol): single cell							
+15	PXD013401	Synechocystis sp. (strain pcc 6803 / kazusa)	0 usable raw								
+16	PXD011591	Rhodobacter capsulatus	admitted	Rhodobacter	UP000002361	1010_1.raw	1018857264	933d77c9bff7197a4362d6884b6bf940b404a159235ce027c6ab5fe869e9d0bd	8136742121dfb271e1e8ca367b4ede2311a7686f	api	OK
+16	PXD011591	Rhodobacter capsulatus	admitted	Rhodobacter	UP000002361	101_G.raw	1152273587	8c526889384e24cff8bc6287b28751b2d1cb07c1fe5cbeff0a647b1958393214	f6cadcb7a001b668892baff822cebe2df4e0eceb	api	OK
+16	PXD011591	Rhodobacter capsulatus	admitted	Rhodobacter	UP000002361	D2_G.raw	973523843	5c5bba4f387c490bce6e67620175ffeb3edcf947b7f83186a2165b83bb492339	91a3365fd8e02e6ad0682f1e57aaab5fb95528c1	api	OK
+17	PXD053918	Chlorella ohadii	protocol	protocol text (dataProcessingProtocol): N-termin							
+18	PXD027969	Deinococcus radiodurans	protocol	protocol text (dataProcessingProtocol): acetyl							
+19	PXD049698	Streptomyces mirabilis	genus slot taken	Streptomyces							
+20	PXD061233	Synechocystis sp. (strain pcc 6803 / kazusa)	protocol	SDRF organism part ['not applicable']							
+21	PXD052144	Bacillus pumilus	genus slot taken	Bacillus							
+22	PXD024700	Propionibacterium freudenreichii	protocol	protocol text (sampleProcessingProtocol): dia							
+23	PXD038704	Chlorella ohadii	protocol	protocol text (dataProcessingProtocol): N-termin							
+24	PXD078403	Caballeronia jiangsuensis	genus slot taken	Caballeronia							
+25	PXD054272	Fervidobacterium islandicum	marker screen exclude	H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSC1|9606,H|DSG1|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|HRNR|9606,H|JUP|9606,H|LTF|9606,H|PIP|9606,H|PKP1|9606,H|SERPINB12|9606,H|SERPINB3|9606,H|SPRR2A|9606	UP000093740	E04214_MS23-009_23.raw	1219985668	628d1a9eff3c8334ec7ef7ccf271e600373ccea1e0fb9c207364eedeaf882456	83edf0226e8401d285d6feeb65bf1239f553ebef	none	no_pride_checksum
+25	PXD054272	Fervidobacterium islandicum	marker screen exclude	H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSC1|9606,H|DSG1|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|HRNR|9606,H|JUP|9606,H|LTF|9606,H|PIP|9606,H|PKP1|9606,H|SERPINB12|9606,H|SERPINB3|9606,H|SPRR2A|9606	UP000093740	E04215_MS23-009_24.raw	1025759878	c4744537fbb9d7e2499e15c96df048e90977ab58a3b8bce98fb00c27dc65286e	e8a7548b6fe4303da9f806fef85c914481bfdcf4	none	no_pride_checksum
+25	PXD054272	Fervidobacterium islandicum	marker screen exclude	H|ALB|9606,H|ARG1|9606,H|CDSN|9606,H|DCD|9606,H|DSC1|9606,H|DSG1|9606,H|DSP|9606,H|EVPL|9606,H|FLG2|9606,H|HRNR|9606,H|JUP|9606,H|LTF|9606,H|PIP|9606,H|PKP1|9606,H|SERPINB12|9606,H|SERPINB3|9606,H|SPRR2A|9606	UP000093740	E04251_MS23-009_57.raw	1438355968	1d7566cefaa179235e7768599fb3bc760a0b289d2bf527ccd137b3785c6a0679	1b3c8deabb8e9741874f1813f2db278f215dd508	none	no_pride_checksum
+26	PXD031212	Geobacter	0 usable raw								
+27	PXD061921	Synechocystis sp. (strain pcc 6803 / kazusa)	protocol	SDRF organism part ['cell suspension culture']							
+28	PXD055382	Komagataella pastoris (strain gs115 / atcc 20864) (yeast) (pichia pastoris)	protocol	protocol text (sampleProcessingProtocol): standard							
+29	PXD081924	Schizosaccharomyces pombe	protocol	protocol text (dataProcessingProtocol): acetyl							
+30	PXD015681	Chlorella vulgaris (green alga)	marker screen exclude	B|ALB|9823,B|ALB|9913,H|ALB|9606,H|APOA1|9606,H|S100A8|9606,H|SERPINB4|9606,H|TF|9606	UP001055712	100_3K_1.raw	1122041160	aaffdf188970191df80805550650914da0f3550874babbb93486ecaf472dbe34	dd67f89be597e13e72f853eabafd823763362bab	api	OK
+30	PXD015681	Chlorella vulgaris (green alga)	marker screen exclude	B|ALB|9823,B|ALB|9913,H|ALB|9606,H|APOA1|9606,H|S100A8|9606,H|SERPINB4|9606,H|TF|9606	UP001055712	100_3K_4_plus.raw	1187407947	5eba1e682ebe7b2d2c2f31b466a3eec1d0926fb11d0c8ff393096416cd2f2cf0	39578f4382cc28339ef9b44490d1136d39127dea	api	OK
+30	PXD015681	Chlorella vulgaris (green alga)	marker screen exclude	B|ALB|9823,B|ALB|9913,H|ALB|9606,H|APOA1|9606,H|S100A8|9606,H|SERPINB4|9606,H|TF|9606	UP001055712	3K_2.raw	1097025996	5f57a62f3d5ea196a69fe1da74120ee7283bc8bd5371f70177489b25459f26d6	68716d2494d3b16803627cf97391d6869c3f740a	api	OK
+31	PXD058977	Abortiporus biennis	protocol	protocol text (sampleProcessingProtocol): Phospho							
+32	PXD042182	Streptomyces rimosus subsp. rimosus	genus slot taken	Streptomyces							
+33	PXD053716	Myxococcus xanthus	protocol	protocol text (sampleProcessingProtocol): standard							
+34	PXD032691	Abortiporus biennis	protocol	protocol text (sampleProcessingProtocol): Phospho							
+35	PXD040146	Streptomyces lividans tk24	genus slot taken	Streptomyces							
+36	PXD062270	Halobacterium salinarum (strain atcc 700922 / jcm 11081 / nrc-1) (halobacterium halobium)	protocol	SDRF organism part ['not available']							
+37	PXD008916	Corynebacterium glutamicum	protocol	protocol text (dataProcessingProtocol): acetyl							
+38	PXD062500	Deinococcus radiodurans	admitted	Deinococcus	UP000002524	HFX_BIT_LF_DR1_20231107.raw	1305413384	66aec183bd6d40a5346365f4600bbe67b0d009d2a0e452d70b79f99d0ccd94e6	0927311251243fc5f6ef7655454756eec2bc39e2	none	no_pride_checksum
+38	PXD062500	Deinococcus radiodurans	admitted	Deinococcus	UP000002524	HFX_BIT_LF_DR2_20231107.raw	1325258508	71dd199ede378b4c0f4a8e36b079c9bc489438323ecba238551ada3aa2fc4216	8284f3d035534db58587eec1fdfe43742a8ddaa0	none	no_pride_checksum
+38	PXD062500	Deinococcus radiodurans	admitted	Deinococcus	UP000002524	HFX_BIT_LF_pprI4_20231107.raw	1411283940	e2d65b8fbe6f112e9c90dffac9df5fba64373bb732ea7ba53244a11dd3d25e7d	7a40e0a3ed1c4947aea30465e17f7025ea1aca17	none	no_pride_checksum
+39	PXD038243	Emiliania huxleyi	admitted	Emiliania	UP000013827	RCC911_23_SubOpt_1.raw	961473170	7f47b02d7aad12198772912e60c87b4462e660f461836cb7ef208d2d11910be2	808a568ad2833738afca621fc205fb89d4673e7b	api	OK
+39	PXD038243	Emiliania huxleyi	admitted	Emiliania	UP000013827	RCC911_28_SupraOpt_1.raw	968316736	84534444b5522fc2a35a79a95f48db01c2e64951351c46506433c5f2ab187432	ee1a340782e10423ebdc8a742015bb5e36a90488	api	OK
+39	PXD038243	Emiliania huxleyi	admitted	Emiliania	UP000013827	RCC911_28_SupraOpt_2.raw	967138500	9c1a6f086ba3a7e6f85e19bcfb5a97ba21bdb1e71bd8ce40bf22395567923b24	4ed16453416cb6f014944127f8476af0457e4031	api	OK
+40	PXD053718	Myxococcus xanthus	protocol	protocol text (sampleProcessingProtocol): standard							
+41	PXD019019	Synechocystis sp. pcc 6803	no reference proteome								
+42	PXD001219	Pseudomonas putida (strain f1 / atcc 700007)	protocol	protocol text (dataProcessingProtocol): standard							
+43	PXD033328	Phaeodactylum tricornutum	protocol	protocol text (dataProcessingProtocol): acetyl							
+44	PXD020577	Shewanella oneidensis (strain mr-1)	protocol	protocol text (dataProcessingProtocol): N-termin							
+45	PXD018045	Frankia alni	marker screen exclude	B|CSN3|9913,H|DCD|9606,H|DSP|9606,H|JUP|9606	UP000000657	Q20060_Frankia-11.raw	790051075	c13cab10f8be4512ded68fc1fd6a3bf45ff13ea2a398510cde6b90fd9c66f908	b5cfc4ad0c575ef9f763dd5491c137cea87dc269	api	OK
+45	PXD018045	Frankia alni	marker screen exclude	B|CSN3|9913,H|DCD|9606,H|DSP|9606,H|JUP|9606	UP000000657	Q20062_Frankia-13.raw	919521760	caa8cb6f4b7972ec76d33caca0a7c3a5d8576261e586dbb655db8bf5cef609c9	5e94dfa0e4545418592f1f76fbf657bb6d2a8a82	api	OK
+45	PXD018045	Frankia alni	marker screen exclude	B|CSN3|9913,H|DCD|9606,H|DSP|9606,H|JUP|9606	UP000000657	Q20063_Frankia-14.raw	830633242	5f880c6e62baf869f5a3b8a88d72448b65699baa2061cb67d4a8d8946f29848c	b714838ba07478d709a6b9974c53c46267cd23fa	api	OK
+46	PXD011559	Emiliania huxleyi	genus slot taken	Emiliania							
+47	PXD024819	Cupriavidus necator (strain atcc 17699 / h16 / dsm 428 / stanier 337) (ralstonia eutropha)	protocol	protocol text (sampleProcessingProtocol): Tissue							
+48	PXD042310	Bacillus licheniformis	genus slot taken	Bacillus							
+49	PXD028644	Amycolatopsis	protocol	protocol text (sampleProcessingProtocol): dia							
+50	PXD033242	Streptomyces iranensis	genus slot taken	Streptomyces							
+51	PXD022738	Aspergillus niger	protocol	protocol text (dataProcessingProtocol): standard							
+52	PXD053714	Myxococcus xanthus	protocol	protocol text (sampleProcessingProtocol): standard							
+53	PXD001683	Aeropyrum pernix (strain atcc 700893 / dsm 11879 / jcm 9820 / nbrc 100138 / k1)	protocol	protocol text (sampleProcessingProtocol): dia							
+54	PXD006819	Streptomyces lividans tk24	genus slot taken	Streptomyces							
+55	PXD062210	Caballeronia mineralivorans pml1(12)	genus slot taken	Caballeronia							
+56	PXD021172	Phaeodactylum tricornutum	1 usable raw								
+57	PXD056191	Trichoderma harzianum	protocol	protocol text (sampleProcessingProtocol): dia							

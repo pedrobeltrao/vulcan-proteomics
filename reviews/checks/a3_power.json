@@ -1,0 +1,2665 @@
+{
+ "seed": 131,
+ "spec": "Amendment A3.1.9: power check of the A3 gate rows (V1-V14) for v2_sep, before the tag.  SYNTHETIC DATA ONLY.\n\nNo DN2 file, no gate output and no E7b output is read.  Seed 131 (SEEDS[4]).  The rules are the implemented ones:\nvulcan.gates.a2_stats (tail-G2, G1, G3 TOST), vulcan.gates.a3_stats (V6, V12, tiers), vulcan.stats.g2 (G2-original).\n\nProjection of the DN2 sizes from DEV structure (A3.1.9: E7's G2 mixtures, 35% secondary units, D0 neighbour-filter\ndrop rate 11.8%), as a function of the admitted A count |A| and of B (all non-A spectra of the admitted runs):\n  * |A| is bounded by A2.9.3's STOPPING RULE (independent review M3): the walk stops at the first admitted project\n    count >= 10 at which |A| >= 120,000 (then also n_top >= 72,000 and the tail proxy >= 400 at the constants below),\n    and at 16 projects otherwise.  Per-run A density d in {2k, 4k, 8k, 15k, 25k} (3 runs per project) gives the\n    reachable points (J projects, |A|) = (16, 96k), (10, 120k), (10, 240k), (10, 450k), (10, 750k); 16 projects\n    happen only when the criteria are not met (low yield).  B/|A| in {1, 3} (B is not projected by any committed dev\n    number; both are shown);\n  * fraction of A spectra (and of every null unit) with a candidate (a winner): 0.60 (A2.9.3 design 72,000 / 120,000;\n    dev check: 0.64 of D7 nulls in results/2026-10-28_A3_preconditions/truncation_dev.json);\n  * secondary units per B spectrum: 0.35 / 0.65 = 0.54 (E7 G2: 35% of null units are secondary); B spectra with >= 2\n    group winners: 0.40 (so class-1 V6 winners = 0.40 |B| c, class-2 = 0.54 |B| c);\n  * tail fraction of A units (and of A-syn units at the stratum-2/>=3 thresholds): 400 / 120,000 (A2.9.3 tail proxy);\n  * G3 recall 0.998 (E2) for every pool; V6 drop rate 0.118 (E7 D0); V12 miss rate 0.0981 and 63.75% of A spectra\n    with a candidate per label (dev max-variance decile on a D0-host mixture with production calibration,\n    results/2026-10-28_A3_preconditions/truncation_dev.json); |FS| = |A| by construction (A2.4: one FS copy per A\n    spectrum), 5% of FS spectra with a winner (A2.4: most none);\n  * V13: the A-syn tail fraction at the stratum-2/>=3 thresholds is not measured on dev; it is set to A's and a\n    sensitivity at half that fraction is reported (independent review minor 1).\nOutputs (reviews/checks/a3_power.json + printed table):\n  * n_min of V6 and V12 (the V6 rule: smallest n per label per bin at which a symmetric process at the dev rate\n    passes one 90% Newcombe TOST bin with probability >= 0.90; 20,000 MC replicates per n) and V14 (A2.6 rule:\n    7,200; its pass probability at 7,200 is reported); V11 is intentionally unused (A3.2.4);\n  * per V row and |A| scenario: projected n, evaluable or not, pass probability under a clean scorer, and the\n    pass (\"firing-miss\") rate at the margin (tail fraction 0.60 / diff 0.10, rho 0.05, recall gap 0.01, drop gap\n    0.01, G2 excess 0.01, AUC 0.55);\n  * the joint pass probability per tier: rows are simulated separately (a single synthetic DN2 per replicate was not\n    built), so the joint is reported as BOUNDS that hold under any dependence between rows -- Frechet lower bound\n    max(0, sum p - (k - 1)) and upper bound min p -- plus the product under independence (independent review M4;\n    a disclosed departure from \"simulated joint\"); a not-evaluable row has pass probability 0;\n  * flags, recorded in advance (A3.1.9, read strictly as \"can never PASS\"): a row is flagged when its clean-scorer\n    pass probability is < 0.05 at EVERY reachable point (per B/|A| and over both); a tier is \"expected not\n    evaluable / not passable\" when its joint upper bound is < 0.05 at every reachable point.",
+ "n_min": {
+  "V6": {
+   "n_min": 22700,
+   "p": 0.882,
+   "pass_prob_at_n_min": 0.90245,
+   "target": 0.9,
+   "n_rep": 20000,
+   "rate": "keep rate 1 - 0.118 (dev drop 11.8%)"
+  },
+  "V11": "unused (A3.2.4: number intentionally unused)",
+  "V12": {
+   "n_min": 19200,
+   "p": 0.9019,
+   "pass_prob_at_n_min": 0.90155,
+   "target": 0.9,
+   "n_rep": 20000,
+   "rate": "recall 1 - 0.0981 (dev max-variance decile)"
+  },
+  "V14": {
+   "n_min_top": 7200,
+   "rule": "A2.6 unchanged",
+   "pass_prob_at_7200_rho0_learned_ci": 0.906
+  },
+  "V8": {
+   "n_min": 107570,
+   "rule": "g2_sample_size() (\u00a76.4 budget)"
+  },
+  "wall_s": 66.28809648705646
+ },
+ "scenarios": [
+  {
+   "n_A": 96000,
+   "B_over_A": 1.0,
+   "J_projects": 16,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 320.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.745,
+      "not_evaluable_invalid": 0.055,
+      "fail": 0.2
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.015,
+      "not_evaluable_invalid": 0.04666666666666667,
+      "fail": 0.9383333333333334
+     }
+    },
+    "V2": {
+     "n_top": 5760.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_rho0.05": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 5760
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04525,
+      "n_per_label_per_bin": 5760
+     }
+    },
+    "V4": {
+     "n_units": 146215.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 14621
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05375,
+      "n_per_label_per_bin": 14621
+     }
+    },
+    "V5": {
+     "n_units": 31015.384615384613,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 3101
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.048,
+      "n_per_label_per_bin": 3101
+     }
+    },
+    "V6.class1": {
+     "n_winners": 23040.0,
+     "n_per_label_top_bin": 1152.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 31015.384615384613,
+     "n_per_label_top_bin": 1550.7692307692307,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 146215.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9619871499159389
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.026302549814688894
+     }
+    },
+    "V8": {
+     "n": 31015.384615384613,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_excess0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V9.a": {
+     "n": 146215.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 57600.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 31015.384615384613,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 4800.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999990096083,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 6119.999999999999,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 6119
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 6119
+     }
+    },
+    "V13": {
+     "n_tail": 640.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9183333333333333,
+      "not_evaluable_invalid": 0.05333333333333334,
+      "fail": 0.028333333333333332
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.013333333333333334,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.9366666666666666
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.7616666666666667,
+      "not_evaluable_invalid": 0.058333333333333334,
+      "fail": 0.18
+     }
+    },
+    "V14": {
+     "n_top": 11520.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9833999999999999,
+      "learned_ci_inside": 0.9933333333333333,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.745,
+    "V2": 0.0,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9619871499159389,
+    "V8": 0.0,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 0.9999999990096083,
+    "V12": 0.0,
+    "V13": 0.9183333333333333,
+    "V14": 0.9833999999999999
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V2",
+    "V6.class1",
+    "V6.class2",
+    "V8"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 96000,
+   "B_over_A": 3.0,
+   "J_projects": 16,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 320.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.745,
+      "not_evaluable_invalid": 0.055,
+      "fail": 0.2
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.015,
+      "not_evaluable_invalid": 0.04666666666666667,
+      "fail": 0.9383333333333334
+     }
+    },
+    "V2": {
+     "n_top": 5760.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_rho0.05": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 5760
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04525,
+      "n_per_label_per_bin": 5760
+     }
+    },
+    "V4": {
+     "n_units": 323446.1538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 32344
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04875,
+      "n_per_label_per_bin": 32344
+     }
+    },
+    "V5": {
+     "n_units": 93046.15384615384,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 9304
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04425,
+      "n_per_label_per_bin": 9304
+     }
+    },
+    "V6.class1": {
+     "n_winners": 69120.0,
+     "n_per_label_top_bin": 3456.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 93046.15384615384,
+     "n_per_label_top_bin": 4652.307692307692,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 323446.1538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9997111924816497
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.040780811195347884
+     }
+    },
+    "V8": {
+     "n": 93046.15384615384,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_excess0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V9.a": {
+     "n": 323446.1538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 57600.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 93046.15384615384,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 4800.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999990096083,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 6119.999999999999,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 6119
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 6119
+     }
+    },
+    "V13": {
+     "n_tail": 640.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9183333333333333,
+      "not_evaluable_invalid": 0.05333333333333334,
+      "fail": 0.028333333333333332
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.013333333333333334,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.9366666666666666
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.7616666666666667,
+      "not_evaluable_invalid": 0.058333333333333334,
+      "fail": 0.18
+     }
+    },
+    "V14": {
+     "n_top": 11520.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9833999999999999,
+      "learned_ci_inside": 0.9933333333333333,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.745,
+    "V2": 0.0,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9997111924816497,
+    "V8": 0.0,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 0.9999999990096083,
+    "V12": 0.0,
+    "V13": 0.9183333333333333,
+    "V14": 0.9833999999999999
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V2",
+    "V6.class1",
+    "V6.class2",
+    "V8"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 120000,
+   "B_over_A": 1.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.86,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.09
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.01,
+      "not_evaluable_invalid": 0.04,
+      "fail": 0.95
+     }
+    },
+    "V2": {
+     "n_top": 7200.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.8844,
+      "learned_ci_inside": 0.8933333333333333,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.00495,
+      "learned_ci_inside": 0.005,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 7200
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0485,
+      "n_per_label_per_bin": 7200
+     }
+    },
+    "V4": {
+     "n_units": 182769.23076923078,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 18276
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04825,
+      "n_per_label_per_bin": 18276
+     }
+    },
+    "V5": {
+     "n_units": 38769.230769230766,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 3876
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04425,
+      "n_per_label_per_bin": 3876
+     }
+    },
+    "V6.class1": {
+     "n_winners": 28800.0,
+     "n_per_label_top_bin": 1440.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 38769.230769230766,
+     "n_per_label_top_bin": 1938.4615384615383,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 182769.23076923078,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.985323727797525
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.030267030571259554
+     }
+    },
+    "V8": {
+     "n": 38769.230769230766,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_excess0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V9.a": {
+     "n": 182769.23076923078,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 72000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 38769.230769230766,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 6000.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999999901105,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 7650.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 7650
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 7650
+     }
+    },
+    "V13": {
+     "n_tail": 800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.95,
+      "not_evaluable_invalid": 0.045,
+      "fail": 0.005
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.015,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9366666666666666
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.7933333333333333,
+      "not_evaluable_invalid": 0.058333333333333334,
+      "fail": 0.14833333333333334
+     }
+    },
+    "V14": {
+     "n_top": 14400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.86,
+    "V2": 0.8844,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.985323727797525,
+    "V8": 0.0,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 0.9999999999901105,
+    "V12": 0.0,
+    "V13": 0.95,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V6.class1",
+    "V6.class2",
+    "V8"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 120000,
+   "B_over_A": 3.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.86,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.09
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.01,
+      "not_evaluable_invalid": 0.04,
+      "fail": 0.95
+     }
+    },
+    "V2": {
+     "n_top": 7200.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.8844,
+      "learned_ci_inside": 0.8933333333333333,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.00495,
+      "learned_ci_inside": 0.005,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 7200
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0485,
+      "n_per_label_per_bin": 7200
+     }
+    },
+    "V4": {
+     "n_units": 404307.69230769225,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 40430
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0485,
+      "n_per_label_per_bin": 40430
+     }
+    },
+    "V5": {
+     "n_units": 116307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 11630
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04825,
+      "n_per_label_per_bin": 11630
+     }
+    },
+    "V6.class1": {
+     "n_winners": 86400.0,
+     "n_per_label_top_bin": 4320.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 116307.6923076923,
+     "n_per_label_top_bin": 5815.384615384615,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 404307.69230769225,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99997353808826
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.0442369963191783
+     }
+    },
+    "V8": {
+     "n": 116307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9193658376136762
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.02262043331300272
+     }
+    },
+    "V9.a": {
+     "n": 404307.69230769225,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 72000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 116307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 6000.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999999901105,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 7650.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 7650
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 7650
+     }
+    },
+    "V13": {
+     "n_tail": 800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.95,
+      "not_evaluable_invalid": 0.045,
+      "fail": 0.005
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.015,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9366666666666666
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.7933333333333333,
+      "not_evaluable_invalid": 0.058333333333333334,
+      "fail": 0.14833333333333334
+     }
+    },
+    "V14": {
+     "n_top": 14400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.86,
+    "V2": 0.8844,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.99997353808826,
+    "V8": 0.9193658376136762,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 0.9999999999901105,
+    "V12": 0.0,
+    "V13": 0.95,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V6.class1",
+    "V6.class2"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 240000,
+   "B_over_A": 1.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9566666666666667,
+      "not_evaluable_invalid": 0.03333333333333333,
+      "fail": 0.01
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.025,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.925
+     }
+    },
+    "V2": {
+     "n_top": 14400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.00495,
+      "learned_ci_inside": 0.005,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 14400
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05575,
+      "n_per_label_per_bin": 14400
+     }
+    },
+    "V4": {
+     "n_units": 365538.46153846156,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 36553
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04875,
+      "n_per_label_per_bin": 36553
+     }
+    },
+    "V5": {
+     "n_units": 77538.46153846153,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 7753
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04525,
+      "n_per_label_per_bin": 7753
+     }
+    },
+    "V6.class1": {
+     "n_winners": 57600.0,
+     "n_per_label_top_bin": 2880.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 77538.46153846153,
+     "n_per_label_top_bin": 3876.9230769230767,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 365538.46153846156,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999159793398504
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.042762611551132534
+     }
+    },
+    "V8": {
+     "n": 77538.46153846153,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_excess0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V9.a": {
+     "n": 365538.46153846156,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 144000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 77538.46153846153,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 12000.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 15300.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 15300
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 15300
+     }
+    },
+    "V13": {
+     "n_tail": 1600.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9666666666666667,
+      "not_evaluable_invalid": 0.03333333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.011666666666666667,
+      "not_evaluable_invalid": 0.043333333333333335,
+      "fail": 0.945
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.9383333333333334,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.011666666666666667
+     }
+    },
+    "V14": {
+     "n_top": 28800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0099,
+      "learned_ci_inside": 0.01,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9566666666666667,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9999159793398504,
+    "V8": 0.0,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.0,
+    "V13": 0.9666666666666667,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V6.class1",
+    "V6.class2",
+    "V8"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 240000,
+   "B_over_A": 3.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9566666666666667,
+      "not_evaluable_invalid": 0.03333333333333333,
+      "fail": 0.01
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.025,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.925
+     }
+    },
+    "V2": {
+     "n_top": 14400.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.00495,
+      "learned_ci_inside": 0.005,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 14400
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05575,
+      "n_per_label_per_bin": 14400
+     }
+    },
+    "V4": {
+     "n_units": 808615.3846153845,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 80861
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.054,
+      "n_per_label_per_bin": 80861
+     }
+    },
+    "V5": {
+     "n_units": 232615.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 23261
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0505,
+      "n_per_label_per_bin": 23261
+     }
+    },
+    "V6.class1": {
+     "n_winners": 172800.0,
+     "n_per_label_top_bin": 8640.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 232615.3846153846,
+     "n_per_label_top_bin": 11630.76923076923,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 808615.3846153845,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999999213292
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.049563666693061226
+     }
+    },
+    "V8": {
+     "n": 232615.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9961953146631158
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.034788238835073676
+     }
+    },
+    "V9.a": {
+     "n": 808615.3846153845,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 144000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 232615.3846153846,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 12000.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 15300.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 15300
+     },
+     "margin_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0,
+      "n_per_label_per_bin": 15300
+     }
+    },
+    "V13": {
+     "n_tail": 1600.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9666666666666667,
+      "not_evaluable_invalid": 0.03333333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.011666666666666667,
+      "not_evaluable_invalid": 0.043333333333333335,
+      "fail": 0.945
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.9383333333333334,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.011666666666666667
+     }
+    },
+    "V14": {
+     "n_top": 28800.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0099,
+      "learned_ci_inside": 0.01,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9566666666666667,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9999999999213292,
+    "V8": 0.9961953146631158,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.0,
+    "V13": 0.9666666666666667,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V12",
+    "V6.class1",
+    "V6.class2"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 450000,
+   "B_over_A": 1.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 1500.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9616666666666667,
+      "not_evaluable_invalid": 0.03833333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.011666666666666667,
+      "not_evaluable_invalid": 0.06,
+      "fail": 0.9283333333333333
+     }
+    },
+    "V2": {
+     "n_top": 27000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 27000
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05325,
+      "n_per_label_per_bin": 27000
+     }
+    },
+    "V4": {
+     "n_units": 685384.6153846154,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 68538
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.051,
+      "n_per_label_per_bin": 68538
+     }
+    },
+    "V5": {
+     "n_units": 145384.61538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 14538
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.056,
+      "n_per_label_per_bin": 14538
+     }
+    },
+    "V6.class1": {
+     "n_winners": 108000.0,
+     "n_per_label_top_bin": 5400.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 145384.61538461538,
+     "n_per_label_top_bin": 7269.2307692307695,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 685384.6153846154,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999957918507
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.0490099929281397
+     }
+    },
+    "V8": {
+     "n": 145384.61538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9611728732163477
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.026205776473806647
+     }
+    },
+    "V9.a": {
+     "n": 685384.6153846154,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 270000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 145384.61538461538,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 22500.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 28687.5,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.82875,
+      "n_per_label_per_bin": 28687
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0455,
+      "n_per_label_per_bin": 28687
+     }
+    },
+    "V13": {
+     "n_tail": 3000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9533333333333334,
+      "not_evaluable_invalid": 0.04666666666666667,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.02,
+      "not_evaluable_invalid": 0.035,
+      "fail": 0.945
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.95,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.0
+     }
+    },
+    "V14": {
+     "n_top": 54000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9616666666666667,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9999999957918507,
+    "V8": 0.9611728732163477,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.82875,
+    "V13": 0.9533333333333334,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V6.class1",
+    "V6.class2"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 450000,
+   "B_over_A": 3.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 1500.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9616666666666667,
+      "not_evaluable_invalid": 0.03833333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.011666666666666667,
+      "not_evaluable_invalid": 0.06,
+      "fail": 0.9283333333333333
+     }
+    },
+    "V2": {
+     "n_top": 27000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 27000
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05325,
+      "n_per_label_per_bin": 27000
+     }
+    },
+    "V4": {
+     "n_units": 1516153.8461538462,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 151615
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0535,
+      "n_per_label_per_bin": 151615
+     }
+    },
+    "V5": {
+     "n_units": 436153.8461538461,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 43615
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05325,
+      "n_per_label_per_bin": 43615
+     }
+    },
+    "V6.class1": {
+     "n_winners": 324000.0,
+     "n_per_label_top_bin": 16200.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 436153.8461538461,
+     "n_per_label_top_bin": 21807.69230769231,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 1516153.8461538462,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.04999719222616593
+     }
+    },
+    "V8": {
+     "n": 436153.8461538461,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999898738730656
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.04523591542251148
+     }
+    },
+    "V9.a": {
+     "n": 1516153.8461538462,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 270000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 436153.8461538461,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 22500.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 28687.5,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.82875,
+      "n_per_label_per_bin": 28687
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0455,
+      "n_per_label_per_bin": 28687
+     }
+    },
+    "V13": {
+     "n_tail": 3000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9533333333333334,
+      "not_evaluable_invalid": 0.04666666666666667,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.02,
+      "not_evaluable_invalid": 0.035,
+      "fail": 0.945
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.95,
+      "not_evaluable_invalid": 0.05,
+      "fail": 0.0
+     }
+    },
+    "V14": {
+     "n_top": 54000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9616666666666667,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 1.0,
+    "V8": 0.9999898738730656,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.82875,
+    "V13": 0.9533333333333334,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V6.class1",
+    "V6.class2"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 750000,
+   "B_over_A": 1.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.0,
+    "frechet_lower": 0.0,
+    "upper_min": 0.0
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 2500.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9483333333333334,
+      "not_evaluable_invalid": 0.051666666666666666,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.013333333333333334,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9383333333333334
+     }
+    },
+    "V2": {
+     "n_top": 45000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 45000
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0475,
+      "n_per_label_per_bin": 45000
+     }
+    },
+    "V4": {
+     "n_units": 1142307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 114230
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05425,
+      "n_per_label_per_bin": 114230
+     }
+    },
+    "V5": {
+     "n_units": 242307.69230769228,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 24230
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.04475,
+      "n_per_label_per_bin": 24230
+     }
+    },
+    "V6.class1": {
+     "n_winners": 180000.0,
+     "n_per_label_top_bin": 9000.0,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V6.class2": {
+     "n_winners": 242307.69230769228,
+     "n_per_label_top_bin": 12115.384615384615,
+     "clean": {
+      "evaluable": false,
+      "pass": 0.0
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": false,
+      "pass": 0.0
+     }
+    },
+    "V7": {
+     "n": 1142307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999999999988
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.049957091122083096
+     }
+    },
+    "V8": {
+     "n": 242307.69230769228,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9970910057026766
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.03555719792326611
+     }
+    },
+    "V9.a": {
+     "n": 1142307.6923076923,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 450000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 242307.69230769228,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 37500.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 47812.49999999999,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99475,
+      "n_per_label_per_bin": 47812
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.054,
+      "n_per_label_per_bin": 47812
+     }
+    },
+    "V13": {
+     "n_tail": 5000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9616666666666667,
+      "not_evaluable_invalid": 0.03833333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.01,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9416666666666667
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.9566666666666667,
+      "not_evaluable_invalid": 0.043333333333333335,
+      "fail": 0.0
+     }
+    },
+    "V14": {
+     "n_top": 90000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0033,
+      "learned_ci_inside": 0.0033333333333333335,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9483333333333334,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.0,
+    "V6.class2": 0.0,
+    "V7": 0.9999999999999988,
+    "V8": 0.9970910057026766,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.99475,
+    "V13": 0.9616666666666667,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [
+    "V6.class1",
+    "V6.class2"
+   ],
+   "joint_pass_tier1": 0.0,
+   "joint_pass_tier2": 0.0,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  },
+  {
+   "n_A": 750000,
+   "B_over_A": 3.0,
+   "J_projects": 10,
+   "joint_bounds_tier1": {
+    "independence": 0.8909606697750001,
+    "frechet_lower": 0.887083333333333,
+    "upper_min": 0.9483333333333334
+   },
+   "joint_bounds_tier2": {
+    "independence": 0.8382722952382499,
+    "frechet_lower": 0.8269999988911216,
+    "upper_min": 0.9483333333333334
+   },
+   "rows": {
+    "V1": {
+     "n_tail": 2500.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9483333333333334,
+      "not_evaluable_invalid": 0.051666666666666666,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.013333333333333334,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9383333333333334
+     }
+    },
+    "V2": {
+     "n_top": 45000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0066,
+      "learned_ci_inside": 0.006666666666666667,
+      "control_valid": 0.99
+     }
+    },
+    "V3": {
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 45000
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0475,
+      "n_per_label_per_bin": 45000
+     }
+    },
+    "V4": {
+     "n_units": 2526923.0769230765,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 252692
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05575,
+      "n_per_label_per_bin": 252692
+     }
+    },
+    "V5": {
+     "n_units": 726923.0769230769,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "n_per_label_per_bin": 72692
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05525,
+      "n_per_label_per_bin": 72692
+     }
+    },
+    "V6.class1": {
+     "n_winners": 540000.0,
+     "n_per_label_top_bin": 27000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.954
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": true,
+      "pass": 0.05
+     }
+    },
+    "V6.class2": {
+     "n_winners": 726923.0769230769,
+     "n_per_label_top_bin": 36346.153846153844,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.98825
+     },
+     "margin_drop_gap0.01": {
+      "evaluable": true,
+      "pass": 0.0515
+     }
+    },
+    "V7": {
+     "n": 2526923.0769230765,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.04999999884204048
+     }
+    },
+    "V8": {
+     "n": 726923.0769230769,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9999999988911212
+     },
+     "margin_excess0.01": {
+      "evaluable": true,
+      "pass": 0.049246894283771055
+     }
+    },
+    "V9.a": {
+     "n": 2526923.0769230765,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.b": {
+     "n": 450000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V9.c": {
+     "n": 726923.0769230769,
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0
+     },
+     "margin_auc0.55": {
+      "evaluable": true,
+      "pass": 0.5
+     }
+    },
+    "V10": {
+     "n_fs_winners": 37500.0,
+     "evaluable_parts": {
+      "tail_G2": false,
+      "G1": false,
+      "G5": true
+     },
+     "clean": {
+      "evaluable": true,
+      "pass": 1.0,
+      "note": "not evaluable never blocks (A2.4)"
+     }
+    },
+    "V12": {
+     "n_per_label_per_bin": 47812.49999999999,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99475,
+      "n_per_label_per_bin": 47812
+     },
+     "margin_gap0.01": {
+      "evaluable": true,
+      "pass": 0.054,
+      "n_per_label_per_bin": 47812
+     }
+    },
+    "V13": {
+     "n_tail": 5000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.9616666666666667,
+      "not_evaluable_invalid": 0.03833333333333333,
+      "fail": 0.0
+     },
+     "margin_p0.60": {
+      "evaluable": true,
+      "pass": 0.01,
+      "not_evaluable_invalid": 0.04833333333333333,
+      "fail": 0.9416666666666667
+     },
+     "sensitivity_half_tail_fraction": {
+      "evaluable": true,
+      "pass": 0.9566666666666667,
+      "not_evaluable_invalid": 0.043333333333333335,
+      "fail": 0.0
+     }
+    },
+    "V14": {
+     "n_top": 90000.0,
+     "clean": {
+      "evaluable": true,
+      "pass": 0.99,
+      "learned_ci_inside": 1.0,
+      "control_valid": 0.99
+     },
+     "margin_rho0.05": {
+      "evaluable": true,
+      "pass": 0.0033,
+      "learned_ci_inside": 0.0033333333333333335,
+      "control_valid": 0.99
+     }
+    }
+   },
+   "marginal_pass_clean": {
+    "V1": 0.9483333333333334,
+    "V2": 0.99,
+    "V3": 1.0,
+    "V4": 1.0,
+    "V5": 1.0,
+    "V6.class1": 0.954,
+    "V6.class2": 0.98825,
+    "V7": 1.0,
+    "V8": 0.9999999988911212,
+    "V9.a": 1.0,
+    "V9.b": 1.0,
+    "V9.c": 1.0,
+    "V10": 1.0,
+    "V12": 0.99475,
+    "V13": 0.9616666666666667,
+    "V14": 0.99
+   },
+   "not_evaluable_rows": [],
+   "joint_pass_tier1": 0.8909606697750001,
+   "joint_pass_tier2": 0.8382722952382499,
+   "joint_assumption": "rows simulated separately; joint_pass_* = product (independence); bounds valid under any dependence in joint_bounds_*"
+  }
+ ],
+ "expected_not_evaluable": {
+  "reachable_points": [
+   {
+    "J": 16,
+    "n_A": 96000
+   },
+   {
+    "J": 10,
+    "n_A": 120000
+   },
+   {
+    "J": 10,
+    "n_A": 240000
+   },
+   {
+    "J": 10,
+    "n_A": 450000
+   },
+   {
+    "J": 10,
+    "n_A": 750000
+   }
+  ],
+  "rule": "row: clean pass prob < 0.05 at every reachable point; tier: joint upper bound < 0.05 at every reachable point",
+  "all_B_ratios": {
+   "rows_never_passable": [],
+   "tier1_expected_not_evaluable": false,
+   "tier2_expected_not_evaluable": false
+  },
+  "B_over_A_1.0": {
+   "rows_never_passable": [
+    "V6.class1",
+    "V6.class2"
+   ],
+   "tier1_expected_not_evaluable": true,
+   "tier2_expected_not_evaluable": true
+  },
+  "B_over_A_3.0": {
+   "rows_never_passable": [],
+   "tier1_expected_not_evaluable": false,
+   "tier2_expected_not_evaluable": false
+  },
+  "design_point_A120k": {
+   "not_evaluable_rows": [
+    "V12",
+    "V6.class1",
+    "V6.class2"
+   ],
+   "tier1_not_evaluable": true
+  },
+  "smallest_reachable_A_with_tier1_upper_bound_ge_0.05": 750000
+ },
+ "tiers": {
+  "tier1": [
+   "V1",
+   "V2",
+   "V3",
+   "V4",
+   "V6.class1",
+   "V7",
+   "V9.a",
+   "V9.b",
+   "V10",
+   "V12"
+  ],
+  "tier2": [
+   "V5",
+   "V6.class2",
+   "V8",
+   "V9.c",
+   "V13",
+   "V14"
+  ]
+ },
+ "constants": {
+  "REACH": [
+   [
+    16,
+    96000
+   ],
+   [
+    10,
+    120000
+   ],
+   [
+    10,
+    240000
+   ],
+   [
+    10,
+    450000
+   ],
+   [
+    10,
+    750000
+   ]
+  ],
+  "A_GRID": [
+   96000,
+   120000,
+   240000,
+   450000,
+   750000
+  ],
+  "B_RATIO": [
+   1.0,
+   3.0
+  ],
+  "V12_CAND": 0.6375,
+  "C_CAND": 0.6,
+  "SEC_PER_B": 0.5384615384615384,
+  "B_MULTI": 0.4,
+  "TAIL_FRAC": 0.0033333333333333335,
+  "RECALL": 0.998,
+  "DROP": 0.118,
+  "V12_MISS": 0.0981,
+  "FS_WIN": 0.05
+ },
+ "wall_s": 634.7885482828133
+}

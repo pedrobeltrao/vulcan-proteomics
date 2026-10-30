@@ -1,0 +1,60 @@
+{"ev": "start", "set": "D8h", "n_projects": 10, "n_runs": 10, "loadavg": [36.625, 47.38623046875, 41.30322265625], "t": 0.04}
+{"ev": "a6_lock_acquired", "t": 0.21}
+{"ev": "listing", "acc": "PXD014823", "wall_s": 0.21335601806640625, "n_files": 3, "t": 0.32}
+{"ev": "listing", "acc": "PXD011447", "wall_s": 0.23350262641906738, "n_files": 14, "t": 0.34}
+{"ev": "listing", "acc": "PXD069854", "wall_s": 0.20568418502807617, "n_files": 9, "t": 0.34}
+{"ev": "listing", "acc": "PXD057360", "wall_s": 0.22604107856750488, "n_files": 22, "t": 0.35}
+{"ev": "listing", "acc": "PXD027980", "wall_s": 0.23867368698120117, "n_files": 15, "t": 0.35}
+{"ev": "listing", "acc": "PXD007543", "wall_s": 0.14810585975646973, "n_files": 26, "t": 0.35}
+{"ev": "listing", "acc": "PXD016022", "wall_s": 0.25079917907714844, "n_files": 22, "t": 0.36}
+{"ev": "listing", "acc": "PXD011751", "wall_s": 0.18189644813537598, "n_files": 25, "t": 0.36}
+{"ev": "listing", "acc": "PXD026819", "wall_s": 0.3250610828399658, "n_files": 8, "t": 0.52}
+{"ev": "listing", "acc": "PXD018572", "wall_s": 2.8302721977233887, "n_files": 217, "t": 2.94}
+{"ev": "ctx_setup", "wall_s": 17.0507173538208, "t": 17.26}
+{"ev": "ctx_swapped_setup", "wall_s": 8.218334674835205, "t": 25.48}
+{"ev": "download", "run": "E9_0006__CL_CTL_p53_ZNF_061025_1", "wall_s": 136.65315175056458, "ok": true, "bytes": 625616487, "sha1_checked": false, "t": 136.99}
+{"ev": "decode", "run": "E9_0006__CL_CTL_p53_ZNF_061025_1", "wall_s": 4.577692985534668, "core_s": 4.88, "rc": 0, "t": 141.57}
+{"ev": "run_checks", "run": "E9_0006__CL_CTL_p53_ZNF_061025_1", "frac_ftms_hcd": 1.0, "n_ms1": 2335, "reporters": {"TMT": {"median_frac": 0.00016666666666666666, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 142.1}
+{"ev": "download", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 203.62209510803223, "ok": true, "bytes": 633224353, "sha1_checked": true, "t": 206.56}
+{"ev": "decode", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 8.278085708618164, "core_s": 6.14, "rc": 0, "t": 214.84}
+{"ev": "run_checks", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "frac_ftms_hcd": 1.0, "n_ms1": 6366, "reporters": {"TMT": {"median_frac": 0.0003333333333333333, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 215.22}
+{"ev": "download", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 234.19123482704163, "ok": true, "bytes": 647380066, "sha1_checked": false, "t": 234.54}
+{"ev": "trfp", "run": "E9_0006__CL_CTL_p53_ZNF_061025_1", "wall_s": 94.9393560886383, "core_s": 64.03999999999999, "rc": 0, "t": 237.04}
+{"ev": "decode", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 5.533773899078369, "core_s": 5.930000000000001, "rc": 0, "t": 240.07}
+{"ev": "run_checks", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "frac_ftms_hcd": 1.0, "n_ms1": 3604, "reporters": {"TMT": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 240.44}
+{"ev": "sage", "acc": "PXD069854", "n_runs": 1, "wall_s": 30.06382465362549, "core_s": 91.92999999999999, "t": 267.12}
+{"ev": "trfp", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 57.4768168926239, "core_s": 60.589999999999996, "rc": 0, "t": 272.69}
+{"ev": "admit", "acc": "PXD069854", "wall_s": 22.549416303634644, "cpu_s": 11.889864000000003, "timing": {"load_store": 0.7316272151656449, "certify": 5.6919550080783665, "sage_agree": 0.011445776093751192, "removal": 15.518158115912229, "freeze": 0.05907874507829547, "reduced_index": 0.40933996392413974, "null_search": 0.05486417980864644}, "removal": {"n_window_rows": 809181, "n_window_rows_with_partners": 810466, "n_unique_window_seqs": 737812, "n_I_pairs": 5289, "n_I_seqs": 10354, "R_rows": 497186, "R_rows_near_I_or_contam": 245736, "R_rows_ladder_only": 251450, "ladder_rows_tested": 766945, "wall_s": {"windows+I_filter_build": 2.1447139540687203, "near_I": 9.876522317063063, "contam": 2.0228326320648193e-06, "ladder": 3.3012907369993627}}, "counts": {"E9_0006__CL_CTL_p53_ZNF_061025_1": {"n_ms2": 25220, "n_certified_hs": 3899, "A": 3722, "A_cand": 2074, "tail_proxy": 7, "A_cand_hs_only": null}}, "t": 289.81}
+{"ev": "sage", "acc": "PXD018572", "n_runs": 1, "wall_s": 26.164685249328613, "core_s": 58.62, "t": 298.86}
+{"ev": "swap_test", "acc": "PXD069854", "wall_total_s": 23.32608127593994, "label_free_index_files_identical": {"peptidoforms.arrow": true, "residues.npy": true}, "I_identical": true, "R_identical": true, "memberships_identical": {"E9_0006__CL_CTL_p53_ZNF_061025_1": {"A": true, "A_cand": true, "tail_proxy": true}}, "wall_s": 23.32296737516299, "pass": true, "t": 313.14}
+{"ev": "admitted", "acc": "PXD069854", "n_runs": 1, "t": 313.14}
+{"ev": "trfp", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 80.59503030776978, "core_s": 82.28, "rc": 0, "t": 321.03}
+{"ev": "download", "run": "E9_0008__lgg1", "wall_s": 339.5963270664215, "ok": true, "bytes": 1362369513, "sha1_checked": true, "t": 340.11}
+{"ev": "admit", "acc": "PXD018572", "wall_s": 34.70823931694031, "cpu_s": 19.611195000000002, "timing": {"load_store": 0.3161782440729439, "certify": 5.741604031063616, "sage_agree": 0.01535774627700448, "removal": 27.047269572038203, "freeze": 0.12726113107055426, "reduced_index": 1.3148543168790638, "null_search": 0.12464638706296682}, "removal": {"n_window_rows": 1092834, "n_window_rows_with_partners": 1094590, "n_unique_window_seqs": 958944, "n_I_pairs": 8491, "n_I_seqs": 16748, "R_rows": 728124, "R_rows_near_I_or_contam": 358366, "R_rows_ladder_only": 369758, "ladder_rows_tested": 993094, "wall_s": {"windows+I_filter_build": 5.324948048219085, "near_I": 17.09825687482953, "contam": 1.7629936337471008e-06, "ladder": 4.4163261209614575}}, "counts": {"E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {"n_ms2": 20275, "n_certified_hs": 5594, "A": 5557, "A_cand": 1105, "tail_proxy": 13, "A_cand_hs_only": null}}, "t": 347.95}
+{"ev": "decode", "run": "E9_0008__lgg1", "wall_s": 12.929676294326782, "core_s": 10.2, "rc": 0, "t": 353.04}
+{"ev": "run_checks", "run": "E9_0008__lgg1", "frac_ftms_hcd": 1.0, "n_ms1": 9953, "reporters": {"TMT": {"median_frac": 0.00016666666666666666, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.00016666666666666666, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 354.1}
+{"ev": "sage", "acc": "PXD057360", "n_runs": 1, "wall_s": 49.051058769226074, "core_s": 97.72, "t": 370.08}
+{"ev": "swap_test", "acc": "PXD018572", "wall_total_s": 39.806962728500366, "label_free_index_files_identical": {"peptidoforms.arrow": true, "residues.npy": true}, "I_identical": true, "R_identical": true, "memberships_identical": {"E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {"A": true, "A_cand": true, "tail_proxy": true}}, "wall_s": 39.80221623321995, "pass": true, "t": 387.76}
+{"ev": "admitted", "acc": "PXD018572", "n_runs": 1, "t": 387.76}
+{"ev": "admit", "acc": "PXD057360", "wall_s": 22.726194858551025, "cpu_s": 10.190223999999986, "timing": {"load_store": 0.2443366963416338, "certify": 4.017561285290867, "sage_agree": 0.01161868590861559, "removal": 17.482842934783548, "freeze": 0.07532530510798097, "reduced_index": 0.8722572061233222, "null_search": 0.019061723724007607}, "removal": {"n_window_rows": 701938, "n_window_rows_with_partners": 703236, "n_unique_window_seqs": 624738, "n_I_pairs": 7863, "n_I_seqs": 14732, "R_rows": 417412, "R_rows_near_I_or_contam": 219062, "R_rows_ladder_only": 198350, "ladder_rows_tested": 667293, "wall_s": {"windows+I_filter_build": 1.6882710549980402, "near_I": 12.837352205999196, "contam": 9.313225746154785e-07, "ladder": 2.849300137721002}}, "counts": {"E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {"n_ms2": 66278, "n_certified_hs": 3525, "A": 3441, "A_cand": 680, "tail_proxy": 3, "A_cand_hs_only": null}}, "t": 410.69}
+{"ev": "download", "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B", "wall_s": 421.73302936553955, "ok": true, "bytes": 1517763556, "sha1_checked": true, "t": 422.09}
+{"ev": "decode", "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B", "wall_s": 9.132019996643066, "core_s": 7.37, "rc": 0, "t": 431.23}
+{"ev": "run_checks", "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B", "frac_ftms_hcd": 1.0, "n_ms1": 17595, "reporters": {"TMT": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 431.97}
+{"ev": "swap_test", "acc": "PXD057360", "wall_total_s": 23.647127389907837, "label_free_index_files_identical": {"peptidoforms.arrow": true, "residues.npy": true}, "I_identical": true, "R_identical": true, "memberships_identical": {"E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {"A": true, "A_cand": true, "tail_proxy": true}}, "wall_s": 23.63970280205831, "pass": true, "t": 434.34}
+{"ev": "admitted", "acc": "PXD057360", "n_runs": 1, "t": 434.34}
+{"ev": "download", "run": "E9_0003__20180623_PC463-Graves-McDonald_Sample1", "wall_s": 459.9457323551178, "ok": true, "bytes": 1459806984, "sha1_checked": true, "t": 460.3}
+{"ev": "download", "run": "E9_0009__20170210_MCF7_LysC_WT_2b", "wall_s": 465.38523626327515, "ok": true, "bytes": 1303435188, "sha1_checked": true, "t": 465.74}
+{"ev": "decode", "run": "E9_0003__20180623_PC463-Graves-McDonald_Sample1", "wall_s": 6.726147413253784, "core_s": 7.43, "rc": 0, "t": 467.03}
+{"ev": "run_checks", "run": "E9_0003__20180623_PC463-Graves-McDonald_Sample1", "frac_ftms_hcd": 1.0, "n_ms1": 9267, "reporters": {"TMT": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 467.4}
+{"ev": "decode", "run": "E9_0009__20170210_MCF7_LysC_WT_2b", "wall_s": 4.379807472229004, "core_s": 5.03, "rc": 0, "t": 470.12}
+{"ev": "run_checks", "run": "E9_0009__20170210_MCF7_LysC_WT_2b", "frac_ftms_hcd": 1.0, "n_ms1": 6114, "reporters": {"TMT": {"median_frac": 0.0003333333333333333, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0003333333333333333, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 470.58}
+curl: (23) Failure writing output to destination
+curl: (23) Failure writing output to destination
+curl: (23) Failure writing output to destination
+{"ev": "download", "run": "E9_0002__MGP2", "wall_s": 508.2923836708069, "ok": false, "bytes": 1859505900, "sha1_checked": true, "t": 508.61}
+{"ev": "download", "run": "E9_0004__20210122-YP202104470-xh-BT1-3", "wall_s": 508.26679253578186, "ok": false, "bytes": 1993995651, "sha1_checked": false, "t": 508.61}
+{"ev": "download", "run": "E9_0000__H0799BL", "wall_s": 508.2767298221588, "ok": false, "bytes": 1940466580, "sha1_checked": true, "t": 508.62}
+{"ev": "trfp", "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B", "wall_s": 77.36129450798035, "core_s": null, "rc": 1, "t": 509.33}
+{"ev": "trfp", "run": "E9_0009__20170210_MCF7_LysC_WT_2b", "wall_s": 38.75375413894653, "core_s": null, "rc": 1, "t": 509.34}
+{"ev": "trfp", "run": "E9_0003__20180623_PC463-Graves-McDonald_Sample1", "wall_s": 41.94089365005493, "core_s": null, "rc": 1, "t": 509.34}
+{"ev": "trfp", "run": "E9_0008__lgg1", "wall_s": 155.2786250114441, "core_s": null, "rc": 1, "t": 509.38}

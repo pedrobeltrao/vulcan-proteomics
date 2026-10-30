@@ -1,0 +1,325 @@
+{
+ "mode": "closed",
+ "params": {
+  "precursor_ppm": [
+   -10.0,
+   10.0
+  ],
+  "fragment_ppm": [
+   -20.0,
+   20.0
+  ],
+  "isotope_errors": [
+   0,
+   2
+  ],
+  "precursor_charge": [
+   2,
+   4
+  ],
+  "max_peaks": 150,
+  "min_peaks": 15,
+  "fragment_min_mz": 150.0,
+  "fragment_max_mz": 2000.0,
+  "min_ion_index": 2,
+  "max_fragment_charge": 1,
+  "min_matched_peaks": 4,
+  "topk": 500,
+  "k1_threshold": 1,
+  "pair_closure": true,
+  "report_psms": 1,
+  "peak_mode": "global",
+  "window_th": 100.0,
+  "window_k": 15,
+  "chunk_size": 32768,
+  "bin_ppm": 20.0,
+  "tile": 1024,
+  "k2_threads": 128,
+  "max_slice_entries": 536870912
+ },
+ "mode_params": {
+  "offsets": [],
+  "open_da": null,
+  "open_tile": 4096
+ },
+ "index": "/tmp/vulcan_m4/index/d2_phospho_prod",
+ "index_meta": {
+  "index_version": "vulcan-l1-0.1",
+  "sage_commit": "99407db6e3754b31a9b88b7316a0aee67293c93f",
+  "params": {
+   "enzyme": {
+    "cleave_at": "KR",
+    "restrict": "P",
+    "c_terminal": true,
+    "missed_cleavages": 2,
+    "min_len": 7,
+    "max_len": 50
+   },
+   "static_mods": {
+    "C": 57.021464
+   },
+   "variable_mods": {
+    "S": 79.966331,
+    "T": 79.966331,
+    "Y": 79.966331,
+    "M": 15.994915,
+    "^": 42.010565
+   },
+   "max_variable_mods": 3,
+   "peptide_min_mass": 500.0,
+   "peptide_max_mass": 5000.0,
+   "decoy_seed": 1001,
+   "entrap_seeds": [],
+   "id_seed": 0
+  },
+  "content_hash": "f69901b3104f9770",
+  "n_targets": 2432270,
+  "n_nonstandard_dropped": 151,
+  "n_forward_peptides": 2432229,
+  "n_decoy_shuffled": 2181,
+  "n_forward_without_decoy": 41,
+  "entrapment": {},
+  "n_peptidoforms": 184527638,
+  "n_peptidoforms_by_family": {
+   "T": 92263819,
+   "E": 0,
+   "DT": 92263819,
+   "DE": 0
+  },
+  "timing_s": {
+   "digest_s": 4.655786597635597,
+   "families_s": 3.8923881738446653,
+   "expand_s": 21.423025586176664,
+   "arrays_s": 321.44926972780377,
+   "total_s": 444.14549124101177
+  },
+  "g0_test_knobs": {
+   "shuffle_rows_seed": null,
+   "swap_labels": false
+  }
+ },
+ "var": {
+  "S": 79.966331,
+  "T": 79.966331,
+  "Y": 79.966331,
+  "M": 15.994915,
+  "^": 42.010565
+ },
+ "setup": {
+  "python_import_s": 1.2311140289530158,
+  "cuda_init_s": 0.3003554097376764,
+  "l1_load_s": 2.589837957639247,
+  "gpu_index_build_s": 5.966320029925555,
+  "gpu_index_bytes": 34346205418,
+  "n_postings": 5173939078,
+  "n_slices": 10,
+  "n_peptidoforms": 184527638,
+  "cpu_core_s_setup_total": 10.026962999999999
+ },
+ "passes": [
+  [
+   {
+    "run": "b1906_293T_proteinID_01A_QE3_122212",
+    "load_store_s": 0.2045743502676487,
+    "write_s": 0.04228666191920638,
+    "wall_s_total": 0.5179262184537947,
+    "cpu_core_s": 0.5126790000000021,
+    "search_wall_s": {
+     "k0": 0.07473932998254895,
+     "hyp": 0.07474230509251356,
+     "k1": 0.0460274638608098,
+     "topk": 0.03523374069482088,
+     "k2": 0.01683188322931528,
+     "features": 0.023087778128683567,
+     "total": 0.270954430103302
+    },
+    "gpu_ms": {
+     "k0": 74.71785736083984,
+     "hyp": 74.70162963867188,
+     "k1": 46.00310516357422,
+     "topk": 35.21712112426758,
+     "k2": 16.81100845336914,
+     "features": 23.063743591308594
+    },
+    "h2d_bytes": 77127568,
+    "counts": {
+     "pre_hyp_used": 0,
+     "k1_work_items": 359283,
+     "k1_window_candidates": 242223658,
+     "k1_appended": 44510039,
+     "n_spectra": 41820,
+     "n_searched": 41769,
+     "n_hypotheses": 125307,
+     "n_rescored": 31257256,
+     "n_psms": 38018,
+     "cpu_core_s": 0.2709149999999996
+    },
+    "spectra_per_s_search": 154343.2967088083
+   },
+   {
+    "run": "b1937_293T_proteinID_01B_QE3_122212",
+    "load_store_s": 0.121624322142452,
+    "write_s": 0.04427574621513486,
+    "wall_s_total": 0.3802879308350384,
+    "cpu_core_s": 0.38009199999999765,
+    "search_wall_s": {
+     "k0": 0.016227345913648605,
+     "hyp": 0.08147130068391562,
+     "k1": 0.045244419015944004,
+     "topk": 0.035166480112820864,
+     "k2": 0.016572364140301943,
+     "features": 0.019193635787814856,
+     "total": 0.21420424804091454
+    },
+    "gpu_ms": {
+     "k0": 16.213375091552734,
+     "hyp": 81.42777252197266,
+     "k1": 45.219295501708984,
+     "topk": 35.15081787109375,
+     "k2": 16.55193519592285,
+     "features": 19.173887252807617
+    },
+    "h2d_bytes": 75082336,
+    "counts": {
+     "pre_hyp_used": 0,
+     "k1_work_items": 415545,
+     "k1_window_candidates": 284657414,
+     "k1_appended": 44245485,
+     "n_spectra": 46816,
+     "n_searched": 46699,
+     "n_hypotheses": 140097,
+     "n_rescored": 34836328,
+     "n_psms": 41102,
+     "cpu_core_s": 0.21412600000000115
+    },
+    "spectra_per_s_search": 218557.7570387764
+   }
+  ],
+  [
+   {
+    "run": "b1906_293T_proteinID_01A_QE3_122212",
+    "load_store_s": 0.19635593984276056,
+    "write_s": 5.909241735935211e-07,
+    "wall_s_total": 0.393562656827271,
+    "cpu_core_s": 0.3934129999999989,
+    "search_wall_s": {
+     "k0": 0.016593875363469124,
+     "hyp": 0.0682037458755076,
+     "k1": 0.04514871584251523,
+     "topk": 0.03369045490399003,
+     "k2": 0.015255577862262726,
+     "features": 0.01786024495959282,
+     "total": 0.19703617971390486
+    },
+    "gpu_ms": {
+     "k0": 16.577472686767578,
+     "hyp": 68.16297912597656,
+     "k1": 45.12473678588867,
+     "topk": 33.67337417602539,
+     "k2": 15.230976104736328,
+     "features": 17.840543746948242
+    },
+    "h2d_bytes": 77127568,
+    "counts": {
+     "pre_hyp_used": 0,
+     "k1_work_items": 359283,
+     "k1_window_candidates": 242223658,
+     "k1_appended": 44510039,
+     "n_spectra": 41820,
+     "n_searched": 41769,
+     "n_hypotheses": 125307,
+     "n_rescored": 31257256,
+     "n_psms": 38018,
+     "cpu_core_s": 0.19697600000000026
+    },
+    "spectra_per_s_search": 212245.28439762862
+   },
+   {
+    "run": "b1937_293T_proteinID_01B_QE3_122212",
+    "load_store_s": 0.12279292428866029,
+    "write_s": 6.41215592622757e-07,
+    "wall_s_total": 0.3331860243342817,
+    "cpu_core_s": 0.33297300000000263,
+    "search_wall_s": {
+     "k0": 0.01606944901868701,
+     "hyp": 0.07567441370338202,
+     "k1": 0.0473210453055799,
+     "topk": 0.03510659979656339,
+     "k2": 0.01654704473912716,
+     "features": 0.019227686803787947,
+     "total": 0.21022854326292872
+    },
+    "gpu_ms": {
+     "k0": 16.051008224487305,
+     "hyp": 75.63340759277344,
+     "k1": 47.294368743896484,
+     "topk": 35.087520599365234,
+     "k2": 16.525312423706055,
+     "features": 19.205631256103516
+    },
+    "h2d_bytes": 75082336,
+    "counts": {
+     "pre_hyp_used": 0,
+     "k1_work_items": 415545,
+     "k1_window_candidates": 284657414,
+     "k1_appended": 44245485,
+     "n_spectra": 46816,
+     "n_searched": 46699,
+     "n_hypotheses": 140097,
+     "n_rescored": 34836328,
+     "n_psms": 41102,
+     "cpu_core_s": 0.21016299999999966
+    },
+    "spectra_per_s_search": 222690.97846265408
+   }
+  ]
+ ],
+ "process_wall_s": 11.71527258073911,
+ "process_cpu_core_s": 11.647743,
+ "gpu_max_mem_bytes": 57781733888,
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

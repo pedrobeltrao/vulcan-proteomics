@@ -1,0 +1,20 @@
+# M5a cross-linking (dev only; sealed T3 not touched). Produced by scripts/m5/{run_m5,exhaustive_d3,comparators,summarize}.py
+datasets:
+  D3:  {raw: data/raw/PXD014337/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw, linker: DSS (138.06808, K/S/T/Y/N-term, non-cleavable),
+        fasta: Cas9 Q99ZW2 (UniProt REST 2026-10-27, sha256 42c2e890...) + contaminants_frankenfield2022 (382 seq; concat sha256 eb5c5b1f...),
+        truth: data/truth/IMP-X-FDR@92b2e29/peplib_Cas9_Beveridge.xlsx}
+  D3b: {raw: data/raw/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw, linker: DSSO (158.00376; stubs A 54.01056 / T 85.98264),
+        fasta: Ribosome_EColi_SG_AND_human_abundant500excl-ribosomal_671sequences.fasta (171 E. coli + 500 human; public PRIDE copy, sha256 3ca8b27e... = manifest),
+        truth: IMP-X-FDR@92b2e29 main_library.xlsx (public GitHub copy re-fetched to /tmp, sha256 e109fd68... = manifest; data/truth/sealed not read),
+        note: rep2 has no HEK background in the sample; the 500 human proteins in the DB are absent, so any link involving them is false}
+index: {enzyme: trypsin KR/P, missed_cleavages: 3, len: 5-40, mass: 400-6000, static: {C: 57.021464}, variable: {M: 15.9949}, max_var: 2,
+        decoys: pseudo-reverse C-term fixed (vulcan.index.build default), entrapment: none}
+search_params: {precursor_ppm: [-10, 10], fragment_ppm: [-20, 20], max_fragment_charge: 3, max_peaks: 200 (global top-k view), min_matched_peaks: 4 (competitors)}
+xl_params: {z_min: 3, isotope_errors: [0, 3], precursor_ppm: 10, window_ppm: 20, min_pep_mass: 400, alpha_topk: 20, max_doublets: 10,
+            doublet_ppm: 15, doublet_isotopes: 1, min_matched_per_peptide: 3, window_topn: 5, report: 3}
+csm_score: min(evidence_alpha, evidence_beta), evidence = K2 localization-aware shifted hyperscore (cleavable: max over alkene/thiol stub; non-cleavable: shift = partner + linker)
+competition: per spectrum, best of closed linear / mono-link (+linker+H2O, +linker+NH3) / loop-link (+linker) vs XL; CSM kept iff XL score > competitor
+estimator: vulcan.stats.xl.xl_level_fdr(plus_one=True) -> q_tddd = max(TD+1-DD,0)/TT (primary), q_td = (TD+1)/TT (conservative); levels csm, peptide_pair, residue_pair, ppi; self vs hetero (decoy-A x A = self); reportable iff accepted TT >= 50
+homo_family: CSMs whose two sides are the same peptide up to target/decoy pairing are excluded from TT/TD/DD and reported separately (cannot produce TD)
+alpha_topk_sweep_D3: [5, 10, 20, 50]
+bench: flock /tmp/vulcan_bench.lock; hwinfo in metrics.json

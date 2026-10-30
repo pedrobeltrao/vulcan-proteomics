@@ -1,0 +1,14 @@
+id	accession	filename	url	expected_size	species	instrument	year	lab	stratum	label	fold	role
+TI00	PXD006293	m06973_PMQ_02.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/06/PXD006293/m06973_PMQ_02.raw	363669348	human	Orbitrap Fusion	2017	Daniel J Finley	TMT	TMT	0	train
+TI01	PXD042759	270120-Urine-Set31.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/07/PXD042759/270120-Urine-Set31.raw	978055549	human	Orbitrap Fusion Lumos	2023	Sailesh Kotecha	TMT	TMT	1	train
+TI02	PXD009023	Fraction_4.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/08/PXD009023/Fraction_4.raw	699948004	human	Orbitrap Fusion	2018	Ashley Mark Toye	TMT	TMT	2	train
+TI03	PXD043848	m21032.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/02/PXD043848/m21032.raw	315915424	mouse	Orbitrap Fusion	2023	Albert H. Kim	TMT	TMT	0	train
+TI04	PXD024175	Set3_6.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD024175/Set3_6.raw	724652486	human	Orbitrap Fusion	2021	Sharon Gorski	TMT	TMT	1	train
+TI05	PXD062779	Req111-SM-Nik-Zainal_A_24.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/09/PXD062779/Req111-SM-Nik-Zainal_A_24.raw	594038165	human	Orbitrap Fusion Lumos	2025	Jyoti Choudhary	TMT	TMT	2	train
+TI06	PXD013226	141210_Christiano_plantaris_3hit_tech1_141216070912.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/09/PXD013226/141210_Christiano_plantaris_3hit_tech1_141216070912.raw	851227340	mouse	LTQ Orbitrap Elite	2019	Lars Hagen	LF	none	0	train
+TI07	PXD005480	MH_2.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/12/PXD005480/MH_2.raw	820440092	human	LTQ Orbitrap	2016	Dr Richard Wilson	LF	none	1	train
+TI08	PXD044866	20210527_3d_mito_totalprot1.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/08/PXD044866/20210527_3d_mito_totalprot1.raw	471499909	mouse	LTQ Orbitrap Velos	2023	Shihuan Kuang	LF	none	2	train
+TI09	PXD000383	110804_110530_ProstateLMW_N_226_38.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000383/110804_110530_ProstateLMW_N_226_38.raw	355059001	human	LTQ Orbitrap Velos	2013	Koji Ueda	LF	none	0	train
+TI10	PXD038703	62598.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD038703/62598.raw	153626308	mouse	LTQ Orbitrap Velos	2022	Stephen J Moss	LF	none	1	train
+TI11	PXD002838	ath017934.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2015/11/PXD002838/ath017934.raw	391609108	mouse	LTQ Orbitrap Velos	2015	Joshua E Elias	LF	none	2	train
+TI12	PXD007725	20150114_ZhongshanHospital_Af_1_240min_2ug.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/11/PXD007725/20150114_ZhongshanHospital_Af_1_240min_2ug.raw	1154969036	human	LTQ Orbitrap Elite	2017	Zhou Hu	LF	none	0	train

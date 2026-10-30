@@ -1,0 +1,60 @@
+{
+ "name": "static_gbm_base",
+ "instrument_class": "OT-HCD",
+ "hyperparams": {
+  "n": 150
+ },
+ "cv_heldout_psms_at_1pct": {
+  "{\"n\": 50}": 163763,
+  "{\"n\": 150}": 163877,
+  "{\"n\": 300}": 162649
+ },
+ "train_positives_per_iter": [
+  137119,
+  152755,
+  157867
+ ],
+ "train_psms_at_1pct_final": 162219,
+ "train_psms_at_1pct_hyperscore": 137119,
+ "training_runs": [
+  "211221_LL_17183_1",
+  "30min_LPS_2",
+  "Ctrl_JH_repli1_SCX4",
+  "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE",
+  "KA121LQ_CSF_65",
+  "No_guide_control_2_promoter_reporter",
+  "P22_081_Singapur_Smim26_SampleII_02",
+  "PT10402-292_190921044254",
+  "c3",
+  "210521-MClass-21_0844-14-BAZ",
+  "005_ECOLI72_F20",
+  "XS_Shura_High_pH_Frac12_api05_4"
+ ],
+ "predictor": null,
+ "sha256": "84ccc48caffc6ae957eeb1108633c2415d873b4c746ecf0960ddc5549344d71d",
+ "kind": "gbm",
+ "features": [
+  "hyperscore",
+  "hs_runz",
+  "delta_next",
+  "delta_best",
+  "matched_peaks",
+  "matched_b",
+  "matched_y",
+  "matched_intensity_pct",
+  "abs_average_ppm",
+  "abs_delta_mass_ppm",
+  "longest_b",
+  "longest_y",
+  "longest_y_pct",
+  "peptide_len",
+  "missed_cleavages",
+  "n_var",
+  "z2",
+  "z3",
+  "z4p",
+  "isotope_error",
+  "log_scored_candidates",
+  "poisson"
+ ]
+}

@@ -1,0 +1,30 @@
+experiment: M4 PTM / mass-offset / open search, L3 localization, E8 on dev
+data:
+  D0: PXD001468 b1906_..._01A, b1937_..._01B (E2 stores, /tmp/vulcan_e2/store)
+  D2: [PXD000138 pools 58 60 66 72, PXD009449 Ymod_Phospho 3xHCD R1, PXD007058 pool1-4 HCDOT rep1]
+  sealed: none touched (no data/sealed/, no data/truth/sealed/ read)
+indexes:
+  d0_closed: /tmp/vulcan_e2/index/human_contam_prod (E2; T + pseudo-reverse; C static, M-ox <=2)
+  d2_phospho_prod:
+    fasta: human_sp_canonical + contaminants + PXD000138 dev pool FASTAs + PXD009449 Ymod evidence peptides + PXD007058 submitter peptides
+    static: {C: 57.021464}
+    variable: {S: 79.966331, T: 79.966331, Y: 79.966331, M: 15.994915, "^": 42.010565}   # ^ = peptide N-term (mask bit 63)
+    max_variable_mods: 3
+    enzyme: trypsin KR/P, 2 missed, len 7-50, 500-5000 Da
+    gpu: {chunk_size: 32768, max_slice_entries: 536870912}
+search:
+  common: {precursor_ppm: [-10, 10], fragment_ppm: [-20, 20], isotope_errors: [0, 2], topk: 500, pair_closure: true, max_peaks: 150}
+  offset_mode: offsets from scripts/m4/offsets.py (33 = Unimod list + pilot histogram peaks, |delta| >= 0.5), isotope 0, +-10 ppm
+  open_mode: {delta_da: [-150, 500], open_tile: 4096, spectra_per_batch: 1000}
+  k2_shift: localization-aware shifted+unshifted b/y (delta on the best single residue)
+conga: {top_n_per_spectrum: 5, neighbour_filter: ">5% shared b/y (0.02 Da bins, min of the two sets)", competition: stem (I->L), groups: "narrow |d|<0.5 + 1-Da shift bins merged by merge_adjacent(>=200)", group_walk_K: 40, seed: 11}
+sage_open: {version: 0.14.7, precursor_tol_da: [-500, 150], isotope_errors: [0, 0], report_psms: 5, threads: [32, 4], same peptide FASTA and MGFs as E2}
+fdr_e8: {unit: "(sequence, composition)", pair: "(forward sequence, composition)", score: hyperscore, q: 0.01, tiebreak_seed: 11}
+localization:
+  candidates: [STY+A (primary), STY+L/I (secondary)]
+  params: {peaks_per_window: 12, window_th: 100, weight: intensity, frag_ppm: 20, max_frag_charge: 2, neutral_loss: H3PO4 on every acceptor}
+  dev_grid: "peaks_per_window {4,8,12,20,150-global} x weight {rank,intensity}, nl on/off, max_frag_charge {1,2}; chosen by mean recall at true FLR 1% over PXD000138/PXD009449 x A/L (dev)"
+baseline_localizer: {tool: pyAscore 1.0.1 (pip, /tmp/vulcan_m4/pylib), bin_size: 100, n_top: 10, mz_error_da: 0.02, mod_group: STYA / STYLI, neutral_loss: H3PO4 on every modified acceptor}
+flr: vulcan.stats.flr (decoy-AA, §6.5, unchanged); PSM-level acceptor counts; mono vs multi separately
+truth: NOTES.md §0 (commit 97daf98, declared before use)
+lock: flock /tmp/vulcan_bench.lock for every timed run

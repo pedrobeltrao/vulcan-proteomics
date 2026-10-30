@@ -1,0 +1,27 @@
+{
+ "store": "/tmp/vulcan_m6/d4/store/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+ "search_s_bin20": 0.10304722702130675,
+ "k1_gpu_ms_bin20": 34.48342514038086,
+ "search_s_bin200": 0.07854188699275255,
+ "k1_gpu_ms_bin200": 10.494208335876465,
+ "k1_vs_brute": {
+  "n": 2000000,
+  "mismatch": 0
+ },
+ "topk_recall_best_exhaustive": {
+  "T": 1.0,
+  "D": 0.997698504027618
+ },
+ "topk_recall_n": {
+  "T": 1382,
+  "D": 869
+ },
+ "bin20_vs_bin200_identical": true,
+ "sage_oracle": {
+  "n_common_scans": 16938,
+  "same_top1_peptide": 0.5423898925492975,
+  "n_sage_target_psm_q_le_1pct": 5048,
+  "same_top1_peptide_sage_q_le_1pct": 0.9966323296354992,
+  "median_hyperscore_diff": 0.0
+ }
+}

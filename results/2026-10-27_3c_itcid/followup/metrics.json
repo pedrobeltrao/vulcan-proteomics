@@ -1,0 +1,1033 @@
+{
+ "experiment": "3c follow-up (dev only; no sealed access)",
+ "scorer": "itcid_linear_pred sha256 667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89 (unchanged)",
+ "item1_determinism": {
+  "pinned_store": {
+   "root": "data/cache/koina_pinned",
+   "snapshot_id": "416ea7bf952a342697dbf740ec5e839809c5fced69e0d564dcd9977f1dc831f4",
+   "verify_all_ok": true,
+   "tables": {
+    "Prosit_2019_irt|frag=na|ce=na|z=na": 7379162,
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=2": 4462101,
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=3": 3037840,
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=4": 651291,
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=5": 84555,
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=6": 15476,
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=2": 1215901,
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=3": 1129533,
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=4": 321658,
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=5": 49389,
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=6": 9216,
+    "Prosit_2020_irt_TMT|frag=na|ce=na|z=na": 2551687
+   },
+   "n_entries": 20907809,
+   "size_gb": 3.0,
+   "manifest_copy": "results/2026-10-27_3c_itcid/followup/pinned_manifest.json"
+  },
+  "G0_pinned": {
+   "pass": true,
+   "LF_D10cf": {
+    "n_psms": 162420,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": true,
+     "pred_sa_sqrt": true,
+     "pred_pearson": true,
+     "pred_entropy": true,
+     "pred_frac_obs": true,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": true,
+     "itcid_gbm_pred": true
+    },
+    "pass": true
+   },
+   "TMT_D4": {
+    "n_psms": 77247,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": true,
+     "pred_sa_sqrt": true,
+     "pred_pearson": true,
+     "pred_entropy": true,
+     "pred_frac_obs": true,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": true,
+     "itcid_gbm_pred": true
+    },
+    "pass": true
+   },
+   "wall_s": 183.57453350396827,
+   "note": "snapshot at G0 time was an earlier (smaller) state of the same append-only store; G0 cases' keys were filled once and read back in frozen mode by a fresh store instance per side"
+  },
+  "rebuild_from_koina": {
+   "bit_identical_to_pinned": false,
+   "n_entries": 20907809,
+   "n_entries_differ": 590146,
+   "max_abs_diff": 0.0003088712692260742,
+   "by_table": {
+    "Prosit_2019_irt|frag=na|ce=na|z=na": {
+     "n": 7379162,
+     "n_entries_differ": 33948,
+     "max_abs_diff": 0.000179290771484375,
+     "wall_s": 192.93093376839533
+    },
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=2": {
+     "n": 4462101,
+     "n_entries_differ": 110874,
+     "max_abs_diff": 5.561113357543945e-05,
+     "wall_s": 653.0704647907987
+    },
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=3": {
+     "n": 3037840,
+     "n_entries_differ": 105083,
+     "max_abs_diff": 2.944469451904297e-05,
+     "wall_s": 509.8469913969748
+    },
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=4": {
+     "n": 651291,
+     "n_entries_differ": 85317,
+     "max_abs_diff": 2.7894973754882812e-05,
+     "wall_s": 118.41042319405824
+    },
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=5": {
+     "n": 84555,
+     "n_entries_differ": 62716,
+     "max_abs_diff": 0.0003088712692260742,
+     "wall_s": 15.861402317881584
+    },
+    "Prosit_2020_intensity_CID|frag=na|ce=na|z=6": {
+     "n": 15476,
+     "n_entries_differ": 15444,
+     "max_abs_diff": 0.0002918839454650879,
+     "wall_s": 3.698800726328045
+    },
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=2": {
+     "n": 1215901,
+     "n_entries_differ": 35195,
+     "max_abs_diff": 2.276897430419922e-05,
+     "wall_s": 183.66940455371514
+    },
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=3": {
+     "n": 1129533,
+     "n_entries_differ": 30518,
+     "max_abs_diff": 2.2590160369873047e-05,
+     "wall_s": 183.59069363819435
+    },
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=4": {
+     "n": 321658,
+     "n_entries_differ": 47524,
+     "max_abs_diff": 2.4378299713134766e-05,
+     "wall_s": 58.13805843098089
+    },
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=5": {
+     "n": 49389,
+     "n_entries_differ": 31513,
+     "max_abs_diff": 3.7670135498046875e-05,
+     "wall_s": 10.030581841245294
+    },
+    "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=6": {
+     "n": 9216,
+     "n_entries_differ": 9191,
+     "max_abs_diff": 0.0001106560230255127,
+     "wall_s": 3.446546571329236
+    },
+    "Prosit_2020_irt_TMT|frag=na|ce=na|z=na": {
+     "n": 2551687,
+     "n_entries_differ": 22823,
+     "max_abs_diff": 0.00012969970703125,
+     "wall_s": 90.50342837814242
+    }
+   },
+   "wall_s": 2023.197729608044
+  },
+  "dev_replicates_from_pinned_store": {
+   "feature_values_differing_from_3c": {
+    "D10cf_prod": [
+     225540,
+     51267700
+    ],
+    "D10cf_E2001": [
+     384499,
+     51680332
+    ],
+    "D10cf_E2002": [
+     887408,
+     51675921
+    ],
+    "D10cf_E2003": [
+     222416,
+     51675679
+    ],
+    "D10cf_C": [
+     343426,
+     51719008
+    ],
+    "D4_prod": [
+     150067,
+     11740905
+    ],
+    "D4_E2001": [
+     66545,
+     11825902
+    ],
+    "D4_E2002": [
+     150693,
+     11826584
+    ],
+    "D4_E2003": [
+     72291,
+     11826210
+    ],
+    "D4_C": [
+     250793,
+     11822008
+    ]
+   },
+   "ids_proteins_entrapment_identical_to_3c": true,
+   "eval": {
+    "D10cf": {
+     "hyperscore": {
+      "ids": {
+       "0.001": 25864,
+       "0.01": 40547,
+       "0.05": 53666
+      },
+      "seq_IL": {
+       "0.001": 23992,
+       "0.01": 37435,
+       "0.05": 49485
+      },
+      "proteins": {
+       "0.001": 3090,
+       "0.01": 3933,
+       "0.05": 3934
+      },
+      "verdict_1pct": "inconclusive",
+      "P_1pct": 0.011835492411135032,
+      "C_1pct": 0.012959096565788177
+     },
+     "itcid_linear_pred": {
+      "ids": {
+       "0.001": 63407,
+       "0.01": 72160,
+       "0.05": 78451
+      },
+      "seq_IL": {
+       "0.001": 58324,
+       "0.01": 65786,
+       "0.05": 71455
+      },
+      "proteins": {
+       "0.001": 4834,
+       "0.01": 5394,
+       "0.05": 5406
+      },
+      "verdict_1pct": "inconclusive",
+      "P_1pct": 0.011079976663148887,
+      "C_1pct": 0.011896238835592989
+     }
+    },
+    "D4": {
+     "hyperscore": {
+      "ids": {
+       "0.001": 29725,
+       "0.01": 43437,
+       "0.05": 54665
+      },
+      "seq_IL": {
+       "0.001": 29059,
+       "0.01": 42410,
+       "0.05": 53253
+      },
+      "proteins": {
+       "0.001": 5896,
+       "0.01": 6734,
+       "0.05": 6760
+      },
+      "verdict_1pct": "supported",
+      "P_1pct": 0.009426073159185522,
+      "C_1pct": 0.010585842543459022
+     },
+     "itcid_linear_pred": {
+      "ids": {
+       "0.001": 56134,
+       "0.01": 60873,
+       "0.05": 64827
+      },
+      "seq_IL": {
+       "0.001": 54778,
+       "0.01": 59082,
+       "0.05": 62817
+      },
+      "proteins": {
+       "0.001": 7435,
+       "0.01": 7858,
+       "0.05": 7873
+      },
+      "verdict_1pct": "inconclusive",
+      "P_1pct": 0.011069455124590052,
+      "C_1pct": 0.009746135919749018
+     }
+    }
+   }
+  }
+ },
+ "item2_strongest_comparator": {
+  "definition": "Sage 0.14.7 PSMs (3c searches, M1e DBs) + the same 10 Prosit CID/TMT-CID features (pinned store) -> seeded mokapot 0.10.0 (bench/t1/mokapot_seeded.py, seed 11)",
+  "unit": "sequence (I/L-collapsed); run-level IDs summed over runs",
+  "bootstrap": "2000 percentile, seed 11, runs resampled (J = 1)",
+  "datasets": {
+   "D4": {
+    "ids_dataset_level_seq": {
+     "vulcan": {
+      "0.001": 54778,
+      "0.01": 59082,
+      "0.05": 62817
+     },
+     "sage+pred+mokapot": {
+      "0.001": 53890,
+      "0.01": 57764,
+      "0.05": 60514
+     },
+     "sage+mokapot(seeded)": {
+      "0.001": 47813,
+      "0.01": 55622,
+      "0.05": 60091
+     },
+     "sage": {
+      "0.001": 47154,
+      "0.01": 55151,
+      "0.05": 60029
+     }
+    },
+    "arm_P_seq_fdp_at_own_q_1pct": {
+     "vulcan": {
+      "fdp_P_mean_at_1pct_own_q": 0.012923609118165967
+     },
+     "sage+pred+mokapot": {
+      "fdp_P_mean_at_1pct_own_q": 0.01147230200364687
+     },
+     "sage+mokapot(seeded)": {
+      "fdp_P_mean_at_1pct_own_q": 0.011571113502932037
+     },
+     "sage": {
+      "fdp_P_mean_at_1pct_own_q": 0.012140247936390252
+     }
+    },
+    "ratios": {
+     "sage+pred+mokapot": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.0307392243463684,
+        "ci95": [
+         1.0263363527232996,
+         1.0354735113160494
+        ],
+        "ours_ids": 63945.0,
+        "comparator_ids": 62038.0
+       },
+       "0.01": {
+        "ratio": 1.0355536839572272,
+        "ci95": [
+         1.0329350032420264,
+         1.0385290813283135
+        ],
+        "ours_ids": 68855.0,
+        "comparator_ids": 66491.0
+       },
+       "0.05": {
+        "ratio": 1.0494749191633044,
+        "ci95": [
+         1.0458667215038178,
+         1.0528534288908429
+        ],
+        "ours_ids": 73352.0,
+        "comparator_ids": 69894.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0336063361140666,
+        "ci95": [
+         1.0302252542915498,
+         1.0373167230110938
+        ],
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 66247.68958253796,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008333704996779361,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.0466158424730196,
+        "ci95": [
+         1.0421707167793572,
+         1.0506994565231655
+        ],
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 69410.17921349387,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.04408387464055321,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     },
+     "sage+mokapot(seeded)": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.15545155578042,
+        "ci95": [
+         1.143974317839898,
+         1.168144318982117
+        ],
+        "ours_ids": 63945.0,
+        "comparator_ids": 55342.0
+       },
+       "0.01": {
+        "ratio": 1.0734943327980544,
+        "ci95": [
+         1.0686507976769895,
+         1.078133452834849
+        ],
+        "ours_ids": 68855.0,
+        "comparator_ids": 64141.0
+       },
+       "0.05": {
+        "ratio": 1.055287804456977,
+        "ci95": [
+         1.0517438455601358,
+         1.0597575604425935
+        ],
+        "ours_ids": 73352.0,
+        "comparator_ids": 69509.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0770180381452132,
+        "ci95": [
+         1.0716673512426982,
+         1.081009024440429
+        ],
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 63577.423293069114,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008428527718005101,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.055042560515437,
+        "ci95": [
+         1.050610764579134,
+         1.0595183369229322
+        ],
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 68855.79398639932,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.043051754235422644,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     },
+     "sage": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.1677745717520727,
+        "ci95": [
+         1.1605656838433502,
+         1.1756655440760124
+        ],
+        "ours_ids": 63945.0,
+        "comparator_ids": 54758.0
+       },
+       "0.01": {
+        "ratio": 1.080722626820693,
+        "ci95": [
+         1.0768905041801107,
+         1.084884058986566
+        ],
+        "ours_ids": 68855.0,
+        "comparator_ids": 63712.0
+       },
+       "0.05": {
+        "ratio": 1.0530305205432255,
+        "ci95": [
+         1.0492804474764368,
+         1.0574935094496218
+        ],
+        "ours_ids": 73352.0,
+        "comparator_ids": 69658.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.085295761334291,
+        "ci95": [
+         1.0814973719074161,
+         1.089932623711374
+        ],
+        "ours_ids": 68474.03170542908,
+        "comparator_ids": 63092.508185275976,
+        "ours_q_at_match": 0.007725776906423324,
+        "comparator_q_at_match": 0.008231070104715871,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.0551690019641575,
+        "ci95": [
+         1.0504695006373106,
+         1.0608250364973426
+        ],
+        "ours_ids": 72645.79319373416,
+        "comparator_ids": 68847.54296089702,
+        "ours_q_at_match": 0.04268893798005202,
+        "comparator_q_at_match": 0.04205910537451785,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     }
+    }
+   },
+   "D10cf": {
+    "ids_dataset_level_seq": {
+     "vulcan": {
+      "0.001": 58324,
+      "0.01": 65786,
+      "0.05": 71455
+     },
+     "sage+pred+mokapot": {
+      "0.001": 56845,
+      "0.01": 63347,
+      "0.05": 67042
+     },
+     "sage+mokapot(seeded)": {
+      "0.001": 44355,
+      "0.01": 55393,
+      "0.05": 63623
+     },
+     "sage": {
+      "0.001": 45054,
+      "0.01": 55640,
+      "0.05": 63795
+     }
+    },
+    "arm_P_seq_fdp_at_own_q_1pct": {
+     "vulcan": {
+      "fdp_P_mean_at_1pct_own_q": 0.004995857743236354
+     },
+     "sage+pred+mokapot": {
+      "fdp_P_mean_at_1pct_own_q": 0.00452648111287436
+     },
+     "sage+mokapot(seeded)": {
+      "fdp_P_mean_at_1pct_own_q": 0.00544114582161112
+     },
+     "sage": {
+      "fdp_P_mean_at_1pct_own_q": 0.0052630535742395615
+     }
+    },
+    "ratios": {
+     "sage+pred+mokapot": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.0807794379612463,
+        "ci95": [
+         1.0766356680177944,
+         1.0851020115891286
+        ],
+        "ours_ids": 297290.0,
+        "comparator_ids": 275070.0
+       },
+       "0.01": {
+        "ratio": 1.0895912081758365,
+        "ci95": [
+         1.0853754565608094,
+         1.0939446673526394
+        ],
+        "ours_ids": 311318.0,
+        "comparator_ids": 285720.0
+       },
+       "0.05": {
+        "ratio": 1.0990355371674385,
+        "ci95": [
+         1.0948229756036783,
+         1.1035647846895484
+        ],
+        "ours_ids": 320892.0,
+        "comparator_ids": 291976.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0926699952173589,
+        "ci95": [
+         1.0882269844780863,
+         1.097137995092096
+        ],
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 288312.7090973438,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.024348568148094774,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.0978795091384106,
+        "ci95": [
+         1.0933333117235335,
+         1.1031659013481208
+        ],
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 302341.4401962503,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.12739591862155977,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     },
+     "sage+mokapot(seeded)": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.214856647814574,
+        "ci95": [
+         1.2074677590661378,
+         1.222204870477225
+        ],
+        "ours_ids": 297290.0,
+        "comparator_ids": 244712.0
+       },
+       "0.01": {
+        "ratio": 1.140133453456093,
+        "ci95": [
+         1.1353271947966788,
+         1.1454579020160638
+        ],
+        "ours_ids": 311318.0,
+        "comparator_ids": 273054.0
+       },
+       "0.05": {
+        "ratio": 1.1145063089784422,
+        "ci95": [
+         1.1098168650026012,
+         1.119557697169583
+        ],
+        "ours_ids": 320892.0,
+        "comparator_ids": 287923.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1276506119346938,
+        "ci95": [
+         1.1230314138633202,
+         1.132608975009233
+        ],
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 279369.02009923523,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.019769232402552357,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.1089640959366864,
+        "ci95": [
+         1.103919167364473,
+         1.1141603526220818
+        ],
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 299319.40373100265,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.11388792399446468,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     },
+     "sage": {
+      "own_q": {
+       "0.001": {
+        "ratio": 1.198725832140481,
+        "ci95": [
+         1.1922175448386685,
+         1.20547648059381
+        ],
+        "ours_ids": 297290.0,
+        "comparator_ids": 248005.0
+       },
+       "0.01": {
+        "ratio": 1.1371890079302749,
+        "ci95": [
+         1.132730369379196,
+         1.1423547535004435
+        ],
+        "ours_ids": 311318.0,
+        "comparator_ids": 273761.0
+       },
+       "0.05": {
+        "ratio": 1.1123621212016168,
+        "ci95": [
+         1.1080891976877165,
+         1.1172785579977396
+        ],
+        "ours_ids": 320892.0,
+        "comparator_ids": 288478.0
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.126032742613756,
+        "ci95": [
+         1.1218254689989184,
+         1.1307853688288663
+        ],
+        "ours_ids": 315030.6464704984,
+        "comparator_ids": 279770.41390399256,
+        "ours_q_at_match": 0.020702751092669516,
+        "comparator_q_at_match": 0.019823374698312142,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       },
+       "0.05": {
+        "ratio": 1.1056101150711302,
+        "ci95": [
+         1.1007914266388485,
+         1.1109518833868788
+        ],
+        "ours_ids": 331934.4719548594,
+        "comparator_ids": 300227.4196211602,
+        "ours_q_at_match": 0.11799778167402555,
+        "comparator_q_at_match": 0.11134030953213071,
+        "fdp_reached": [
+         true,
+         true
+        ]
+       }
+      }
+     }
+    }
+   }
+  },
+  "timings": {
+   "D10cf/prod": {
+    "features_wall_s": 846.3634548210539,
+    "mokapot_pred": {
+     "wall_s": 269.0153999328613,
+     "rc": 0,
+     "loadavg_end": [
+      43.50146484375,
+      40.67138671875,
+      39.52685546875
+     ],
+     "core_s": 480.71000000000004,
+     "max_rss_mb": 2671.0078125
+    },
+    "mokapot_plain": {
+     "wall_s": 201.01146507263184,
+     "rc": 0,
+     "loadavg_end": [
+      24.7431640625,
+      37.27685546875,
+      38.740234375
+     ],
+     "core_s": 424.52,
+     "max_rss_mb": 2386.0
+    }
+   },
+   "D10cf/P2001": {
+    "features_wall_s": 471.4461186369881,
+    "mokapot_pred": {
+     "wall_s": 222.05500650405884,
+     "rc": 0,
+     "loadavg_end": [
+      17.052734375,
+      15.0458984375,
+      17.27197265625
+     ],
+     "core_s": 483.25,
+     "max_rss_mb": 2606.00390625
+    },
+    "mokapot_plain": {
+     "wall_s": 164.7690556049347,
+     "rc": 0,
+     "loadavg_end": [
+      13.70947265625,
+      14.53955078125,
+      16.70703125
+     ],
+     "core_s": 363.96,
+     "max_rss_mb": 2305.10546875
+    }
+   },
+   "D10cf/P2002": {
+    "features_wall_s": 2344.4134964719415,
+    "mokapot_pred": {
+     "wall_s": 216.49188947677612,
+     "rc": 0,
+     "loadavg_end": [
+      10.2373046875,
+      10.48291015625,
+      11.43359375
+     ],
+     "core_s": 437.62,
+     "max_rss_mb": 2739.32421875
+    },
+    "mokapot_plain": {
+     "wall_s": 179.4982430934906,
+     "rc": 0,
+     "loadavg_end": [
+      11.8193359375,
+      11.32763671875,
+      11.6025390625
+     ],
+     "core_s": 365.65000000000003,
+     "max_rss_mb": 2364.15234375
+    }
+   },
+   "D10cf/P2003": {
+    "features_wall_s": 629.9813909041695,
+    "mokapot_pred": {
+     "wall_s": 218.42620992660522,
+     "rc": 0,
+     "loadavg_end": [
+      10.482421875,
+      13.5224609375,
+      12.46728515625
+     ],
+     "core_s": 445.49,
+     "max_rss_mb": 2680.7734375
+    },
+    "mokapot_plain": {
+     "wall_s": 175.03408527374268,
+     "rc": 0,
+     "loadavg_end": [
+      7.81201171875,
+      11.181640625,
+      11.7607421875
+     ],
+     "core_s": 334.53000000000003,
+     "max_rss_mb": 2354.8359375
+    }
+   },
+   "D10cf/C": {
+    "features_wall_s": 161.13089308096096,
+    "mokapot_pred": {
+     "wall_s": 214.2391881942749,
+     "rc": 0,
+     "loadavg_end": [
+      8.45263671875,
+      9.31884765625,
+      10.6416015625
+     ],
+     "core_s": 429.15,
+     "max_rss_mb": 2683.4375
+    },
+    "mokapot_plain": {
+     "wall_s": 159.94088745117188,
+     "rc": 0,
+     "loadavg_end": [
+      7.9951171875,
+      8.705078125,
+      10.189453125
+     ],
+     "core_s": 340.33000000000004,
+     "max_rss_mb": 2364.83984375
+    }
+   },
+   "D4/prod": {
+    "features_wall_s": 101.60403906973079,
+    "mokapot_pred": {
+     "wall_s": 40.7864453792572,
+     "rc": 0,
+     "loadavg_end": [
+      8.00927734375,
+      8.43505859375,
+      9.8759765625
+     ],
+     "core_s": 89.21,
+     "max_rss_mb": 1269.8515625
+    },
+    "mokapot_plain": {
+     "wall_s": 35.58257079124451,
+     "rc": 0,
+     "loadavg_end": [
+      9.87060546875,
+      8.84814453125,
+      9.96142578125
+     ],
+     "core_s": 80.0,
+     "max_rss_mb": 1025.3671875
+    }
+   },
+   "D4/P2001": {
+    "features_wall_s": 90.41733562527224,
+    "mokapot_pred": {
+     "wall_s": 43.63447380065918,
+     "rc": 0,
+     "loadavg_end": [
+      12.3544921875,
+      10.16943359375,
+      10.2958984375
+     ],
+     "core_s": 92.55999999999999,
+     "max_rss_mb": 1264.87109375
+    },
+    "mokapot_plain": {
+     "wall_s": 33.9965341091156,
+     "rc": 0,
+     "loadavg_end": [
+      11.748046875,
+      10.26025390625,
+      10.3203125
+     ],
+     "core_s": 76.2,
+     "max_rss_mb": 1041.75390625
+    }
+   },
+   "D4/P2002": {
+    "features_wall_s": 79.21572664706036,
+    "mokapot_pred": {
+     "wall_s": 41.97296166419983,
+     "rc": 0,
+     "loadavg_end": [
+      9.79931640625,
+      10.015625,
+      10.2236328125
+     ],
+     "core_s": 90.22,
+     "max_rss_mb": 1272.29296875
+    },
+    "mokapot_plain": {
+     "wall_s": 31.754210948944092,
+     "rc": 0,
+     "loadavg_end": [
+      10.01611328125,
+      10.0576171875,
+      10.23046875
+     ],
+     "core_s": 74.38,
+     "max_rss_mb": 1041.42578125
+    }
+   },
+   "D4/P2003": {
+    "features_wall_s": 96.35983973788098,
+    "mokapot_pred": {
+     "wall_s": 44.06100058555603,
+     "rc": 0,
+     "loadavg_end": [
+      13.1591796875,
+      10.935546875,
+      10.5
+     ],
+     "core_s": 91.43,
+     "max_rss_mb": 1265.84375
+    },
+    "mokapot_plain": {
+     "wall_s": 48.68938136100769,
+     "rc": 0,
+     "loadavg_end": [
+      13.1259765625,
+      11.24560546875,
+      10.625
+     ],
+     "core_s": 90.47,
+     "max_rss_mb": 1041.72265625
+    }
+   },
+   "D4/C": {
+    "features_wall_s": 56.22494399966672,
+    "mokapot_pred": {
+     "wall_s": 49.42171025276184,
+     "rc": 0,
+     "loadavg_end": [
+      10.76220703125,
+      10.92919921875,
+      10.5732421875
+     ],
+     "core_s": 98.05999999999999,
+     "max_rss_mb": 1266.53515625
+    },
+    "mokapot_plain": {
+     "wall_s": 36.60291075706482,
+     "rc": 0,
+     "loadavg_end": [
+      11.47412109375,
+      11.0439453125,
+      10.6240234375
+     ],
+     "core_s": 78.91,
+     "max_rss_mb": 1018.56640625
+    }
+   }
+  }
+ },
+ "item3_null_set_DNIT": {
+  "rules": "results/2026-10-27_3c_itcid/followup/NULL_RULES.md",
+  "rules_commit": "2814f06 (before any listing); notes 1-4",
+  "admitted": [
+   "PXD014351",
+   "PXD008499",
+   "PXD011268"
+  ],
+  "final_state": {
+   "n_admitted": 3,
+   "totals": {
+    "n_A": 581,
+    "n_A_with_candidate": 580,
+    "tail_proxy": 0,
+    "n_certified": 36897,
+    "n_spectra": 251870
+   },
+   "projection_n_A_at_cap": 3098.6666666666665,
+   "stop": true,
+   "reason": "futility (NULL_RULES note 3): projection at cap < 60,000"
+  },
+  "outcome": "power insufficient (futility, NULL_RULES note 3); no mixture, no gate run; tail-G2/G1/G3 not evaluable; IT-CID FDR claims stay blocked"
+ }
+}

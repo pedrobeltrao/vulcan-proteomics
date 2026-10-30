@@ -1,0 +1,58 @@
+[04:34:53] t1_driver D8h sha=7a2d6ee8a220 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7b_fair_speed/t1/D8h
+[04:34:54] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[04:34:54] mzML E9_0000__H0799BL: {'cached': True}
+[04:34:54] mzML E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm: {'cached': True}
+[04:34:54] mzML E9_0002__MGP2: {'cached': True}
+[04:34:54] mzML E9_0003__20180623_PC463-Graves-McDonald_Sample1: {'cached': True}
+[04:34:54] mzML E9_0004__20210122-YP202104470-xh-BT1-3: {'cached': True}
+[04:34:54] mzML E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r: {'cached': True}
+[04:34:54] mzML E9_0006__CL_CTL_p53_ZNF_061025_1: {'cached': True}
+[04:34:54] mzML E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B: {'cached': True}
+[04:34:54] mzML E9_0008__lgg1: {'cached': True}
+[04:34:54] mzML E9_0009__20170210_MCF7_LysC_WT_2b: {'cached': True}
+[05:12:55] sage chimera R=2 done
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+[05:14:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/prod_1001: 464222 PSMs, unmapped 0
+[05:15:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1001_2001: 511942 PSMs, unmapped 0
+[05:17:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1001_2002: 511936 PSMs, unmapped 0
+[05:18:25] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1001_2003: 511595 PSMs, unmapped 0
+[05:19:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/C_1001: 512419 PSMs, unmapped 0
+[05:20:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/prod_1002: 464132 PSMs, unmapped 0
+[05:21:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1002_2001: 511856 PSMs, unmapped 0
+[05:23:15] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1002_2002: 511932 PSMs, unmapped 0
+[05:24:40] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_chim2_pred_mokapot/P_1002_2003: 511779 PSMs, unmapped 0
+Traceback (most recent call last):
+  File "$VULCAN_ROOT/bench/t1_driver.py", line 398, in <module>
+    main()
+  File "$VULCAN_ROOT/bench/t1_driver.py", line 294, in main
+    meta[f"sage_chim{R}_pred_pin"][rep] = CMP.sage_pred_pin(
+                                          ^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/bench/t1/comparators.py", line 402, in sage_pred_pin
+    f, finfo = scorer.features(l1, psm, sp)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/bench/t1/ours.py", line 129, in features
+    return self.fb.run(l1, psm, sp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/vulcan/rescore/features.py", line 250, in run
+    f = self._frag_block(l1, psm["pf_row"][sl], psm["charge"][sl], psm["spec_idx"][sl], peaks, cache)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/vulcan/rescore/features.py", line 207, in _frag_block
+    off, flat = cache.lookup_ms2(l1, rows, charge)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/vulcan/predict/cache.py", line 154, in lookup_ms2
+    t.append(u, off=o["ms2_off"], inten=o["ms2"])
+  File "$VULCAN_ROOT/vulcan/predict/cache.py", line 77, in append
+    np.savez(tmp, pf_id=ids, **arrays)
+  File "$VULCAN_SCRATCH/vulcan_env/pe/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 673, in savez
+    _savez(file, args, kwds, False, allow_pickle=allow_pickle)
+  File "$VULCAN_SCRATCH/vulcan_env/pe/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 779, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_SCRATCH/vulcan_env/pe/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_SCRATCH/vulcan_env/pe/lib/python3.12/zipfile/__init__.py", line 1378, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '$VULCAN_SCRATCH/vulcan_t1/D8h/predcache/a9d5af1427616250/ms2_z6/.shard_01793161589199730655_1631893.npz'

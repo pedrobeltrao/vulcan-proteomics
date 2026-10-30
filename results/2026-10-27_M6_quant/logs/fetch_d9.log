@@ -1,0 +1,31 @@
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.raw from 0/2575809564
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.raw from 0/2609608387
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.raw from 0/2570363257
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.raw from 0/2560259209
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.raw from 0/2607202935
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.raw
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.raw from 0/2616510784
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.raw
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Human_01.raw from 0/2306611179
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.raw
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Human_02.raw from 0/2304558655
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.raw
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Human_03.raw from 0/2292420546
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.raw
+[get ] D9-truth ProteoBenchFASTA_MixedSpecies_HYE.zip from 0/9455814
+[done] ProteoBenchFASTA_MixedSpecies_HYE.zip
+[done] LFQ_Astral_DDA_15min_50ng_Human_01.raw
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.raw
+[done] LFQ_Astral_DDA_15min_50ng_Human_03.raw
+[done] LFQ_Astral_DDA_15min_50ng_Human_02.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.raw
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.raw
+[hash] raw/ProteoBench-DDA-Astral-entrapment/LFQ_Astral_DDA_15min_50ng_Human_01.raw
+[hash] raw/ProteoBench-DDA-Astral-entrapment/LFQ_Astral_DDA_15min_50ng_Human_02.raw
+[hash] raw/ProteoBench-DDA-Astral-entrapment/LFQ_Astral_DDA_15min_50ng_Human_03.raw
+[hash] truth/ProteoBench-DDA-Astral/ProteoBenchFASTA_MixedSpecies_HYE.zip
+wrote $VULCAN_ROOT/data/manifests/d9.sha256 (10 files)

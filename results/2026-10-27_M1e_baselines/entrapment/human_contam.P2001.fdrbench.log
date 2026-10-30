@@ -1,0 +1,196 @@
+FDRBench - FDR Control Evaluation Tool for Proteomics
+https://github.com/Noble-Lab/FDRBench
+
+Checking for duplicates and then random shuffling
+2026-10-27 10:34:57 [INFO ] main.java.FDR.DBGear[getEnzymeByIndex:56] - Use enzyme:Trypsin
+2026-10-27 10:35:00 [INFO ] main.java.FDR.FDREval[generate_peptide_file:723] - Protein sequences:20797, total unique peptide sequences:2418037
+Fix C terminal amino acid
+Ignore peptide: MMMMMMMK, 0
+Ignore peptide: SSSSSSK, 0
+Ignore peptide: SSSSSSR, 0
+Ignore peptide: SSSSSSSSSR, 0
+Ignore peptide: HHHHHHHHHHR, 0
+Ignore peptide: AAAAAAAAAK, 0
+Ignore peptide: HHHHHHHHR, 0
+Ignore peptide: SRSSSRR, 2
+Ignore peptide: SRSSRSR, 1
+Ignore peptide: GGGGGGK, 0
+Ignore peptide: GGGGGGR, 0
+Ignore peptide: GGGGGRR, 1
+Ignore peptide: EEKEKEK, 2
+Ignore peptide: TLLLLLK, 1
+Ignore peptide: GAGGGGR, 1
+Ignore peptide: QQQQQQQQQR, 0
+Ignore peptide: AASAAAR, 0
+Ignore peptide: GGGRGGR, 1
+Ignore peptide: GRGGGGR, 1
+Ignore peptide: AAAAAAR, 0
+Ignore peptide: AAAAASR, 0
+Ignore peptide: AAAAEAK, 1
+Ignore peptide: QQQQQQQQR, 0
+Ignore peptide: QQQQQQQQK, 0
+Ignore peptide: AAAAAAAAAAR, 0
+Ignore peptide: QQQQQQQQQQQQR, 0
+Ignore peptide: SGGGGGR, 1
+Ignore peptide: GFGGGGR, 0
+Ignore peptide: RSSSRSR, 2
+Ignore peptide: LLLELLR, 1
+Ignore peptide: LLLEELK, 1
+Ignore peptide: GGGRGGRR, 2
+Ignore peptide: GAGGGGGR, 2
+Ignore peptide: KKEEEEK, 2
+Ignore peptide: LLLLLLR, 0
+Ignore peptide: LLLLLLK, 0
+Ignore peptide: LLLLLNR, 1
+Ignore peptide: KEEEEEK, 2
+Ignore peptide: KEEEEKK, 0
+Ignore peptide: EELKEEK, 2
+Ignore peptide: GGRGGGGGR, 2
+Ignore peptide: EELLLLK, 2
+Ignore peptide: KEEKEEK, 2
+Ignore peptide: GGGGGGGGGGGGR, 0
+Ignore peptide: LLHLLLR, 1
+Ignore peptide: LKLEEEK, 2
+Ignore peptide: KLKEEEK, 2
+Ignore peptide: EAEEEEK, 0
+Ignore peptide: GGGGGGGGGGGGGR, 0
+Ignore peptide: AGGGGGK, 1
+Ignore peptide: GGRGGGR, 1
+Ignore peptide: LELELLK, 2
+Ignore peptide: GGGSGGGR, 2
+Ignore peptide: EREEKER, 2
+Ignore peptide: NLLLLLK, 1
+Ignore peptide: DLLLDLK, 2
+Ignore peptide: REEEEKK, 1
+Ignore peptide: REEEEER, 0
+Ignore peptide: EEEEEGEK, 0
+Ignore peptide: EEEEEEEK, 0
+Ignore peptide: EEEEGEEK, 1
+Ignore peptide: ELEEELK, 2
+Ignore peptide: ELEEKLK, 0
+Ignore peptide: ELEEKKK, 1
+Ignore peptide: ELEELKK, 1
+Ignore peptide: ELEELEK, 2
+Ignore peptide: LLDLLLK, 1
+Ignore peptide: QQQQQQK, 0
+Ignore peptide: QQQQQQR, 0
+Ignore peptide: RGGGGGRR, 1
+Ignore peptide: ELEKEKK, 1
+Ignore peptide: ELEKLLK, 2
+Ignore peptide: EEEEEEEEEEER, 0
+Ignore peptide: ELELKEK, 0
+Ignore peptide: EREREER, 0
+Ignore peptide: ELELEER, 0
+Ignore peptide: RGGGGGR, 1
+Ignore peptide: EERERER, 0
+Ignore peptide: EERELLR, 1
+Ignore peptide: EEREKER, 2
+Ignore peptide: EEREEKR, 1
+Ignore peptide: SSRSRSR, 2
+Ignore peptide: KEEEEKEK, 2
+Ignore peptide: KLLEEEK, 1
+Ignore peptide: KLLELEK, 1
+Ignore peptide: EQEERER, 2
+Ignore peptide: KEKELEK, 0
+Ignore peptide: LLRRLLR, 2
+Ignore peptide: LREEEEK, 1
+Ignore peptide: GSSSSSR, 0
+Ignore peptide: QLEELQK, 2
+Ignore peptide: QLEEQLK, 2
+Ignore peptide: LLLLLLLK, 0
+Ignore peptide: EKEEKEK, 0
+Ignore peptide: LLEEKLK, 2
+Ignore peptide: LLEEKEK, 1
+Ignore peptide: LLEELEK, 0
+Ignore peptide: EKEELLK, 1
+Ignore peptide: EKEELEK, 2
+Ignore peptide: EKEEREK, 1
+Ignore peptide: LLEEEER, 0
+Ignore peptide: LLEEEEK, 1
+Ignore peptide: LLEEEKK, 0
+Ignore peptide: RRGGGGR, 2
+Ignore peptide: EKEEEER, 0
+Ignore peptide: LLEELLR, 2
+Ignore peptide: LLEELLK, 2
+Ignore peptide: LAAALAR, 1
+Ignore peptide: EKEKEEK, 1
+Ignore peptide: QRERELR, 2
+Ignore peptide: LLLLLLLLLLR, 0
+Ignore peptide: EEEEKRR, 0
+Ignore peptide: EEEEKRK, 1
+Ignore peptide: EEEEKKK, 2
+Ignore peptide: EEEEKLK, 2
+Ignore peptide: EEEEKER, 0
+Ignore peptide: EEEEKEK, 2
+Ignore peptide: EEEELLR, 0
+Ignore peptide: EEEELLK, 2
+Ignore peptide: EEEELKK, 2
+Ignore peptide: EKELEEK, 2
+Ignore peptide: EEEEERK, 0
+Ignore peptide: EEEEEKK, 2
+Ignore peptide: EEEEEGK, 1
+Ignore peptide: EEEEEEK, 0
+Ignore peptide: EEEEEDK, 0
+Ignore peptide: EEEEDEK, 0
+Ignore peptide: EEEEAER, 1
+Ignore peptide: EEEEAEK, 0
+Ignore peptide: EKELLEK, 0
+Ignore peptide: EKEKLLK, 2
+Ignore peptide: LLELLRK, 2
+Ignore peptide: LLELLEK, 2
+Ignore peptide: EEEETKK, 1
+Ignore peptide: LLELEEK, 2
+Ignore peptide: EEEERKR, 1
+Ignore peptide: EEEERKK, 2
+Ignore peptide: EEEEREK, 0
+Ignore peptide: EEEERER, 0
+Ignore peptide: EEEERQR, 2
+Ignore peptide: EEEERRR, 0
+Ignore peptide: EEEERRK, 0
+Ignore peptide: EEEERLK, 2
+Ignore peptide: SSSGSSR, 0
+Ignore peptide: GGGGGGGGR, 0
+Ignore peptide: EEEKKEK, 2
+Ignore peptide: EEEKELK, 2
+Ignore peptide: EEEKEKK, 1
+Ignore peptide: EEEKEEK, 2
+Ignore peptide: EKEQKEK, 1
+Ignore peptide: EVEEEER, 1
+Ignore peptide: LLERLLK, 1
+Ignore peptide: EEELLEK, 2
+Ignore peptide: EEELEER, 1
+Ignore peptide: VLSLLLK, 0
+Ignore peptide: EEEQKKK, 1
+Ignore peptide: EEEQERR, 1
+Ignore peptide: GGFGGGR, 0
+Ignore peptide: AAAAAAAR, 0
+Ignore peptide: AAAAAAAK, 0
+Ignore peptide: REKEEEK, 2
+Ignore peptide: RLLEEER, 2
+Ignore peptide: LLSLLVK, 1
+Ignore peptide: SSSRSRR, 2
+Ignore peptide: GGGGGGGK, 0
+Ignore peptide: GGGGGAGK, 1
+Ignore peptide: GRGRGGGR, 0
+Ignore peptide: ELKELLK, 0
+Ignore peptide: EEERKEK, 1
+Ignore peptide: EEEREKK, 1
+Ignore peptide: GGGRGGGGR, 2
+2026-10-27 10:35:19 [INFO ] main.java.FDR.FDREval[generate_peptide_file:953] - Time used for protein digestion:22 s.
+================== parameters ==================
+2026-10-27 10:35:19 [INFO ] main.java.FDR.DBGear[getEnzymeByIndex:56] - Use enzyme:Trypsin
+Enzyme: Trypsin
+Max allowed missed cleavages: 2
+Peptide length range: 7 - 50
+Clip N-terminal M: false
+Fix N/C terminal amino acid: Only fix C terminal amino acid
+Add decoy: false
+Convert I to L: true
+N fold:1
+No shared peptides between target and entrapment proteins when using foreign species: false
+Reverse order of generated random peptides:false
+Max number of tries for generating decoy peptides: 20
+For DIA-NN: false
+Use Uniprot format protein ID: false
+Global random seed: 2001
+================================================

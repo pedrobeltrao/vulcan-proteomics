@@ -1,0 +1,12 @@
+n_min: {"V6": 22700, "V11": "unused (A3.2.4: number intentionally unused)", "V12": 19200, "V14": {"n_min_top": 7200, "rule": "A2.6 unchanged", "pass_prob_at_7200_rho0_learned_ci": 0.906}, "V8": 107570}
+|A|=   96,000 J=16 B/A=1.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V2', 'V6.class1', 'V6.class2', 'V8']
+|A|=   96,000 J=16 B/A=3.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V2', 'V6.class1', 'V6.class2', 'V8']
+|A|=  120,000 J=10 B/A=1.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V6.class1', 'V6.class2', 'V8']
+|A|=  120,000 J=10 B/A=3.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V6.class1', 'V6.class2']
+|A|=  240,000 J=10 B/A=1.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V6.class1', 'V6.class2', 'V8']
+|A|=  240,000 J=10 B/A=3.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V12', 'V6.class1', 'V6.class2']
+|A|=  450,000 J=10 B/A=1.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V6.class1', 'V6.class2']
+|A|=  450,000 J=10 B/A=3.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V6.class1', 'V6.class2']
+|A|=  750,000 J=10 B/A=1.0: tier1 0.000 [0.000, 0.000] tier2 0.000 not evaluable ['V6.class1', 'V6.class2']
+|A|=  750,000 J=10 B/A=3.0: tier1 0.891 [0.887, 0.948] tier2 0.838 not evaluable []
+expected not evaluable: {"reachable_points": [{"J": 16, "n_A": 96000}, {"J": 10, "n_A": 120000}, {"J": 10, "n_A": 240000}, {"J": 10, "n_A": 450000}, {"J": 10, "n_A": 750000}], "rule": "row: clean pass prob < 0.05 at every reachable point; tier: joint upper bound < 0.05 at every reachable point", "all_B_ratios": {"rows_never_passable": [], "tier1_expected_not_evaluable": false, "tier2_expected_not_evaluable": false}, "B_over_A_1.0": {"rows_never_passable": ["V6.class1", "V6.class2"], "tier1_expected_not_evaluable": true, "tier2_expected_not_evaluable": true}, "B_over_A_3.0": {"rows_never_passable": [], "tier1_expected_not_evaluable": false, "tier2_expected_not_evaluable": false}, "design_point_A120k": {"not_evaluable_rows": ["V12", "V6.class1", "V6.class2"], "tier1_not_evaluable": true}, "smallest_reachable_A_with_tier1_upper_bound_ge_0.05": 750000}

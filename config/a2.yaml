@@ -1,0 +1,212 @@
+# Amendment A2 (DESIGN §6.0b; text = reviews/amendment_A2_draft.md) -- every threshold, seed and fixed implementation
+# choice.  Committed BEFORE any DN2 file is listed, downloaded or searched (adoption precondition 2), then frozen by the
+# tag prereg-v0.4.2.  Code reads this file through vulcan.gates.a2_config.load(); a test pins every value below to the
+# draft text.  Ambiguity resolutions (stricter reading): scripts/a2/IMPLEMENTATION_NOTES.md.
+version: a2-impl-1
+amendment_text: reviews/amendment_A2_draft.md
+tag_required: prereg-v0.4.2
+
+seeds:
+  walk: 23                 # A2.9.3 random.Random(23) shuffle of the accession-sorted candidates (SEEDS[1])
+  file_pick_base: 23       # random.Random(23 + int(accession digits)) picks the 3 RAW files
+  mixture_permutation: 23  # numpy default_rng(23) pooled-null permutation (A2.9.3 "permutation seed 23")
+  offsets_a1_recipe: 23    # numpy default_rng(23) for the A1-recipe offsets (reported only)
+  cluster_bootstrap: 83    # A2.5, numpy default_rng(83) (SEEDS[3])
+  tiebreak: 11             # production hash tie-break (vulcan.stats._util.hash_tiebreak), unchanged from M3e
+  synthetic_checks: 131    # power checks (SEEDS[4]), as reviews/checks/a2_power.py
+
+selection:                 # A2.9.1-A2.9.3; scripts/a2/select_dn2.py
+  frame: data/manifests/t4_frame.tsv
+  exclusions:
+    manifests_glob: data/manifests/*.tsv     # union of `accession` columns, t4_frame.tsv excluded, read at run time
+    except: [t4_frame.tsv]
+    at_adoption_file: config/a2_excluded_accessions.tsv   # the 300 accessions as of this commit (incl. untracked
+                                                         # d7b/d10cf/e9_d8 manifests); run-time set must be a superset
+    at_adoption_count: 300
+    at_adoption_sha256: 3d336710c364c0a3eadff1263145051469aed97f3fa38376651a7226a439114a  # sha256("\n".join(sorted))
+    non_pxd_rule: frame rows whose accession is not ^PXD\d+$ are dropped (ProteoBench / non-PXD sets)
+    previous_null_species: ["Pyrococcus furiosus", "Saccharomyces cerevisiae", "Trypanosoma brucei",
+                            "Staphylococcus aureus", "Synechococcus", "Bacillus cereus"]
+    training_species: ["Homo sapiens", "Mus musculus", "Escherichia coli", "Arabidopsis thaliana"]
+  allow:                   # genus [species restriction]; matched on the first word (genus), then species if given
+    - {genus: Chlamydomonas}
+    - {genus: Synechocystis}
+    - {genus: Sordaria}
+    - {genus: Phaeodactylum}
+    - {genus: Streptomyces}
+    - {genus: Myxococcus}
+    - {genus: Cupriavidus}
+    - {genus: Caballeronia}
+    - {genus: Frankia}
+    - {genus: Abortiporus}
+    - {genus: Bacillus, deny_species: [cereus, anthracis, thuringiensis, weihenstephanensis, mycoides, pseudomycoides,
+                                       cytotoxicus, toyonensis, wiedmannii, paranthracis, tropicus]}  # B. cereus group
+    - {genus: Komagataella}
+    - {genus: Fervidobacterium}
+    - {genus: Corynebacterium, species: [glutamicum]}
+    - {genus: Emiliania}
+    - {genus: Propionibacterium, species: [freudenreichii]}
+    - {genus: Deinococcus}
+    - {genus: Chlorella}
+    - {genus: Aeropyrum}
+    - {genus: Acaryochloris}
+    - {genus: Aspergillus, species: [niger, nidulans]}
+    - {genus: Amycolatopsis}
+    - {genus: Sorangium}
+    - {genus: Neurospora}
+    - {genus: Pseudomonas, species: [putida]}
+    - {genus: Rhodobacter}
+    - {genus: Haloferax}
+    - {genus: Halobacterium}
+    - {genus: Shewanella}
+    - {genus: Geobacter}
+    - {genus: Trichoderma}
+    - {genus: Schizosaccharomyces}
+    - {genus: Caulobacter}
+    - {genus: Sulfolobus, genus_group: Sulfolobus}     # Sulfolobus/Saccharolobus = ONE genus slot
+    - {genus: Saccharolobus, genus_group: Sulfolobus}
+    - {genus: Thermococcus}
+    - {genus: Methanosarcina}
+    - {genus: Thermus}
+    - {genus: Zymomonas}
+    - {genus: Sinorhizobium}
+    - {genus: Thalassiosira}
+  frame_filter:
+    acquisition: DDA
+    vendor: thermo
+    label: LFQ
+    enrichment: none
+    single_organism: true
+    instruments_regex: '^(Q Exactive( HF| HF-X| Plus)?|Orbitrap Exploris (480|240))$'   # A1 INSTR, unchanged
+  bad_kw_a1: 'HLA|MHC|immunopept|cross-?link|XL-MS|glyco|SILAC|DIA\b|SWATH|data.independent|phospho|single.cell|TMT|iTRAQ|ubiquitin|acetyl|N-?termin|top-down|crosslink|metaproteom|interactome|AP-MS|BioID|pull.?down|immunoprecip|labell?ing|dimethyl|PRM|SRM|targeted|infect|host|co-?culture'
+  bad_kw_a2_add: 'serum|FBS|FCS|fetal|blood|plasma|patient|clinical|skin|wound|swab|sputum|tissue|biopsy|macrophage|cell line|HeLa|HEK|K562|spike|UPS|standard|benchmark|mixed proteome|entrapment|human'
+  protocol_kw_add: 'brain heart|BHI|blood agar|peptone from (meat|casein)|Homo sapiens|human (database|proteome)|co-?culture|host'
+  regex_flags: IGNORECASE
+  protocol_fields: [description, sampleProcessingProtocol, dataProcessingProtocol, title, keywords]  # title/keywords added (stricter)
+  sdrf: {max_organisms: 1, allowed_organism_parts: ["whole organism", "cell culture"]}   # any other value, incl. "not applicable", excludes (stricter)
+  bad_file_regex: 'phos|TMT|blank|wash|QC|std|standard|DIA|SWATH|ptm|enrich|\bIP\b|_IP_|hela|BSA|calib|human|mouse'  # A1
+  raw_size_bytes: [3.0e+8, 1.5e+9]
+  runs_per_project: 3
+  one_project_per_genus: true
+  step_order: [genus_slot, frame_metadata, protocol_text_sdrf, list_files, pick_files, reference_proteome, download,
+               own_search_marker_screen, admit, stopping_rule]
+  reference_proteome_rule: "UniProt proteomes REST, (organism_name:'<genus species>') AND (proteome_type:1); first hit whose organism name starts with the frame organism's full name, else with genus+species; none -> project skipped (logged)"
+  stopping:                # A2.9.3, label-free counts from admit.py only
+    min_projects: 10
+    min_A: 120000
+    min_A_with_candidate: 72000
+    min_tail_proxy: 400
+    cap_projects: 16
+    tail_proxy_threshold: max over the two D0 hosts of the hyperscore 1% threshold (production estimator, host run alone)
+
+own_search:                # A2.2(a); scripts/a2/own_search.py
+  search_params: E2 SearchParams defaults (precursor +-10 ppm, fragment +-20 ppm, isotope errors 0..2, max fragment charge 1, min matched peaks 4, top-K 500), report_psms 5
+  index_params: vulcan.index.build.default_params() (trypsin KR/P, 2 missed, len 7-50, 500-5000 Da, CAM static, Met-ox <= 2; pseudo-reverse decoys of all entries)
+  database: [own reference proteome (upid recorded at selection), data/fasta/a2_crap_gpm.fasta, data/fasta/contaminants_frankenfield2022.fasta, data/fasta/a2_panels.fasta]
+  header_prefix: {own: "OWN|", crap: "CRAP|", frankenfield: "CON|", panel: "PNL|<panel>|<symbol>|<taxid>|<acc>"}
+  score: hyperscore
+  estimator: paired double competition per run (vulcan.stats.tdc.double_competition), unit = peptidoform; PSM-level q = TDC over rank-1 PSMs of the run
+  certification: {q_psm: 0.001, q_peptide: 0.01, rank: 1, own_target_only: true, near_contaminants: "6-mer or Hamming <= 2, I/L collapsed (vulcan.gates.homolog.HomologFilter) vs cRAP ∪ Frankenfield ∪ Panel H (incl. keratins) ∪ Panel B"}
+marker_screen:             # A2.3 step 3
+  q_peptide: 0.01
+  min_distinct_peptides: 2
+  exclude_if_trigger_members_at_least: 2
+  trigger_panels: [H, B]   # H = non-keratin human exposure; K (keratins) never trigger
+  pooling: union over the project's selected runs
+  exclude_peptides_near_own_proteome: true
+
+panels:
+  table: config/a2_panels.tsv
+  fasta: data/fasta/a2_panels.fasta
+  fasta_sha256: 90aeddff024ba9305e1036319bb3a60799ff133585322bfbd2da1a4f8919b0fa
+  n_entries: 177
+  crap_fasta: data/fasta/a2_crap_gpm.fasta
+  crap_url: ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta
+  crap_sha256: 1d306c644cc50f0c292378387493fda6ea308a814fdd1dc880df44653f84b7f2
+  frankenfield_fasta: data/fasta/contaminants_frankenfield2022.fasta
+  frankenfield_sha256: c0782146be6dad6ecf53e23e5a21a7ed4fea9b4802cb01e8d00091404ec66926
+  retrieved: 2026-10-27
+  resolution_rule: scripts/a2/resolve_panels.py docstring
+
+admission:                 # A2.2(b)-(e); vulcan.gates.a2_identity / a2_admission; scripts/a2/admit.py
+  identity_f_threshold: 0.20
+  identity_frag_ppm: 20.0
+  identity_prec_ppm: 10.0
+  identity_isotope_errors: [0, 1, 2]
+  identity_p_ions: "b2..b(L-1), y2..y(L-1), z = 1"
+  identity_c_ions: "b1..b(Lc-1), y1..y(Lc-1), z = 1 (all)"
+  identity_cross_type_match: true
+  identity_mz_range: none
+  hamming_max: 2
+  hamming_target: "T∪D peptide entries (stripped sequences) of the gate index, equal length after isobaric rewriting"
+  hamming_rewrites: ["I=L", "N<->GG", "Q<->AG"]
+  hamming_variant_cap: 4096          # more variants -> treated as near
+  family_screen: "remove iff max over (T∪D)∩W of exhaustive hyperscore >= hyperscore(p) (ties removed)"
+  c_pre: "A1.3 filter on the exhaustive hyperscore top candidate of T∪D and its pair partner (label-free), applied in admit"
+  c_final: "A1.3 filter on the matched peptide and its pair partner of every compared pipeline (union), applied in finalize before step 5"
+  a13_reference: "source proteome ∪ cRAP ∪ Frankenfield ∪ Panel H (incl. keratins) ∪ Panel B; 6-mer or Hamming <= 2, I/L collapsed"
+  single_precursor: "A and FS spectra: one hypothesis (certified mono m/z, certified z, isotope error 0)"
+  code_order: [a, b_f, b_hamming, d, c_pre]
+  swap_test: required (P1); admit.py --swap-test rebuilds the gate index with swap_labels=True and compares membership sha256
+
+fs:                        # A2.4
+  delta_th: 0.2857142857142857      # 2/7 Th, applied as float32(mz) + float32(2/7)
+  donors: all stratum-A spectra
+  precursor: certified (mono m/z, z), single hypothesis
+  rt: donor RT, then the A1.3 quantile map to the host
+  a1_offsets: generated by the A1 recipe (n + 0.5 + U(-0.1, 0.1) Da, n in {-2,-1,1,2}, 2 copies, first two mixtures), reported only
+
+mixtures:                  # A2.9.3 "as A1"
+  hosts: D0 runs (host = run k % 2)
+  n_per_mixture: 20000
+  remainder_rule: a final remainder >= 10000 forms its own mixture, else it is appended to the last one (A1 g2mix)
+  each_null_used_once: true
+  rt_mapping: vulcan.gates.nulls.quantile_map (A1.3)
+  pool: A ∪ B-candidates ∪ FS (all DN2 species spectra of admitted projects with >= min_peaks peaks are searched)
+
+gates:                     # step 5; vulcan.gates.a2_stats (docstring = specification)
+  frozen_scorer:
+    file: results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl
+    sha256: 31bfe685830b91f4403d8a91c78426e84eca3cdd84157a1d1a9c5b0e6c9126c0
+  reference: hyperscore
+  seq_classifier:
+    path: /tmp/vulcan_m3e/seqclf.pkl
+    sha256: 4ec134eb400a93427242dba689d463e1e749e0808ca777cdd1c1190f36e967d3   # hashed 2026-10-27 before DN2 listing
+    script: scripts/m3e/seqclf.py
+    script_commit: 9c9763348968442757aa502c31b8fb6d342bb508
+    retrain: never; if lost, regenerate with the committed script and hash BEFORE DN2 is listed
+  tail_g2:
+    pool: A
+    n_min: 200
+    margin_abs: 0.60
+    margin_diff: 0.10
+    conf_one_sided: 0.95
+    cluster: project accession
+    bootstrap_B: 10000
+    bootstrap_seed: 83
+    bootstrap_quantile: numpy linear (type 7)
+    degenerate_resample_abs: 1.0
+    degenerate_resample_diff: 1.0
+    validity_wilson_conf_two_sided: 0.95
+    validity_empty_tail: invalid
+    reported: [per project, leave-one-project-out, with and without RT, B, FS, A1 offsets]
+  g1:
+    pool: A
+    top_frac: 0.10
+    n_min_top: 7200
+    bound: 0.05
+    conf_two_sided: 0.99
+    ci: Fisher z, Bonett-Wright variance
+    control: hyperscore rho on the same pool, own top decile; 99% CI must contain 0
+    reported: [within-target and within-decoy rho (Fisher-z pooled), B, A1 offsets]
+  g3:
+    pools: [A, A ∪ B]
+    mixtures: all DN2 mixtures
+    n_bins: 10
+    n_min_per_label_per_bin: 2000
+    top_half_bins: [5, 6, 7, 8, 9]
+    merge: bottom half upward from decile 0 until both labels >= 2000; leftover containing decile 4 -> not evaluable
+    interval: Newcombe hybrid score, 90% two-sided
+    tol: 0.01
+  g2_original_g5: {pool: "A ∪ B", g5_also_on: [A, FS if evaluable], g5_alarm: 0.55, fs_g5_min_winners: 200, g2_margins: [0.01, 0.02]}
+  fs_gating: {gates: [G1, G5, tail-G2], fail_on_evaluable_blocks: true, not_evaluable_blocks: false}

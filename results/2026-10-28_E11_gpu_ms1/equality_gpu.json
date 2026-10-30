@@ -1,0 +1,891 @@
+{
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 8,
+  "VULCAN_THREADS": "8",
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "threads": 8,
+ "loadavg_start": [
+  44.2998046875,
+  30.12548828125,
+  29.4541015625
+ ],
+ "runs": {
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "dataset": "D0",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     671882,
+     671882
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     427370,
+     427370
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     671882,
+     671882
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     427370,
+     427370
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 50348308,
+   "n_hills": 5656778,
+   "n_candidates": 1102068,
+   "n_features": 671882,
+   "n_hypotheses": 427370,
+   "wall_s": 11.45083236694336,
+   "ok": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "dataset": "D0",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     635011,
+     635011
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     472715,
+     472715
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     635011,
+     635011
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     472715,
+     472715
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 48683304,
+   "n_hills": 5473107,
+   "n_candidates": 1049485,
+   "n_features": 635011,
+   "n_hypotheses": 472715,
+   "wall_s": 8.878411293029785,
+   "ok": true
+  },
+  "Velos005137": {
+   "dataset": "D1",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     87107,
+     87107
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     120580,
+     120580
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     87107,
+     87107
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     120580,
+     120580
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 4973266,
+   "n_hills": 578223,
+   "n_candidates": 239034,
+   "n_features": 87107,
+   "n_hypotheses": 120580,
+   "wall_s": 1.075397253036499,
+   "ok": true
+  },
+  "E9_0000__H0799BL": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     1434367,
+     1434367
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     2058955,
+     2058955
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     1434367,
+     1434367
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     2058955,
+     2058955
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 79903044,
+   "n_hills": 9923732,
+   "n_candidates": 3559797,
+   "n_features": 1434367,
+   "n_hypotheses": 2058955,
+   "wall_s": 18.066797733306885,
+   "ok": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     0,
+     0
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     101375,
+     101375
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     0,
+     0
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     101375,
+     101375
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 9179631,
+   "n_hills": 0,
+   "n_candidates": 0,
+   "n_features": 0,
+   "n_hypotheses": 101375,
+   "wall_s": 0.5900568962097168,
+   "ok": true
+  },
+  "E9_0002__MGP2": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     356913,
+     356913
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     144990,
+     144990
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     356913,
+     356913
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     144990,
+     144990
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 31270211,
+   "n_hills": 3739134,
+   "n_candidates": 628449,
+   "n_features": 356913,
+   "n_hypotheses": 144990,
+   "wall_s": 5.506437540054321,
+   "ok": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     327045,
+     327045
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     468240,
+     468240
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     327045,
+     327045
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     468240,
+     468240
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 22092482,
+   "n_hills": 2473307,
+   "n_candidates": 765421,
+   "n_features": 327045,
+   "n_hypotheses": 468240,
+   "wall_s": 4.326255798339844,
+   "ok": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     273138,
+     273138
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     559460,
+     559460
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     273138,
+     273138
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     559460,
+     559460
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 14410973,
+   "n_hills": 1731864,
+   "n_candidates": 600167,
+   "n_features": 273138,
+   "n_hypotheses": 559460,
+   "wall_s": 3.110142707824707,
+   "ok": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     91556,
+     91556
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     587375,
+     587375
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     91556,
+     91556
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     587375,
+     587375
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 4620923,
+   "n_hills": 603867,
+   "n_candidates": 219615,
+   "n_features": 91556,
+   "n_hypotheses": 587375,
+   "wall_s": 1.2911217212677002,
+   "ok": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     60870,
+     60870
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     218765,
+     218765
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     60870,
+     60870
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     218765,
+     218765
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 3578904,
+   "n_hills": 444013,
+   "n_candidates": 142405,
+   "n_features": 60870,
+   "n_hypotheses": 218765,
+   "wall_s": 0.8392937183380127,
+   "ok": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     330387,
+     330387
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     58915,
+     58915
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     330387,
+     330387
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     58915,
+     58915
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 26487463,
+   "n_hills": 3362459,
+   "n_candidates": 499882,
+   "n_features": 330387,
+   "n_hypotheses": 58915,
+   "wall_s": 4.918342590332031,
+   "ok": true
+  },
+  "E9_0008__lgg1": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     181943,
+     181943
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     901820,
+     901820
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     181943,
+     181943
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     901820,
+     901820
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 13131822,
+   "n_hills": 1441514,
+   "n_candidates": 311625,
+   "n_features": 181943,
+   "n_hypotheses": 901820,
+   "wall_s": 2.9047884941101074,
+   "ok": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "dataset": "D8h",
+   "backend_ran": "gpu",
+   "hills_gpu_vs_cpu": {
+    "off": true,
+    "p_scan": true,
+    "p_mz": true,
+    "p_int": true,
+    "p_src": true,
+    "h_mz": true,
+    "h_start": true,
+    "h_end": true,
+    "h_apex_scan": true,
+    "h_apex_int": true,
+    "h_area": true,
+    "h_len": true
+   },
+   "features_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     171983,
+     171983
+    ],
+    "differing_columns": []
+   },
+   "peak_feature_equal": true,
+   "peak_iso_equal": true,
+   "params_equal": true,
+   "hypotheses_gpu_vs_cpu": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     493165,
+     493165
+    ],
+    "differing_columns": []
+   },
+   "features_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     171983,
+     171983
+    ],
+    "differing_columns": []
+   },
+   "hypotheses_gpu_vs_E7": {
+    "columns_equal": true,
+    "metadata_equal": true,
+    "n_rows": [
+     493165,
+     493165
+    ],
+    "differing_columns": []
+   },
+   "n_peaks": 9362599,
+   "n_hills": 1152454,
+   "n_candidates": 412913,
+   "n_features": 171983,
+   "n_hypotheses": 493165,
+   "wall_s": 2.1117184162139893,
+   "ok": true
+  }
+ },
+ "all_ok": true,
+ "n_runs": 13,
+ "n_runs_vs_E7": 13,
+ "loadavg_end": [
+  38.41650390625,
+  31.0693359375,
+  29.82080078125
+ ]
+}

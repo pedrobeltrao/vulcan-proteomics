@@ -1,0 +1,270 @@
+{
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "python_import_s": 178.8547460329719,
+ "runs": {
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "load_store": {
+    "wall_s": 2.710548053961247,
+    "core_s": 0.23440500000000242
+   },
+   "cold": {
+    "features_total": {
+     "wall_s": 12.77833583112806,
+     "core_s": 3.030132000000002
+    },
+    "stages_s": {
+     "peaks": 0.7369248331524432,
+     "nce_select": 5.508773028850555e-07,
+     "fragment_features": 10.691431104205549,
+     "rt": 1.331676057074219,
+     "total": 12.77815495012328,
+     "of_which_predict": 2.9388042078353465
+    },
+    "cache_stats": {
+     "rt_hits": 0,
+     "rt_miss": 147151,
+     "ms2_hits": 0,
+     "ms2_miss": 147151,
+     "predict_s": 2.9388042078353465,
+     "n_predicted_rt": 116540,
+     "n_predicted_ms2": 124227,
+     "library_load_s": 0.0011232048273086548
+    }
+   },
+   "warm_library_first": {
+    "features_total": {
+     "wall_s": 7.429182807914913,
+     "core_s": 7.420406
+    },
+    "stages_s": {
+     "peaks": 0.2649337532930076,
+     "nce_select": 8.423812687397003e-07,
+     "fragment_features": 6.939432721119374,
+     "rt": 0.22377766761928797,
+     "total": 7.429004160221666,
+     "of_which_predict": 0.0
+    },
+    "cache_stats": {
+     "rt_hits": 147151,
+     "rt_miss": 0,
+     "ms2_hits": 147151,
+     "ms2_miss": 0,
+     "predict_s": 0.0,
+     "n_predicted_rt": 0,
+     "n_predicted_ms2": 0,
+     "library_load_s": 6.969811077229679
+    }
+   },
+   "warm_library_resident": {
+    "features_total": {
+     "wall_s": 0.4594751740805805,
+     "core_s": 0.4593360000000075
+    },
+    "stages_s": {
+     "peaks": 0.2657733499072492,
+     "nce_select": 4.102475941181183e-07,
+     "fragment_features": 0.16745920479297638,
+     "rt": 0.025809509214013815,
+     "total": 0.4593265908770263,
+     "of_which_predict": 0.0
+    },
+    "cache_stats": {
+     "rt_hits": 147151,
+     "rt_miss": 0,
+     "ms2_hits": 147151,
+     "ms2_miss": 0,
+     "predict_s": 0.0,
+     "n_predicted_rt": 0,
+     "n_predicted_ms2": 0,
+     "library_load_s": 0.0
+    }
+   },
+   "nce_select_grid": {
+    "wall_s": 2.2555748778395355,
+    "core_s": 1.1104630000000029
+   },
+   "feature_matrix": {
+    "wall_s": 0.1414794302545488,
+    "core_s": 0.03415899999999539
+   },
+   "apply_linear_cpu": {
+    "wall_s": 0.747148391790688,
+    "core_s": 0.02168599999999543
+   },
+   "apply_linear_gpu": {
+    "wall_s": 3.1687297048047185,
+    "core_s": 0.058278000000001384
+   },
+   "apply_gbm_cpu": {
+    "wall_s": 1.3865048298612237,
+    "core_s": 2.5607749999999925
+   },
+   "double_competition": {
+    "wall_s": 0.1092805853113532,
+    "core_s": 0.18901500000000482
+   },
+   "reset_lda": {
+    "wall_s": 2.3945419467054307,
+    "core_s": 0.41202499999999986
+   },
+   "n_psms": 147151,
+   "n_spectra": 41820
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "load_store": {
+    "wall_s": 0.12774363020434976,
+    "core_s": 0.2555279999999982
+   },
+   "cold": {
+    "features_total": {
+     "wall_s": 2.7765230140648782,
+     "core_s": 2.8327130000000125
+    },
+    "stages_s": {
+     "peaks": 0.249551170039922,
+     "nce_select": 6.202608346939087e-07,
+     "fragment_features": 2.004386918153614,
+     "rt": 0.5215339888818562,
+     "total": 2.776353789959103,
+     "of_which_predict": 2.2964448458515108
+    },
+    "cache_stats": {
+     "rt_hits": 0,
+     "rt_miss": 152335,
+     "ms2_hits": 0,
+     "ms2_miss": 152335,
+     "predict_s": 2.2964448458515108,
+     "n_predicted_rt": 120622,
+     "n_predicted_ms2": 128875,
+     "library_load_s": 0.0007410901598632336
+    }
+   },
+   "warm_library_first": {
+    "features_total": {
+     "wall_s": 7.349759122822434,
+     "core_s": 7.337916999999997
+    },
+    "stages_s": {
+     "peaks": 0.24676248105242848,
+     "nce_select": 4.707835614681244e-07,
+     "fragment_features": 6.883583320770413,
+     "rt": 0.21836667088791728,
+     "total": 7.349538251757622,
+     "of_which_predict": 0.0
+    },
+    "cache_stats": {
+     "rt_hits": 152335,
+     "rt_miss": 0,
+     "ms2_hits": 152335,
+     "ms2_miss": 0,
+     "predict_s": 0.0,
+     "n_predicted_rt": 0,
+     "n_predicted_ms2": 0,
+     "library_load_s": 6.916560971643776
+    }
+   },
+   "warm_library_resident": {
+    "features_total": {
+     "wall_s": 0.43261994095519185,
+     "core_s": 0.4324280000000016
+    },
+    "stages_s": {
+     "peaks": 0.24796869978308678,
+     "nce_select": 5.909241735935211e-07,
+     "fragment_features": 0.15675115585327148,
+     "rt": 0.027440995909273624,
+     "total": 0.4324612729251385,
+     "of_which_predict": 0.0
+    },
+    "cache_stats": {
+     "rt_hits": 152335,
+     "rt_miss": 0,
+     "ms2_hits": 152335,
+     "ms2_miss": 0,
+     "predict_s": 0.0,
+     "n_predicted_rt": 0,
+     "n_predicted_ms2": 0,
+     "library_load_s": 0.0
+    }
+   },
+   "nce_select_grid": {
+    "wall_s": 1.0479209260083735,
+    "core_s": 1.0465919999999969
+   },
+   "feature_matrix": {
+    "wall_s": 0.03658698918297887,
+    "core_s": 0.03651199999999477
+   },
+   "apply_linear_cpu": {
+    "wall_s": 0.015932186041027308,
+    "core_s": 0.015907999999996036
+   },
+   "apply_linear_gpu": {
+    "wall_s": 0.005789196118712425,
+    "core_s": 0.005772999999990702
+   },
+   "apply_gbm_cpu": {
+    "wall_s": 0.643427609000355,
+    "core_s": 1.2861429999999956
+   },
+   "double_competition": {
+    "wall_s": 0.07813721522688866,
+    "core_s": 0.15634900000000584
+   },
+   "reset_lda": {
+    "wall_s": 0.06946503184735775,
+    "core_s": 0.13890100000000416
+   },
+   "n_psms": 152335,
+   "n_spectra": 46816
+  }
+ },
+ "model_load_s": 272.37410668237135,
+ "predictor_warmup_s": 53.49467207491398,
+ "process_wall_s": 566.5494731278159,
+ "process_core_s": 59.06927399999999
+}

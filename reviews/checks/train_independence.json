@@ -1,0 +1,196 @@
+{
+ "overlap": {
+  "t4_selection": [],
+  "tier_s": [],
+  "dev_sealed": [],
+  "predictor_training": [],
+  "known_T1_source_PXD028735": []
+ },
+ "train_species": [
+  "ecoli",
+  "human",
+  "mouse"
+ ],
+ "train_labs_in_dev_sealed_labs": [],
+ "t4_selection_labs_overlap_train_labs": [],
+ "sha_overlap": {
+  "tier_s.sha256": 0,
+  "dev_sealed.sha256": 0
+ },
+ "select_t4_reads_train_tsv": false,
+ "fold_project_disjoint": true,
+ "n_rank1": 257925,
+ "decoy_frac_rank1": 0.16055054763981777,
+ "decoy_frac_low_half": 0.31272535533447576,
+ "feature_auc_target_vs_decoy": {
+  "hyperscore": {
+   "all": 0.8313,
+   "low_half": 0.6076
+  },
+  "hs_runz": {
+   "all": 0.7815,
+   "low_half": 0.5659
+  },
+  "delta_next": {
+   "all": 0.7863,
+   "low_half": 0.6704
+  },
+  "delta_best": {
+   "all": 0.5,
+   "low_half": 0.5
+  },
+  "matched_peaks": {
+   "all": 0.8694,
+   "low_half": 0.694
+  },
+  "matched_b": {
+   "all": 0.6303,
+   "low_half": 0.4309
+  },
+  "matched_y": {
+   "all": 0.8761,
+   "low_half": 0.7137
+  },
+  "matched_intensity_pct": {
+   "all": 0.8355,
+   "low_half": 0.6902
+  },
+  "abs_average_ppm": {
+   "all": 0.247,
+   "low_half": 0.3743
+  },
+  "abs_delta_mass_ppm": {
+   "all": 0.253,
+   "low_half": 0.3498
+  },
+  "longest_b": {
+   "all": 0.668,
+   "low_half": 0.4727
+  },
+  "longest_y": {
+   "all": 0.8603,
+   "low_half": 0.6821
+  },
+  "longest_y_pct": {
+   "all": 0.8376,
+   "low_half": 0.6585
+  },
+  "peptide_len": {
+   "all": 0.4881,
+   "low_half": 0.4578
+  },
+  "missed_cleavages": {
+   "all": 0.3398,
+   "low_half": 0.3949
+  },
+  "n_var": {
+   "all": 0.441,
+   "low_half": 0.4682
+  },
+  "z2": {
+   "all": 0.5149,
+   "low_half": 0.5021
+  },
+  "z3": {
+   "all": 0.495,
+   "low_half": 0.5011
+  },
+  "z4p": {
+   "all": 0.4879,
+   "low_half": 0.4984
+  },
+  "isotope_error": {
+   "all": 0.3576,
+   "low_half": 0.4144
+  },
+  "log_scored_candidates": {
+   "all": 0.4172,
+   "low_half": 0.365
+  },
+  "poisson": {
+   "all": 0.1328,
+   "low_half": 0.3056
+  },
+  "pred_sa": {
+   "all": 0.8914,
+   "low_half": 0.7541
+  },
+  "pred_sa_sqrt": {
+   "all": 0.8964,
+   "low_half": 0.7579
+  },
+  "pred_pearson": {
+   "all": 0.8897,
+   "low_half": 0.7527
+  },
+  "pred_entropy": {
+   "all": 0.8965,
+   "low_half": 0.7582
+  },
+  "pred_frac_obs": {
+   "all": 0.8914,
+   "low_half": 0.7485
+  },
+  "pred_top6": {
+   "all": 0.8946,
+   "low_half": 0.7545
+  },
+  "pred_obs_tic": {
+   "all": 0.8477,
+   "low_half": 0.7051
+  },
+  "rt_abs_resid": {
+   "all": 0.2224,
+   "low_half": 0.3247
+  },
+  "rt_resid_z": {
+   "all": 0.2104,
+   "low_half": 0.3146
+  }
+ },
+ "sequence_only_features_low_half": {
+  "peptide_len": 0.4578,
+  "missed_cleavages": 0.3949,
+  "n_var": 0.4682
+ },
+ "null_n_rank1": 164285,
+ "null_target_win_rate": 0.5088961256353288,
+ "null_feature_auc": {
+  "hyperscore": 0.5263,
+  "hs_runz": 0.5263,
+  "delta_next": 0.5255,
+  "delta_best": 0.5,
+  "matched_peaks": 0.528,
+  "matched_b": 0.5088,
+  "matched_y": 0.5299,
+  "matched_intensity_pct": 0.5249,
+  "abs_average_ppm": 0.4784,
+  "abs_delta_mass_ppm": 0.4782,
+  "longest_b": 0.5108,
+  "longest_y": 0.5297,
+  "longest_y_pct": 0.5271,
+  "peptide_len": 0.4994,
+  "missed_cleavages": 0.4874,
+  "n_var": 0.4933,
+  "z2": 0.4995,
+  "z3": 0.5001,
+  "z4p": 0.5004,
+  "isotope_error": 0.4879,
+  "log_scored_candidates": 0.5007,
+  "poisson": 0.4728,
+  "pred_sa": 0.5213,
+  "pred_sa_sqrt": 0.5233,
+  "pred_pearson": 0.5226,
+  "pred_entropy": 0.5229,
+  "pred_frac_obs": 0.5244,
+  "pred_top6": 0.5261,
+  "pred_obs_tic": 0.5255,
+  "rt_abs_resid": 0.5055,
+  "rt_resid_z": 0.5056
+ },
+ "spectrum_hash_dedup": {
+  "n_dev_D0D1": 103843,
+  "n_train": 457561,
+  "overlap": 4
+ }
+}

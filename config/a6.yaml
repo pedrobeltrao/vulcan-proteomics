@@ -1,0 +1,101 @@
+# Amendment A6 (DESIGN §6.0e; reviews/amendment_A6_draft.md rev 1, adopted D32): HN1 human removed-peptide nulls,
+# gating v1 only.  Every constant of A6 Appendix A.  Outside every A3/A5 freeze tree (A6.2 "Code placement").
+# No A6 file changes after the prereg-v0.4.5 tag.
+amendment: A6
+design_section: "6.0e"
+tag: prereg-v0.4.5
+walk_seed: derived            # S = int(first 8 hex of the prereg-v0.4.5 tag commit sha, 16); never computable before the tag
+walk_seed_rule: "int(sha[:8], 16)"
+file_order_seed_rule: "random.Random(S + int(accession digits))"
+seed_not_used: 47             # the pilot's simulation used 47+i on the same pool (A6.13.3)
+
+scorers:
+  gated: v1_static_gbm_pred
+  v1_static_gbm_pred:
+    model: results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl
+    sha256: 31bfe685830b91f4403d8a91c78426e84eca3cdd84157a1d1a9c5b0e6c9126c0
+  not_run: [v2_sep, ce_s]     # A6.6.2 / A6.6.3: not tests
+
+files:                        # sha256 at commit; verified by select_hn1 / gates_hn1
+  t4_frame: {path: data/manifests/t4_frame.tsv, sha256: 7b6cd508ff9a99fac7e39863839824c5e80951dc473bdf6c8a244f7949deba74}
+  crawl_classified: {path: data/cache/pride_meta/all_projects_classified.tsv, sha256: 30b353405a10d20ed02e0743b609c1a405687714b1bc2f9c69959954485fd2f3}
+  crawl_records:              # 418 files; digest = sha256 of "<sha256>  <path>\n" lines, paths sorted
+    glob: data/cache/pride_meta/projects_p*.json.gz
+    n_files: 418
+    digest: 7679008c156ea65c4e3da2ab1c0fb7c3b203b0a6efb361aa64fffb961483b4de
+  contaminant_fasta: {path: data/fasta/contaminants_frankenfield2022.fasta, sha256: c0782146be6dad6ecf53e23e5a21a7ed4fea9b4802cb01e8d00091404ec66926}
+  panel_fasta: {path: data/fasta/a2_panels.fasta, sha256: 90aeddff024ba9305e1036319bb3a60799ff133585322bfbd2da1a4f8919b0fa, panel_b_prefix: "PNL|B|"}
+  sage_binary: {path: tools/bin/sage, sha256: 96482fe50e1a366764b7a87aafd2d79f0f29f19ff71ee131239eb029d8f9e6b8}
+  excluded_accessions: {path: config/a6_excluded_accessions.tsv}   # sha256 recorded in the file's companion .sha256
+
+selection:
+  runs_per_project: 3
+  raw_size_gb: [0.1, 2.0]
+  projects_per_cluster_max: 5
+  pool_at_drafting: 1415
+  run_checks: {min_ftms_hcd_ms2_fraction: 0.99, reject_tmt_itraq_reporters: true, require_ms1: true, decodable: true}
+
+cap:
+  share: 0.10
+  factors: min(proxy, A_cand, A)
+  hash_seed: 47
+  keep_rule: "u(sha256(run | store index | 47)) < f_j"
+
+stop:                         # A6.3.6, evaluated on CAPPED counts after each admitted project
+  J_min: 20
+  Jeff_min: 10                # both capped tail proxy and capped A_cand
+  proxy_min: 1200
+  A_cand_min_floor: 120000    # capped A_cand >= max(120000, 10 * final G1 n_min)
+  A_cand_g1_multiplier: 10
+  hard_cap_runs: 400
+  walk_deadline_cet: "2026-10-28T16:30:00+01:00"
+
+certification:
+  hyperscore: {q_psm: 0.001, q_peptidoform: 0.01, tiebreak_seed: 11, rank1_human_target: true}
+  sage: {rank1_target: true, spectrum_q: 0.001, same_il_sequence: true, same_charge: true, config: "bench/t1/comparators.sage_config (plain sage)"}
+
+removal:
+  near_I: "HomologFilter over I (unordered T∪D pairs whose winner >= run peptidoform 1% threshold, either label) + isobaric variants (N<->GG, Q<->AG)"
+  ladder_f_max: 0.05          # f >= 0.05 removed, project-wide
+  ladder_window_ppm: 10.0
+  ladder_frag_ppm: 20.0
+  contaminants: "contaminant FASTA ∪ Panel B proteins; A1.3-near (6-mer or Hamming <= 2) to their non-human proteins"
+
+levels:
+  tail_g2_one_sided: 0.975
+  g1_two_sided: 0.995
+  tost_two_sided: 0.95
+  validity_controls: unchanged
+  tail_g2_difference_clause: "max(UCB_diff, UCB_abs - min(p_hat_hyperscore, 0.5)) <= 0.10"
+
+bootstrap: {B: 10000, rng: "numpy default_rng(83)"}
+
+n_min:                        # floor (A4 provisional); A6.6.4
+  g1: 11100
+  g3_per_label_per_bin: 2000
+  tail: 200
+  clustered_rows_J_min: 10
+
+clock_cet:                    # 2026-10-28, PI D31/D32
+  tag_by: "2026-10-28T15:15:00+01:00"
+  walk_end: "2026-10-28T16:30:00+01:00"
+  step4_by: "2026-10-28T17:10:00+01:00"
+  step5_by: "2026-10-28T17:50:00+01:00"
+  hard_stop: "2026-10-28T17:55:00+01:00"
+  notes_by: "2026-10-28T18:00:00+01:00"
+tag_criterion: "N = r * (16:30 - tag time); tag iff P(v1 minimum within N runs) >= 0.8 at x1 yields AND >= 0.5 at x0.5 yields"
+
+status:
+  path: results/2026-10-28_A6_hn1/a6_status.json
+  enum: ["PASS", "FAILED", "not evaluable", "invalid pool", "not completed", "label-free stop", "not tagged",
+         "stopped: node time limit"]
+  absent_means: "stopped: node time limit"
+
+resources:
+  lock: /tmp/vulcan_a6.lock   # not shared with the bench lock /tmp/vulcan_bench.lock; one physical GPU: A6 yields
+  yields_to: [A5 freeze/G0, speed-track bench lock, T1/T5 look]
+
+outputs:
+  results_dir: results/2026-10-28_A6_hn1
+  manifest: data/manifests/hn1.tsv
+  selection_log: results/2026-10-28_A6_hn1/selection_log.tsv

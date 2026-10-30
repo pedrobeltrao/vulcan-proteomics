@@ -1,0 +1,175 @@
+{
+ "partition": "OT-HCD x HCD x charge {2,3,4+} (pre-specified) + charge 1 found in the data, kept as its own stratum (stricter)",
+ "runs": "12 OT-HCD training runs (train.tsv minus TR10 IT-CID)",
+ "hyperscore": {
+  "tau": 0.6749047092262508,
+  "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+  "n_within_pairs": 168,
+  "within_ks_quantiles_10_50_90": [
+   0.07427579729637707,
+   0.2720084102734668,
+   0.5764908805168154
+  ],
+  "strata": {
+   "1": {
+    "n": 404,
+    "n_runs_used_for_tau": 1,
+    "ks_vs_rest": 0.23055405229378068,
+    "quantiles_50_90_99": [
+     24.93606247632654,
+     29.361011855287416,
+     34.055147348687356
+    ],
+    "pass_": true
+   },
+   "2": {
+    "n": 21337,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.14665501866112385,
+    "quantiles_50_90_99": [
+     24.136377198772852,
+     29.025450280493978,
+     33.89172266348529
+    ],
+    "pass_": true
+   },
+   "3": {
+    "n": 14749,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.08820772580921488,
+    "quantiles_50_90_99": [
+     23.191335374463005,
+     27.612443546648997,
+     32.526228467540285
+    ],
+    "pass_": true
+   },
+   "4": {
+    "n": 4731,
+    "n_runs_used_for_tau": 9,
+    "ks_vs_rest": 0.1796513772851137,
+    "quantiles_50_90_99": [
+     22.58422898545779,
+     26.33595343916645,
+     31.07139744832785
+    ],
+    "pass_": true
+   }
+  },
+  "pass": true
+ },
+ "gbm": {
+  "tau": 0.5380749570891338,
+  "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+  "n_within_pairs": 168,
+  "within_ks_quantiles_10_50_90": [
+   0.07804408498324261,
+   0.21542955242124573,
+   0.4859512014423501
+  ],
+  "strata": {
+   "1": {
+    "n": 404,
+    "n_runs_used_for_tau": 1,
+    "ks_vs_rest": 0.13920517287919315,
+    "quantiles_50_90_99": [
+     -5.15247532691793,
+     -1.1911749950775066,
+     3.900381771934512
+    ],
+    "pass_": true
+   },
+   "2": {
+    "n": 21292,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.14239268985032916,
+    "quantiles_50_90_99": [
+     -4.945068869059213,
+     -1.2298650171110554,
+     2.5159367355793303
+    ],
+    "pass_": true
+   },
+   "3": {
+    "n": 14736,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.08258993677394444,
+    "quantiles_50_90_99": [
+     -5.536622651644391,
+     -2.6187159582298363,
+     0.9604071050929237
+    ],
+    "pass_": true
+   },
+   "4": {
+    "n": 4723,
+    "n_runs_used_for_tau": 9,
+    "ks_vs_rest": 0.17718502839476513,
+    "quantiles_50_90_99": [
+     -6.0000369495065025,
+     -3.3416369685160174,
+     0.5148671751800075
+    ],
+    "pass_": true
+   }
+  },
+  "pass": true
+ },
+ "gbm_noRT": {
+  "tau": 0.7145932948875419,
+  "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+  "n_within_pairs": 168,
+  "within_ks_quantiles_10_50_90": [
+   0.11822475851584768,
+   0.26792420575101467,
+   0.6054067084524493
+  ],
+  "strata": {
+   "1": {
+    "n": 405,
+    "n_runs_used_for_tau": 1,
+    "ks_vs_rest": 0.18145270438102576,
+    "quantiles_50_90_99": [
+     -5.66363246684804,
+     -1.5601317544072664,
+     3.932729005285163
+    ],
+    "pass_": true
+   },
+   "2": {
+    "n": 21292,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.16081286068308764,
+    "quantiles_50_90_99": [
+     -5.146983520930933,
+     -1.4565558111575592,
+     2.2881383379685265
+    ],
+    "pass_": true
+   },
+   "3": {
+    "n": 14740,
+    "n_runs_used_for_tau": 12,
+    "ks_vs_rest": 0.09087751268123401,
+    "quantiles_50_90_99": [
+     -5.782405872380952,
+     -2.8157536218658596,
+     0.8891164494026292
+    ],
+    "pass_": true
+   },
+   "4": {
+    "n": 4724,
+    "n_runs_used_for_tau": 9,
+    "ks_vs_rest": 0.20051568716253826,
+    "quantiles_50_90_99": [
+     -6.223533999258576,
+     -3.5474419490540163,
+     0.46733375799236526
+    ],
+    "pass_": true
+   }
+  },
+  "pass": true
+ }
+}

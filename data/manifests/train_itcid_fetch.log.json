@@ -1,0 +1,350 @@
+{
+ "TMT02": {
+  "accept": false,
+  "reason": "skipped without download: file name declares TMTpro"
+ },
+ "TMT11": {
+  "accept": false,
+  "reason": "skipped without download: file name declares TMTpro"
+ },
+ "TMT21": {
+  "accept": false,
+  "reason": "skipped without download: file name declares TMTpro"
+ },
+ "TMT00": {
+  "n_ms2": 30933,
+  "n_ms3": 30967,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 4846,
+  "ms3_with_tmtpro_only_reporter": 3,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD006293",
+  "filename": "m06973_PMQ_02.raw"
+ },
+ "TMT01": {
+  "n_ms2": 32945,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.00 < 0.5 (no SPS-MS3)",
+  "download": "ok",
+  "accession": "PXD077137",
+  "filename": "AGTRAP-CRF-7.raw"
+ },
+ "TMT03": {
+  "n_ms2": 90196,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.00 < 0.5 (no SPS-MS3)",
+  "download": "ok",
+  "accession": "PXD071068",
+  "filename": "BMMSC_6PlexTMT_Sup_FN19.raw"
+ },
+ "TMT04": {
+  "n_ms2": 34571,
+  "n_ms3": 34571,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 4787,
+  "ms3_with_tmtpro_only_reporter": 6,
+  "accept": true,
+  "reason": "pass",
+  "download": "ok",
+  "accession": "PXD042759",
+  "filename": "270120-Urine-Set31.raw"
+ },
+ "TMT05": {
+  "n_ms2": 25649,
+  "n_ms3": 25509,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 4073,
+  "ms3_with_tmtpro_only_reporter": 6,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD009023",
+  "filename": "Fraction_4.raw"
+ },
+ "TMT06": {
+  "n_ms2": 20568,
+  "n_ms3": 20548,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 4501,
+  "ms3_with_tmtpro_only_reporter": 1,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD043848",
+  "filename": "m21032.raw"
+ },
+ "TMT07": {
+  "n_ms2": 28404,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.00 < 0.5 (no SPS-MS3)",
+  "download": "ok",
+  "accession": "PXD067299",
+  "filename": "Zelda_220912_P2258_MR_LR_EVs_TMT12_2out80_R1.raw"
+ },
+ "TMT08": {
+  "n_ms2": 90932,
+  "n_ms3": 26020,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.29 < 0.5 (no SPS-MS3)",
+  "download": "ok",
+  "accession": "PXD073606",
+  "filename": "HepG2_FBXO31_F1_WP_RTS_10plex_04.raw"
+ },
+ "TMT09": {
+  "n_ms2": 22789,
+  "n_ms3": 22757,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 4454,
+  "ms3_with_tmtpro_only_reporter": 176,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD024175",
+  "filename": "Set3_6.raw"
+ },
+ "TMT10": {
+  "n_ms2": 68004,
+  "n_ms3": 10794,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.16 < 0.5 (no SPS-MS3)",
+  "download": "skip",
+  "accession": "PXD070352",
+  "filename": "20241106_UltraPlex_RTS_MS3_25.raw"
+ },
+ "TMT12": {
+  "n_ms2": 23400,
+  "n_ms3": 23391,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 2171,
+  "ms3_with_tmtpro_only_reporter": 46,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD062779",
+  "filename": "Req111-SM-Nik-Zainal_A_24.raw"
+ },
+ "TMT13": {
+  "n_ms2": 50774,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95; MS3/MS2 = 0.00 < 0.5 (no SPS-MS3)",
+  "download": "skip",
+  "accession": "PXD037253",
+  "filename": "PG_TMT10_030122_05.raw"
+ },
+ "TMT14": {
+  "n_ms2": 37088,
+  "n_ms3": 37034,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 2917,
+  "ms3_with_tmtpro_only_reporter": 11,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD049201",
+  "filename": "20171217_FS_ES_Behrendt_TMT10_MS3_Sample3_2.raw"
+ },
+ "TMT15": {
+  "n_ms2": 32565,
+  "n_ms3": 32562,
+  "it_cid_fraction": 1.0,
+  "ms3_with_reporter": 2826,
+  "ms3_with_tmtpro_only_reporter": 10,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD032729",
+  "filename": "181117_Lumos_BenP_HMDP_Muscle_TMT10_F7.raw"
+ },
+ "LF00": {
+  "n_ms2": 52390,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD013226",
+  "filename": "141210_Christiano_plantaris_3hit_tech1_141216070912.raw"
+ },
+ "LF01": {
+  "n_ms2": 52718,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD033983",
+  "filename": "CW_F2203_287.raw"
+ },
+ "LF02": {
+  "n_ms2": 19374,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD005480",
+  "filename": "MH_2.raw"
+ },
+ "LF03": {
+  "n_ms2": 15595,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD038674",
+  "filename": "2019_12_17_Paulina_MicroParticle_32_191222134635.raw"
+ },
+ "LF04": {
+  "n_ms2": 141367,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD035803",
+  "filename": "03162021_Hill_Feehan_MUSC53_20210408003722.raw"
+ },
+ "LF05": {
+  "n_ms2": 20741,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD044866",
+  "filename": "20210527_3d_mito_totalprot1.raw"
+ },
+ "LF06": {
+  "n_ms2": 19023,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD000383",
+  "filename": "110804_110530_ProstateLMW_N_226_38.raw"
+ },
+ "LF07": {
+  "n_ms2": 101425,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD056415",
+  "filename": "20231004_3_Donor-3-WT-Torin.raw"
+ },
+ "LF08": {
+  "n_ms2": 48380,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD028814",
+  "filename": "A_ITP_5.raw"
+ },
+ "LF09": {
+  "n_ms2": 20921,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD038703",
+  "filename": "62598.raw"
+ },
+ "LF10": {
+  "n_ms2": 67097,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD013075",
+  "filename": "lu001332.raw"
+ },
+ "LF11": {
+  "n_ms2": 41819,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD041681",
+  "filename": "FLI13809.raw"
+ },
+ "LF12": {
+  "n_ms2": 23720,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD041870",
+  "filename": "20201126_016_S276770_PAMA048_A549_1_HpH50_ADP-ribosylome.raw"
+ },
+ "LF13": {
+  "n_ms2": 23501,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.5544870431045488,
+  "accept": false,
+  "reason": "IT-CID fraction 0.554 < 0.95",
+  "download": "ok",
+  "accession": "PXD021759",
+  "filename": "01.raw"
+ },
+ "LF14": {
+  "n_ms2": 33689,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD002838",
+  "filename": "ath017934.raw"
+ },
+ "LF15": {
+  "n_ms2": 96762,
+  "n_ms3": 0,
+  "it_cid_fraction": 1.0,
+  "accept": true,
+  "reason": "pass",
+  "download": "skip",
+  "accession": "PXD007725",
+  "filename": "20150114_ZhongshanHospital_Af_1_240min_2ug.raw"
+ },
+ "LF16": {
+  "n_ms2": 55015,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "skip",
+  "accession": "PXD029392",
+  "filename": "L2_200828_vyt_1963_S02.raw"
+ },
+ "LF17": {
+  "n_ms2": 142221,
+  "n_ms3": 0,
+  "it_cid_fraction": 0.0,
+  "accept": false,
+  "reason": "IT-CID fraction 0.000 < 0.95",
+  "download": "ok",
+  "accession": "PXD040450",
+  "filename": "20201207_009_S277363_WT1_Wild_Type.raw"
+ }
+}

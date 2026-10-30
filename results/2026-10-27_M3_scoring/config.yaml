@@ -1,0 +1,54 @@
+# M3a / E4: rescoring with predicted features (static-first + RESET arm). Dev data only (D0, D1); no sealed access.
+experiment: M3a / E4 (DESIGN.md v0.4 §4 L3, §6.4, §10 E4)
+node: see bench_scoring.json:hw and predictor_library.json:hw (vulcan.hw.fingerprint); A100 80GB + 32 Zen4 cores
+work_dir: /tmp/vulcan_m3     # rebuilt by scripts/m3/{prepare.py, search_dev.sh, features.py, g2_nulls.py}
+reuses: /tmp/vulcan_e2 (D0/D1 stores, prod + E2001 indexes; scripts/m2/e2_prepare.py), /tmp/vulcan_m1e/entrapment/db (arm-C foreign peptide lists)
+search:   # vulcan.gpu.run, E2 SearchParams (results/2026-10-27_E2_gpu_search/config.yaml) except:
+  report_psms: 5             # top-5 candidates per spectrum (by hyperscore) are rescored; static scorers re-rank them
+indexes:
+  prod:  T + dec(T) (pseudo-reverse, C-term fixed)
+  E2001, E2002, E2003: T + E_s + dec(T) + dec(E_s)   # arm P, ENTRAP_SEEDS_DEV, vulcan.index.build
+  C:     T + F + dec(T) + dec(F); F = M1e neighbour-filtered foreign peptides   # arm C, vulcan.index.foreign
+         D0: Arabidopsis (r = 1.022); D1: human (r = 12.94)  (r from data/cache/M1e/entrapment/db/*.C.json)
+predictor:
+  name: AlphaPeptDeep generic MS2 + RT (peptdeep 1.5.1, pretrained_models_v3.zip sha256 345cb241...b958), Apache-2.0
+  env: conda_envs/pred (venv over pe; peptdeep --no-deps + transformers 4.57.6; peptdeep's own pandas predict()
+       is broken under pandas 3 copy-on-write, so vulcan.predict.apd feeds the models directly; exact equality
+       with peptdeep featurization tested in tests/predict)
+  decision_D4: AlphaPeptDeep features refused on D2/T2 (vulcan.predict.apd.check_allowed); not used there
+  leakage_check: training manifest (data/manifests/predictor_training_accessions.tsv) has no D0/D1/training-run accession
+  instrument: QE (OT-HCD class), fragment types b/y z1,z2 (z2 only for precursor z >= 3), mask_modloss
+  nce: per run, label-blind grid {20,23,26,29,32,35} by median spectral angle of top-decile rank-1 PSMs (both labels)
+  cache: content-hashed by (model sha, instrument, NCE, mods), keyed by peptidoform id; human tryptic library
+         precomputed at NCE 29 for charges 2,3 (predictor_library.json); misses predicted lazily and appended
+features:  # vulcan.rescore.features (label-blind, GPU)
+  fragment: [pred_sa, pred_sa_sqrt, pred_pearson, pred_entropy, pred_frac_obs, pred_top6, pred_obs_tic]
+  rt: [rt_abs_resid, rt_resid_z]   # per-run monotone binned-median calibration on top-decile hyperscore rank-1 PSMs of both labels
+  excluded_from_models: [rt_pred]  # pure sequence property (target/decoy AUC 0.71 on D1)
+  tolerance_ppm: 20
+  base_label_blind: vulcan.rescore.static.BASE_FEATURES (K2 features + run-normalised hyperscore)
+static_first:  # scripts/m3/train_static.py -> models/*.pkl (+ .json with sha256, weights, hyper-parameters)
+  instrument_class: OT-HCD
+  training_data: data/manifests/train.tsv (13 runs / 13 PRIDE projects; 9 human, 2 mouse, 2 E. coli; 1 excluded as IT-CID)
+  folds: data/manifests/train_folds.tsv (3 project-disjoint folds, seed 11)
+  labels: Percolator-style target-decoy on TRAINING runs only (positives rank-1 targets at PSM q <= 1%; negatives rank-1
+          decoys + rank>=2 candidates of positive spectra), 3 iterations; hyper-parameters by leave-one-project-fold-out
+  variants: {linear: standardized logistic regression, C in {0.01,0.1,1}; gbm: HistGradientBoosting depth 3, 8 leaves,
+             min leaf 200, n_iter in {50,150,300}} x {base, pred}
+  frozen: yes; applied unchanged to D0/D1; plain paired TDC + picked protein (no RESET, §6.4)
+reset:  # vulcan.stats.reset, exactly §6.4
+  mode: single-decoy, seed 11, alpha_train 1% (retry 5%), LDA learner, init = hyperscore, 5 iterations
+  input: hyperscore paired double-competition winners; competition never redone
+  reporting: pooled peptide-level only; no protein FDR in RESET mode
+statistics:
+  ids: vulcan.stats.tdc.double_competition (peptidoform units, pair = target<->own decoy, hash tie-break seed 11)
+  alphas: [0.001, 0.01, 0.05]   # gated: 0.01, 0.05
+  proteins: vulcan.stats.protein.picked_group_fdr (subset grouping, rescued subsets, best-peptide group score)
+  entrapment: §6.3 arm P (paired, seeds 2001-2003, pseudo-reverse decoys, 3 replicates) + arm C (combined, 1 replicate);
+              protein level arm P (entrapment proteins E_P = entrapment peptides of P's targets); vulcan.stats.entrapment
+gates:
+  G0: D1 + E2001 index vs E2 swap index (shuffled FASTA, permuted pairs, swapped T/D roles): PSMs, features, static scores
+  G2: mixture design (D0 runs + offset nulls x2 + wrong-species nulls: D1 Pfu + D7 yeast LM2480/2481/2486), homolog filter,
+      vulcan.stats.g2.g2_differential (one-sided 95%, margins 0.01 / 0.02 top decile), class OT-HCD
+  G5: vulcan.stats.g2.leak_auc on G2 null winners (alarm > 0.55)
+timing: scripts/m3/bench_scoring.py under flock /tmp/vulcan_bench.lock; predictor_library.json (see NOTES for contention)

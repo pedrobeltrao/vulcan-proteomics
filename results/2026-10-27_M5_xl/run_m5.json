@@ -1,0 +1,662 @@
+{
+ "process": {
+  "python_import_s": 1.5060875858180225,
+  "cuda_init_s": 0.2270991518162191,
+  "wall_s": 42.3696560789831,
+  "core_s": 29.324892,
+  "child_core_s": 9.282621
+ },
+ "datasets": {
+  "D3b": {
+   "linker": "DSSO",
+   "cleavable": true,
+   "search_params": {
+    "precursor_ppm": [
+     -10.0,
+     10.0
+    ],
+    "fragment_ppm": [
+     -20.0,
+     20.0
+    ],
+    "isotope_errors": [
+     0,
+     2
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "max_peaks": 200,
+    "min_peaks": 15,
+    "fragment_min_mz": 150.0,
+    "fragment_max_mz": 2000.0,
+    "min_ion_index": 2,
+    "max_fragment_charge": 3,
+    "min_matched_peaks": 4,
+    "topk": 500,
+    "k1_threshold": 1,
+    "pair_closure": true,
+    "report_psms": 1,
+    "peak_mode": "global",
+    "window_th": 100.0,
+    "window_k": 15,
+    "chunk_size": 8192,
+    "bin_ppm": 20.0,
+    "tile": 1024,
+    "k2_threads": 128,
+    "max_slice_entries": 2147483647
+   },
+   "xl_params": {
+    "z_min": 3,
+    "isotope_errors": [
+     0,
+     3
+    ],
+    "precursor_ppm": 10.0,
+    "window_ppm": 20.0,
+    "min_pep_mass": 400.0,
+    "alpha_topk": 20,
+    "max_doublets": 10,
+    "doublet_ppm": 15.0,
+    "doublet_isotopes": 1,
+    "min_matched_per_peptide": 3,
+    "competitors": true,
+    "report": 3,
+    "window_topn": 5,
+    "max_candidates_per_chunk": 8000000
+   },
+   "index_params": {
+    "enzyme": {
+     "cleave_at": "KR",
+     "restrict": "P",
+     "c_terminal": true,
+     "missed_cleavages": 3,
+     "min_len": 5,
+     "max_len": 40
+    },
+    "peptide_min_mass": 400.0,
+    "peptide_max_mass": 6000.0,
+    "max_variable_mods": 2
+   },
+   "fasta": "/tmp/vulcan_m5/fasta/D3b_ribo_human671.fasta",
+   "raw": "data/raw/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw",
+   "ingest": {
+    "copy_to_nvme_s": 4.1855313600972295,
+    "wall_s": 8.99476024415344,
+    "child_core_s": 4.77815,
+    "store_meta": {
+     "run_name": "20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2",
+     "vendor": "Thermo",
+     "instrument_model": "Q Exactive HF-X Orbitrap",
+     "instrument_serial": "Exactive Series slot #1",
+     "instrument_software": "2.11-211101/2.11.0.3006",
+     "acquisition_date": "2021-04-10T08:37:13.1318796Z",
+     "source_path": "/tmp/vulcan_m5/rawstage/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw",
+     "source_size": 1425918096,
+     "converter": "vulcan.io.thermo_direct (RawFileReader via pythonnet)",
+     "converter_version": "1",
+     "acquisition": "unknown",
+     "peak_order": "mz_ascending",
+     "include_reference_peaks": true,
+     "store_version": 1,
+     "created_utc": "2026-10-27T14:52:55.338858+00:00",
+     "run_id": 974372988,
+     "n_spectra": 53050,
+     "n_ms1": 9454,
+     "n_ms2": 43596,
+     "n_peaks": 21208326,
+     "compression": "none",
+     "timing_s": {
+      "prefetch": 0.14507864881306887,
+      "runtime_load": 0.4965781415812671,
+      "decode": 2.3603757228702307,
+      "arrow_write": 0.3148484230041504
+     },
+     "cpu_s": {
+      "prefetch": 0.14515121099999997,
+      "runtime_load": 0.24301659400000003,
+      "decode": 2.845919068000001,
+      "arrow_write": 0.32899095599999884
+     },
+     "fast_trailer": false,
+     "n_by_level": {
+      "1": 9454,
+      "2": 43596
+     }
+    }
+   },
+   "index_build": {
+    "wall_s": 1.5315936203114688,
+    "core_s": 1.4809450000000002,
+    "n_peptidoforms": 264824,
+    "n_targets": 85051,
+    "content_hash": "ebd00de35c21fe67"
+   },
+   "l1_load": {
+    "wall_s": 0.0040291110053658485,
+    "core_s": 0.004229000000000482
+   },
+   "gpu_index_build": {
+    "wall_s": 0.1584170199930668,
+    "core_s": 0.1016919999999999,
+    "device_bytes": 55889964,
+    "n_postings": 6420693
+   },
+   "load_store": {
+    "wall_s": 0.13211811427026987,
+    "core_s": 0.13054799999999922,
+    "n_ms2": 43596
+   },
+   "search_passes": [
+    {
+     "wall_s": 4.895468777045608,
+     "core_s": 4.836010999999999,
+     "stage_wall_s": {
+      "k0": 0.0811482542194426,
+      "doublets": 0.08108789380639791,
+      "xl_hyp": 0.135352514218539,
+      "k2_linear_like": 0.5027494672685862,
+      "evidence": 0.22913224715739489,
+      "pairing": 0.9274997971951962,
+      "rank_pairs": 0.05555623769760132,
+      "competitors": 0.1878466811031103,
+      "competitors.k0": 0.021945397835224867,
+      "competitors.hyp": 0.08093623584136367,
+      "competitors.k1_topk": 0.05221692007035017,
+      "competitors.k2": 0.006111984606832266,
+      "competitors.features": 0.026333537884056568,
+      "competitors.total": 0.187685739248991,
+      "csm_table": 0.17541774176061153,
+      "total": 4.890384912956506
+     },
+     "stage_gpu_ms": {
+      "k0": 81.12380981445312,
+      "doublets": 81.05388641357422,
+      "xl_hyp": 135.3068084716797,
+      "k2_linear_like": 502.25273513793945,
+      "evidence": 228.8123540878296,
+      "pairing": 927.4800415039062,
+      "rank_pairs": 55.52931213378906,
+      "competitors": 187.8296661376953,
+      "csm_table": 175.3712615966797
+     },
+     "counts": {
+      "n_doublets": 320684,
+      "n_spectra_with_doublet": 38004,
+      "n_spectra_with_complementary_doublets": 11641,
+      "n_mass_windows": 3205109,
+      "k2_window_candidates": 135507340,
+      "rows_after_window_topn": 20874758,
+      "n_pairs_considered": 33938601,
+      "competitor_psms": 32209,
+      "n_spectra": 43596,
+      "n_xl_eligible": 43167,
+      "n_csm_rows": 92704
+     }
+    },
+    {
+     "wall_s": 4.694624260999262,
+     "core_s": 4.693367,
+     "stage_wall_s": {
+      "k0": 0.0235255379229784,
+      "doublets": 0.04448340414091945,
+      "xl_hyp": 0.1185133527033031,
+      "k2_linear_like": 0.5003178687766194,
+      "evidence": 0.22812014119699597,
+      "pairing": 0.9162127999588847,
+      "rank_pairs": 0.05485683912411332,
+      "competitors": 0.18418649211525917,
+      "competitors.k0": 0.021655313204973936,
+      "competitors.hyp": 0.08074605092406273,
+      "competitors.k1_topk": 0.05085544800385833,
+      "competitors.k2": 0.0059509240090847015,
+      "competitors.features": 0.0246964730322361,
+      "competitors.total": 0.18404099298641086,
+      "csm_table": 0.17524827783927321,
+      "total": 4.690887998789549
+     },
+     "stage_gpu_ms": {
+      "k0": 23.499231338500977,
+      "doublets": 44.45862579345703,
+      "xl_hyp": 118.47180938720703,
+      "k2_linear_like": 499.82983016967773,
+      "evidence": 227.79462242126465,
+      "pairing": 916.1953125,
+      "rank_pairs": 54.831424713134766,
+      "competitors": 184.1703643798828,
+      "csm_table": 175.20281982421875
+     },
+     "counts": {
+      "n_doublets": 320684,
+      "n_spectra_with_doublet": 38004,
+      "n_spectra_with_complementary_doublets": 11641,
+      "n_mass_windows": 3205109,
+      "k2_window_candidates": 135507340,
+      "rows_after_window_topn": 20874758,
+      "n_pairs_considered": 33938601,
+      "competitor_psms": 32209,
+      "n_spectra": 43596,
+      "n_xl_eligible": 43167,
+      "n_csm_rows": 92704
+     },
+     "identical_to_pass1": true
+    },
+    {
+     "wall_s": 4.6972231939435005,
+     "core_s": 4.696151999999996,
+     "stage_wall_s": {
+      "k0": 0.022535513155162334,
+      "doublets": 0.04444820201024413,
+      "xl_hyp": 0.12403031578287482,
+      "k2_linear_like": 0.4985900712199509,
+      "evidence": 0.22856972692534328,
+      "pairing": 0.9217398879118264,
+      "rank_pairs": 0.054859472904354334,
+      "competitors": 0.18328480888158083,
+      "competitors.k0": 0.021977665834128857,
+      "competitors.hyp": 0.08022585092112422,
+      "competitors.k1_topk": 0.05101676005870104,
+      "competitors.k2": 0.005925425793975592,
+      "competitors.features": 0.023878977168351412,
+      "competitors.total": 0.18315464491024613,
+      "csm_table": 0.17385838413611054,
+      "total": 4.693691888824105
+     },
+     "stage_gpu_ms": {
+      "k0": 22.51193618774414,
+      "doublets": 44.42473602294922,
+      "xl_hyp": 123.98908996582031,
+      "k2_linear_like": 498.0914249420166,
+      "evidence": 228.2448320388794,
+      "pairing": 921.721923828125,
+      "rank_pairs": 54.83145523071289,
+      "competitors": 183.2686004638672,
+      "csm_table": 173.80551147460938
+     },
+     "counts": {
+      "n_doublets": 320684,
+      "n_spectra_with_doublet": 38004,
+      "n_spectra_with_complementary_doublets": 11641,
+      "n_mass_windows": 3205109,
+      "k2_window_candidates": 135507340,
+      "rows_after_window_topn": 20874758,
+      "n_pairs_considered": 33938601,
+      "competitor_psms": 32209,
+      "n_spectra": 43596,
+      "n_xl_eligible": 43167,
+      "n_csm_rows": 92704
+     },
+     "identical_to_pass1": true
+    }
+   ],
+   "sites": {
+    "wall_s": 6.216143278870732,
+    "core_s": 6.215544000000001,
+    "n_csms": 10493
+   },
+   "n_rank1_xl_wins": 10493,
+   "n_rank1": 31340,
+   "competitor_kind_of_lost_spectra": {
+    "0": 5702,
+    "1": 10481,
+    "2": 4664
+   },
+   "gpu_max_mem_bytes": 2629696000
+  },
+  "D3": {
+   "linker": "DSS",
+   "cleavable": false,
+   "search_params": {
+    "precursor_ppm": [
+     -10.0,
+     10.0
+    ],
+    "fragment_ppm": [
+     -20.0,
+     20.0
+    ],
+    "isotope_errors": [
+     0,
+     2
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "max_peaks": 200,
+    "min_peaks": 15,
+    "fragment_min_mz": 150.0,
+    "fragment_max_mz": 2000.0,
+    "min_ion_index": 2,
+    "max_fragment_charge": 3,
+    "min_matched_peaks": 4,
+    "topk": 500,
+    "k1_threshold": 1,
+    "pair_closure": true,
+    "report_psms": 1,
+    "peak_mode": "global",
+    "window_th": 100.0,
+    "window_k": 15,
+    "chunk_size": 8192,
+    "bin_ppm": 20.0,
+    "tile": 1024,
+    "k2_threads": 128,
+    "max_slice_entries": 2147483647
+   },
+   "xl_params": {
+    "z_min": 3,
+    "isotope_errors": [
+     0,
+     3
+    ],
+    "precursor_ppm": 10.0,
+    "window_ppm": 20.0,
+    "min_pep_mass": 400.0,
+    "alpha_topk": 20,
+    "max_doublets": 10,
+    "doublet_ppm": 15.0,
+    "doublet_isotopes": 1,
+    "min_matched_per_peptide": 3,
+    "competitors": true,
+    "report": 3,
+    "window_topn": 5,
+    "max_candidates_per_chunk": 8000000
+   },
+   "index_params": {
+    "enzyme": {
+     "cleave_at": "KR",
+     "restrict": "P",
+     "c_terminal": true,
+     "missed_cleavages": 3,
+     "min_len": 5,
+     "max_len": 40
+    },
+    "peptide_min_mass": 400.0,
+    "peptide_max_mass": 6000.0,
+    "max_variable_mods": 2
+   },
+   "fasta": "/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta",
+   "raw": "data/raw/PXD014337/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw",
+   "ingest": {
+    "copy_to_nvme_s": 2.8462451179511845,
+    "wall_s": 6.813271755818278,
+    "child_core_s": 4.499071000000001,
+    "store_meta": {
+     "run_name": "XLpeplib_Beveridge_QEx-HFX_DSS_R1",
+     "vendor": "Thermo",
+     "instrument_model": "Q Exactive HF-X Orbitrap",
+     "instrument_serial": "Exactive Series slot #6289",
+     "instrument_software": "2.9-290204/2.9.2.2947",
+     "acquisition_date": "2019-04-10T11:05:47.2424099Z",
+     "source_path": "/tmp/vulcan_m5/rawstage/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw",
+     "source_size": 960697429,
+     "converter": "vulcan.io.thermo_direct (RawFileReader via pythonnet)",
+     "converter_version": "1",
+     "acquisition": "unknown",
+     "peak_order": "mz_ascending",
+     "include_reference_peaks": true,
+     "store_version": 1,
+     "created_utc": "2026-10-27T14:53:25.047100+00:00",
+     "run_id": 687782855,
+     "n_spectra": 30115,
+     "n_ms1": 24613,
+     "n_ms2": 5502,
+     "n_peaks": 17359900,
+     "compression": "none",
+     "timing_s": {
+      "prefetch": 0.09457065025344491,
+      "runtime_load": 0.3111409619450569,
+      "decode": 2.022505115251988,
+      "arrow_write": 0.2860312685370445
+     },
+     "cpu_s": {
+      "prefetch": 0.094533913,
+      "runtime_load": 0.24440819900000002,
+      "decode": 2.502897622999999,
+      "arrow_write": 0.3744471430000009
+     },
+     "fast_trailer": false,
+     "n_by_level": {
+      "1": 24613,
+      "2": 5502
+     }
+    }
+   },
+   "index_build": {
+    "wall_s": 0.35029343189671636,
+    "core_s": 0.5610280000000003,
+    "n_peptidoforms": 108650,
+    "n_targets": 38660,
+    "content_hash": "52ba3866fb12e48d"
+   },
+   "l1_load": {
+    "wall_s": 0.001988672185689211,
+    "core_s": 0.0020220000000001903
+   },
+   "gpu_index_build": {
+    "wall_s": 0.007643751800060272,
+    "core_s": 0.007642000000000593,
+    "device_bytes": 23664862,
+    "n_postings": 2727622
+   },
+   "load_store": {
+    "wall_s": 0.023441059980541468,
+    "core_s": 0.02349100000000348,
+    "n_ms2": 5502
+   },
+   "search_passes": [
+    {
+     "wall_s": 0.4494064529426396,
+     "core_s": 0.4491170000000011,
+     "stage_wall_s": {
+      "k0": 0.0044113751500844955,
+      "xl_hyp": 0.0013480521738529205,
+      "k1_alpha": 0.04673828464001417,
+      "beta_lookup": 0.015926832798868418,
+      "k2_alpha_beta": 0.03384010400623083,
+      "evidence": 0.02246282296255231,
+      "pairing": 0.2645295960828662,
+      "rank_pairs": 0.009112664964050055,
+      "competitors": 0.02685140399262309,
+      "competitors.k0": 0.0032215509563684464,
+      "competitors.hyp": 0.009962408803403378,
+      "competitors.k1_topk": 0.006682421080768108,
+      "competitors.k2": 0.0013480307534337044,
+      "competitors.features": 0.005435501225292683,
+      "competitors.total": 0.026747077237814665,
+      "csm_table": 0.02269877679646015,
+      "total": 0.4485501293092966
+     },
+     "stage_gpu_ms": {
+      "k0": 4.392735958099365,
+      "xl_hyp": 1.3312959671020508,
+      "k1_alpha": 46.712894439697266,
+      "beta_lookup": 15.882816314697266,
+      "k2_alpha_beta": 33.80992126464844,
+      "evidence": 22.390239715576172,
+      "pairing": 264.4929504394531,
+      "rank_pairs": 9.085247993469238,
+      "competitors": 26.836095809936523,
+      "csm_table": 22.674528121948242
+     },
+     "counts": {
+      "alpha_window_candidates": 173704887,
+      "k1_work_items": 45143,
+      "k1_window_candidates": 173704887,
+      "k1_appended": 41553647,
+      "alpha_shortlist": 217430,
+      "k2_window_candidates": 3546037,
+      "beta_hypotheses": 863090,
+      "rows_after_window_topn": 3092455,
+      "n_pairs_considered": 1811343,
+      "competitor_psms": 3667,
+      "n_spectra": 5502,
+      "n_xl_eligible": 5502,
+      "n_csm_rows": 11689
+     }
+    },
+    {
+     "wall_s": 0.4344455390237272,
+     "core_s": 0.43437199999999976,
+     "stage_wall_s": {
+      "k0": 0.0032748309895396233,
+      "xl_hyp": 0.0012540100142359734,
+      "k1_alpha": 0.04265660420060158,
+      "beta_lookup": 0.016235084738582373,
+      "k2_alpha_beta": 0.028941168915480375,
+      "evidence": 0.02160749025642872,
+      "pairing": 0.26178332790732384,
+      "rank_pairs": 0.008139715995639563,
+      "competitors": 0.02685933606699109,
+      "competitors.k0": 0.0031631425954401493,
+      "competitors.hyp": 0.009987295605242252,
+      "competitors.k1_topk": 0.006653458345681429,
+      "competitors.k2": 0.001355322077870369,
+      "competitors.features": 0.005503332242369652,
+      "competitors.total": 0.026757974177598953,
+      "csm_table": 0.02310344437137246,
+      "total": 0.4343464788980782
+     },
+     "stage_gpu_ms": {
+      "k0": 3.2587199211120605,
+      "xl_hyp": 1.238752007484436,
+      "k1_alpha": 42.63625717163086,
+      "beta_lookup": 16.190431594848633,
+      "k2_alpha_beta": 28.91312026977539,
+      "evidence": 21.58064079284668,
+      "pairing": 261.74957275390625,
+      "rank_pairs": 8.113471984863281,
+      "competitors": 26.84454345703125,
+      "csm_table": 23.076448440551758
+     },
+     "counts": {
+      "alpha_window_candidates": 173704887,
+      "k1_work_items": 45143,
+      "k1_window_candidates": 173704887,
+      "k1_appended": 41553647,
+      "alpha_shortlist": 217430,
+      "k2_window_candidates": 3546037,
+      "beta_hypotheses": 863090,
+      "rows_after_window_topn": 3092455,
+      "n_pairs_considered": 1811343,
+      "competitor_psms": 3667,
+      "n_spectra": 5502,
+      "n_xl_eligible": 5502,
+      "n_csm_rows": 11689
+     },
+     "identical_to_pass1": true
+    },
+    {
+     "wall_s": 0.4277025777846575,
+     "core_s": 0.4272179999999999,
+     "stage_wall_s": {
+      "k0": 0.0033700838685035706,
+      "xl_hyp": 0.0012549422681331635,
+      "k1_alpha": 0.04259302793070674,
+      "beta_lookup": 0.01559015829116106,
+      "k2_alpha_beta": 0.02820412302389741,
+      "evidence": 0.016418159008026123,
+      "pairing": 0.2615621769800782,
+      "rank_pairs": 0.00817678077146411,
+      "competitors": 0.026774058118462563,
+      "competitors.k0": 0.0031830621883273125,
+      "competitors.hyp": 0.00998663529753685,
+      "competitors.k1_topk": 0.006596310995519161,
+      "competitors.k2": 0.0013557127676904202,
+      "competitors.features": 0.005451845936477184,
+      "competitors.total": 0.026666858233511448,
+      "csm_table": 0.023216763976961374,
+      "total": 0.4276055316440761
+     },
+     "stage_gpu_ms": {
+      "k0": 3.3547520637512207,
+      "xl_hyp": 1.238976001739502,
+      "k1_alpha": 42.57244873046875,
+      "beta_lookup": 15.54684829711914,
+      "k2_alpha_beta": 28.177024841308594,
+      "evidence": 16.3919677734375,
+      "pairing": 261.5269775390625,
+      "rank_pairs": 8.149408340454102,
+      "competitors": 26.757343292236328,
+      "csm_table": 23.191551208496094
+     },
+     "counts": {
+      "alpha_window_candidates": 173704887,
+      "k1_work_items": 45143,
+      "k1_window_candidates": 173704887,
+      "k1_appended": 41553647,
+      "alpha_shortlist": 217430,
+      "k2_window_candidates": 3546037,
+      "beta_hypotheses": 863090,
+      "rows_after_window_topn": 3092455,
+      "n_pairs_considered": 1811343,
+      "competitor_psms": 3667,
+      "n_spectra": 5502,
+      "n_xl_eligible": 5502,
+      "n_csm_rows": 11689
+     },
+     "identical_to_pass1": true
+    }
+   ],
+   "sites": {
+    "wall_s": 0.6397954542189837,
+    "core_s": 0.6397769999999987,
+    "n_csms": 1781
+   },
+   "n_rank1_xl_wins": 1781,
+   "n_rank1": 4222,
+   "competitor_kind_of_lost_spectra": {
+    "0": 671,
+    "1": 1249,
+    "2": 521
+   },
+   "gpu_max_mem_bytes": 2629696000
+  }
+ },
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "database": {
+  "bucket_size": 32768,
+  "enzyme": {
+   "missed_cleavages": 0,
+   "min_len": 7,
+   "max_len": 50,
+   "cleave_at": "$",
+   "restrict": null,
+   "c_terminal": true
+  },
+  "peptide_min_mass": 500.0,
+  "peptide_max_mass": 5000.0,
+  "ion_kinds": [
+   "b",
+   "y"
+  ],
+  "min_ion_index": 2,
+  "static_mods": {
+   "C": 57.021464,
+   "K": 229.162932,
+   "^": 229.162932
+  },
+  "variable_mods": {
+   "M": [
+    15.9949
+   ]
+  },
+  "max_variable_mods": 2,
+  "decoy_tag": "rev_",
+  "generate_decoys": false,
+  "fasta": "$VULCAN_ROOT/data/cache/M1e/entrapment/db/human_contam.P2003.fasta"
+ },
+ "precursor_tol": {
+  "ppm": [
+   -10.0,
+   10.0
+  ]
+ },
+ "fragment_tol": {
+  "da": [
+   -0.5,
+   0.5
+  ]
+ },
+ "precursor_charge": [
+  2,
+  4
+ ],
+ "isotope_errors": [
+  0,
+  2
+ ],
+ "deisotope": false,
+ "chimera": false,
+ "wide_window": false,
+ "predict_rt": true,
+ "min_peaks": 15,
+ "max_peaks": 150,
+ "min_matched_peaks": 4,
+ "max_fragment_charge": 1,
+ "report_psms": 1,
+ "output_directory": "/tmp/vulcan_m1e/cache/sage/D4/P2003",
+ "mzml_paths": [
+  "/tmp/vulcan_m1e/mzml/dq_00095_11cell_90min_sps_A1.mzML",
+  "/tmp/vulcan_m1e/mzml/dq_00101_11cell_90min_sps_B1.mzML"
+ ]
+}

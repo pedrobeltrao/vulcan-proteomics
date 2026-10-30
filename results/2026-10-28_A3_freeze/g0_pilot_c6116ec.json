@@ -1,0 +1,98 @@
+{
+ "git_sha": "c6116eccbb591c10ec8dd306867f1c437cfd7f42",
+ "clean_tree": true,
+ "frozen_tree_hashes": {
+  "vulcan": "d6a915d9abfd6dd2e9b7e8ef7c266c49f651eb7c",
+  "bench": "e39cd99cd93aa84f6ef675b87ed46bae302c99f5",
+  "scripts/a3": "c21e220dea6f03c8a0006b66334c81b4c2f35024",
+  "scripts/e7": "6815575f9bd6b94a27fb512dac1bec9f3a03ac56"
+ },
+ "store": "$VULCAN_SCRATCH/vulcan_t1/D1/stage/Velos005137.vspec.arrow",
+ "store_sha256": "e85ddc7dc8fc15219d6cba95faaf6c174128e1e3385959bdcf434d812556ae98",
+ "indexes": {
+  "base": "/tmp/vulcan_e2/index/pfu_contam_E2001",
+  "swapped": "/tmp/vulcan_e2/g0/index_swapped"
+ },
+ "models": {
+  "v1": "31bfe685830b91f4403d8a91c78426e84eca3cdd84157a1d1a9c5b0e6c9126c0",
+  "v2": "3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186"
+ },
+ "alphapeptdeep_weights_sha256": "345cb24154843ad320181b6feaeaf6e7a284d88f1b52dfe9648e0aa5d594b958",
+ "hostname": "gpu-node",
+ "start": "2026-10-28T08:43:18",
+ "G0": {
+  "ms1_hypotheses_bit_identical": true,
+  "ms1_features_bit_identical": true,
+  "ms1": {
+   "hyp": {
+    "file_sha256": [
+     "2727475488c82c2e68fdb971753456c96d34894b7d125d8712afbb1cf24f4920",
+     "2727475488c82c2e68fdb971753456c96d34894b7d125d8712afbb1cf24f4920"
+    ],
+    "file_identical": true,
+    "columns_identical": true,
+    "columns_not_identical": [],
+    "n_rows": 120580
+   },
+   "feat": {
+    "file_sha256": [
+     "6df965ddd6492719bb9b46d24ee9aeb45dc32b1074d80e543b1d4835ca049ebe",
+     "6df965ddd6492719bb9b46d24ee9aeb45dc32b1074d80e543b1d4835ca049ebe"
+    ],
+    "file_identical": true,
+    "columns_identical": true,
+    "columns_not_identical": [],
+    "n_rows": 87107
+   }
+  },
+  "chimeric_psm_tables_bit_identical": true,
+  "psm_columns_not_identical": [],
+  "arrow_equals_raw": false,
+  "n_psms": 42833,
+  "n_secondary_psms": 9704,
+  "n_secondary_groups": 8742,
+  "nce_same": true,
+  "nce": 29.0,
+  "features_bit_identical": {
+   "pred_sa": true,
+   "pred_sa_sqrt": true,
+   "pred_pearson": true,
+   "pred_entropy": true,
+   "pred_frac_obs": true,
+   "pred_top6": true,
+   "pred_obs_tic": true,
+   "rt_abs_resid": true,
+   "rt_resid_z": true,
+   "pred_sa_b": true,
+   "pred_sa_y": true,
+   "pred_pearson_b": true,
+   "pred_pearson_y": true,
+   "cleave_cov": true,
+   "longest_by_frac": true,
+   "prec_ppm_resid": true,
+   "prec_ppm_resid_z": true,
+   "ms1_has_feature": true,
+   "ms1_iso_cos": true,
+   "ms1_isolation_fraction": true,
+   "ms1_trace_cos": true,
+   "ms1_n_iso": true,
+   "ms1_rt_offset_rel": true,
+   "ms1_log_int_runz": true,
+   "chim_rank": true,
+   "n_groups": true,
+   "n_features_in_window": true,
+   "z_inst_agree": true
+  },
+  "scores_bit_identical": {
+   "v1": true,
+   "v2": true
+  },
+  "n_feature_columns": 28,
+  "wall_s": {
+   "base": 26.542136386036873,
+   "swapped": 8.0687524988316
+  },
+  "pass": true
+ },
+ "end": "2026-10-28T08:43:55"
+}

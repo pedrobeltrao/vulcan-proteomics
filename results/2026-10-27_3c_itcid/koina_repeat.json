@@ -1,0 +1,14 @@
+{
+ "human_tmt": {
+  "n": 20000,
+  "n_ms2_differ": 0,
+  "max_abs_diff": 0.0,
+  "rt_identical": true
+ },
+ "human": {
+  "n": 20000,
+  "n_ms2_differ": 0,
+  "max_abs_diff": 0.0,
+  "rt_identical": true
+ }
+}

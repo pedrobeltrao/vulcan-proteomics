@@ -1,0 +1,97 @@
+{
+ "project": "PXD011751",
+ "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+ "n_ms2": 10411,
+ "n_searched": 3331,
+ "n_rank1": 559,
+ "n_certified": 0,
+ "n_identified_peptides_run": 0,
+ "search_full_gpu_wall_s": 0.2908145422115922,
+ "n_candidate_rows": 0,
+ "removed_rows_homolog": 0,
+ "removed_rows_ladder": 0,
+ "kept_rows": 0,
+ "spectra_with_any_candidate_before_removal": 0,
+ "n_identified_peptides_project": 0,
+ "host_thr_own_run": Infinity,
+ "host_thr_D0max": 33.874883688117755,
+ "A_cand": 0,
+ "frac_certified_with_candidate": 0.0,
+ "tail_proxy_own_thr": 0,
+ "tail_proxy_D0max_thr": 0,
+ "certified_single_ms1_feature": 0,
+ "A_cand_single_ms1_feature": 0,
+ "tail_proxy_own_thr_single_ms1_feature": 0,
+ "ms1_mapped_fraction": 1.0,
+ "timing_wall_cpu_s": {
+  "load_store": [
+   0.05,
+   0.05
+  ],
+  "search_full": [
+   0.29,
+   0.04
+  ],
+  "certify": [
+   0.0,
+   0.0
+  ],
+  "search_null_exhaustive": [
+   0.0,
+   0.0
+  ],
+  "removal_homolog": [
+   0.0,
+   0.0
+  ],
+  "removal_ladder": [
+   0.0,
+   0.0
+  ]
+ },
+ "project_I_filter_wall_cpu_s": {
+  "build_I_filter": [
+   0.0,
+   0.0
+  ]
+ },
+ "diag_ladder_threshold": {
+  "0.15": {
+   "A_cand": 0,
+   "tail_proxy_own_thr": 0
+  },
+  "0.1": {
+   "A_cand": 0,
+   "tail_proxy_own_thr": 0
+  },
+  "0.05": {
+   "A_cand": 0,
+   "tail_proxy_own_thr": 0
+  }
+ },
+ "diag_winner_f_hist_bins": [
+  0,
+  0.05,
+  0.1,
+  0.15,
+  0.2
+ ],
+ "diag_winner_f_hist_A_cand": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "diag_winner_f_hist_tail": [
+  0,
+  0,
+  0,
+  0
+ ],
+ "diag_coisolation": {
+  "single_A_cand": 0,
+  "single_tail": 0,
+  "multi_A_cand": 0,
+  "multi_tail": 0
+ }
+}

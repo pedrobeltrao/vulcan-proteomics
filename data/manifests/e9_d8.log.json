@@ -1,0 +1,699 @@
+{
+ "seed": 11,
+ "frame_candidates": 1666,
+ "excluded_by_manifest": 12,
+ "exclusion_manifest_sizes": {
+  "t4_selection.tsv": 40,
+  "tier_s.tsv": 8,
+  "dev_sealed.tsv": 7,
+  "dev_sealed_extra.tsv": 2,
+  "train.tsv": 13,
+  "predictor_training_accessions.tsv": 87
+ },
+ "eligible_after_exclusion": 1654,
+ "tried": [
+  [
+   "PXD011447",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD018572",
+   "selected 8 of 216"
+  ],
+  [
+   "PXD014823",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD016022",
+   "selected 8 of 19"
+  ],
+  [
+   "PXD027980",
+   "selected 5 of 5"
+  ],
+  [
+   "PXD025027",
+   "0 usable raw files"
+  ],
+  [
+   "PXD022927",
+   "0 usable raw files"
+  ],
+  [
+   "PXD057360",
+   "selected 8 of 17"
+  ],
+  [
+   "PXD069854",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD011751",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD026819",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD007543",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD047393",
+   "0 usable raw files"
+  ],
+  [
+   "PXD015561",
+   "0 usable raw files"
+  ],
+  [
+   "PXD045041",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD008244",
+   "selected 8 of 8"
+  ],
+  [
+   "PXD006023",
+   "0 usable raw files"
+  ],
+  [
+   "PXD023511",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD030528",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD064460",
+   "0 usable raw files"
+  ],
+  [
+   "PXD023938",
+   "selected 8 of 72"
+  ],
+  [
+   "PXD025899",
+   "selected 8 of 48"
+  ],
+  [
+   "PXD021939",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD005276",
+   "selected 8 of 14"
+  ],
+  [
+   "PXD028248",
+   "selected 8 of 438"
+  ],
+  [
+   "PXD011293",
+   "selected 8 of 108"
+  ],
+  [
+   "PXD035202",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD060457",
+   "selected 8 of 34"
+  ],
+  [
+   "PXD019945",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD038746",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD038811",
+   "selected 8 of 30"
+  ],
+  [
+   "PXD069739",
+   "selected 8 of 8"
+  ],
+  [
+   "PXD033149",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD035624",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD060031",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD046541",
+   "selected 3 of 3"
+  ],
+  [
+   "PXD030065",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD023559",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD024347",
+   "selected 8 of 89"
+  ],
+  [
+   "PXD042436",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD024123",
+   "selected 8 of 292"
+  ],
+  [
+   "PXD028681",
+   "0 usable raw files"
+  ],
+  [
+   "PXD005193",
+   "selected 8 of 17"
+  ],
+  [
+   "PXD073786",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD027012",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD026763",
+   "0 usable raw files"
+  ],
+  [
+   "PXD058192",
+   "selected 8 of 45"
+  ],
+  [
+   "PXD008682",
+   "selected 8 of 53"
+  ],
+  [
+   "PXD056040",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD008722",
+   "selected 8 of 252"
+  ],
+  [
+   "PXD043200",
+   "0 usable raw files"
+  ],
+  [
+   "PXD074511",
+   "selected 8 of 26"
+  ],
+  [
+   "PXD031045",
+   "selected 8 of 36"
+  ],
+  [
+   "PXD023118",
+   "selected 8 of 570"
+  ],
+  [
+   "PXD065250",
+   "selected 8 of 72"
+  ],
+  [
+   "PXD072955",
+   "0 usable raw files"
+  ],
+  [
+   "PXD076585",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD006074",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD013743",
+   "selected 8 of 30"
+  ],
+  [
+   "PXD053175",
+   "selected 8 of 30"
+  ],
+  [
+   "PXD049316",
+   "selected 8 of 10"
+  ],
+  [
+   "PXD012278",
+   "selected 8 of 35"
+  ],
+  [
+   "PXD000695",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD025933",
+   "selected 8 of 115"
+  ],
+  [
+   "PXD050651",
+   "selected 8 of 56"
+  ],
+  [
+   "PXD002612",
+   "selected 8 of 234"
+  ],
+  [
+   "PXD026880",
+   "selected 8 of 146"
+  ],
+  [
+   "PXD018899",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD034603",
+   "selected 8 of 9"
+  ],
+  [
+   "PXD018365",
+   "selected 8 of 40"
+  ],
+  [
+   "PXD042499",
+   "selected 8 of 14"
+  ],
+  [
+   "PXD013240",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD019254",
+   "0 usable raw files"
+  ],
+  [
+   "PXD003550",
+   "selected 8 of 72"
+  ],
+  [
+   "PXD052439",
+   "selected 8 of 84"
+  ],
+  [
+   "PXD079633",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD033427",
+   "selected 8 of 20"
+  ],
+  [
+   "PXD044795",
+   "selected 8 of 14"
+  ],
+  [
+   "PXD027573",
+   "selected 8 of 44"
+  ],
+  [
+   "PXD052165",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD017475",
+   "selected 8 of 19"
+  ],
+  [
+   "PXD004076",
+   "selected 8 of 72"
+  ],
+  [
+   "PXD018051",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD072296",
+   "selected 8 of 42"
+  ],
+  [
+   "PXD033002",
+   "selected 8 of 26"
+  ],
+  [
+   "PXD003406",
+   "selected 3 of 3"
+  ],
+  [
+   "PXD030821",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD005045",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD051187",
+   "selected 8 of 19"
+  ],
+  [
+   "PXD045457",
+   "0 usable raw files"
+  ],
+  [
+   "PXD014875",
+   "selected 8 of 95"
+  ],
+  [
+   "PXD023001",
+   "selected 8 of 70"
+  ],
+  [
+   "PXD046115",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD014852",
+   "0 usable raw files"
+  ],
+  [
+   "PXD071741",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD035876",
+   "selected 8 of 28"
+  ],
+  [
+   "PXD043556",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD060271",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD033249",
+   "selected 1 of 1"
+  ],
+  [
+   "PXD036991",
+   "selected 8 of 9"
+  ],
+  [
+   "PXD007055",
+   "selected 8 of 32"
+  ],
+  [
+   "PXD024426",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD066795",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD052809",
+   "selected 8 of 9"
+  ],
+  [
+   "PXD011989",
+   "0 usable raw files"
+  ],
+  [
+   "PXD025906",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD072218",
+   "selected 8 of 41"
+  ],
+  [
+   "PXD024312",
+   "selected 8 of 180"
+  ],
+  [
+   "PXD066297",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD053695",
+   "selected 1 of 1"
+  ],
+  [
+   "PXD002213",
+   "selected 8 of 217"
+  ],
+  [
+   "PXD022915",
+   "selected 8 of 40"
+  ],
+  [
+   "PXD018569",
+   "selected 8 of 216"
+  ],
+  [
+   "PXD013344",
+   "selected 8 of 115"
+  ],
+  [
+   "PXD053911",
+   "0 usable raw files"
+  ],
+  [
+   "PXD027355",
+   "0 usable raw files"
+  ],
+  [
+   "PXD027602",
+   "0 usable raw files"
+  ],
+  [
+   "PXD026370",
+   "0 usable raw files"
+  ],
+  [
+   "PXD007686",
+   "selected 8 of 79"
+  ],
+  [
+   "PXD010269",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD066232",
+   "0 usable raw files"
+  ],
+  [
+   "PXD019496",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD010318",
+   "selected 4 of 4"
+  ],
+  [
+   "PXD014709",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD054413",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD041944",
+   "selected 8 of 56"
+  ],
+  [
+   "PXD063183",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD039554",
+   "selected 3 of 3"
+  ],
+  [
+   "PXD057149",
+   "selected 8 of 11"
+  ],
+  [
+   "PXD006396",
+   "selected 2 of 2"
+  ],
+  [
+   "PXD036638",
+   "selected 8 of 53"
+  ],
+  [
+   "PXD060417",
+   "selected 8 of 9"
+  ],
+  [
+   "PXD051689",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD022924",
+   "selected 8 of 15"
+  ],
+  [
+   "PXD043335",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD023502",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD043366",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD007188",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD054805",
+   "selected 1 of 1"
+  ],
+  [
+   "PXD056404",
+   "0 usable raw files"
+  ],
+  [
+   "PXD025192",
+   "selected 8 of 30"
+  ],
+  [
+   "PXD051672",
+   "selected 8 of 20"
+  ],
+  [
+   "PXD045696",
+   "selected 8 of 8"
+  ],
+  [
+   "PXD045767",
+   "0 usable raw files"
+  ],
+  [
+   "PXD011993",
+   "0 usable raw files"
+  ],
+  [
+   "PXD036164",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD056233",
+   "selected 8 of 32"
+  ],
+  [
+   "PXD040935",
+   "selected 8 of 18"
+  ],
+  [
+   "PXD074461",
+   "selected 8 of 24"
+  ],
+  [
+   "PXD043342",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD003606",
+   "selected 8 of 180"
+  ],
+  [
+   "PXD045312",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD002137",
+   "0 usable raw files"
+  ],
+  [
+   "PXD005880",
+   "selected 8 of 89"
+  ],
+  [
+   "PXD006267",
+   "selected 8 of 36"
+  ],
+  [
+   "PXD028434",
+   "selected 8 of 27"
+  ],
+  [
+   "PXD021106",
+   "selected 6 of 6"
+  ],
+  [
+   "PXD010785",
+   "selected 8 of 16"
+  ],
+  [
+   "PXD027151",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD050237",
+   "selected 8 of 12"
+  ],
+  [
+   "PXD068585",
+   "selected 8 of 9"
+  ],
+  [
+   "PXD038851",
+   "selected 8 of 135"
+  ],
+  [
+   "PXD012087",
+   "selected 8 of 30"
+  ],
+  [
+   "PXD043154",
+   "0 usable raw files"
+  ],
+  [
+   "PXD056759",
+   "selected 8 of 33"
+  ],
+  [
+   "PXD020743",
+   "selected 8 of 8"
+  ]
+ ],
+ "n_runs": 1000,
+ "n_projects": 142,
+ "bytes": 1079192862682,
+ "N1": {
+  "projects": 1,
+  "bytes": 1940466580
+ },
+ "N10": {
+  "projects": 10,
+  "bytes": 13343564278
+ },
+ "N100": {
+  "projects": 100,
+  "bytes": 110890258057
+ },
+ "N1000": {
+  "projects": 142,
+  "bytes": 1079192862682
+ }
+}

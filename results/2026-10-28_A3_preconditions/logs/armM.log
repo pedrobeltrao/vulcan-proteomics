@@ -1,0 +1,49 @@
+search 2001 LM2486_DDA 290521 34838
+search 2001 LM2487_DDA 347954 45502
+search 2001 LM2490_DDA 288881 34444
+search 2002 LM2486_DDA 290629 34838
+search 2002 LM2487_DDA 348296 45502
+search 2002 LM2490_DDA 288562 34444
+search 2003 LM2486_DDA 290635 34838
+search 2003 LM2487_DDA 348018 45502
+search 2003 LM2490_DDA 288920 34444
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+score 2001 LM2486_DDA 290521 26.0
+score 2001 LM2487_DDA 347954 26.0
+score 2001 LM2490_DDA 288881 26.0
+score 2002 LM2486_DDA 290629 26.0
+score 2002 LM2487_DDA 348296 26.0
+score 2002 LM2490_DDA 288562 26.0
+score 2003 LM2486_DDA 290635 26.0
+score 2003 LM2487_DDA 348018 26.0
+score 2003 LM2490_DDA 288920 26.0
+eval loaded 2001
+eval loaded 2002
+eval loaded 2003
+v2_sep overall 0.001 0.00166 not-evaluable | b not-evaluable {2001: {'N_T': 17529, 'N_E': 17}, 2002: {'N_T': 17654, 'N_E': 20}, 2003: {'N_T': 17715, 'N_E': 7}}
+v2_sep overall 0.01 0.0104 inconclusive | b inconclusive {2001: {'N_T': 21003, 'N_E': 116}, 2002: {'N_T': 20948, 'N_E': 119}, 2003: {'N_T': 20964, 'N_E': 94}}
+v2_sep overall 0.05 0.05389 inconclusive | b inconclusive {2001: {'N_T': 21992, 'N_E': 601}, 2002: {'N_T': 22059, 'N_E': 621}, 2003: {'N_T': 22070, 'N_E': 609}}
+v2_sep 1 0.001 0.00174 not-evaluable | b not-evaluable {2001: {'N_T': 15947, 'N_E': 16}, 2002: {'N_T': 16135, 'N_E': 19}, 2003: {'N_T': 16127, 'N_E': 7}}
+v2_sep 1 0.01 0.00998 supported | b supported {2001: {'N_T': 16823, 'N_E': 92}, 2002: {'N_T': 16906, 'N_E': 95}, 2003: {'N_T': 16913, 'N_E': 67}}
+v2_sep 1 0.05 0.05491 inconclusive | b inconclusive {2001: {'N_T': 17430, 'N_E': 494}, 2002: {'N_T': 17519, 'N_E': 511}, 2003: {'N_T': 17514, 'N_E': 476}}
+v2_sep 2 0.001 0.00086 not-evaluable | b not-evaluable {2001: {'N_T': 1582, 'N_E': 1}, 2002: {'N_T': 1519, 'N_E': 1}, 2003: {'N_T': 1588, 'N_E': 0}}
+v2_sep 2 0.01 0.01257 inconclusive | b inconclusive {2001: {'N_T': 3007, 'N_E': 17}, 2002: {'N_T': 2911, 'N_E': 16}, 2003: {'N_T': 2938, 'N_E': 23}}
+v2_sep 2 0.05 0.05289 inconclusive | b inconclusive {2001: {'N_T': 3212, 'N_E': 83}, 2002: {'N_T': 3192, 'N_E': 80}, 2003: {'N_T': 3203, 'N_E': 98}}
+v2_sep >=3 0.001 0.0 not-evaluable | b not-evaluable {2001: {'N_T': 0, 'N_E': 0}, 2002: {'N_T': 0, 'N_E': 0}, 2003: {'N_T': 0, 'N_E': 0}}
+v2_sep >=3 0.01 0.01102 not-evaluable | b not-evaluable {2001: {'N_T': 1173, 'N_E': 7}, 2002: {'N_T': 1131, 'N_E': 8}, 2003: {'N_T': 1113, 'N_E': 4}}
+v2_sep >=3 0.05 0.04297 supported | b supported {2001: {'N_T': 1350, 'N_E': 24}, 2002: {'N_T': 1348, 'N_E': 30}, 2003: {'N_T': 1353, 'N_E': 35}}
+hyperscore_sep overall 0.001 0.00152 not-evaluable | b not-evaluable {2001: {'N_T': 11020, 'N_E': 12}, 2002: {'N_T': 10632, 'N_E': 6}, 2003: {'N_T': 11098, 'N_E': 7}}
+hyperscore_sep overall 0.01 0.01036 inconclusive | b inconclusive {2001: {'N_T': 15038, 'N_E': 87}, 2002: {'N_T': 14999, 'N_E': 69}, 2003: {'N_T': 14911, 'N_E': 78}}
+hyperscore_sep overall 0.05 0.05204 inconclusive | b inconclusive {2001: {'N_T': 17619, 'N_E': 473}, 2002: {'N_T': 17601, 'N_E': 468}, 2003: {'N_T': 17633, 'N_E': 471}}
+hyperscore_sep 1 0.001 0.00152 not-evaluable | b not-evaluable {2001: {'N_T': 11020, 'N_E': 12}, 2002: {'N_T': 10632, 'N_E': 6}, 2003: {'N_T': 11098, 'N_E': 7}}
+hyperscore_sep 1 0.01 0.01037 inconclusive | b inconclusive {2001: {'N_T': 13745, 'N_E': 79}, 2002: {'N_T': 13688, 'N_E': 62}, 2003: {'N_T': 13789, 'N_E': 74}}
+hyperscore_sep 1 0.05 0.05233 inconclusive | b inconclusive {2001: {'N_T': 15806, 'N_E': 426}, 2002: {'N_T': 15835, 'N_E': 423}, 2003: {'N_T': 15778, 'N_E': 425}}
+hyperscore_sep 2 0.001 0.0 not-evaluable | b not-evaluable {2001: {'N_T': 0, 'N_E': 0}, 2002: {'N_T': 0, 'N_E': 0}, 2003: {'N_T': 0, 'N_E': 0}}
+hyperscore_sep 2 0.01 0.00874 not-evaluable | b not-evaluable {2001: {'N_T': 1006, 'N_E': 7}, 2002: {'N_T': 997, 'N_E': 5}, 2003: {'N_T': 827, 'N_E': 1}}
+hyperscore_sep 2 0.05 0.05198 inconclusive | b inconclusive {2001: {'N_T': 1408, 'N_E': 39}, 2002: {'N_T': 1366, 'N_E': 38}, 2003: {'N_T': 1426, 'N_E': 35}}
+hyperscore_sep >=3 0.001 0.0 not-evaluable | b not-evaluable {2001: {'N_T': 0, 'N_E': 0}, 2002: {'N_T': 0, 'N_E': 0}, 2003: {'N_T': 0, 'N_E': 0}}
+hyperscore_sep >=3 0.01 0.01325 not-evaluable | b not-evaluable {2001: {'N_T': 287, 'N_E': 1}, 2002: {'N_T': 314, 'N_E': 2}, 2003: {'N_T': 295, 'N_E': 3}}
+hyperscore_sep >=3 0.05 0.04105 supported | b supported {2001: {'N_T': 405, 'N_E': 8}, 2002: {'N_T': 400, 'N_E': 7}, 2003: {'N_T': 429, 'N_E': 11}}
+arm M v2_sep pass: True []
+wall 303.5 s

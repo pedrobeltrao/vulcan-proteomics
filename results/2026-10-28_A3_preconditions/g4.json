@@ -1,0 +1,1010 @@
+{
+ "partition": {
+  "amendment": "A3.1.8(i); DESIGN \u00a76.4 G4 with the partition extended to chimeric stratum",
+  "frozen_before_estimation": true,
+  "script": "scripts/a3/dev_g4.py (docstring = specification)",
+  "data": "40 frozen v2 training runs (results/2026-10-28_E7_chimeric_v2/train_v2_folds.tsv minus E7's 3 label-independent exclusions); training decoys only",
+  "score": "static_v2.pkl sha256 3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186 (v2_sep scorer)",
+  "decoys": "stage-1 unit winners (best PSM per (run, spectrum, precursor group), hash tie-break pf_id seed 11) that are decoys",
+  "instrument_class": "OT-HCD (single class; every training run)",
+  "activation": "HCD (single)",
+  "chimeric_stratum": [
+   1,
+   2,
+   ">=3"
+  ],
+  "charge": [
+   2,
+   3,
+   "4+",
+   "1 kept as its own class if present"
+  ],
+  "stratum_label": "r{1|2|3}_z{1|2|3|4}",
+  "statistic": "vulcan.gates.stats.g4_gate: tau = 95th pct of within-stratum between-run KS (runs with >= 200 decoys in the stratum); pass iff every stratum's KS vs the rest <= tau",
+  "reported_only": [
+   "hyperscore reference",
+   "v2 on the A1 charge-only partition",
+   "pair-winner decoys after the full v2_sep competition",
+   "partition split by instrument model"
+  ]
+ },
+ "n_runs": 40,
+ "excluded_runs": {
+  "MN-WT1-Frac8": "not OT-HCD (FTMS+HCD fraction of MS2 = 0.00)",
+  "uzorak_07": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)",
+  "Sh-271": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)"
+ },
+ "v2_sha256": "3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186",
+ "decision": {
+  "v2_sep_G4": {
+   "tau": 0.2976350850853497,
+   "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+   "n_within_pairs": 4398,
+   "within_ks_quantiles_10_50_90": [
+    0.05107562035793007,
+    0.12392083106934892,
+    0.25605811723751215
+   ],
+   "strata": {
+    "r1_z1": {
+     "n": 1596,
+     "n_runs_used_for_tau": 2,
+     "ks_vs_rest": 0.05431042090992921,
+     "quantiles_50_90_99": [
+      -4.971531317927865,
+      -1.4631839362213155,
+      1.985017358157248
+     ],
+     "pass_": true
+    },
+    "r1_z2": {
+     "n": 97851,
+     "n_runs_used_for_tau": 35,
+     "ks_vs_rest": 0.06254150705098038,
+     "quantiles_50_90_99": [
+      -5.549534372180087,
+      -1.5543942242121496,
+      2.377754958418004
+     ],
+     "pass_": true
+    },
+    "r1_z3": {
+     "n": 71232,
+     "n_runs_used_for_tau": 36,
+     "ks_vs_rest": 0.05329283164937826,
+     "quantiles_50_90_99": [
+      -5.537971979835804,
+      -2.2044695896503566,
+      0.8335116236464352
+     ],
+     "pass_": true
+    },
+    "r1_z4": {
+     "n": 34621,
+     "n_runs_used_for_tau": 29,
+     "ks_vs_rest": 0.07788807553986932,
+     "quantiles_50_90_99": [
+      -5.742107129369636,
+      -2.1544636856928623,
+      1.0711411374279867
+     ],
+     "pass_": true
+    },
+    "r2_z1": {
+     "n": 95,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.13734365031461965,
+     "quantiles_50_90_99": [
+      -4.606853134498076,
+      -2.1827564040680203,
+      0.46761418548262274
+     ],
+     "pass_": true
+    },
+    "r2_z2": {
+     "n": 52220,
+     "n_runs_used_for_tau": 35,
+     "ks_vs_rest": 0.031533991248667737,
+     "quantiles_50_90_99": [
+      -5.135238361627321,
+      -1.433695819415711,
+      2.2165828086668276
+     ],
+     "pass_": true
+    },
+    "r2_z3": {
+     "n": 40161,
+     "n_runs_used_for_tau": 35,
+     "ks_vs_rest": 0.04408132147657359,
+     "quantiles_50_90_99": [
+      -5.112258765462789,
+      -1.7565108518049968,
+      1.2294272968343594
+     ],
+     "pass_": true
+    },
+    "r2_z4": {
+     "n": 19644,
+     "n_runs_used_for_tau": 27,
+     "ks_vs_rest": 0.04077263928534086,
+     "quantiles_50_90_99": [
+      -5.049178519556183,
+      -1.5824105611097898,
+      1.4880785368585348
+     ],
+     "pass_": true
+    },
+    "r3_z1": {
+     "n": 9,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.26550935302132045,
+     "quantiles_50_90_99": [
+      -5.268477842650949,
+      -2.9968797485441856,
+      -1.0183296045232648
+     ],
+     "pass_": true
+    },
+    "r3_z2": {
+     "n": 49088,
+     "n_runs_used_for_tau": 30,
+     "ks_vs_rest": 0.0485825365383184,
+     "quantiles_50_90_99": [
+      -5.051361799242282,
+      -1.5746511073707046,
+      1.7437052196027587
+     ],
+     "pass_": true
+    },
+    "r3_z3": {
+     "n": 45917,
+     "n_runs_used_for_tau": 31,
+     "ks_vs_rest": 0.06990547269668745,
+     "quantiles_50_90_99": [
+      -4.929177886591958,
+      -1.5541042630509767,
+      1.3887784066806625
+     ],
+     "pass_": true
+    },
+    "r3_z4": {
+     "n": 22087,
+     "n_runs_used_for_tau": 26,
+     "ks_vs_rest": 0.050831043029159084,
+     "quantiles_50_90_99": [
+      -4.984493871454257,
+      -1.519194949583901,
+      1.6850479967385534
+     ],
+     "pass_": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "reported": {
+  "hyperscore_reference": {
+   "tau": 0.6594568941656549,
+   "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+   "n_within_pairs": 4433,
+   "within_ks_quantiles_10_50_90": [
+    0.08197169835211855,
+    0.25866128751591305,
+    0.566127923948643
+   ],
+   "strata": {
+    "r1_z1": {
+     "n": 1625,
+     "n_runs_used_for_tau": 2,
+     "ks_vs_rest": 0.1357192139579143,
+     "quantiles_50_90_99": [
+      23.688354098429798,
+      27.67613802489079,
+      32.385469036085944
+     ],
+     "pass_": true
+    },
+    "r1_z2": {
+     "n": 99871,
+     "n_runs_used_for_tau": 35,
+     "ks_vs_rest": 0.09099105541356767,
+     "quantiles_50_90_99": [
+      24.94020218322816,
+      29.647476614265933,
+      34.40002471913267
+     ],
+     "pass_": true
+    },
+    "r1_z3": {
+     "n": 73711,
+     "n_runs_used_for_tau": 36,
+     "ks_vs_rest": 0.018233894630595493,
+     "quantiles_50_90_99": [
+      24.42173821314003,
+      28.52793114297816,
+      32.762998120802465
+     ],
+     "pass_": true
+    },
+    "r1_z4": {
+     "n": 35889,
+     "n_runs_used_for_tau": 29,
+     "ks_vs_rest": 0.05994786546031905,
+     "quantiles_50_90_99": [
+      24.14521018233685,
+      27.99512041114463,
+      32.277955073487206
+     ],
+     "pass_": true
+    },
+    "r2_z1": {
+     "n": 97,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.21116640277155485,
+     "quantiles_50_90_99": [
+      24.372933498684393,
+      26.162067991254446,
+      27.326156917688017
+     ],
+     "pass_": true
+    },
+    "r2_z2": {
+     "n": 55416,
+     "n_runs_used_for_tau": 36,
+     "ks_vs_rest": 0.023952536979984562,
+     "quantiles_50_90_99": [
+      24.60031486562945,
+      28.894021637485743,
+      33.147228353047
+     ],
+     "pass_": true
+    },
+    "r2_z3": {
+     "n": 42600,
+     "n_runs_used_for_tau": 35,
+     "ks_vs_rest": 0.03797058738074255,
+     "quantiles_50_90_99": [
+      24.286840077482857,
+      28.191266855156574,
+      31.967462028330786
+     ],
+     "pass_": true
+    },
+    "r2_z4": {
+     "n": 20668,
+     "n_runs_used_for_tau": 27,
+     "ks_vs_rest": 0.07221397890242631,
+     "quantiles_50_90_99": [
+      24.092117231606053,
+      27.694333959180906,
+      31.277279333482248
+     ],
+     "pass_": true
+    },
+    "r3_z1": {
+     "n": 8,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.18363138031183468,
+     "quantiles_50_90_99": [
+      25.408889308696313,
+      27.761371356140337,
+      28.078290223546315
+     ],
+     "pass_": true
+    },
+    "r3_z2": {
+     "n": 52507,
+     "n_runs_used_for_tau": 30,
+     "ks_vs_rest": 0.020364769983105546,
+     "quantiles_50_90_99": [
+      24.530997139906923,
+      28.277398876367982,
+      31.893074818566273
+     ],
+     "pass_": true
+    },
+    "r3_z3": {
+     "n": 48736,
+     "n_runs_used_for_tau": 31,
+     "ks_vs_rest": 0.041097438698255995,
+     "quantiles_50_90_99": [
+      24.472925638781128,
+      27.985487941562532,
+      31.357929180647144
+     ],
+     "pass_": true
+    },
+    "r3_z4": {
+     "n": 23031,
+     "n_runs_used_for_tau": 26,
+     "ks_vs_rest": 0.04803816766476121,
+     "quantiles_50_90_99": [
+      24.4012360690966,
+      27.881289836616862,
+      31.412827326464715
+     ],
+     "pass_": true
+    }
+   },
+   "pass": true
+  },
+  "v2_A1_charge_only_partition": {
+   "tau": 0.2864738697358157,
+   "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+   "n_within_pairs": 1789,
+   "within_ks_quantiles_10_50_90": [
+    0.04139196999718675,
+    0.11897650787049868,
+    0.24875202357931644
+   ],
+   "strata": {
+    "1": {
+     "n": 1700,
+     "n_runs_used_for_tau": 2,
+     "ks_vs_rest": 0.054609412639948784,
+     "quantiles_50_90_99": [
+      -4.941134814767731,
+      -1.470884795418902,
+      1.921935961188916
+     ],
+     "pass_": true
+    },
+    "2": {
+     "n": 199159,
+     "n_runs_used_for_tau": 36,
+     "ks_vs_rest": 0.021084775936292294,
+     "quantiles_50_90_99": [
+      -5.306524403241813,
+      -1.5284368618959416,
+      2.1800869090529402
+     ],
+     "pass_": true
+    },
+    "3": {
+     "n": 157310,
+     "n_runs_used_for_tau": 36,
+     "ks_vs_rest": 0.030558466906211723,
+     "quantiles_50_90_99": [
+      -5.249485602064442,
+      -1.8776873819360933,
+      1.1352361696478261
+     ],
+     "pass_": true
+    },
+    "4": {
+     "n": 76352,
+     "n_runs_used_for_tau": 33,
+     "ks_vs_rest": 0.013189995025153778,
+     "quantiles_50_90_99": [
+      -5.345599220882408,
+      -1.7953591189992537,
+      1.3895652848983449
+     ],
+     "pass_": true
+    }
+   },
+   "pass": true
+  },
+  "v2_pair_winner_decoys": {
+   "tau": 0.28574751549435096,
+   "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+   "n_within_pairs": 3773,
+   "within_ks_quantiles_10_50_90": [
+    0.05145972352297806,
+    0.12209582178413403,
+    0.24624065375603602
+   ],
+   "strata": {
+    "r1_z1": {
+     "n": 1268,
+     "n_runs_used_for_tau": 2,
+     "ks_vs_rest": 0.032430060891147916,
+     "quantiles_50_90_99": [
+      -5.041263609616276,
+      -1.6907938617404072,
+      1.7901235976930057
+     ],
+     "pass_": true
+    },
+    "r1_z2": {
+     "n": 72253,
+     "n_runs_used_for_tau": 33,
+     "ks_vs_rest": 0.05717791843107192,
+     "quantiles_50_90_99": [
+      -5.426593933188936,
+      -1.457976114432348,
+      2.447152546834958
+     ],
+     "pass_": true
+    },
+    "r1_z3": {
+     "n": 54089,
+     "n_runs_used_for_tau": 33,
+     "ks_vs_rest": 0.04863768305034788,
+     "quantiles_50_90_99": [
+      -5.443355911164861,
+      -2.130591158435207,
+      0.8767582859321132
+     ],
+     "pass_": true
+    },
+    "r1_z4": {
+     "n": 22818,
+     "n_runs_used_for_tau": 25,
+     "ks_vs_rest": 0.06981444515223079,
+     "quantiles_50_90_99": [
+      -5.641527321459448,
+      -2.189374376100127,
+      0.924635358721001
+     ],
+     "pass_": true
+    },
+    "r2_z1": {
+     "n": 70,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.09799702411742578,
+     "quantiles_50_90_99": [
+      -4.793361213892855,
+      -1.520868641096613,
+      0.1174245774624702
+     ],
+     "pass_": true
+    },
+    "r2_z2": {
+     "n": 35125,
+     "n_runs_used_for_tau": 34,
+     "ks_vs_rest": 0.023188064529943375,
+     "quantiles_50_90_99": [
+      -5.122538758501346,
+      -1.4767674518327871,
+      2.188000815587281
+     ],
+     "pass_": true
+    },
+    "r2_z3": {
+     "n": 28421,
+     "n_runs_used_for_tau": 34,
+     "ks_vs_rest": 0.04340364853802048,
+     "quantiles_50_90_99": [
+      -5.071335266267457,
+      -1.7575806665294724,
+      1.1729342884903786
+     ],
+     "pass_": true
+    },
+    "r2_z4": {
+     "n": 14626,
+     "n_runs_used_for_tau": 23,
+     "ks_vs_rest": 0.043301286931788696,
+     "quantiles_50_90_99": [
+      -4.9812860329605,
+      -1.5427117738525542,
+      1.4580429320733623
+     ],
+     "pass_": true
+    },
+    "r3_z1": {
+     "n": 6,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.3272491388926888,
+     "quantiles_50_90_99": [
+      -4.136799123062868,
+      -2.1724838552021355,
+      -0.935890015189059
+     ],
+     "pass_": false
+    },
+    "r3_z2": {
+     "n": 28677,
+     "n_runs_used_for_tau": 30,
+     "ks_vs_rest": 0.04703028559472755,
+     "quantiles_50_90_99": [
+      -4.99820499347139,
+      -1.5594700406102187,
+      1.8480125196151211
+     ],
+     "pass_": true
+    },
+    "r3_z3": {
+     "n": 28229,
+     "n_runs_used_for_tau": 30,
+     "ks_vs_rest": 0.06721284443999453,
+     "quantiles_50_90_99": [
+      -4.894240084801394,
+      -1.5594604743738998,
+      1.3753929283997084
+     ],
+     "pass_": true
+    },
+    "r3_z4": {
+     "n": 14135,
+     "n_runs_used_for_tau": 19,
+     "ks_vs_rest": 0.05385906865540224,
+     "quantiles_50_90_99": [
+      -4.909973700473348,
+      -1.4683697540836844,
+      1.6096339870321559
+     ],
+     "pass_": true
+    }
+   },
+   "pass": false
+  },
+  "v2_by_instrument_model": {
+   "tau": 0.29641104594856044,
+   "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+   "n_within_pairs": 1099,
+   "within_ks_quantiles_10_50_90": [
+    0.052391129400964354,
+    0.12073142845902868,
+    0.25241523299995194
+   ],
+   "strata": {
+    "Orbitrap Exploris 480|r1_z2": {
+     "n": 29635,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.08984664904658307,
+     "quantiles_50_90_99": [
+      -5.819787207581305,
+      -1.8964605303026758,
+      2.1396086763912536
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r1_z3": {
+     "n": 25024,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.08206753077228235,
+     "quantiles_50_90_99": [
+      -5.768145347800508,
+      -2.468914313278708,
+      0.5370739064780442
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r1_z4": {
+     "n": 15332,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.13583277691507678,
+     "quantiles_50_90_99": [
+      -6.122664196521953,
+      -2.537194627438242,
+      0.6571535210565278
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r2_z2": {
+     "n": 13600,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.030598398232335677,
+     "quantiles_50_90_99": [
+      -5.221632978256341,
+      -1.3286637433176005,
+      2.5634007534940966
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r2_z3": {
+     "n": 12265,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.03665453958310749,
+     "quantiles_50_90_99": [
+      -5.381315860975684,
+      -2.081027035313491,
+      0.9437497800707548
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r2_z4": {
+     "n": 8998,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.030608538009262498,
+     "quantiles_50_90_99": [
+      -5.122024988867063,
+      -1.6824426333372977,
+      1.4183654177608755
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r3_z2": {
+     "n": 12312,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.014393351247006136,
+     "quantiles_50_90_99": [
+      -5.337611743956012,
+      -1.4988195710566805,
+      1.9114881958640775
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r3_z3": {
+     "n": 13339,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.027134978168916413,
+     "quantiles_50_90_99": [
+      -5.442144196926332,
+      -1.9923727109510543,
+      1.0109287484798486
+     ],
+     "pass_": true
+    },
+    "Orbitrap Exploris 480|r3_z4": {
+     "n": 9609,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.012102174187599957,
+     "quantiles_50_90_99": [
+      -5.277307518006506,
+      -1.8522439927670251,
+      1.3636600789430096
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r1_z1": {
+     "n": 384,
+     "n_runs_used_for_tau": 1,
+     "ks_vs_rest": 0.22999096123458718,
+     "quantiles_50_90_99": [
+      -3.757595149613498,
+      -0.8450869322341744,
+      2.2503965781232065
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r1_z2": {
+     "n": 25178,
+     "n_runs_used_for_tau": 12,
+     "ks_vs_rest": 0.04761616481161843,
+     "quantiles_50_90_99": [
+      -5.415349831548644,
+      -1.197516388618366,
+      2.8264482409829563
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r1_z3": {
+     "n": 15271,
+     "n_runs_used_for_tau": 13,
+     "ks_vs_rest": 0.031206009871271423,
+     "quantiles_50_90_99": [
+      -5.474251099398028,
+      -1.844909771749581,
+      1.2964779425633566
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r1_z4": {
+     "n": 4630,
+     "n_runs_used_for_tau": 8,
+     "ks_vs_rest": 0.11343285707970374,
+     "quantiles_50_90_99": [
+      -5.965510950513102,
+      -2.4471873871493406,
+      0.6421299209492771
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r2_z1": {
+     "n": 31,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.3869933529781673,
+     "quantiles_50_90_99": [
+      -3.5008652460500453,
+      -0.3278062225043783,
+      0.7297497266827059
+     ],
+     "pass_": false
+    },
+    "Q Exactive HF|r2_z2": {
+     "n": 13100,
+     "n_runs_used_for_tau": 13,
+     "ks_vs_rest": 0.05364905207754844,
+     "quantiles_50_90_99": [
+      -5.004994892963393,
+      -1.114161081250021,
+      2.611157136827003
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r2_z3": {
+     "n": 10547,
+     "n_runs_used_for_tau": 12,
+     "ks_vs_rest": 0.051152949301523476,
+     "quantiles_50_90_99": [
+      -5.0402312841151975,
+      -1.4507958456195567,
+      1.4892487030965786
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r2_z4": {
+     "n": 4267,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.022684750387889807,
+     "quantiles_50_90_99": [
+      -5.150969270840012,
+      -1.61823045661901,
+      1.6461615359452944
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r3_z1": {
+     "n": 1,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.5033324127773174,
+     "quantiles_50_90_99": [
+      -5.268477842650949,
+      -5.268477842650949,
+      -5.268477842650949
+     ],
+     "pass_": false
+    },
+    "Q Exactive HF|r3_z2": {
+     "n": 10768,
+     "n_runs_used_for_tau": 10,
+     "ks_vs_rest": 0.08137112966355625,
+     "quantiles_50_90_99": [
+      -4.811112639578964,
+      -1.281149564054773,
+      2.003133624751972
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r3_z3": {
+     "n": 10519,
+     "n_runs_used_for_tau": 10,
+     "ks_vs_rest": 0.08510182756175078,
+     "quantiles_50_90_99": [
+      -4.800708030787851,
+      -1.2499340636654008,
+      1.737625511547828
+     ],
+     "pass_": true
+    },
+    "Q Exactive HF|r3_z4": {
+     "n": 4452,
+     "n_runs_used_for_tau": 8,
+     "ks_vs_rest": 0.03943699953351887,
+     "quantiles_50_90_99": [
+      -5.04249185304294,
+      -1.4290303695798614,
+      1.9077861605990485
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r1_z2": {
+     "n": 10676,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.07304023849249525,
+     "quantiles_50_90_99": [
+      -5.618428120726442,
+      -1.5721143662717774,
+      2.2505003491770017
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r1_z3": {
+     "n": 10177,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.03187494632340482,
+     "quantiles_50_90_99": [
+      -5.381789324310692,
+      -2.083747902571782,
+      0.8955012826212371
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r1_z4": {
+     "n": 6208,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.029259299930022742,
+     "quantiles_50_90_99": [
+      -5.139173541145277,
+      -1.3587591172352371,
+      2.6403479379946715
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r2_z2": {
+     "n": 7304,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.04002132849313622,
+     "quantiles_50_90_99": [
+      -5.078320884194945,
+      -1.4158894897356138,
+      2.3259163415117596
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r2_z3": {
+     "n": 6267,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.09188849664875715,
+     "quantiles_50_90_99": [
+      -4.776720206586017,
+      -1.4687432885784448,
+      1.5176904646539888
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r2_z4": {
+     "n": 2756,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.08305212914412458,
+     "quantiles_50_90_99": [
+      -4.77308008488452,
+      -1.3252883262201909,
+      1.4444745468817244
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r3_z2": {
+     "n": 10678,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.08435507248279911,
+     "quantiles_50_90_99": [
+      -4.811722939525606,
+      -1.4197789345489658,
+      1.8897579458204417
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r3_z3": {
+     "n": 11185,
+     "n_runs_used_for_tau": 6,
+     "ks_vs_rest": 0.17432654210405618,
+     "quantiles_50_90_99": [
+      -4.286271043178608,
+      -1.17636475611404,
+      1.6431614487036836
+     ],
+     "pass_": true
+    },
+    "Q Exactive Plus|r3_z4": {
+     "n": 4427,
+     "n_runs_used_for_tau": 5,
+     "ks_vs_rest": 0.14502570132259396,
+     "quantiles_50_90_99": [
+      -4.451981683824284,
+      -1.1035876578905464,
+      2.0739520462989613
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r1_z1": {
+     "n": 1212,
+     "n_runs_used_for_tau": 1,
+     "ks_vs_rest": 0.035525450717045964,
+     "quantiles_50_90_99": [
+      -5.341391794966216,
+      -1.8433429202549627,
+      1.8708983573503815
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r1_z2": {
+     "n": 32362,
+     "n_runs_used_for_tau": 11,
+     "ks_vs_rest": 0.018608353897939245,
+     "quantiles_50_90_99": [
+      -5.3502419469008125,
+      -1.5429863166440758,
+      2.099846750086767
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r1_z3": {
+     "n": 20760,
+     "n_runs_used_for_tau": 11,
+     "ks_vs_rest": 0.03919902840226963,
+     "quantiles_50_90_99": [
+      -5.38968020722636,
+      -2.215670877559526,
+      0.8241987638109762
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r1_z4": {
+     "n": 8451,
+     "n_runs_used_for_tau": 9,
+     "ks_vs_rest": 0.02259757962632991,
+     "quantiles_50_90_99": [
+      -5.34587023418338,
+      -2.0036041690956328,
+      1.0912338851852663
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r2_z1": {
+     "n": 64,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.11180533257606617,
+     "quantiles_50_90_99": [
+      -5.423054372408187,
+      -2.5791200542313097,
+      -1.4276383673921926
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r2_z2": {
+     "n": 18216,
+     "n_runs_used_for_tau": 11,
+     "ks_vs_rest": 0.02384841676303623,
+     "quantiles_50_90_99": [
+      -5.179098119016987,
+      -1.7640041663119836,
+      1.5375106074036071
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r2_z3": {
+     "n": 11082,
+     "n_runs_used_for_tau": 11,
+     "ks_vs_rest": 0.057805698673410566,
+     "quantiles_50_90_99": [
+      -5.084558764068701,
+      -1.956507529997959,
+      0.9438318958261123
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r2_z4": {
+     "n": 3623,
+     "n_runs_used_for_tau": 9,
+     "ks_vs_rest": 0.0638205539309778,
+     "quantiles_50_90_99": [
+      -4.937662292638668,
+      -1.5434476644096184,
+      1.5193349964026344
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r3_z1": {
+     "n": 8,
+     "n_runs_used_for_tau": 0,
+     "ks_vs_rest": 0.2655087419708962,
+     "quantiles_50_90_99": [
+      -4.9637443236037475,
+      -2.72208111743017,
+      -0.9908497414118637
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r3_z2": {
+     "n": 15330,
+     "n_runs_used_for_tau": 10,
+     "ks_vs_rest": 0.0421102668695692,
+     "quantiles_50_90_99": [
+      -5.183452271990012,
+      -1.9367642337631852,
+      1.1620986356353313
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r3_z3": {
+     "n": 10874,
+     "n_runs_used_for_tau": 10,
+     "ks_vs_rest": 0.059734766809301565,
+     "quantiles_50_90_99": [
+      -5.111403845181235,
+      -1.9261343559070339,
+      1.1024844106556488
+     ],
+     "pass_": true
+    },
+    "Q Exactive|r3_z4": {
+     "n": 3599,
+     "n_runs_used_for_tau": 8,
+     "ks_vs_rest": 0.06450725201754348,
+     "quantiles_50_90_99": [
+      -4.9250259643938605,
+      -1.5430785762664547,
+      1.4870622511364433
+     ],
+     "pass_": true
+    }
+   },
+   "pass": false
+  }
+ },
+ "pass": true
+}

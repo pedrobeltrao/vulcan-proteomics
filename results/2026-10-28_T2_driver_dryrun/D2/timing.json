@@ -1,0 +1,22 @@
+{
+ "stages": {
+  "convert": {
+   "wall_s": 5.348214387893677,
+   "parallel_workers": 8,
+   "threads_per_run": 4
+  },
+  "index_build": {
+   "wall_s": 483.6090638637543,
+   "core_s": 790.7764749999999
+  },
+  "search": {
+   "wall_s": 10.25707745552063
+  },
+  "e8": {
+   "wall_s": 411.32485008239746
+  }
+ },
+ "total_wall_s": 919.7663786411285,
+ "total_core_s": 1247.5178460000002,
+ "peak_rss_gb": 114.762652
+}

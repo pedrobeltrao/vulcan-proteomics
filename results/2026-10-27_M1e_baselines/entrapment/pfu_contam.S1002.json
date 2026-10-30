@@ -1,0 +1,16 @@
+{
+ "arm": "S",
+ "decoy_seed": 1002,
+ "name": "pfu_contam.S1002",
+ "n_target": 180823,
+ "n_decoy": 180823,
+ "n_forward_without_decoy": 0,
+ "n_redraws": 147,
+ "target_fasta": "data/cache/M1e/entrapment/inputs/pfu_contam.fasta",
+ "target_fasta_sha256": "43c48d9d65ee64736b1edbd51f814c66d92624cee06879d793361b39a0395d9e",
+ "decoy_recipe": "C-term-fixed hash(peptide,1002,k) shuffle, k re-drawn on collision",
+ "fasta": "data/cache/M1e/entrapment/db/pfu_contam.S1002.fasta",
+ "fasta_sha256": "6517154a36040e5a0daaddaf3d7edb5d3faf0ceb594867415f12a1c6a53e2fe3",
+ "peptides_tsv": "data/cache/M1e/entrapment/db/pfu_contam.S1002.peptides.tsv",
+ "peptides_tsv_sha256": "7b9f541d9fe79e2529b5b091686d37cb9d57621653c81ae8627cf049eabac1c1"
+}

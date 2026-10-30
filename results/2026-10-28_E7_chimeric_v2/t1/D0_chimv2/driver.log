@@ -1,0 +1,30 @@
+[23:33:51] t1_driver D0 sha=6607ecdac3be dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=results/2026-10-28_E7_chimeric_v2/t1/D0_chimv2
+[23:33:51] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[23:33:51] ms1 b1906_293T_proteinID_01A_QE3_122212: {'wall_s': 14.009153559803963, 'process_cpu_s': 25.731001215}
+[23:33:51] ms1 b1937_293T_proteinID_01B_QE3_122212: {'wall_s': 13.340523296967149, 'process_cpu_s': 26.602255832}
+[23:34:06] chimeric scored prod_1001: 4.4s
+[23:34:12] chimeric scored P_1001_2001: 6.2s
+[23:34:18] chimeric scored P_1001_2002: 5.5s
+[23:34:23] chimeric scored P_1001_2003: 4.9s
+[23:34:28] chimeric scored C_1001: 4.9s
+[23:34:32] chimeric scored prod_1002: 4.7s
+[23:34:37] chimeric scored P_1002_2001: 4.4s
+[23:34:41] chimeric scored P_1002_2002: 4.7s
+[23:34:46] chimeric scored P_1002_2003: 4.7s
+[23:34:51] chimeric scored C_1002: 4.4s
+[23:34:55] chimeric scored prod_1003: 4.3s
+[23:35:00] chimeric scored P_1003_2001: 4.5s
+[23:35:04] chimeric scored P_1003_2002: 4.6s
+[23:35:09] chimeric scored P_1003_2003: 4.9s
+[23:35:14] chimeric scored C_1003: 4.5s
+[23:35:18] chimeric scored prod_1004: 4.5s
+[23:35:23] chimeric scored P_1004_2001: 5.1s
+[23:35:28] chimeric scored P_1004_2002: 5.2s
+[23:35:33] chimeric scored P_1004_2003: 4.5s
+[23:35:38] chimeric scored C_1004: 4.7s
+[23:35:42] chimeric scored prod_1005: 4.4s
+[23:35:47] chimeric scored P_1005_2001: 4.5s
+[23:35:51] chimeric scored P_1005_2002: 4.6s
+[23:35:56] chimeric scored P_1005_2003: 4.8s
+[23:36:01] chimeric scored C_1005: 4.8s
+[23:36:01] driver total 130s

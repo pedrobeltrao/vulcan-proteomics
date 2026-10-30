@@ -1,0 +1,4 @@
+swap test on PXD006818 Tue Oct 27 22:20:58 CET 2026
+{"t": "2026-10-27T22:28:48", "run": "1", "ev": "empty_certified_run", "run_name": "SL322_set1_rep5"}
+{"t": "2026-10-27T22:28:48", "run": "1", "ev": "swap_test", "accession": "PXD006818", "result": {"project": "PXD006818", "label_free_files_identical": {"peptidoforms.arrow": true, "residues.npy": true}, "membership_sha256_ref": "a05b78f952acb012b88d86e9ef04d3cffcb26053477bb961bb8c1e706a6837a2", "membership_sha256_swapped": "a05b78f952acb012b88d86e9ef04d3cffcb26053477bb961bb8c1e706a6837a2", "pass": true}}
+SWAP_EXIT=0 Tue Oct 27 22:28:49 CET 2026

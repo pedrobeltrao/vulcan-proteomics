@@ -1,0 +1,115 @@
+# IT-CID fresh null set DNIT: A2 adapted to the IT-CID instrument class.  Text (normative):
+# results/2026-10-27_3c_itcid/followup/NULL_RULES.md.  Committed BEFORE any DNIT file is listed, downloaded or searched.
+# Every value not listed here is taken from config/a2.yaml (vulcan.gates.a2_config.load()) unchanged.
+version: a2-itcid-1
+base_config: config/a2.yaml
+rules_text: results/2026-10-27_3c_itcid/followup/NULL_RULES.md
+set_id: DNIT
+role: dev
+
+scorer:
+  name: itcid_linear_pred
+  file: results/2026-10-27_3c_itcid/models/itcid_linear_pred.pkl
+  sha256: 667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89
+  reference: hyperscore
+  reported_ablation: itcid_linear_pred with RT features neutralized
+  prediction_store: data/cache/koina_pinned        # vulcan.predict.pinned; frozen during the gate run
+
+seeds:
+  walk: 47                 # SEEDS[2]; DN 11, DN2 / DN3c 23
+  file_pick_base: 47       # random.Random(47 + int(accession digits))
+  mixture_permutation: 47
+  offsets_a1_recipe: 47
+  cluster_bootstrap: 83    # unchanged (A2.5)
+  tiebreak: 11             # unchanged
+
+selection:
+  frame: data/manifests/t4_frame.tsv
+  exclusions:
+    manifests_glob: data/manifests/*.tsv
+    except: [t4_frame.tsv]
+    dn2_guard: scripts/m3c/select_train_itcid.dn2_guard   # accessions seen by the DN2 walk + ALLOW-genus organisms
+    dn2_reachable: frame rows passing scripts/a2/select_dn2.py's frame filter (A2.3 step 1) are excluded
+    species: ["Homo sapiens", "Mus musculus", "Arabidopsis", "Pyrococcus furiosus", "Saccharomyces cerevisiae",
+              "Escherichia coli", "Trypanosoma brucei", "Staphylococcus aureus", "Synechococcus", "Bacillus cereus"]
+    non_pxd_rule: drop
+  allow_it:                # genus [species restriction]; class = A2.9.2 (free-living, non-host-associated, axenic)
+    - {genus: Acidithiobacillus}
+    - {genus: Alteromonas}
+    - {genus: Blastobotrys}
+    - {genus: Blastococcus}
+    - {genus: Dehalococcoides}
+    - {genus: Desulfovibrio}
+    - {genus: Desulfurella}
+    - {genus: Dinoroseobacter}
+    - {genus: Fragilariopsis}
+    - {genus: Geodermatophilus}
+    - {genus: Kluyveromyces}
+    - {genus: Leptospirillum}
+    - {genus: Magnetospirillum}
+    - {genus: Modestobacter}
+    - {genus: Nannochloropsis}
+    - {genus: Paenarthrobacter}
+    - {genus: Podospora}
+    - {genus: Prochlorococcus}
+    - {genus: Prymnesium}
+    - {genus: Pseudoalteromonas}
+    - {genus: Psychroflexus}
+    - {genus: Rhodococcus}
+    - {genus: Saccharopolyspora}
+    - {genus: Schizophyllum}
+    - {genus: Sulfobacillus}
+    - {genus: Sulfurimonas}
+    - {genus: Thalassolituus}
+    - {genus: Trichococcus}
+    - {genus: Vibrio, species: [natriegens]}
+  frame_filter:
+    acquisition: DDA
+    vendor: thermo
+    label: LFQ
+    enrichment: none
+    eligible: "1"
+    single_organism: true
+    instruments_regex: '^(LTQ Orbitrap( XL| Velos| Velos Pro| Elite)?|Orbitrap Velos Pro|Orbitrap Fusion( Lumos)?)$'
+  bad_kw: a2.yaml bad_kw_a1 + bad_kw_a2_add (verbatim)
+  protocol_kw: a2.yaml bad_kw_a1 + bad_kw_a2_add + protocol_kw_add (verbatim); sdrf rule verbatim
+  bad_file_regex: a2.yaml bad_file_regex (verbatim)
+  raw_size_bytes: [1.5e+8, 1.5e+9]       # IT-CID adaptation (3c range)
+  runs_per_project: 3
+  one_project_per_genus: true
+  reference_proteome_rule: "UniProt proteomes REST (organism_name:\"<genus species>\") AND (reference:true); first hit starting with the frame organism, else genus+species; none -> skip"
+  download: {verify: [size, pride_sha1], attempts: 3, missing_pride_checksum: skip_project}
+  class_check: {min_it_cid_fraction: 0.95, max_ms3: 0}
+  stopping:
+    min_projects: 10
+    min_A: 120000
+    min_A_with_candidate: 72000
+    min_tail_proxy: 400
+    cap_projects: 16
+    insufficient_power: "stop before mixtures; no gate run; tail-G2/G1/G3 not evaluable"
+    tail_proxy_threshold: max over the 29 D10cf hosts of the host hyperscore 1% threshold (IT-CID production search, host alone)
+
+search_itcid:              # scripts/m3c/common.py SEARCH (3c production IT-CID)
+  fragment_unit: da
+  fragment_tol: [-0.5, 0.5]
+  precursor_ppm: [-10.0, 10.0]
+  report_psms: 5
+  bin_ppm: 200.0
+
+admission:
+  identity_frag_tol_da: 0.5          # IT-CID adaptation of identity_frag_ppm (20 ppm)
+  identity_f_threshold: 0.20
+  identity_prec_ppm: 10.0
+  identity_isotope_errors: [0, 1, 2]
+  gate_index: /tmp/vulcan_e2/index/human_contam_prod
+  swap_test: first admitted project
+
+mixtures:
+  hosts: D10cf fractions (29), host of mixture m = fraction m mod 29
+  n_per_mixture: 20000
+  fs: not generated (IT-CID; declared before data); FS gates not evaluable (non-blocking, A2.4)
+  a1_offsets: 2 copies, first two mixtures, reported only
+
+gates:
+  g1_seq_classifier_rt_input: AlphaPeptDeep RT (vulcan.predict.apd), the classifier's training definition
+  margins: config/a2.yaml gates (unchanged)

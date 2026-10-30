@@ -1,0 +1,89 @@
+{
+ "n_common": 13506,
+ "tools": [
+  "ours_mbr_off",
+  "ours_mbr_q1pct",
+  "sage_lfq",
+  "flashlfq_ours_hye_mbr_off",
+  "flashlfq_ours_hye_mbr_on",
+  "flashlfq_sage_hye_mbr_off",
+  "flashlfq_sage_hye_mbr_on"
+ ],
+ "ours_mbr_off": {
+  "median_abs_eps": 0.13163584732484424,
+  "per_species": {
+   "HUMAN": 0.1281273161394232,
+   "YEAST": 0.13985214644407407,
+   "ECOLI": 0.1771258987855795
+  },
+  "n": 13049,
+  "median_cv_min3": 0.04769223513580717,
+  "n_complete": 5947
+ },
+ "ours_mbr_q1pct": {
+  "median_abs_eps": 0.12022226938163882,
+  "per_species": {
+   "HUMAN": 0.11703119123326644,
+   "YEAST": 0.12695690270416193,
+   "ECOLI": 0.17905773772534772
+  },
+  "n": 13049,
+  "median_cv_min3": 0.04996263031869451,
+  "n_complete": 10322
+ },
+ "sage_lfq": {
+  "median_abs_eps": 0.11388798589926452,
+  "per_species": {
+   "HUMAN": 0.11258384879556793,
+   "YEAST": 0.11947736829225697,
+   "ECOLI": 0.12188015089378013
+  },
+  "n": 13075,
+  "median_cv_min3": 0.05315997994721994,
+  "n_complete": 13501
+ },
+ "flashlfq_ours_hye_mbr_off": {
+  "median_abs_eps": 0.1541455581812201,
+  "per_species": {
+   "HUMAN": 0.15335633475775623,
+   "YEAST": 0.15573633357199768,
+   "ECOLI": 0.16146107672869192
+  },
+  "n": 13049,
+  "median_cv_min3": 0.0763871615945419,
+  "n_complete": 6544
+ },
+ "flashlfq_ours_hye_mbr_on": {
+  "median_abs_eps": 0.14517335006737042,
+  "per_species": {
+   "HUMAN": 0.1449009743178209,
+   "YEAST": 0.1480756615315535,
+   "ECOLI": 0.1364209886781147
+  },
+  "n": 13049,
+  "median_cv_min3": 0.07994134798807886,
+  "n_complete": 10476
+ },
+ "flashlfq_sage_hye_mbr_off": {
+  "median_abs_eps": 0.15312520645472638,
+  "per_species": {
+   "HUMAN": 0.15189958180621943,
+   "YEAST": 0.15730848562398947,
+   "ECOLI": 0.15810529613287194
+  },
+  "n": 13076,
+  "median_cv_min3": 0.07775733368483242,
+  "n_complete": 6835
+ },
+ "flashlfq_sage_hye_mbr_on": {
+  "median_abs_eps": 0.14501290877534778,
+  "per_species": {
+   "HUMAN": 0.14431172610462362,
+   "YEAST": 0.1484092263313297,
+   "ECOLI": 0.1434208111122306
+  },
+  "n": 13076,
+  "median_cv_min3": 0.0802751386868546,
+  "n_complete": 10569
+ }
+}

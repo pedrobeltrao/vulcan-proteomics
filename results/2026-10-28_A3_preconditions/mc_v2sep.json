@@ -1,0 +1,913 @@
+{
+ "spec": "A3.1.8(iii): DESIGN \u00a76.7 Monte-Carlo verification of the FULL v2_sep competition and of pooled picked protein groups.\nSynthetic data only.  >= 1e4 replicates per scenario; a list passes iff mean FDP - 2.326 * SE <= alpha.\n\nThe estimator under test is the committed code, called unchanged:\n  vulcan.chimeric.compete.chimeric_competition (stage-1 winner per query unit -> CONGA neighbour filter over ALL group\n  winners of a spectrum in descending score order -> paired double competition (peptidoform units, pair = tdc_pair)\n  -> strata = chimeric rank of the PAIR WINNER pooled {1, 2, >=3} -> label-blind merge_adjacent (>= 200 pairs)\n  -> q_sep = TDC within each merged stratum), and for proteins bench/t1/evaluate's rule: vulcan.stats.protein.\n  picked_group_fdr (subset grouping, rescue, seed 11) over sequence-level best scores of the pair-winner table, POOLED\n  across strata.\n\nSynthetic replicate (scenario parameters below; every random quantity from numpy SeedSequence(131).spawn):\n  * a peptide universe of n_pairs target/decoy pairs (peptidoform id = 2*pair + is_decoy; tdc_pair = pair), grouped\n    into proteins (lengths 1..L, a share of peptides shared by two proteins; decoy proteins mirror the targets, rev_);\n    present proteins are drawn, and true peptides come from present proteins only.\n  * spectra with 1..4 precursor groups (query units; chimeric rank = group + 1) with the D0-like distribution p_groups.\n    A unit is TRUE with probability pi[rank]: its true target gets a signal score.  Every unit gets K = 5 candidates\n    (top-K analogue): the true peptide if any, plus null candidates = random pairs, side T or D with probability 1/2\n    (exchangeable nulls), scores i.i.d. from the rank-specific null law Gumbel(loc[rank], scale[rank]) -- the\n    stratum-heterogeneous nulls.\n  * shadows: a secondary unit of a spectrum whose rank-1 unit is true carries, with probability p_shadow, the rank-1\n    true peptide as a candidate (score = rank-1 true score + N(0, sd_shadow)): the same peptide seen through another\n    precursor hypothesis, which the neighbour filter must remove (shared ions = 100%); if the shadow outscores the\n    rank-1 winner, the RANK-1 winner is the one dropped.\n  * ion sets for the neighbour filter (label-blind): each peptidoform has n_ions random bins; peptidoforms are in\n    families of size fam (targets and decoys alike, separately) whose members share half their bins, so random null\n    winners of one spectrum also collide (null drops, symmetric in label).\n  * small universes make the same pair appear in units of different rank, so null pairs whose target and decoy best\n    PSMs come from units of different rank (and different strata) are frequent; the pair's stratum is that of its\n    winner, as in production.\n  Truth: a target peptidoform is false iff its peptide is not a true peptide of any unit of the replicate; a target\n  protein group is false iff none of its proteins is present.  FDP of an empty list = 0.\nLists (each at alpha = 1% and 5%): each MERGED stratum list (the lists A3.3.6 gates; q_sep within the merged block),\nthe union (all strata, common q_sep cutoff, as bench/t1 uses q_sep), and pooled picked protein groups.  Raw strata\n{1, 2, >=3} under merged q are reported.  Verdict: pass iff every gated list passes in every scenario.",
+ "seed": 131,
+ "reps_per_scenario": 10000,
+ "scenarios": {
+  "S1_dev_like": {
+   "params": {
+    "n_spec": 6000,
+    "p_groups": [
+     0.41,
+     0.35,
+     0.16,
+     0.08
+    ],
+    "pi": {
+     "1": 0.6,
+     "2": 0.4,
+     "3": 0.3
+    },
+    "K": 5,
+    "null_loc": {
+     "1": 0.0,
+     "2": 0.4,
+     "3": 0.8
+    },
+    "null_scale": {
+     "1": 1.0,
+     "2": 1.15,
+     "3": 1.3
+    },
+    "sig_mu": {
+     "1": 9.0,
+     "2": 9.0,
+     "3": 9.0
+    },
+    "sig_sd": {
+     "1": 2.0,
+     "2": 2.2,
+     "3": 2.4
+    },
+    "p_shadow": 0.5,
+    "sd_shadow": 0.7,
+    "n_pairs": 40000,
+    "prot_len_max": 20,
+    "p_shared": 0.05,
+    "frac_present": 0.25,
+    "n_ions": 24,
+    "n_bins": 6000,
+    "fam": 4,
+    "protein": true
+   },
+   "n_reps": 10000,
+   "lists": {
+    "merged:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009622678221785225,
+     "se": 2.923881207060129e-05,
+     "mean_minus_2.326se": 0.009554668744909007,
+     "mean_discoveries": 2217.5732,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009259853938801847,
+     "se": 4.042091044269349e-05,
+     "mean_minus_2.326se": 0.009165834901112143,
+     "mean_discoveries": 1089.1075,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.006703033785318566,
+     "se": 8.225397220663453e-05,
+     "mean_minus_2.326se": 0.006511711045965934,
+     "mean_discoveries": 148.1139,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.008576435127860655,
+     "se": 3.9741491784168446e-05,
+     "mean_minus_2.326se": 0.00848399641797068,
+     "mean_discoveries": 1078.5445,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009622678221785225,
+     "se": 2.923881207060129e-05,
+     "mean_minus_2.326se": 0.009554668744909007,
+     "mean_discoveries": 2217.5732,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009259853938801847,
+     "se": 4.042091044269349e-05,
+     "mean_minus_2.326se": 0.009165834901112143,
+     "mean_discoveries": 1089.1075,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.006703033785318566,
+     "se": 8.225397220663453e-05,
+     "mean_minus_2.326se": 0.006511711045965934,
+     "mean_discoveries": 148.1139,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00969959075019745,
+     "se": 2.3214405174113192e-05,
+     "mean_minus_2.326se": 0.009645594043762463,
+     "mean_discoveries": 3454.7946,
+     "gated": true,
+     "pass": true
+    },
+    "merged:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04933054518725364,
+     "se": 6.420371694007009e-05,
+     "mean_minus_2.326se": 0.04918120734165104,
+     "mean_discoveries": 2400.689,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04894222550050722,
+     "se": 8.621163637974589e-05,
+     "mean_minus_2.326se": 0.04874169723428793,
+     "mean_discoveries": 1325.5501,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04719570804602929,
+     "se": 0.0001355045190064408,
+     "mean_minus_2.326se": 0.046880524534820306,
+     "mean_discoveries": 521.3406,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.008806320281894589,
+     "se": 4.396939653794074e-05,
+     "mean_minus_2.326se": 0.008704047465547338,
+     "mean_discoveries": 1083.9708,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04933054518725364,
+     "se": 6.420371694007009e-05,
+     "mean_minus_2.326se": 0.04918120734165104,
+     "mean_discoveries": 2400.689,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04894222550050722,
+     "se": 8.621163637974589e-05,
+     "mean_minus_2.326se": 0.04874169723428793,
+     "mean_discoveries": 1325.5501,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04719570804602929,
+     "se": 0.0001355045190064408,
+     "mean_minus_2.326se": 0.046880524534820306,
+     "mean_discoveries": 521.3406,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04903473942928204,
+     "se": 4.779473055032522e-05,
+     "mean_minus_2.326se": 0.048923568886021986,
+     "mean_discoveries": 4247.5797,
+     "gated": true,
+     "pass": true
+    }
+   },
+   "merge_patterns": {
+    "1|2|3": 10000
+   },
+   "neighbour_filter_drop_rate": 0.11707133166235192,
+   "mean_cross_rank_pairs": 224.881,
+   "pass": true,
+   "worst": [
+    "union@0.01",
+    -0.0003544059562375374
+   ],
+   "wall_s": 267.7923371330835
+  },
+  "S2_small_merge": {
+   "params": {
+    "n_spec": 700,
+    "p_groups": [
+     0.41,
+     0.35,
+     0.16,
+     0.08
+    ],
+    "pi": {
+     "1": 0.6,
+     "2": 0.4,
+     "3": 0.3
+    },
+    "K": 5,
+    "null_loc": {
+     "1": 0.0,
+     "2": 0.4,
+     "3": 0.8
+    },
+    "null_scale": {
+     "1": 1.0,
+     "2": 1.15,
+     "3": 1.3
+    },
+    "sig_mu": {
+     "1": 9.0,
+     "2": 9.0,
+     "3": 9.0
+    },
+    "sig_sd": {
+     "1": 2.0,
+     "2": 2.2,
+     "3": 2.4
+    },
+    "p_shadow": 0.5,
+    "sd_shadow": 0.7,
+    "n_pairs": 40000,
+    "prot_len_max": 20,
+    "p_shared": 0.05,
+    "frac_present": 0.25,
+    "n_ions": 24,
+    "n_bins": 6000,
+    "fam": 4,
+    "protein": true
+   },
+   "n_reps": 10000,
+   "lists": {
+    "merged:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009040117577376135,
+     "se": 7.445049761585906e-05,
+     "mean_minus_2.326se": 0.008866945719921648,
+     "mean_discoveries": 309.7345,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 2147,
+     "mean_fdp": 0.0059147668773196025,
+     "se": 0.00018759575409201624,
+     "mean_minus_2.326se": 0.005478419153301573,
+     "mean_discoveries": 97.61387983232417,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2_3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 7853,
+     "mean_fdp": 0.007261325777915243,
+     "se": 0.00010732073031790405,
+     "mean_minus_2.326se": 0.007011697759195799,
+     "mean_discoveries": 114.13230612504775,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 2147,
+     "mean_fdp": 8.962401048756867e-05,
+     "se": 4.6748838895118736e-05,
+     "mean_minus_2.326se": -1.9113788782477517e-05,
+     "mean_discoveries": 0.19422449930135072,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.007131208478773715,
+     "se": 5.999055762666056e-05,
+     "mean_minus_2.326se": 0.006991670441734103,
+     "mean_discoveries": 337.0461,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009040117577376135,
+     "se": 7.445049761585906e-05,
+     "mean_minus_2.326se": 0.008866945719921648,
+     "mean_discoveries": 309.7345,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.004380540473790744,
+     "se": 7.286275303971279e-05,
+     "mean_minus_2.326se": 0.004211061710220372,
+     "mean_discoveries": 83.6112,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.011754574966786814,
+     "se": 0.00020294957047612764,
+     "mean_minus_2.326se": 0.011282514265859342,
+     "mean_discoveries": 27.0163,
+     "gated": false,
+     "pass": false
+    },
+    "union@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009692975595185794,
+     "se": 6.603879273930715e-05,
+     "mean_minus_2.326se": 0.009539369363274167,
+     "mean_discoveries": 420.362,
+     "gated": true,
+     "pass": true
+    },
+    "merged:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04874493930326329,
+     "se": 0.00016564523543199596,
+     "mean_minus_2.326se": 0.04835964848564847,
+     "mean_discoveries": 350.9878,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 2147,
+     "mean_fdp": 0.04716523760549789,
+     "se": 0.0004864800547798776,
+     "mean_minus_2.326se": 0.04603368499807989,
+     "mean_discoveries": 189.30181648812297,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2_3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 7853,
+     "mean_fdp": 0.048276225371592284,
+     "se": 0.0002178875646925806,
+     "mean_minus_2.326se": 0.04776941889611734,
+     "mean_discoveries": 258.81866802495864,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 2147,
+     "mean_fdp": 0.045378311345465036,
+     "se": 0.0007128461946526069,
+     "mean_minus_2.326se": 0.043720231096703074,
+     "mean_discoveries": 74.99161620866325,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.009382001929106515,
+     "se": 9.597942200705847e-05,
+     "mean_minus_2.326se": 0.009158753793518097,
+     "mean_discoveries": 365.4883,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04874493930326329,
+     "se": 0.00016564523543199596,
+     "mean_minus_2.326se": 0.04835964848564847,
+     "mean_discoveries": 350.9878,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.03359531396441491,
+     "se": 0.00018926562863224596,
+     "mean_minus_2.326se": 0.03315508211221631,
+     "mean_discoveries": 181.343,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.08002274793088884,
+     "se": 0.00042496291759074517,
+     "mean_minus_2.326se": 0.07903428418457277,
+     "mean_discoveries": 78.6511,
+     "gated": false,
+     "pass": false
+    },
+    "union@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.048753278582097735,
+     "se": 0.00012714879683022303,
+     "mean_minus_2.326se": 0.048457530480670634,
+     "mean_discoveries": 610.9819,
+     "gated": true,
+     "pass": true
+    }
+   },
+   "merge_patterns": {
+    "1|2_3": 7853,
+    "1|2|3": 2147
+   },
+   "neighbour_filter_drop_rate": 0.1171604077147313,
+   "mean_cross_rank_pairs": 3.7365,
+   "pass": true,
+   "worst": [
+    "union@0.01",
+    -0.0004606306367258336
+   ],
+   "wall_s": 86.20570698799565
+  },
+  "S3_strong_heterogeneity": {
+   "params": {
+    "n_spec": 6000,
+    "p_groups": [
+     0.41,
+     0.35,
+     0.16,
+     0.08
+    ],
+    "pi": {
+     "1": 0.6,
+     "2": 0.3,
+     "3": 0.2
+    },
+    "K": 5,
+    "null_loc": {
+     "1": 0.0,
+     "2": 0.9,
+     "3": 1.6
+    },
+    "null_scale": {
+     "1": 1.0,
+     "2": 1.35,
+     "3": 1.7
+    },
+    "sig_mu": {
+     "1": 9.0,
+     "2": 8.0,
+     "3": 7.5
+    },
+    "sig_sd": {
+     "1": 2.0,
+     "2": 2.2,
+     "3": 2.4
+    },
+    "p_shadow": 0.5,
+    "sd_shadow": 0.7,
+    "n_pairs": 40000,
+    "prot_len_max": 20,
+    "p_shared": 0.05,
+    "frac_present": 0.25,
+    "n_ions": 24,
+    "n_bins": 6000,
+    "fam": 4,
+    "protein": true
+   },
+   "n_reps": 10000,
+   "lists": {
+    "merged:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009559035104450924,
+     "se": 2.8949614118720155e-05,
+     "mean_minus_2.326se": 0.00949169830201078,
+     "mean_discoveries": 2275.1873,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.003372297167599877,
+     "se": 8.520275762058896e-05,
+     "mean_minus_2.326se": 0.003174115553374387,
+     "mean_discoveries": 40.3191,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.0,
+     "se": 0.0,
+     "mean_minus_2.326se": 0.0,
+     "mean_discoveries": 0.0,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00017423491386764952,
+     "se": 2.7312844765289258e-05,
+     "mean_minus_2.326se": 0.0001107052369435867,
+     "mean_discoveries": 0.94,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009559035104450924,
+     "se": 2.8949614118720155e-05,
+     "mean_minus_2.326se": 0.00949169830201078,
+     "mean_discoveries": 2275.1873,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.003372297167599877,
+     "se": 8.520275762058896e-05,
+     "mean_minus_2.326se": 0.003174115553374387,
+     "mean_discoveries": 40.3191,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.0,
+     "se": 0.0,
+     "mean_minus_2.326se": 0.0,
+     "mean_discoveries": 0.0,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.009727518677565059,
+     "se": 2.8987147930655974e-05,
+     "mean_minus_2.326se": 0.009660094571478354,
+     "mean_discoveries": 2315.5064,
+     "gated": true,
+     "pass": true
+    },
+    "merged:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04931303347102893,
+     "se": 6.29598154347865e-05,
+     "mean_minus_2.326se": 0.04916658894032762,
+     "mean_discoveries": 2462.5842,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04712705505916172,
+     "se": 0.00010675384647183678,
+     "mean_minus_2.326se": 0.04687874561226823,
+     "mean_discoveries": 808.6216,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.002357541025460144,
+     "se": 0.00024458736820889414,
+     "mean_minus_2.326se": 0.0017886308070062561,
+     "mean_discoveries": 0.4092,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04149871577451397,
+     "se": 0.00010856917498491249,
+     "mean_minus_2.326se": 0.041246183873499064,
+     "mean_discoveries": 923.459,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04931303347102893,
+     "se": 6.29598154347865e-05,
+     "mean_minus_2.326se": 0.04916658894032762,
+     "mean_discoveries": 2462.5842,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04712705505916172,
+     "se": 0.00010675384647183678,
+     "mean_minus_2.326se": 0.04687874561226823,
+     "mean_discoveries": 808.6216,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.002357541025460144,
+     "se": 0.00024458736820889414,
+     "mean_minus_2.326se": 0.0017886308070062561,
+     "mean_discoveries": 0.4092,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04893032508758014,
+     "se": 5.425834340300452e-05,
+     "mean_minus_2.326se": 0.04880412018082475,
+     "mean_discoveries": 3271.615,
+     "gated": true,
+     "pass": true
+    }
+   },
+   "merge_patterns": {
+    "1|2|3": 10000
+   },
+   "neighbour_filter_drop_rate": 0.12492081688682671,
+   "mean_cross_rank_pairs": 246.79,
+   "pass": true,
+   "worst": [
+    "union@0.01",
+    -0.0003399054285216467
+   ],
+   "wall_s": 300.4631550889462
+  },
+  "S4_cross_rank_pairs": {
+   "params": {
+    "n_spec": 6000,
+    "p_groups": [
+     0.41,
+     0.35,
+     0.16,
+     0.08
+    ],
+    "pi": {
+     "1": 0.6,
+     "2": 0.4,
+     "3": 0.3
+    },
+    "K": 5,
+    "null_loc": {
+     "1": 0.0,
+     "2": 0.4,
+     "3": 0.8
+    },
+    "null_scale": {
+     "1": 1.0,
+     "2": 1.15,
+     "3": 1.3
+    },
+    "sig_mu": {
+     "1": 9.0,
+     "2": 9.0,
+     "3": 9.0
+    },
+    "sig_sd": {
+     "1": 2.0,
+     "2": 2.2,
+     "3": 2.4
+    },
+    "p_shadow": 0.5,
+    "sd_shadow": 0.7,
+    "n_pairs": 4000,
+    "prot_len_max": 20,
+    "p_shared": 0.05,
+    "frac_present": 0.4,
+    "n_ions": 24,
+    "n_bins": 6000,
+    "fam": 4,
+    "protein": true
+   },
+   "n_reps": 10000,
+   "lists": {
+    "merged:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.008839293119764063,
+     "se": 4.759320580011257e-05,
+     "mean_minus_2.326se": 0.008728591323073001,
+     "mean_discoveries": 794.8227,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00800076559974664,
+     "se": 5.7706462593879624e-05,
+     "mean_minus_2.326se": 0.007866540367753276,
+     "mean_discoveries": 483.7077,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00445314759219117,
+     "se": 8.089830971309005e-05,
+     "mean_minus_2.326se": 0.004264978123798523,
+     "mean_discoveries": 68.1203,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.006850253939756448,
+     "se": 8.149434261556468e-05,
+     "mean_minus_2.326se": 0.006660698098832644,
+     "mean_discoveries": 160.1112,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.008839293119764063,
+     "se": 4.759320580011257e-05,
+     "mean_minus_2.326se": 0.008728591323073001,
+     "mean_discoveries": 794.8227,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00800076559974664,
+     "se": 5.7706462593879624e-05,
+     "mean_minus_2.326se": 0.007866540367753276,
+     "mean_discoveries": 483.7077,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00445314759219117,
+     "se": 8.089830971309005e-05,
+     "mean_minus_2.326se": 0.004264978123798523,
+     "mean_discoveries": 68.1203,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.01": {
+     "alpha": 0.01,
+     "n_reps": 10000,
+     "mean_fdp": 0.00879426104661158,
+     "se": 3.617507773858437e-05,
+     "mean_minus_2.326se": 0.008710117815791634,
+     "mean_discoveries": 1346.6507,
+     "gated": true,
+     "pass": true
+    },
+    "merged:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04860217935148972,
+     "se": 0.00010750501061830563,
+     "mean_minus_2.326se": 0.048352122696791545,
+     "mean_discoveries": 845.0166,
+     "gated": true,
+     "pass": true
+    },
+    "merged:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04732721247630578,
+     "se": 0.00013082941147887135,
+     "mean_minus_2.326se": 0.047022903265205925,
+     "mean_discoveries": 555.6116,
+     "gated": true,
+     "pass": true
+    },
+    "merged:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04236149625714692,
+     "se": 0.00019123001945240689,
+     "mean_minus_2.326se": 0.04191669523190062,
+     "mean_discoveries": 238.6203,
+     "gated": true,
+     "pass": true
+    },
+    "protein@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.017428988341851054,
+     "se": 0.00017989462949883554,
+     "mean_minus_2.326se": 0.017010553433636763,
+     "mean_discoveries": 221.5017,
+     "gated": true,
+     "pass": true
+    },
+    "raw:1@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04860217935148972,
+     "se": 0.00010750501061830563,
+     "mean_minus_2.326se": 0.048352122696791545,
+     "mean_discoveries": 845.0166,
+     "gated": false,
+     "pass": true
+    },
+    "raw:2@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04732721247630578,
+     "se": 0.00013082941147887135,
+     "mean_minus_2.326se": 0.047022903265205925,
+     "mean_discoveries": 555.6116,
+     "gated": false,
+     "pass": true
+    },
+    "raw:3@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.04236149625714692,
+     "se": 0.00019123001945240689,
+     "mean_minus_2.326se": 0.04191669523190062,
+     "mean_discoveries": 238.6203,
+     "gated": false,
+     "pass": true
+    },
+    "union@0.05": {
+     "alpha": 0.05,
+     "n_reps": 10000,
+     "mean_fdp": 0.047432051240545885,
+     "se": 7.683776026182509e-05,
+     "mean_minus_2.326se": 0.04725332661017688,
+     "mean_discoveries": 1639.2485,
+     "gated": true,
+     "pass": true
+    }
+   },
+   "merge_patterns": {
+    "1|2|3": 10000
+   },
+   "neighbour_filter_drop_rate": 0.11735979380367434,
+   "mean_cross_rank_pairs": 766.929,
+   "pass": true,
+   "worst": [
+    "merged:1@0.01",
+    -0.0012714086769269987
+   ],
+   "wall_s": 112.09691891260445
+  }
+ },
+ "pass": true
+}

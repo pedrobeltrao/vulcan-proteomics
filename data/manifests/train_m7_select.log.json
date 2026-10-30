@@ -1,0 +1,195 @@
+{
+ "seed": 23,
+ "excluded_accessions": 430,
+ "human": {
+  "candidates": 1453,
+  "tried": [
+   [
+    "PXD016322",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD048498",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD050410",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD013966",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD042073",
+    "selected"
+   ],
+   [
+    "PXD021865",
+    "selected"
+   ],
+   [
+    "PXD071247",
+    "selected"
+   ],
+   [
+    "PXD008160",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD043497",
+    "selected"
+   ],
+   [
+    "PXD013968",
+    "selected"
+   ],
+   [
+    "PXD037793",
+    "selected"
+   ],
+   [
+    "PXD006486",
+    "selected"
+   ],
+   [
+    "PXD047127",
+    "selected"
+   ],
+   [
+    "PXD048361",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD029658",
+    "selected"
+   ],
+   [
+    "PXD032209",
+    "selected"
+   ],
+   [
+    "PXD014131",
+    "selected"
+   ],
+   [
+    "PXD048808",
+    "selected"
+   ],
+   [
+    "PXD040807",
+    "selected"
+   ],
+   [
+    "PXD077276",
+    "selected"
+   ],
+   [
+    "PXD020844",
+    "selected"
+   ],
+   [
+    "PXD043078",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD035813",
+    "selected"
+   ],
+   [
+    "PXD042242",
+    "selected"
+   ],
+   [
+    "PXD041199",
+    "selected"
+   ],
+   [
+    "PXD041186",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD077387",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD053278",
+    "selected"
+   ],
+   [
+    "PXD040532",
+    "selected"
+   ],
+   [
+    "PXD046955",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD045647",
+    "selected"
+   ],
+   [
+    "PXD033125",
+    "selected"
+   ],
+   [
+    "PXD013777",
+    "selected"
+   ],
+   [
+    "PXD069826",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD037401",
+    "selected"
+   ]
+  ]
+ },
+ "mouse": {
+  "candidates": 641,
+  "tried": [
+   [
+    "PXD064165",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD006752",
+    "selected"
+   ],
+   [
+    "PXD028551",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD015865",
+    "selected"
+   ],
+   [
+    "PXD035034",
+    "selected"
+   ]
+  ]
+ },
+ "ecoli": {
+  "candidates": 64,
+  "tried": [
+   [
+    "PXD024782",
+    "selected"
+   ],
+   [
+    "PXD007556",
+    "selected"
+   ],
+   [
+    "PXD009463",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD039702",
+    "selected"
+   ]
+  ]
+ }
+}

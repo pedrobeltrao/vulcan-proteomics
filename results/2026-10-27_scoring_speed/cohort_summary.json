@@ -1,0 +1,1569 @@
+{
+ "noscore": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 275.0833010673523,
+  "runs_per_hour": 2512.693418023089,
+  "runs_per_hour_steady": 6480.627872564181,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.9756025696247553,
+   "loader": 0.0026054630949274094,
+   "gpu_stage_wall": 0.09872414309037439,
+   "gpu_kernels_events": 0.09741005292377654,
+   "writer": 0.10937292289254498
+  },
+  "core_s": {
+   "main_process": 74.85064200000001,
+   "decode_workers": 1510.7113100000001,
+   "total": 1585.5619520000002,
+   "per_run": 8.258135166666667,
+   "per_1e5_ms2": 16.936521896662523,
+   "decode_jobs_sum": 1447.528346,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 63.182964000000084
+  },
+  "gpu_s": {
+   "events_total": 26.79587891541794,
+   "per_run": 0.1395618693511351,
+   "util_mean_pct_after_setup": 4.083172147001934,
+   "util_samples": 2617
+  },
+  "setup": {
+   "torch_import_s": 2.0692831962369382,
+   "cuda_init_s": 0.27545412676408887,
+   "l1_load_s": 0.7260157922282815,
+   "gpu_index_build_s": 0.45548997912555933,
+   "setup_total_s": 3.5263108261860907,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 3.8676271438598633
+  },
+  "wall_incl_process_start_s": 279.39421343803406,
+  "process_age_at_end_s": 278.320000000298,
+  "runs_per_hour_incl_startup": 2483.472262141635,
+  "loadavg_end": [
+   52.12158203125,
+   59.88037109375,
+   58.75537109375
+  ],
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   }
+  }
+ },
+ "frozen": {
+  "n_runs": 48,
+  "workers": 24,
+  "makespan_s": 269.1997447013855,
+  "runs_per_hour": 641.9025404042691,
+  "runs_per_hour_steady": 6216.336548605801,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.11810271711121828,
+   "loader": 0.0011392588423392823,
+   "gpu_stage_wall": 0.03229967692852557,
+   "gpu_kernels_events": 0.03151667857594947,
+   "writer": 0.03054432688891731
+  },
+  "core_s": {
+   "main_process": 211.52553699999999,
+   "decode_workers": 344.016936,
+   "total": 555.542473,
+   "per_run": 11.573801520833333,
+   "per_1e5_ms2": 23.736586884220454,
+   "decode_jobs_sum": 279.847356,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 64.16958
+  },
+  "gpu_s": {
+   "events_total": 8.484281826481222,
+   "per_run": 0.17675587138502546,
+   "util_mean_pct_after_setup": 8.844359626802374,
+   "util_samples": 2409
+  },
+  "setup": {
+   "torch_import_s": 4.045913217589259,
+   "cuda_init_s": 0.2783821471966803,
+   "l1_load_s": 1.0838565239682794,
+   "gpu_index_build_s": 0.8507336368784308,
+   "setup_total_s": 6.25894811982289,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 6.856963396072388,
+   "scorer": {
+    "predictor_load_s": 23.501030110754073,
+    "model_load_s": 0.21286002499982715,
+    "library_warm_s": 15.546321406029165,
+    "library_bytes": null,
+    "scorer_setup_s": 41.787328496109694,
+    "post_workers": 2,
+    "lib_root": "/tmp/vulcan_ss/predcache_firstcontact_cohort",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "frozen",
+    "placement": "PredCache",
+    "scorer_setup_excl_warm_s": 26.240957895759493,
+    "ready_at_s": 48.71589946746826
+   }
+  },
+  "wall_incl_process_start_s": 282.93587470054626,
+  "process_age_at_end_s": 278.62999999988824,
+  "runs_per_hour_incl_startup": 620.1772960559499,
+  "loadavg_end": [
+   68.2412109375,
+   75.78515625,
+   71.13916015625
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 23.501030110754073,
+    "model_load_s": 0.21286002499982715,
+    "library_warm_s": 15.546321406029165,
+    "library_bytes": null,
+    "scorer_setup_s": 41.787328496109694,
+    "post_workers": 2,
+    "lib_root": "/tmp/vulcan_ss/predcache_firstcontact_cohort",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "frozen",
+    "placement": "PredCache",
+    "scorer_setup_excl_warm_s": 26.240957895759493
+   },
+   "n_scored": 48,
+   "gpu_stage_wall_s_median": 3.8064727783203125,
+   "gpu_stage_wall_s_sum": 210.19594478607178,
+   "post_wall_s_median": 0.9933130741119385,
+   "post_core_s_sum": 39.45002899999993,
+   "ids_1pct_sum": 540084,
+   "proteins_1pct_sum": 113340,
+   "last_post_end": 1793131834.0623238
+  },
+  "ids_proteins_by_base_run": {
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": [
+    [
+     200,
+     115
+    ]
+   ],
+   "E9_0002__MGP2": [
+    [
+     4127,
+     1158
+    ]
+   ],
+   "E9_0004__20210122-YP202104470-xh-BT1-3": [
+    [
+     6789,
+     1247
+    ]
+   ],
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": [
+    [
+     8519,
+     1037
+    ]
+   ],
+   "b1906_293T_proteinID_01A_QE3_122212": [
+    [
+     11269,
+     4701
+    ]
+   ],
+   "E9_0008__lgg1": [
+    [
+     12532,
+     2049
+    ]
+   ],
+   "b1937_293T_proteinID_01B_QE3_122212": [
+    [
+     13646,
+     5167
+    ]
+   ],
+   "E9_0009__20170210_MCF7_LysC_WT_2b": [
+    [
+     14499,
+     3353
+    ]
+   ],
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": [
+    [
+     13778,
+     1885
+    ]
+   ],
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": [
+    [
+     9936,
+     2621
+    ]
+   ],
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": [
+    [
+     7102,
+     1280
+    ]
+   ],
+   "E9_0000__H0799BL": [
+    [
+     32624,
+     3722
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 3.8123550415039062,
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   }
+  }
+ },
+ "fast_D1": {
+  "n_runs": 4,
+  "workers": 4,
+  "makespan_s": 57.901936769485474,
+  "runs_per_hour": 248.69634425750075,
+  "runs_per_hour_steady": null,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.06325771311319058,
+   "loader": 0.0008036722644776538,
+   "gpu_stage_wall": 0.012652463118157469,
+   "gpu_kernels_events": 0.012531601082840686,
+   "writer": 0.003194457097569128
+  },
+  "core_s": {
+   "main_process": 29.256669000000002,
+   "decode_workers": 23.126906,
+   "total": 52.38357500000001,
+   "per_run": 13.095893750000002,
+   "per_1e5_ms2": 85.18208501365945,
+   "decode_jobs_sum": 11.675352,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 11.451554000000002
+  },
+  "gpu_s": {
+   "events_total": 0.725603973519057,
+   "per_run": 0.18140099337976426,
+   "util_mean_pct_after_setup": 2.9356521739130437,
+   "util_samples": 594
+  },
+  "setup": {
+   "torch_import_s": 1.639155742712319,
+   "cuda_init_s": 0.2221983429044485,
+   "l1_load_s": 0.2820524713024497,
+   "gpu_index_build_s": 0.13696656469255686,
+   "setup_total_s": 2.2804364757612348,
+   "gpu_index_bytes": 107309316,
+   "n_postings": 12389486,
+   "n_rows": 511446,
+   "setup_done_at_s": 2.450875997543335,
+   "scorer": {
+    "predictor_load_s": 9.622789330314845,
+    "model_load_s": 0.08216786105185747,
+    "library_warm_s": 41.88831591885537,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 52.15361023880541,
+    "post_workers": 1,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 10.265265485737473,
+    "ready_at_s": 54.631232023239136
+   }
+  },
+  "wall_incl_process_start_s": 71.54712462425232,
+  "process_age_at_end_s": 64.56000000005588,
+  "runs_per_hour_incl_startup": 223.0483271373534,
+  "loadavg_end": [
+   58.7890625,
+   71.0205078125,
+   69.802734375
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 9.622789330314845,
+    "model_load_s": 0.08216786105185747,
+    "library_warm_s": 41.88831591885537,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 52.15361023880541,
+    "post_workers": 1,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 10.265265485737473
+   },
+   "n_scored": 4,
+   "gpu_stage_wall_s_median": 0.14491403102874756,
+   "gpu_stage_wall_s_sum": 2.011326789855957,
+   "post_wall_s_median": 0.17200994491577148,
+   "post_core_s_sum": 0.276274,
+   "ids_1pct_sum": 24208,
+   "proteins_1pct_sum": 3352,
+   "last_post_end": 1793131906.7497544
+  },
+  "ids_proteins_by_base_run": {
+   "Velos005137": [
+    [
+     6052,
+     838
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 0.1951918601989746,
+  "vs_reference": {
+   "Velos005137": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 6052,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 838,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   }
+  }
+ },
+ "fast_hostlib": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 468.75050497055054,
+  "runs_per_hour": 1474.5584115017111,
+  "runs_per_hour_steady": 2378.592852880097,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.9442128938838149,
+   "loader": 0.0013035945836317301,
+   "gpu_stage_wall": 0.05433827866186818,
+   "gpu_kernels_events": 0.05335625582753666,
+   "writer": 0.08623759605345233
+  },
+  "core_s": {
+   "main_process": 172.913499,
+   "decode_workers": 1693.090439,
+   "total": 1866.003938,
+   "per_run": 9.718770510416666,
+   "per_1e5_ms2": 19.93212344388767,
+   "decode_jobs_sum": 1538.1404980000002,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 154.94994099999985
+  },
+  "gpu_s": {
+   "events_total": 25.01077186249569,
+   "per_run": 0.1302644367838317,
+   "util_mean_pct_after_setup": 5.798588131480256,
+   "util_samples": 4556
+  },
+  "setup": {
+   "torch_import_s": 1.6195007599890232,
+   "cuda_init_s": 0.4484778787009418,
+   "l1_load_s": 0.4050069502554834,
+   "gpu_index_build_s": 0.39313020976260304,
+   "setup_total_s": 2.8661824888549745,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 3.024329662322998,
+   "scorer": {
+    "predictor_load_s": 19.126664753071964,
+    "model_load_s": 0.07686681067571044,
+    "library_warm_s": 48.33516889484599,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 68.48614631872624,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "scorer_setup_excl_warm_s": 20.150965806096792,
+    "ready_at_s": 71.56316924095154
+   }
+  },
+  "wall_incl_process_start_s": 479.43220829963684,
+  "process_age_at_end_s": 474.6899999999441,
+  "runs_per_hour_incl_startup": 1456.1081969286931,
+  "loadavg_end": [
+   71.64404296875,
+   62.62939453125,
+   59.59228515625
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 19.126664753071964,
+    "model_load_s": 0.07686681067571044,
+    "library_warm_s": 48.33516889484599,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 68.48614631872624,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "scorer_setup_excl_warm_s": 20.150965806096792
+   },
+   "n_scored": 192,
+   "gpu_stage_wall_s_median": 0.36456501483917236,
+   "gpu_stage_wall_s_sum": 75.53189849853516,
+   "post_wall_s_median": 0.5206263065338135,
+   "post_core_s_sum": 85.11804799999999,
+   "ids_1pct_sum": 2160320,
+   "proteins_1pct_sum": 453360,
+   "last_post_end": 1793130980.8607426
+  },
+  "ids_proteins_by_base_run": {
+   "b1937_293T_proteinID_01B_QE3_122212": [
+    [
+     13646,
+     5167
+    ]
+   ],
+   "b1906_293T_proteinID_01A_QE3_122212": [
+    [
+     11269,
+     4701
+    ]
+   ],
+   "E9_0004__20210122-YP202104470-xh-BT1-3": [
+    [
+     6789,
+     1247
+    ]
+   ],
+   "E9_0000__H0799BL": [
+    [
+     32623,
+     3722
+    ]
+   ],
+   "E9_0002__MGP2": [
+    [
+     4127,
+     1158
+    ]
+   ],
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": [
+    [
+     200,
+     115
+    ]
+   ],
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": [
+    [
+     8519,
+     1037
+    ]
+   ],
+   "E9_0008__lgg1": [
+    [
+     12532,
+     2049
+    ]
+   ],
+   "E9_0009__20170210_MCF7_LysC_WT_2b": [
+    [
+     14499,
+     3353
+    ]
+   ],
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": [
+    [
+     13778,
+     1885
+    ]
+   ],
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": [
+    [
+     9936,
+     2621
+    ]
+   ],
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": [
+    [
+     7102,
+     1280
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 0.3650970458984375,
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 11269,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 4701,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 32623,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3722,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 9936,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2621,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 4127,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1158,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 8519,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1037,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 6789,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1247,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13778,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1885,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 7102,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1280,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 200,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 115,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 12532,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2049,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 14499,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3353,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13646,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 5167,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   }
+  }
+ },
+ "fast_st2_hostlib": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 497.3036630153656,
+  "runs_per_hour": 1389.895251945175,
+  "runs_per_hour_steady": 2119.8698651145514,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.934253185072607,
+   "loader": 0.001691970793025407,
+   "gpu_stage_wall": 0.04545970918383851,
+   "gpu_kernels_events": 0.0867827743985441,
+   "writer": 0.10284767810034277
+  },
+  "core_s": {
+   "main_process": 157.44990500000003,
+   "decode_workers": 1558.966348,
+   "total": 1716.4162529999999,
+   "per_run": 8.939667984375,
+   "per_1e5_ms2": 18.334270329868467,
+   "decode_jobs_sum": 1392.168854,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 166.79749399999992
+  },
+  "gpu_s": {
+   "events_total": 43.15739159503207,
+   "per_run": 0.22477808122412535,
+   "util_mean_pct_after_setup": 4.7801462904911185,
+   "util_samples": 4835
+  },
+  "setup": {
+   "torch_import_s": 4.163337387610227,
+   "cuda_init_s": 0.40968988137319684,
+   "l1_load_s": 0.852135119959712,
+   "gpu_index_build_s": 0.9129045461304486,
+   "setup_total_s": 6.338136989623308,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 6.595020771026611,
+   "scorer": {
+    "predictor_load_s": 18.2385719018057,
+    "model_load_s": 0.16301748901605606,
+    "library_warm_s": 45.09121483238414,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 64.3194177611731,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "scorer_setup_excl_warm_s": 19.228189006913453,
+    "ready_at_s": 70.98360633850098
+   }
+  },
+  "wall_incl_process_start_s": 510.87504267692566,
+  "process_age_at_end_s": 506.0200000000186,
+  "runs_per_hour_incl_startup": 1365.9539148649749,
+  "loadavg_end": [
+   85.7744140625,
+   80.60693359375,
+   69.5810546875
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 18.2385719018057,
+    "model_load_s": 0.16301748901605606,
+    "library_warm_s": 45.09121483238414,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 64.3194177611731,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "scorer_setup_excl_warm_s": 19.228189006913453
+   },
+   "n_scored": 192,
+   "gpu_stage_wall_s_median": 0.6663559675216675,
+   "gpu_stage_wall_s_sum": 139.3887116909027,
+   "post_wall_s_median": 0.724083662033081,
+   "post_core_s_sum": 94.00214600000002,
+   "ids_1pct_sum": 2160320,
+   "proteins_1pct_sum": 453360,
+   "last_post_end": 1793131510.5557165
+  },
+  "ids_proteins_by_base_run": {
+   "b1906_293T_proteinID_01A_QE3_122212": [
+    [
+     11269,
+     4701
+    ]
+   ],
+   "b1937_293T_proteinID_01B_QE3_122212": [
+    [
+     13646,
+     5167
+    ]
+   ],
+   "E9_0004__20210122-YP202104470-xh-BT1-3": [
+    [
+     6789,
+     1247
+    ]
+   ],
+   "E9_0000__H0799BL": [
+    [
+     32623,
+     3722
+    ]
+   ],
+   "E9_0002__MGP2": [
+    [
+     4127,
+     1158
+    ]
+   ],
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": [
+    [
+     200,
+     115
+    ]
+   ],
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": [
+    [
+     8519,
+     1037
+    ]
+   ],
+   "E9_0008__lgg1": [
+    [
+     12532,
+     2049
+    ]
+   ],
+   "E9_0009__20170210_MCF7_LysC_WT_2b": [
+    [
+     14499,
+     3353
+    ]
+   ],
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": [
+    [
+     13778,
+     1885
+    ]
+   ],
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": [
+    [
+     9936,
+     2621
+    ]
+   ],
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": [
+    [
+     7102,
+     1280
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 0.669703483581543,
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 11269,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 4701,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 32623,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3722,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 9936,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2621,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 4127,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1158,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 8519,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1037,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 6789,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1247,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13778,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1885,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 7102,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1280,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 200,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 115,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 12532,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2049,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 14499,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3353,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13646,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 5167,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   }
+  }
+ },
+ "fast": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 122.1609616279602,
+  "runs_per_hour": 5658.10870173928,
+  "runs_per_hour_steady": 10490.64192527972,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.7061267067509627,
+   "loader": 0.004828011409730286,
+   "gpu_stage_wall": 0.2319556584747877,
+   "gpu_kernels_events": 0.2263477170176945,
+   "writer": 0.31890298612430795
+  },
+  "core_s": {
+   "main_process": 116.32326800000001,
+   "decode_workers": 1182.752551,
+   "total": 1299.0758190000001,
+   "per_run": 6.766019890625,
+   "per_1e5_ms2": 13.876358489913045,
+   "decode_jobs_sum": 1027.167167,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 155.58538399999998
+  },
+  "gpu_s": {
+   "events_total": 27.65085477317497,
+   "per_run": 0.1440148686102863,
+   "util_mean_pct_after_setup": 20.75064935064935,
+   "util_samples": 1184
+  },
+  "setup": {
+   "torch_import_s": 1.3305775658227503,
+   "cuda_init_s": 1.6052964269183576,
+   "l1_load_s": 0.4462733343243599,
+   "gpu_index_build_s": 1.0561954006552696,
+   "setup_total_s": 4.438414023723453,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 4.80517840385437,
+   "scorer": {
+    "predictor_load_s": 13.660478182137012,
+    "model_load_s": 0.08316717995330691,
+    "library_warm_s": 5.412479967810214,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 19.762733317445964,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 14.35023965826258,
+    "ready_at_s": 24.621533393859863
+   }
+  },
+  "wall_incl_process_start_s": 133.33170008659363,
+  "process_age_at_end_s": 126.06999999983236,
+  "runs_per_hour_incl_startup": 5482.66835885555,
+  "loadavg_end": [
+   60.60888671875,
+   65.39794921875,
+   67.73779296875
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 13.660478182137012,
+    "model_load_s": 0.08316717995330691,
+    "library_warm_s": 5.412479967810214,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 19.762733317445964,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 14.35023965826258
+   },
+   "n_scored": 192,
+   "gpu_stage_wall_s_median": 0.23911893367767334,
+   "gpu_stage_wall_s_sum": 59.01502323150635,
+   "post_wall_s_median": 0.49585092067718506,
+   "post_core_s_sum": 90.09244900000002,
+   "ids_1pct_sum": 2160320,
+   "proteins_1pct_sum": 453360,
+   "last_post_end": 1793132377.4315784
+  },
+  "ids_proteins_by_base_run": {
+   "b1906_293T_proteinID_01A_QE3_122212": [
+    [
+     11269,
+     4701
+    ]
+   ],
+   "b1937_293T_proteinID_01B_QE3_122212": [
+    [
+     13646,
+     5167
+    ]
+   ],
+   "E9_0004__20210122-YP202104470-xh-BT1-3": [
+    [
+     6789,
+     1247
+    ]
+   ],
+   "E9_0002__MGP2": [
+    [
+     4127,
+     1158
+    ]
+   ],
+   "E9_0000__H0799BL": [
+    [
+     32623,
+     3722
+    ]
+   ],
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": [
+    [
+     200,
+     115
+    ]
+   ],
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": [
+    [
+     8519,
+     1037
+    ]
+   ],
+   "E9_0008__lgg1": [
+    [
+     12532,
+     2049
+    ]
+   ],
+   "E9_0009__20170210_MCF7_LysC_WT_2b": [
+    [
+     14499,
+     3353
+    ]
+   ],
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": [
+    [
+     13778,
+     1885
+    ]
+   ],
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": [
+    [
+     9936,
+     2621
+    ]
+   ],
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": [
+    [
+     7102,
+     1280
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 0.23915791511535645,
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 11269,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 4701,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 32623,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3722,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 9936,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2621,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 4127,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1158,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 8519,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1037,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 6789,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1247,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13778,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1885,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 7102,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1280,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 200,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 115,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 12532,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2049,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 14499,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3353,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13646,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 5167,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   }
+  }
+ },
+ "noscore2": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 92.34722805023193,
+  "runs_per_hour": 7484.794233607361,
+  "runs_per_hour_steady": 11988.508097423994,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.9281419728594421,
+   "loader": 0.006378426725154388,
+   "gpu_stage_wall": 0.3420743108189869,
+   "gpu_kernels_events": 0.3318619805935609,
+   "writer": 0.3691580621611289
+  },
+  "core_s": {
+   "main_process": 64.24975,
+   "decode_workers": 1122.969262,
+   "total": 1187.219012,
+   "per_run": 6.1834323541666665,
+   "per_1e5_ms2": 12.681535885437318,
+   "decode_jobs_sum": 1070.687645,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 52.2816170000001
+  },
+  "gpu_s": {
+   "events_total": 30.646534003075214,
+   "per_run": 0.15961736459935005,
+   "util_mean_pct_after_setup": 7.55832389580974,
+   "util_samples": 907
+  },
+  "setup": {
+   "torch_import_s": 1.6605982789769769,
+   "cuda_init_s": 0.2357132639735937,
+   "l1_load_s": 0.3973451550118625,
+   "gpu_index_build_s": 0.407785517629236,
+   "setup_total_s": 2.7015160867013037,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 3.012885332107544
+  },
+  "wall_incl_process_start_s": 97.71970105171204,
+  "process_age_at_end_s": 95.87999999988824,
+  "runs_per_hour_incl_startup": 7209.011264088504,
+  "loadavg_end": [
+   66.10107421875,
+   66.490234375,
+   67.89111328125
+  ],
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true
+   }
+  }
+ },
+ "fast_st2": {
+  "n_runs": 192,
+  "workers": 24,
+  "makespan_s": 111.56352138519287,
+  "runs_per_hour": 6195.573529931072,
+  "runs_per_hour_steady": 9604.856477141491,
+  "bottleneck": "decode_pool",
+  "stage_busy_fraction": {
+   "decode_pool": 0.811799723360687,
+   "loader": 0.007440396317644253,
+   "gpu_stage_wall": 0.21496515480122036,
+   "gpu_kernels_events": 0.400043244309634,
+   "writer": 0.42628613381736336
+  },
+  "core_s": {
+   "main_process": 123.557352,
+   "decode_workers": 1229.877173,
+   "total": 1353.4345250000001,
+   "per_run": 7.049138151041667,
+   "per_1e5_ms2": 14.457002729819248,
+   "decode_jobs_sum": 1070.54699,
+   "ms1_jobs_sum": 0.0,
+   "decode_worker_fixed": 159.33018300000003
+  },
+  "gpu_s": {
+   "events_total": 44.63023304153979,
+   "per_run": 0.2324491304246864,
+   "util_mean_pct_after_setup": 24.30085146641438,
+   "util_samples": 1084
+  },
+  "setup": {
+   "torch_import_s": 1.8389224223792553,
+   "cuda_init_s": 0.24555904883891344,
+   "l1_load_s": 0.43310580076649785,
+   "gpu_index_build_s": 0.3795764883980155,
+   "setup_total_s": 2.897342679090798,
+   "gpu_index_bytes": 1503928856,
+   "n_postings": 175429652,
+   "n_rows": 7058668,
+   "setup_done_at_s": 3.3092827796936035,
+   "scorer": {
+    "predictor_load_s": 12.380426879040897,
+    "model_load_s": 0.13907569693401456,
+    "library_warm_s": 5.188985261134803,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 18.542144041042775,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 13.353142797015607,
+    "ready_at_s": 21.908703088760376
+   }
+  },
+  "wall_incl_process_start_s": 121.31304740905762,
+  "process_age_at_end_s": 117.28000000026077,
+  "runs_per_hour_incl_startup": 5893.587994529869,
+  "loadavg_end": [
+   71.55419921875,
+   68.15576171875,
+   68.20361328125
+  ],
+  "scoring": {
+   "setup": {
+    "predictor_load_s": 12.380426879040897,
+    "model_load_s": 0.13907569693401456,
+    "library_warm_s": 5.188985261134803,
+    "library_bytes": 24928430184,
+    "scorer_setup_s": 18.542144041042775,
+    "post_workers": 3,
+    "lib_root": "/tmp/vulcan_ss/predlib",
+    "model": "$VULCAN_ROOT/vulcan/../results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl",
+    "impl": "fast",
+    "placement": "gpu",
+    "scorer_setup_excl_warm_s": 13.353142797015607
+   },
+   "n_scored": 192,
+   "gpu_stage_wall_s_median": 0.4871717691421509,
+   "gpu_stage_wall_s_sum": 109.62088418006897,
+   "post_wall_s_median": 0.7230483293533325,
+   "post_core_s_sum": 98.24487699999999,
+   "ids_1pct_sum": 2160320,
+   "proteins_1pct_sum": 453360,
+   "last_post_end": 1793132643.5298798
+  },
+  "ids_proteins_by_base_run": {
+   "b1906_293T_proteinID_01A_QE3_122212": [
+    [
+     11269,
+     4701
+    ]
+   ],
+   "b1937_293T_proteinID_01B_QE3_122212": [
+    [
+     13646,
+     5167
+    ]
+   ],
+   "E9_0004__20210122-YP202104470-xh-BT1-3": [
+    [
+     6789,
+     1247
+    ]
+   ],
+   "E9_0002__MGP2": [
+    [
+     4127,
+     1158
+    ]
+   ],
+   "E9_0000__H0799BL": [
+    [
+     32623,
+     3722
+    ]
+   ],
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": [
+    [
+     200,
+     115
+    ]
+   ],
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": [
+    [
+     8519,
+     1037
+    ]
+   ],
+   "E9_0008__lgg1": [
+    [
+     12532,
+     2049
+    ]
+   ],
+   "E9_0009__20170210_MCF7_LysC_WT_2b": [
+    [
+     14499,
+     3353
+    ]
+   ],
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": [
+    [
+     13778,
+     1885
+    ]
+   ],
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": [
+    [
+     9936,
+     2621
+    ]
+   ],
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": [
+    [
+     7102,
+     1280
+    ]
+   ]
+  },
+  "score_gpu_stage_wall_s_median": 0.4900233745574951,
+  "vs_reference": {
+   "b1906_293T_proteinID_01A_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 11269,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 4701,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0000__H0799BL": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 32623,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3722,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 9936,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2621,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0002__MGP2": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 4127,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1158,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 8519,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1037,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0004__20210122-YP202104470-xh-BT1-3": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 6789,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1247,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13778,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1885,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 7102,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 1280,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 200,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 115,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0008__lgg1": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 12532,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 2049,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "E9_0009__20170210_MCF7_LysC_WT_2b": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 14499,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 3353,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   },
+   "b1937_293T_proteinID_01B_QE3_122212": {
+    "psm_table_identical_to_reference": true,
+    "ids_1pct": 13646,
+    "ids_1pct_equal_reference": true,
+    "proteins_1pct": 5167,
+    "proteins_1pct_equal_reference": true,
+    "score_bitwise_equal_frozen_reference": true,
+    "ids_1pct_set_identical_to_reference": true
+   }
+  }
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "G0": {
+  "chimeric_psm_tables_bit_identical": true,
+  "columns_not_identical": [],
+  "arrow_equals_raw": false,
+  "nce_same": true,
+  "features_bit_identical": {
+   "pred_sa": true,
+   "pred_sa_sqrt": true,
+   "pred_pearson": true,
+   "pred_entropy": true,
+   "pred_frac_obs": true,
+   "pred_top6": true,
+   "pred_obs_tic": true,
+   "rt_abs_resid": true,
+   "rt_resid_z": true,
+   "pred_sa_b": true,
+   "pred_sa_y": true,
+   "pred_pearson_b": true,
+   "pred_pearson_y": true,
+   "cleave_cov": true,
+   "longest_by_frac": true,
+   "prec_ppm_resid": true,
+   "prec_ppm_resid_z": true,
+   "ms1_has_feature": true,
+   "ms1_iso_cos": true,
+   "ms1_isolation_fraction": true,
+   "ms1_trace_cos": true,
+   "ms1_n_iso": true,
+   "ms1_rt_offset_rel": true,
+   "ms1_log_int_runz": true,
+   "chim_rank": true,
+   "n_groups": true,
+   "n_features_in_window": true,
+   "z_inst_agree": true
+  },
+  "scores_bit_identical": {
+   "v1": true,
+   "v2": true
+  },
+  "n_psms": 42833,
+  "n_secondary_psms": 9704,
+  "pass": true
+ },
+ "G2_original_G5": {
+  "n_null_competitions": 208150,
+  "n_offset": 3763,
+  "n_species_pfu": 13507,
+  "n_species_yeast": 190880,
+  "n_secondary_units": 73496,
+  "homolog_filter": {
+   "b1906_293T_proteinID_01A_QE3_122212_g2mix": {
+    "source2": {
+     "spectra_excluded": 728,
+     "homolog_peptides": 884
+    },
+    "source3": {
+     "spectra_excluded": 14550,
+     "homolog_peptides": 10107
+    }
+   },
+   "b1937_293T_proteinID_01B_QE3_122212_g2mix": {
+    "source2": {
+     "spectra_excluded": 747,
+     "homolog_peptides": 925
+    },
+    "source3": {
+     "spectra_excluded": 14362,
+     "homolog_peptides": 10099
+    }
+   }
+  },
+  "search": {
+   "b1906_293T_proteinID_01A_QE3_122212_g2mix": {
+    "n_spectra": 230275,
+    "n_psms": 852274,
+    "n_secondary_groups": 195291,
+    "nce": 20.0,
+    "wall_s": 24.750297233927995
+   },
+   "b1937_293T_proteinID_01B_QE3_122212_g2mix": {
+    "n_spectra": 245263,
+    "n_psms": 867726,
+    "n_secondary_groups": 206824,
+    "nce": 23.0,
+    "wall_s": 24.544945949688554
+   }
+  },
+  "p_target_win_fixed": 0.4943646408839779,
+  "budget_g2_sample_size": 107570,
+  "scorers": {
+   "v2": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 208150,
+        "diff": -0.0010136920490031228,
+        "se": 0.0009486978126970408,
+        "ucb": 0.0005467769890925333,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4943646408839779,
+        "p_learned": 0.49335094883497477
+       },
+       "top": {
+        "n": 20815,
+        "diff": 0.0012010569300984868,
+        "se": 0.0024633540167792933,
+        "ucb": 0.005252913719063385,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.49987989430699015,
+        "p_learned": 0.5010809512370886
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_by_subset": {
+     "offset": {
+      "pass": false,
+      "diff": 0.010629816635663035,
+      "ucb": 0.021262811093289216,
+      "top_ucb": 0.027928287261698877,
+      "n": 3763
+     },
+     "pfu": {
+      "pass": true,
+      "diff": -0.009624639076034648,
+      "ucb": -0.003883082797840962,
+      "top_ucb": -0.0019950381453035324,
+      "n": 13507
+     },
+     "yeast": {
+      "pass": true,
+      "diff": -0.0006339061190276614,
+      "ucb": 0.0010051574106187395,
+      "top_ucb": 0.006714516056468762,
+      "n": 190880
+     },
+     "primary_units": {
+      "pass": true,
+      "diff": -0.0018491838341230117,
+      "ucb": 9.842615155058717e-05,
+      "top_ucb": 0.011141302461494813,
+      "n": 134654
+     },
+     "secondary_units": {
+      "pass": true,
+      "diff": 0.0005170349406770436,
+      "ucb": 0.003124509718130559,
+      "top_ucb": 0.0021028624001493664,
+      "n": 73496
+     }
+    },
+    "g5": {
+     "auc": 0.5043797974604827,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5044072875497395,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 208150,
+      "p": 0.49335094883497477,
+      "ci": [
+       0.49052853337490276,
+       0.49617378816591684
+      ],
+      "within_band": true
+     },
+     "top": {
+      "n": 20815,
+      "p": 0.5085275042036993,
+      "ci": [
+       0.4996006439160832,
+       0.5174489298451949
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.18734085995676195
+   },
+   "v1_chimeric": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 208150,
+        "diff": 0.00011049723756906077,
+        "se": 9.051847945168876e-05,
+        "ucb": 0.00025938688680130336,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4943646408839779,
+        "p_learned": 0.494475138121547
+       },
+       "top": {
+        "n": 20815,
+        "diff": 0.00048042277203939464,
+        "se": 0.0003721279193291121,
+        "ucb": 0.0010925187298377896,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.49987989430699015,
+        "p_learned": 0.5003603170790295
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_by_subset": {
+     "offset": {
+      "pass": true,
+      "diff": 0.0007972362476747276,
+      "ucb": 0.0017745451589280961,
+      "top_ucb": 0.0,
+      "n": 3763
+     },
+     "pfu": {
+      "pass": true,
+      "diff": -0.0008143925372029318,
+      "ucb": 0.00010497196630481051,
+      "top_ucb": 0.003962438910421834,
+      "n": 13507
+     },
+     "yeast": {
+      "pass": true,
+      "diff": 0.0001624056999161777,
+      "ucb": 0.00030990774678713,
+      "top_ucb": 0.0011220785614248126,
+      "n": 190880
+     },
+     "primary_units": {
+      "pass": true,
+      "diff": 8.911729321074755e-05,
+      "ucb": 0.0002837991835318931,
+      "top_ucb": 0.001431137444013143,
+      "n": 134654
+     },
+     "secondary_units": {
+      "pass": true,
+      "diff": 0.00014966800914335474,
+      "ucb": 0.00037458572026210363,
+      "top_ucb": 0.0012150650672569526,
+      "n": 73496
+     }
+    },
+    "g5": {
+     "auc": 0.505112261781245,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5044072875497395,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 208150,
+      "p": 0.494475138121547,
+      "ci": [
+       0.4916526095585869,
+       0.49729801888934855
+      ],
+      "within_band": true
+     },
+     "top": {
+      "n": 20815,
+      "p": 0.503194811434062,
+      "ci": [
+       0.49426853480773747,
+       0.512119051981699
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.001705500840739851
+   }
+  }
+ },
+ "pending": {
+  "tail_G2": "pending A2 DN2 nulls",
+  "G1": "pending A2 DN2 nulls",
+  "G3": "pending A2 DN2 nulls"
+ }
+}

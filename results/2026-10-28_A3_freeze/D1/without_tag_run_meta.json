@@ -1,0 +1,666 @@
+{
+ "dataset": "D1",
+ "role": "dev",
+ "git_sha": "40d9fb937dcc313560036ee5ca53bc2b8be15102",
+ "git_dirty_tracked": false,
+ "raws": [
+  "$VULCAN_SCRATCH/vulcan_a3freeze/wt_tag/data/raw/PXD001077/Velos005137.raw"
+ ],
+ "runs": [
+  "Velos005137"
+ ],
+ "decoy_seeds": [
+  1001,
+  1002,
+  1003,
+  1004,
+  1005
+ ],
+ "entrap_seeds": [
+  2001,
+  2002,
+  2003
+ ],
+ "replicates": [
+  "prod_1001",
+  "P_1001_2001",
+  "P_1001_2002",
+  "P_1001_2003",
+  "C_1001",
+  "prod_1002",
+  "P_1002_2001",
+  "P_1002_2002",
+  "P_1002_2003",
+  "C_1002",
+  "prod_1003",
+  "P_1003_2001",
+  "P_1003_2002",
+  "P_1003_2003",
+  "C_1003",
+  "prod_1004",
+  "P_1004_2001",
+  "P_1004_2002",
+  "P_1004_2003",
+  "C_1004",
+  "prod_1005",
+  "P_1005_2001",
+  "P_1005_2002",
+  "P_1005_2003",
+  "C_1005"
+ ],
+ "work": "$VULCAN_SCRATCH/vulcan_a3freeze/D1_tag",
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "threads": 32,
+ "db_verify": {
+  "n_sequences": {
+   "F": 2293858,
+   "T": 177028,
+   "E2001": 177027,
+   "E2002": 177021,
+   "E2003": 177025,
+   "dec_set0": 3001959,
+   "dec_set1": 3001959,
+   "dec_set2": 3001959,
+   "dec_set3": 3001959,
+   "dec_set4": 3001959
+  },
+  "violations": {
+   "sequence_in_two_families_or_decoy_sets": 0,
+   "contains_I": 0,
+   "partner_not_cterm_fixed_shuffle": 0
+  },
+  "partner_rows_checked": 100000,
+  "ok": true
+ },
+ "index_meta": {
+  "index_version": "vulcan-l1-0.1+multidecoy",
+  "sage_commit": "99407db6e3754b31a9b88b7316a0aee67293c93f",
+  "params": {
+   "enzyme": {
+    "cleave_at": "KR",
+    "restrict": "P",
+    "c_terminal": true,
+    "missed_cleavages": 2,
+    "min_len": 7,
+    "max_len": 50
+   },
+   "static_mods": {
+    "C": 57.021464
+   },
+   "variable_mods": {
+    "M": 15.9949
+   },
+   "max_variable_mods": 2,
+   "peptide_min_mass": 500.0,
+   "peptide_max_mass": 5000.0,
+   "decoy_seed": 1001,
+   "entrap_seeds": [
+    2001,
+    2002,
+    2003
+   ],
+   "id_seed": 0,
+   "decoy_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005
+   ],
+   "foreign_sha256": "fd0da0f021a81aec669130be885183b5f021df60e1c69952201c87091df9eb91"
+  },
+  "content_hash": "472b39170ed5c689",
+  "n_targets": 180823,
+  "n_forward_peptides": 3087386,
+  "decoy_sets": {
+   "1001": {
+    "n": 3088602,
+    "redrawn": 3707,
+    "dropped": 7
+   },
+   "1002": {
+    "n": 3088399,
+    "redrawn": 7031,
+    "dropped": 210
+   },
+   "1003": {
+    "n": 3088141,
+    "redrawn": 10235,
+    "dropped": 468
+   },
+   "1004": {
+    "n": 3087863,
+    "redrawn": 13276,
+    "dropped": 746
+   },
+   "1005": {
+    "n": 3087386,
+    "redrawn": 16257,
+    "dropped": 1223
+   }
+  },
+  "n_forward_without_decoy": 1223,
+  "entrapment": {
+   "foreign": {
+    "n_input": 2365365,
+    "n": 2365365
+   },
+   "2001": {
+    "n": 180823,
+    "redrawn": 475,
+    "dropped_unpairable": 0
+   },
+   "2002": {
+    "n": 180811,
+    "redrawn": 653,
+    "dropped_unpairable": 12
+   },
+   "2003": {
+    "n": 180787,
+    "redrawn": 879,
+    "dropped_unpairable": 36
+   }
+  },
+  "n_peptidoforms": 26911146,
+  "n_peptidoforms_by_family": {
+   "T": 255422,
+   "E": 4229769,
+   "DT": 1277110,
+   "DE": 21148845
+  },
+  "n_decoy_sets": 5,
+  "timing_s": {
+   "digest_s": 1.0813669431954622,
+   "families_s": 197.34625348588452,
+   "expand_s": 37.66249651601538,
+   "arrays_s": 103.96786590991542,
+   "total_s": 374.005265688058
+  },
+  "armC_builder": {
+   "arm": "C",
+   "estimator": "combined",
+   "target_fasta": "../../../../../../..$VULCAN_SCRATCH/vulcan_t1/D1/target.fasta",
+   "target_fasta_sha256": "efbdb08aa3871e7b9d4896049380f070f637cb8aaaf186cf0d0ab58da6998bce",
+   "foreign_fastas": [
+    "data/fasta/human_sp_canonical.fasta"
+   ],
+   "foreign_fasta_sha256": [
+    "dffdff3807ec6eb7e752035b5475aaefa26d1b36e513e3344198d521a2169c42"
+   ],
+   "n_foreign_peptides_raw": 2399162,
+   "removed": {
+    "IL_identical_to_target": 11027,
+    "isobaric_NGG_QAG": 48,
+    "single_substitution_neighbour": 14450,
+    "equal_to_target_decoy": 107,
+    "equal_to_shuffled_target_decoy_1001_1005": 513,
+    "shuffled_decoy_collides_with_target_or_foreign": 7652
+   },
+   "r": 12.936207888296133,
+   "n_target_eff": 177326,
+   "n_entrapment_eff": 2293926,
+   "decile_mass_edges_da": [
+    965.4454250663,
+    1157.6193071263,
+    1367.7197495513,
+    1599.8256712363002,
+    1862.9960073413001,
+    2159.1527592563,
+    2511.3274294413,
+    2969.5208455363,
+    3619.9446415813
+   ],
+   "r_per_mass_decile": [
+    10.546889979134946,
+    11.72242273855177,
+    12.06823436530762,
+    12.305605684637943,
+    12.549371228782496,
+    12.359612022782382,
+    12.711087299796977,
+    13.435201894879315,
+    14.4333164157221,
+    17.23024868888513
+   ],
+   "n_target_nonstandard_dropped": 15,
+   "name": "ds.C",
+   "n_target": 180823,
+   "n_entrapment": 2365365,
+   "n_decoy": 2546188,
+   "n_decoy_replaced_by_shuffle": 1038,
+   "n_forward_without_decoy": 0,
+   "decoy_recipe": "pseudo-reverse C-term fixed; collisions/palindromes -> hash(peptide,1001) shuffle",
+   "peptides_tsv": "../../../../../../..$VULCAN_SCRATCH/vulcan_t1/D1/armC/ds.C.peptides.tsv",
+   "peptides_tsv_sha256": "5ca008fdf99ed5dcca71a511ccb4b88c37461fafc181c527095840f420866ed4"
+  },
+  "build_wall_s": 378.30700809694827
+ },
+ "mzml": {
+  "Velos005137": {
+   "reused_from": "$VULCAN_SCRATCH/vulcan_a3freeze/D1_frz2/mzml"
+  }
+ },
+ "sage_pred_pin": {
+  "prod_1001": {
+   "n_psms": 11489,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11489,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.364681634851627
+    }
+   },
+   "wall_s": 3.2378774313256145
+  },
+  "P_1001_2001": {
+   "n_psms": 11744,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11744,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.314100108114135
+    }
+   },
+   "wall_s": 1.9896031846292317
+  },
+  "P_1001_2002": {
+   "n_psms": 11754,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11754,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.280238396529064
+    }
+   },
+   "wall_s": 3.658318114001304
+  },
+  "P_1001_2003": {
+   "n_psms": 11723,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11723,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.269751704877945
+    }
+   },
+   "wall_s": 2.1947280187159777
+  },
+  "C_1001": {
+   "n_psms": 12400,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 12400,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.30238343436595
+    }
+   },
+   "wall_s": 10.843033988960087
+  },
+  "prod_1002": {
+   "n_psms": 11500,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11500,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.3943799573308135
+    }
+   },
+   "wall_s": 1.6144320569001138
+  },
+  "P_1002_2001": {
+   "n_psms": 11745,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11745,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.314100108114135
+    }
+   },
+   "wall_s": 2.6520496802404523
+  },
+  "P_1002_2002": {
+   "n_psms": 11738,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11738,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.255695624475424
+    }
+   },
+   "wall_s": 2.3592506921850145
+  },
+  "P_1002_2003": {
+   "n_psms": 11738,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11738,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.255695624475424
+    }
+   },
+   "wall_s": 3.1276273927651346
+  },
+  "C_1002": {
+   "n_psms": 12422,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 12422,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.446861742195071
+    }
+   },
+   "wall_s": 12.07079701917246
+  },
+  "prod_1003": {
+   "n_psms": 11502,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11502,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.3560696165407937
+    }
+   },
+   "wall_s": 1.7307675797492266
+  },
+  "P_1003_2001": {
+   "n_psms": 11767,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11767,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.3370039194538053
+    }
+   },
+   "wall_s": 2.014968942850828
+  },
+  "P_1003_2002": {
+   "n_psms": 11742,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11742,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.314100108114135
+    }
+   },
+   "wall_s": 2.117909866850823
+  },
+  "P_1003_2003": {
+   "n_psms": 11724,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11724,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.269751704877945
+    }
+   },
+   "wall_s": 2.12355099292472
+  },
+  "C_1003": {
+   "n_psms": 12399,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 12399,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.30238343436595
+    }
+   },
+   "wall_s": 8.886705313809216
+  },
+  "prod_1004": {
+   "n_psms": 11486,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11486,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.364681634851627
+    }
+   },
+   "wall_s": 1.789733030833304
+  },
+  "P_1004_2001": {
+   "n_psms": 11713,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11713,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.294134087811785
+    }
+   },
+   "wall_s": 2.075586253311485
+  },
+  "P_1004_2002": {
+   "n_psms": 11720,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11720,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.294134087811785
+    }
+   },
+   "wall_s": 3.5695558371953666
+  },
+  "P_1004_2003": {
+   "n_psms": 11726,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11726,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.269751704877945
+    }
+   },
+   "wall_s": 2.5073147527873516
+  },
+  "C_1004": {
+   "n_psms": 12399,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 12399,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.30238343436595
+    }
+   },
+   "wall_s": 10.302726516965777
+  },
+  "prod_1005": {
+   "n_psms": 11507,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11507,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.3560696165407937
+    }
+   },
+   "wall_s": 2.0085872542113066
+  },
+  "P_1005_2001": {
+   "n_psms": 11731,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11731,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.255695624475424
+    }
+   },
+   "wall_s": 3.5873055257834494
+  },
+  "P_1005_2002": {
+   "n_psms": 11717,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11717,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.294134087811785
+    }
+   },
+   "wall_s": 2.469913865439594
+  },
+  "P_1005_2003": {
+   "n_psms": 11723,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 11723,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.269751704877945
+    }
+   },
+   "wall_s": 1.9814057080075145
+  },
+  "C_1005": {
+   "n_psms": 12395,
+   "n_unmapped_peptides": 0,
+   "runs": {
+    "Velos005137": {
+     "n_psms": 12395,
+     "n_scan_unmatched": 0,
+     "nce": 29.0,
+     "rt_mad_min": 3.30238343436595
+    }
+   },
+   "wall_s": 8.04217278584838
+  }
+ },
+ "sage_rt_check": {
+  "n_confident": 10827,
+  "frac_predicted_rt_nonzero": 0.9900774654016886,
+  "sd_predicted_rt": 0.20851611616966198,
+  "median_abs_delta_rt_model_confident": 0.043854356,
+  "spearman_aligned_vs_predicted_confident": 0.9426438660677244,
+  "pin_has_rt_features": true
+ },
+ "driver_timing": {
+  "wall_s": 543.2779598236084,
+  "core_s_self_and_children": 3477.928485,
+  "stages": {
+   "db": {
+    "wall_s": 0.9867458343505859,
+    "core_s_self_and_children": 0.015334999999999988,
+    "loadavg_start": 41.181640625,
+    "loadavg_end": 42.44873046875
+   },
+   "cmp_mzml": {
+    "wall_s": 0.0009822845458984375,
+    "core_s_self_and_children": 0.0008700000000000374,
+    "loadavg_start": 42.44873046875,
+    "loadavg_end": 42.44873046875
+   },
+   "cmp_sage_searches": {
+    "wall_s": 0.16452598571777344,
+    "core_s_self_and_children": 0.18316199999999994,
+    "loadavg_start": 42.44873046875,
+    "loadavg_end": 42.44873046875
+   },
+   "cmp_sage_pred_features": {
+    "wall_s": 114.07481861114502,
+    "core_s_self_and_children": 1565.5705409999998,
+    "loadavg_start": 42.44873046875,
+    "loadavg_end": 60.51025390625
+   },
+   "cmp_comet_searches_wait": {
+    "wall_s": 0.014131307601928711,
+    "core_s_self_and_children": 0.0006590000000414875,
+    "loadavg_start": 60.51025390625,
+    "loadavg_end": 60.51025390625
+   },
+   "cmp_mokapot_wait": {
+    "wall_s": 93.48803067207336,
+    "core_s_self_and_children": 1564.3487090000003,
+    "loadavg_start": 60.51025390625,
+    "loadavg_end": 71.43408203125
+   },
+   "evaluate": {
+    "wall_s": 333.59657096862793,
+    "core_s_self_and_children": 347.7168529999999,
+    "loadavg_start": 71.43408203125,
+    "loadavg_end": 42.3427734375
+   }
+  }
+ }
+}

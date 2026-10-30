@@ -1,0 +1,18 @@
+{
+ "arm": "target",
+ "target_fasta": "data/cache/M1e/entrapment/inputs/human_contam.fasta",
+ "target_fasta_sha256": "2b644426120213f1adde66f87e9dbafae624d4681a7da7bc71563906988b7234",
+ "n_target_nonstandard_dropped": 151,
+ "n_target_eff": 2345526,
+ "name": "human_contam.target",
+ "n_target": 2417893,
+ "n_entrapment": 0,
+ "n_decoy": 2417852,
+ "n_decoy_replaced_by_shuffle": 2181,
+ "n_forward_without_decoy": 41,
+ "decoy_recipe": "pseudo-reverse C-term fixed; collisions/palindromes -> hash(peptide,1001) shuffle",
+ "fasta": "data/cache/M1e/entrapment/db/human_contam.target.fasta",
+ "fasta_sha256": "78a09722a6a8bdbeb3529391036d2de6ff10da4034836bc7353e720595e410df",
+ "peptides_tsv": "data/cache/M1e/entrapment/db/human_contam.target.peptides.tsv",
+ "peptides_tsv_sha256": "b5a892061b7c5fdb3046fd7d56aa8f3976946abcc7de931ac78a4885f031fea9"
+}

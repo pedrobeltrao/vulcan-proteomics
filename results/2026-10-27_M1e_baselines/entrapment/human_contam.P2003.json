@@ -1,0 +1,136 @@
+{
+ "arm": "P",
+ "estimator": "paired",
+ "r": 1.0,
+ "entrap_seed": 2003,
+ "generator": "FDRBench v1.1.1 (github.com/Noble-Lab/FDRBench release zip sha256 d1740d90decd139c0e2294d766797be800c2b7bd3fd7ae3624e9822ffd7dceed)",
+ "fdrbench_cmd": "conda_envs/java/bin/java -Xmx48G -jar tools/fdrbench/fdrbench-1.1.1/fdrbench-1.1.1.jar -level peptide -db data/cache/M1e/entrapment/inputs/human_contam.fasta -o data/cache/M1e/entrapment/db/fdrbench/human_contam.P2003.fdrbench.txt -I2L -fix_nc c -enzyme 1 -miss_c 2 -minLength 7 -maxLength 50 -seed 2003 -check -fold 1",
+ "fdrbench_wall_s": 34.9,
+ "fdrbench_pair_file": "data/cache/M1e/entrapment/db/fdrbench/human_contam.P2003.fdrbench.txt",
+ "fdrbench_pair_file_sha256": "57947b8bcad9092f5ff1337aa43dcd4ab25339e7f8a37188a88f5b49b79b7f35",
+ "target_fasta": "data/cache/M1e/entrapment/inputs/human_contam.fasta",
+ "target_fasta_sha256": "2b644426120213f1adde66f87e9dbafae624d4681a7da7bc71563906988b7234",
+ "n_fdrbench_pairs": 2417863,
+ "digest_only_ours": 189,
+ "digest_only_fdrbench": 8,
+ "digest_only_ours_examples": [
+  "AAAAAAAAAAR",
+  "AAAAAAAAAK",
+  "AAAAAAAK",
+  "AAAAAAAR",
+  "AAAAAAR",
+  "AAAAASR",
+  "AAAAEAK",
+  "AASAAAR",
+  "AGGGGGK",
+  "DGSYGAWLHRDSSTWLTAFVLKLLSLAQDQVXGSAEK"
+ ],
+ "digest_only_fdrbench_examples": [
+  "GSAEKLQETATWLLSQQR",
+  "GSAEKLQETATWLLSQQRDDGPFHDPCPVLHR",
+  "TSLLLFVTLWGLSSTPAPPDSVFSSSQR",
+  "TSLLLFVTLWGLSSTPAPPDSVFSSSQRAHQVLR",
+  "TSLLLFVTLWGLSSTPAPPDSVFSSSQRAHQVLRLR",
+  "VTPLQLFDGR",
+  "VTPLQLFDGRR",
+  "VTPLQLFDGRRNR"
+ ],
+ "n_target_nonstandard_dropped": 151,
+ "n_repaired": 25743,
+ "repair_reasons": {
+  "E_in_shuffle_decT": 10085,
+  "E_shuffle_decoy_collides": 15598,
+  "unrepairable_dropped_pair": 1715,
+  "E_palindrome": 141,
+  "E_in_decE": 340,
+  "E_in_decT": 1294
+ },
+ "repaired_examples": [
+  [
+   "AAAAAAALQAK",
+   "QAAAAAAALAK",
+   "AAALQAAAAAK"
+  ],
+  [
+   "AAAAAGGK",
+   "GAAAAGAK",
+   "AAAGAAGK"
+  ],
+  [
+   "AAAAAGGKK",
+   "AGAGKAAAK",
+   "GKGAAAAAK"
+  ],
+  [
+   "AAAAAGRQ",
+   "AAGAAARQ",
+   "AARAGAAQ"
+  ],
+  [
+   "AAAAFARR",
+   "FAAARAAR",
+   "AAFAAARR"
+  ],
+  [
+   "AAAAKKSR",
+   "SAAAKAKR",
+   "ASAAAKKR"
+  ],
+  [
+   "AAAALMK",
+   "AAAMALK",
+   "LAMAAAK"
+  ],
+  [
+   "AAAAQSR",
+   "SAAAQAR",
+   "ASAQAAR"
+  ],
+  [
+   "AAAARRK",
+   "AARRAAK",
+   "RAAARAK"
+  ],
+  [
+   "AAAASKK",
+   "KSAAAAK",
+   "AASAKAK"
+  ]
+ ],
+ "n_unpaired_targets": 1889,
+ "unpaired_targets_examples": [
+  "AAAAAAAAAAR",
+  "AAAAAAAAAK",
+  "AAAAAAAK",
+  "AAAAAAAR",
+  "AAAAAAR",
+  "AAAAAGR",
+  "AAAAAQK",
+  "AAAAASR",
+  "AAAAEAK",
+  "AAAAFAR",
+  "AAAALLR",
+  "AAAEEAR",
+  "AAAGGAR",
+  "AAAKAAK",
+  "AAEAAAK",
+  "AAELLAK",
+  "AAGAGAAK",
+  "AALELAR",
+  "AALLAAR",
+  "AALRAAR"
+ ],
+ "n_target_eff": 2345526,
+ "n_entrapment_eff": 2343638,
+ "name": "human_contam.P2003",
+ "n_target": 2417893,
+ "n_entrapment": 2416004,
+ "n_decoy": 4833856,
+ "n_decoy_replaced_by_shuffle": 2220,
+ "n_forward_without_decoy": 41,
+ "decoy_recipe": "pseudo-reverse C-term fixed; collisions/palindromes -> hash(peptide,1001) shuffle",
+ "fasta": "data/cache/M1e/entrapment/db/human_contam.P2003.fasta",
+ "fasta_sha256": "f3be6a4b6f095119efadf0651fef958f591fd9b9203d416f295e6038f64f67bb",
+ "peptides_tsv": "data/cache/M1e/entrapment/db/human_contam.P2003.peptides.tsv",
+ "peptides_tsv_sha256": "22a9fb2323cf14acf6398f87b6980cd2eefda6736e3cda31ec963edbe0ef614a"
+}

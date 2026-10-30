@@ -1,0 +1,384 @@
+{
+ "seed": 47,
+ "walk_run": 2,
+ "admitted": [
+  "PXD014351",
+  "PXD008499",
+  "PXD011268"
+ ],
+ "final_state": {
+  "n_admitted": 3,
+  "totals": {
+   "n_A": 581,
+   "n_A_with_candidate": 580,
+   "tail_proxy": 0,
+   "n_certified": 36897,
+   "n_spectra": 251870
+  },
+  "projection_n_A_at_cap": 3098.6666666666665,
+  "stop": true,
+  "reason": "futility (NULL_RULES note 3): projection at cap < 60,000"
+ },
+ "log": [
+  {
+   "t": "2026-10-27T22:51:13",
+   "ev": "decision",
+   "accession": "PXD054992",
+   "organism": "Pseudoalteromonas distincta",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not available']"
+  },
+  {
+   "t": "2026-10-27T22:51:17",
+   "ev": "decision",
+   "accession": "PXD006166",
+   "organism": "Magnetospirillum gryphiswaldense",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "t": "2026-10-27T22:51:17",
+   "ev": "decision",
+   "accession": "PXD048036",
+   "organism": "Schizophyllum commune",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "t": "2026-10-27T22:51:36",
+   "ev": "decision",
+   "accession": "PXD001518",
+   "organism": "Modestobacter marinus (strain bc501)",
+   "result": "download not verifiable by PRIDE SHA-1"
+  },
+  {
+   "t": "2026-10-27T22:51:43",
+   "ev": "decision",
+   "accession": "PXD054951",
+   "organism": "Pseudoalteromonas distincta",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not available']"
+  },
+  {
+   "t": "2026-10-27T23:21:19",
+   "ev": "decision",
+   "accession": "PXD014351",
+   "organism": "Dinoroseobacter shibae (strain dfl 12)",
+   "result": "admitted",
+   "slot": "Dinoroseobacter",
+   "upid": "UP000006833",
+   "counts": {
+    "n_spectra": 76002,
+    "n_certified": 26431,
+    "removed_b_f": 23603,
+    "removed_b_hamming": 60,
+    "removed_d_family": 0,
+    "removed_c_pre": 2307,
+    "n_A": 461,
+    "n_B_candidates": 75541,
+    "n_A_with_candidate": 461,
+    "tail_proxy": 0
+   },
+   "membership_sha256": "62a15e8fb489dbbe25d51299488c45eccafb6b14434dc1445813b91631752ff8",
+   "seconds": 640,
+   "class_check": {
+    "K3597": 1.0,
+    "K3869": 1.0,
+    "K3876": 1.0
+   },
+   "marker": {
+    "n_panel_members_detected": 9,
+    "n_trigger_members_detected": 1,
+    "detected_members": [
+     "B|OVAL|9031",
+     "K|KRT10|9606",
+     "K|KRT14|9606",
+     "K|KRT16|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT5|9606",
+     "K|KRT6A|9606",
+     "K|KRT9|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 1,
+    "totals": {
+     "n_A": 461,
+     "n_A_with_candidate": 461,
+     "tail_proxy": 0
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "t": "2026-10-27T23:21:19",
+   "ev": "decision",
+   "accession": "PXD011824",
+   "organism": "Thalassolituus oleivorans mil-1",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "t": "2026-10-27T23:21:19",
+   "ev": "decision",
+   "accession": "PXD026513",
+   "organism": "Desulfovibrio ferrophilus",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): N-termin"
+  },
+  {
+   "t": "2026-10-27T23:47:58",
+   "ev": "decision",
+   "accession": "PXD008499",
+   "organism": "Nannochloropsis gaditana",
+   "result": "admitted",
+   "slot": "Nannochloropsis",
+   "upid": "UP000019335",
+   "counts": {
+    "n_spectra": 154504,
+    "n_certified": 7475,
+    "removed_b_f": 6245,
+    "removed_b_hamming": 35,
+    "removed_d_family": 0,
+    "removed_c_pre": 1171,
+    "n_A": 24,
+    "n_B_candidates": 154480,
+    "n_A_with_candidate": 23,
+    "tail_proxy": 0
+   },
+   "membership_sha256": "5c145486e2ced8775c7bea2b4edc098c6732a133b099316098862a7090705e5e",
+   "seconds": 1202,
+   "class_check": {
+    "FcoJavFernandez_sol29-16_M1_01092016": 1.0,
+    "FcoJavFernandez_sol29-16_M2_01092016": 1.0,
+    "FcoJavFernandez_sol29-16_MB_08072016_160901222432": 1.0
+   },
+   "marker": {
+    "n_panel_members_detected": 6,
+    "n_trigger_members_detected": 0,
+    "detected_members": [
+     "K|KRT10|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT5|9606",
+     "K|KRT6A|9606",
+     "K|KRT77|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 2,
+    "totals": {
+     "n_A": 485,
+     "n_A_with_candidate": 484,
+     "tail_proxy": 0
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "t": "2026-10-27T23:47:59",
+   "ev": "decision",
+   "accession": "PXD024983",
+   "organism": "Dehalococcoides mccartyi",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:47:59",
+   "ev": "decision",
+   "accession": "PXD002472",
+   "organism": "Saccharopolyspora erythraea (streptomyces erythraeus)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): acetyl"
+  },
+  {
+   "t": "2026-10-27T23:48:00",
+   "ev": "decision",
+   "accession": "PXD008280",
+   "organism": "Alteromonas macleodii",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not available']"
+  },
+  {
+   "t": "2026-10-27T23:48:01",
+   "ev": "decision",
+   "accession": "PXD001868",
+   "organism": "Kluyveromyces lactis (strain atcc 8585 / cbs 2359 / dsm 70799 / nbrc 1267 / nrrl y-1140 / wm37) (yeast) (candida sphaerica)",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:48:02",
+   "ev": "decision",
+   "accession": "PXD061695",
+   "organism": "Blastobotrys",
+   "result": "protocol",
+   "reason": "SDRF organisms ['blastobotrys illinoisensis', 'blastobotrys malaysiensis', 'blastobotrys mokoenaii']"
+  },
+  {
+   "t": "2026-10-27T23:48:02",
+   "ev": "decision",
+   "accession": "PXD011481",
+   "organism": "Sulfobacillus thermosulfidooxidans",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:48:02",
+   "ev": "decision",
+   "accession": "PXD044632",
+   "organism": "Prymnesium parvum",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): phospho"
+  },
+  {
+   "t": "2026-10-27T23:48:03",
+   "ev": "decision",
+   "accession": "PXD011505",
+   "organism": "Leptospirillum ferriphilum",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:48:03",
+   "ev": "decision",
+   "accession": "PXD039086",
+   "organism": "Paenarthrobacter",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): phospho"
+  },
+  {
+   "t": "2026-10-27T23:48:03",
+   "ev": "decision",
+   "accession": "PXD012780",
+   "organism": "Leptospirillum ferriphilum",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:48:24",
+   "ev": "decision",
+   "accession": "PXD001519",
+   "organism": "Blastococcus saxobsidens",
+   "result": "download not verifiable by PRIDE SHA-1"
+  },
+  {
+   "t": "2026-10-27T23:48:44",
+   "ev": "decision",
+   "accession": "PXD000356",
+   "organism": "Podospora anserina (strain s / atcc mya-4624 / dsm 980 / fgsc 10383) (pleurage anserina)",
+   "result": "download not verifiable by PRIDE SHA-1"
+  },
+  {
+   "t": "2026-10-27T23:48:44",
+   "ev": "decision",
+   "accession": "PXD012783",
+   "organism": "Leptospirillum ferriphilum",
+   "result": "0 usable raw"
+  },
+  {
+   "t": "2026-10-27T23:55:44",
+   "ev": "decision",
+   "accession": "PXD011268",
+   "organism": "Trichococcus patagoniensis",
+   "result": "admitted",
+   "slot": "Trichococcus",
+   "upid": "UP000244161",
+   "counts": {
+    "n_spectra": 21364,
+    "n_certified": 2991,
+    "removed_b_f": 2383,
+    "removed_b_hamming": 5,
+    "removed_d_family": 0,
+    "removed_c_pre": 507,
+    "n_A": 96,
+    "n_B_candidates": 21268,
+    "n_A_with_candidate": 96,
+    "tail_proxy": 0
+   },
+   "membership_sha256": "3c688643f77dfddfa44f7abdd5c452f337f8d37870c5ea7998a402b18b4dec90",
+   "seconds": 315,
+   "class_check": {
+    "NS2_30oC_1b": 1.0,
+    "NS3_30oC_1c": 1.0,
+    "NS7_30oC_2c": 1.0
+   },
+   "marker": {
+    "n_panel_members_detected": 5,
+    "n_trigger_members_detected": 1,
+    "detected_members": [
+     "H|LTF|9606",
+     "K|KRT10|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT9|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 3,
+    "totals": {
+     "n_A": 581,
+     "n_A_with_candidate": 580,
+     "tail_proxy": 0
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "t": "2026-10-27T23:55:46",
+   "ev": "decision",
+   "accession": "PXD000673",
+   "organism": "Psychroflexus torquis (strain atcc 700755 / acam 623)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "t": "2026-10-27T23:55:52",
+   "ev": "decision",
+   "accession": "PXD011921",
+   "organism": "Sulfobacillus thermosulfidooxidans",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not available']"
+  },
+  {
+   "t": "2026-10-27T23:55:52",
+   "ev": "decision",
+   "accession": "PXD027874",
+   "organism": "Vibrio natriegens nbrc 15636 = atcc 14048 = dsm 759",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "t": "2026-10-27T23:55:53",
+   "ev": "decision",
+   "accession": "PXD009127",
+   "organism": "Sulfurimonas denitrificans",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "t": "2026-10-27T23:55:53",
+   "ev": "decision",
+   "accession": "PXD011507",
+   "organism": "Acidithiobacillus caldus",
+   "result": "1 usable raw"
+  }
+ ]
+}

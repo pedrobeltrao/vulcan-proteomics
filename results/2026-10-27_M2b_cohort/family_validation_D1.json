@@ -1,0 +1,131 @@
+{
+ "index": "$VULCAN_SCRATCH/vulcan_m2b/index/pfu_contam_E2001-2002_D1001-1002",
+ "index_meta": {
+  "n_peptidoforms": 2301165,
+  "n_peptidoforms_by_family": {
+   "T": 255686,
+   "E": 511369,
+   "DT": 511372,
+   "DE": 1022738
+  },
+  "decoy_sets": {
+   "1001": {
+    "n": 542454,
+    "redrawn": 1372,
+    "dropped": 3
+   },
+   "1002": {
+    "n": 542355,
+    "redrawn": 2218,
+    "dropped": 102
+   }
+  },
+  "entrapment": {
+   "2001": {
+    "n": 180823,
+    "redrawn": 293,
+    "dropped_unpairable": 0
+   },
+   "2002": {
+    "n": 180811,
+    "redrawn": 500,
+    "dropped_unpairable": 12
+   }
+  },
+  "timing_s": {
+   "digest_s": 0.3782291687093675,
+   "families_s": 13.444759381003678,
+   "expand_s": 1.3914968711324036,
+   "arrays_s": 2.7812793850898743,
+   "total_s": 19.51599391270429
+  }
+ },
+ "combined_gpu_index_build_s": 0.8589427792467177,
+ "combined_postings": 55728700,
+ "entrap_seeds": [
+  2001,
+  2002
+ ],
+ "decoy_seeds": [
+  1001,
+  1002
+ ],
+ "runs": [
+  {
+   "run": "Velos005137",
+   "n_spectra": 15374,
+   "combined_search_s": 0.1623639608733356,
+   "combined_gpu_ms": {
+    "k0": 94.1655044555664,
+    "hyp": 20.24799919128418,
+    "k1": 4.541056156158447,
+    "topk": 18.22319984436035,
+    "k2": 1.5155199766159058,
+    "features": 23.096288681030273
+   },
+   "combined_rows": 98622,
+   "combined_rescored": 2068405,
+   "replicates": [
+    {
+     "decoy_seed": 1001,
+     "entrap_seed": 2001,
+     "n_rows_subset": 1022744,
+     "n_top2_rows": 19505,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 1.0
+    },
+    {
+     "decoy_seed": 1001,
+     "entrap_seed": 2002,
+     "n_rows_subset": 1022738,
+     "n_top2_rows": 19533,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 1.0
+    },
+    {
+     "decoy_seed": 1002,
+     "entrap_seed": 2001,
+     "n_rows_subset": 1022744,
+     "n_top2_rows": 19344,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 1.0
+    },
+    {
+     "decoy_seed": 1002,
+     "entrap_seed": 2002,
+     "n_rows_subset": 1022738,
+     "n_top2_rows": 19454,
+     "exact": {
+      "spec_idx": true,
+      "rank": true,
+      "pf_id": true,
+      "hyperscore_bits": true
+     },
+     "n_mismatched_rows": null,
+     "top1_agreement_vs_default_mode_separate": 1.0
+    }
+   ],
+   "separate_searches_total_s_incl_index_build": 0.40864105662330985,
+   "all_exact": true
+  }
+ ],
+ "all_exact": true
+}

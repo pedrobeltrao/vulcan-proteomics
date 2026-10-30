@@ -1,0 +1,456 @@
+{
+ "groups": {
+  "LiP": {
+   "runs": [
+    "LM2480_DDA",
+    "LM2481_DDA",
+    "LM2492_DDA",
+    "LM2494_DDA",
+    "LM2497_DDA",
+    "LM2498_DDA"
+   ],
+   "linking": {
+    "LM2480_DDA": {
+     "ppm_offset": -0.8329348036515151,
+     "ppm_sd": 0.5028617957160385,
+     "ppm_tol": 3.0,
+     "n_psms": 21529,
+     "linked_hyp": 17582,
+     "linked_targeted": 227,
+     "unlinked": 3720
+    },
+    "LM2481_DDA": {
+     "ppm_offset": -0.6103684164511637,
+     "ppm_sd": 0.5128457306618939,
+     "ppm_tol": 3.0,
+     "n_psms": 23591,
+     "linked_hyp": 19325,
+     "linked_targeted": 255,
+     "unlinked": 4011
+    },
+    "LM2492_DDA": {
+     "ppm_offset": -1.096887454940106,
+     "ppm_sd": 0.4449233116852852,
+     "ppm_tol": 3.0,
+     "n_psms": 16915,
+     "linked_hyp": 13926,
+     "linked_targeted": 211,
+     "unlinked": 2778
+    },
+    "LM2494_DDA": {
+     "ppm_offset": -1.0506961012257636,
+     "ppm_sd": 0.5182629937706702,
+     "ppm_tol": 3.0,
+     "n_psms": 17897,
+     "linked_hyp": 14710,
+     "linked_targeted": 197,
+     "unlinked": 2990
+    },
+    "LM2497_DDA": {
+     "ppm_offset": -1.5220422744999347,
+     "ppm_sd": 0.47165055560648084,
+     "ppm_tol": 3.0,
+     "n_psms": 18057,
+     "linked_hyp": 14800,
+     "linked_targeted": 171,
+     "unlinked": 3086
+    },
+    "LM2498_DDA": {
+     "ppm_offset": -1.486517303637931,
+     "ppm_sd": 0.5694057622429564,
+     "ppm_tol": 3.0,
+     "n_psms": 17243,
+     "linked_hyp": 14058,
+     "linked_targeted": 214,
+     "unlinked": 2971
+    }
+   },
+   "alignment": {
+    "LM2480_DDA": {
+     "n_anchors": 15347,
+     "resid_sd_min": 0.07732696219565323,
+     "n_knots": 30
+    },
+    "LM2481_DDA": {
+     "n_anchors": 17247,
+     "resid_sd_min": 0.04311704038137554,
+     "n_knots": 30
+    },
+    "LM2492_DDA": {
+     "n_anchors": 12473,
+     "resid_sd_min": 0.06716776633993896,
+     "n_knots": 30
+    },
+    "LM2494_DDA": {
+     "n_anchors": 12934,
+     "resid_sd_min": 0.07061699883906626,
+     "n_knots": 30
+    },
+    "LM2497_DDA": {
+     "n_anchors": 13185,
+     "resid_sd_min": 0.05032812416764434,
+     "n_knots": 30
+    },
+    "LM2498_DDA": {
+     "n_anchors": 12512,
+     "resid_sd_min": 0.06279137228924762,
+     "n_knots": 30
+    }
+   },
+   "mbr": {
+    "sd_log2_intensity": 1.0,
+    "runs": {
+     "LM2480_DDA": {
+      "n_candidates": 9134,
+      "n_with_target_peak": 4843,
+      "median_rt_window_min": 0.28434771097806527,
+      "ppm_tol": 2.0
+     },
+     "LM2481_DDA": {
+      "n_candidates": 7466,
+      "n_with_target_peak": 3610,
+      "median_rt_window_min": 0.17750190358216658,
+      "ppm_tol": 2.0
+     },
+     "LM2492_DDA": {
+      "n_candidates": 11929,
+      "n_with_target_peak": 5481,
+      "median_rt_window_min": 0.3111490342634277,
+      "ppm_tol": 2.0
+     },
+     "LM2494_DDA": {
+      "n_candidates": 11416,
+      "n_with_target_peak": 5339,
+      "median_rt_window_min": 0.2971186007392149,
+      "ppm_tol": 2.0
+     },
+     "LM2497_DDA": {
+      "n_candidates": 11186,
+      "n_with_target_peak": 5000,
+      "median_rt_window_min": 0.19683444026966168,
+      "ppm_tol": 2.0
+     },
+     "LM2498_DDA": {
+      "n_candidates": 11750,
+      "n_with_target_peak": 5234,
+      "median_rt_window_min": 0.30935162702603675,
+      "ppm_tol": 2.0
+     }
+    }
+   },
+   "n_transfers_accepted": 3553,
+   "transfers_per_run": {
+    "LM2481_DDA": 809,
+    "LM2494_DDA": 650,
+    "LM2497_DDA": 116,
+    "LM2498_DDA": 1978
+   },
+   "peptidoforms_identified": 26976,
+   "peptidoforms_by_class": {
+    "0": 15906,
+    "1": 6611,
+    "2": 4459
+   },
+   "per_run_peptidoforms": {
+    "LM2480_DDA": 15465,
+    "LM2481_DDA": 17464,
+    "LM2492_DDA": 12408,
+    "LM2494_DDA": 13143,
+    "LM2497_DDA": 13500,
+    "LM2498_DDA": 12849
+   },
+   "per_run_by_class": {
+    "LM2480_DDA": {
+     "0": 9136,
+     "1": 3659,
+     "2": 2670
+    },
+    "LM2481_DDA": {
+     "0": 10485,
+     "1": 3972,
+     "2": 3007
+    },
+    "LM2492_DDA": {
+     "0": 7970,
+     "1": 2548,
+     "2": 1890
+    },
+    "LM2494_DDA": {
+     "0": 8327,
+     "1": 2906,
+     "2": 1910
+    },
+    "LM2497_DDA": {
+     "0": 8318,
+     "1": 3106,
+     "2": 2076
+    },
+    "LM2498_DDA": {
+     "0": 8352,
+     "1": 2603,
+     "2": 1894
+    }
+   }
+  },
+  "TrP": {
+   "runs": [
+    "LM2486_DDA",
+    "LM2487_DDA",
+    "LM2489_DDA",
+    "LM2490_DDA",
+    "LM2500_DDA",
+    "LM2502_DDA"
+   ],
+   "linking": {
+    "LM2486_DDA": {
+     "ppm_offset": -0.7302787071572049,
+     "ppm_sd": 0.5157604376547439,
+     "ppm_tol": 3.0,
+     "n_psms": 22145,
+     "linked_hyp": 17078,
+     "linked_targeted": 457,
+     "unlinked": 4610
+    },
+    "LM2487_DDA": {
+     "ppm_offset": -0.7150309423924506,
+     "ppm_sd": 0.5119944306136955,
+     "ppm_tol": 3.0,
+     "n_psms": 23931,
+     "linked_hyp": 19140,
+     "linked_targeted": 314,
+     "unlinked": 4477
+    },
+    "LM2489_DDA": {
+     "ppm_offset": -0.8414025749324524,
+     "ppm_sd": 0.4965611751577374,
+     "ppm_tol": 3.0,
+     "n_psms": 19461,
+     "linked_hyp": 15675,
+     "linked_targeted": 257,
+     "unlinked": 3529
+    },
+    "LM2490_DDA": {
+     "ppm_offset": -1.0133615719696643,
+     "ppm_sd": 0.5701627873156973,
+     "ppm_tol": 3.0,
+     "n_psms": 15843,
+     "linked_hyp": 12250,
+     "linked_targeted": 337,
+     "unlinked": 3256
+    },
+    "LM2500_DDA": {
+     "ppm_offset": -1.4604535469592024,
+     "ppm_sd": 0.5443117444973093,
+     "ppm_tol": 3.0,
+     "n_psms": 16747,
+     "linked_hyp": 12698,
+     "linked_targeted": 471,
+     "unlinked": 3578
+    },
+    "LM2502_DDA": {
+     "ppm_offset": -1.2722501450963872,
+     "ppm_sd": 0.5293475108851835,
+     "ppm_tol": 3.0,
+     "n_psms": 18544,
+     "linked_hyp": 14818,
+     "linked_targeted": 268,
+     "unlinked": 3458
+    }
+   },
+   "alignment": {
+    "LM2486_DDA": {
+     "n_anchors": 13985,
+     "resid_sd_min": 0.056060951258963515,
+     "n_knots": 30
+    },
+    "LM2487_DDA": {
+     "n_anchors": 16008,
+     "resid_sd_min": 0.03460953606593359,
+     "n_knots": 30
+    },
+    "LM2489_DDA": {
+     "n_anchors": 13241,
+     "resid_sd_min": 0.03790578151273183,
+     "n_knots": 30
+    },
+    "LM2490_DDA": {
+     "n_anchors": 9935,
+     "resid_sd_min": 0.06402625434120987,
+     "n_knots": 30
+    },
+    "LM2500_DDA": {
+     "n_anchors": 9797,
+     "resid_sd_min": 0.09587381008779643,
+     "n_knots": 30
+    },
+    "LM2502_DDA": {
+     "n_anchors": 12349,
+     "resid_sd_min": 0.05433997107207921,
+     "n_knots": 30
+    }
+   },
+   "mbr": {
+    "sd_log2_intensity": 1.0,
+    "runs": {
+     "LM2486_DDA": {
+      "n_candidates": 6373,
+      "n_with_target_peak": 3093,
+      "median_rt_window_min": 0.3081846221303406,
+      "ppm_tol": 2.0
+     },
+     "LM2487_DDA": {
+      "n_candidates": 4812,
+      "n_with_target_peak": 2680,
+      "median_rt_window_min": 0.1728126707332464,
+      "ppm_tol": 2.0
+     },
+     "LM2489_DDA": {
+      "n_candidates": 7230,
+      "n_with_target_peak": 3492,
+      "median_rt_window_min": 0.12273022918620285,
+      "ppm_tol": 2.0
+     },
+     "LM2490_DDA": {
+      "n_candidates": 10183,
+      "n_with_target_peak": 4125,
+      "median_rt_window_min": 0.3486922773716805,
+      "ppm_tol": 2.0
+     },
+     "LM2500_DDA": {
+      "n_candidates": 10262,
+      "n_with_target_peak": 4079,
+      "median_rt_window_min": 0.5862883563024447,
+      "ppm_tol": 2.0
+     },
+     "LM2502_DDA": {
+      "n_candidates": 8135,
+      "n_with_target_peak": 4068,
+      "median_rt_window_min": 0.20604987490808138,
+      "ppm_tol": 2.0
+     }
+    }
+   },
+   "n_transfers_accepted": 10331,
+   "transfers_per_run": {
+    "LM2486_DDA": 607,
+    "LM2487_DDA": 900,
+    "LM2489_DDA": 2772,
+    "LM2490_DDA": 1104,
+    "LM2500_DDA": 1641,
+    "LM2502_DDA": 3307
+   },
+   "peptidoforms_identified": 21743,
+   "peptidoforms_by_class": {
+    "0": 19798,
+    "1": 1242,
+    "2": 703
+   },
+   "per_run_peptidoforms": {
+    "LM2486_DDA": 13835,
+    "LM2487_DDA": 15492,
+    "LM2489_DDA": 12891,
+    "LM2490_DDA": 10120,
+    "LM2500_DDA": 9910,
+    "LM2502_DDA": 12135
+   },
+   "per_run_by_class": {
+    "LM2486_DDA": {
+     "0": 12815,
+     "1": 646,
+     "2": 374
+    },
+    "LM2487_DDA": {
+     "0": 14352,
+     "1": 719,
+     "2": 421
+    },
+    "LM2489_DDA": {
+     "0": 11895,
+     "1": 600,
+     "2": 396
+    },
+    "LM2490_DDA": {
+     "0": 9309,
+     "1": 471,
+     "2": 340
+    },
+    "LM2500_DDA": {
+     "0": 9133,
+     "1": 463,
+     "2": 314
+    },
+    "LM2502_DDA": {
+     "0": 11162,
+     "1": 597,
+     "2": 376
+    }
+   }
+  }
+ },
+ "alpha": 0.01,
+ "donor_alpha": 0.001,
+ "transfer_q": 0.01,
+ "no_LiP_TrP_transfer": "MBR runs separately inside each digest group (acceptors and donors of one group)",
+ "LiP_calls_peptidoforms_ms2": {
+  "tryptic": 13741,
+  "half_tryptic": 8983,
+  "bio_terminal": 127
+ },
+ "LiP_half_tryptic": {
+  "peptidoforms": 8983,
+  "cut_sites_unique": 8473,
+  "proteins_with_cut": 1368,
+  "by_side": {
+   "N": 5113,
+   "C": 3870
+  },
+  "search_class_vs_call": {
+   "bio_terminal": {
+    "0": 0,
+    "1": 126,
+    "2": 1
+   },
+   "half_tryptic": {
+    "0": 0,
+    "1": 5113,
+    "2": 3870
+   },
+   "tryptic": {
+    "0": 13741,
+    "1": 0,
+    "2": 0
+   }
+  },
+  "bio_excluded_reasons": {
+   "Nbio_MetRemoval": 92,
+   "Nbio": 34,
+   "Cbio": 1
+  },
+  "frac_semi_peptidoforms_rescued_as_bio": 0.01394072447859495,
+  "insource_flagged_peptidoforms": 288,
+  "insource_flagged_frac": 0.03206055883335188,
+  "half_tryptic_also_identified_in_TrP": 872
+ },
+ "TrP_calls_peptidoforms_ms2": {
+  "tryptic": 16776,
+  "half_tryptic": 1294,
+  "bio_terminal": 147
+ },
+ "matrix_rows": {
+  "LiP": 26465,
+  "TrP": 22108
+ },
+ "timing_s": {
+  "LiP_link_s": 0.9574210159480572,
+  "LiP_align_s": 0.23716806806623936,
+  "LiP_mbr_s": 19.602630507200956,
+  "LiP_xic_s": 1.901646934915334,
+  "TrP_link_s": 1.052374002058059,
+  "TrP_align_s": 0.17136942595243454,
+  "TrP_mbr_s": 0.7552374936640263,
+  "TrP_xic_s": 1.4925461946986616,
+  "annotate_s": 1.1841273899190128,
+  "insource_s": 4.55580457020551,
+  "total_s": 61.19251662027091
+ }
+}

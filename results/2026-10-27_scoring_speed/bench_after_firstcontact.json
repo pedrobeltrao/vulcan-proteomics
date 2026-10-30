@@ -1,0 +1,1102 @@
+{
+ "one_time": {
+  "python_imports": {
+   "wall_s": 1.6679618442431092,
+   "cpu_core_s": 1.185299
+  },
+  "predictor_and_model_load": {
+   "wall_s": 9.624911077786237,
+   "cpu_core_s": 9.592306999999998,
+   "n": 1
+  },
+  "library_open_warm": {
+   "wall_s": 0.46216418454423547,
+   "cpu_core_s": 0.46141000000000076,
+   "n": 1
+  },
+  "index_load_upload_human_contam": {
+   "wall_s": 2.9220267510972917,
+   "cpu_core_s": 2.910040000000002,
+   "n": 1
+  },
+  "index_load_upload_pfu_contam": {
+   "wall_s": 0.2149726408533752,
+   "cpu_core_s": 0.20931300000000874,
+   "n": 1
+  }
+ },
+ "runs": {
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "tag": "warmup",
+   "ds": "D0",
+   "n_ms2": 41820,
+   "n_psms": 147151,
+   "nce": 23.0,
+   "cache_stats": {
+    "rt_hits": 0,
+    "rt_miss": 147151,
+    "ms2_hits": 3583,
+    "ms2_miss": 143568,
+    "predict_s": 2.0522304219193757,
+    "n_predicted_rt": 116540,
+    "n_predicted_ms2": 122836,
+    "library_load_s": 0.00036818208172917366
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.15316557278856635,
+     "cpu_core_s": 0.14238500000000087,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.2297433577477932,
+     "cpu_core_s": 0.22940599999999733,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 3.1912281247787178,
+     "cpu_core_s": 3.0804280000000013,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.07266598334535956,
+     "cpu_core_s": 0.07258900000000068,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.09193674381822348,
+     "cpu_core_s": 0.08620499999999254,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.4984648018144071,
+     "cpu_core_s": 0.4826230000000038,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.03034469997510314
+    },
+    "features.nce_select": {
+     "wall_s": 0.8465838730335236
+    },
+    "features.fragment_features": {
+     "wall_s": 1.5523992883972824
+    },
+    "features.rt": {
+     "wall_s": 0.761526052840054
+    },
+    "features.total": {
+     "wall_s": 3.1909533431753516
+    },
+    "features.of_which_predict": {
+     "wall_s": 2.0522304219193757
+    }
+   },
+   "scoring_total": {
+    "wall_s": 3.854648325126618,
+    "cpu_core_s": 3.722141999999998
+   },
+   "end_to_end_total": {
+    "wall_s": 4.23768292600289,
+    "cpu_core_s": 4.094037
+   },
+   "ids_1pct": 11269,
+   "proteins_1pct": 4701
+  },
+  "E9_0000__H0799BL": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 134146,
+   "n_psms": 230809,
+   "nce": 26.0,
+   "cache_stats": {
+    "rt_hits": 0,
+    "rt_miss": 230809,
+    "ms2_hits": 4877,
+    "ms2_miss": 225932,
+    "predict_s": 3.520288133993745,
+    "n_predicted_rt": 196383,
+    "n_predicted_ms2": 204218,
+    "library_load_s": 0.00023620529100298882
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.227874212898314,
+     "cpu_core_s": 0.22796499999999753,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.3683088510297239,
+     "cpu_core_s": 0.3682620000000014,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 4.719856901094317,
+     "cpu_core_s": 4.7202860000000015,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.09155022399500012,
+     "cpu_core_s": 0.09044600000000003,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.15116906678304076,
+     "cpu_core_s": 0.15118000000000364,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.924631655216217,
+     "cpu_core_s": 0.9247990000000001,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.028385550249367952
+    },
+    "features.nce_select": {
+     "wall_s": 0.720240063033998
+    },
+    "features.fragment_features": {
+     "wall_s": 3.0365225919522345
+    },
+    "features.rt": {
+     "wall_s": 0.9343257327564061
+    },
+    "features.total": {
+     "wall_s": 4.719587688334286
+    },
+    "features.of_which_predict": {
+     "wall_s": 3.520288133993745
+    }
+   },
+   "scoring_total": {
+    "wall_s": 5.887468179222196,
+    "cpu_core_s": 5.886916999999997
+   },
+   "end_to_end_total": {
+    "wall_s": 6.483775158878416,
+    "cpu_core_s": 6.483243999999999
+   },
+   "ids_1pct": 32623,
+   "proteins_1pct": 3722
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 20275,
+   "n_psms": 49022,
+   "nce": 23.0,
+   "cache_stats": {
+    "rt_hits": 6843,
+    "rt_miss": 42179,
+    "ms2_hits": 7052,
+    "ms2_miss": 41970,
+    "predict_s": 0.6678940951824188,
+    "n_predicted_rt": 38532,
+    "n_predicted_ms2": 39831,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.04558566212654114,
+     "cpu_core_s": 0.045340000000003045,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.05584103427827358,
+     "cpu_core_s": 0.05583899999999886,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 1.3217257652431726,
+     "cpu_core_s": 1.3217500000000015,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.01798210572451353,
+     "cpu_core_s": 0.01797399999999527,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.024351335130631924,
+     "cpu_core_s": 0.024439999999998463,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.1387785729020834,
+     "cpu_core_s": 0.13879299999999972,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.005529557820409536
+    },
+    "features.nce_select": {
+     "wall_s": 0.5482447110116482
+    },
+    "features.fragment_features": {
+     "wall_s": 0.5443696761503816
+    },
+    "features.rt": {
+     "wall_s": 0.22338400315493345
+    },
+    "features.total": {
+     "wall_s": 1.3215652639046311
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.6678940951824188
+    }
+   },
+   "scoring_total": {
+    "wall_s": 1.503054735250771,
+    "cpu_core_s": 1.5031290000000013
+   },
+   "end_to_end_total": {
+    "wall_s": 1.604604766704142,
+    "cpu_core_s": 1.604409000000004
+   },
+   "ids_1pct": 9936,
+   "proteins_1pct": 2621
+  },
+  "E9_0002__MGP2": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 20519,
+   "n_psms": 22953,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 22953,
+    "rt_miss": 0,
+    "ms2_hits": 22953,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.058192973025143147,
+     "cpu_core_s": 0.058329999999997995,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.049390602856874466,
+     "cpu_core_s": 0.04934299999999325,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.5549084511585534,
+     "cpu_core_s": 0.5547329999999988,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.008189971093088388,
+     "cpu_core_s": 0.008187999999996975,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.012058666907250881,
+     "cpu_core_s": 0.012045000000000528,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.09835377475246787,
+     "cpu_core_s": 0.09833499999999162,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.004746472928673029
+    },
+    "features.nce_select": {
+     "wall_s": 0.5153938089497387
+    },
+    "features.fragment_features": {
+     "wall_s": 0.027803626842796803
+    },
+    "features.rt": {
+     "wall_s": 0.006813304964452982
+    },
+    "features.total": {
+     "wall_s": 0.5547813200391829
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 0.6737041338346899,
+    "cpu_core_s": 0.6734590000000011
+   },
+   "end_to_end_total": {
+    "wall_s": 0.7814114959910512,
+    "cpu_core_s": 0.7812369999999973
+   },
+   "ids_1pct": 4127,
+   "proteins_1pct": 1158
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 50257,
+   "n_psms": 60526,
+   "nce": 32.0,
+   "cache_stats": {
+    "rt_hits": 0,
+    "rt_miss": 60526,
+    "ms2_hits": 4842,
+    "ms2_miss": 55684,
+    "predict_s": 0.815538052469492,
+    "n_predicted_rt": 44370,
+    "n_predicted_ms2": 45140,
+    "library_load_s": 0.00022756215184926987
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.07177132181823254,
+     "cpu_core_s": 0.07189300000000287,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.096965451259166,
+     "cpu_core_s": 0.09694499999999806,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 1.6093738339841366,
+     "cpu_core_s": 1.608392000000002,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.02291340660303831,
+     "cpu_core_s": 0.02288799999999469,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.030908366199582815,
+     "cpu_core_s": 0.030889000000001943,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.4173866147175431,
+     "cpu_core_s": 0.41593800000000414,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.008630001917481422
+    },
+    "features.nce_select": {
+     "wall_s": 0.6696303011849523
+    },
+    "features.fragment_features": {
+     "wall_s": 0.669233534950763
+    },
+    "features.rt": {
+     "wall_s": 0.26166854007169604
+    },
+    "features.total": {
+     "wall_s": 1.6092040999792516
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.815538052469492
+    }
+   },
+   "scoring_total": {
+    "wall_s": 2.0808086721226573,
+    "cpu_core_s": 2.0782900000000026
+   },
+   "end_to_end_total": {
+    "wall_s": 2.2496579638682306,
+    "cpu_core_s": 2.2472210000000032
+   },
+   "ids_1pct": 8519,
+   "proteins_1pct": 1037
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 59625,
+   "n_psms": 248031,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 248031,
+    "rt_miss": 0,
+    "ms2_hits": 248031,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.34431930910795927,
+     "cpu_core_s": 0.33981400000000406,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.2165787210687995,
+     "cpu_core_s": 0.2152889999999914,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.8758665509521961,
+     "cpu_core_s": 0.8730369999999965,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.09206387586891651,
+     "cpu_core_s": 0.09198299999999904,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.1322378171607852,
+     "cpu_core_s": 0.13219500000001005,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.5316283227875829,
+     "cpu_core_s": 0.5308909999999969,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.042959682177752256
+    },
+    "features.nce_select": {
+     "wall_s": 0.5462921410799026
+    },
+    "features.fragment_features": {
+     "wall_s": 0.21624251687899232
+    },
+    "features.rt": {
+     "wall_s": 0.06997477496042848
+    },
+    "features.total": {
+     "wall_s": 0.875584077090025
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 1.6320384382270277,
+    "cpu_core_s": 1.6282989999999984
+   },
+   "end_to_end_total": {
+    "wall_s": 2.1930626779794693,
+    "cpu_core_s": 2.183503000000009
+   },
+   "ids_1pct": 6789,
+   "proteins_1pct": 1247
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 66278,
+   "n_psms": 83611,
+   "nce": 26.0,
+   "cache_stats": {
+    "rt_hits": 22061,
+    "rt_miss": 61550,
+    "ms2_hits": 20380,
+    "ms2_miss": 63231,
+    "predict_s": 0.980259099509567,
+    "n_predicted_rt": 53571,
+    "n_predicted_ms2": 56900,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.06086552515625954,
+     "cpu_core_s": 0.060725999999995395,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.11591191496700048,
+     "cpu_core_s": 0.11580800000000124,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 1.8205001638270915,
+     "cpu_core_s": 1.8169639999999987,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.02751981094479561,
+     "cpu_core_s": 0.02747699999999753,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.04735653009265661,
+     "cpu_core_s": 0.047392999999999574,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.5053774369880557,
+     "cpu_core_s": 0.5052280000000025,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.012576354201883078
+    },
+    "features.nce_select": {
+     "wall_s": 0.6493364740163088
+    },
+    "features.fragment_features": {
+     "wall_s": 0.8575522559694946
+    },
+    "features.rt": {
+     "wall_s": 0.30079682217910886
+    },
+    "features.total": {
+     "wall_s": 1.8203172790817916
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.980259099509567
+    }
+   },
+   "scoring_total": {
+    "wall_s": 2.4009889350272715,
+    "cpu_core_s": 2.397244999999991
+   },
+   "end_to_end_total": {
+    "wall_s": 2.577887184917927,
+    "cpu_core_s": 2.573879000000005
+   },
+   "ids_1pct": 13778,
+   "proteins_1pct": 1885
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 25220,
+   "n_psms": 97756,
+   "nce": 32.0,
+   "cache_stats": {
+    "rt_hits": 6747,
+    "rt_miss": 91009,
+    "ms2_hits": 8147,
+    "ms2_miss": 89609,
+    "predict_s": 1.2847509155981243,
+    "n_predicted_rt": 72953,
+    "n_predicted_ms2": 75336,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.1748187500052154,
+     "cpu_core_s": 0.1746999999999943,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.10339907696470618,
+     "cpu_core_s": 0.10336800000000324,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 2.2136533302254975,
+     "cpu_core_s": 2.2080509999999975,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.042198389768600464,
+     "cpu_core_s": 0.04183200000000653,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.047225012909621,
+     "cpu_core_s": 0.04701400000000433,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.22977117029950023,
+     "cpu_core_s": 0.228939000000004,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.034215549007058144
+    },
+    "features.nce_select": {
+     "wall_s": 0.6846110741607845
+    },
+    "features.fragment_features": {
+     "wall_s": 1.0858020228333771
+    },
+    "features.rt": {
+     "wall_s": 0.4087775554507971
+    },
+    "features.total": {
+     "wall_s": 2.2134643071331084
+    },
+    "features.of_which_predict": {
+     "wall_s": 1.2847509155981243
+    }
+   },
+   "scoring_total": {
+    "wall_s": 2.533093080855906,
+    "cpu_core_s": 2.5260370000000023
+   },
+   "end_to_end_total": {
+    "wall_s": 2.8114289650693536,
+    "cpu_core_s": 2.8042050000000103
+   },
+   "ids_1pct": 7102,
+   "proteins_1pct": 1280
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 10411,
+   "n_psms": 1042,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 1042,
+    "rt_miss": 0,
+    "ms2_hits": 1042,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.04195955069735646,
+     "cpu_core_s": 0.04202099999999831,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.016169285867363214,
+     "cpu_core_s": 0.016123999999997807,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.22792078321799636,
+     "cpu_core_s": 0.22699999999999676,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.0023436369374394417,
+     "cpu_core_s": 0.002347000000000321,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.0008297748863697052,
+     "cpu_core_s": 0.0008309999999980278,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.005484872031956911,
+     "cpu_core_s": 0.005459000000001879,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.0018366160802543163
+    },
+    "features.nce_select": {
+     "wall_s": 0.20989195676520467
+    },
+    "features.fragment_features": {
+     "wall_s": 0.014537697192281485
+    },
+    "features.rt": {
+     "wall_s": 0.0015277531929314137
+    },
+    "features.total": {
+     "wall_s": 0.22780835395678878
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 0.23673665383830667,
+    "cpu_core_s": 0.2357759999999871
+   },
+   "end_to_end_total": {
+    "wall_s": 0.29497430473566055,
+    "cpu_core_s": 0.29401599999999917
+   },
+   "ids_1pct": 200,
+   "proteins_1pct": 115
+  },
+  "E9_0008__lgg1": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 65101,
+   "n_psms": 159757,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 159757,
+    "rt_miss": 0,
+    "ms2_hits": 159757,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0007885242812335491
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.11621175520122051,
+     "cpu_core_s": 0.11596899999999977,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.16982056945562363,
+     "cpu_core_s": 0.16974699999999388,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.6782613340765238,
+     "cpu_core_s": 0.673564000000006,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.10065375594422221,
+     "cpu_core_s": 0.09806100000000129,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.08365221181884408,
+     "cpu_core_s": 0.08358400000000188,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.3586962749250233,
+     "cpu_core_s": 0.35832499999999357,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.02161364583298564
+    },
+    "features.nce_select": {
+     "wall_s": 0.49327487545087934
+    },
+    "features.fragment_features": {
+     "wall_s": 0.11800162214785814
+    },
+    "features.rt": {
+     "wall_s": 0.04504675418138504
+    },
+    "features.total": {
+     "wall_s": 0.6780202118679881
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 1.221500342246145,
+    "cpu_core_s": 1.2137230000000088
+   },
+   "end_to_end_total": {
+    "wall_s": 1.507644624914974,
+    "cpu_core_s": 1.499527999999998
+   },
+   "ids_1pct": 12532,
+   "proteins_1pct": 2049
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "tag": "D8",
+   "ds": "D8",
+   "n_ms2": 44644,
+   "n_psms": 126517,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 126517,
+    "rt_miss": 0,
+    "ms2_hits": 126517,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0012050080113112926
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.15089307399466634,
+     "cpu_core_s": 0.15046699999999902,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.15343110263347626,
+     "cpu_core_s": 0.15155499999999478,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.733069718349725,
+     "cpu_core_s": 0.7281909999999954,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.05844146618619561,
+     "cpu_core_s": 0.05756900000000087,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.06755142798647285,
+     "cpu_core_s": 0.06704799999999977,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.5751993642188609,
+     "cpu_core_s": 0.5711310000000012,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.027116174809634686
+    },
+    "features.nce_select": {
+     "wall_s": 0.568236093968153
+    },
+    "features.fragment_features": {
+     "wall_s": 0.10203823400661349
+    },
+    "features.rt": {
+     "wall_s": 0.03538291109725833
+    },
+    "features.total": {
+     "wall_s": 0.7328402339480817
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 1.4344988823868334,
+    "cpu_core_s": 1.4241299999999981
+   },
+   "end_to_end_total": {
+    "wall_s": 1.7389595620334148,
+    "cpu_core_s": 1.726265000000005
+   },
+   "ids_1pct": 14499,
+   "proteins_1pct": 3353
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "tag": "D0",
+   "ds": "D0",
+   "n_ms2": 46816,
+   "n_psms": 152335,
+   "nce": 23.0,
+   "cache_stats": {
+    "rt_hits": 23279,
+    "rt_miss": 129056,
+    "ms2_hits": 20803,
+    "ms2_miss": 131532,
+    "predict_s": 1.6783833932131529,
+    "n_predicted_rt": 105154,
+    "n_predicted_ms2": 115125,
+    "library_load_s": 0.00017697596922516823
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.16928051877766848,
+     "cpu_core_s": 0.16636499999999899,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.15428817924112082,
+     "cpu_core_s": 0.15261800000000392,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 2.7984574791043997,
+     "cpu_core_s": 2.7787719999999965,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.060249379836022854,
+     "cpu_core_s": 0.059766000000003316,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.0845745149999857,
+     "cpu_core_s": 0.08453599999999994,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.4353854372166097,
+     "cpu_core_s": 0.4352889999999974,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.02137577999383211
+    },
+    "features.nce_select": {
+     "wall_s": 0.7252267277799547
+    },
+    "features.fragment_features": {
+     "wall_s": 1.5243290141224861
+    },
+    "features.rt": {
+     "wall_s": 0.5271705742925406
+    },
+    "features.total": {
+     "wall_s": 2.7981919208541512
+    },
+    "features.of_which_predict": {
+     "wall_s": 1.6783833932131529
+    }
+   },
+   "scoring_total": {
+    "wall_s": 3.3789956150576472,
+    "cpu_core_s": 3.358635999999997
+   },
+   "end_to_end_total": {
+    "wall_s": 3.702694188337773,
+    "cpu_core_s": 3.6777250000000095
+   },
+   "ids_1pct": 13646,
+   "proteins_1pct": 5167
+  },
+  "Velos005137": {
+   "tag": "D1",
+   "ds": "D1",
+   "n_ms2": 15374,
+   "n_psms": 25345,
+   "nce": 29.0,
+   "cache_stats": {
+    "rt_hits": 25345,
+    "rt_miss": 0,
+    "ms2_hits": 25345,
+    "ms2_miss": 0,
+    "predict_s": 0.0,
+    "n_predicted_rt": 0,
+    "n_predicted_ms2": 0,
+    "library_load_s": 0.0
+   },
+   "sub_stages": {
+    "load_store": {
+     "wall_s": 0.0420652199536562,
+     "cpu_core_s": 0.04218000000000188,
+     "n": 1
+    },
+    "search": {
+     "wall_s": 0.04490076517686248,
+     "cpu_core_s": 0.04470799999999997,
+     "n": 1
+    },
+    "features_total": {
+     "wall_s": 0.487449511885643,
+     "cpu_core_s": 0.4871160000000003,
+     "n": 1
+    },
+    "gbm_apply_total": {
+     "wall_s": 0.011239567771553993,
+     "cpu_core_s": 0.011257000000000517,
+     "n": 1
+    },
+    "double_competition": {
+     "wall_s": 0.013721472583711147,
+     "cpu_core_s": 0.013717999999997232,
+     "n": 1
+    },
+    "protein_total": {
+     "wall_s": 0.0607752176001668,
+     "cpu_core_s": 0.06069800000000214,
+     "n": 1
+    },
+    "features.peaks": {
+     "wall_s": 0.00787915475666523
+    },
+    "features.nce_select": {
+     "wall_s": 0.4371384182013571
+    },
+    "features.fragment_features": {
+     "wall_s": 0.031182487029582262
+    },
+    "features.rt": {
+     "wall_s": 0.011001329869031906
+    },
+    "features.total": {
+     "wall_s": 0.48723556101322174
+    },
+    "features.of_which_predict": {
+     "wall_s": 0.0
+    }
+   },
+   "scoring_total": {
+    "wall_s": 0.5734965079464018,
+    "cpu_core_s": 0.5730339999999998
+   },
+   "end_to_end_total": {
+    "wall_s": 0.6606416208669543,
+    "cpu_core_s": 0.6600810000000052
+   },
+   "ids_1pct": 6052,
+   "proteins_1pct": 838
+  }
+ },
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "loadavg_end": [
+  30.83056640625,
+  33.53369140625,
+  32.9560546875
+ ],
+ "cache": "firstcontact",
+ "library_resident_bytes": 2727430636,
+ "max_rss_bytes": 15850958848,
+ "gpu_max_mem_bytes": 8989649408,
+ "cache_root": "/tmp/vulcan_ss/predcache_firstcontact_new",
+ "library_digest": {
+  "sha256": "fe45da50cb78003da36aac1db3fd5b0711074a6b2a1e2df1fdd04d042ba3ce43",
+  "n_ids": {
+   "a9d5af1427616250/consolidated/ms2_z1/manifest.json": 25,
+   "a9d5af1427616250/consolidated/ms2_z11/manifest.json": 5,
+   "a9d5af1427616250/consolidated/ms2_z2/manifest.json": 7635581,
+   "a9d5af1427616250/consolidated/ms2_z3/manifest.json": 7392518,
+   "a9d5af1427616250/consolidated/ms2_z4/manifest.json": 130443,
+   "a9d5af1427616250/consolidated/ms2_z5/manifest.json": 15876,
+   "a9d5af1427616250/consolidated/ms2_z6/manifest.json": 3374,
+   "a9d5af1427616250/consolidated/ms2_z7/manifest.json": 88,
+   "a9d5af1427616250/consolidated/ms2_z8/manifest.json": 62,
+   "a9d5af1427616250/consolidated/ms2_z9/manifest.json": 5,
+   "a9d5af1427616250/consolidated/rt/manifest.json": 7988805
+  }
+ }
+}

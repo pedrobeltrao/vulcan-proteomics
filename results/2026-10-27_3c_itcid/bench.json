@@ -1,0 +1,182 @@
+{
+ "model": "itcid_linear_pred",
+ "model_sha256": null,
+ "python_import_s": 217.27333266614005,
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": "12.9",
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "sets": {
+  "D4": {
+   "setup_s_unlocked": 53.95911528263241,
+   "lock_wait_s": 2.7630943804979324e-05,
+   "runs": [
+    {
+     "load_s": 0.1762917758896947,
+     "search_s": 0.09538791375234723,
+     "features_s": 10.611581821925938,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 1.0974797140806913,
+     "total_s": 11.980750918854028,
+     "total_core_s": 3.2551750000000013,
+     "n_ms2": 18089,
+     "run": "dq_00096_11cell_90min_sps_A3"
+    },
+    {
+     "load_s": 0.1855871411971748,
+     "search_s": 0.10435281321406364,
+     "features_s": 0.6369815189391375,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.027218823321163654,
+     "total_s": 0.9541481779888272,
+     "total_core_s": 0.9422029999999992,
+     "n_ms2": 20159,
+     "run": "dq_00097_11cell_90min_sps_A5"
+    },
+    {
+     "load_s": 0.13363619102165103,
+     "search_s": 0.10805125813931227,
+     "features_s": 0.6114018429070711,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.03146372828632593,
+     "total_s": 0.8845605212263763,
+     "total_core_s": 0.8764970000000005,
+     "n_ms2": 20755,
+     "run": "dq_00098_11cell_90min_sps_A7"
+    },
+    {
+     "load_s": 0.10292551387101412,
+     "search_s": 0.1157347159460187,
+     "features_s": 0.5170999257825315,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.03412885218858719,
+     "total_s": 0.7698959400877357,
+     "total_core_s": 0.7695179999999997,
+     "n_ms2": 21260,
+     "run": "dq_00099_11cell_90min_sps_A9"
+    }
+   ],
+   "median": {
+    "load_s": 0.15496398345567286,
+    "search_s": 0.10620203567668796,
+    "features_s": 0.6241916809231043,
+    "predict_s_in_features": 0.0,
+    "model_apply_s": 0.03279629023745656,
+    "total_s": 0.9193543496076018,
+    "total_core_s": 0.9093499999999999,
+    "n_ms2": 20457.0
+   },
+   "loadavg": [
+    15.00537109375,
+    15.0849609375,
+    22.66845703125
+   ]
+  },
+  "D10cf": {
+   "setup_s_unlocked": 0.7794755403883755,
+   "lock_wait_s": 1.1216849088668823e-05,
+   "runs": [
+    {
+     "load_s": 0.3196223513223231,
+     "search_s": 0.020302664954215288,
+     "features_s": 12.367591196671128,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.0033240532502532005,
+     "total_s": 12.710844993125647,
+     "total_core_s": 10.343151999999996,
+     "n_ms2": 3782,
+     "run": "Control_HEK_SEC_020118_11b"
+    },
+    {
+     "load_s": 0.31798535911366343,
+     "search_s": 0.018198560923337936,
+     "features_s": 0.06708112079650164,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.002077803947031498,
+     "total_s": 0.4053478632122278,
+     "total_core_s": 0.17840800000000456,
+     "n_ms2": 3274,
+     "run": "Control_HEK_SEC_020118_12b"
+    },
+    {
+     "load_s": 0.3146065631881356,
+     "search_s": 0.018942096270620823,
+     "features_s": 0.07000002590939403,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.002254839986562729,
+     "total_s": 0.40580781223252416,
+     "total_core_s": 0.17744799999999827,
+     "n_ms2": 3516,
+     "run": "Control_HEK_SEC_020118_13b"
+    },
+    {
+     "load_s": 0.3077395102009177,
+     "search_s": 0.017381667159497738,
+     "features_s": 0.1330947009846568,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.002182411029934883,
+     "total_s": 0.46040258603170514,
+     "total_core_s": 0.2116139999999973,
+     "n_ms2": 2847,
+     "run": "Control_HEK_SEC_020118_14b"
+    }
+   ],
+   "median": {
+    "load_s": 0.31629596115089953,
+    "search_s": 0.01857032859697938,
+    "features_s": 0.10154736344702542,
+    "predict_s_in_features": 0.0,
+    "model_apply_s": 0.002218625508248806,
+    "total_s": 0.43310519913211465,
+    "total_core_s": 0.19501100000000093,
+    "n_ms2": 3395.0
+   },
+   "loadavg": [
+    15.26904296875,
+    15.14501953125,
+    22.56591796875
+   ]
+  }
+ }
+}

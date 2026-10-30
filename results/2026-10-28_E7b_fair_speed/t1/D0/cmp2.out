@@ -1,0 +1,47 @@
+[05:27:57] t1_driver D0 sha=2c734fa64161 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=results/2026-10-28_E7b_fair_speed/t1/D0
+[05:27:57] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[05:27:57] mzML b1906_293T_proteinID_01A_QE3_122212: {'cached': True}
+[05:27:57] mzML b1937_293T_proteinID_01B_QE3_122212: {'cached': True}
+[05:27:57] sage chimera R=2 done
+[05:27:57] sage chimera R=5 done
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+[05:28:47] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1003_2003: 130536 PSMs, unmapped 0
+[05:29:39] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/C_1003: 130544 PSMs, unmapped 0
+[05:30:00] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/prod_1004: 120996 PSMs, unmapped 0
+[05:30:33] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1004_2001: 130582 PSMs, unmapped 0
+[05:31:26] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1004_2002: 130474 PSMs, unmapped 0
+[05:32:01] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1004_2003: 130614 PSMs, unmapped 0
+[05:32:38] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/C_1004: 130561 PSMs, unmapped 0
+[05:33:07] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/prod_1005: 120792 PSMs, unmapped 0
+[05:33:51] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1005_2001: 130505 PSMs, unmapped 0
+[05:34:26] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1005_2002: 130485 PSMs, unmapped 0
+[05:34:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/P_1005_2003: 130352 PSMs, unmapped 0
+[05:35:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim2_pred_mokapot/C_1005: 130555 PSMs, unmapped 0
+[05:35:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/prod_1001: 172923 PSMs, unmapped 0
+[05:36:29] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1001_2001: 209798 PSMs, unmapped 0
+[05:37:11] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1001_2002: 209904 PSMs, unmapped 0
+[05:37:48] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1001_2003: 209472 PSMs, unmapped 0
+[05:38:25] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/C_1001: 209664 PSMs, unmapped 0
+[05:38:52] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/prod_1002: 172905 PSMs, unmapped 0
+[05:39:26] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1002_2001: 209342 PSMs, unmapped 0
+[05:40:01] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1002_2002: 209710 PSMs, unmapped 0
+[05:40:38] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1002_2003: 209521 PSMs, unmapped 0
+[05:41:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/C_1002: 210154 PSMs, unmapped 0
+[05:41:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/prod_1003: 172582 PSMs, unmapped 0
+[05:42:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1003_2001: 209562 PSMs, unmapped 0
+[05:43:11] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1003_2002: 209375 PSMs, unmapped 0
+[05:43:44] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1003_2003: 209378 PSMs, unmapped 0
+[05:44:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/C_1003: 209815 PSMs, unmapped 0
+[05:44:42] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/prod_1004: 172578 PSMs, unmapped 0
+[05:45:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1004_2001: 209225 PSMs, unmapped 0
+[05:45:52] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1004_2002: 209445 PSMs, unmapped 0
+[05:46:28] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1004_2003: 209525 PSMs, unmapped 0
+[05:47:01] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/C_1004: 209669 PSMs, unmapped 0
+[05:47:23] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/prod_1005: 172849 PSMs, unmapped 0
+[05:47:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1005_2001: 209630 PSMs, unmapped 0
+[05:48:31] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1005_2002: 209623 PSMs, unmapped 0
+[05:49:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/P_1005_2003: 209116 PSMs, unmapped 0
+[05:49:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_chim5_pred_mokapot/C_1005: 209965 PSMs, unmapped 0
+[05:50:38] sage RT check: {'n_confident': 43967, 'frac_predicted_rt_nonzero': 0.9823871268400998, 'sd_predicted_rt': 0.2359752486561844, 'median_abs_delta_rt_model_confident': 0.05510366, 'spearman_aligned_vs_predicted_confident': 0.9210243368620381, 'pin_has_rt_features': True}
+[05:50:38] driver total 1363s

@@ -1,0 +1,16 @@
+{
+ "a": "/dev/shm/vulcan_e12_<uid>/out/lfq",
+ "b": "/dev/shm/vulcan_e12_<uid>/out/lfq_fast_st2",
+ "only_a": [],
+ "only_b": [],
+ "n_compared": 480,
+ "diff": {},
+ "files_by_kind": {
+  "features.arrow": 96,
+  "hypotheses.arrow": 96,
+  "peptides.parquet": 96,
+  "proteins.parquet": 96,
+  "psms.parquet": 96
+ },
+ "all_equal": true
+}

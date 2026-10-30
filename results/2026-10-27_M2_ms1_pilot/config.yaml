@@ -1,0 +1,59 @@
+# M2 MS1 features / precursor hypotheses / L0.5 pilot / E0 first read (2026-10-27)
+data:
+  dev_only: true            # data/sealed never touched
+  D0: [data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw, data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw]
+  D1: [data/raw/PXD001077/Velos005137.raw]
+  D4_reporter_control: [data/raw/PXD016766/dq_00095_11cell_90min_sps_A1.raw]
+  stores: "python -m vulcan.io.convert (Thermo direct) -> /tmp/vulcan_ms1/store  (scripts/m2/ms1_prepare.sh)"
+  mzml_for_biosaur2: "ThermoRawFileParser 2.0 -f 1 -> /tmp/vulcan_ms1/mzml"
+  fasta: {D0: data/cache/M1e/entrapment/inputs/human_contam.fasta, D1: data/cache/M1e/entrapment/inputs/pfu_contam.fasta}
+feature_finder:   # vulcan.ms1.features.FeatureParams (version vulcan.ms1 0.2)
+  htol_ppm: 8
+  itol_ppm: 8
+  minlh: 2
+  hvf: 1.3
+  gap: 0
+  charges: [1, 2, 3, 4, 5, 6]
+  max_iso: 10
+  min_trace_cos: 0.6
+  min_overlap_for_cos: 1
+  full_norm: true
+  min_avg_cos: 0.8
+  min_explained: 0.5
+  charge_ban: true
+  device: cpu
+reference: {tool: biosaur2 0.3.4 (pip), args: "-nprocs 32 (defaults: -htol 8 -itol 8 -minlh 2 -hvf 1.3 -ivf 5 -minmz 350 -maxmz 1500)"}
+validation:  # scripts/m2/ms1_validate.py
+  mz_window: [350, 1500]
+  match: "any-match, same charge, |dmass| <= 10 ppm, RT intervals overlap (0.05 min slack), |d apex| <= 0.5 min"
+  id_support: "Sage arm-A target PSMs q<=1%: same charge, calc mass within 10 ppm, RT within feature bounds +-0.1 min"
+hypotheses:  # vulcan.ms1.hypotheses.HypothesisParams (version 1.0)
+  hyp_charges: [2, 3, 4, 5, 6]
+  max_rank: 5
+  min_fraction: 0.01
+  agree_ppm: 20
+  max_agree_offset: 3
+  fallback_charges: [2, 3, 4]
+  isotope_errors: [-1, 0, 1, 2, 3]
+  isotope_priors: "from pilot anchors per source (+0.5 pseudocount)"
+pilot:  # vulcan.calib.pilot.PilotParams
+  fraction: 0.10
+  seed: 11
+  q_anchor: 0.01   # label-symmetric: all rank-1 PSMs with Sage spectrum q <= 1% (decoys included)
+  wide_search: {precursor_ppm: [-50, 50], fragment_ppm: [-50, 50], isotope_errors: [-1, 3], charges: [2, 4], var_mods: {M: 15.9949, protein_Nterm: 42.010565}, max_var: 2}
+  open_search: {delta_da: [-150, 500], fragment_ppm: 20, var_mods: none, bin_da: 0.01}
+  calibration: "ppm = f(rt) + g(mz), piecewise-linear knots, robust medians, backfit; component kept only if MAD drops >= 2%"
+  tolerance_rule: "mu +- 4 sd of sigma-clipped (5 sd, 5 rounds) anchor errors; alt cov99 = background-subtracted 99% coverage"
+  reporter_ppm: 10
+searcher: {name: sage, version: "0.14.7 (99407db6)", binary: tools/bin/sage, input: MGF from store (precursor_mz = instrument mono else isolation target), threads: 32}
+e0_arms:  # scripts/m2/pilot_e0.py + scripts/m2/e0_split_arms.py; otherwise prod settings (sage_D0_prod.json): iso [0,2], z 2-4, M ox, max 2 var mods
+  A_raw_prodtol: {spectra: raw, precursor_ppm: [-10, 10], fragment_ppm: [-20, 20]}
+  B_cal_pilottol: {spectra: calibrated, precursor: pilot after, fragment: pilot after}
+  C_cal_prodtol: {spectra: calibrated, precursor_ppm: [-10, 10], fragment_ppm: [-20, 20]}
+  D_raw_pilottol: {spectra: raw, precursor: pilot before, fragment: pilot before}
+  E_cal_cov99tol: {spectra: calibrated, precursor: cov99 after, fragment: cov99 after}
+  F_cal_pilotprec_prodfrag: {spectra: calibrated, precursor: pilot after, fragment_ppm: [-20, 20]}
+  G_cal_prodprec_pilotfrag: {spectra: calibrated, precursor_ppm: [-10, 10], fragment: pilot after}
+  H_cal_pilotprec_frag6sd: {spectra: calibrated, precursor: pilot after, fragment: mu +- 6 sd}
+  counted: "Sage peptide_q <= 0.01 and spectrum_q <= 0.01, targets only"
+benchmark: {lock: "flock /tmp/vulcan_bench.lock via scripts/baselines/timed.py --lock", threads: [32, 4], reps: 2, script: scripts/m2/ms1_bench.sh}

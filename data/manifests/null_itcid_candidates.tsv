@@ -1,0 +1,25 @@
+cand	accession	filename	url	expected_size	instrument	year	lab
+N000	PXD008785	b023p018_OE3_TR01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/04/PXD008785/b023p018_OE3_TR01.raw	675269969	LTQ Orbitrap Velos	2018	Tobias Warnecke
+N011	PXD008785	b023p018_MSS2_TR01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/04/PXD008785/b023p018_MSS2_TR01.raw	678814945	LTQ Orbitrap Velos	2018	Tobias Warnecke
+N010	PXD041682	20210116_GrantC_CunninghamJ_2B4.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/10/PXD041682/20210116_GrantC_CunninghamJ_2B4.raw	848205443	LTQ Orbitrap Elite	2023	Chris Grant
+N021	PXD041682	20210116_GrantC_CunninghamJ_1B2.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/10/PXD041682/20210116_GrantC_CunninghamJ_1B2.raw	916948428	LTQ Orbitrap Elite	2023	Chris Grant
+N020	PXD010849	150225_S_ACVM_11_01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010849/150225_S_ACVM_11_01.raw	177022542	LTQ Orbitrap XL	2018	Amy Curwin
+N031	PXD010849	150225_S_ACVM_12_01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010849/150225_S_ACVM_12_01.raw	180852378	LTQ Orbitrap XL	2018	Amy Curwin
+N030	PXD041908	244_G2_C.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/05/PXD041908/244_G2_C.raw	901638304	LTQ Orbitrap Elite	2023	Michael Polymenis
+N041	PXD041908	246_G2_C.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/05/PXD041908/246_G2_C.raw	963056289	LTQ Orbitrap Elite	2023	Michael Polymenis
+N040	PXD029363	WT_B.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/11/PXD029363/WT_B.raw	930825086	Orbitrap Fusion Lumos	2021	Leonid Kruglyak
+N051	PXD029363	POP1_C.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/11/PXD029363/POP1_C.raw	1282946738	Orbitrap Fusion Lumos	2021	Leonid Kruglyak
+N050	PXD002607	bieli003_thuxx001_20141217_14445_wt_his_smt3_INCL2m.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002607/bieli003_thuxx001_20141217_14445_wt_his_smt3_INCL2m.raw	1472155570	LTQ Orbitrap Velos	2015	Anja-Katrin Bielinsky
+N061	PXD002607	bieli003_thuxx001_20141217_14445_mcm10_his_smt3_INCL2m.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2016/04/PXD002607/bieli003_thuxx001_20141217_14445_mcm10_his_smt3_INCL2m.raw	1294446151	LTQ Orbitrap Velos	2015	Anja-Katrin Bielinsky
+N060	PXD022685	20200608_Yeast_CHP_R3_03a.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/01/PXD022685/20200608_Yeast_CHP_R3_03a.raw	412508840	LTQ Orbitrap Velos	2020	Dr. Vladimir Shulaev
+N071	PXD022685	20200605_Yeast_CEtOH_R2_04a.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/01/PXD022685/20200605_Yeast_CEtOH_R2_04a.raw	443375362	LTQ Orbitrap Velos	2020	Dr. Vladimir Shulaev
+N070	PXD047795	E4_230530_Vyt_3322_mock_S01.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/06/PXD047795/E4_230530_Vyt_3322_mock_S01.raw	1090007387	Orbitrap Fusion Lumos	2023	Marc Bühler
+N081	PXD047795	L3_221219_Vyt_3263_Mock_S02.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/06/PXD047795/L3_221219_Vyt_3263_Mock_S02.raw	1370336128	Orbitrap Fusion Lumos	2023	Marc Bühler
+N080	PXD008586	Y_S_H.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/06/PXD008586/Y_S_H.raw	160035816	LTQ Orbitrap Velos	2018	Ping Xu
+N091	PXD008586	Yeast_SP_C_1.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2018/06/PXD008586/Yeast_SP_C_1.raw	154104066	LTQ Orbitrap Velos	2018	Ping Xu
+N090	PXD053260	ySGCs_yer165w_1_rich.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/08/PXD053260/ySGCs_yer165w_1_rich.raw	1259958910	Orbitrap Fusion Lumos	2024	Adrian R. Ferré-D'Amaré
+N101	PXD053260	ySGCs_yer165w_2_rich.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/08/PXD053260/ySGCs_yer165w_2_rich.raw	654241791	Orbitrap Fusion Lumos	2024	Adrian R. Ferré-D'Amaré
+N100	PXD024352	20200710_f_197_S.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/01/PXD024352/20200710_f_197_S.raw	1055036135	Orbitrap Fusion	2021	Johannes Buchner
+N111	PXD024352	20200710_f_205_P.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/01/PXD024352/20200710_f_205_P.raw	1483862819	Orbitrap Fusion	2021	Johannes Buchner
+N110	PXD015273	MPyeast_P20_1a_11112018.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD015273/MPyeast_P20_1a_11112018.raw	1371075750	Orbitrap Fusion	2019	Edward M. Marcotte
+N121	PXD015273	MPyeast_S15_1a_11102018.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD015273/MPyeast_S15_1a_11102018.raw	1412649974	Orbitrap Fusion	2019	Edward M. Marcotte

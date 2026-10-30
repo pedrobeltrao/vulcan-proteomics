@@ -1,0 +1,132 @@
+[21:35:38] t1_driver D8h sha=2e084a5589da dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h
+[21:35:38] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[21:35:38] cohort: $VULCAN_SCRATCH/vulcan_env/pred/bin/python -m vulcan.cohort --index $VULCAN_SCRATCH/vulcan_t1/D8h/index/prod_1001 --raws /tmp/vulcan_m3e/raw_d8/E9_0000__H0799BL.raw /tmp/vulcan_m3e/raw_d8/E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm.raw /tmp/vulcan_m3e/raw_d8/E9_0002__MGP2.raw /tmp/vulcan_m3e/raw_d8/E9_0003__20180623_PC463-Graves-McDonald_Sample1.raw /tmp/vulcan_m3e/raw_d8/E9_0004__20210122-YP202104470-xh-BT1-3.raw /tmp/vulcan_m3e/raw_d8/E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r.raw /tmp/vulcan_m3e/raw_d8/E9_0006__CL_CTL_p53_ZNF_061025_1.raw /tmp/vulcan_m3e/raw_d8/E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B.raw /tmp/vulcan_m3e/raw_d8/E9_0008__lgg1.raw /tmp/vulcan_m3e/raw_d8/E9_0009__20170210_MCF7_LysC_WT_2b.raw --out $VULCAN_SCRATCH/vulcan_t1/D8h/ours/cohort --stage $VULCAN_SCRATCH/vulcan_t1/D8h/stage --keep-stores --workers 10 --params {"report_psms": 5}
+[21:36:08] loaded 10 stores in 1.3s
+[21:36:14] prod_1001: engine == cohort output: {'E9_0000__H0799BL': True, 'E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm': True, 'E9_0002__MGP2': True, 'E9_0003__20180623_PC463-Graves-McDonald_Sample1': True, 'E9_0004__20210122-YP202104470-xh-BT1-3': True, 'E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r': True, 'E9_0006__CL_CTL_p53_ZNF_061025_1': True, 'E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B': True, 'E9_0008__lgg1': True, 'E9_0009__20170210_MCF7_LysC_WT_2b': True}
+[21:36:14] searched prod_1001: 5.9s
+[21:36:20] searched P_1001_2001: 5.8s
+[21:36:25] searched P_1001_2002: 5.5s
+[21:36:31] searched P_1001_2003: 5.6s
+[21:36:37] searched C_1001: 6.0s
+[21:36:43] searched prod_1002: 5.2s
+[21:36:48] searched P_1002_2001: 5.3s
+[21:36:54] searched P_1002_2002: 5.9s
+[21:37:00] searched P_1002_2003: 6.1s
+[21:37:06] searched C_1002: 5.8s
+[21:37:10] searched prod_1003: 4.5s
+[21:37:16] searched P_1003_2001: 5.3s
+[21:37:21] searched P_1003_2002: 5.4s
+[21:37:26] searched P_1003_2003: 5.3s
+[21:37:32] searched C_1003: 5.4s
+[21:37:36] searched prod_1004: 4.4s
+[21:37:42] searched P_1004_2001: 5.9s
+[21:37:48] searched P_1004_2002: 5.6s
+[21:37:53] searched P_1004_2003: 5.3s
+[21:37:58] searched C_1004: 5.4s
+[21:38:03] searched prod_1005: 4.5s
+[21:38:08] searched P_1005_2001: 5.3s
+[21:38:14] searched P_1005_2002: 5.3s
+[21:38:19] searched P_1005_2003: 5.2s
+[21:38:24] searched C_1005: 5.3s
+[21:40:28] scored prod_1001: 114.0s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:41:28] scored P_1001_2001: 60.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:42:40] scored P_1001_2002: 71.6s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:43:53] scored P_1001_2003: 73.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:45:17] scored C_1001: 84.0s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:46:39] scored prod_1002: 82.0s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:48:12] scored P_1002_2001: 92.8s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:49:26] scored P_1002_2002: 73.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:50:50] scored P_1002_2003: 84.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:52:04] scored C_1002: 73.9s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:53:16] scored prod_1003: 72.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:54:20] scored P_1003_2001: 63.9s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:55:16] scored P_1003_2002: 55.8s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:56:21] scored P_1003_2003: 65.0s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:57:05] scored C_1003: 44.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:57:50] scored prod_1004: 45.1s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:58:34] scored P_1004_2001: 44.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[21:59:20] scored P_1004_2002: 45.8s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:00:05] scored P_1004_2003: 45.1s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:00:51] scored C_1004: 45.8s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:01:38] scored prod_1005: 47.5s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:02:26] scored P_1005_2001: 47.9s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:03:13] scored P_1005_2002: 46.9s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:04:00] scored P_1005_2003: 46.2s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:04:46] scored C_1005: 46.1s nce=[26.0, 23.0, 29.0, 32.0, 29.0, 26.0, 32.0, 29.0, 29.0, 29.0]
+[22:09:52] mzML E9_0000__H0799BL: {'wall_s': 304.3815791606903, 'rc': 0, 'loadavg_end': (15.4013671875, 15.18359375, 21.70947265625), 'core_s': 300.78, 'max_rss_mb': 1846.97265625}
+[22:09:52] mzML E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm: {'wall_s': 64.56508350372314, 'rc': 0, 'loadavg_end': (13.81884765625, 15.1884765625, 23.6640625), 'core_s': 52.96, 'max_rss_mb': 767.73828125}
+[22:09:52] mzML E9_0002__MGP2: {'wall_s': 117.5352292060852, 'rc': 0, 'loadavg_end': (14.35498046875, 15.072265625, 23.1328125), 'core_s': 128.03, 'max_rss_mb': 1965.96875}
+[22:09:52] mzML E9_0003__20180623_PC463-Graves-McDonald_Sample1: {'wall_s': 124.75879144668579, 'rc': 0, 'loadavg_end': (14.28759765625, 15.03662109375, 23.0341796875), 'core_s': 140.13, 'max_rss_mb': 1750.14453125}
+[22:09:52] mzML E9_0004__20210122-YP202104470-xh-BT1-3: {'wall_s': 127.20988607406616, 'rc': 0, 'loadavg_end': (15.72802734375, 15.24267578125, 22.55712890625), 'core_s': 150.08999999999997, 'max_rss_mb': 2237.38671875}
+[22:09:52] mzML E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r: {'wall_s': 68.7866702079773, 'rc': 0, 'loadavg_end': (15.26904296875, 15.14501953125, 22.56591796875), 'core_s': 80.59, 'max_rss_mb': 848.3203125}
+[22:09:52] mzML E9_0006__CL_CTL_p53_ZNF_061025_1: {'wall_s': 55.23415493965149, 'rc': 0, 'loadavg_end': (15.3798828125, 15.16455078125, 22.6123046875), 'core_s': 59.769999999999996, 'max_rss_mb': 762.75390625}
+[22:09:52] mzML E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B: {'wall_s': 82.10583996772766, 'rc': 0, 'loadavg_end': (14.52978515625, 15.02734375, 21.91357421875), 'core_s': 93.42, 'max_rss_mb': 1596.4765625}
+[22:09:52] mzML E9_0008__lgg1: {'wall_s': 107.24209809303284, 'rc': 0, 'loadavg_end': (15.87158203125, 15.271484375, 21.77294921875), 'core_s': 121.51, 'max_rss_mb': 1683.875}
+[22:09:52] mzML E9_0009__20170210_MCF7_LysC_WT_2b: {'wall_s': 89.17467999458313, 'rc': 0, 'loadavg_end': (14.7919921875, 15.05712890625, 21.77587890625), 'core_s': 103.66, 'max_rss_mb': 1455.4921875}
+[22:10:48] sage prod_1001 done
+[22:12:05] sage P_1001_2001 done
+[22:13:14] sage P_1001_2002 done
+[22:14:23] sage P_1001_2003 done
+[22:15:33] sage C_1001 done
+[22:16:21] sage prod_1002 done
+[22:17:34] sage P_1002_2001 done
+[22:18:47] sage P_1002_2002 done
+[22:20:06] sage P_1002_2003 done
+[22:21:22] sage C_1002 done
+[22:22:15] sage prod_1003 done
+[22:23:25] sage P_1003_2001 done
+[22:24:40] sage P_1003_2002 done
+[22:25:56] sage P_1003_2003 done
+[22:27:13] sage C_1003 done
+[22:28:06] sage prod_1004 done
+[22:29:19] sage P_1004_2001 done
+[22:30:33] sage P_1004_2002 done
+[22:31:43] sage P_1004_2003 done
+[22:33:03] sage C_1004 done
+[22:33:54] sage prod_1005 done
+[22:35:09] sage P_1005_2001 done
+[22:36:20] sage P_1005_2002 done
+[22:37:28] sage P_1005_2003 done
+[22:38:40] sage C_1005 done
+[22:39:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/prod_1001: 304833 PSMs, unmapped 0
+[22:40:29] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1001_2001: 321494 PSMs, unmapped 0
+[22:41:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1001_2002: 321577 PSMs, unmapped 0
+[22:42:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1001_2003: 321422 PSMs, unmapped 0
+[22:43:17] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/C_1001: 321415 PSMs, unmapped 0
+[22:44:10] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/prod_1002: 304799 PSMs, unmapped 0
+[22:45:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1002_2001: 321514 PSMs, unmapped 0
+[22:46:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1002_2002: 321459 PSMs, unmapped 0
+[22:47:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1002_2003: 321530 PSMs, unmapped 0
+[22:48:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/C_1002: 321560 PSMs, unmapped 0
+[22:49:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/prod_1003: 304741 PSMs, unmapped 0
+[22:50:06] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1003_2001: 321559 PSMs, unmapped 0
+[22:51:06] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1003_2002: 321419 PSMs, unmapped 0
+[22:52:13] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1003_2003: 321340 PSMs, unmapped 0
+[22:53:10] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/C_1003: 321402 PSMs, unmapped 0
+[22:54:11] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/prod_1004: 304772 PSMs, unmapped 0
+[22:55:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1004_2001: 321343 PSMs, unmapped 0
+[22:56:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1004_2002: 321293 PSMs, unmapped 0
+[22:57:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1004_2003: 321493 PSMs, unmapped 0
+[22:59:06] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/C_1004: 321330 PSMs, unmapped 0
+[23:00:24] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/prod_1005: 304696 PSMs, unmapped 0
+[23:01:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1005_2001: 321518 PSMs, unmapped 0
+[23:03:36] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1005_2002: 321503 PSMs, unmapped 0
+[23:04:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/P_1005_2003: 321387 PSMs, unmapped 0
+[23:06:22] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D8h/cmp/sage_pred_mokapot/C_1005: 321565 PSMs, unmapped 0
+[23:08:00] sage RT check: {'n_confident': 160937, 'frac_predicted_rt_nonzero': 0.9993603054787376, 'sd_predicted_rt': 0.17929871775528924, 'median_abs_delta_rt_model_confident': 0.08180553, 'spearman_aligned_vs_predicted_confident': 0.852867597490656, 'pin_has_rt_features': True}
+[23:08:00] driver total 5543s
+[23:42:26] t1_driver D8h sha=efc638e02204 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h
+[23:42:26] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[23:42:29] evaluate vulcan
+[00:10:36] evaluate vulcan_chim_v1
+[00:39:52] evaluate vulcan_chim_v1_sep
+[01:29:50] t1_driver D8h sha=8fb233098a14 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h
+[01:29:51] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[01:29:53] evaluate vulcan
+[02:11:27] t1_driver D8h sha=8fb233098a14 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h
+[02:11:29] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[02:11:30] evaluate vulcan
+[02:39:00] evaluate vulcan_v2_sep
+[03:19:32] evaluate sage+pred+mokapot
+[03:50:32] driver total 5947s
+[03:50:33] wrote metrics.json and tables.md

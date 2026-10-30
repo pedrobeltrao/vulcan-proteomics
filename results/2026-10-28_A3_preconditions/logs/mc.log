@@ -1,0 +1,5 @@
+S1_dev_like {"pass": true, "worst": ["union@0.01", -0.0003544059562375374], "wall_s": 267.7923371330835}
+S2_small_merge {"pass": true, "worst": ["union@0.01", -0.0004606306367258336], "wall_s": 86.20570698799565}
+S3_strong_heterogeneity {"pass": true, "worst": ["union@0.01", -0.0003399054285216467], "wall_s": 300.4631550889462}
+S4_cross_rank_pairs {"pass": true, "worst": ["merged:1@0.01", -0.0012714086769269987], "wall_s": 112.09691891260445}
+MC v2_sep pass: True

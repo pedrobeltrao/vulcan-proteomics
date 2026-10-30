@@ -1,0 +1,585 @@
+{
+ "items": {
+  "i_exact_a2_stats": {
+   "tail_clean": {
+    "a6": "pass",
+    "a2_component": "pass",
+    "ucb_abs": 0.5168619321831299,
+    "diff_stat": 0.025272257145893755
+   },
+   "tail_margin": {
+    "a6": "fail",
+    "a2_component": "fail",
+    "ucb_abs": 0.6263394827523373,
+    "diff_stat": 0.1263394827523373
+   },
+   "tail_leak": {
+    "a6": "fail",
+    "a2_component": "fail",
+    "ucb_abs": 0.7164694176925641,
+    "diff_stat": 0.23896941769256413
+   },
+   "tail_invalid": {
+    "a6": "not-evaluable (invalid pool)",
+    "a2_component": "not-evaluable (invalid pool)",
+    "ucb_abs": 0.6438574079811663,
+    "diff_stat": 0.1438574079811663
+   },
+   "state_verdicts": {
+    "clean": "pass",
+    "margin": "fail",
+    "leak": "fail",
+    "invalid": "not-evaluable (invalid pool)"
+   },
+   "g1": {
+    "clean": "fail",
+    "rho_0.08": "fail",
+    "small": "not-evaluable",
+    "hull": [
+     -0.06807297699201793,
+     0.06430542277881389
+    ],
+    "fisher": [
+     -0.027512945169749854,
+     0.023731296839795326
+    ]
+   },
+   "g3": {
+    "clean": "pass",
+    "gap_0.05": "fail",
+    "small": "not-evaluable"
+   },
+   "g2_original": {
+    "clean": "pass",
+    "overall_ucb": 0.0009271584205390812
+   }
+  },
+  "ii_c9_a4_reproduction": {
+   "cap_factors": {
+    "n_cases": 500,
+    "n_min_of_three_cases": 430,
+    "bitwise_equal": true
+   },
+   "iut_precedence": {
+    "n_combinations": 16,
+    "equal": true
+   },
+   "c9_tail_iut": {
+    "n_states": 48,
+    "a2_component_iut_equal_c9": true,
+    "n_capped_tail_equal": true,
+    "bounds_tol": 1e-12,
+    "a6_final_equal_c9": 48,
+    "a6_final_more_lenient_than_c9": 0,
+    "B": 400,
+    "states": {
+     "clean|k1.0|s0": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k1.0|s1": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k1.0|s2": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k1.0|s3": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k1.0|s4": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k1.0|s5": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k0.5|s0": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k0.5|s1": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k0.5|s2": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k0.5|s3": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "clean|k0.5|s4": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "clean|k0.5|s5": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "margin_tau|k1.0|s0": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "margin_tau|k1.0|s1": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k1.0|s2": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k1.0|s3": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k1.0|s4": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k1.0|s5": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s0": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s1": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s2": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s3": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s4": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "margin_tau|k0.5|s5": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s0": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s1": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s2": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s3": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s4": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k1.0|s5": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s0": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s1": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s2": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s3": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s4": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "leak25|k0.5|s5": {
+      "c9": "fail",
+      "a6_a2_component_iut": "fail",
+      "a6_final": "fail"
+     },
+     "contam_0.05|k1.0|s0": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k1.0|s1": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k1.0|s2": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k1.0|s3": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k1.0|s4": {
+      "c9": "pass",
+      "a6_a2_component_iut": "pass",
+      "a6_final": "pass"
+     },
+     "contam_0.05|k1.0|s5": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s0": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s1": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s2": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s3": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s4": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     },
+     "contam_0.05|k0.5|s5": {
+      "c9": "not-evaluable (invalid pool)",
+      "a6_a2_component_iut": "not-evaluable (invalid pool)",
+      "a6_final": "not-evaluable (invalid pool)"
+     }
+    },
+    "note": "c9_power.tail_iut has no project bootstrap and no stricter difference clause; a6's final verdict may only be stricter"
+   }
+  },
+  "iii_coverage": {
+   "G1_jackknife_cluster_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.9975,
+    "coverage_lower": 0.995,
+    "coverage_upper": 0.995,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_fisher": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.9975,
+     "coverage_lower": 0.998,
+     "coverage_upper": 0.998,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.03
+   },
+   "G1_jackknife_cluster_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.9975,
+    "coverage_lower": 0.998,
+    "coverage_upper": 0.999,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_fisher": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.9975,
+     "coverage_lower": 1.0,
+     "coverage_upper": 0.999,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   },
+   "G1_jackknife_project_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.9975,
+    "coverage_lower": 1.0,
+    "coverage_upper": 0.989,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_fisher": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.9975,
+     "coverage_lower": 1.0,
+     "coverage_upper": 0.991,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.03
+   },
+   "G1_jackknife_project_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.9975,
+    "coverage_lower": 0.999,
+    "coverage_upper": 0.991,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_fisher": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.9975,
+     "coverage_lower": 1.0,
+     "coverage_upper": 0.997,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   },
+   "TOST_bootstrap_cluster_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.975,
+    "coverage_lower": 0.972,
+    "coverage_upper": 0.97,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_newcombe": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.975,
+     "coverage_lower": 0.981,
+     "coverage_upper": 0.974,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.01
+   },
+   "TOST_bootstrap_cluster_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.975,
+    "coverage_lower": 0.954,
+    "coverage_upper": 0.966,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_newcombe": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.975,
+     "coverage_lower": 0.973,
+     "coverage_upper": 0.981,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   },
+   "TOST_bootstrap_project_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.975,
+    "coverage_lower": 0.957,
+    "coverage_upper": 0.972,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_newcombe": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.975,
+     "coverage_lower": 0.965,
+     "coverage_upper": 0.977,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.01
+   },
+   "TOST_bootstrap_project_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.975,
+    "coverage_lower": 0.977,
+    "coverage_upper": 0.972,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_newcombe": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.975,
+     "coverage_lower": 0.983,
+     "coverage_upper": 0.983,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   },
+   "G2_original_bootstrap_cluster_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.95,
+    "coverage_lower": null,
+    "coverage_upper": 0.923,
+    "mc_se": 0.006892024376045111,
+    "pass": false,
+    "within_2se_of_0.95": false,
+    "envelope_with_analytic": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.95,
+     "coverage_lower": null,
+     "coverage_upper": 0.938,
+     "mc_se": 0.006892024376045111,
+     "pass": false,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.01
+   },
+   "G2_original_bootstrap_cluster_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.95,
+    "coverage_lower": null,
+    "coverage_upper": 0.932,
+    "mc_se": 0.006892024376045111,
+    "pass": false,
+    "within_2se_of_0.95": false,
+    "envelope_with_analytic": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.95,
+     "coverage_lower": null,
+     "coverage_upper": 0.956,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   },
+   "G2_original_bootstrap_project_het": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.95,
+    "coverage_lower": null,
+    "coverage_upper": 0.959,
+    "mc_se": 0.006892024376045111,
+    "pass": true,
+    "within_2se_of_0.95": true,
+    "envelope_with_analytic": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.95,
+     "coverage_lower": null,
+     "coverage_upper": 0.968,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.01
+   },
+   "G2_original_bootstrap_project_hom": {
+    "n_rep": 1000,
+    "nominal_one_sided": 0.95,
+    "coverage_lower": null,
+    "coverage_upper": 0.944,
+    "mc_se": 0.006892024376045111,
+    "pass": false,
+    "within_2se_of_0.95": true,
+    "envelope_with_analytic": {
+     "n_rep": 1000,
+     "nominal_one_sided": 0.95,
+     "coverage_lower": null,
+     "coverage_upper": 0.956,
+     "mc_se": 0.006892024376045111,
+     "pass": true,
+     "within_2se_of_0.95": true
+    },
+    "tau": 0.0
+   }
+  },
+  "v1_combiner": {
+   "ok": true,
+   "evaluate_pool_smoke": {
+    "tail_G2": "pass",
+    "G1": "fail",
+    "G3": "pass",
+    "G2_original": "fail",
+    "G5": "pass",
+    "FS": "pass",
+    "subset_check": "pass"
+   }
+  }
+ },
+ "wall_s": 393.69393944740295,
+ "summary": {
+  "i_exact_a2_stats": true,
+  "ii_c9_a4_reproduction": true,
+  "iii_coverage_all_components_ge_0.95": false,
+  "n_coverage_components": 12,
+  "coverage_reps": 1000,
+  "coverage_B": 1000,
+  "J": 37,
+  "failed_coverage_components": [
+   "G2_original_bootstrap_cluster_het",
+   "G2_original_bootstrap_cluster_hom",
+   "G2_original_bootstrap_project_hom"
+  ],
+  "acceptance_pass": false
+ },
+ "run": {
+  "command": "OMP_NUM_THREADS=4 A6_COV_REPS=1000 conda_envs/pe/bin/python -m pytest tests/a6/test_a6_stats.py -q -rA",
+  "date": "2026-10-28 12:45-12:52 CET",
+  "pytest": "23 passed, 3 failed (G2_original_bootstrap cluster-het, cluster-hom, project-hom)",
+  "note": "summary.failed_coverage_components/acceptance_pass added post hoc with the same logic now in test_zz_write_results (no re-run, to spare the shared node)"
+ }
+}

@@ -1,0 +1,369 @@
+{
+ "mode": "reference",
+ "cohort": "$VULCAN_SCRATCH/vulcan_e7b/out/base12",
+ "index": "/tmp/vulcan_e2/index/human_contam_prod",
+ "lib": "/tmp/vulcan_ss/predlib",
+ "runs": {
+  "E9_0000__H0799BL": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 35997,
+     "cohort": 35997,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 42909,
+     "cohort": 42909,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 47374,
+     "cohort": 47374,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    4002,
+    4002
+   ],
+   "nce": 26.0,
+   "wall_s": 156.72127318382263,
+   "ok": true
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 9658,
+     "cohort": 9658,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 10024,
+     "cohort": 10024,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 10463,
+     "cohort": 10463,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    2639,
+    2639
+   ],
+   "nce": 23.0,
+   "wall_s": 2.859565496444702,
+   "ok": true
+  },
+  "E9_0002__MGP2": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 3265,
+     "cohort": 3265,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 4395,
+     "cohort": 4395,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 4722,
+     "cohort": 4722,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    1261,
+    1261
+   ],
+   "nce": 29.0,
+   "wall_s": 9.280184507369995,
+   "ok": true
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 8176,
+     "cohort": 8176,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 9882,
+     "cohort": 9882,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 10732,
+     "cohort": 10732,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    1123,
+    1123
+   ],
+   "nce": 32.0,
+   "wall_s": 7.1305248737335205,
+   "ok": true
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 5014,
+     "cohort": 5014,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 8406,
+     "cohort": 8406,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 9368,
+     "cohort": 9368,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    1504,
+    1504
+   ],
+   "nce": 29.0,
+   "wall_s": 10.345556259155273,
+   "ok": true
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 11683,
+     "cohort": 11683,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 14980,
+     "cohort": 14980,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 16178,
+     "cohort": 16178,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    1939,
+    1939
+   ],
+   "nce": 26.0,
+   "wall_s": 4.0591747760772705,
+   "ok": true
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 5560,
+     "cohort": 5560,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 8166,
+     "cohort": 8166,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 8775,
+     "cohort": 8775,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    1357,
+    1357
+   ],
+   "nce": 32.0,
+   "wall_s": 3.5755906105041504,
+   "ok": true
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 0,
+     "cohort": 0,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 207,
+     "cohort": 207,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 218,
+     "cohort": 218,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    120,
+    120
+   ],
+   "nce": 29.0,
+   "wall_s": 7.401095151901245,
+   "ok": true
+  },
+  "E9_0008__lgg1": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 11926,
+     "cohort": 11926,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 14933,
+     "cohort": 14933,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 16533,
+     "cohort": 16533,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    2216,
+    2216
+   ],
+   "nce": 29.0,
+   "wall_s": 9.364123344421387,
+   "ok": true
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 13698,
+     "cohort": 13698,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 18289,
+     "cohort": 18289,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 19971,
+     "cohort": 19971,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    3874,
+    3874
+   ],
+   "nce": 29.0,
+   "wall_s": 6.231048107147217,
+   "ok": true
+  },
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 11359,
+     "cohort": 11359,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 13716,
+     "cohort": 13716,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 14724,
+     "cohort": 14724,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    5265,
+    5265
+   ],
+   "nce": 23.0,
+   "wall_s": 19.21415090560913,
+   "ok": true
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "hypotheses_differing_columns": [],
+   "psm_differing_columns": [],
+   "score_bitwise": true,
+   "peptides_differing_columns": [],
+   "ids": {
+    "0.001": {
+     "ref": 15043,
+     "cohort": 15043,
+     "identical": true
+    },
+    "0.01": {
+     "ref": 16711,
+     "cohort": 16711,
+     "identical": true
+    },
+    "0.05": {
+     "ref": 17869,
+     "cohort": 17869,
+     "identical": true
+    }
+   },
+   "proteins_1pct": [
+    5719,
+    5719
+   ],
+   "nce": 23.0,
+   "wall_s": 24.88350510597229,
+   "ok": true
+  }
+ },
+ "all_ok": true
+}

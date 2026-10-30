@@ -1,0 +1,278 @@
+{
+ "rules": {
+  "f_max": 0.05,
+  "contaminant_pairs_dropped": true,
+  "sage_spectrum_q": 0.001,
+  "n_contaminant_target_peptides": 29492
+ },
+ "per_run": {
+  "b1906_293T_proteinID_01A_QE3_122212": {
+   "project": "PXD001468",
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "n_ms2": 41820,
+   "cert_hs": {
+    "n_certified": 10644,
+    "A_cand": 4869,
+    "tail_proxy_own_thr": 23
+   },
+   "cert_agree": {
+    "n_certified": 10574,
+    "A_cand": 4840,
+    "tail_proxy_own_thr": 19
+   },
+   "removed_rows_homolog_or_contam": 45460,
+   "removed_rows_ladder": 35659
+  },
+  "b1937_293T_proteinID_01B_QE3_122212": {
+   "project": "PXD001468",
+   "run": "b1937_293T_proteinID_01B_QE3_122212",
+   "n_ms2": 46816,
+   "cert_hs": {
+    "n_certified": 9846,
+    "A_cand": 4367,
+    "tail_proxy_own_thr": 26
+   },
+   "cert_agree": {
+    "n_certified": 9782,
+    "A_cand": 4341,
+    "tail_proxy_own_thr": 26
+   },
+   "removed_rows_homolog_or_contam": 42976,
+   "removed_rows_ladder": 35855
+  },
+  "E9_0000__H0799BL": {
+   "project": "PXD011447",
+   "run": "E9_0000__H0799BL",
+   "n_ms2": 134146,
+   "cert_hs": {
+    "n_certified": 11126,
+    "A_cand": 2185,
+    "tail_proxy_own_thr": 3
+   },
+   "cert_agree": {
+    "n_certified": 11026,
+    "A_cand": 2150,
+    "tail_proxy_own_thr": 2
+   },
+   "removed_rows_homolog_or_contam": 28555,
+   "removed_rows_ladder": 11167
+  },
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+   "project": "PXD018572",
+   "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+   "n_ms2": 20275,
+   "cert_hs": {
+    "n_certified": 5594,
+    "A_cand": 1462,
+    "tail_proxy_own_thr": 21
+   },
+   "cert_agree": {
+    "n_certified": 5520,
+    "A_cand": 1444,
+    "tail_proxy_own_thr": 21
+   },
+   "removed_rows_homolog_or_contam": 13248,
+   "removed_rows_ladder": 13594
+  },
+  "E9_0002__MGP2": {
+   "project": "PXD014823",
+   "run": "E9_0002__MGP2",
+   "n_ms2": 20519,
+   "cert_hs": {
+    "n_certified": 1440,
+    "A_cand": 268,
+    "tail_proxy_own_thr": 2
+   },
+   "cert_agree": {
+    "n_certified": 1372,
+    "A_cand": 247,
+    "tail_proxy_own_thr": 2
+   },
+   "removed_rows_homolog_or_contam": 2458,
+   "removed_rows_ladder": 3703
+  },
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+   "project": "PXD016022",
+   "run": "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+   "n_ms2": 50257,
+   "cert_hs": {
+    "n_certified": 5362,
+    "A_cand": 1318,
+    "tail_proxy_own_thr": 21
+   },
+   "cert_agree": {
+    "n_certified": 5312,
+    "A_cand": 1303,
+    "tail_proxy_own_thr": 18
+   },
+   "removed_rows_homolog_or_contam": 10108,
+   "removed_rows_ladder": 9491
+  },
+  "E9_0004__20210122-YP202104470-xh-BT1-3": {
+   "project": "PXD027980",
+   "run": "E9_0004__20210122-YP202104470-xh-BT1-3",
+   "n_ms2": 59625,
+   "cert_hs": {
+    "n_certified": 2349,
+    "A_cand": 1682,
+    "tail_proxy_own_thr": 0
+   },
+   "cert_agree": {
+    "n_certified": 2272,
+    "A_cand": 1628,
+    "tail_proxy_own_thr": 0
+   },
+   "removed_rows_homolog_or_contam": 6593,
+   "removed_rows_ladder": 13173
+  },
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+   "project": "PXD057360",
+   "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+   "n_ms2": 66278,
+   "cert_hs": {
+    "n_certified": 3525,
+    "A_cand": 844,
+    "tail_proxy_own_thr": 6
+   },
+   "cert_agree": {
+    "n_certified": 3475,
+    "A_cand": 841,
+    "tail_proxy_own_thr": 5
+   },
+   "removed_rows_homolog_or_contam": 7229,
+   "removed_rows_ladder": 8004
+  },
+  "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+   "project": "PXD069854",
+   "run": "E9_0006__CL_CTL_p53_ZNF_061025_1",
+   "n_ms2": 25220,
+   "cert_hs": {
+    "n_certified": 3899,
+    "A_cand": 2603,
+    "tail_proxy_own_thr": 17
+   },
+   "cert_agree": {
+    "n_certified": 3745,
+    "A_cand": 2503,
+    "tail_proxy_own_thr": 12
+   },
+   "removed_rows_homolog_or_contam": 13508,
+   "removed_rows_ladder": 25220
+  },
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+   "project": "PXD011751",
+   "run": "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+   "n_ms2": 10411,
+   "cert_hs": {
+    "n_certified": 0,
+    "A_cand": 0,
+    "tail_proxy_own_thr": 0
+   },
+   "cert_agree": {
+    "n_certified": 0,
+    "A_cand": 0,
+    "tail_proxy_own_thr": 0
+   },
+   "removed_rows_homolog_or_contam": 0,
+   "removed_rows_ladder": 0
+  },
+  "E9_0008__lgg1": {
+   "project": "PXD026819",
+   "run": "E9_0008__lgg1",
+   "n_ms2": 65101,
+   "cert_hs": {
+    "n_certified": 3848,
+    "A_cand": 1666,
+    "tail_proxy_own_thr": 3
+   },
+   "cert_agree": {
+    "n_certified": 3831,
+    "A_cand": 1656,
+    "tail_proxy_own_thr": 2
+   },
+   "removed_rows_homolog_or_contam": 10221,
+   "removed_rows_ladder": 17643
+  },
+  "E9_0009__20170210_MCF7_LysC_WT_2b": {
+   "project": "PXD007543",
+   "run": "E9_0009__20170210_MCF7_LysC_WT_2b",
+   "n_ms2": 44644,
+   "cert_hs": {
+    "n_certified": 6874,
+    "A_cand": 2142,
+    "tail_proxy_own_thr": 15
+   },
+   "cert_agree": {
+    "n_certified": 6783,
+    "A_cand": 2096,
+    "tail_proxy_own_thr": 11
+   },
+   "removed_rows_homolog_or_contam": 18210,
+   "removed_rows_ladder": 21711
+  }
+ },
+ "per_project_pool4": {
+  "PXD001468": {
+   "n_runs": 2,
+   "n_certified_pool_q1e-4": 10536
+  },
+  "PXD011447": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 8501
+  },
+  "PXD018572": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD014823": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD016022": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD027980": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD057360": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD069854": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD011751": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD026819": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  },
+  "PXD007543": {
+   "n_runs": 1,
+   "n_certified_pool_q1e-4": 0
+  }
+ },
+ "totals": {
+  "cert_hs": {
+   "n_certified": 64507,
+   "A_cand": 23406,
+   "tail_proxy_own_thr": 137
+  },
+  "cert_agree": {
+   "n_certified": 63692,
+   "A_cand": 23049,
+   "tail_proxy_own_thr": 118
+  }
+ },
+ "retention_agree_vs_hs": {
+  "n_certified": 0.9873657122482832,
+  "A_cand": 0.9847475006408614,
+  "tail_proxy_own_thr": 0.8613138686131386
+ },
+ "wall_s": 219.22740193037316
+}

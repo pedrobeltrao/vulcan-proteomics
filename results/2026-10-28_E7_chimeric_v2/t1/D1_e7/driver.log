@@ -1,0 +1,6 @@
+[21:47:37] t1_driver D1 sha=f64e5fd3041a dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-28_E7_chimeric_v2/t1/D1_e7
+[21:47:38] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[21:47:38] evaluate vulcan
+[21:50:26] evaluate vulcan_chim_v1
+[21:51:32] driver total 235s
+[21:51:32] wrote metrics.json and tables.md

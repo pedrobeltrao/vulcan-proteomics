@@ -1,0 +1,12 @@
+{
+ "n_runs": 35,
+ "identical": 35,
+ "psm_rows": 554032,
+ "differing": [],
+ "config_a": "1 GPU thread, hypotheses in GPU thread (E2 path)",
+ "config_b": "3 GPU threads (own CUDA streams), hypotheses in loader",
+ "fix": "deterministic per-spectrum TIC (padded row sums) + deterministic hypothesis pick in select_topk",
+ "config_c": "worker-side prep (MS2 arrays + hypotheses in decode workers, mmap in GPU process), 1 GPU thread, supervised decode pool",
+ "identical_a_vs_c": 35,
+ "differing_a_vs_c": []
+}

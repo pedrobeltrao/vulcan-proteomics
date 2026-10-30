@@ -1,0 +1,85 @@
+{
+ "store": "$VULCAN_ROOT/data/cache/koina_pinned",
+ "LF_D10cf": {
+  "store_spectra": "/tmp/vulcan_m5lc/store/Control_HEK_SEC_020118_20b.vspec.arrow",
+  "n_psms": 162420,
+  "snapshot_id": "cffbfe109fc406eb6e0303d81cc03884461c7765ffcf54b40fdcb9114d0bff34",
+  "koina_keys_filled_for_this_case": 237735,
+  "psm_tables_bit_identical": true,
+  "features_bit_identical": {
+   "pred_sa": true,
+   "pred_sa_sqrt": true,
+   "pred_pearson": true,
+   "pred_entropy": true,
+   "pred_frac_obs": true,
+   "pred_top6": true,
+   "pred_obs_tic": true,
+   "rt_abs_resid": true,
+   "rt_resid_z": true,
+   "pred_missing": true,
+   "rt_pred": true
+  },
+  "features_max_abs_diff": {
+   "pred_sa": 0.0,
+   "pred_sa_sqrt": 0.0,
+   "pred_pearson": 0.0,
+   "pred_entropy": 0.0,
+   "pred_frac_obs": 0.0,
+   "pred_top6": 0.0,
+   "pred_obs_tic": 0.0,
+   "rt_abs_resid": 0.0,
+   "rt_resid_z": 0.0,
+   "pred_missing": 0.0,
+   "rt_pred": 0.0
+  },
+  "static_scores_bit_identical": {
+   "itcid_linear_base": true,
+   "itcid_gbm_base": true,
+   "itcid_linear_pred": true,
+   "itcid_gbm_pred": true
+  },
+  "pass": true
+ },
+ "TMT_D4": {
+  "store_spectra": "/tmp/vulcan_m6/d4/store/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+  "n_psms": 77247,
+  "snapshot_id": "06ecc408678da6a5c4b5ba2d06ae0572fe530a5a5aeec7095fe0f59a0b98b909",
+  "koina_keys_filled_for_this_case": 127783,
+  "psm_tables_bit_identical": true,
+  "features_bit_identical": {
+   "pred_sa": true,
+   "pred_sa_sqrt": true,
+   "pred_pearson": true,
+   "pred_entropy": true,
+   "pred_frac_obs": true,
+   "pred_top6": true,
+   "pred_obs_tic": true,
+   "rt_abs_resid": true,
+   "rt_resid_z": true,
+   "pred_missing": true,
+   "rt_pred": true
+  },
+  "features_max_abs_diff": {
+   "pred_sa": 0.0,
+   "pred_sa_sqrt": 0.0,
+   "pred_pearson": 0.0,
+   "pred_entropy": 0.0,
+   "pred_frac_obs": 0.0,
+   "pred_top6": 0.0,
+   "pred_obs_tic": 0.0,
+   "rt_abs_resid": 0.0,
+   "rt_resid_z": 0.0,
+   "pred_missing": 0.0,
+   "rt_pred": 0.0
+  },
+  "static_scores_bit_identical": {
+   "itcid_linear_base": true,
+   "itcid_gbm_base": true,
+   "itcid_linear_pred": true,
+   "itcid_gbm_pred": true
+  },
+  "pass": true
+ },
+ "pass": true,
+ "wall_s": 183.57453350396827
+}

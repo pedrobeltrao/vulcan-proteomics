@@ -1,0 +1,19 @@
+[package]
+name = "vulcan_tims"
+version = "0.1.0"
+edition = "2021"
+description = "Vulcan L0: numpy-returning Bruker TDF frame reader (wraps timsrust)"
+
+[lib]
+name = "vulcan_tims"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module", "abi3-py39"] }
+numpy = "0.22"
+timsrust = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4

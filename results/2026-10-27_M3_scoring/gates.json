@@ -1,0 +1,334 @@
+{
+ "G0": {
+  "psm_tables_bit_identical": true,
+  "nce_same": true,
+  "features_bit_identical": {
+   "pred_sa": true,
+   "pred_sa_sqrt": true,
+   "pred_pearson": true,
+   "pred_entropy": true,
+   "pred_frac_obs": true,
+   "pred_top6": true,
+   "pred_obs_tic": true,
+   "rt_abs_resid": true,
+   "rt_resid_z": true,
+   "rt_pred": true
+  },
+  "static_scores_bit_identical": {
+   "static_linear_base": true,
+   "static_gbm_base": true,
+   "static_linear_pred": true,
+   "static_gbm_pred": true
+  },
+  "n_psms": 33129,
+  "pass": true
+ },
+ "G2_G5": {
+  "n_null_competitions": 142501,
+  "n_offset": 595,
+  "n_species_pfu": 9541,
+  "n_species_yeast": 132365,
+  "homolog_filter": {
+   "b1906_293T_proteinID_01A_QE3_122212_g2mix": {
+    "source2": {
+     "spectra_excluded": 534,
+     "homolog_peptides": 609
+    },
+    "source3": {
+     "spectra_excluded": 10412,
+     "homolog_peptides": 7111
+    }
+   },
+   "b1937_293T_proteinID_01B_QE3_122212_g2mix": {
+    "source2": {
+     "spectra_excluded": 548,
+     "homolog_peptides": 643
+    },
+    "source3": {
+     "spectra_excluded": 10290,
+     "homolog_peptides": 7095
+    }
+   }
+  },
+  "p_target_win_fixed": 0.4944386355183472,
+  "budget_g2_sample_size": 107570,
+  "scorers": {
+   "static_linear_base": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 142501,
+        "diff": 0.0011087641490235157,
+        "se": 0.0007254168461083994,
+        "ucb": 0.002301968679396614,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4944386355183472,
+        "p_learned": 0.49554739966737077
+       },
+       "top": {
+        "n": 14251,
+        "diff": 0.0012630692582976633,
+        "se": 0.0015627905714061926,
+        "ucb": 0.0038336309978407026,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.4951933197670339,
+        "p_learned": 0.49645638902533157
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_pass_by_source": {
+     "offset": false,
+     "pfu": true,
+     "yeast": true
+    },
+    "g5": {
+     "auc": 0.5042642508423513,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5024091220020606,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 142501,
+      "p": 0.49554739966737077,
+      "ci": [
+       0.4921360643819634,
+       0.49895914956274395
+      ],
+      "within_band": true
+     },
+     "top": {
+      "n": 14251,
+      "p": 0.5001052557715248,
+      "ci": [
+       0.48931913442603014,
+       0.5108912791539049
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.07498894744598283
+   },
+   "static_gbm_base": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 142501,
+        "diff": 0.00030876976301920687,
+        "se": 0.00010217334837772062,
+        "ucb": 0.000476829965676077,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4944386355183472,
+        "p_learned": 0.49474740528136646
+       },
+       "top": {
+        "n": 14251,
+        "diff": 0.0010525577152480528,
+        "se": 0.0003645228565694936,
+        "ucb": 0.0016521444579830956,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.4951933197670339,
+        "p_learned": 0.49624587748228194
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_pass_by_source": {
+     "offset": true,
+     "pfu": true,
+     "yeast": true
+    },
+    "g5": {
+     "auc": 0.5030462368218451,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5024091220020606,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 142501,
+      "p": 0.49474740528136646,
+      "ci": [
+       0.4913361602195166,
+       0.4981591394457528
+      ],
+      "within_band": true
+     },
+     "top": {
+      "n": 14251,
+      "p": 0.4959651954248825,
+      "ci": [
+       0.4851813514776411,
+       0.5067527946248508
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.0014877088581834513
+   },
+   "static_linear_pred": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 142501,
+        "diff": -0.002392965663398853,
+        "se": 0.0013041674636597677,
+        "ucb": -0.00024780108064598183,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4944386355183472,
+        "p_learned": 0.4920456698549484
+       },
+       "top": {
+        "n": 14251,
+        "diff": 0.0063153462914883165,
+        "se": 0.003527845887926615,
+        "ucb": 0.012118136395570245,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.4951933197670339,
+        "p_learned": 0.5015086660585222
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_pass_by_source": {
+     "offset": false,
+     "pfu": true,
+     "yeast": true
+    },
+    "g5": {
+     "auc": 0.5018552844609465,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5024091220020606,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 142501,
+      "p": 0.4920456698549484,
+      "ci": [
+       0.4886347940601437,
+       0.49545728632807645
+      ],
+      "within_band": false
+     },
+     "top": {
+      "n": 14251,
+      "p": 0.5072626482352116,
+      "ci": [
+       0.4964743332810529,
+       0.5180442037344621
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.24237724647546333
+   },
+   "static_gbm_pred": {
+    "g2": {
+     "conf_one_sided": 0.95,
+     "strata": {
+      "0": {
+       "overall": {
+        "n": 142501,
+        "diff": 9.12274299829475e-05,
+        "se": 0.0001163721404058507,
+        "ucb": 0.000282642567205617,
+        "margin": 0.01,
+        "pass": true,
+        "p_fixed": 0.4944386355183472,
+        "p_learned": 0.4945298629483302
+       },
+       "top": {
+        "n": 14251,
+        "diff": 0.0009823872008981826,
+        "se": 0.00045469839767461656,
+        "ucb": 0.0017302995094822986,
+        "margin": 0.02,
+        "pass": true,
+        "p_fixed": 0.4951933197670339,
+        "p_learned": 0.49617570696793206
+       },
+       "pass": true
+      }
+     },
+     "pass": true,
+     "fires": false
+    },
+    "g2_pass_by_source": {
+     "offset": true,
+     "pfu": true,
+     "yeast": true
+    },
+    "g5": {
+     "auc": 0.502928016940685,
+     "alarm": false
+    },
+    "g5_fixed_reference": {
+     "auc": 0.5024091220020606,
+     "alarm": false
+    },
+    "g2_absolute_diag": {
+     "overall": {
+      "n": 142501,
+      "p": 0.4945298629483302,
+      "ci": [
+       0.49111864393151816,
+       0.4979415913244303
+      ],
+      "within_band": true
+     },
+     "top": {
+      "n": 14251,
+      "p": 0.49435127359483544,
+      "ci": [
+       0.48356851769693354,
+       0.5051392868465548
+      ],
+      "within_band": false
+     },
+     "pass": false
+    },
+    "frac_winner_changed": 0.001929811018870043
+   },
+   "reset_lda_pred": {
+    "g2": "identical to fixed by construction (RESET never redoes PSM/peptide competition, \u00a76.4); diff = 0",
+    "g5": {
+     "auc": 0.5010186936368515,
+     "alarm": false
+    },
+    "n_null_pair_winners": 115170
+   }
+  }
+ }
+}

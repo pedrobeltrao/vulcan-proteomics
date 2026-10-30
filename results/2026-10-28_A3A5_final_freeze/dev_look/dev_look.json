@@ -1,0 +1,26 @@
+{
+ "commit": "ed63785ac5124095f7da18798891c2c4bdca724d",
+ "wall_s": 2964.2755405902863,
+ "sealed_run_exit": 0,
+ "console_stdout": "sealed_run: sha256 verified for 3 file(s)\nsealed_run: sha256 verified for 1 file(s)\nsealed_run: look 20261028T122057Z-26123ec4 opened at milestone-a5dev @ 26123ec470b1 (c9 GO); T5 then T1\nsealed_run: T5 start\nsealed_run: T5 exit=0\nsealed_run: T1 start\n  T1| [13:38:20] sage prod_1001 done\n  T1| [13:38:46] sage P_1001_2001 done\n  T1| [13:39:09] sage P_1001_2002 done\n  T1| [13:39:36] sage P_1001_2003 done\n  T1| [13:40:18] sage C_1001 done\n  T1| [13:40:35] sage prod_1002 done\n  T1| [13:40:52] sage P_1002_2001 done\n  T1| [13:41:06] sage P_1002_2002 done\n  T1| [13:41:21] sage P_1002_2003 done\n  T1| [13:41:43] sage C_1002 done\n  T1| [13:41:51] sage prod_1003 done\n  T1| [13:41:58] sage P_1003_2001 done\n  T1| [13:42:07] sage P_1003_2002 done\n  T1| [13:42:15] sage P_1003_2003 done\n  T1| [13:42:36] sage C_1003 done\n  T1| [13:42:44] sage prod_1004 done\n  T1| [13:42:51] sage P_1004_2001 done\n  T1| [13:43:00] sage P_1004_2002 done\n  T1| [13:43:09] sage P_1004_2003 done\n  T1| [13:43:30] sage C_1004 done\n  T1| [13:43:38] sage prod_1005 done\n  T1| [13:43:45] sage P_1005_2001 done\n  T1| [13:43:52] sage P_1005_2002 done\n  T1| [13:44:00] sage P_1005_2003 done\n  T1| [13:44:19] sage C_1005 done\n  T1| [13:48:28] sage chimera R=2 done\n  T1| [13:53:01] evaluate vulcan\n  T1| [13:55:34] evaluate sage\n  T1| [13:56:12] evaluate sage+mokapot\n  T1| [13:56:50] evaluate sage+pred+mokapot\n  T1| [13:57:26] evaluate comet+mokapot\n  T1| [13:58:11] evaluate vulcan_v2_sep\n  T1| [13:59:05] evaluate sage_chim2\n  T1| [13:59:55] evaluate sage_chim2+pred+mokapot\n  T1| [14:10:09] driver total 2536s\n  T1| [14:10:09] wrote metrics.json and tables.md\n  T1| [14:10:10] deleted work except replicate indexes\n  T1| manifest written\n  T1| completeness rule: pass\nsealed_run: T1 exit=0\nsealed_run: look 20261028T122057Z-26123ec4 complete; leak test pass; outputs in $VULCAN_LOOK_ROOT_DEV/lookroot/20261028T122057Z-26123ec4\n",
+ "console_stderr": "",
+ "ledger": "# SEALED_LEDGER\n\nEvery use of a sealed dataset (`data/sealed/`, DESIGN.md section 6.6) is appended here by `bench/sealed_run.py`\n*before* the files are unlocked. Do not edit by hand. A line without a following `result` line means the run was\ninterrupted or is in progress.\n\n| date (UTC) | sha | tag | dataset | command | purpose |\n|---|---|---|---|---|---|\n| 2026-10-28 12:20:57Z | 26123ec470b1 | milestone-a5dev | T5 | `$VULCAN_ROOT/conda_envs/pe/bin/python bench/t5_armM.py --mode dev --runs $VULCAN_ROOT/data/raw/PXD031616/LM2486_DDA.raw $VULCAN_ROOT/data/raw/PXD031616/LM2487_DDA.raw $VULCAN_ROOT/data/raw/PXD031616/LM2490_DDA.raw --entrap-seeds 2001 2002 2003 --decoy-seeds 1001 --out '{root}/out' --work '{scratch}/T5/work'` | look=20261028T122057Z-26123ec4 attempt=1 c9=GO a6=not completed; A5 look (DESIGN \u00a76.0d A5.6): arm M on T5 (PXD052597, 2 runs) for v1 (closed, bench/t1/ours.py Scorer) and v2_sep (chimeric, q_sep, merged strata deciding), 15 replicates, sealed entrapment seeds 2004-2006 |\n| 2026-10-28 12:20:57Z | 26123ec470b1 | milestone-a5dev | T1 | `$VULCAN_ROOT/conda_envs/pe/bin/python bench/t1_driver.py --dataset D1 --a3 --out '{root}/out' --work '{scratch}/T1/work' --rt-off-control` | look=20261028T122057Z-26123ec4 attempt=1 c9=GO a6=not completed; A5 look (DESIGN \u00a76.0d A5.5): T1 v1 primary (A1 comparators, \u00a71 no-loss P1) + v2_sep pre-registered secondary arm (family S, 'Secondary arm; not gate-validated') + A5 additions; --a3 forced |\n|  |  |  | T5 | result: look=20261028T122057Z-26123ec4 exit=0, wall=404s, manifest_sha256=7b456f7864c242230f892b0dcdc8ec4e2bf0c9555d6b72a1a2e1d1e4c1235444 |  |\n|  |  |  | T1 | result: look=20261028T122057Z-26123ec4 exit=0, wall=2549s, manifest_sha256=46df6f7f1340e9b55ea8146b2cf16ee61fff1959af3a441605ea5f84f838ce66 |  |\n|  |  |  | look | result: look=20261028T122057Z-26123ec4 leak_test=pass |  |\n",
+ "look_id": "20261028T122057Z-26123ec4",
+ "look_root_exists": true,
+ "leak_test_files": [],
+ "ledger_manifest_sha256": {
+  "T5": "7b456f7864c242230f892b0dcdc8ec4e2bf0c9555d6b72a1a2e1d1e4c1235444",
+  "T1": "46df6f7f1340e9b55ea8146b2cf16ee61fff1959af3a441605ea5f84f838ce66"
+ },
+ "T5_manifest_matches_ledger": true,
+ "T5_work_left": null,
+ "T1_manifest_matches_ledger": true,
+ "T1_work_left": null,
+ "claims_exit": 0,
+ "claims_stderr_tail": "",
+ "claims_files": [
+  "claims.json",
+  "claims.md",
+  "claims.sha256"
+ ]
+}

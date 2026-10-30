@@ -1,0 +1,5 @@
+script: scripts/run_stats_sims.py
+replicates: 10000
+replicates_picked_group_general: 10000
+seeds: [11, 23, 47, 83, 131]
+alphas: [0.001, 0.005, 0.01, 0.05]

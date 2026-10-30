@@ -1,0 +1,312 @@
+{
+ "dataset": "D1",
+ "role": "dev",
+ "git_sha": "f64e5fd3041af1209e626ec2f1aaf9ba40de6303",
+ "git_dirty_tracked": true,
+ "raws": [
+  "$VULCAN_ROOT/data/raw/PXD001077/Velos005137.raw"
+ ],
+ "runs": [
+  "Velos005137"
+ ],
+ "decoy_seeds": [
+  1001,
+  1002,
+  1003,
+  1004,
+  1005
+ ],
+ "entrap_seeds": [
+  2001,
+  2002,
+  2003
+ ],
+ "replicates": [
+  "prod_1001",
+  "P_1001_2001",
+  "P_1001_2002",
+  "P_1001_2003",
+  "C_1001",
+  "prod_1002",
+  "P_1002_2001",
+  "P_1002_2002",
+  "P_1002_2003",
+  "C_1002",
+  "prod_1003",
+  "P_1003_2001",
+  "P_1003_2002",
+  "P_1003_2003",
+  "C_1003",
+  "prod_1004",
+  "P_1004_2001",
+  "P_1004_2002",
+  "P_1004_2003",
+  "C_1004",
+  "prod_1005",
+  "P_1005_2001",
+  "P_1005_2002",
+  "P_1005_2003",
+  "C_1005"
+ ],
+ "work": "$VULCAN_SCRATCH/vulcan_t1/D1",
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "threads": 32,
+ "db_verify": {
+  "n_sequences": {
+   "F": 2293858,
+   "T": 177028,
+   "E2001": 177027,
+   "E2002": 177021,
+   "E2003": 177025,
+   "dec_set0": 3001959,
+   "dec_set1": 3001959,
+   "dec_set2": 3001959,
+   "dec_set3": 3001959,
+   "dec_set4": 3001959
+  },
+  "violations": {
+   "sequence_in_two_families_or_decoy_sets": 0,
+   "contains_I": 0,
+   "partner_not_cterm_fixed_shuffle": 0
+  },
+  "partner_rows_checked": 100000,
+  "ok": true
+ },
+ "index_meta": {
+  "index_version": "vulcan-l1-0.1+multidecoy",
+  "sage_commit": "99407db6e3754b31a9b88b7316a0aee67293c93f",
+  "params": {
+   "enzyme": {
+    "cleave_at": "KR",
+    "restrict": "P",
+    "c_terminal": true,
+    "missed_cleavages": 2,
+    "min_len": 7,
+    "max_len": 50
+   },
+   "static_mods": {
+    "C": 57.021464
+   },
+   "variable_mods": {
+    "M": 15.9949
+   },
+   "max_variable_mods": 2,
+   "peptide_min_mass": 500.0,
+   "peptide_max_mass": 5000.0,
+   "decoy_seed": 1001,
+   "entrap_seeds": [
+    2001,
+    2002,
+    2003
+   ],
+   "id_seed": 0,
+   "decoy_seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005
+   ],
+   "foreign_sha256": "fd0da0f021a81aec669130be885183b5f021df60e1c69952201c87091df9eb91"
+  },
+  "content_hash": "472b39170ed5c689",
+  "n_targets": 180823,
+  "n_forward_peptides": 3087386,
+  "decoy_sets": {
+   "1001": {
+    "n": 3088602,
+    "redrawn": 3707,
+    "dropped": 7
+   },
+   "1002": {
+    "n": 3088399,
+    "redrawn": 7031,
+    "dropped": 210
+   },
+   "1003": {
+    "n": 3088141,
+    "redrawn": 10235,
+    "dropped": 468
+   },
+   "1004": {
+    "n": 3087863,
+    "redrawn": 13276,
+    "dropped": 746
+   },
+   "1005": {
+    "n": 3087386,
+    "redrawn": 16257,
+    "dropped": 1223
+   }
+  },
+  "n_forward_without_decoy": 1223,
+  "entrapment": {
+   "foreign": {
+    "n_input": 2365365,
+    "n": 2365365
+   },
+   "2001": {
+    "n": 180823,
+    "redrawn": 475,
+    "dropped_unpairable": 0
+   },
+   "2002": {
+    "n": 180811,
+    "redrawn": 653,
+    "dropped_unpairable": 12
+   },
+   "2003": {
+    "n": 180787,
+    "redrawn": 879,
+    "dropped_unpairable": 36
+   }
+  },
+  "n_peptidoforms": 26911146,
+  "n_peptidoforms_by_family": {
+   "T": 255422,
+   "E": 4229769,
+   "DT": 1277110,
+   "DE": 21148845
+  },
+  "n_decoy_sets": 5,
+  "timing_s": {
+   "digest_s": 1.0813669431954622,
+   "families_s": 197.34625348588452,
+   "expand_s": 37.66249651601538,
+   "arrays_s": 103.96786590991542,
+   "total_s": 374.005265688058
+  },
+  "armC_builder": {
+   "arm": "C",
+   "estimator": "combined",
+   "target_fasta": "../../../../../../..$VULCAN_SCRATCH/vulcan_t1/D1/target.fasta",
+   "target_fasta_sha256": "efbdb08aa3871e7b9d4896049380f070f637cb8aaaf186cf0d0ab58da6998bce",
+   "foreign_fastas": [
+    "data/fasta/human_sp_canonical.fasta"
+   ],
+   "foreign_fasta_sha256": [
+    "dffdff3807ec6eb7e752035b5475aaefa26d1b36e513e3344198d521a2169c42"
+   ],
+   "n_foreign_peptides_raw": 2399162,
+   "removed": {
+    "IL_identical_to_target": 11027,
+    "isobaric_NGG_QAG": 48,
+    "single_substitution_neighbour": 14450,
+    "equal_to_target_decoy": 107,
+    "equal_to_shuffled_target_decoy_1001_1005": 513,
+    "shuffled_decoy_collides_with_target_or_foreign": 7652
+   },
+   "r": 12.936207888296133,
+   "n_target_eff": 177326,
+   "n_entrapment_eff": 2293926,
+   "decile_mass_edges_da": [
+    965.4454250663,
+    1157.6193071263,
+    1367.7197495513,
+    1599.8256712363002,
+    1862.9960073413001,
+    2159.1527592563,
+    2511.3274294413,
+    2969.5208455363,
+    3619.9446415813
+   ],
+   "r_per_mass_decile": [
+    10.546889979134946,
+    11.72242273855177,
+    12.06823436530762,
+    12.305605684637943,
+    12.549371228782496,
+    12.359612022782382,
+    12.711087299796977,
+    13.435201894879315,
+    14.4333164157221,
+    17.23024868888513
+   ],
+   "n_target_nonstandard_dropped": 15,
+   "name": "ds.C",
+   "n_target": 180823,
+   "n_entrapment": 2365365,
+   "n_decoy": 2546188,
+   "n_decoy_replaced_by_shuffle": 1038,
+   "n_forward_without_decoy": 0,
+   "decoy_recipe": "pseudo-reverse C-term fixed; collisions/palindromes -> hash(peptide,1001) shuffle",
+   "peptides_tsv": "../../../../../../..$VULCAN_SCRATCH/vulcan_t1/D1/armC/ds.C.peptides.tsv",
+   "peptides_tsv_sha256": "5ca008fdf99ed5dcca71a511ccb4b88c37461fafc181c527095840f420866ed4"
+  },
+  "build_wall_s": 378.30700809694827
+ },
+ "sage_rt_check": {
+  "n_confident": 10827,
+  "frac_predicted_rt_nonzero": 0.9900774654016886,
+  "sd_predicted_rt": 0.20851611616966198,
+  "median_abs_delta_rt_model_confident": 0.043854356,
+  "spearman_aligned_vs_predicted_confident": 0.9426438660677244,
+  "pin_has_rt_features": true
+ },
+ "sage_rt_off_check": {
+  "n_confident": 10823,
+  "frac_predicted_rt_nonzero": 0.0,
+  "sd_predicted_rt": 0.0,
+  "median_abs_delta_rt_model_confident": 0.999,
+  "spearman_aligned_vs_predicted_confident": NaN,
+  "pin_has_rt_features": true
+ },
+ "driver_timing": {
+  "wall_s": 235.2239625453949,
+  "core_s_self_and_children": 476.59094799999997,
+  "stages": {
+   "db": {
+    "wall_s": 0.019922733306884766,
+    "core_s_self_and_children": 0.013932999999999973,
+    "loadavg_start": 45.37109375,
+    "loadavg_end": 45.37109375
+   },
+   "evaluate": {
+    "wall_s": 234.03709197044373,
+    "core_s_self_and_children": 476.356029,
+    "loadavg_start": 45.37109375,
+    "loadavg_end": 22.70703125
+   }
+  }
+ }
+}

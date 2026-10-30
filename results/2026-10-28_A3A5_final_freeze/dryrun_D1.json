@@ -1,0 +1,300 @@
+{
+ "dataset": "D1",
+ "with": {
+  "git_sha": "06ce624e945940738bda757e0f96061e85ab5f4a",
+  "dirty": false,
+  "methods": [
+   "vulcan",
+   "sage",
+   "sage+mokapot",
+   "sage+pred+mokapot",
+   "comet+mokapot",
+   "vulcan_v2_sep",
+   "sage_chim2",
+   "sage_chim2+pred+mokapot"
+  ],
+  "a3": {
+   "methods": [
+    "vulcan",
+    "sage",
+    "sage+mokapot",
+    "sage+pred+mokapot",
+    "comet+mokapot",
+    "vulcan_v2_sep",
+    "sage_chim2",
+    "sage_chim2+pred+mokapot"
+   ],
+   "numerators": "vulcan,vulcan_v2_sep",
+   "freeze_status": null
+  }
+ },
+ "without": {
+  "git_sha": "40d9fb937dcc313560036ee5ca53bc2b8be15102",
+  "dirty": false,
+  "methods": [
+   "vulcan",
+   "sage",
+   "sage+mokapot",
+   "sage+pred+mokapot",
+   "comet+mokapot"
+  ]
+ },
+ "v1_artefacts": {
+  "n_files": 51,
+  "n_not_identical": 0,
+  "not_identical": [],
+  "identical": true
+ },
+ "v1_columns": {
+  "methods.vulcan": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 12,
+   "keys_added_in_with_examples": [
+    "deciding_conservative (missing in without)"
+   ]
+  },
+  "noninferiority[vulcan vs A1 comparators]": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 36,
+   "keys_added_in_with_examples": [
+    "comparator_verdict_conservative (missing in without)"
+   ]
+  },
+  "matched_fdp_curves.vulcan": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 0,
+   "keys_added_in_with_examples": []
+  },
+  "sage_predict_rt_control": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 0,
+   "keys_added_in_with_examples": []
+  },
+  "A1 comparator records": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 48,
+   "keys_added_in_with_examples": [
+    "deciding_conservative (missing in without)"
+   ]
+  },
+  "matched_fdp_curves[A1 comparators]": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 0,
+   "keys_added_in_with_examples": []
+  },
+  "noninferiority_numerator": {
+   "identical_on_common_keys": true,
+   "n_value_diffs": 0,
+   "value_diffs": [],
+   "missing_in_with": [],
+   "n_keys_added_in_with": 0,
+   "keys_added_in_with_examples": []
+  }
+ },
+ "v1_columns_bitwise_identical": true,
+ "a1_comparator_artefacts_recomputed": {
+  "sage_pred_mokapot": {
+   "n_files": 150,
+   "n_not_identical": 0,
+   "not_identical": []
+  },
+  "sage_mokapot": {
+   "n_files": 125,
+   "n_not_identical": 0,
+   "not_identical": []
+  },
+  "comet_mokapot": {
+   "n_files": 125,
+   "n_not_identical": 0,
+   "not_identical": []
+  }
+ },
+ "a1_comparator_artefacts_identical": true,
+ "added_by_a3": {
+  "methods": [
+   "vulcan_v2_sep",
+   "sage_chim2",
+   "sage_chim2+pred+mokapot"
+  ],
+  "noninferiority_comparators": [
+   "vulcan_v2_sep",
+   "sage_chim2",
+   "sage_chim2+pred+mokapot"
+  ],
+  "top_level_keys": [
+   "noninferiority_numerator",
+   "noninferiority_by_numerator",
+   "a3_secondary",
+   "a5"
+  ]
+ },
+ "independent_runs": {
+  "3f_dry_run": {
+   "source": "results/2026-10-27_T1driver_dryrun/D1/metrics.json",
+   "git_sha": "2c658b1e2d67c6bf83e486d6ca22fd2ce18124df",
+   "v1_methods.vulcan_identical": true,
+   "v1_methods.vulcan_diff_paths": [],
+   "comet+mokapot_identical": true,
+   "sage_based": {
+    "sage": {
+     "by_level": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 2.1336747212892526e-05,
+       "max_abs_delta_v1_ratio": 2.0730482118702653e-06
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 2.1782933071944066e-05,
+       "max_abs_delta_v1_ratio": 1.8791093990500052e-05
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 0.0,
+       "max_abs_delta_v1_ratio": 0.0
+      }
+     },
+     "max_abs_delta_arm_P_mean_fdp": 2.1782933071944066e-05,
+     "at": "sequence/0.05/P/a",
+     "within_1e-4": true,
+     "max_abs_delta_arm_C_mean_fdp (reported)": 3.747998559098034e-05,
+     "arm_C_at": "sequence/0.005/C/a",
+     "max_abs_delta_v1_ratio_at_1%_5%": 1.8791093990500052e-05,
+     "gated_ratio_at": "sequence/matched_fdp/0.05",
+     "max_abs_delta_v1_ratio": 1.8791093990500052e-05,
+     "ratio_at": "sequence/matched_fdp/0.05",
+     "within_0.0004": true,
+     "max_abs_delta_prod_ids_mean": 0.0,
+     "ids_at": "peptidoform/0.001",
+     "deciding_verdicts_identical": true
+    },
+    "sage+mokapot": {
+     "by_level": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 4.087631741770542e-05,
+       "max_abs_delta_v1_ratio": 1.3590608416436112e-07
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 4.169189247926752e-05,
+       "max_abs_delta_v1_ratio": 1.7985590724300948e-05
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 3.022143243544724e-07,
+       "max_abs_delta_v1_ratio": 4.330811689268188e-07
+      }
+     },
+     "max_abs_delta_arm_P_mean_fdp": 4.169189247926752e-05,
+     "at": "sequence/0.05/P/a",
+     "within_1e-4": true,
+     "max_abs_delta_arm_C_mean_fdp (reported)": 0.000365672558539365,
+     "arm_C_at": "sequence/0.05/C/a",
+     "max_abs_delta_v1_ratio_at_1%_5%": 1.7985590724300948e-05,
+     "gated_ratio_at": "sequence/matched_fdp/0.05",
+     "max_abs_delta_v1_ratio": 1.7985590724300948e-05,
+     "ratio_at": "sequence/matched_fdp/0.05",
+     "within_0.0004": true,
+     "max_abs_delta_prod_ids_mean": 0.0,
+     "ids_at": "peptidoform/0.001",
+     "deciding_verdicts_identical": true
+    },
+    "sage+pred+mokapot": {
+     "by_level": {
+      "peptidoform": {
+       "max_abs_delta_arm_P_mean_fdp": 2.2045520086552e-05,
+       "max_abs_delta_v1_ratio": 0.014318024462659729
+      },
+      "sequence": {
+       "max_abs_delta_arm_P_mean_fdp": 2.2516475052440296e-05,
+       "max_abs_delta_v1_ratio": 0.014329404411535407
+      },
+      "protein": {
+       "max_abs_delta_arm_P_mean_fdp": 4.915318886225886e-07,
+       "max_abs_delta_v1_ratio": 0.00047437757931845237
+      }
+     },
+     "max_abs_delta_arm_P_mean_fdp": 2.2516475052440296e-05,
+     "at": "sequence/0.01/P/a",
+     "within_1e-4": true,
+     "max_abs_delta_arm_C_mean_fdp (reported)": 0.00029299727334123997,
+     "arm_C_at": "sequence/0.005/C/a",
+     "max_abs_delta_v1_ratio_at_1%_5%": 0.00047437757931845237,
+     "gated_ratio_at": "protein/matched_fdp/0.01",
+     "max_abs_delta_v1_ratio": 0.014329404411535407,
+     "ratio_at": "sequence/own_q/0.001",
+     "within_0.0004": false,
+     "max_abs_delta_prod_ids_mean": 74.40000000000055,
+     "ids_at": "peptidoform/0.001",
+     "deciding_verdicts_identical": true
+    }
+   }
+  },
+  "e7b": {
+   "source": "results/2026-10-28_E7b_fair_speed/t1/D1/metrics_nofm0001.json",
+   "git_sha": "7a2d6ee8a220c5acefd2c88257b74ebf132111f2",
+   "methods": {
+    "sage_chim2": {
+     "max_abs_delta_arm_P_mean_fdp": 0.0,
+     "at": "peptidoform/0.001/P/a",
+     "within_1e-4": true,
+     "max_abs_delta_prod_ids_mean": 0.20000000000004547,
+     "ids_at": "protein/0.01"
+    },
+    "sage_chim2+pred+mokapot": {
+     "max_abs_delta_arm_P_mean_fdp": 0.0006267124134790017,
+     "at": "protein/0.005/P/a",
+     "within_1e-4": false,
+     "max_abs_delta_prod_ids_mean": 5.0,
+     "ids_at": "peptidoform/0.001"
+    },
+    "sage+pred+mokapot": {
+     "max_abs_delta_arm_P_mean_fdp": 2.2516475052440296e-05,
+     "at": "sequence/0.01/P/a",
+     "within_1e-4": true,
+     "max_abs_delta_prod_ids_mean": 74.40000000000055,
+     "ids_at": "peptidoform/0.001"
+    }
+   },
+   "vulcan_v2_sep_record_identical": true,
+   "vulcan_v2_sep_diff_paths": [],
+   "v2_sep_ratios": {
+    "sage_chim2+pred+mokapot": {
+     "max_abs_delta": 0.0014414899814281235,
+     "at": "protein/matched_fdp/0.01",
+     "within_0.0004": false,
+     "with_pf_matched_0.01": 1.1381004598659668,
+     "e7b_pf_matched_0.01": 1.1374080458956886
+    },
+    "sage_chim2": {
+     "max_abs_delta": 0.00027234863003822163,
+     "at": "protein/matched_fdp/0.01",
+     "within_0.0004": true,
+     "with_pf_matched_0.01": 1.16281050636614,
+     "e7b_pf_matched_0.01": 1.1628105380260234
+    },
+    "sage+pred+mokapot": {
+     "max_abs_delta": 0.014101519164808618,
+     "at": "sequence/own_q/0.001",
+     "within_0.0004": false,
+     "with_pf_matched_0.01": 1.1707746800243413,
+     "e7b_pf_matched_0.01": 1.1711446690020082
+    }
+   }
+  }
+ },
+ "sage_based_within_documented_tolerance": false
+}

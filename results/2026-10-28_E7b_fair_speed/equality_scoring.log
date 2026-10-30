@@ -1,0 +1,78 @@
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+D0 prod_1001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 594366} {'ref': 29496, 'new': 29496, 'identical': True, 'jaccard': 1.0}
+D0 P_1001_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669208} None
+D0 P_1001_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669631} None
+D0 P_1001_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669624} None
+D0 C_1001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 667573} None
+D0 prod_1002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 594037} {'ref': 29494, 'new': 29494, 'identical': True, 'jaccard': 1.0}
+D0 P_1002_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669067} None
+D0 P_1002_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669110} None
+D0 P_1002_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669363} None
+D0 C_1002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 667337} None
+D0 prod_1003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 594250} {'ref': 29435, 'new': 29435, 'identical': True, 'jaccard': 1.0}
+D0 P_1003_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669221} None
+D0 P_1003_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669171} None
+D0 P_1003_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669328} None
+D0 C_1003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 667551} None
+D0 prod_1004 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 594291} {'ref': 29487, 'new': 29487, 'identical': True, 'jaccard': 1.0}
+D0 P_1004_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669111} None
+D0 P_1004_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669317} None
+D0 P_1004_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669454} None
+D0 C_1004 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 667568} None
+D0 prod_1005 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 594831} {'ref': 29507, 'new': 29507, 'identical': True, 'jaccard': 1.0}
+D0 P_1005_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669402} None
+D0 P_1005_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669803} None
+D0 P_1005_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 669554} None
+D0 C_1005 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 667805} None
+D1 prod_1001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 30979} {'ref': 7121, 'new': 7121, 'identical': True, 'jaccard': 1.0}
+D1 P_1001_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42156} None
+D1 P_1001_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42241} None
+D1 P_1001_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 41831} None
+D1 C_1001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 71059} None
+D1 prod_1002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 30945} {'ref': 7049, 'new': 7049, 'identical': True, 'jaccard': 1.0}
+D1 P_1002_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 41937} None
+D1 P_1002_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42031} None
+D1 P_1002_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42002} None
+D1 C_1002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 71226} None
+D1 prod_1003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 31093} {'ref': 6864, 'new': 6864, 'identical': True, 'jaccard': 1.0}
+D1 P_1003_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42264} None
+D1 P_1003_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42311} None
+D1 P_1003_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42035} None
+D1 C_1003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 70978} None
+D1 prod_1004 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 30903} {'ref': 7086, 'new': 7086, 'identical': True, 'jaccard': 1.0}
+D1 P_1004_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 41873} None
+D1 P_1004_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42036} None
+D1 P_1004_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 41949} None
+D1 C_1004 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 70753} None
+D1 prod_1005 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 31017} {'ref': 6857, 'new': 6857, 'identical': True, 'jaccard': 1.0}
+D1 P_1005_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42128} None
+D1 P_1005_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42199} None
+D1 P_1005_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 42065} None
+D1 C_1005 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 71126} None
+D8h prod_1001 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2278683} {'ref': 79209, 'new': 79209, 'identical': True, 'jaccard': 1.0}
+D8h P_1001_2001 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2748999} None
+D8h P_1001_2002 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2749638} None
+D8h P_1001_2003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2748770} None
+D8h C_1001 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2734682} None
+D8h prod_1002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2277493} {'ref': 79086, 'new': 79086, 'identical': True, 'jaccard': 1.0}
+D8h P_1002_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2749031} None
+D8h P_1002_2002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2749624} None
+D8h P_1002_2003 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2748374} None
+D8h C_1002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2735529} None
+D8h prod_1003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2276853} {'ref': 79250, 'new': 79250, 'identical': True, 'jaccard': 1.0}
+D8h P_1003_2001 {'features_bitwise': True, 'scores_bitwise': True, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2748806} None
+D8h P_1003_2002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2748463} None
+D8h P_1003_2003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2747256} None
+D8h C_1003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2734756} None
+D8h prod_1004 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2279220} {'ref': 79680, 'new': 79680, 'identical': True, 'jaccard': 1.0}
+D8h P_1004_2001 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2750896} None
+D8h P_1004_2002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2750298} None
+D8h P_1004_2003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2749601} None
+D8h C_1004 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2735690} None
+D8h prod_1005 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2280146} {'ref': 79311, 'new': 79311, 'identical': True, 'jaccard': 1.0}
+D8h P_1005_2001 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2750594} None
+D8h P_1005_2002 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2751902} None
+D8h P_1005_2003 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2750165} None
+D8h C_1005 {'features_bitwise': False, 'scores_bitwise': False, 'nce_equal': True, 'lib_misses': 0, 'n_psms': 2736055} None
+{"D0": {"all_features_bitwise": true, "all_scores_bitwise": true, "all_nce_equal": true, "lib_misses_total": 0, "all_prod_id_sets_identical": true, "all_prod_competition_equal": true}, "D1": {"all_features_bitwise": true, "all_scores_bitwise": true, "all_nce_equal": true, "lib_misses_total": 0, "all_prod_id_sets_identical": true, "all_prod_competition_equal": true}, "D8h": {"all_features_bitwise": false, "all_scores_bitwise": false, "all_nce_equal": true, "lib_misses_total": 0, "all_prod_id_sets_identical": true, "all_prod_competition_equal": false}}

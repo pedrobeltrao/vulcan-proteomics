@@ -1,0 +1,76 @@
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+D0 b1906_293T_proteinID_01A_QE3 0 {'ms1': 3.246, 'total': 3.246} 2.59
+D0 b1906_293T_proteinID_01A_QE3 1 {'ms1': 2.276, 'total': 2.276} 2.03
+D0 b1906_293T_proteinID_01A_QE3 2 {'ms1': 1.958, 'total': 1.958} 1.87
+D0 b1906_293T_proteinID_01A_QE3 3 {'ms1': 1.956, 'total': 1.956} 1.87
+D0 b1937_293T_proteinID_01B_QE3 0 {'ms1': 1.808, 'total': 1.808} 1.73
+D0 b1937_293T_proteinID_01B_QE3 1 {'ms1': 1.82, 'total': 1.82} 1.74
+D0 b1937_293T_proteinID_01B_QE3 2 {'ms1': 2.322, 'total': 2.322} 1.78
+D0 b1937_293T_proteinID_01B_QE3 3 {'ms1': 2.109, 'total': 2.109} 1.77
+D1 Velos005137 0 {'ms1': 0.439, 'total': 0.439} 0.21
+D1 Velos005137 1 {'ms1': 0.529, 'total': 0.529} 0.25
+D1 Velos005137 2 {'ms1': 0.592, 'total': 0.592} 0.23
+D1 Velos005137 3 {'ms1': 0.487, 'total': 0.487} 0.22
+D8h E9_0000__H0799BL 0 {'ms1': 4.285, 'total': 4.285} 3.7
+D8h E9_0000__H0799BL 1 {'ms1': 4.803, 'total': 4.803} 3.87
+D8h E9_0000__H0799BL 2 {'ms1': 3.657, 'total': 3.657} 3.53
+D8h E9_0000__H0799BL 3 {'ms1': 3.755, 'total': 3.755} 3.63
+D8h E9_0001__QE-B_2018-09_E02_Pr 0 {'ms1': 0.168, 'total': 0.168} 0.16
+D8h E9_0001__QE-B_2018-09_E02_Pr 1 {'ms1': 0.15, 'total': 0.15} 0.15
+D8h E9_0001__QE-B_2018-09_E02_Pr 2 {'ms1': 0.168, 'total': 0.168} 0.17
+D8h E9_0001__QE-B_2018-09_E02_Pr 3 {'ms1': 0.142, 'total': 0.142} 0.14
+D8h E9_0002__MGP2 0 {'ms1': 1.155, 'total': 1.155} 1.11
+D8h E9_0002__MGP2 1 {'ms1': 1.145, 'total': 1.145} 1.1
+D8h E9_0002__MGP2 2 {'ms1': 1.162, 'total': 1.162} 1.12
+D8h E9_0002__MGP2 3 {'ms1': 1.114, 'total': 1.114} 1.07
+D8h E9_0003__20180623_PC463-Grav 0 {'ms1': 0.963, 'total': 0.963} 0.93
+D8h E9_0003__20180623_PC463-Grav 1 {'ms1': 0.865, 'total': 0.865} 0.83
+D8h E9_0003__20180623_PC463-Grav 2 {'ms1': 0.898, 'total': 0.898} 0.87
+D8h E9_0003__20180623_PC463-Grav 3 {'ms1': 0.892, 'total': 0.892} 0.86
+D8h E9_0004__20210122-YP20210447 0 {'ms1': 0.67, 'total': 0.67} 0.65
+D8h E9_0004__20210122-YP20210447 1 {'ms1': 0.647, 'total': 0.647} 0.63
+D8h E9_0004__20210122-YP20210447 2 {'ms1': 0.709, 'total': 0.709} 0.69
+D8h E9_0004__20210122-YP20210447 3 {'ms1': 0.666, 'total': 0.666} 0.64
+D8h E9_0005__20240423_LennonR_Ha 0 {'ms1': 0.321, 'total': 0.321} 0.31
+D8h E9_0005__20240423_LennonR_Ha 1 {'ms1': 0.303, 'total': 0.303} 0.3
+D8h E9_0005__20240423_LennonR_Ha 2 {'ms1': 0.304, 'total': 0.304} 0.3
+D8h E9_0005__20240423_LennonR_Ha 3 {'ms1': 0.297, 'total': 0.297} 0.29
+D8h E9_0006__CL_CTL_p53_ZNF_0610 0 {'ms1': 0.197, 'total': 0.197} 0.19
+D8h E9_0006__CL_CTL_p53_ZNF_0610 1 {'ms1': 0.207, 'total': 0.207} 0.2
+D8h E9_0006__CL_CTL_p53_ZNF_0610 2 {'ms1': 0.204, 'total': 0.204} 0.2
+D8h E9_0006__CL_CTL_p53_ZNF_0610 3 {'ms1': 0.187, 'total': 0.187} 0.18
+D8h E9_0007__170413_gc_M5-013-14 0 {'ms1': 0.902, 'total': 0.902} 0.86
+D8h E9_0007__170413_gc_M5-013-14 1 {'ms1': 0.901, 'total': 0.901} 0.85
+D8h E9_0007__170413_gc_M5-013-14 2 {'ms1': 0.912, 'total': 0.912} 0.87
+D8h E9_0007__170413_gc_M5-013-14 3 {'ms1': 0.851, 'total': 0.851} 0.8
+D8h E9_0008__lgg1 0 {'ms1': 0.619, 'total': 0.619} 0.6
+D8h E9_0008__lgg1 1 {'ms1': 0.654, 'total': 0.654} 0.63
+D8h E9_0008__lgg1 2 {'ms1': 0.633, 'total': 0.633} 0.61
+D8h E9_0008__lgg1 3 {'ms1': 0.651, 'total': 0.651} 0.63
+D8h E9_0009__20170210_MCF7_LysC_ 0 {'ms1': 0.475, 'total': 0.475} 0.46
+D8h E9_0009__20170210_MCF7_LysC_ 1 {'ms1': 0.45, 'total': 0.45} 0.43
+D8h E9_0009__20170210_MCF7_LysC_ 2 {'ms1': 0.469, 'total': 0.469} 0.45
+D8h E9_0009__20170210_MCF7_LysC_ 3 {'ms1': 0.514, 'total': 0.514} 0.5
+{
+ "ms1": {
+  "wall_s": 13.730017462745309,
+  "core_s": 12.688910999999994,
+  "gpu_s": 0.8159464373476802,
+  "sub_wall_s": {
+   "load": 3.9462472344748676,
+   "gpu_gate_wait": 0.0005028760060667992,
+   "gpu_hills": 0.8391008819453418,
+   "gpu_hills_d2h": 0.2842806903645396,
+   "gpu_isotopes": 0.4303238224238157,
+   "greedy": 2.0006370106711984,
+   "isotopes": 2.7650068877264857,
+   "table": 3.304325807839632,
+   "total": 11.426323543302715
+  }
+ },
+ "total": {
+  "wall_s": 13.730017462745309,
+  "core_s": 12.688910999999994
+ }
+}

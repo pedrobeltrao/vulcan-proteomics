@@ -1,0 +1,3704 @@
+{
+ "n_runs": 50,
+ "workers": 24,
+ "makespan_s": 10.727682113647461,
+ "runs_per_hour": 16779.02067689058,
+ "runs_per_hour_steady": 32876.61730989251,
+ "ms2_per_s": 130781.93268004825,
+ "n_ms2": 1402987,
+ "time_to_first_result_s": 3.843463659286499,
+ "first_ingest_start_s": 0.5753731727600098,
+ "setup": {
+  "torch_import_s": 1.4936904218047857,
+  "cuda_init_s": 0.4421734921634197,
+  "l1_load_s": 0.4240177967585623,
+  "gpu_index_build_s": 0.32439432479441166,
+  "setup_total_s": 2.6843663617037237,
+  "gpu_index_bytes": 1503928856,
+  "n_postings": 175429652,
+  "n_rows": 7058668,
+  "setup_done_at_s": 2.7963719367980957
+ },
+ "core_s": {
+  "main_process": 16.471562,
+  "decode_workers": 221.549308,
+  "total": 238.02087,
+  "per_run": 4.7604174,
+  "per_1e5_ms2": 16.965294047628383,
+  "decode_jobs_sum": 170.392518,
+  "ms1_jobs_sum": 0.0,
+  "decode_worker_fixed": 51.15679
+ },
+ "ms1_share_of_worker_busy": 0.0,
+ "gpu_s": {
+  "events_total": 4.195118093069643,
+  "per_run": 0.08390236186139287,
+  "util_mean_pct_after_setup": 14.945652173913043,
+  "util_samples": 114
+ },
+ "host_busy_cores_mean": 31.6792,
+ "stage_busy_fraction": {
+  "decode_pool": 0.6436161948677739,
+  "loader": 0.4830746795877601,
+  "gpu_stage_wall": 0.2058375500831645,
+  "gpu_kernels_events": 0.3910554068089629,
+  "writer": 0.13194228001411706
+ },
+ "bottleneck": "decode_pool",
+ "per_run_median": {
+  "ingest_wall_s": 2.4826924800872803,
+  "ingest_core_s": 2.7197760000000004,
+  "ms1_wall_s": 0.0,
+  "ms1_core_s": 0.0,
+  "load_s": 0.20171689987182617,
+  "search_wall_s": 0.07630586624145508,
+  "gpu_ms": 73.520736515522,
+  "write_s": 0.041880130767822266
+ },
+ "per_run_sum": {
+  "ingest_wall_s": 165.70823860168457,
+  "ingest_core_s": 170.392518,
+  "ms1_wall_s": 0.0,
+  "ms1_core_s": 0.0,
+  "load_s": 10.364543199539185,
+  "search_wall_s": 4.4163196086883545,
+  "gpu_s": 4.195118093069643,
+  "write_s": 2.830869674682617
+ },
+ "runs": [
+  {
+   "run": "72_r01",
+   "raw": "data/raw/PXD000138/72.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/72_r01.vspec.arrow",
+   "pid": 1003945,
+   "t_start": 0.6832075119018555,
+   "t_end": 3.595593214035034,
+   "wall_s": 2.9123857021331787,
+   "core_s": 2.750705,
+   "n_spectra": 14640,
+   "n_ms2": 10155,
+   "n_peaks": 9908387,
+   "store_bytes": 82058042,
+   "raw_bytes": 495419780,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.9848888516426086e-06,
+    "decode": 1.9715380473062396,
+    "arrow_write": 0.259248114656657,
+    "close": 0.00048211170360445976,
+    "raw_stage_copy": 0.41063714027404785
+   },
+   "cpu_s": {
+    "prefetch": 3.165000000082685e-06,
+    "runtime_load": 3.2240000000793856e-06,
+    "decode": 1.8003644420000002,
+    "arrow_write": 0.3045242600000009
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    3.6102957725524902,
+    3.7005536556243896
+   ],
+   "gpu_wait_s": 0.8592538833618164,
+   "search_t": [
+    3.700707197189331,
+    3.843463659286499
+   ],
+   "search_wall_s": 0.14275646209716797,
+   "gpu_ms": {
+    "k0": 45.98380661010742,
+    "hyp": 0.05923200026154518,
+    "k1": 50.719295501708984,
+    "topk": 8.496159553527832,
+    "k2": 2.2179839611053467,
+    "features": 31.60748863220215
+   },
+   "h2d_bytes": 10910016,
+   "n_psms": 5878,
+   "n_searched": 10151,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    3.850383996963501,
+    3.8885295391082764
+   ]
+  },
+  {
+   "run": "66_r01",
+   "raw": "data/raw/PXD000138/66.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/66_r01.vspec.arrow",
+   "pid": 1003944,
+   "t_start": 0.7667701244354248,
+   "t_end": 3.5333075523376465,
+   "wall_s": 2.7665374279022217,
+   "core_s": 2.7739870000000004,
+   "n_spectra": 14890,
+   "n_ms2": 10841,
+   "n_peaks": 10051586,
+   "store_bytes": 83260138,
+   "raw_bytes": 495419462,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.3746473491191864e-06,
+    "decode": 1.6928453864529729,
+    "arrow_write": 0.283704137429595,
+    "close": 0.0007080002687871456,
+    "raw_stage_copy": 0.4179086685180664
+   },
+   "cpu_s": {
+    "prefetch": 4.596999999995077e-06,
+    "runtime_load": 3.58500000008366e-06,
+    "decode": 1.6802630820000006,
+    "arrow_write": 0.40078628500000013
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    3.5384066104888916,
+    3.6249587535858154
+   ],
+   "gpu_wait_s": 0.7839314937591553,
+   "search_t": [
+    3.6251237392425537,
+    3.886263847351074
+   ],
+   "search_wall_s": 0.2611401081085205,
+   "gpu_ms": {
+    "k0": 120.61408233642578,
+    "hyp": 0.13945600390434265,
+    "k1": 24.848064422607422,
+    "topk": 45.03203201293945,
+    "k2": 28.931072235107422,
+    "features": 32.65983963012695
+   },
+   "h2d_bytes": 12051008,
+   "n_psms": 5884,
+   "n_searched": 10837,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    3.888601779937744,
+    3.92801833152771
+   ]
+  },
+  {
+   "run": "72",
+   "raw": "data/raw/PXD000138/72.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/72.vspec.arrow",
+   "pid": 1003949,
+   "t_start": 0.6825830936431885,
+   "t_end": 3.7582478523254395,
+   "wall_s": 3.075664758682251,
+   "core_s": 2.98536,
+   "n_spectra": 14640,
+   "n_ms2": 10155,
+   "n_peaks": 9908387,
+   "store_bytes": 82058042,
+   "raw_bytes": 495419780,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.055909812450409e-06,
+    "decode": 2.1152134342119098,
+    "arrow_write": 0.28037526132538915,
+    "close": 0.0006113662384450436,
+    "raw_stage_copy": 0.40982675552368164
+   },
+   "cpu_s": {
+    "prefetch": 4.997999999978298e-06,
+    "runtime_load": 4.266000000030523e-06,
+    "decode": 1.9514561540000002,
+    "arrow_write": 0.36805724900000025
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    3.7624802589416504,
+    3.815251350402832
+   ],
+   "gpu_wait_s": 1.9311904907226562e-05,
+   "search_t": [
+    3.9038074016571045,
+    3.973177909851074
+   ],
+   "search_wall_s": 0.06937050819396973,
+   "gpu_ms": {
+    "k0": 5.600480079650879,
+    "hyp": 0.05299200117588043,
+    "k1": 24.68560028076172,
+    "topk": 15.162879943847656,
+    "k2": 2.514944076538086,
+    "features": 19.991872787475586
+   },
+   "h2d_bytes": 10910016,
+   "n_psms": 5878,
+   "n_searched": 10151,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    3.9733455181121826,
+    4.017679452896118
+   ]
+  },
+  {
+   "run": "66",
+   "raw": "data/raw/PXD000138/66.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/66.vspec.arrow",
+   "pid": 1003933,
+   "t_start": 0.6964318752288818,
+   "t_end": 3.69142746925354,
+   "wall_s": 2.994995594024658,
+   "core_s": 2.8083989999999996,
+   "n_spectra": 14890,
+   "n_ms2": 10841,
+   "n_peaks": 10051586,
+   "store_bytes": 83260138,
+   "raw_bytes": 495419462,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.2046809792518616e-06,
+    "decode": 2.0521763120777905,
+    "arrow_write": 0.27395192021504045,
+    "close": 0.0005200887098908424,
+    "raw_stage_copy": 0.36696338653564453
+   },
+   "cpu_s": {
+    "prefetch": 4.4470000000185195e-06,
+    "runtime_load": 3.405000000067382e-06,
+    "decode": 1.776132253,
+    "arrow_write": 0.3545800579999996
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    3.69219708442688,
+    3.750311851501465
+   ],
+   "gpu_wait_s": 2.1457672119140625e-05,
+   "search_t": [
+    3.851210832595825,
+    3.9792394638061523
+   ],
+   "search_wall_s": 0.12802863121032715,
+   "gpu_ms": {
+    "k0": 46.37651062011719,
+    "hyp": 0.07391999661922455,
+    "k1": 33.541534423828125,
+    "topk": 15.955967903137207,
+    "k2": 2.6357760429382324,
+    "features": 25.618783950805664
+   },
+   "h2d_bytes": 12051008,
+   "n_psms": 5884,
+   "n_searched": 10837,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    3.981581211090088,
+    4.003990411758423
+   ]
+  },
+  {
+   "run": "02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 1003938,
+   "t_start": 0.6536662578582764,
+   "t_end": 3.818476915359497,
+   "wall_s": 3.1648106575012207,
+   "core_s": 3.1244949999999996,
+   "n_spectra": 52590,
+   "n_ms2": 47913,
+   "n_peaks": 8032201,
+   "store_bytes": 74784354,
+   "raw_bytes": 552477520,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.75392085313797e-06,
+    "decode": 2.2292612455785275,
+    "arrow_write": 0.2930522821843624,
+    "close": 0.000887800008058548,
+    "raw_stage_copy": 0.3982729911804199
+   },
+   "cpu_s": {
+    "prefetch": 3.8359999999793e-06,
+    "runtime_load": 2.864000000046829e-06,
+    "decode": 2.1141434429999997,
+    "arrow_write": 0.3726565559999999
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    3.8209991455078125,
+    3.995941400527954
+   ],
+   "gpu_wait_s": 0.02489924430847168,
+   "search_t": [
+    3.998171806335449,
+    4.1017680168151855
+   ],
+   "search_wall_s": 0.10359621047973633,
+   "gpu_ms": {
+    "k0": 33.212158203125,
+    "hyp": 0.08521600067615509,
+    "k1": 17.15203285217285,
+    "topk": 19.90985679626465,
+    "k2": 7.724031925201416,
+    "features": 17.510784149169922
+   },
+   "h2d_bytes": 33824824,
+   "n_psms": 19744,
+   "n_searched": 43381,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    4.101901054382324,
+    4.150514125823975
+   ]
+  },
+  {
+   "run": "02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 1003939,
+   "t_start": 0.659656286239624,
+   "t_end": 3.8647868633270264,
+   "wall_s": 3.2051305770874023,
+   "core_s": 3.38894,
+   "n_spectra": 55924,
+   "n_ms2": 51861,
+   "n_peaks": 7339496,
+   "store_bytes": 69929154,
+   "raw_bytes": 521663368,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 6.079208105802536e-06,
+    "decode": 2.271403030026704,
+    "arrow_write": 0.26772225042805076,
+    "close": 0.0010416600853204727,
+    "raw_stage_copy": 0.42891693115234375
+   },
+   "cpu_s": {
+    "prefetch": 5.398000000100822e-06,
+    "runtime_load": 6.469999999980658e-06,
+    "decode": 2.453937392999998,
+    "arrow_write": 0.27615038500000044
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    3.866041421890259,
+    4.052263498306274
+   ],
+   "gpu_wait_s": 0.07304787635803223,
+   "search_t": [
+    4.052363395690918,
+    4.1645667552948
+   ],
+   "search_wall_s": 0.11220335960388184,
+   "gpu_ms": {
+    "k0": 19.334367752075195,
+    "hyp": 0.08115199953317642,
+    "k1": 25.253215789794922,
+    "topk": 42.34812927246094,
+    "k2": 4.567039966583252,
+    "features": 19.616256713867188
+   },
+   "h2d_bytes": 33765728,
+   "n_psms": 24134,
+   "n_searched": 44734,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    4.164746522903442,
+    4.204782485961914
+   ]
+  },
+  {
+   "run": "02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 1003955,
+   "t_start": 0.6736865043640137,
+   "t_end": 4.064736843109131,
+   "wall_s": 3.391050338745117,
+   "core_s": 3.4098759999999997,
+   "n_spectra": 54408,
+   "n_ms2": 50088,
+   "n_peaks": 6957605,
+   "store_bytes": 66561426,
+   "raw_bytes": 518683564,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.3150427043437958e-06,
+    "decode": 2.2994775134138763,
+    "arrow_write": 0.28300461964681745,
+    "close": 0.000506439246237278,
+    "raw_stage_copy": 0.39862608909606934
+   },
+   "cpu_s": {
+    "prefetch": 6.159000000005577e-06,
+    "runtime_load": 3.4459999999070234e-06,
+    "decode": 2.15926742,
+    "arrow_write": 0.35266012400000024
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.065782785415649,
+    4.190316200256348
+   ],
+   "gpu_wait_s": 0.08903145790100098,
+   "search_t": [
+    4.190892457962036,
+    4.313650369644165
+   ],
+   "search_wall_s": 0.1227579116821289,
+   "gpu_ms": {
+    "k0": 16.54732894897461,
+    "hyp": 0.09161599725484848,
+    "k1": 51.00630569458008,
+    "topk": 12.608287811279297,
+    "k2": 3.4856960773468018,
+    "features": 31.09017562866211
+   },
+   "h2d_bytes": 29302672,
+   "n_psms": 18807,
+   "n_searched": 42135,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    4.313860654830933,
+    4.36269474029541
+   ]
+  },
+  {
+   "run": "02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 1003942,
+   "t_start": 0.6634080410003662,
+   "t_end": 4.088711261749268,
+   "wall_s": 3.4253032207489014,
+   "core_s": 3.291079,
+   "n_spectra": 55924,
+   "n_ms2": 51861,
+   "n_peaks": 7339496,
+   "store_bytes": 69929170,
+   "raw_bytes": 521663368,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.885943442583084e-06,
+    "decode": 2.331536023877561,
+    "arrow_write": 0.3075215616263449,
+    "close": 0.0006487718783318996,
+    "raw_stage_copy": 0.4463932514190674
+   },
+   "cpu_s": {
+    "prefetch": 4.075999999963997e-06,
+    "runtime_load": 4.005999999945331e-06,
+    "decode": 2.181202790999999,
+    "arrow_write": 0.3734510310000012
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.089616537094116,
+    4.224405527114868
+   ],
+   "gpu_wait_s": 0.05986332893371582,
+   "search_t": [
+    4.224555015563965,
+    4.35418963432312
+   ],
+   "search_wall_s": 0.12963461875915527,
+   "gpu_ms": {
+    "k0": 12.202655792236328,
+    "hyp": 0.07110399752855301,
+    "k1": 49.30624008178711,
+    "topk": 10.55907154083252,
+    "k2": 6.210559844970703,
+    "features": 50.04316711425781
+   },
+   "h2d_bytes": 33765728,
+   "n_psms": 24134,
+   "n_searched": 44734,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    4.362370729446411,
+    4.415459394454956
+   ]
+  },
+  {
+   "run": "02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 1003947,
+   "t_start": 0.6657536029815674,
+   "t_end": 4.112140893936157,
+   "wall_s": 3.44638729095459,
+   "core_s": 3.6438910000000004,
+   "n_spectra": 54408,
+   "n_ms2": 50088,
+   "n_peaks": 6957605,
+   "store_bytes": 66561410,
+   "raw_bytes": 518683564,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 7.701106369495392e-06,
+    "decode": 2.450528347864747,
+    "arrow_write": 0.3200099365785718,
+    "close": 0.0006863381713628769,
+    "raw_stage_copy": 0.390333890914917
+   },
+   "cpu_s": {
+    "prefetch": 7.522000000093065e-06,
+    "runtime_load": 7.930999999961053e-06,
+    "decode": 2.4204130509999993,
+    "arrow_write": 0.3864154129999997
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.190389394760132,
+    4.413751602172852
+   ],
+   "gpu_wait_s": 0.10011887550354004,
+   "search_t": [
+    4.413869380950928,
+    4.474820852279663
+   ],
+   "search_wall_s": 0.06095147132873535,
+   "gpu_ms": {
+    "k0": 10.383935928344727,
+    "hyp": 0.11372800171375275,
+    "k1": 10.341983795166016,
+    "topk": 15.230079650878906,
+    "k2": 4.023295879364014,
+    "features": 19.657472610473633
+   },
+   "h2d_bytes": 29302672,
+   "n_psms": 18807,
+   "n_searched": 42135,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    4.477737665176392,
+    4.522209167480469
+   ]
+  },
+  {
+   "run": "02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 1003930,
+   "t_start": 0.6549134254455566,
+   "t_end": 4.204577922821045,
+   "wall_s": 3.5496644973754883,
+   "core_s": 3.64124,
+   "n_spectra": 52590,
+   "n_ms2": 47913,
+   "n_peaks": 8032201,
+   "store_bytes": 74784370,
+   "raw_bytes": 552477520,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.79724258184433e-06,
+    "decode": 2.417555518448353,
+    "arrow_write": 0.30614155530929565,
+    "close": 0.0006588874384760857,
+    "raw_stage_copy": 0.44539856910705566
+   },
+   "cpu_s": {
+    "prefetch": 7.120000000027105e-06,
+    "runtime_load": 5.028000000018018e-06,
+    "decode": 2.537796064,
+    "arrow_write": 0.34898801199999796
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.224469900131226,
+    4.442265510559082
+   ],
+   "gpu_wait_s": 0.08862066268920898,
+   "search_t": [
+    4.442953824996948,
+    4.529735326766968
+   ],
+   "search_wall_s": 0.08678150177001953,
+   "gpu_ms": {
+    "k0": 16.534624099731445,
+    "hyp": 1.2667839527130127,
+    "k1": 28.088224411010742,
+    "topk": 8.64367961883545,
+    "k2": 4.246528148651123,
+    "features": 24.024831771850586
+   },
+   "h2d_bytes": 33824824,
+   "n_psms": 19744,
+   "n_searched": 43381,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    4.52996563911438,
+    4.5686962604522705
+   ]
+  },
+  {
+   "run": "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 1003946,
+   "t_start": 0.6525592803955078,
+   "t_end": 4.517674684524536,
+   "wall_s": 3.8651154041290283,
+   "core_s": 3.811154,
+   "n_spectra": 58537,
+   "n_ms2": 55131,
+   "n_peaks": 11119548,
+   "store_bytes": 100711290,
+   "raw_bytes": 636373246,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.4458935260772705e-06,
+    "decode": 2.6433341684751213,
+    "arrow_write": 0.30338762421160936,
+    "close": 0.0006254571489989758,
+    "raw_stage_copy": 0.548015832901001
+   },
+   "cpu_s": {
+    "prefetch": 4.687000000003216e-06,
+    "runtime_load": 3.58500000008366e-06,
+    "decode": 2.6725784370000008,
+    "arrow_write": 0.31940461000000075
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.521117925643921,
+    4.6793763637542725
+   ],
+   "gpu_wait_s": 0.20200872421264648,
+   "search_t": [
+    4.679530620574951,
+    4.760367155075073
+   ],
+   "search_wall_s": 0.08083653450012207,
+   "gpu_ms": {
+    "k0": 21.990079879760742,
+    "hyp": 0.0899839997291565,
+    "k1": 30.224063873291016,
+    "topk": 5.958559989929199,
+    "k2": 3.256319999694824,
+    "features": 18.436031341552734
+   },
+   "h2d_bytes": 54317240,
+   "n_psms": 22832,
+   "n_searched": 53249,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    4.760516405105591,
+    4.804748773574829
+   ]
+  },
+  {
+   "run": "XLpeplib_Beveridge_QEx-HFX_DSS_R1",
+   "raw": "data/raw/PXD014337/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/XLpeplib_Beveridge_QEx-HFX_DSS_R1.vspec.arrow",
+   "pid": 1003943,
+   "t_start": 0.6519074440002441,
+   "t_end": 4.71139669418335,
+   "wall_s": 4.0594892501831055,
+   "core_s": 3.894268,
+   "n_spectra": 30115,
+   "n_ms2": 5502,
+   "n_peaks": 17359900,
+   "store_bytes": 144574098,
+   "raw_bytes": 960697429,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.2847747206687927e-06,
+    "decode": 2.4515470997430384,
+    "arrow_write": 0.330869285389781,
+    "close": 0.0006925067864358425,
+    "raw_stage_copy": 0.6702384948730469
+   },
+   "cpu_s": {
+    "prefetch": 3.474999999975026e-06,
+    "runtime_load": 3.2850000000195223e-06,
+    "decode": 2.354441262000001,
+    "arrow_write": 0.43722657200000015
+   },
+   "instrument": "Q Exactive HF-X Orbitrap",
+   "load_t": [
+    4.721728563308716,
+    4.764861583709717
+   ],
+   "gpu_wait_s": 0.2351691722869873,
+   "search_t": [
+    4.765074014663696,
+    4.797309160232544
+   ],
+   "search_wall_s": 0.032235145568847656,
+   "gpu_ms": {
+    "k0": 9.993056297302246,
+    "hyp": 0.10019200295209885,
+    "k1": 2.877216100692749,
+    "topk": 2.013024091720581,
+    "k2": 1.5196160078048706,
+    "features": 7.341087818145752
+   },
+   "h2d_bytes": 7867672,
+   "n_psms": 4142,
+   "n_searched": 5502,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    4.797556638717651,
+    4.833350658416748
+   ]
+  },
+  {
+   "run": "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 1003935,
+   "t_start": 0.6519589424133301,
+   "t_end": 4.5685529708862305,
+   "wall_s": 3.9165940284729004,
+   "core_s": 3.8570789999999993,
+   "n_spectra": 58537,
+   "n_ms2": 55131,
+   "n_peaks": 11119548,
+   "store_bytes": 100711274,
+   "raw_bytes": 636373246,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.8936192393302917e-06,
+    "decode": 2.6737740016542375,
+    "arrow_write": 0.3219307637773454,
+    "close": 0.0005996078252792358,
+    "raw_stage_copy": 0.4642171859741211
+   },
+   "cpu_s": {
+    "prefetch": 5.238000000074017e-06,
+    "runtime_load": 2.9839999999836664e-06,
+    "decode": 2.7437759659999994,
+    "arrow_write": 0.3608431729999999
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.56962251663208,
+    4.767824649810791
+   ],
+   "gpu_wait_s": 0.009652853012084961,
+   "search_t": [
+    4.77012825012207,
+    4.852306842803955
+   ],
+   "search_wall_s": 0.08217859268188477,
+   "gpu_ms": {
+    "k0": 24.704608917236328,
+    "hyp": 0.13014400005340576,
+    "k1": 12.77683162689209,
+    "topk": 5.752768039703369,
+    "k2": 3.2327680587768555,
+    "features": 19.014751434326172
+   },
+   "h2d_bytes": 54317240,
+   "n_psms": 22832,
+   "n_searched": 53249,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    4.852580547332764,
+    4.906426668167114
+   ]
+  },
+  {
+   "run": "Velos005137",
+   "raw": "data/raw/PXD001077/Velos005137.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/Velos005137.vspec.arrow",
+   "pid": 1003938,
+   "t_start": 3.818781614303589,
+   "t_end": 5.002596616744995,
+   "wall_s": 1.1838150024414062,
+   "core_s": 1.2516869999999995,
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "store_bytes": 64662858,
+   "raw_bytes": 334619250,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.397239536046982e-06,
+    "decode": 0.6441895016469061,
+    "arrow_write": 0.05314956000074744,
+    "close": 0.0007182960398495197,
+    "raw_stage_copy": 0.3131589889526367
+   },
+   "cpu_s": {
+    "prefetch": 1.0575999999762331e-05,
+    "runtime_load": 4.326999999637593e-06,
+    "decode": 0.6964209820000002,
+    "arrow_write": 0.06507307000000129
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.003642797470093,
+    5.082018852233887
+   ],
+   "gpu_wait_s": 0.2847871780395508,
+   "search_t": [
+    5.0822014808654785,
+    5.123323202133179
+   ],
+   "search_wall_s": 0.041121721267700195,
+   "gpu_ms": {
+    "k0": 8.600192070007324,
+    "hyp": 0.05951999872922897,
+    "k1": 7.108895778656006,
+    "topk": 6.763391971588135,
+    "k2": 2.8344318866729736,
+    "features": 14.715616226196289
+   },
+   "h2d_bytes": 22270160,
+   "n_psms": 10623,
+   "n_searched": 15149,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.1234354972839355,
+    5.179325580596924
+   ]
+  },
+  {
+   "run": "60_r01",
+   "raw": "data/raw/PXD000138/60.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/60_r01.vspec.arrow",
+   "pid": 1003945,
+   "t_start": 3.596194267272949,
+   "t_end": 4.998588562011719,
+   "wall_s": 1.4023942947387695,
+   "core_s": 1.5017509999999996,
+   "n_spectra": 14682,
+   "n_ms2": 10611,
+   "n_peaks": 9338286,
+   "store_bytes": 77512290,
+   "raw_bytes": 460032922,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.005618393421173e-06,
+    "decode": 0.7640942423604429,
+    "arrow_write": 0.0674458621069789,
+    "close": 0.000778665766119957,
+    "raw_stage_copy": 0.4158775806427002
+   },
+   "cpu_s": {
+    "prefetch": 1.1277000000031734e-05,
+    "runtime_load": 3.9060000003310336e-06,
+    "decode": 0.7978346080000005,
+    "arrow_write": 0.06732114199999906
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    4.99933385848999,
+    5.086314916610718
+   ],
+   "gpu_wait_s": 0.23395395278930664,
+   "search_t": [
+    5.0863916873931885,
+    5.131496429443359
+   ],
+   "search_wall_s": 0.0451047420501709,
+   "gpu_ms": {
+    "k0": 6.513823986053467,
+    "hyp": 0.06854400038719177,
+    "k1": 7.100480079650879,
+    "topk": 8.301088333129883,
+    "k2": 1.760256052017212,
+    "features": 20.259807586669922
+   },
+   "h2d_bytes": 11982576,
+   "n_psms": 6069,
+   "n_searched": 10611,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    5.131708860397339,
+    5.175369501113892
+   ]
+  },
+  {
+   "run": "58_r01",
+   "raw": "data/raw/PXD000138/58.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/58_r01.vspec.arrow",
+   "pid": 1003949,
+   "t_start": 3.7590067386627197,
+   "t_end": 5.11126708984375,
+   "wall_s": 1.3522603511810303,
+   "core_s": 1.504249999999999,
+   "n_spectra": 15060,
+   "n_ms2": 10777,
+   "n_peaks": 8479744,
+   "store_bytes": 70713954,
+   "raw_bytes": 417126672,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.506204277276993e-06,
+    "decode": 0.6684641926549375,
+    "arrow_write": 0.0650497148744762,
+    "close": 0.0005611809901893139,
+    "raw_stage_copy": 0.41930317878723145
+   },
+   "cpu_s": {
+    "prefetch": 9.825000000240891e-06,
+    "runtime_load": 4.416999999978799e-06,
+    "decode": 0.700808164000001,
+    "arrow_write": 0.06328060099999977
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.112154006958008,
+    5.181521654129028
+   ],
+   "gpu_wait_s": 0.05837678909301758,
+   "search_t": [
+    5.1817827224731445,
+    5.22062611579895
+   ],
+   "search_wall_s": 0.038843393325805664,
+   "gpu_ms": {
+    "k0": 6.430784225463867,
+    "hyp": 0.06841599941253662,
+    "k1": 3.953984022140503,
+    "topk": 2.901344060897827,
+    "k2": 1.8749439716339111,
+    "features": 18.60585594177246
+   },
+   "h2d_bytes": 11706048,
+   "n_psms": 6394,
+   "n_searched": 10774,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.221022844314575,
+    5.246109247207642
+   ]
+  },
+  {
+   "run": "58",
+   "raw": "data/raw/PXD000138/58.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/58.vspec.arrow",
+   "pid": 1003933,
+   "t_start": 3.691793918609619,
+   "t_end": 5.1221795082092285,
+   "wall_s": 1.4303855895996094,
+   "core_s": 1.5761829999999994,
+   "n_spectra": 15060,
+   "n_ms2": 10777,
+   "n_peaks": 8479744,
+   "store_bytes": 70713954,
+   "raw_bytes": 417126672,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.1748786568641663e-06,
+    "decode": 0.8329822849482298,
+    "arrow_write": 0.07501546200364828,
+    "close": 0.0007929280400276184,
+    "raw_stage_copy": 0.3219571113586426
+   },
+   "cpu_s": {
+    "prefetch": 1.3410000000213529e-05,
+    "runtime_load": 3.154999999921415e-06,
+    "decode": 0.8355308099999994,
+    "arrow_write": 0.07443869400000036
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.1816489696502686,
+    5.227382183074951
+   ],
+   "gpu_wait_s": 0.01766681671142578,
+   "search_t": [
+    5.2384114265441895,
+    5.261834144592285
+   ],
+   "search_wall_s": 0.023422718048095703,
+   "gpu_ms": {
+    "k0": 8.223679542541504,
+    "hyp": 0.06595200300216675,
+    "k1": 3.4760959148406982,
+    "topk": 2.8413760662078857,
+    "k2": 1.4581760168075562,
+    "features": 6.618879795074463
+   },
+   "h2d_bytes": 11706048,
+   "n_psms": 6394,
+   "n_searched": 10774,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.265692234039307,
+    5.293445587158203
+   ]
+  },
+  {
+   "run": "Velos005137_r01",
+   "raw": "data/raw/PXD001077/Velos005137.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/Velos005137_r01.vspec.arrow",
+   "pid": 1003939,
+   "t_start": 3.8655316829681396,
+   "t_end": 5.093493938446045,
+   "wall_s": 1.2279622554779053,
+   "core_s": 1.242317,
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "store_bytes": 64662874,
+   "raw_bytes": 334619250,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.066154360771179e-06,
+    "decode": 0.6540634706616402,
+    "arrow_write": 0.0498231896199286,
+    "close": 0.0004560425877571106,
+    "raw_stage_copy": 0.33559131622314453
+   },
+   "cpu_s": {
+    "prefetch": 1.1276999999587645e-05,
+    "runtime_load": 3.7349999999491956e-06,
+    "decode": 0.6825246200000006,
+    "arrow_write": 0.05755657699999972
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.0944154262542725,
+    5.202288389205933
+   ],
+   "gpu_wait_s": 0.07091736793518066,
+   "search_t": [
+    5.202518701553345,
+    5.276883125305176
+   ],
+   "search_wall_s": 0.07436442375183105,
+   "gpu_ms": {
+    "k0": 15.348832130432129,
+    "hyp": 0.06825599819421768,
+    "k1": 7.247712135314941,
+    "topk": 4.786143779754639,
+    "k2": 2.800640106201172,
+    "features": 42.706912994384766
+   },
+   "h2d_bytes": 22270160,
+   "n_psms": 10623,
+   "n_searched": 15149,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    5.277034282684326,
+    5.308131456375122
+   ]
+  },
+  {
+   "run": "60",
+   "raw": "data/raw/PXD000138/60.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/60.vspec.arrow",
+   "pid": 1003944,
+   "t_start": 3.5344648361206055,
+   "t_end": 5.128726959228516,
+   "wall_s": 1.5942621231079102,
+   "core_s": 1.6142679999999996,
+   "n_spectra": 14682,
+   "n_ms2": 10611,
+   "n_peaks": 9338286,
+   "store_bytes": 77512290,
+   "raw_bytes": 460032922,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.198176950216293e-06,
+    "decode": 0.8779285685159266,
+    "arrow_write": 0.06211536983028054,
+    "close": 0.0007233130745589733,
+    "raw_stage_copy": 0.4668998718261719
+   },
+   "cpu_s": {
+    "prefetch": 8.74299999997774e-06,
+    "runtime_load": 4.987000000067354e-06,
+    "decode": 0.8925427069999996,
+    "arrow_write": 0.06172667899999951
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.202371835708618,
+    5.256695747375488
+   ],
+   "gpu_wait_s": 1.1682510375976562e-05,
+   "search_t": [
+    5.261963844299316,
+    5.294062852859497
+   ],
+   "search_wall_s": 0.032099008560180664,
+   "gpu_ms": {
+    "k0": 11.745439529418945,
+    "hyp": 0.0732479989528656,
+    "k1": 4.5905280113220215,
+    "topk": 2.4669439792633057,
+    "k2": 1.4673919677734375,
+    "features": 6.574336051940918
+   },
+   "h2d_bytes": 11982576,
+   "n_psms": 6069,
+   "n_searched": 10611,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.294715881347656,
+    5.322633266448975
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool2_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.vspec.arrow",
+   "pid": 1003943,
+   "t_start": 4.712018966674805,
+   "t_end": 5.2946531772613525,
+   "wall_s": 0.5826342105865479,
+   "core_s": 0.5751479999999995,
+   "n_spectra": 7728,
+   "n_ms2": 3538,
+   "n_peaks": 3094405,
+   "store_bytes": 26234930,
+   "raw_bytes": 218563894,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 9.254086762666702e-06,
+    "decode": 0.24715852830559015,
+    "arrow_write": 0.0209715417586267,
+    "close": 0.0005157431587576866,
+    "raw_stage_copy": 0.21331095695495605
+   },
+   "cpu_s": {
+    "prefetch": 2.2684000000161575e-05,
+    "runtime_load": 8.70299999977675e-06,
+    "decode": 0.23662898600000037,
+    "arrow_write": 0.02478582100000093
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.2954864501953125,
+    5.311077356338501
+   ],
+   "gpu_wait_s": 0.03422975540161133,
+   "search_t": [
+    5.311220645904541,
+    5.322738409042358
+   ],
+   "search_wall_s": 0.011517763137817383,
+   "gpu_ms": {
+    "k0": 3.8341760635375977,
+    "hyp": 0.058880001306533813,
+    "k1": 1.514464020729065,
+    "topk": 1.1889599561691284,
+    "k2": 0.7321599721908569,
+    "features": 3.382335901260376
+   },
+   "h2d_bytes": 4472104,
+   "n_psms": 963,
+   "n_searched": 3507,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    5.322876691818237,
+    5.332705497741699
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool3_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.vspec.arrow",
+   "pid": 1003938,
+   "t_start": 5.003375291824341,
+   "t_end": 5.594723701477051,
+   "wall_s": 0.59134840965271,
+   "core_s": 0.6171940000000005,
+   "n_spectra": 7524,
+   "n_ms2": 3064,
+   "n_peaks": 3080903,
+   "store_bytes": 26080034,
+   "raw_bytes": 218366958,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.8936192393302917e-06,
+    "decode": 0.2191245681606233,
+    "arrow_write": 0.02165002655237913,
+    "close": 0.0005990369245409966,
+    "raw_stage_copy": 0.24609088897705078
+   },
+   "cpu_s": {
+    "prefetch": 8.081999999909328e-06,
+    "runtime_load": 2.805000000272173e-06,
+    "decode": 0.217931632,
+    "arrow_write": 0.021626613999999655
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.595627546310425,
+    5.60937237739563
+   ],
+   "gpu_wait_s": 0.3153347969055176,
+   "search_t": [
+    5.609536409378052,
+    5.6341352462768555
+   ],
+   "search_wall_s": 0.02459883689880371,
+   "gpu_ms": {
+    "k0": 4.5188798904418945,
+    "hyp": 0.053888000547885895,
+    "k1": 1.2946879863739014,
+    "topk": 1.0154240131378174,
+    "k2": 0.6010879874229431,
+    "features": 16.150623321533203
+   },
+   "h2d_bytes": 3270704,
+   "n_psms": 749,
+   "n_searched": 3046,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.634430885314941,
+    5.650058031082153
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool3_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 1003939,
+   "t_start": 5.09377908706665,
+   "t_end": 5.6569883823394775,
+   "wall_s": 0.5632092952728271,
+   "core_s": 0.5596849999999991,
+   "n_spectra": 7524,
+   "n_ms2": 3064,
+   "n_peaks": 3080903,
+   "store_bytes": 26080034,
+   "raw_bytes": 218366958,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.07522714138031e-06,
+    "decode": 0.2916882368735969,
+    "arrow_write": 0.0199714251793921,
+    "close": 0.0004874798469245434,
+    "raw_stage_copy": 0.15999317169189453
+   },
+   "cpu_s": {
+    "prefetch": 1.1687999999843157e-05,
+    "runtime_load": 2.9350000003702803e-06,
+    "decode": 0.2842167250000003,
+    "arrow_write": 0.019949679000000664
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.657800197601318,
+    5.672321557998657
+   ],
+   "gpu_wait_s": 0.3497011661529541,
+   "search_t": [
+    5.672538757324219,
+    5.685620307922363
+   ],
+   "search_wall_s": 0.013081550598144531,
+   "gpu_ms": {
+    "k0": 4.546048164367676,
+    "hyp": 0.08454400300979614,
+    "k1": 1.8168319463729858,
+    "topk": 1.5492160320281982,
+    "k2": 0.7895039916038513,
+    "features": 3.4333760738372803
+   },
+   "h2d_bytes": 3270704,
+   "n_psms": 749,
+   "n_searched": 3046,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    5.685834169387817,
+    5.700615882873535
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool2_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 1003945,
+   "t_start": 4.99916410446167,
+   "t_end": 5.701807022094727,
+   "wall_s": 0.7026429176330566,
+   "core_s": 0.8104760000000004,
+   "n_spectra": 7728,
+   "n_ms2": 3538,
+   "n_peaks": 3094405,
+   "store_bytes": 26234930,
+   "raw_bytes": 218563894,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.454034984111786e-06,
+    "decode": 0.29128297977149487,
+    "arrow_write": 0.021589829120784998,
+    "close": 0.0005737687461078167,
+    "raw_stage_copy": 0.23914575576782227
+   },
+   "cpu_s": {
+    "prefetch": 7.0399999998471685e-06,
+    "runtime_load": 2.4639999995912376e-06,
+    "decode": 0.32738337400000006,
+    "arrow_write": 0.021558272000000045
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.702939987182617,
+    5.720628499984741
+   ],
+   "gpu_wait_s": 0.08657312393188477,
+   "search_t": [
+    5.720818758010864,
+    5.732927560806274
+   ],
+   "search_wall_s": 0.012108802795410156,
+   "gpu_ms": {
+    "k0": 3.9364800453186035,
+    "hyp": 0.061344001442193985,
+    "k1": 2.2719039916992188,
+    "topk": 1.431872010231018,
+    "k2": 0.7188479900360107,
+    "features": 3.0810561180114746
+   },
+   "h2d_bytes": 4472104,
+   "n_psms": 963,
+   "n_searched": 3507,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.733098030090332,
+    5.739879131317139
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool4_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.vspec.arrow",
+   "pid": 1003933,
+   "t_start": 5.1226043701171875,
+   "t_end": 5.78160834312439,
+   "wall_s": 0.6590039730072021,
+   "core_s": 0.8031940000000013,
+   "n_spectra": 7603,
+   "n_ms2": 3407,
+   "n_peaks": 2942708,
+   "store_bytes": 24996266,
+   "raw_bytes": 210734906,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.0137598514556885e-06,
+    "decode": 0.2691544536501169,
+    "arrow_write": 0.027463306207209826,
+    "close": 0.0011598370037972927,
+    "raw_stage_copy": 0.21758556365966797
+   },
+   "cpu_s": {
+    "prefetch": 1.2277999999810163e-05,
+    "runtime_load": 3.0250000007114863e-06,
+    "decode": 0.31711391799999955,
+    "arrow_write": 0.026806041999999586
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.782700538635254,
+    5.803924083709717
+   ],
+   "gpu_wait_s": 0.11840558052062988,
+   "search_t": [
+    5.804155349731445,
+    5.818466424942017
+   ],
+   "search_wall_s": 0.014311075210571289,
+   "gpu_ms": {
+    "k0": 4.858399868011475,
+    "hyp": 0.08620800077915192,
+    "k1": 2.1093759536743164,
+    "topk": 1.5536320209503174,
+    "k2": 0.9584640264511108,
+    "features": 3.927232027053833
+   },
+   "h2d_bytes": 4217536,
+   "n_psms": 1254,
+   "n_searched": 3383,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    5.818663120269775,
+    5.832254648208618
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool4_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 1003944,
+   "t_start": 5.129232406616211,
+   "t_end": 5.823740720748901,
+   "wall_s": 0.6945083141326904,
+   "core_s": 0.7738979999999991,
+   "n_spectra": 7603,
+   "n_ms2": 3407,
+   "n_peaks": 2942708,
+   "store_bytes": 24996266,
+   "raw_bytes": 210734906,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.935769200325012e-06,
+    "decode": 0.28391221771016717,
+    "arrow_write": 0.029964533168822527,
+    "close": 0.0011327867396175861,
+    "raw_stage_copy": 0.22033238410949707
+   },
+   "cpu_s": {
+    "prefetch": 1.0125999999388569e-05,
+    "runtime_load": 3.6349999996687643e-06,
+    "decode": 0.2864241819999993,
+    "arrow_write": 0.029078509999999724
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    5.826984643936157,
+    5.8453309535980225
+   ],
+   "gpu_wait_s": 0.11240601539611816,
+   "search_t": [
+    5.845459699630737,
+    5.860147714614868
+   ],
+   "search_wall_s": 0.01468801498413086,
+   "gpu_ms": {
+    "k0": 3.939807891845703,
+    "hyp": 0.05708799883723259,
+    "k1": 1.348512053489685,
+    "topk": 1.923967957496643,
+    "k2": 0.9687039852142334,
+    "features": 5.481344223022461
+   },
+   "h2d_bytes": 4217536,
+   "n_psms": 1254,
+   "n_searched": 3383,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    5.860327243804932,
+    5.871072053909302
+   ]
+  },
+  {
+   "run": "dq_00100_11cell_90min_sps_A11",
+   "raw": "data/raw/PXD016766/dq_00100_11cell_90min_sps_A11.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00100_11cell_90min_sps_A11.vspec.arrow",
+   "pid": 1003930,
+   "t_start": 4.2050251960754395,
+   "t_end": 6.137763261795044,
+   "wall_s": 1.9327380657196045,
+   "core_s": 2.2227520000000007,
+   "n_spectra": 44812,
+   "n_ms2": 20442,
+   "n_peaks": 15961971,
+   "store_bytes": 138693714,
+   "raw_bytes": 231970426,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.4850090742111206e-06,
+    "decode": 1.4284147550351918,
+    "arrow_write": 0.10985007928684354,
+    "close": 0.0004526069387793541,
+    "raw_stage_copy": 0.19123125076293945
+   },
+   "cpu_s": {
+    "prefetch": 8.924000000298804e-06,
+    "runtime_load": 3.4759999998357216e-06,
+    "decode": 1.6296717090000001,
+    "arrow_write": 0.11841531100000147
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    6.138456583023071,
+    6.3975889682769775
+   ],
+   "gpu_wait_s": 0.5791270732879639,
+   "search_t": [
+    6.397729158401489,
+    6.517913103103638
+   ],
+   "search_wall_s": 0.12018394470214844,
+   "gpu_ms": {
+    "k0": 52.918975830078125,
+    "hyp": 0.07500799745321274,
+    "k1": 22.951904296875,
+    "topk": 4.487775802612305,
+    "k2": 3.1447041034698486,
+    "features": 17.5251522064209
+   },
+   "h2d_bytes": 87483784,
+   "n_psms": 1773,
+   "n_searched": 20409,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    6.519824504852295,
+    6.564493179321289
+   ]
+  },
+  {
+   "run": "20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2",
+   "raw": "data/raw/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.vspec.arrow",
+   "pid": 1003953,
+   "t_start": 0.6477601528167725,
+   "t_end": 6.179731130599976,
+   "wall_s": 5.531970977783203,
+   "core_s": 5.647681,
+   "n_spectra": 53050,
+   "n_ms2": 43596,
+   "n_peaks": 21208326,
+   "store_bytes": 180214962,
+   "raw_bytes": 1425918096,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.017966032028198e-06,
+    "decode": 3.4287842409685254,
+    "arrow_write": 0.39853586815297604,
+    "close": 0.0008058971725404263,
+    "raw_stage_copy": 1.1504087448120117
+   },
+   "cpu_s": {
+    "prefetch": 5.6280000000352715e-06,
+    "runtime_load": 5.4080000000400474e-06,
+    "decode": 3.733126120000001,
+    "arrow_write": 0.46128204800000017
+   },
+   "instrument": "Q Exactive HF-X Orbitrap",
+   "load_t": [
+    6.181025266647339,
+    6.559234857559204
+   ],
+   "gpu_wait_s": 0.6932287216186523,
+   "search_t": [
+    6.559580087661743,
+    6.7074267864227295
+   ],
+   "search_wall_s": 0.14784669876098633,
+   "gpu_ms": {
+    "k0": 37.637664794921875,
+    "hyp": 0.1122559979557991,
+    "k1": 25.323551177978516,
+    "topk": 26.828128814697266,
+    "k2": 8.390656471252441,
+    "features": 48.175201416015625
+   },
+   "h2d_bytes": 105603688,
+   "n_psms": 29785,
+   "n_searched": 43167,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    6.710916757583618,
+    6.801231145858765
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool1_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.vspec.arrow",
+   "pid": 1003944,
+   "t_start": 5.825240135192871,
+   "t_end": 6.488399267196655,
+   "wall_s": 0.6631591320037842,
+   "core_s": 0.654166,
+   "n_spectra": 7465,
+   "n_ms2": 3097,
+   "n_peaks": 2807267,
+   "store_bytes": 23881194,
+   "raw_bytes": 202338736,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.766268491744995e-06,
+    "decode": 0.273433665279299,
+    "arrow_write": 0.02129294304177165,
+    "close": 0.008856485132128,
+    "raw_stage_copy": 0.2279515266418457
+   },
+   "cpu_s": {
+    "prefetch": 1.2658999999359821e-05,
+    "runtime_load": 3.555000000154962e-06,
+    "decode": 0.2690035730000009,
+    "arrow_write": 0.021259854000001077
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    6.743238687515259,
+    6.76252293586731
+   ],
+   "gpu_wait_s": 0.052008867263793945,
+   "search_t": [
+    6.762706995010376,
+    6.822646617889404
+   ],
+   "search_wall_s": 0.05993962287902832,
+   "gpu_ms": {
+    "k0": 38.701534271240234,
+    "hyp": 0.1579200029373169,
+    "k1": 4.846047878265381,
+    "topk": 5.353024005889893,
+    "k2": 1.0475519895553589,
+    "features": 8.70143985748291
+   },
+   "h2d_bytes": 2728640,
+   "n_psms": 630,
+   "n_searched": 3073,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    6.822786569595337,
+    6.831529140472412
+   ]
+  },
+  {
+   "run": "dq_00106_11cell_90min_sps_B11",
+   "raw": "data/raw/PXD016766/dq_00106_11cell_90min_sps_B11.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00106_11cell_90min_sps_B11.vspec.arrow",
+   "pid": 1003947,
+   "t_start": 4.11326003074646,
+   "t_end": 6.337308883666992,
+   "wall_s": 2.2240488529205322,
+   "core_s": 2.6508460000000005,
+   "n_spectra": 44973,
+   "n_ms2": 20807,
+   "n_peaks": 15886813,
+   "store_bytes": 138171210,
+   "raw_bytes": 232375511,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.086883902549744e-06,
+    "decode": 1.7081885915249586,
+    "arrow_write": 0.11750141670927405,
+    "close": 0.0009372239001095295,
+    "raw_stage_copy": 0.20892977714538574
+   },
+   "cpu_s": {
+    "prefetch": 1.2718999999883351e-05,
+    "runtime_load": 4.778000000094096e-06,
+    "decode": 1.9367462730000007,
+    "arrow_write": 0.12181675600000119
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    6.3976593017578125,
+    6.743069410324097
+   ],
+   "gpu_wait_s": 0.22359514236450195,
+   "search_t": [
+    6.7433648109436035,
+    6.828742980957031
+   ],
+   "search_wall_s": 0.08537817001342773,
+   "gpu_ms": {
+    "k0": 26.581439971923828,
+    "hyp": 0.06723199784755707,
+    "k1": 40.0975341796875,
+    "topk": 4.278560161590576,
+    "k2": 2.786303997039795,
+    "features": 10.369407653808594
+   },
+   "h2d_bytes": 86036392,
+   "n_psms": 1707,
+   "n_searched": 20760,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    6.8313562870025635,
+    6.86999249458313
+   ]
+  },
+  {
+   "run": "dq_00098_11cell_90min_sps_A7",
+   "raw": "data/raw/PXD016766/dq_00098_11cell_90min_sps_A7.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00098_11cell_90min_sps_A7.vspec.arrow",
+   "pid": 1003942,
+   "t_start": 4.089172601699829,
+   "t_end": 6.366838216781616,
+   "wall_s": 2.277665615081787,
+   "core_s": 2.4479770000000007,
+   "n_spectra": 44981,
+   "n_ms2": 20755,
+   "n_peaks": 16367563,
+   "store_bytes": 142013130,
+   "raw_bytes": 234723755,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.887821316719055e-06,
+    "decode": 1.8173434659838676,
+    "arrow_write": 0.1287805433385074,
+    "close": 0.0006538690067827702,
+    "raw_stage_copy": 0.19757533073425293
+   },
+   "cpu_s": {
+    "prefetch": 1.4440999999809634e-05,
+    "runtime_load": 5.669000000096958e-06,
+    "decode": 1.9869588440000028,
+    "arrow_write": 0.13775453999999865
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    6.559361934661865,
+    6.8524696826934814
+   ],
+   "gpu_wait_s": 0.030489683151245117,
+   "search_t": [
+    6.8532092571258545,
+    6.903852939605713
+   ],
+   "search_wall_s": 0.0506436824798584,
+   "gpu_ms": {
+    "k0": 26.253887176513672,
+    "hyp": 0.08601599931716919,
+    "k1": 9.319904327392578,
+    "topk": 3.8919999599456787,
+    "k2": 2.673664093017578,
+    "features": 7.787903785705566
+   },
+   "h2d_bytes": 91404000,
+   "n_psms": 1218,
+   "n_searched": 20728,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    6.904591083526611,
+    6.938587427139282
+   ]
+  },
+  {
+   "run": "dq_00099_11cell_90min_sps_A9",
+   "raw": "data/raw/PXD016766/dq_00099_11cell_90min_sps_A9.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00099_11cell_90min_sps_A9.vspec.arrow",
+   "pid": 1003955,
+   "t_start": 4.06566309928894,
+   "t_end": 6.545597076416016,
+   "wall_s": 2.479933977127075,
+   "core_s": 2.83748,
+   "n_spectra": 45863,
+   "n_ms2": 21260,
+   "n_peaks": 16370202,
+   "store_bytes": 142267074,
+   "raw_bytes": 235081101,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.576984792947769e-06,
+    "decode": 1.9058839329518378,
+    "arrow_write": 0.14070996223017573,
+    "close": 0.0006532282568514347,
+    "raw_stage_copy": 0.2208573818206787
+   },
+   "cpu_s": {
+    "prefetch": 1.4521999999850266e-05,
+    "runtime_load": 4.386000000522472e-06,
+    "decode": 2.1082948329999995,
+    "arrow_write": 0.13541823099999828
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    6.762605905532837,
+    7.064809799194336
+   ],
+   "gpu_wait_s": 0.23377752304077148,
+   "search_t": [
+    7.065006971359253,
+    7.135125398635864
+   ],
+   "search_wall_s": 0.07011842727661133,
+   "gpu_ms": {
+    "k0": 46.32195281982422,
+    "hyp": 0.22924800217151642,
+    "k1": 6.785439968109131,
+    "topk": 5.774303913116455,
+    "k2": 2.726912021636963,
+    "features": 7.137375831604004
+   },
+   "h2d_bytes": 92243928,
+   "n_psms": 1065,
+   "n_searched": 21231,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    7.136235475540161,
+    7.179439544677734
+   ]
+  },
+  {
+   "run": "dq_00101_11cell_90min_sps_B1",
+   "raw": "data/raw/PXD016766/dq_00101_11cell_90min_sps_B1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00101_11cell_90min_sps_B1.vspec.arrow",
+   "pid": 1003946,
+   "t_start": 4.518184423446655,
+   "t_end": 6.547001123428345,
+   "wall_s": 2.0288166999816895,
+   "core_s": 2.226553,
+   "n_spectra": 45091,
+   "n_ms2": 21086,
+   "n_peaks": 15762844,
+   "store_bytes": 137241898,
+   "raw_bytes": 229691147,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.856141120195389e-06,
+    "decode": 1.5490679182112217,
+    "arrow_write": 0.13290109345689416,
+    "close": 0.0007222117856144905,
+    "raw_stage_copy": 0.21794509887695312
+   },
+   "cpu_s": {
+    "prefetch": 1.0125000000194007e-05,
+    "runtime_load": 3.8760000000692685e-06,
+    "decode": 1.7294543680000007,
+    "arrow_write": 0.14231470700000237
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    6.852515935897827,
+    7.14544415473938
+   ],
+   "gpu_wait_s": 0.24141955375671387,
+   "search_t": [
+    7.145938396453857,
+    7.218085765838623
+   ],
+   "search_wall_s": 0.07214736938476562,
+   "gpu_ms": {
+    "k0": 23.845760345458984,
+    "hyp": 0.08617600053548813,
+    "k1": 13.234784126281738,
+    "topk": 4.12659215927124,
+    "k2": 2.659327983856201,
+    "features": 23.327999114990234
+   },
+   "h2d_bytes": 86833264,
+   "n_psms": 2464,
+   "n_searched": 21041,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    7.219844341278076,
+    7.2604005336761475
+   ]
+  },
+  {
+   "run": "dq_00097_11cell_90min_sps_A5",
+   "raw": "data/raw/PXD016766/dq_00097_11cell_90min_sps_A5.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00097_11cell_90min_sps_A5.vspec.arrow",
+   "pid": 1003935,
+   "t_start": 4.5695109367370605,
+   "t_end": 6.691272020339966,
+   "wall_s": 2.1217610836029053,
+   "core_s": 2.2723579999999997,
+   "n_spectra": 43424,
+   "n_ms2": 20159,
+   "n_peaks": 15425326,
+   "store_bytes": 134112082,
+   "raw_bytes": 221882856,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.82914799451828e-06,
+    "decode": 1.6098331157118082,
+    "arrow_write": 0.1512860651127994,
+    "close": 0.0005436539649963379,
+    "raw_stage_copy": 0.21668291091918945
+   },
+   "cpu_s": {
+    "prefetch": 1.0275000000170564e-05,
+    "runtime_load": 5.548000000743514e-06,
+    "decode": 1.7483979370000018,
+    "arrow_write": 0.1506072069999984
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.145524024963379,
+    7.390677452087402
+   ],
+   "gpu_wait_s": 0.2546863555908203,
+   "search_t": [
+    7.390870571136475,
+    7.4599316120147705
+   ],
+   "search_wall_s": 0.0690610408782959,
+   "gpu_ms": {
+    "k0": 45.109375,
+    "hyp": 0.08169600367546082,
+    "k1": 7.6269121170043945,
+    "topk": 3.8382720947265625,
+    "k2": 2.5917439460754395,
+    "features": 7.379295825958252
+   },
+   "h2d_bytes": 87008488,
+   "n_psms": 2290,
+   "n_searched": 20135,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    7.460812330245972,
+    7.535410404205322
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool1_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 1003930,
+   "t_start": 6.138023614883423,
+   "t_end": 6.813286781311035,
+   "wall_s": 0.6752631664276123,
+   "core_s": 0.7534549999999998,
+   "n_spectra": 7465,
+   "n_ms2": 3097,
+   "n_peaks": 2807267,
+   "store_bytes": 23881194,
+   "raw_bytes": 202338736,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.236120730638504e-06,
+    "decode": 0.3619071743451059,
+    "arrow_write": 0.03585157077759504,
+    "close": 0.001037033274769783,
+    "raw_stage_copy": 0.15014243125915527
+   },
+   "cpu_s": {
+    "prefetch": 1.6543999999285575e-05,
+    "runtime_load": 3.93499999962188e-06,
+    "decode": 0.37733454799999944,
+    "arrow_write": 0.042940760000000466
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    7.631269216537476,
+    7.650882959365845
+   ],
+   "gpu_wait_s": 0.19033217430114746,
+   "search_t": [
+    7.6510491371154785,
+    7.693698167800903
+   ],
+   "search_wall_s": 0.042649030685424805,
+   "gpu_ms": {
+    "k0": 27.035968780517578,
+    "hyp": 0.09123200178146362,
+    "k1": 2.4811201095581055,
+    "topk": 3.9822399616241455,
+    "k2": 1.6158720254898071,
+    "features": 5.22108793258667
+   },
+   "h2d_bytes": 2728640,
+   "n_psms": 630,
+   "n_searched": 3073,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    7.693828105926514,
+    7.70573878288269
+   ]
+  },
+  {
+   "run": "LM2486_DDA",
+   "raw": "data/raw/PXD031616/LM2486_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2486_DDA.vspec.arrow",
+   "pid": 1003936,
+   "t_start": 0.650820255279541,
+   "t_end": 6.594239950180054,
+   "wall_s": 5.943419694900513,
+   "core_s": 6.009737,
+   "n_spectra": 74286,
+   "n_ms2": 61467,
+   "n_peaks": 38059849,
+   "store_bytes": 319219154,
+   "raw_bytes": 1279637792,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.895016223192215e-06,
+    "decode": 3.5665860837325454,
+    "arrow_write": 0.45702905766665936,
+    "close": 0.0006363727152347565,
+    "raw_stage_copy": 1.3153247833251953
+   },
+   "cpu_s": {
+    "prefetch": 3.9150000001875185e-06,
+    "runtime_load": 2.9850000000664068e-06,
+    "decode": 3.9969138039999983,
+    "arrow_write": 0.5362154380000002
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    7.064884424209595,
+    7.631216049194336
+   ],
+   "gpu_wait_s": 0.41185998916625977,
+   "search_t": [
+    7.631369352340698,
+    7.7949137687683105
+   ],
+   "search_wall_s": 0.1635444164276123,
+   "gpu_ms": {
+    "k0": 49.15961456298828,
+    "hyp": 0.16864000260829926,
+    "k1": 27.280288696289062,
+    "topk": 19.681407928466797,
+    "k2": 12.430335998535156,
+    "features": 53.519039154052734
+   },
+   "h2d_bytes": 195811880,
+   "n_psms": 48590,
+   "n_searched": 61373,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    7.798721075057983,
+    7.911056756973267
+   ]
+  },
+  {
+   "run": "dq_00095_11cell_90min_sps_A1",
+   "raw": "data/raw/PXD016766/dq_00095_11cell_90min_sps_A1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+   "pid": 1003943,
+   "t_start": 5.2949488162994385,
+   "t_end": 6.97507119178772,
+   "wall_s": 1.6801223754882812,
+   "core_s": 1.8248219999999993,
+   "n_spectra": 40306,
+   "n_ms2": 18469,
+   "n_peaks": 14444594,
+   "store_bytes": 125459946,
+   "raw_bytes": 209342012,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.314336597919464e-06,
+    "decode": 1.3290636534802616,
+    "arrow_write": 0.12213197536766529,
+    "close": 0.0004582456313073635,
+    "raw_stage_copy": 0.1462714672088623
+   },
+   "cpu_s": {
+    "prefetch": 9.95499999945082e-06,
+    "runtime_load": 2.3330000002985685e-06,
+    "decode": 1.4452902260000027,
+    "arrow_write": 0.120448004
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.6509575843811035,
+    7.948038339614868
+   ],
+   "gpu_wait_s": 0.2544558048248291,
+   "search_t": [
+    7.948245525360107,
+    7.99323034286499
+   ],
+   "search_wall_s": 0.04498481750488281,
+   "gpu_ms": {
+    "k0": 23.922943115234375,
+    "hyp": 0.06111999973654747,
+    "k1": 5.670207977294922,
+    "topk": 3.844896078109741,
+    "k2": 2.53439998626709,
+    "features": 8.297920227050781
+   },
+   "h2d_bytes": 79746760,
+   "n_psms": 2160,
+   "n_searched": 18444,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    7.994973659515381,
+    8.021571397781372
+   ]
+  },
+  {
+   "run": "dq_00105_11cell_90min_sps_B9",
+   "raw": "data/raw/PXD016766/dq_00105_11cell_90min_sps_B9.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00105_11cell_90min_sps_B9.vspec.arrow",
+   "pid": 1003949,
+   "t_start": 5.11210298538208,
+   "t_end": 7.10762357711792,
+   "wall_s": 1.9955205917358398,
+   "core_s": 2.109864000000001,
+   "n_spectra": 41024,
+   "n_ms2": 19142,
+   "n_peaks": 14928395,
+   "store_bytes": 129555994,
+   "raw_bytes": 215470314,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.1352974474430084e-06,
+    "decode": 1.5841234759427607,
+    "arrow_write": 0.11349024809896946,
+    "close": 0.0006094127893447876,
+    "raw_stage_copy": 0.18609046936035156
+   },
+   "cpu_s": {
+    "prefetch": 9.433999999863829e-06,
+    "runtime_load": 3.1949999996783163e-06,
+    "decode": 1.6836163069999985,
+    "arrow_write": 0.13272233800000066
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.948117256164551,
+    8.160798788070679
+   ],
+   "gpu_wait_s": 0.16647076606750488,
+   "search_t": [
+    8.161406755447388,
+    8.245544672012329
+   ],
+   "search_wall_s": 0.0841379165649414,
+   "gpu_ms": {
+    "k0": 55.5233268737793,
+    "hyp": 0.08035200089216232,
+    "k1": 9.190143585205078,
+    "topk": 3.699647903442383,
+    "k2": 2.5036799907684326,
+    "features": 11.454976081848145
+   },
+   "h2d_bytes": 82275040,
+   "n_psms": 1395,
+   "n_searched": 19087,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    8.24703574180603,
+    8.277045488357544
+   ]
+  },
+  {
+   "run": "LM2487_DDA",
+   "raw": "data/raw/PXD031616/LM2487_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2487_DDA.vspec.arrow",
+   "pid": 1003934,
+   "t_start": 0.6494646072387695,
+   "t_end": 6.795906066894531,
+   "wall_s": 6.146441459655762,
+   "core_s": 6.266987,
+   "n_spectra": 78075,
+   "n_ms2": 66640,
+   "n_peaks": 40112297,
+   "store_bytes": 336432466,
+   "raw_bytes": 1355740750,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.9136426746845245e-06,
+    "decode": 4.066848463378847,
+    "arrow_write": 0.4595768293365836,
+    "close": 0.0006548110395669937,
+    "raw_stage_copy": 0.9018247127532959
+   },
+   "cpu_s": {
+    "prefetch": 3.725999999870666e-06,
+    "runtime_load": 2.8739999999860544e-06,
+    "decode": 4.446644621999999,
+    "arrow_write": 0.4934605750000012
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    7.390752792358398,
+    8.049804925918579
+   ],
+   "gpu_wait_s": 0.2517573833465576,
+   "search_t": [
+    8.050334215164185,
+    8.25156831741333
+   ],
+   "search_wall_s": 0.2012341022491455,
+   "gpu_ms": {
+    "k0": 79.45903778076172,
+    "hyp": 0.0655680000782013,
+    "k1": 37.79894256591797,
+    "topk": 25.580127716064453,
+    "k2": 13.720576286315918,
+    "features": 42.54102325439453
+   },
+   "h2d_bytes": 204606584,
+   "n_psms": 53724,
+   "n_searched": 66559,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    8.254005432128906,
+    8.377185583114624
+   ]
+  },
+  {
+   "run": "LM2481_DDA",
+   "raw": "data/raw/PXD031616/LM2481_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2481_DDA.vspec.arrow",
+   "pid": 1003941,
+   "t_start": 0.6481368541717529,
+   "t_end": 7.116911888122559,
+   "wall_s": 6.468775033950806,
+   "core_s": 6.7572659999999996,
+   "n_spectra": 76493,
+   "n_ms2": 64585,
+   "n_peaks": 40870122,
+   "store_bytes": 342165122,
+   "raw_bytes": 1365148534,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.755558282136917e-06,
+    "decode": 4.337989546824247,
+    "arrow_write": 0.5360050168819726,
+    "close": 0.0008543301373720169,
+    "raw_stage_copy": 1.0069365501403809
+   },
+   "cpu_s": {
+    "prefetch": 4.335999999938167e-06,
+    "runtime_load": 3.886000000008494e-06,
+    "decode": 4.655156329,
+    "arrow_write": 0.648284883999998
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    8.049905061721802,
+    8.617854118347168
+   ],
+   "gpu_wait_s": 0.37120652198791504,
+   "search_t": [
+    8.61808443069458,
+    8.799006938934326
+   ],
+   "search_wall_s": 0.1809225082397461,
+   "gpu_ms": {
+    "k0": 45.40892791748047,
+    "hyp": 0.12665599584579468,
+    "k1": 23.146047592163086,
+    "topk": 18.886272430419922,
+    "k2": 23.8417911529541,
+    "features": 46.48649597167969
+   },
+   "h2d_bytes": 211047688,
+   "n_psms": 49152,
+   "n_searched": 64511,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    8.80077075958252,
+    8.92195439338684
+   ]
+  },
+  {
+   "run": "LM2490_DDA",
+   "raw": "data/raw/PXD031616/LM2490_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2490_DDA.vspec.arrow",
+   "pid": 1003948,
+   "t_start": 0.6508712768554688,
+   "t_end": 7.503723382949829,
+   "wall_s": 6.85285210609436,
+   "core_s": 6.718811,
+   "n_spectra": 74553,
+   "n_ms2": 61778,
+   "n_peaks": 38611625,
+   "store_bytes": 323688970,
+   "raw_bytes": 1270724976,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.828682333230972e-06,
+    "decode": 4.413157656323165,
+    "arrow_write": 0.6087986747734249,
+    "close": 0.0007323273457586765,
+    "raw_stage_copy": 1.2312958240509033
+   },
+   "cpu_s": {
+    "prefetch": 6.960999999972017e-06,
+    "runtime_load": 5.709000000075903e-06,
+    "decode": 4.715487217000001,
+    "arrow_write": 0.6410919220000011
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    8.160981893539429,
+    8.705711841583252
+   ],
+   "gpu_wait_s": 0.4519813060760498,
+   "search_t": [
+    8.705888986587524,
+    8.87981915473938
+   ],
+   "search_wall_s": 0.17393016815185547,
+   "gpu_ms": {
+    "k0": 72.9994888305664,
+    "hyp": 0.10704000294208527,
+    "k1": 26.038719177246094,
+    "topk": 21.109376907348633,
+    "k2": 13.363200187683105,
+    "features": 30.567487716674805
+   },
+   "h2d_bytes": 203272344,
+   "n_psms": 48458,
+   "n_searched": 61695,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    8.882396459579468,
+    9.049029111862183
+   ]
+  },
+  {
+   "run": "dq_00103_11cell_90min_sps_B5",
+   "raw": "data/raw/PXD016766/dq_00103_11cell_90min_sps_B5.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00103_11cell_90min_sps_B5.vspec.arrow",
+   "pid": 1003939,
+   "t_start": 5.657646656036377,
+   "t_end": 7.728564023971558,
+   "wall_s": 2.0709173679351807,
+   "core_s": 2.2015249999999993,
+   "n_spectra": 40769,
+   "n_ms2": 18744,
+   "n_peaks": 14228061,
+   "store_bytes": 123848642,
+   "raw_bytes": 209090667,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.7441419661045074e-06,
+    "decode": 1.680846641305834,
+    "arrow_write": 0.12446663156151772,
+    "close": 0.0008775140158832073,
+    "raw_stage_copy": 0.1715531349182129
+   },
+   "cpu_s": {
+    "prefetch": 1.1047000000097285e-05,
+    "runtime_load": 2.744000000554081e-06,
+    "decode": 1.8051510600000018,
+    "arrow_write": 0.12433714600000023
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.70576286315918,
+    8.921748638153076
+   ],
+   "gpu_wait_s": 0.12142515182495117,
+   "search_t": [
+    8.922126293182373,
+    8.998100280761719
+   ],
+   "search_wall_s": 0.0759739875793457,
+   "gpu_ms": {
+    "k0": 52.66726303100586,
+    "hyp": 0.08716800063848495,
+    "k1": 6.154176235198975,
+    "topk": 4.109824180603027,
+    "k2": 2.5630719661712646,
+    "features": 8.501472473144531
+   },
+   "h2d_bytes": 77149344,
+   "n_psms": 1013,
+   "n_searched": 18679,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    8.998646974563599,
+    9.048848152160645
+   ]
+  },
+  {
+   "run": "dq_00102_11cell_90min_sps_B3",
+   "raw": "data/raw/PXD016766/dq_00102_11cell_90min_sps_B3.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00102_11cell_90min_sps_B3.vspec.arrow",
+   "pid": 1003938,
+   "t_start": 5.595483779907227,
+   "t_end": 7.760959148406982,
+   "wall_s": 2.165475368499756,
+   "core_s": 2.2534289999999997,
+   "n_spectra": 40490,
+   "n_ms2": 18790,
+   "n_peaks": 14325130,
+   "store_bytes": 124581250,
+   "raw_bytes": 209226080,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.167202860116959e-06,
+    "decode": 1.667325989343226,
+    "arrow_write": 0.14218146679922938,
+    "close": 0.0005831141024827957,
+    "raw_stage_copy": 0.24873733520507812
+   },
+   "cpu_s": {
+    "prefetch": 1.1107000000620815e-05,
+    "runtime_load": 4.055999999863502e-06,
+    "decode": 1.7493796420000027,
+    "arrow_write": 0.13827957599999952
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.921810388565063,
+    9.14842414855957
+   ],
+   "gpu_wait_s": 0.15021347999572754,
+   "search_t": [
+    9.148789882659912,
+    9.2850821018219
+   ],
+   "search_wall_s": 0.1362922191619873,
+   "gpu_ms": {
+    "k0": 64.03330993652344,
+    "hyp": 0.09203200042247772,
+    "k1": 7.064288139343262,
+    "topk": 15.9268159866333,
+    "k2": 5.165056228637695,
+    "features": 31.639360427856445
+   },
+   "h2d_bytes": 78162480,
+   "n_psms": 1380,
+   "n_searched": 18727,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    9.286420822143555,
+    9.31549596786499
+   ]
+  },
+  {
+   "run": "LM2492_DDA",
+   "raw": "data/raw/PXD031616/LM2492_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2492_DDA.vspec.arrow",
+   "pid": 1003940,
+   "t_start": 0.6504092216491699,
+   "t_end": 7.63420295715332,
+   "wall_s": 6.98379373550415,
+   "core_s": 7.219862000000001,
+   "n_spectra": 77516,
+   "n_ms2": 65929,
+   "n_peaks": 40062928,
+   "store_bytes": 335922266,
+   "raw_bytes": 1348489012,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.396773874759674e-06,
+    "decode": 4.906457164790481,
+    "arrow_write": 0.5374776176176965,
+    "close": 0.0007781162858009338,
+    "raw_stage_copy": 0.8997395038604736
+   },
+   "cpu_s": {
+    "prefetch": 4.99800000008932e-06,
+    "runtime_load": 4.816999999990301e-06,
+    "decode": 5.1816472140000025,
+    "arrow_write": 0.6161965100000009
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    8.61790680885315,
+    9.141684293746948
+   ],
+   "gpu_wait_s": 0.2595510482788086,
+   "search_t": [
+    9.141867637634277,
+    9.32218623161316
+   ],
+   "search_wall_s": 0.18031859397888184,
+   "gpu_ms": {
+    "k0": 77.45954895019531,
+    "hyp": 0.10534399747848511,
+    "k1": 24.00998306274414,
+    "topk": 21.27916717529297,
+    "k2": 10.747903823852539,
+    "features": 42.87446212768555
+   },
+   "h2d_bytes": 204626400,
+   "n_psms": 47574,
+   "n_searched": 65832,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    9.325808763504028,
+    9.46709394454956
+   ]
+  },
+  {
+   "run": "dq_00104_11cell_90min_sps_B7",
+   "raw": "data/raw/PXD016766/dq_00104_11cell_90min_sps_B7.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00104_11cell_90min_sps_B7.vspec.arrow",
+   "pid": 1003945,
+   "t_start": 5.702198266983032,
+   "t_end": 7.961130619049072,
+   "wall_s": 2.25893235206604,
+   "core_s": 2.385677000000001,
+   "n_spectra": 40835,
+   "n_ms2": 18557,
+   "n_peaks": 14080738,
+   "store_bytes": 122655018,
+   "raw_bytes": 208561029,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 5.2978284657001495e-06,
+    "decode": 1.8430320234037936,
+    "arrow_write": 0.1443237755447626,
+    "close": 0.000753908883780241,
+    "raw_stage_copy": 0.17175912857055664
+   },
+   "cpu_s": {
+    "prefetch": 1.7245000000443156e-05,
+    "runtime_load": 5.116999999721372e-06,
+    "decode": 1.9548462319999995,
+    "arrow_write": 0.15171051000000002
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    9.141740560531616,
+    9.346972227096558
+   ],
+   "gpu_wait_s": 0.06090378761291504,
+   "search_t": [
+    9.347213745117188,
+    9.393113374710083
+   ],
+   "search_wall_s": 0.04589962959289551,
+   "gpu_ms": {
+    "k0": 24.49884796142578,
+    "hyp": 0.0732479989528656,
+    "k1": 7.856927871704102,
+    "topk": 3.8411519527435303,
+    "k2": 2.3695359230041504,
+    "features": 6.5932159423828125
+   },
+   "h2d_bytes": 75437240,
+   "n_psms": 1298,
+   "n_searched": 18482,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    9.394598484039307,
+    9.443305730819702
+   ]
+  },
+  {
+   "run": "dq_00096_11cell_90min_sps_A3",
+   "raw": "data/raw/PXD016766/dq_00096_11cell_90min_sps_A3.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/dq_00096_11cell_90min_sps_A3.vspec.arrow",
+   "pid": 1003933,
+   "t_start": 5.782527446746826,
+   "t_end": 8.267978429794312,
+   "wall_s": 2.4854509830474854,
+   "core_s": 2.688847000000001,
+   "n_spectra": 39249,
+   "n_ms2": 18089,
+   "n_peaks": 14112925,
+   "store_bytes": 122562434,
+   "raw_bytes": 203822033,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 2.4330802261829376e-06,
+    "decode": 2.0387232899665833,
+    "arrow_write": 0.14119084971025586,
+    "close": 0.0007491018623113632,
+    "raw_stage_copy": 0.1888892650604248
+   },
+   "cpu_s": {
+    "prefetch": 1.2519000000210667e-05,
+    "runtime_load": 2.4239999998343364e-06,
+    "decode": 2.1590793680000013,
+    "arrow_write": 0.15358808299999982
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    9.34705114364624,
+    9.56468415260315
+   ],
+   "gpu_wait_s": 0.23915648460388184,
+   "search_t": [
+    9.564902544021606,
+    9.614603519439697
+   ],
+   "search_wall_s": 0.04970097541809082,
+   "gpu_ms": {
+    "k0": 23.276447296142578,
+    "hyp": 0.14988799393177032,
+    "k1": 10.041184425354004,
+    "topk": 3.824575901031494,
+    "k2": 2.5139200687408447,
+    "features": 9.100768089294434
+   },
+   "h2d_bytes": 78500880,
+   "n_psms": 2446,
+   "n_searched": 18054,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    9.616416454315186,
+    9.656909942626953
+   ]
+  },
+  {
+   "run": "LM2480_DDA",
+   "raw": "data/raw/PXD031616/LM2480_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/LM2480_DDA.vspec.arrow",
+   "pid": 1003937,
+   "t_start": 0.6202297210693359,
+   "t_end": 8.13529920578003,
+   "wall_s": 7.515069484710693,
+   "core_s": 7.372946000000001,
+   "n_spectra": 79274,
+   "n_ms2": 68204,
+   "n_peaks": 45629707,
+   "store_bytes": 380820346,
+   "raw_bytes": 1477148524,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.003980964422226e-06,
+    "decode": 4.768367568030953,
+    "arrow_write": 0.5445741428993642,
+    "close": 0.0004927180707454681,
+    "raw_stage_copy": 1.753892183303833
+   },
+   "cpu_s": {
+    "prefetch": 3.374999999916639e-06,
+    "runtime_load": 3.2450000000405765e-06,
+    "decode": 5.2510824949999995,
+    "arrow_write": 0.6186900670000011
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    9.148536920547485,
+    9.654719114303589
+   ],
+   "gpu_wait_s": 0.26035118103027344,
+   "search_t": [
+    9.654847383499146,
+    9.824771165847778
+   ],
+   "search_wall_s": 0.1699237823486328,
+   "gpu_ms": {
+    "k0": 70.35823822021484,
+    "hyp": 0.11283200234174728,
+    "k1": 27.98486328125,
+    "topk": 20.83407974243164,
+    "k2": 12.295167922973633,
+    "features": 37.422271728515625
+   },
+   "h2d_bytes": 242486672,
+   "n_psms": 55325,
+   "n_searched": 68153,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    9.826984167098999,
+    9.960712432861328
+   ]
+  },
+  {
+   "run": "b1937_293T_proteinID_01B_QE3_122212",
+   "raw": "data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/b1937_293T_proteinID_01B_QE3_122212.vspec.arrow",
+   "pid": 1003951,
+   "t_start": 0.5960159301757812,
+   "t_end": 9.74979019165039,
+   "wall_s": 9.15377426147461,
+   "core_s": 9.724617000000002,
+   "n_spectra": 71295,
+   "n_ms2": 46816,
+   "n_peaks": 57190690,
+   "store_bytes": 471031410,
+   "raw_bytes": 3368964863,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.4249387681484222e-06,
+    "decode": 5.335572977550328,
+    "arrow_write": 0.6672072689980268,
+    "close": 0.0007433630526065826,
+    "raw_stage_copy": 2.306713581085205
+   },
+   "cpu_s": {
+    "prefetch": 4.627000000034798e-06,
+    "runtime_load": 3.4750000001970704e-06,
+    "decode": 5.785303925,
+    "arrow_write": 0.8020793600000005
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    9.750801801681519,
+    10.002243518829346
+   ],
+   "gpu_wait_s": 0.38620471954345703,
+   "search_t": [
+    10.002472162246704,
+    10.137846946716309
+   ],
+   "search_wall_s": 0.1353747844696045,
+   "gpu_ms": {
+    "k0": 19.75859260559082,
+    "hyp": 0.09046400338411331,
+    "k1": 14.139552116394043,
+    "topk": 52.40041732788086,
+    "k2": 6.341631889343262,
+    "features": 41.599361419677734
+   },
+   "h2d_bytes": 71225456,
+   "n_psms": 38028,
+   "n_searched": 46699,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    10.138591051101685,
+    10.31350827217102
+   ]
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "raw": "data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/b1906_293T_proteinID_01A_QE3_122212.vspec.arrow",
+   "pid": 1003952,
+   "t_start": 0.5753731727600098,
+   "t_end": 9.90788722038269,
+   "wall_s": 9.33251404762268,
+   "core_s": 9.420198,
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "store_bytes": 486587666,
+   "raw_bytes": 3470679015,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.815162926912308e-06,
+    "decode": 4.836952786426991,
+    "arrow_write": 0.6681613475084305,
+    "close": 0.0004835049621760845,
+    "raw_stage_copy": 2.919942617416382
+   },
+   "cpu_s": {
+    "prefetch": 3.1139999996376844e-06,
+    "runtime_load": 3.825999999929053e-06,
+    "decode": 5.282444598,
+    "arrow_write": 0.812356263999999
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    9.915729999542236,
+    10.228501319885254
+   ],
+   "gpu_wait_s": 0.40193843841552734,
+   "search_t": [
+    10.22880744934082,
+    10.31806206703186
+   ],
+   "search_wall_s": 0.08925461769104004,
+   "gpu_ms": {
+    "k0": 34.383583068847656,
+    "hyp": 0.05238400027155876,
+    "k1": 14.53331184387207,
+    "topk": 10.84160041809082,
+    "k2": 6.252543926239014,
+    "features": 22.132863998413086
+   },
+   "h2d_bytes": 73845952,
+   "n_psms": 35084,
+   "n_searched": 41769,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    10.318286418914795,
+    10.447689294815063
+   ]
+  },
+  {
+   "run": "b1937_293T_proteinID_01B_QE3_122212_r01",
+   "raw": "data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/b1937_293T_proteinID_01B_QE3_122212_r01.vspec.arrow",
+   "pid": 1003954,
+   "t_start": 0.6073131561279297,
+   "t_end": 9.966163396835327,
+   "wall_s": 9.358850240707397,
+   "core_s": 9.779307,
+   "n_spectra": 71295,
+   "n_ms2": 46816,
+   "n_peaks": 57190690,
+   "store_bytes": 471031426,
+   "raw_bytes": 3368964863,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 3.5152770578861237e-06,
+    "decode": 5.315435524098575,
+    "arrow_write": 0.6201503369957209,
+    "close": 0.0008762520737946033,
+    "raw_stage_copy": 2.554901361465454
+   },
+   "cpu_s": {
+    "prefetch": 3.7160000001534854e-06,
+    "runtime_load": 3.5860000000553782e-06,
+    "decode": 5.805803183999999,
+    "arrow_write": 0.7293922290000037
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    10.002317190170288,
+    10.3245370388031
+   ],
+   "gpu_wait_s": 0.1861588954925537,
+   "search_t": [
+    10.324695587158203,
+    10.457183837890625
+   ],
+   "search_wall_s": 0.13248825073242188,
+   "gpu_ms": {
+    "k0": 23.067136764526367,
+    "hyp": 0.06703999638557434,
+    "k1": 12.895423889160156,
+    "topk": 11.035840034484863,
+    "k2": 6.464511871337891,
+    "features": 40.30361557006836
+   },
+   "h2d_bytes": 71225456,
+   "n_psms": 38028,
+   "n_searched": 46699,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704085980864,
+   "write_t": [
+    10.459383249282837,
+    10.607264518737793
+   ]
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212_r01",
+   "raw": "data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage/b1906_293T_proteinID_01A_QE3_122212_r01.vspec.arrow",
+   "pid": 1003950,
+   "t_start": 0.5792074203491211,
+   "t_end": 10.182623863220215,
+   "wall_s": 9.603416442871094,
+   "core_s": 9.734831,
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "store_bytes": 486587682,
+   "raw_bytes": 3470679015,
+   "timing_s": {
+    "prefetch": 0.0,
+    "runtime_load": 4.567205905914307e-06,
+    "decode": 5.305580134503543,
+    "arrow_write": 0.6143146050162613,
+    "close": 0.000484636053442955,
+    "raw_stage_copy": 2.777095317840576
+   },
+   "cpu_s": {
+    "prefetch": 5.55800000023865e-06,
+    "runtime_load": 4.947999999949104e-06,
+    "decode": 5.809609885000001,
+    "arrow_write": 0.7104255690000034
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    10.228649139404297,
+    10.51576280593872
+   ],
+   "gpu_wait_s": 0.19772648811340332,
+   "search_t": [
+    10.515906810760498,
+    10.592544555664062
+   ],
+   "search_wall_s": 0.07663774490356445,
+   "gpu_ms": {
+    "k0": 23.648767471313477,
+    "hyp": 0.06604799628257751,
+    "k1": 14.66534423828125,
+    "topk": 10.783616065979004,
+    "k2": 6.215680122375488,
+    "features": 20.334848403930664
+   },
+   "h2d_bytes": 73845952,
+   "n_psms": 35084,
+   "n_searched": 41769,
+   "pre_hyp_used": 1,
+   "gpu_thread": 22704088082112,
+   "write_t": [
+    10.592732191085815,
+    10.72663140296936
+   ]
+  }
+ ],
+ "gpu_util_samples": [
+  [
+   0.07,
+   34,
+   0.75
+  ],
+  [
+   0.17,
+   34,
+   0.75
+  ],
+  [
+   0.63,
+   100,
+   0.75
+  ],
+  [
+   0.74,
+   100,
+   0.75
+  ],
+  [
+   0.84,
+   29,
+   0.75
+  ],
+  [
+   0.94,
+   29,
+   0.75
+  ],
+  [
+   1.04,
+   0,
+   0.75
+  ],
+  [
+   1.14,
+   0,
+   0.75
+  ],
+  [
+   1.24,
+   0,
+   0.75
+  ],
+  [
+   1.35,
+   0,
+   0.75
+  ],
+  [
+   1.55,
+   0,
+   0.75
+  ],
+  [
+   1.76,
+   0,
+   0.75
+  ],
+  [
+   1.86,
+   0,
+   0.77
+  ],
+  [
+   1.97,
+   0,
+   0.77
+  ],
+  [
+   2.07,
+   0,
+   1.24
+  ],
+  [
+   2.17,
+   0,
+   1.24
+  ],
+  [
+   2.27,
+   7,
+   1.24
+  ],
+  [
+   2.38,
+   7,
+   1.24
+  ],
+  [
+   2.49,
+   0,
+   1.24
+  ],
+  [
+   2.59,
+   0,
+   1.53
+  ],
+  [
+   2.69,
+   5,
+   1.72
+  ],
+  [
+   2.79,
+   5,
+   9.61
+  ],
+  [
+   2.89,
+   31,
+   9.63
+  ],
+  [
+   2.99,
+   31,
+   9.63
+  ],
+  [
+   3.09,
+   19,
+   9.63
+  ],
+  [
+   3.19,
+   19,
+   9.63
+  ],
+  [
+   3.29,
+   0,
+   9.63
+  ],
+  [
+   3.39,
+   0,
+   9.63
+  ],
+  [
+   3.49,
+   0,
+   9.63
+  ],
+  [
+   3.59,
+   0,
+   9.63
+  ],
+  [
+   3.69,
+   0,
+   9.7
+  ],
+  [
+   3.79,
+   0,
+   10.16
+  ],
+  [
+   3.89,
+   4,
+   10.59
+  ],
+  [
+   3.99,
+   12,
+   10.98
+  ],
+  [
+   4.09,
+   12,
+   13.59
+  ],
+  [
+   4.2,
+   26,
+   15.16
+  ],
+  [
+   4.3,
+   26,
+   16.15
+  ],
+  [
+   4.47,
+   28,
+   16.15
+  ],
+  [
+   4.57,
+   28,
+   16.16
+  ],
+  [
+   4.67,
+   23,
+   16.16
+  ],
+  [
+   4.77,
+   23,
+   16.16
+  ],
+  [
+   4.87,
+   13,
+   16.16
+  ],
+  [
+   4.97,
+   13,
+   16.16
+  ],
+  [
+   5.07,
+   19,
+   16.16
+  ],
+  [
+   5.17,
+   19,
+   16.16
+  ],
+  [
+   5.27,
+   11,
+   16.16
+  ],
+  [
+   5.37,
+   11,
+   16.16
+  ],
+  [
+   5.47,
+   25,
+   16.16
+  ],
+  [
+   5.58,
+   25,
+   16.16
+  ],
+  [
+   5.68,
+   0,
+   16.16
+  ],
+  [
+   5.78,
+   0,
+   16.16
+  ],
+  [
+   5.88,
+   6,
+   16.16
+  ],
+  [
+   5.98,
+   6,
+   16.16
+  ],
+  [
+   6.08,
+   4,
+   16.16
+  ],
+  [
+   6.18,
+   4,
+   16.16
+  ],
+  [
+   6.28,
+   0,
+   16.16
+  ],
+  [
+   6.38,
+   0,
+   16.16
+  ],
+  [
+   6.5,
+   0,
+   16.16
+  ],
+  [
+   6.6,
+   16,
+   16.16
+  ],
+  [
+   6.71,
+   16,
+   17.06
+  ],
+  [
+   6.81,
+   27,
+   17.06
+  ],
+  [
+   6.91,
+   27,
+   17.06
+  ],
+  [
+   7.02,
+   29,
+   17.06
+  ],
+  [
+   7.12,
+   29,
+   17.06
+  ],
+  [
+   7.22,
+   19,
+   17.06
+  ],
+  [
+   7.32,
+   19,
+   17.06
+  ],
+  [
+   7.42,
+   12,
+   17.06
+  ],
+  [
+   7.54,
+   12,
+   17.06
+  ],
+  [
+   7.64,
+   14,
+   17.06
+  ],
+  [
+   7.74,
+   14,
+   20.12
+  ],
+  [
+   7.84,
+   45,
+   20.12
+  ],
+  [
+   7.94,
+   45,
+   20.12
+  ],
+  [
+   8.04,
+   3,
+   20.12
+  ],
+  [
+   8.14,
+   3,
+   20.47
+  ],
+  [
+   8.24,
+   37,
+   22.17
+  ],
+  [
+   8.34,
+   37,
+   22.17
+  ],
+  [
+   8.44,
+   30,
+   22.17
+  ],
+  [
+   8.54,
+   30,
+   22.17
+  ],
+  [
+   8.64,
+   0,
+   22.56
+  ],
+  [
+   8.74,
+   0,
+   25.63
+  ],
+  [
+   8.84,
+   51,
+   25.63
+  ],
+  [
+   8.96,
+   51,
+   25.63
+  ],
+  [
+   9.06,
+   35,
+   25.63
+  ],
+  [
+   9.16,
+   35,
+   25.63
+  ],
+  [
+   9.26,
+   15,
+   25.63
+  ],
+  [
+   9.36,
+   15,
+   25.63
+  ],
+  [
+   9.47,
+   51,
+   25.63
+  ],
+  [
+   9.57,
+   51,
+   25.63
+  ],
+  [
+   9.67,
+   8,
+   25.63
+  ],
+  [
+   9.77,
+   8,
+   27.09
+  ],
+  [
+   9.88,
+   48,
+   27.09
+  ],
+  [
+   9.98,
+   48,
+   27.09
+  ],
+  [
+   10.09,
+   12,
+   27.09
+  ],
+  [
+   10.69,
+   21,
+   27.09
+  ],
+  [
+   10.96,
+   24,
+   27.09
+  ],
+  [
+   11.15,
+   0,
+   27.09
+  ],
+  [
+   11.48,
+   0,
+   27.09
+  ],
+  [
+   11.59,
+   0,
+   27.09
+  ],
+  [
+   11.69,
+   0,
+   27.09
+  ],
+  [
+   11.79,
+   0,
+   27.09
+  ],
+  [
+   11.89,
+   0,
+   27.09
+  ],
+  [
+   11.99,
+   0,
+   27.09
+  ],
+  [
+   12.09,
+   0,
+   27.09
+  ],
+  [
+   12.19,
+   0,
+   27.09
+  ],
+  [
+   12.29,
+   0,
+   27.09
+  ],
+  [
+   12.39,
+   0,
+   27.09
+  ],
+  [
+   12.49,
+   0,
+   27.09
+  ],
+  [
+   12.59,
+   0,
+   27.09
+  ],
+  [
+   12.69,
+   0,
+   27.09
+  ],
+  [
+   12.79,
+   0,
+   27.09
+  ],
+  [
+   12.89,
+   0,
+   27.09
+  ],
+  [
+   12.99,
+   0,
+   27.09
+  ],
+  [
+   13.09,
+   0,
+   27.09
+  ],
+  [
+   13.19,
+   0,
+   27.09
+  ]
+ ],
+ "host_busy_samples": [
+  [
+   0.64,
+   31.6
+  ],
+  [
+   1.21,
+   35.2
+  ],
+  [
+   1.76,
+   48.2
+  ],
+  [
+   2.26,
+   39.3
+  ],
+  [
+   2.77,
+   36.6
+  ],
+  [
+   3.27,
+   36.9
+  ],
+  [
+   3.77,
+   38.4
+  ],
+  [
+   4.27,
+   38.2
+  ],
+  [
+   4.77,
+   37.7
+  ],
+  [
+   5.27,
+   36.0
+  ],
+  [
+   5.78,
+   35.4
+  ],
+  [
+   6.28,
+   33.6
+  ],
+  [
+   6.8,
+   34.7
+  ],
+  [
+   7.3,
+   29.4
+  ],
+  [
+   7.8,
+   27.0
+  ],
+  [
+   8.3,
+   23.4
+  ],
+  [
+   8.8,
+   22.4
+  ],
+  [
+   9.31,
+   21.5
+  ],
+  [
+   9.81,
+   21.2
+  ],
+  [
+   10.31,
+   20.9
+  ],
+  [
+   10.81,
+   22.3
+  ],
+  [
+   11.31,
+   33.1
+  ],
+  [
+   11.81,
+   33.9
+  ],
+  [
+   12.31,
+   30.7
+  ],
+  [
+   12.81,
+   24.5
+  ]
+ ],
+ "params": {
+  "precursor_ppm": [
+   -10.0,
+   10.0
+  ],
+  "fragment_ppm": [
+   -20.0,
+   20.0
+  ],
+  "isotope_errors": [
+   0,
+   2
+  ],
+  "precursor_charge": [
+   2,
+   4
+  ],
+  "max_peaks": 150,
+  "min_peaks": 15,
+  "fragment_min_mz": 150.0,
+  "fragment_max_mz": 2000.0,
+  "min_ion_index": 2,
+  "max_fragment_charge": 1,
+  "min_matched_peaks": 4,
+  "topk": 500,
+  "k1_threshold": 1,
+  "pair_closure": true,
+  "report_psms": 1,
+  "peak_mode": "global",
+  "window_th": 100.0,
+  "window_k": 15,
+  "chunk_size": 8192,
+  "bin_ppm": 20.0,
+  "tile": 1024,
+  "k2_threads": 128,
+  "max_slice_entries": 2147483647
+ },
+ "family_top2": false,
+ "ms1_stage": false,
+ "stage_raw": true,
+ "search_threads": 2,
+ "hyp_in_loader": true,
+ "gpu_max_mem_bytes": 8965620224,
+ "process": {
+  "age_at_main_s": 0.060000000055879354,
+  "argv": [
+   "$VULCAN_ROOT/vulcan/cohort.py",
+   "--index",
+   "/tmp/vulcan_e2/index/human_contam_prod",
+   "--raw-list",
+   "$VULCAN_ROOT/scripts/m2b/dev_dda_raws.txt",
+   "--out",
+   "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24",
+   "--stage",
+   "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w24.stage",
+   "--workers",
+   "24",
+   "--stats",
+   "$VULCAN_ROOT/results/2026-10-27_M2b_cohort/runs/c50_w24.json",
+   "--repeat-to",
+   "50"
+  ],
+  "python": "$VULCAN_SCRATCH/vulcan_env/pe/bin/python",
+  "age_at_end_s": 13.339999999850988
+ },
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 4,
+  "VULCAN_THREADS": "4",
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

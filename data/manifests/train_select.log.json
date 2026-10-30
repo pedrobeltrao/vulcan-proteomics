@@ -1,0 +1,90 @@
+{
+ "excluded_accessions": 136,
+ "human": {
+  "candidates": 1594,
+  "tried": [
+   [
+    "PXD078511",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD068465",
+    "selected"
+   ],
+   [
+    "PXD026663",
+    "selected"
+   ],
+   [
+    "PXD041620",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD074418",
+    "selected"
+   ],
+   [
+    "PXD044783",
+    "selected"
+   ],
+   [
+    "PXD009743",
+    "selected"
+   ],
+   [
+    "PXD047664",
+    "selected"
+   ],
+   [
+    "PXD023241",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD047868",
+    "selected"
+   ],
+   [
+    "PXD045252",
+    "selected"
+   ],
+   [
+    "PXD045164",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD031264",
+    "selected"
+   ]
+  ]
+ },
+ "mouse": {
+  "candidates": 643,
+  "tried": [
+   [
+    "PXD033700",
+    "0 raw files in size range"
+   ],
+   [
+    "PXD059835",
+    "selected"
+   ],
+   [
+    "PXD019362",
+    "selected"
+   ]
+  ]
+ },
+ "ecoli": {
+  "candidates": 66,
+  "tried": [
+   [
+    "PXD019012",
+    "selected"
+   ],
+   [
+    "PXD029006",
+    "selected"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+[
+ {
+  "store": "b1906_293T_proteinID_01A_QE3_122212.vspec.arrow",
+  "n_ms2": 41820,
+  "n_peaks_ms2": 8880560,
+  "search_s": 0.11518773576244712,
+  "h2d_bytes_f32": 71379040,
+  "h2d_pageable_s": 0.005122934002429247,
+  "h2d_pinned_s": 0.0045573776587843895,
+  "h2d_bytes_compact": 53367000,
+  "h2d_compact_pinned_s": 0.002927325200289488,
+  "compact_pack_cpu_s": 0.2206664769910276,
+  "pageable_share_of_search": 0.04447464800414454,
+  "pageable_GBps": 13.933234346988021,
+  "pinned_GBps": 15.662305243107559
+ },
+ {
+  "store": "b1937_293T_proteinID_01B_QE3_122212.vspec.arrow",
+  "n_ms2": 46816,
+  "n_peaks_ms2": 8507386,
+  "search_s": 0.12267230916768312,
+  "h2d_bytes_f32": 68433616,
+  "h2d_pageable_s": 0.004304768983274698,
+  "h2d_pinned_s": 0.0045055910013616085,
+  "h2d_bytes_compact": 51137948,
+  "h2d_compact_pinned_s": 0.002983459737151861,
+  "compact_pack_cpu_s": 0.2208755910396576,
+  "pageable_share_of_search": 0.03509161124040167,
+  "pageable_GBps": 15.897163417104345,
+  "pinned_GBps": 15.188599226898107
+ },
+ {
+  "store": "Velos005137.vspec.arrow",
+  "n_ms2": 15374,
+  "n_peaks_ms2": 2653270,
+  "search_s": 0.04214105289429426,
+  "h2d_bytes_f32": 21349152,
+  "h2d_pageable_s": 0.0014815200120210648,
+  "h2d_pinned_s": 0.0017408980056643486,
+  "h2d_bytes_compact": 15950368,
+  "h2d_compact_pinned_s": 0.0012851250357925892,
+  "compact_pack_cpu_s": 0.04756857408210635,
+  "pageable_share_of_search": 0.03515621728145423,
+  "pageable_GBps": 14.410302815198456,
+  "pinned_GBps": 12.263298556570462
+ }
+]

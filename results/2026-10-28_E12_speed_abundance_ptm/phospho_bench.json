@@ -1,0 +1,428 @@
+{
+ "datasets": [
+  "PXD000138",
+  "PXD009449",
+  "PXD007058"
+ ],
+ "loadavg_start": [
+  35.28857421875,
+  39.138671875,
+  39.57666015625
+ ],
+ "impl": {
+  "ref_rep0": {
+   "l1_mmap": false,
+   "stages_wall_core_s": {
+    "l1_open": [
+     20.814826131332666,
+     8.346894999999998
+    ],
+    "psm_load": [
+     0.12133953534066677,
+     0.16966199999999887
+    ],
+    "labels_decode": [
+     2.7337472457438707,
+     0.8475090000000005
+    ],
+    "fdr": [
+     0.5027936031110585,
+     0.502537000000002
+    ],
+    "spectra": [
+     3.069059511180967,
+     1.8744910000000008
+    ],
+    "loc_inputs": [
+     0.17662533791735768,
+     0.1766930000000002
+    ],
+    "prepare_peaks": [
+     2.624119146261364,
+     2.6239139999999956
+    ],
+    "score_configs_gpu": [
+     2.3611162188462913,
+     2.2915620000000043
+    ],
+    "summarize": [
+     0.6619376270100474,
+     0.6620020000000011
+    ],
+    "flr": [
+     0.23402957990765572,
+     0.23404100000000128
+    ]
+   },
+   "counts": {
+    "PXD000138": {
+     "n_psms_rank1": 28073,
+     "n_localized": 3858,
+     "n_sites": 3889,
+     "n_sty_flr_1pct": 2927
+    },
+    "PXD009449": {
+     "n_psms_rank1": 51588,
+     "n_localized": 45845,
+     "n_sites": 45845,
+     "n_sty_flr_1pct": 41333
+    },
+    "PXD007058": {
+     "n_psms_rank1": 6988,
+     "n_localized": 506,
+     "n_sites": 568,
+     "n_sty_flr_1pct": 322
+    }
+   },
+   "total_wall_s": 33.381682506762445,
+   "total_core_s": 17.810176
+  },
+  "fast_rep0": {
+   "l1_mmap": true,
+   "stages_wall_core_s": {
+    "l1_open": [
+     0.00177425192669034,
+     0.0018010000000003856
+    ],
+    "psm_load": [
+     0.052077056374400854,
+     0.11723899999999432
+    ],
+    "labels_decode": [
+     0.8988090208731592,
+     0.8978610000000025
+    ],
+    "fdr": [
+     0.4503095136024058,
+     0.4505240000000015
+    ],
+    "spectra": [
+     0.3893798813223839,
+     0.38863500000000073
+    ],
+    "loc_inputs": [
+     0.1995696173980832,
+     0.19973699999999894
+    ],
+    "prepare_peaks": [
+     8.4352537705563,
+     9.751881999999998
+    ],
+    "score_configs_gpu": [
+     1.7793681961484253,
+     1.7794249999999998
+    ],
+    "summarize": [
+     0.2462798417545855,
+     0.24626300000000612
+    ],
+    "flr": [
+     0.24937338568270206,
+     0.24927199999999416
+    ]
+   },
+   "counts": {
+    "PXD000138": {
+     "n_psms_rank1": 28073,
+     "n_localized": 3858,
+     "n_sites": 3889,
+     "n_sty_flr_1pct": 2927
+    },
+    "PXD009449": {
+     "n_psms_rank1": 51588,
+     "n_localized": 45845,
+     "n_sites": 45845,
+     "n_sty_flr_1pct": 40712
+    },
+    "PXD007058": {
+     "n_psms_rank1": 6988,
+     "n_localized": 506,
+     "n_sites": 568,
+     "n_sty_flr_1pct": 322
+    }
+   },
+   "total_wall_s": 12.870334121864289,
+   "total_core_s": 14.250359
+  },
+  "ref_rep1": {
+   "l1_mmap": false,
+   "stages_wall_core_s": {
+    "l1_open": [
+     4.13160762283951,
+     4.124337000000004
+    ],
+    "psm_load": [
+     0.06658540945500135,
+     0.14421100000000564
+    ],
+    "labels_decode": [
+     0.6677192426286638,
+     0.667747999999996
+    ],
+    "fdr": [
+     0.4618488089181483,
+     0.4617979999999875
+    ],
+    "spectra": [
+     0.3278148351237178,
+     0.3279400000000052
+    ],
+    "loc_inputs": [
+     0.1603109948337078,
+     0.16033099999999934
+    ],
+    "prepare_peaks": [
+     2.5079109710641205,
+     2.507925
+    ],
+    "score_configs_gpu": [
+     1.5781221920624375,
+     1.57768200000001
+    ],
+    "summarize": [
+     0.628275953233242,
+     0.6282620000000065
+    ],
+    "flr": [
+     0.22634860314428806,
+     0.2263979999999961
+    ]
+   },
+   "counts": {
+    "PXD000138": {
+     "n_psms_rank1": 28073,
+     "n_localized": 3858,
+     "n_sites": 3889,
+     "n_sty_flr_1pct": 2927
+    },
+    "PXD009449": {
+     "n_psms_rank1": 51588,
+     "n_localized": 45845,
+     "n_sites": 45845,
+     "n_sty_flr_1pct": 41337
+    },
+    "PXD007058": {
+     "n_psms_rank1": 6988,
+     "n_localized": 506,
+     "n_sites": 568,
+     "n_sty_flr_1pct": 322
+    }
+   },
+   "total_wall_s": 10.824710228014737,
+   "total_core_s": 10.893469000000003
+  },
+  "fast_rep1": {
+   "l1_mmap": true,
+   "stages_wall_core_s": {
+    "l1_open": [
+     0.001798579003661871,
+     0.0018019999999978609
+    ],
+    "psm_load": [
+     0.056030260398983955,
+     0.12421299999999746
+    ],
+    "labels_decode": [
+     0.7431321288459003,
+     0.7431769999999958
+    ],
+    "fdr": [
+     0.4741730228997767,
+     0.47422000000000253
+    ],
+    "spectra": [
+     0.3407019041478634,
+     0.3402510000000021
+    ],
+    "loc_inputs": [
+     0.16375837847590446,
+     0.1638009999999923
+    ],
+    "prepare_peaks": [
+     0.1868395539931953,
+     1.6649949999999905
+    ],
+    "score_configs_gpu": [
+     1.8407199499197304,
+     1.8402869999999893
+    ],
+    "summarize": [
+     0.21309165144339204,
+     0.2130120000000133
+    ],
+    "flr": [
+     0.5637299525551498,
+     0.5636369999999857
+    ]
+   },
+   "counts": {
+    "PXD000138": {
+     "n_psms_rank1": 28073,
+     "n_localized": 3858,
+     "n_sites": 3889,
+     "n_sty_flr_1pct": 2927
+    },
+    "PXD009449": {
+     "n_psms_rank1": 51588,
+     "n_localized": 45845,
+     "n_sites": 45845,
+     "n_sty_flr_1pct": 40712
+    },
+    "PXD007058": {
+     "n_psms_rank1": 6988,
+     "n_localized": 506,
+     "n_sites": 568,
+     "n_sty_flr_1pct": 322
+    }
+   },
+   "total_wall_s": 4.768785955850035,
+   "total_core_s": 6.314226000000005
+  }
+ },
+ "equal": {
+  "rep0_PXD000138_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.1316282072803006e-14,
+   "psms": 3858,
+   "psms_same_best_config": 3842,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.010820536354926316,
+   "n_flr_le_1pct": [
+    2949,
+    2949
+   ]
+  },
+  "rep0_PXD009449_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.842170943040401e-14,
+   "psms": 45845,
+   "psms_same_best_config": 45500,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.03703489808719325,
+   "n_flr_le_1pct": [
+    40747,
+    41441
+   ]
+  },
+  "rep0_PXD007058_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.1316282072803006e-14,
+   "psms": 506,
+   "psms_same_best_config": 502,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.08379708790540279,
+   "n_flr_le_1pct": [
+    322,
+    322
+   ]
+  },
+  "rep1_PXD000138_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.1316282072803006e-14,
+   "psms": 3858,
+   "psms_same_best_config": 3841,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.01080698530962889,
+   "n_flr_le_1pct": [
+    2949,
+    2949
+   ]
+  },
+  "rep1_PXD000138_fast_vs_fast_rep0": "identical",
+  "rep1_PXD000138_ref_vs_ref_rep0": [
+   "scores",
+   "summary",
+   "sites",
+   "flr"
+  ],
+  "rep1_PXD009449_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.842170943040401e-14,
+   "psms": 45845,
+   "psms_same_best_config": 45499,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.03703489808719325,
+   "n_flr_le_1pct": [
+    40747,
+    41446
+   ]
+  },
+  "rep1_PXD009449_fast_vs_fast_rep0": "identical",
+  "rep1_PXD009449_ref_vs_ref_rep0": [
+   "scores",
+   "summary",
+   "sites",
+   "flr"
+  ],
+  "rep1_PXD007058_fast_vs_ref": {
+   "peaks_bitwise": true,
+   "score_max_abs_diff": 2.1316282072803006e-14,
+   "psms": 506,
+   "psms_same_best_config": 503,
+   "sites_identical_list": false,
+   "flr_max_abs_diff": 0.08343948018682323,
+   "n_flr_le_1pct": [
+    322,
+    322
+   ]
+  },
+  "rep1_PXD007058_fast_vs_fast_rep0": "identical",
+  "rep1_PXD007058_ref_vs_ref_rep0": [
+   "scores",
+   "summary",
+   "sites",
+   "flr"
+  ]
+ },
+ "fast_reproducible": true,
+ "loadavg_end": [
+  26.2177734375,
+  35.65966796875,
+  38.33984375
+ ],
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

@@ -1,0 +1,244 @@
+{
+ "n_runs": 13,
+ "runs": [
+  {
+   "run": "m06973_PMQ_02",
+   "accession": "PXD006293",
+   "fold": 0,
+   "species": "human",
+   "stratum": "TMT"
+  },
+  {
+   "run": "270120-Urine-Set31",
+   "accession": "PXD042759",
+   "fold": 1,
+   "species": "human",
+   "stratum": "TMT"
+  },
+  {
+   "run": "Fraction_4",
+   "accession": "PXD009023",
+   "fold": 2,
+   "species": "human",
+   "stratum": "TMT"
+  },
+  {
+   "run": "m21032",
+   "accession": "PXD043848",
+   "fold": 0,
+   "species": "mouse",
+   "stratum": "TMT"
+  },
+  {
+   "run": "Set3_6",
+   "accession": "PXD024175",
+   "fold": 1,
+   "species": "human",
+   "stratum": "TMT"
+  },
+  {
+   "run": "Req111-SM-Nik-Zainal_A_24",
+   "accession": "PXD062779",
+   "fold": 2,
+   "species": "human",
+   "stratum": "TMT"
+  },
+  {
+   "run": "141210_Christiano_plantaris_3hit_tech1_141216070912",
+   "accession": "PXD013226",
+   "fold": 0,
+   "species": "mouse",
+   "stratum": "LF"
+  },
+  {
+   "run": "MH_2",
+   "accession": "PXD005480",
+   "fold": 1,
+   "species": "human",
+   "stratum": "LF"
+  },
+  {
+   "run": "20210527_3d_mito_totalprot1",
+   "accession": "PXD044866",
+   "fold": 2,
+   "species": "mouse",
+   "stratum": "LF"
+  },
+  {
+   "run": "110804_110530_ProstateLMW_N_226_38",
+   "accession": "PXD000383",
+   "fold": 0,
+   "species": "human",
+   "stratum": "LF"
+  },
+  {
+   "run": "62598",
+   "accession": "PXD038703",
+   "fold": 1,
+   "species": "mouse",
+   "stratum": "LF"
+  },
+  {
+   "run": "ath017934",
+   "accession": "PXD002838",
+   "fold": 2,
+   "species": "mouse",
+   "stratum": "LF"
+  },
+  {
+   "run": "20150114_ZhongshanHospital_Af_1_240min_2ug",
+   "accession": "PXD007725",
+   "fold": 0,
+   "species": "human",
+   "stratum": "LF"
+  }
+ ],
+ "n_psms": 1950545,
+ "variants": {
+  "itcid_linear_base": {
+   "hyperparams": {
+    "C": 0.01
+   },
+   "cv": {
+    "{\"C\": 0.01}": 110727,
+    "{\"C\": 0.1}": 109908,
+    "{\"C\": 1.0}": 109203
+   },
+   "cv_per_fold": {
+    "{\"C\": 0.01}": {
+     "0": 74025,
+     "1": 20833,
+     "2": 15869
+    },
+    "{\"C\": 0.1}": {
+     "0": 73544,
+     "1": 20534,
+     "2": 15830
+    },
+    "{\"C\": 1.0}": {
+     "0": 73083,
+     "1": 20176,
+     "2": 15944
+    }
+   },
+   "sha256": "1c02c9bad4d087f6b0914430b4a68d0b081c30220715b4a8d73074702a873a6a",
+   "npos": [
+    84091,
+    104859,
+    111202
+   ],
+   "train_psms_at_1pct_final": 113041
+  },
+  "itcid_gbm_base": {
+   "hyperparams": {
+    "n": 150
+   },
+   "cv": {
+    "{\"n\": 50}": 101850,
+    "{\"n\": 150}": 106480,
+    "{\"n\": 300}": 106221
+   },
+   "cv_per_fold": {
+    "{\"n\": 50}": {
+     "0": 68227,
+     "1": 18613,
+     "2": 15010
+    },
+    "{\"n\": 150}": {
+     "0": 70939,
+     "1": 19630,
+     "2": 15911
+    },
+    "{\"n\": 300}": {
+     "0": 70850,
+     "1": 19421,
+     "2": 15950
+    }
+   },
+   "sha256": "834bafe9348aea8cb13972c27f4ce765ea139c6ad51c050cf06e748e0ba44e02",
+   "npos": [
+    84091,
+    94724,
+    100490
+   ],
+   "train_psms_at_1pct_final": 106393
+  },
+  "itcid_linear_pred": {
+   "hyperparams": {
+    "C": 0.01
+   },
+   "cv": {
+    "{\"C\": 0.01}": 127081,
+    "{\"C\": 0.1}": 126874,
+    "{\"C\": 1.0}": 126067
+   },
+   "cv_per_fold": {
+    "{\"C\": 0.01}": {
+     "0": 83561,
+     "1": 24070,
+     "2": 19450
+    },
+    "{\"C\": 0.1}": {
+     "0": 83578,
+     "1": 23856,
+     "2": 19440
+    },
+    "{\"C\": 1.0}": {
+     "0": 83390,
+     "1": 23422,
+     "2": 19255
+    }
+   },
+   "sha256": "667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89",
+   "npos": [
+    84091,
+    116840,
+    126118
+   ],
+   "train_psms_at_1pct_final": 127760
+  },
+  "itcid_gbm_pred": {
+   "hyperparams": {
+    "n": 300
+   },
+   "cv": {
+    "{\"n\": 50}": 122666,
+    "{\"n\": 150}": 125181,
+    "{\"n\": 300}": 125542
+   },
+   "cv_per_fold": {
+    "{\"n\": 50}": {
+     "0": 81320,
+     "1": 21924,
+     "2": 19422
+    },
+    "{\"n\": 150}": {
+     "0": 82413,
+     "1": 23077,
+     "2": 19691
+    },
+    "{\"n\": 300}": {
+     "0": 82340,
+     "1": 23284,
+     "2": 19918
+    }
+   },
+   "sha256": "f13ebf96b7bec749496f7cb36c8b854a8f74a09d87cd6fd22fb214b6b084ab37",
+   "npos": [
+    84091,
+    103114,
+    121787
+   ],
+   "train_psms_at_1pct_final": 126972
+  }
+ },
+ "hyperscore_psms_at_1pct": {
+  "total": 84091,
+  "per_fold": {
+   "0": 56584,
+   "1": 15495,
+   "2": 12012
+  }
+ },
+ "train_wall_s": 1898.512365667615
+}

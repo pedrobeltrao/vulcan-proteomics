@@ -1,0 +1,30 @@
+# M7 encoder arm (E2b, E5, E6). Dev only; no sealed data; no DN2 data; frozen T1 scorer only read.
+experiment: tree M7 (cross-encoder E6, bi-encoder E5, size E2b); DESIGN §4 L3, §6.3, §6.4, §10
+work_dir: /tmp/vulcan_m7   # node-local; rebuilt by scripts/m7/* (reuses /tmp/vulcan_e2, /tmp/vulcan_m3, /tmp/vulcan_m3e)
+env: /tmp/vulcan_env_*/pred (staged pred env; scripts/m2b/stage_env.sh)
+seeds: {general: 11, training_run_selection: 23, folds: 5 project-disjoint (round-robin over seeded order), torch/numpy: 11}
+model:
+  code: vulcan/encoders/model.py (SplitJointEncoder), size s (EncoderConfig d 192, heads 6, ff 384, n_spec 2, n_pep 2, n_joint 1, 63 peaks, emb 128, 24 Fourier freqs, 20 ppm match bias)
+  params: 1659164
+  file: results/2026-10-28_M7_encoders/models/ce_s.pt   # sha256 aa19c8f3fbec07d7532a005132efc689244d6e75bbd8ac69f9df24209f9a97c6
+  inference: bf16, row blocks of 8192 in PSM-table order (deterministic; G0 bit-identical)
+e2b: {script: scripts/m7/e2b_bench.py, sizes: [xs, s, m, l, xl], dtypes: [fp16, bf16], K: [5, 10, 20, 50], batch_candidates: 8192, lock: /tmp/vulcan_bench.lock}
+training_data:
+  manifest: data/manifests/train_m7.tsv (13 M3 rows + 30 new, seed 23); folds data/manifests/train_m7_folds.tsv; raw sha256 data/manifests/train_m7.sha256
+  exclusions: every accession in any data/manifests/*.tsv except t4_frame (T4, D*/T*, DN, D8, IT-CID, predictor training, ...), DN2 walk log, yeast/Arabidopsis by species
+  class: OT-HCD only (>= 95% FTMS+HCD MS2; MN-WT1-Frac8 excluded); 2 RAW unreadable by RawFileReader (uzorak_07, Sh-271) excluded
+  search: E2 SearchParams, prod index per species (T + pseudo-reverse), report_psms 20
+  labels: frozen static_gbm_pred, paired double competition per run; positives = PSM winners (targets) of peptidoforms accepted at q <= 0.1% with score >= list threshold
+  negatives: [hard top-20 targets (<= 6, I/L-different), shifted-precursor confident targets of other spectra at +-U(5,60) Da (2), wrong-species E. coli-only index targets for human/mouse spectra minus host I/L space (<= 2)]
+  decoys: never candidates (asserted against labels.arrow)
+  dedup: exact spectrum hash (blake2b-64 of precursor m/z, top-63 m/z, rel. intensity at 1e-3) within training and vs all eval stores; raw sha256 vs all manifests
+training: {script: scripts/m7/train_ce.py, loss: BCE + 0.5 InfoNCE, optimizer: AdamW lr 5e-4 wd 0.01, warmup 500 + cosine, batch 384 spectra, max 12 epochs, early stop patience 2 on fold-4 loss, bf16 autocast}
+e6:
+  script: scripts/m7/e6_eval.py (M3 evaluate.py / M3e d8.py, armM.py code paths)
+  searches: existing M3/M3e top-5 PSM tables (D0, D1: prod, E2001-3, C; D8 first 10 runs: same; D7: yeast_M2001-3)
+  scorers: [hyperscore, static_gbm_pred (frozen), ce_s (frozen), reset_lda_pred (M3 recipe)]
+  matched_fdp: grid of own q (40 points to 0.2%, 160 to 8%), first crossing of mean FDP (P over 3 seeds; C), linear interpolation; D8 ratio CI = 2000 run-bootstrap draws (seed 11)
+  ci_convention: a decides (A1.6), b reported
+gates: {script: scripts/m7/gates_ce.py, G0: D1 vs E2 swap index, G2_G5: M3e G2 mixtures (45), A1.3 clean-null construction over fixed/gbm/ce winners, tail-G2/G1: diagnostics only (D12 nulls)}
+e5: {script: scripts/m7/e5_retrieval.py, open: "D0, human_contam_prod, open [-150, +500] Da, K1 top-K 500, report 5; reference rank-1 targets at PSM q <= 1% (hyperscore)", retrieval: exact brute-force cosine within open window, peptide banks z 2/3, K: [10, 100, 500, 1000], g3_style: M3e mixtures 00/01 null spectra, exhaustive closed window, K [10, 100]}
+bench: {script: scripts/m7/bench_ce.py, runs: D0 run 2 + 10 D8 runs, warm-up pass excluded, lock /tmp/vulcan_bench.lock}

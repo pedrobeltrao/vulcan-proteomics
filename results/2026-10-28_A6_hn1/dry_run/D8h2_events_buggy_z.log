@@ -1,0 +1,25 @@
+{"ev": "start", "set": "D8h2", "n_projects": 2, "n_runs": 2, "loadavg": [57.64501953125, 34.55712890625, 23.2548828125], "t": 0.02}
+{"ev": "a6_lock_acquired", "t": 0.02}
+{"ev": "listing", "acc": "PXD057360", "wall_s": 0.7067117691040039, "n_files": 22, "t": 0.78}
+{"ev": "listing", "acc": "PXD018572", "wall_s": 3.584352970123291, "n_files": 217, "t": 3.66}
+{"ev": "ctx_setup", "wall_s": 8.96282172203064, "t": 8.98}
+{"ev": "ctx_swapped_setup", "wall_s": 6.0925633907318115, "t": 15.08}
+{"ev": "download", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 138.26209473609924, "ok": true, "bytes": 633224353, "sha1_checked": true, "t": 141.92}
+{"ev": "decode", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 7.277335166931152, "core_s": 4.359999999999999, "rc": 0, "t": 149.2}
+{"ev": "run_checks", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "frac_ftms_hcd": 1.0, "n_ms1": 6366, "reporters": {"TMT": {"median_frac": 0.0003333333333333333, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 149.67}
+{"ev": "download", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 161.69287395477295, "ok": true, "bytes": 647380066, "sha1_checked": false, "t": 162.47}
+{"ev": "decode", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 5.79316258430481, "core_s": 4.3, "rc": 0, "t": 168.26}
+{"ev": "run_checks", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "frac_ftms_hcd": 1.0, "n_ms1": 3604, "reporters": {"TMT": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}, "iTRAQ": {"median_frac": 0.0, "control_frac": 0.0, "detected": false}}, "pass": true, "t": 168.75}
+{"ev": "trfp", "run": "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm", "wall_s": 90.32649970054626, "core_s": 56.01, "rc": 0, "t": 239.99}
+{"ev": "sage", "acc": "PXD018572", "n_runs": 1, "wall_s": 19.918574333190918, "core_s": 43.58, "t": 259.92}
+{"ev": "trfp", "run": "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r", "wall_s": 97.13777470588684, "core_s": 79.42999999999999, "rc": 0, "t": 265.89}
+{"ev": "sage", "acc": "PXD057360", "n_runs": 1, "wall_s": 39.22629451751709, "core_s": 61.120000000000005, "t": 305.11}
+{"ev": "admit", "acc": "PXD018572", "wall_s": 83.17907547950745, "cpu_s": 67.94166399999999, "timing": {"load_store": 0.037230188958346844, "certify": 6.745727512985468, "sage_agree": 0.02164181601256132, "removal": 75.64736149506643, "freeze": 0.03839932195842266, "reduced_index": 0.490869321860373, "null_search": 0.19046350475400686}, "removal": {"n_window_rows": 782605, "n_window_rows_with_partners": 783918, "n_unique_window_seqs": 703854, "n_I_pairs": 8491, "n_I_seqs": 16748, "R_rows": 481240, "R_rows_near_I_or_contam": 250816, "R_rows_ladder_only": 230424, "ladder_rows_tested": 643862, "wall_s": {"windows+I_filter_build": 5.609064256306738, "near_I": 30.424974236637354, "contam": 36.11153775313869, "ladder": 3.3085526381619275}}, "counts": {"E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {"n_ms2": 20275, "n_certified_hs": 5594, "A": 3324, "A_cand": 709, "tail_proxy": 8, "A_cand_hs_only": null}}, "t": 343.2}
+Traceback (most recent call last):
+  File "$VULCAN_ROOT/scripts/a6/dry_run.py", line 278, in <module>
+    sw = AH.swap_test(ctx_sw, acc, [(r, st) for r, st, _, _ in runs_ok], s1, os.path.join(out, "freeze", acc),
+^^
+  File "$VULCAN_ROOT/scripts/a6/dry_run.py", line 259, in main
+    summary = {"projects": {}}
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: __main__.ev() got multiple values for keyword argument 'wall_s'

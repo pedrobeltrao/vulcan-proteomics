@@ -1,0 +1,48 @@
+[
+ {
+  "run": "Velos005137",
+  "rows": 18949,
+  "store_identical": true,
+  "diff_columns": [],
+  "run_meta_keys_differing": [
+   "cpu_s",
+   "created_utc",
+   "fast_trailer",
+   "timing_s"
+  ],
+  "rows_e2": 11502,
+  "rows_cohort": 11502,
+  "psm_identical": true,
+  "index": "pfu_contam_prod (E2 D1 index)"
+ },
+ {
+  "run": "b1906_293T_proteinID_01A_QE3_122212",
+  "rows": 67599,
+  "store_identical": true,
+  "diff_columns": [],
+  "run_meta_keys_differing": [
+   "cpu_s",
+   "created_utc",
+   "fast_trailer",
+   "timing_s"
+  ],
+  "rows_e2": 35084,
+  "rows_cohort": 35084,
+  "psm_identical": true
+ },
+ {
+  "run": "b1937_293T_proteinID_01B_QE3_122212",
+  "rows": 71295,
+  "store_identical": true,
+  "diff_columns": [],
+  "run_meta_keys_differing": [
+   "cpu_s",
+   "created_utc",
+   "fast_trailer",
+   "timing_s"
+  ],
+  "rows_e2": 38028,
+  "rows_cohort": 38028,
+  "psm_identical": true
+ }
+]

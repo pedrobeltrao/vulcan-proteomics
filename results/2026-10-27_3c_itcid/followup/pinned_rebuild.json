@@ -1,0 +1,79 @@
+{
+ "reference_snapshot": "416ea7bf952a342697dbf740ec5e839809c5fced69e0d564dcd9977f1dc831f4",
+ "tables": {
+  "Prosit_2019_irt|frag=na|ce=na|z=na": {
+   "n": 7379162,
+   "n_entries_differ": 33948,
+   "max_abs_diff": 0.000179290771484375,
+   "wall_s": 192.93093376839533
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=2": {
+   "n": 4462101,
+   "n_entries_differ": 110874,
+   "max_abs_diff": 5.561113357543945e-05,
+   "wall_s": 653.0704647907987
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=3": {
+   "n": 3037840,
+   "n_entries_differ": 105083,
+   "max_abs_diff": 2.944469451904297e-05,
+   "wall_s": 509.8469913969748
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=4": {
+   "n": 651291,
+   "n_entries_differ": 85317,
+   "max_abs_diff": 2.7894973754882812e-05,
+   "wall_s": 118.41042319405824
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=5": {
+   "n": 84555,
+   "n_entries_differ": 62716,
+   "max_abs_diff": 0.0003088712692260742,
+   "wall_s": 15.861402317881584
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=6": {
+   "n": 15476,
+   "n_entries_differ": 15444,
+   "max_abs_diff": 0.0002918839454650879,
+   "wall_s": 3.698800726328045
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=2": {
+   "n": 1215901,
+   "n_entries_differ": 35195,
+   "max_abs_diff": 2.276897430419922e-05,
+   "wall_s": 183.66940455371514
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=3": {
+   "n": 1129533,
+   "n_entries_differ": 30518,
+   "max_abs_diff": 2.2590160369873047e-05,
+   "wall_s": 183.59069363819435
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=4": {
+   "n": 321658,
+   "n_entries_differ": 47524,
+   "max_abs_diff": 2.4378299713134766e-05,
+   "wall_s": 58.13805843098089
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=5": {
+   "n": 49389,
+   "n_entries_differ": 31513,
+   "max_abs_diff": 3.7670135498046875e-05,
+   "wall_s": 10.030581841245294
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=6": {
+   "n": 9216,
+   "n_entries_differ": 9191,
+   "max_abs_diff": 0.0001106560230255127,
+   "wall_s": 3.446546571329236
+  },
+  "Prosit_2020_irt_TMT|frag=na|ce=na|z=na": {
+   "n": 2551687,
+   "n_entries_differ": 22823,
+   "max_abs_diff": 0.00012969970703125,
+   "wall_s": 90.50342837814242
+  }
+ },
+ "rebuilt_snapshot": "e71d7811163d7bf0acbc182a3321d5cb72aa3b4694ea98d22e394ac948813ba2",
+ "bit_identical_to_pinned": false
+}

@@ -1,0 +1,160 @@
+...................FF.F...                                               [100%]
+=================================== FAILURES ===================================
+_____________ test_iii_g2_original_bootstrap_coverage[cluster-het] _____________
+
+unit = 'cluster', het = 'het'
+
+    @pytest.mark.parametrize("het", ["het", "hom"])
+    @pytest.mark.parametrize("unit", ["cluster", "project"])
+    def test_iii_g2_original_bootstrap_coverage(unit, het):
+        """paired mean(learned - fixed) target-win, true 0: fixed ~ Bern(0.5), learned ~ Bern(0.5 + d_j),
+        d_j ~ N(0, 0.01); n = 20,000; one-sided 0.95 UCB."""
+        g = np.random.default_rng((4001 if unit == "cluster" else 4002) + (10 if het == "hom" else 0))
+        tau = 0.01 if het == "het" else 0.0
+        J = J_COV if unit == "cluster" else 2 * J_COV
+        n = 20_000
+        hi_ok, env_hi = [], []
+        for _ in range(N_COV):
+            u = g.choice(J, size=n, p=_weights(g, J))
+            d = g.normal(0, tau, J) if tau else np.zeros(J)
+            a = g.random(n) < 0.5
+            b = g.random(n) < 0.5 + d[u]
+            ones = np.ones(n, bool)
+            r = S.unit_bootstrap_diff(u, b, ones, a, ones, B_COV, g, S.G2O_CONF, two_sided=False)
+            hi_ok.append(r["hi"] >= 0)
+            an = G2.g2_differential(a, b, g.normal(size=n))["strata"][0]["overall"]["ucb"]
+            env_hi.append(max(r["hi"], an) >= 0)
+        s = _cov_summary(np.ones(N_COV, bool), hi_ok, 0.95)
+        s["coverage_lower"] = None
+        s["envelope_with_analytic"] = _cov_summary(np.ones(N_COV, bool), env_hi, 0.95)
+        s["envelope_with_analytic"]["coverage_lower"] = None
+        s["tau"] = tau
+        _rec("iii_coverage", **{f"G2_original_bootstrap_{unit}_{het}": s})
+>       assert s["pass"], s
+E       AssertionError: {'n_rep': 1000, 'nominal_one_sided': 0.95, 'coverage_lower': None, 'coverage_upper': 0.923, ...}
+E       assert False
+
+tests/a6/test_a6_stats.py:433: AssertionError
+_____________ test_iii_g2_original_bootstrap_coverage[cluster-hom] _____________
+
+unit = 'cluster', het = 'hom'
+
+    @pytest.mark.parametrize("het", ["het", "hom"])
+    @pytest.mark.parametrize("unit", ["cluster", "project"])
+    def test_iii_g2_original_bootstrap_coverage(unit, het):
+        """paired mean(learned - fixed) target-win, true 0: fixed ~ Bern(0.5), learned ~ Bern(0.5 + d_j),
+        d_j ~ N(0, 0.01); n = 20,000; one-sided 0.95 UCB."""
+        g = np.random.default_rng((4001 if unit == "cluster" else 4002) + (10 if het == "hom" else 0))
+        tau = 0.01 if het == "het" else 0.0
+        J = J_COV if unit == "cluster" else 2 * J_COV
+        n = 20_000
+        hi_ok, env_hi = [], []
+        for _ in range(N_COV):
+            u = g.choice(J, size=n, p=_weights(g, J))
+            d = g.normal(0, tau, J) if tau else np.zeros(J)
+            a = g.random(n) < 0.5
+            b = g.random(n) < 0.5 + d[u]
+            ones = np.ones(n, bool)
+            r = S.unit_bootstrap_diff(u, b, ones, a, ones, B_COV, g, S.G2O_CONF, two_sided=False)
+            hi_ok.append(r["hi"] >= 0)
+            an = G2.g2_differential(a, b, g.normal(size=n))["strata"][0]["overall"]["ucb"]
+            env_hi.append(max(r["hi"], an) >= 0)
+        s = _cov_summary(np.ones(N_COV, bool), hi_ok, 0.95)
+        s["coverage_lower"] = None
+        s["envelope_with_analytic"] = _cov_summary(np.ones(N_COV, bool), env_hi, 0.95)
+        s["envelope_with_analytic"]["coverage_lower"] = None
+        s["tau"] = tau
+        _rec("iii_coverage", **{f"G2_original_bootstrap_{unit}_{het}": s})
+>       assert s["pass"], s
+E       AssertionError: {'n_rep': 1000, 'nominal_one_sided': 0.95, 'coverage_lower': None, 'coverage_upper': 0.932, ...}
+E       assert False
+
+tests/a6/test_a6_stats.py:433: AssertionError
+_____________ test_iii_g2_original_bootstrap_coverage[project-hom] _____________
+
+unit = 'project', het = 'hom'
+
+    @pytest.mark.parametrize("het", ["het", "hom"])
+    @pytest.mark.parametrize("unit", ["cluster", "project"])
+    def test_iii_g2_original_bootstrap_coverage(unit, het):
+        """paired mean(learned - fixed) target-win, true 0: fixed ~ Bern(0.5), learned ~ Bern(0.5 + d_j),
+        d_j ~ N(0, 0.01); n = 20,000; one-sided 0.95 UCB."""
+        g = np.random.default_rng((4001 if unit == "cluster" else 4002) + (10 if het == "hom" else 0))
+        tau = 0.01 if het == "het" else 0.0
+        J = J_COV if unit == "cluster" else 2 * J_COV
+        n = 20_000
+        hi_ok, env_hi = [], []
+        for _ in range(N_COV):
+            u = g.choice(J, size=n, p=_weights(g, J))
+            d = g.normal(0, tau, J) if tau else np.zeros(J)
+            a = g.random(n) < 0.5
+            b = g.random(n) < 0.5 + d[u]
+            ones = np.ones(n, bool)
+            r = S.unit_bootstrap_diff(u, b, ones, a, ones, B_COV, g, S.G2O_CONF, two_sided=False)
+            hi_ok.append(r["hi"] >= 0)
+            an = G2.g2_differential(a, b, g.normal(size=n))["strata"][0]["overall"]["ucb"]
+            env_hi.append(max(r["hi"], an) >= 0)
+        s = _cov_summary(np.ones(N_COV, bool), hi_ok, 0.95)
+        s["coverage_lower"] = None
+        s["envelope_with_analytic"] = _cov_summary(np.ones(N_COV, bool), env_hi, 0.95)
+        s["envelope_with_analytic"]["coverage_lower"] = None
+        s["tau"] = tau
+        _rec("iii_coverage", **{f"G2_original_bootstrap_{unit}_{het}": s})
+>       assert s["pass"], s
+E       AssertionError: {'n_rep': 1000, 'nominal_one_sided': 0.95, 'coverage_lower': None, 'coverage_upper': 0.944, ...}
+E       assert False
+
+tests/a6/test_a6_stats.py:433: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/a6/test_a6_stats.py::test_i_tail_reproduces_a2_stats[clean]
+PASSED tests/a6/test_a6_stats.py::test_i_tail_reproduces_a2_stats[margin]
+PASSED tests/a6/test_a6_stats.py::test_i_tail_reproduces_a2_stats[leak]
+PASSED tests/a6/test_a6_stats.py::test_i_tail_reproduces_a2_stats[invalid]
+PASSED tests/a6/test_a6_stats.py::test_i_state_verdicts_sane
+PASSED tests/a6/test_a6_stats.py::test_i_g1_reproduces_a2_stats
+PASSED tests/a6/test_a6_stats.py::test_i_g3_reproduces_a2_stats
+PASSED tests/a6/test_a6_stats.py::test_i_g2_original_reproduces_g2
+PASSED tests/a6/test_a6_stats.py::test_ii_cap_factors_verbatim
+PASSED tests/a6/test_a6_stats.py::test_ii_iut_precedence
+PASSED tests/a6/test_a6_stats.py::test_ii_c9_tail_iut_reproduction
+PASSED tests/a6/test_a6_stats.py::test_iii_g1_jackknife_coverage[cluster-het]
+PASSED tests/a6/test_a6_stats.py::test_iii_g1_jackknife_coverage[cluster-hom]
+PASSED tests/a6/test_a6_stats.py::test_iii_g1_jackknife_coverage[project-het]
+PASSED tests/a6/test_a6_stats.py::test_iii_g1_jackknife_coverage[project-hom]
+PASSED tests/a6/test_a6_stats.py::test_iii_tost_bootstrap_coverage[cluster-het]
+PASSED tests/a6/test_a6_stats.py::test_iii_tost_bootstrap_coverage[cluster-hom]
+PASSED tests/a6/test_a6_stats.py::test_iii_tost_bootstrap_coverage[project-het]
+PASSED tests/a6/test_a6_stats.py::test_iii_tost_bootstrap_coverage[project-hom]
+PASSED tests/a6/test_a6_stats.py::test_iii_g2_original_bootstrap_coverage[project-het]
+PASSED tests/a6/test_a6_stats.py::test_v1_verdict_combiner
+PASSED tests/a6/test_a6_stats.py::test_evaluate_pool_smoke
+PASSED tests/a6/test_a6_stats.py::test_zz_write_results
+FAILED tests/a6/test_a6_stats.py::test_iii_g2_original_bootstrap_coverage[cluster-het]
+FAILED tests/a6/test_a6_stats.py::test_iii_g2_original_bootstrap_coverage[cluster-hom]
+FAILED tests/a6/test_a6_stats.py::test_iii_g2_original_bootstrap_coverage[project-hom]
+3 failed, 23 passed in 422.83s (0:07:02)
+Command exited with non-zero status 1
+	Command being timed: "conda_envs/pe/bin/python -m pytest tests/a6/test_a6_stats.py -q -p no:cacheprovider -rA"
+	User time (seconds): 1171.95
+	System time (seconds): 84.07
+	Percent of CPU this job got: 293%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:07.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 100444
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 854
+	Minor (reclaiming a frame) page faults: 83658
+	Voluntary context switches: 8794
+	Involuntary context switches: 2880713
+	Swaps: 0
+	File system inputs: 90296
+	File system outputs: 248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

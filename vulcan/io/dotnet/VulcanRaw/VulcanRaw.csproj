@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- In-process Thermo RAW extractor for Vulcan L0 (loaded from Python via pythonnet).
+       References the RawFileReader assemblies shipped with ThermoRawFileParser (conda_envs/trfp);
+       they are not redistributed here (Thermo licence: see conda_envs/trfp/bin/THERMO_LICENSE). -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>VulcanRaw</AssemblyName>
+    <RootNamespace>Vulcan.IO</RootNamespace>
+    <TrfpBin Condition="'$(TrfpBin)' == ''">$(MSBuildThisFileDirectory)../../../../conda_envs/trfp/bin</TrfpBin>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ThermoFisher.CommonCore.Data">
+      <HintPath>$(TrfpBin)/ThermoFisher.CommonCore.Data.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ThermoFisher.CommonCore.RawFileReader">
+      <HintPath>$(TrfpBin)/ThermoFisher.CommonCore.RawFileReader.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

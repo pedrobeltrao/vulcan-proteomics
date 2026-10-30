@@ -1,0 +1,106 @@
+{
+ "lustre_env": {
+  "reps": [
+   {
+    "numpy_pyarrow_s": 40.93918466987088,
+    "torch_import_s": 209.77590664336458,
+    "cuda_init_s": 0.2897747587412596,
+    "vulcan_import_kernels_s": 1.1020764969289303,
+    "l1_load_s": 32.31096202414483,
+    "gpu_index_build_s": 6.611088072881103,
+    "in_process_total_s": 291.0289926659316,
+    "core_s": 9.530692,
+    "process_wall_s": 298.5814058147371,
+    "interpreter_start_s": 7.552413148805499
+   },
+   {
+    "numpy_pyarrow_s": 5.755473348777741,
+    "torch_import_s": 4.049252680037171,
+    "cuda_init_s": 0.35170077718794346,
+    "vulcan_import_kernels_s": 0.03926407312974334,
+    "l1_load_s": 1.0634346026927233,
+    "gpu_index_build_s": 0.841892811935395,
+    "in_process_total_s": 12.101018293760717,
+    "core_s": 3.9470210000000003,
+    "process_wall_s": 13.170128262136132,
+    "interpreter_start_s": 1.0691099683754146
+   },
+   {
+    "numpy_pyarrow_s": 0.47391976695507765,
+    "torch_import_s": 3.659869879949838,
+    "cuda_init_s": 0.30133115500211716,
+    "vulcan_import_kernels_s": 0.040370621252804995,
+    "l1_load_s": 1.0647284677252173,
+    "gpu_index_build_s": 0.8254323503933847,
+    "in_process_total_s": 6.36565224127844,
+    "core_s": 3.671201,
+    "process_wall_s": 7.062953523825854,
+    "interpreter_start_s": 0.6973012825474143
+   }
+  ],
+  "median": {
+   "numpy_pyarrow_s": 5.755473348777741,
+   "torch_import_s": 4.049252680037171,
+   "cuda_init_s": 0.30133115500211716,
+   "vulcan_import_kernels_s": 0.040370621252804995,
+   "l1_load_s": 1.0647284677252173,
+   "gpu_index_build_s": 0.841892811935395,
+   "in_process_total_s": 12.101018293760717,
+   "core_s": 3.9470210000000003,
+   "process_wall_s": 13.170128262136132,
+   "interpreter_start_s": 1.0691099683754146
+  }
+ },
+ "local_nvme_env": {
+  "reps": [
+   {
+    "numpy_pyarrow_s": 0.11962313111871481,
+    "torch_import_s": 1.0835260786116123,
+    "cuda_init_s": 0.5157642350532115,
+    "vulcan_import_kernels_s": 0.018360645975917578,
+    "l1_load_s": 0.29027978936210275,
+    "gpu_index_build_s": 0.28285109996795654,
+    "in_process_total_s": 2.3104049800895154,
+    "core_s": 2.272926,
+    "process_wall_s": 2.8528872109018266,
+    "interpreter_start_s": 0.5424822308123112
+   },
+   {
+    "numpy_pyarrow_s": 0.12120164697989821,
+    "torch_import_s": 1.08807563316077,
+    "cuda_init_s": 0.322401381097734,
+    "vulcan_import_kernels_s": 0.016904614865779877,
+    "l1_load_s": 0.28987143700942397,
+    "gpu_index_build_s": 0.2947980868630111,
+    "in_process_total_s": 2.133252799976617,
+    "core_s": 2.100885,
+    "process_wall_s": 2.620331428013742,
+    "interpreter_start_s": 0.48707862803712487
+   },
+   {
+    "numpy_pyarrow_s": 0.11967647075653076,
+    "torch_import_s": 1.0833406392484903,
+    "cuda_init_s": 0.2605604538694024,
+    "vulcan_import_kernels_s": 0.017610773909837008,
+    "l1_load_s": 0.2898179851472378,
+    "gpu_index_build_s": 0.29268688382580876,
+    "in_process_total_s": 2.063693206757307,
+    "core_s": 2.02758,
+    "process_wall_s": 2.547967344056815,
+    "interpreter_start_s": 0.48427413729950786
+   }
+  ],
+  "median": {
+   "numpy_pyarrow_s": 0.11967647075653076,
+   "torch_import_s": 1.0835260786116123,
+   "cuda_init_s": 0.322401381097734,
+   "vulcan_import_kernels_s": 0.017610773909837008,
+   "l1_load_s": 0.28987143700942397,
+   "gpu_index_build_s": 0.29268688382580876,
+   "in_process_total_s": 2.133252799976617,
+   "core_s": 2.100885,
+   "process_wall_s": 2.620331428013742,
+   "interpreter_start_s": 0.48707862803712487
+  }
+ }
+}

@@ -1,0 +1,2529 @@
+{
+ "b1906_293T_proteinID_01A_QE3_122212": {
+  "run": "b1906_293T_proteinID_01A_QE3_122212",
+  "dataset": "D0",
+  "fasta": "human_contam.fasta",
+  "threads": 32,
+  "features": {
+   "n": 671882,
+   "wall_s": 21.874575918074697,
+   "process_cpu_s": 29.643857684
+  },
+  "pilot": {
+   "run_name": "b1906_293T_proteinID_01A_QE3_122212",
+   "run_id": 3705933988,
+   "instrument_model": "Q Exactive Orbitrap",
+   "params": {
+    "fraction": 0.1,
+    "seed": 11,
+    "q_anchor": 0.01,
+    "wide_precursor_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_da": [
+     -0.6,
+     0.6
+    ],
+    "isotope_errors": [
+     -1,
+     3
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "open_search": true,
+    "open_da": [
+     -150.0,
+     500.0
+    ],
+    "open_bin_da": 0.01,
+    "reporter_ppm": 10.0,
+    "max_annotate": 3000,
+    "tol_k": 4.0,
+    "floor_precursor_ppm": 1.0,
+    "floor_fragment": 1.0
+   },
+   "n_ms2": 41820,
+   "n_subsample": 4182,
+   "n_psms": 4027,
+   "n_anchors": 2142,
+   "n_anchor_decoys": 20,
+   "precursor_model": {
+    "rt_knots": [
+     127.71312
+    ],
+    "rt_ppm": [
+     0.3263911833349484
+    ],
+    "mz_knots": [
+     343.7257696984491,
+     389.24822460014764,
+     412.21050901619816,
+     437.2307434082031,
+     456.5756254722923,
+     477.7454569117401,
+     495.74793106232516,
+     513.872449877476,
+     536.2930908203125,
+     559.5925903320312,
+     578.2855834960938,
+     598.4571238115317,
+     622.9608764648438,
+     643.6538696289062,
+     661.3297729492188,
+     681.5138079801345,
+     704.0096435546875,
+     732.0545043945312,
+     764.3348999023438,
+     799.3924952686446,
+     838.7452292348248,
+     886.4172973632812,
+     951.46484375,
+     1070.2953817211578
+    ],
+    "mz_ppm": [
+     -0.2936504946702473,
+     -0.04723810231006773,
+     -0.04723810231006773,
+     -0.04723810231006773,
+     0.12873524509590253,
+     0.13240418698394812,
+     0.16745408284810728,
+     0.28225265643955416,
+     0.28225265643955416,
+     0.3292718813637658,
+     0.3381672498193646,
+     0.3381672498193646,
+     0.017089905209462873,
+     -0.01490422970163164,
+     -0.01490422970163164,
+     -0.03666558757171052,
+     -0.05910096388577777,
+     -0.06763659539023445,
+     -0.06763659539023445,
+     -0.06763659539023445,
+     0.04920042335631069,
+     -0.09861261609979602,
+     0.22029324903969189,
+     0.4699241940690734
+    ],
+    "n_anchors": 2142,
+    "mad_sd_before_ppm": 1.3567248149885205,
+    "mad_sd_after_ppm": 1.315504279081891,
+    "median_before_ppm": 0.3263911833349484,
+    "used": {
+     "rt": false,
+     "mz": true
+    }
+   },
+   "fragment_model": {
+    "rt_knots": [
+     131.44854
+    ],
+    "rt_ppm": [
+     0.0
+    ],
+    "mz_knots": [
+     175.11887,
+     211.14409,
+     244.16577,
+     274.18723,
+     304.132555,
+     343.2088,
+     376.18665,
+     413.2143,
+     454.27713,
+     493.2769,
+     532.32434,
+     575.3399,
+     616.37183,
+     659.3259,
+     704.40894,
+     750.3783,
+     798.4218,
+     852.4461,
+     905.49384,
+     969.4999,
+     1037.4809500000001,
+     1123.5421,
+     1239.5497,
+     1433.7483
+    ],
+    "mz_ppm": [
+     0.651543550006012,
+     0.04255240422432869,
+     -0.13378126528132941,
+     -0.19999387445462297,
+     -0.2475268852465732,
+     -0.4324189900474308,
+     -0.4324189900474308,
+     0.0717611397997035,
+     0.32177866460525195,
+     0.3380608386403715,
+     0.3380608386403715,
+     0.25403475373704765,
+     -0.0038557070418496556,
+     -0.19163824922367054,
+     -0.20132890786648394,
+     -0.20132890786648394,
+     -0.1427572176981404,
+     -0.05262937537767739,
+     -0.026374786779831245,
+     0.04245878905826401,
+     0.106492042267784,
+     0.4613502430458769,
+     0.5557309932233347,
+     0.5557309932233347
+    ],
+    "n_anchors": 26466,
+    "mad_sd_before_ppm": 1.9756774037305636,
+    "mad_sd_after_ppm": 1.9316951191653706,
+    "median_before_ppm": 0.0,
+    "used": {
+     "rt": false,
+     "mz": true
+    }
+   },
+   "tolerance_info": {
+    "precursor_before": {
+     "core": {
+      "n": 2142,
+      "mu": 0.3593665803060685,
+      "sd": 1.1398598792127377,
+      "k": 4.0,
+      "frac_inside": 0.8627450980392157,
+      "frac_core": 0.8842203548085901
+     },
+     "cov99": {
+      "n": 2142,
+      "median": 0.332402578656951,
+      "background_per_unit": 1.6,
+      "signal_total": 1982.4528386644822,
+      "background_frac_in_window": 0.07469654528478058
+     }
+    },
+    "precursor_after": {
+     "core": {
+      "n": 2142,
+      "mu": -0.03608907693311943,
+      "sd": 1.1178985377776864,
+      "k": 4.0,
+      "frac_inside": 0.8622782446311859,
+      "frac_core": 0.8832866479925303
+     },
+     "cov99": {
+      "n": 2142,
+      "median": -0.07822534625073901,
+      "background_per_unit": 1.625,
+      "signal_total": 1980.6564061778306,
+      "background_frac_in_window": 0.07586367880485527
+     }
+    },
+    "fragment_before": {
+     "core": {
+      "n": 26466,
+      "mu": -0.04898736144775624,
+      "sd": 1.7246857728874738,
+      "k": 4.0,
+      "frac_inside": 0.8910300007556865,
+      "frac_core": 0.9217864429834505
+     },
+     "cov99": {
+      "n": 26466,
+      "median": 0.0,
+      "background_per_unit": 7.525,
+      "signal_total": 25712.9,
+      "background_frac_in_window": 0.028432706113504118
+     }
+    },
+    "fragment_after": {
+     "core": {
+      "n": 26466,
+      "mu": -0.08900278109108545,
+      "sd": 1.6639576664358668,
+      "k": 4.0,
+      "frac_inside": 0.8854379203506385,
+      "frac_core": 0.9181591475855815
+     },
+     "cov99": {
+      "n": 26466,
+      "median": -0.07870213565647677,
+      "background_per_unit": 7.65,
+      "signal_total": 25703.672045726467,
+      "background_frac_in_window": 0.028905010201768305
+     }
+    }
+   },
+   "tolerances": {
+    "precursor_ppm_before": [
+     -4.200072936544882,
+     4.918806097157019
+    ],
+    "precursor_ppm_before_cov99": [
+     -13.077848725105671,
+     13.742653882419575
+    ],
+    "precursor_ppm_after": [
+     -4.507683228043865,
+     4.435505074177627
+    ],
+    "precursor_ppm_after_cov99": [
+     -13.307495629494294,
+     13.151044936992815
+    ],
+    "fragment_ppm_before": [
+     -6.947730452997652,
+     6.849755730102139
+    ],
+    "fragment_ppm_before_cov99": [
+     -16.75,
+     16.75
+    ],
+    "fragment_ppm_after": [
+     -6.744833446834553,
+     6.5668278846523815
+    ],
+    "fragment_ppm_after_cov99": [
+     -16.80233692021156,
+     16.644932648898603
+    ],
+    "search_wide": {
+     "precursor_ppm": [
+      -50.0,
+      50.0
+     ],
+     "fragment": [
+      -50.0,
+      50.0
+     ],
+     "unit": "ppm"
+    },
+    "rule": "core: mu +- 4.0 sd (sigma-clipped); cov99: background-subtracted 99% coverage"
+   },
+   "priors": {
+    "charge": {
+     "2": 1202,
+     "3": 761,
+     "4": 164,
+     "5": 12,
+     "6": 3
+    },
+    "isotope_error_instrument_mz": {
+     "-1": 72,
+     "0": 1634,
+     "1": 306,
+     "2": 96,
+     "3": 34
+    },
+    "by_source": {
+     "n_anchors": 2142,
+     "frac_explained": 0.9808590102707749,
+     "frac_explained_same_charge_by_source": {
+      "ms1_feature": 0.9005602240896359,
+      "instrument": 0.08029878618113913,
+      "fallback": 0.0
+     },
+     "ms1_feature": {
+      "-1": 31,
+      "0": 1710,
+      "1": 168,
+      "2": 15,
+      "3": 5
+     },
+     "instrument": {
+      "-1": 12,
+      "0": 90,
+      "1": 47,
+      "2": 20,
+      "3": 3
+     },
+     "fallback": {}
+    }
+   },
+   "analyzer_activation": {
+    "metadata": {
+     "ms2": {
+      "n": 41820,
+      "analyzer": {
+       "OT": 41820
+      },
+      "activation": {
+       "HCD": 41820
+      },
+      "supplemental_activation": {},
+      "nce_median": 25.0
+     }
+    },
+    "data": {
+     "fragment_tolerance_after": [
+      -6.744833446834553,
+      6.5668278846523815
+     ],
+     "fragment_unit": "ppm",
+     "inferred_analyzer": "high-res (OT/TOF/Astral)",
+     "n": 2122,
+     "intensity_share": {
+      "b": 0.08000015810856033,
+      "y": 0.2080578730617875,
+      "c": 0.003069433892219134,
+      "z": 0.004162403871344644
+     },
+     "by_share": 0.28805803117034784,
+     "cz_share": 0.007231837763563778,
+     "frac_peaks_below_0.28_precursor_mz": 0.1204358027639257,
+     "inferred_activation": "collisional (b/y)",
+     "low_mass_cutoff_present": false
+    },
+    "metadata_major": {
+     "analyzer": "OT",
+     "activation": "HCD"
+    },
+    "consistent": true
+   },
+   "reporters": {
+    "ms2": {
+     "TMT10/11": {
+      "median_frac": 0.0628885700621712,
+      "control_frac": 0.04167210121299074,
+      "per_ion": [
+       0.101,
+       0.075,
+       0.001,
+       0.002,
+       0.063,
+       0.069,
+       0.003,
+       0.003,
+       0.065,
+       0.069,
+       0.0
+      ]
+     },
+     "TMTpro_extra": {
+      "median_frac": 0.0,
+      "control_frac": 0.001366400218624035,
+      "per_ion": [
+       0.002,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "iTRAQ4": {
+      "median_frac": 0.00023912003825920613,
+      "control_frac": 0.0017216642754662843,
+      "per_ion": [
+       0.001,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "iTRAQ8_extra": {
+      "median_frac": 0.0005978000956480153,
+      "control_frac": 0.00661166905786705,
+      "per_ion": [
+       0.028,
+       0.0,
+       0.0,
+       0.001
+      ]
+     },
+     "detected": {
+      "TMT": false,
+      "TMTpro": false,
+      "iTRAQ": false
+     }
+    }
+   },
+   "offset_histogram": {
+    "n_psms": 4142,
+    "bin_da": 0.01,
+    "peaks": [
+     {
+      "delta_da": 0.0006,
+      "count_3bin": 1291,
+      "z": 1290.0,
+      "annotation": "unmodified"
+     },
+     {
+      "delta_da": 1.0039,
+      "count_3bin": 176,
+      "z": 175.0,
+      "annotation": "isotope +1"
+     },
+     {
+      "delta_da": 15.9954,
+      "count_3bin": 100,
+      "z": 99.0,
+      "annotation": "oxidation"
+     },
+     {
+      "delta_da": 43.0062,
+      "count_3bin": 71,
+      "z": 70.0,
+      "annotation": "carbamyl"
+     },
+     {
+      "delta_da": 53.9191,
+      "count_3bin": 41,
+      "z": 40.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 2.0056,
+      "count_3bin": 40,
+      "z": 39.0,
+      "annotation": "isotope +2"
+     },
+     {
+      "delta_da": 27.9961,
+      "count_3bin": 34,
+      "z": 33.0,
+      "annotation": "formyl"
+     },
+     {
+      "delta_da": 301.9876,
+      "count_3bin": 30,
+      "z": 29.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -0.9969,
+      "count_3bin": 24,
+      "z": 23.0,
+      "annotation": "isotope -1"
+     },
+     {
+      "delta_da": 16.9981,
+      "count_3bin": 23,
+      "z": 22.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -2.0152,
+      "count_3bin": 18,
+      "z": 17.0,
+      "annotation": "isotope -2"
+     },
+     {
+      "delta_da": 3.0073,
+      "count_3bin": 17,
+      "z": 16.0,
+      "annotation": "isotope +3"
+     },
+     {
+      "delta_da": 31.9897,
+      "count_3bin": 14,
+      "z": 13.0,
+      "annotation": "dioxidation"
+     },
+     {
+      "delta_da": -17.0267,
+      "count_3bin": 13,
+      "z": 12.0,
+      "annotation": "ammonia loss"
+     },
+     {
+      "delta_da": 37.9468,
+      "count_3bin": 12,
+      "z": 11.0,
+      "annotation": "K adduct"
+     },
+     {
+      "delta_da": 183.0358,
+      "count_3bin": 12,
+      "z": 11.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 1.9308,
+      "count_3bin": 11,
+      "z": 10.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 18.0021,
+      "count_3bin": 11,
+      "z": 10.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 0.9471,
+      "count_3bin": 11,
+      "z": 10.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 54.9229,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -113.0844,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 1.0567,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 0.0581,
+      "count_3bin": 9,
+      "z": 8.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -113.0843,
+      "count_3bin": 9,
+      "z": 8.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 128.0951,
+      "count_3bin": 9,
+      "z": 8.0,
+      "annotation": null
+     }
+    ],
+    "frac_unshifted_|d|<0.02": 0.3140994688556253
+   },
+   "labels": {
+    "TMT_label_offset": false,
+    "iTRAQ_label_offset": false,
+    "SILAC_offset": false,
+    "dimethyl_offset": false
+   },
+   "precursor_error_quantiles_before": [
+    -39.649,
+    -0.614,
+    0.326,
+    1.216,
+    31.714
+   ],
+   "precursor_error_quantiles_after": [
+    -40.207,
+    -1.007,
+    -0.089,
+    0.77,
+    31.134
+   ]
+  },
+  "pilot_timings": {
+   "load_subsample": 0.16249724803492427,
+   "wide_search": {
+    "wall_s": 30.74,
+    "user_s": 140.71,
+    "sys_s": 25.95,
+    "core_s": 166.66,
+    "max_rss_mb": 8283.4765625,
+    "n_spectra": 4182,
+    "mgf_write_s": 0.5078155994415283,
+    "threads": 32,
+    "searcher": "sage",
+    "fragments": "/tmp/vulcan_ms1/pilot/b1906_293T_proteinID_01A_QE3_122212/wide/matched_fragments.sage.tsv"
+   },
+   "diagnostics_s": 0.1888824966736138,
+   "open_search": {
+    "wall_s": 13.69,
+    "user_s": 135.86,
+    "sys_s": 15.03,
+    "core_s": 150.89000000000001,
+    "max_rss_mb": 3422.33984375,
+    "n_spectra": 4182,
+    "mgf_write_s": 0.5057554244995117,
+    "threads": 32,
+    "searcher": "sage"
+   },
+   "total_s": 46.12610521307215
+  },
+  "hypotheses_wall_s": 0.2570981830358505,
+  "hypothesis_stats": {
+   "n_ms2": 41820,
+   "n_rows": 427370,
+   "n_precursor_groups": 85474,
+   "rows_per_spectrum_mean": 10.219273075083692,
+   "groups_per_spectrum_mean": 2.0438546150167385,
+   "groups_per_spectrum_hist": {
+    "0": 0,
+    "1": 16966,
+    "2": 12537,
+    "3": 7365,
+    "4": 3493,
+    "5": 1387,
+    "6": 72
+   },
+   "groups_by_source": {
+    "ms1_feature": 78148,
+    "instrument": 7326,
+    "fallback": 0
+   },
+   "frac_ms2_master_found": 1.0,
+   "frac_ms2_with_instrument_charge": 1.0,
+   "frac_ms2_with_feature_group": 0.9146819703491152,
+   "frac_ms2_instrument_agrees_with_a_feature": 0.8248206599713056,
+   "frac_ms2_fallback_only": 0.0,
+   "frac_ms2_ge2_feature_groups(chimeric)": 0.550310856049737,
+   "features_in_window_mean": 2.3449545671927305,
+   "instrument_vs_feature_isotope_offset_hist": {
+    "-3": 21,
+    "-2": 142,
+    "-1": 1895,
+    "0": 27697,
+    "1": 3591,
+    "2": 911,
+    "3": 237
+   },
+   "top_feature_charge_vs_instrument": {
+    "n_both": 35893,
+    "agree_frac": 0.9262251692530576
+   }
+  },
+  "e0": {
+   "A_raw_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 20071,
+    "peptides_q01": 11005,
+    "n_rank1": 34973,
+    "sage_wall_s": 19.98,
+    "sage_core_s": 175.76,
+    "delta_peptides_vs_A_pct": 0.0,
+    "delta_psms_vs_A_pct": 0.0
+   },
+   "B_cal_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.507683228043865,
+      4.435505074177627
+     ],
+     "fragment_ppm": [
+      -6.744833446834553,
+      6.5668278846523815
+     ]
+    },
+    "psms_q01": 18936,
+    "peptides_q01": 10453,
+    "n_rank1": 28516,
+    "sage_wall_s": 18.64,
+    "sage_core_s": 165.26,
+    "delta_peptides_vs_A_pct": -5.01590186278964,
+    "delta_psms_vs_A_pct": -5.6549250161925135
+   },
+   "C_cal_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 20096,
+    "peptides_q01": 11006,
+    "n_rank1": 34954,
+    "sage_wall_s": 19.86,
+    "sage_core_s": 189.24,
+    "delta_peptides_vs_A_pct": 0.00908677873694419,
+    "delta_psms_vs_A_pct": 0.1245578197399233
+   },
+   "D_raw_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.200072936544882,
+      4.918806097157019
+     ],
+     "fragment_ppm": [
+      -6.947730452997652,
+      6.849755730102139
+     ]
+    },
+    "psms_q01": 18985,
+    "peptides_q01": 10481,
+    "n_rank1": 28709,
+    "sage_wall_s": 17.29,
+    "sage_core_s": 150.97,
+    "delta_peptides_vs_A_pct": -4.76147205815538,
+    "delta_psms_vs_A_pct": -5.41079168950227
+   },
+   "E_cal_cov99tol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -13.307495629494294,
+      13.151044936992815
+     ],
+     "fragment_ppm": [
+      -16.80233692021156,
+      16.644932648898603
+     ]
+    },
+    "psms_q01": 20287,
+    "peptides_q01": 11083,
+    "n_rank1": 35129,
+    "sage_wall_s": 20.29,
+    "sage_core_s": 156.75,
+    "delta_peptides_vs_A_pct": 0.7087687414811361,
+    "delta_psms_vs_A_pct": 1.076179562552948
+   },
+   "F_cal_pilotprec_prodfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.507683228043865,
+      4.435505074177627
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 19141,
+    "peptides_q01": 10599,
+    "n_rank1": 32768,
+    "sage_wall_s": 18.61,
+    "sage_core_s": 183.3,
+    "delta_peptides_vs_A_pct": -3.689232167196732,
+    "delta_psms_vs_A_pct": -4.633550894325145
+   },
+   "G_cal_prodprec_pilotfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -6.744833446834553,
+      6.5668278846523815
+     ]
+    },
+    "psms_q01": 19778,
+    "peptides_q01": 10808,
+    "n_rank1": 31247,
+    "sage_wall_s": 18.18,
+    "sage_core_s": 169.04,
+    "delta_peptides_vs_A_pct": -1.7900954111767398,
+    "delta_psms_vs_A_pct": -1.459817647351902
+   },
+   "H_cal_pilotprec_frag6sd": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.507683228043865,
+      4.435505074177627
+     ],
+     "fragment_ppm": [
+      -10.072748779706288,
+      9.894743217524116
+     ]
+    },
+    "psms_q01": 19100,
+    "peptides_q01": 10575,
+    "n_rank1": 30126,
+    "sage_wall_s": 18.14,
+    "sage_core_s": 165.72,
+    "delta_peptides_vs_A_pct": -3.907314856883237,
+    "delta_psms_vs_A_pct": -4.837825718698618
+   }
+  },
+  "hypothesis_coverage_of_baseline_ids": {
+   "n_anchors": 20071,
+   "frac_explained": 0.9921279457924368,
+   "frac_explained_same_charge_by_source": {
+    "ms1_feature": 0.9117632404962384,
+    "instrument": 0.08036470529619849,
+    "fallback": 0.0
+   },
+   "ms1_feature": {
+    "-1": 146,
+    "0": 16883,
+    "1": 1131,
+    "2": 126,
+    "3": 14
+   },
+   "instrument": {
+    "0": 1030,
+    "1": 430,
+    "2": 153
+   },
+   "fallback": {}
+  },
+  "total_wall_s": 190.69944300921634
+ },
+ "b1937_293T_proteinID_01B_QE3_122212": {
+  "run": "b1937_293T_proteinID_01B_QE3_122212",
+  "dataset": "D0",
+  "fasta": "human_contam.fasta",
+  "threads": 32,
+  "features": {
+   "n": 635011,
+   "wall_s": 7.0960117019712925,
+   "process_cpu_s": 26.339704161000007
+  },
+  "pilot": {
+   "run_name": "b1937_293T_proteinID_01B_QE3_122212",
+   "run_id": 402975302,
+   "instrument_model": "Q Exactive Orbitrap",
+   "params": {
+    "fraction": 0.1,
+    "seed": 11,
+    "q_anchor": 0.01,
+    "wide_precursor_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_da": [
+     -0.6,
+     0.6
+    ],
+    "isotope_errors": [
+     -1,
+     3
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "open_search": true,
+    "open_da": [
+     -150.0,
+     500.0
+    ],
+    "open_bin_da": 0.01,
+    "reporter_ppm": 10.0,
+    "max_annotate": 3000,
+    "tol_k": 4.0,
+    "floor_precursor_ppm": 1.0,
+    "floor_fragment": 1.0
+   },
+   "n_ms2": 46816,
+   "n_subsample": 4682,
+   "n_psms": 4433,
+   "n_anchors": 2468,
+   "n_anchor_decoys": 23,
+   "precursor_model": {
+    "rt_knots": [
+     115.984435
+    ],
+    "rt_ppm": [
+     2.4136608319810584
+    ],
+    "mz_knots": [
+     346.0281607760818,
+     383.8811161648684,
+     412.2405499944794,
+     436.607089211035,
+     461.2388305664062,
+     479.2222633132423,
+     495.2698263257731,
+     519.9474119740197,
+     540.2995316790418,
+     559.7971900041298,
+     577.3026733398438,
+     594.9827880859375,
+     613.8201695695294,
+     636.3365478515625,
+     656.308837890625,
+     683.8552175354339,
+     707.3849487304688,
+     728.3466717336102,
+     756.535136163762,
+     788.7332815951161,
+     827.4083862304688,
+     873.6981522874611,
+     941.0450503017548,
+     1089.506662354873
+    ],
+    "mz_ppm": [
+     -0.30645281606970903,
+     -0.16932971804579927,
+     -0.14719205494727444,
+     -0.08083408601039481,
+     0.24686263517082613,
+     0.24686263517082613,
+     0.24686263517082613,
+     0.3992218372805219,
+     0.4591602750096658,
+     0.3992218372805219,
+     0.2959478225728385,
+     0.16655567112043573,
+     -0.06460861630651642,
+     -0.06460861630651642,
+     0.016042272029016605,
+     0.016042272029016605,
+     -0.07608415461537514,
+     -0.14168655950184855,
+     -0.09372610738851465,
+     -0.10255895530934482,
+     -0.10255895530934482,
+     -0.10255895530934482,
+     0.15601579985248676,
+     0.15601579985248676
+    ],
+    "n_anchors": 2468,
+    "mad_sd_before_ppm": 1.3473475425755448,
+    "mad_sd_after_ppm": 1.3034522954653571,
+    "median_before_ppm": 2.4136608319810584,
+    "used": {
+     "rt": false,
+     "mz": true
+    }
+   },
+   "fragment_model": {
+    "rt_knots": [
+     119.82473
+    ],
+    "rt_ppm": [
+     2.021595979835041
+    ],
+    "mz_knots": [
+     175.11885,
+     202.08223,
+     243.121355,
+     268.16553,
+     299.13498,
+     333.182435,
+     371.1925,
+     403.23006999999996,
+     443.21362,
+     479.19247,
+     519.2849,
+     561.3176,
+     603.22565,
+     644.3977,
+     690.3456,
+     736.376575,
+     783.4359,
+     836.3275,
+     888.50355,
+     950.4689,
+     1019.4937,
+     1101.5884999999998,
+     1210.6539,
+     1408.6575
+    ],
+    "mz_ppm": [
+     0.7418796664118865,
+     0.15393016231019496,
+     -0.003732013181289018,
+     -0.13081567402265248,
+     -0.13081567402265248,
+     -0.31076832571881774,
+     -0.31076832571881774,
+     -0.05726911834472026,
+     0.16082019265779834,
+     0.42444111202416623,
+     0.42444111202416623,
+     0.36810895218164497,
+     0.13653135126304394,
+     -0.05133925428380981,
+     -0.21144239443314505,
+     -0.21144239443314505,
+     -0.18363042261722295,
+     -0.027571252890443043,
+     -0.025410842133456235,
+     -0.008107262911438484,
+     0.012602158869327695,
+     0.28418675500370016,
+     0.4894061776951357,
+     0.7226198110864919
+    ],
+    "n_anchors": 29265,
+    "mad_sd_before_ppm": 2.0263475253509746,
+    "mad_sd_after_ppm": 1.9688218483999034,
+    "median_before_ppm": 2.021595979835041,
+    "used": {
+     "rt": false,
+     "mz": true
+    }
+   },
+   "tolerance_info": {
+    "precursor_before": {
+     "core": {
+      "n": 2468,
+      "mu": 2.4630600205376267,
+      "sd": 1.0737289369224645,
+      "k": 4.0,
+      "frac_inside": 0.8350891410048622,
+      "frac_core": 0.856969205834684
+     },
+     "cov99": {
+      "n": 2468,
+      "median": 2.418680923966574,
+      "background_per_unit": 2.65,
+      "signal_total": 2207.6572660121947,
+      "background_frac_in_window": 0.10737439222042139
+     }
+    },
+    "precursor_after": {
+     "core": {
+      "n": 2468,
+      "mu": 0.010333714856823217,
+      "sd": 1.0254999378449563,
+      "k": 4.0,
+      "frac_inside": 0.8314424635332253,
+      "frac_core": 0.8537277147487844
+     },
+     "cov99": {
+      "n": 2466,
+      "median": -0.0424043070188036,
+      "background_per_unit": 2.575,
+      "signal_total": 2212.082496248799,
+      "background_frac_in_window": 0.10442011354420114
+     }
+    },
+    "fragment_before": {
+     "core": {
+      "n": 29265,
+      "mu": 2.0120873225467246,
+      "sd": 1.7663837699282905,
+      "k": 4.0,
+      "frac_inside": 0.8928754484879549,
+      "frac_core": 0.9228088159917991
+     },
+     "cov99": {
+      "n": 29265,
+      "median": 2.017465978950899,
+      "background_per_unit": 8.625,
+      "signal_total": 28413.063002713137,
+      "background_frac_in_window": 0.029472065607380832
+     }
+    },
+    "fragment_after": {
+     "core": {
+      "n": 29265,
+      "mu": -0.1040495239197724,
+      "sd": 1.6930991927924937,
+      "k": 4.0,
+      "frac_inside": 0.8867247565351102,
+      "frac_core": 0.9180932854946181
+     },
+     "cov99": {
+      "n": 29253,
+      "median": -0.09344627826185303,
+      "background_per_unit": 8.225,
+      "signal_total": 28438.62493897831,
+      "background_frac_in_window": 0.028116774347930126
+     }
+    }
+   },
+   "tolerances": {
+    "precursor_ppm_before": [
+     -1.8318557271522313,
+     6.757975768227485
+    ],
+    "precursor_ppm_before_cov99": [
+     -9.238742249661614,
+     14.076104097594763
+    ],
+    "precursor_ppm_after": [
+     -4.0916660365230015,
+     4.112333466236649
+    ],
+    "precursor_ppm_after_cov99": [
+     -12.03222727333429,
+     11.947418659296684
+    ],
+    "fragment_ppm_before": [
+     -5.053447757166437,
+     9.077622402259887
+    ],
+    "fragment_ppm_before_cov99": [
+     -14.536508258311041,
+     18.57144021621284
+    ],
+    "fragment_ppm_after": [
+     -6.876446295089747,
+     6.668347247250202
+    ],
+    "fragment_ppm_after_cov99": [
+     -16.812141775044136,
+     16.625249218520427
+    ],
+    "search_wide": {
+     "precursor_ppm": [
+      -50.0,
+      50.0
+     ],
+     "fragment": [
+      -50.0,
+      50.0
+     ],
+     "unit": "ppm"
+    },
+    "rule": "core: mu +- 4.0 sd (sigma-clipped); cov99: background-subtracted 99% coverage"
+   },
+   "priors": {
+    "charge": {
+     "2": 1419,
+     "3": 877,
+     "4": 157,
+     "5": 11,
+     "6": 4
+    },
+    "isotope_error_instrument_mz": {
+     "-1": 77,
+     "0": 1850,
+     "1": 374,
+     "2": 138,
+     "3": 29
+    },
+    "by_source": {
+     "n_anchors": 2468,
+     "frac_explained": 0.9740680713128039,
+     "frac_explained_same_charge_by_source": {
+      "ms1_feature": 0.9007293354943274,
+      "instrument": 0.0733387358184765,
+      "fallback": 0.0
+     },
+     "ms1_feature": {
+      "-1": 40,
+      "0": 1943,
+      "1": 214,
+      "2": 25,
+      "3": 1
+     },
+     "instrument": {
+      "-1": 14,
+      "0": 93,
+      "1": 53,
+      "2": 16,
+      "3": 5
+     },
+     "fallback": {}
+    }
+   },
+   "analyzer_activation": {
+    "metadata": {
+     "ms2": {
+      "n": 46816,
+      "analyzer": {
+       "OT": 46816
+      },
+      "activation": {
+       "HCD": 46816
+      },
+      "supplemental_activation": {},
+      "nce_median": 25.0
+     }
+    },
+    "data": {
+     "fragment_tolerance_after": [
+      -6.876446295089747,
+      6.668347247250202
+     ],
+     "fragment_unit": "ppm",
+     "inferred_analyzer": "high-res (OT/TOF/Astral)",
+     "n": 2445,
+     "intensity_share": {
+      "b": 0.07678260185050136,
+      "y": 0.20843462793132259,
+      "c": 0.0034197156252123934,
+      "z": 0.004946418827006704
+     },
+     "by_share": 0.28521722978182396,
+     "cz_share": 0.008366134452219096,
+     "frac_peaks_below_0.28_precursor_mz": 0.12276561321940185,
+     "inferred_activation": "collisional (b/y)",
+     "low_mass_cutoff_present": false
+    },
+    "metadata_major": {
+     "analyzer": "OT",
+     "activation": "HCD"
+    },
+    "consistent": true
+   },
+   "reporters": {
+    "ms2": {
+     "TMT10/11": {
+      "median_frac": 0.018795386586928663,
+      "control_frac": 0.03866645955496874,
+      "per_ion": [
+       0.035,
+       0.024,
+       0.001,
+       0.0,
+       0.021,
+       0.02,
+       0.001,
+       0.0,
+       0.021,
+       0.019,
+       0.0
+      ]
+     },
+     "TMTpro_extra": {
+      "median_frac": 0.0,
+      "control_frac": 0.0016415451272350032,
+      "per_ion": [
+       0.001,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "iTRAQ4": {
+      "median_frac": 0.0003203759077317386,
+      "control_frac": 0.0014737291755659975,
+      "per_ion": [
+       0.001,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "iTRAQ8_extra": {
+      "median_frac": 0.00042716787697565144,
+      "control_frac": 0.010647159333618112,
+      "per_ion": [
+       0.024,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "detected": {
+      "TMT": false,
+      "TMTpro": false,
+      "iTRAQ": false
+     }
+    }
+   },
+   "offset_histogram": {
+    "n_psms": 4573,
+    "bin_da": 0.01,
+    "peaks": [
+     {
+      "delta_da": 0.0034,
+      "count_3bin": 1468,
+      "z": 1467.0,
+      "annotation": "unmodified"
+     },
+     {
+      "delta_da": 1.0071,
+      "count_3bin": 194,
+      "z": 193.0,
+      "annotation": "isotope +1"
+     },
+     {
+      "delta_da": 15.9993,
+      "count_3bin": 106,
+      "z": 105.0,
+      "annotation": "oxidation"
+     },
+     {
+      "delta_da": 43.0088,
+      "count_3bin": 91,
+      "z": 90.0,
+      "annotation": "carbamyl"
+     },
+     {
+      "delta_da": 2.0106,
+      "count_3bin": 67,
+      "z": 66.0,
+      "annotation": "isotope +2"
+     },
+     {
+      "delta_da": 301.9909,
+      "count_3bin": 46,
+      "z": 45.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -17.0225,
+      "count_3bin": 34,
+      "z": 33.0,
+      "annotation": "ammonia loss"
+     },
+     {
+      "delta_da": 17.0028,
+      "count_3bin": 23,
+      "z": 22.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -1.0056,
+      "count_3bin": 22,
+      "z": 21.0,
+      "annotation": "isotope -1"
+     },
+     {
+      "delta_da": -1.0493,
+      "count_3bin": 21,
+      "z": 20.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -1.025,
+      "count_3bin": 21,
+      "z": 20.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 1.9541,
+      "count_3bin": 19,
+      "z": 18.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -0.0545,
+      "count_3bin": 18,
+      "z": 17.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 27.9984,
+      "count_3bin": 17,
+      "z": 16.0,
+      "annotation": "formyl"
+     },
+     {
+      "delta_da": 44.0095,
+      "count_3bin": 16,
+      "z": 15.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -2.0107,
+      "count_3bin": 15,
+      "z": 14.0,
+      "annotation": "isotope -2"
+     },
+     {
+      "delta_da": 183.0397,
+      "count_3bin": 15,
+      "z": 14.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 0.928,
+      "count_3bin": 15,
+      "z": 14.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 1.0623,
+      "count_3bin": 14,
+      "z": 13.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 302.9955,
+      "count_3bin": 14,
+      "z": 13.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -0.9477,
+      "count_3bin": 12,
+      "z": 11.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 18.0085,
+      "count_3bin": 11,
+      "z": 10.0,
+      "annotation": null
+     },
+     {
+      "delta_da": -1.1254,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 0.8881,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": null
+     },
+     {
+      "delta_da": 31.9946,
+      "count_3bin": 10,
+      "z": 9.0,
+      "annotation": "dioxidation"
+     }
+    ],
+    "frac_unshifted_|d|<0.02": 0.3225453750273344
+   },
+   "labels": {
+    "TMT_label_offset": false,
+    "iTRAQ_label_offset": false,
+    "SILAC_offset": false,
+    "dimethyl_offset": false
+   },
+   "precursor_error_quantiles_before": [
+    -39.53,
+    1.404,
+    2.414,
+    3.229,
+    38.59
+   ],
+   "precursor_error_quantiles_after": [
+    -41.991,
+    -1.025,
+    -0.07,
+    0.764,
+    35.948
+   ]
+  },
+  "pilot_timings": {
+   "load_subsample": 0.16588028520345688,
+   "wide_search": {
+    "wall_s": 29.63,
+    "user_s": 146.82,
+    "sys_s": 11.72,
+    "core_s": 158.54,
+    "max_rss_mb": 8425.8828125,
+    "n_spectra": 4682,
+    "mgf_write_s": 0.48511481285095215,
+    "threads": 32,
+    "searcher": "sage",
+    "fragments": "/tmp/vulcan_ms1/pilot/b1937_293T_proteinID_01B_QE3_122212/wide/matched_fragments.sage.tsv"
+   },
+   "diagnostics_s": 0.2057497170753777,
+   "open_search": {
+    "wall_s": 13.0,
+    "user_s": 130.84,
+    "sys_s": 13.17,
+    "core_s": 144.01,
+    "max_rss_mb": 3351.99609375,
+    "n_spectra": 4682,
+    "mgf_write_s": 0.4896562099456787,
+    "threads": 32,
+    "searcher": "sage"
+   },
+   "total_s": 44.11609197501093
+  },
+  "hypotheses_wall_s": 0.23158008698374033,
+  "hypothesis_stats": {
+   "n_ms2": 46816,
+   "n_rows": 472715,
+   "n_precursor_groups": 94543,
+   "rows_per_spectrum_mean": 10.097295796308954,
+   "groups_per_spectrum_mean": 2.0194591592617908,
+   "groups_per_spectrum_hist": {
+    "0": 0,
+    "1": 19711,
+    "2": 13772,
+    "3": 7845,
+    "4": 3786,
+    "5": 1603,
+    "6": 99
+   },
+   "groups_by_source": {
+    "ms1_feature": 85797,
+    "instrument": 8746,
+    "fallback": 0
+   },
+   "frac_ms2_master_found": 1.0,
+   "frac_ms2_with_instrument_charge": 1.0,
+   "frac_ms2_with_feature_group": 0.9039003759398496,
+   "frac_ms2_instrument_agrees_with_a_feature": 0.8131835269993165,
+   "frac_ms2_fallback_only": 0.0,
+   "frac_ms2_ge2_feature_groups(chimeric)": 0.5312072795625428,
+   "features_in_window_mean": 2.315874914559125,
+   "instrument_vs_feature_isotope_offset_hist": {
+    "-3": 27,
+    "-2": 166,
+    "-1": 2062,
+    "0": 30270,
+    "1": 4198,
+    "2": 1071,
+    "3": 276
+   },
+   "top_feature_charge_vs_instrument": {
+    "n_both": 39604,
+    "agree_frac": 0.9308908191091809
+   }
+  },
+  "e0": {
+   "A_raw_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 23312,
+    "peptides_q01": 13255,
+    "n_rank1": 37947,
+    "sage_wall_s": 18.53,
+    "sage_core_s": 173.45999999999998,
+    "delta_peptides_vs_A_pct": 0.0,
+    "delta_psms_vs_A_pct": 0.0
+   },
+   "B_cal_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.0916660365230015,
+      4.112333466236649
+     ],
+     "fragment_ppm": [
+      -6.876446295089747,
+      6.668347247250202
+     ]
+    },
+    "psms_q01": 21686,
+    "peptides_q01": 12488,
+    "n_rank1": 30877,
+    "sage_wall_s": 18.01,
+    "sage_core_s": 158.23,
+    "delta_peptides_vs_A_pct": -5.786495662014335,
+    "delta_psms_vs_A_pct": -6.974948524365132
+   },
+   "C_cal_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 23276,
+    "peptides_q01": 13262,
+    "n_rank1": 37840,
+    "sage_wall_s": 19.29,
+    "sage_core_s": 192.38,
+    "delta_peptides_vs_A_pct": 0.052810260279145815,
+    "delta_psms_vs_A_pct": -0.1544269045984925
+   },
+   "D_raw_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -1.8318557271522313,
+      6.757975768227485
+     ],
+     "fragment_ppm": [
+      -5.053447757166437,
+      9.077622402259887
+     ]
+    },
+    "psms_q01": 21807,
+    "peptides_q01": 12584,
+    "n_rank1": 32109,
+    "sage_wall_s": 17.92,
+    "sage_core_s": 172.28,
+    "delta_peptides_vs_A_pct": -5.062240663900419,
+    "delta_psms_vs_A_pct": -6.4559025394646525
+   },
+   "E_cal_cov99tol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -12.03222727333429,
+      11.947418659296684
+     ],
+     "fragment_ppm": [
+      -16.812141775044136,
+      16.625249218520427
+     ]
+    },
+    "psms_q01": 23491,
+    "peptides_q01": 13308,
+    "n_rank1": 37759,
+    "sage_wall_s": 19.15,
+    "sage_core_s": 179.76000000000002,
+    "delta_peptides_vs_A_pct": 0.3998491135420501,
+    "delta_psms_vs_A_pct": 0.7678448867536103
+   },
+   "F_cal_pilotprec_prodfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.0916660365230015,
+      4.112333466236649
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 22058,
+    "peptides_q01": 12745,
+    "n_rank1": 35068,
+    "sage_wall_s": 18.77,
+    "sage_core_s": 184.98999999999998,
+    "delta_peptides_vs_A_pct": -3.8476046774801986,
+    "delta_psms_vs_A_pct": -5.379203843514069
+   },
+   "G_cal_prodprec_pilotfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -6.876446295089747,
+      6.668347247250202
+     ]
+    },
+    "psms_q01": 22790,
+    "peptides_q01": 13003,
+    "n_rank1": 34080,
+    "sage_wall_s": 18.14,
+    "sage_core_s": 172.7,
+    "delta_peptides_vs_A_pct": -1.9011693700490384,
+    "delta_psms_vs_A_pct": -2.2391901166781025
+   },
+   "H_cal_pilotprec_frag6sd": {
+    "tolerances": {
+     "precursor_ppm": [
+      -4.0916660365230015,
+      4.112333466236649
+     ],
+     "fragment_ppm": [
+      -10.262644680674736,
+      10.05454563283519
+     ]
+    },
+    "psms_q01": 21946,
+    "peptides_q01": 12645,
+    "n_rank1": 32466,
+    "sage_wall_s": 18.53,
+    "sage_core_s": 170.18,
+    "delta_peptides_vs_A_pct": -4.602036967182199,
+    "delta_psms_vs_A_pct": -5.859643102264933
+   }
+  },
+  "hypothesis_coverage_of_baseline_ids": {
+   "n_anchors": 23312,
+   "frac_explained": 0.9867879203843514,
+   "frac_explained_same_charge_by_source": {
+    "ms1_feature": 0.9067862045298559,
+    "instrument": 0.08000171585449554,
+    "fallback": 0.0
+   },
+   "ms1_feature": {
+    "-1": 169,
+    "0": 19492,
+    "1": 1320,
+    "2": 143,
+    "3": 15
+   },
+   "instrument": {
+    "0": 1230,
+    "1": 493,
+    "2": 142
+   },
+   "fallback": {}
+  },
+  "total_wall_s": 170.5651447926648
+ },
+ "Velos005137": {
+  "run": "Velos005137",
+  "dataset": "D1",
+  "fasta": "pfu_contam.fasta",
+  "threads": 32,
+  "features": {
+   "n": 87107,
+   "wall_s": 1.284172830171883,
+   "process_cpu_s": 2.3806231370000006
+  },
+  "pilot": {
+   "run_name": "Velos005137",
+   "run_id": 3505321284,
+   "instrument_model": "LTQ Orbitrap Velos",
+   "params": {
+    "fraction": 0.1,
+    "seed": 11,
+    "q_anchor": 0.01,
+    "wide_precursor_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_ppm": [
+     -50.0,
+     50.0
+    ],
+    "wide_fragment_da": [
+     -0.6,
+     0.6
+    ],
+    "isotope_errors": [
+     -1,
+     3
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "open_search": true,
+    "open_da": [
+     -150.0,
+     500.0
+    ],
+    "open_bin_da": 0.01,
+    "reporter_ppm": 10.0,
+    "max_annotate": 3000,
+    "tol_k": 4.0,
+    "floor_precursor_ppm": 1.0,
+    "floor_fragment": 1.0
+   },
+   "n_ms2": 15374,
+   "n_subsample": 1537,
+   "n_psms": 1280,
+   "n_anchors": 1123,
+   "n_anchor_decoys": 10,
+   "precursor_model": {
+    "rt_knots": [
+     7.1803325000000005,
+     11.606035,
+     15.413638333333333,
+     18.783761666666667,
+     21.58237916666667,
+     24.71579333333333,
+     27.81141666666667,
+     31.381175,
+     34.25148333333333,
+     37.177371666666666,
+     41.126196666666665,
+     44.54206,
+     48.06155833333333,
+     51.122413333333334,
+     53.757005,
+     56.89830500000001,
+     60.61696666666666,
+     63.872843333333336,
+     67.67167833333333,
+     71.72537,
+     76.19164,
+     82.04889166666666,
+     88.79784000000001,
+     97.791725
+    ],
+    "rt_ppm": [
+     0.05273666238559234,
+     -0.276322691418346,
+     -0.6627674727658351,
+     -2.3687113500947015,
+     -3.194485187792259,
+     -3.194485187792259,
+     -3.0222865128311236,
+     -3.0222865128311236,
+     -3.0222865128311236,
+     -1.5773413558481924,
+     -0.33297737253242377,
+     -0.33297737253242377,
+     1.448774698428278,
+     4.1952166334246614,
+     4.1952166334246614,
+     0.20043019681813914,
+     -0.27621970824978914,
+     0.20043019681813914,
+     0.264182493938079,
+     0.46027039714868195,
+     0.6997851469595741,
+     0.6997851469595741,
+     0.732413104014168,
+     0.732413104014168
+    ],
+    "mz_knots": [],
+    "mz_ppm": [],
+    "n_anchors": 1123,
+    "mad_sd_before_ppm": 3.0961378833935673,
+    "mad_sd_after_ppm": 1.9205277597417736,
+    "median_before_ppm": -0.5209944661705418,
+    "used": {
+     "rt": true,
+     "mz": false
+    }
+   },
+   "fragment_model": {
+    "rt_knots": [
+     7.997476666666667,
+     13.074106666666667,
+     17.26208666666667,
+     20.865263333333335,
+     24.813476666666666,
+     28.47069,
+     32.2271,
+     35.48516,
+     38.47075833333333,
+     42.45016833333334,
+     45.18277166666667,
+     48.66089166666667,
+     51.529651666666666,
+     53.946956666666665,
+     56.769884999999995,
+     59.10402833333333,
+     62.426415000000006,
+     65.890825,
+     69.03738333333334,
+     71.81976,
+     75.71228833333333,
+     79.05550666666666,
+     85.965795,
+     96.37076833333333
+    ],
+    "rt_ppm": [
+     0.9701261173223394,
+     0.9701261173223394,
+     0.06589382107152303,
+     -1.3675989694091155,
+     -1.3675989694091155,
+     -1.1535310286484664,
+     -1.1535310286484664,
+     -1.1535310286484664,
+     -0.5775182563474184,
+     0.16673893436495146,
+     0.16673893436495146,
+     0.16673893436495146,
+     3.673375152383773,
+     3.673375152383773,
+     1.1461487828850436,
+     1.1461487828850436,
+     1.055038713876932,
+     1.2302490279971192,
+     1.2302490279971192,
+     1.5397947142053332,
+     1.5397947142053332,
+     0.7520187400229961,
+     0.726971337846201,
+     -3.978719511341156
+    ],
+    "mz_knots": [
+     175.11888,
+     213.15974,
+     245.13184,
+     275.17145,
+     304.16144,
+     344.1452,
+     377.1777,
+     414.1983,
+     456.24524,
+     490.24575500000003,
+     529.2567,
+     572.33026,
+     608.3403,
+     646.335465,
+     691.3331499999999,
+     736.3584000000001,
+     779.40455,
+     832.44105,
+     889.43948,
+     961.55365,
+     1059.6042,
+     1174.629,
+     1288.7133,
+     1488.7915
+    ],
+    "mz_ppm": [
+     -1.1732011625755998,
+     -0.5660368811492273,
+     -0.5433543828118136,
+     -0.47221581860779127,
+     -0.4218175027961597,
+     -0.3458005226216966,
+     -0.3458005226216966,
+     -0.23300227549947783,
+     0.0,
+     0.0,
+     -0.08109383027287187,
+     -0.08109383027287187,
+     0.010011643819722194,
+     0.24997030878901916,
+     0.24997030878901916,
+     0.3081251377019114,
+     0.3400410522365336,
+     0.4451177665455949,
+     0.4451177665455949,
+     0.4451177665455949,
+     0.42912242631640773,
+     0.42912242631640773,
+     0.35911107735795467,
+     0.2889219182905265
+    ],
+    "n_anchors": 13970,
+    "mad_sd_before_ppm": 3.5538553140822713,
+    "mad_sd_after_ppm": 2.882688552073145,
+    "median_before_ppm": 0.4933195786954766,
+    "used": {
+     "rt": true,
+     "mz": true
+    }
+   },
+   "tolerance_info": {
+    "precursor_before": {
+     "core": {
+      "n": 1123,
+      "mu": -0.49962139392854166,
+      "sd": 2.9943273613420383,
+      "k": 4.0,
+      "frac_inside": 0.9536954585930543,
+      "frac_core": 0.9634906500445236
+     },
+     "cov99": {
+      "n": 1123,
+      "median": -0.5209944661705418,
+      "background_per_unit": 0.525,
+      "signal_total": 1071.1124573810048,
+      "background_frac_in_window": 0.04674977738201247
+     }
+    },
+    "precursor_after": {
+     "core": {
+      "n": 1123,
+      "mu": 0.005182030110281056,
+      "sd": 1.7592739655825238,
+      "k": 4.0,
+      "frac_inside": 0.9260908281389136,
+      "frac_core": 0.9385574354407836
+     },
+     "cov99": {
+      "n": 1123,
+      "median": -0.031198174951254654,
+      "background_per_unit": 0.5,
+      "signal_total": 1072.768562914096,
+      "background_frac_in_window": 0.04452359750667854
+     }
+    },
+    "fragment_before": {
+     "core": {
+      "n": 13970,
+      "mu": 0.48806447640048095,
+      "sd": 3.444336133172828,
+      "k": 4.0,
+      "frac_inside": 0.9544738725841088,
+      "frac_core": 0.9689334287759485
+     },
+     "cov99": {
+      "n": 13969,
+      "median": 0.4898735783419036,
+      "background_per_unit": 3.4,
+      "signal_total": 13635.32291116692,
+      "background_frac_in_window": 0.024339609134512136
+     }
+    },
+    "fragment_after": {
+     "core": {
+      "n": 13970,
+      "mu": 0.2122662030099126,
+      "sd": 2.707702423923817,
+      "k": 4.0,
+      "frac_inside": 0.9355046528274875,
+      "frac_core": 0.9550465282748747
+     },
+     "cov99": {
+      "n": 13967,
+      "median": 0.2135041573308052,
+      "background_per_unit": 3.3,
+      "signal_total": 13642.270256313515,
+      "background_frac_in_window": 0.023627121071096154
+     }
+    }
+   },
+   "tolerances": {
+    "precursor_ppm_before": [
+     -12.476930839296696,
+     11.47768805143961
+    ],
+    "precursor_ppm_before_cov99": [
+     -13.3855359049662,
+     12.343546972625116
+    ],
+    "precursor_ppm_after": [
+     -7.031913832219814,
+     7.042277892440376
+    ],
+    "precursor_ppm_after_cov99": [
+     -12.398476626650819,
+     12.336080276748309
+    ],
+    "fragment_ppm_before": [
+     -13.289280056290831,
+     14.265409009091794
+    ],
+    "fragment_ppm_before_cov99": [
+     -19.19040167426719,
+     20.170148830950996
+    ],
+    "fragment_ppm_after": [
+     -10.618543492685356,
+     11.043075898705181
+    ],
+    "fragment_ppm_after_cov99": [
+     -19.327695460916853,
+     19.754703775578466
+    ],
+    "search_wide": {
+     "precursor_ppm": [
+      -50.0,
+      50.0
+     ],
+     "fragment": [
+      -50.0,
+      50.0
+     ],
+     "unit": "ppm"
+    },
+    "rule": "core: mu +- 4.0 sd (sigma-clipped); cov99: background-subtracted 99% coverage"
+   },
+   "priors": {
+    "charge": {
+     "2": 734,
+     "3": 341,
+     "4": 44,
+     "5": 4
+    },
+    "isotope_error_instrument_mz": {
+     "-1": 7,
+     "0": 1058,
+     "1": 42,
+     "2": 7,
+     "3": 9
+    },
+    "by_source": {
+     "n_anchors": 1123,
+     "frac_explained": 0.9848619768477292,
+     "frac_explained_same_charge_by_source": {
+      "ms1_feature": 0.9697239536954586,
+      "instrument": 0.015138023152270703,
+      "fallback": 0.0
+     },
+     "ms1_feature": {
+      "-1": 13,
+      "0": 1042,
+      "1": 30,
+      "2": 2,
+      "3": 2
+     },
+     "instrument": {
+      "0": 16,
+      "1": 1
+     },
+     "fallback": {}
+    }
+   },
+   "analyzer_activation": {
+    "metadata": {
+     "ms2": {
+      "n": 15374,
+      "analyzer": {
+       "OT": 15374
+      },
+      "activation": {
+       "HCD": 15374
+      },
+      "supplemental_activation": {},
+      "nce_median": 35.0
+     }
+    },
+    "data": {
+     "fragment_tolerance_after": [
+      -10.618543492685356,
+      11.043075898705181
+     ],
+     "fragment_unit": "ppm",
+     "inferred_analyzer": "high-res (OT/TOF/Astral)",
+     "n": 1113,
+     "intensity_share": {
+      "b": 0.07698658572279003,
+      "y": 0.1983345839176665,
+      "c": 0.00152843184192804,
+      "z": 0.002158574447274501
+     },
+     "by_share": 0.27532116964045655,
+     "cz_share": 0.0036870062892025413,
+     "frac_peaks_below_0.28_precursor_mz": 0.10073738553583052,
+     "inferred_activation": "collisional (b/y)",
+     "low_mass_cutoff_present": false
+    },
+    "metadata_major": {
+     "analyzer": "OT",
+     "activation": "HCD"
+    },
+    "consistent": true
+   },
+   "reporters": {
+    "ms2": {
+     "TMT10/11": {
+      "median_frac": 0.0006506180871828237,
+      "control_frac": 0.01893890104690365,
+      "per_ion": [
+       0.003,
+       0.0,
+       0.001,
+       0.0,
+       0.0,
+       0.002,
+       0.001,
+       0.0,
+       0.001,
+       0.001,
+       0.001
+      ]
+     },
+     "TMTpro_extra": {
+      "median_frac": 0.0,
+      "control_frac": 0.0006134399107723766,
+      "per_ion": [
+       0.0,
+       0.0,
+       0.0,
+       0.001,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "iTRAQ4": {
+      "median_frac": 0.00032530904359141186,
+      "control_frac": 0.0007156798959011061,
+      "per_ion": [
+       0.001,
+       0.0,
+       0.0,
+       0.001
+      ]
+     },
+     "iTRAQ8_extra": {
+      "median_frac": 0.0,
+      "control_frac": 0.0011060507482108,
+      "per_ion": [
+       0.01,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "detected": {
+      "TMT": false,
+      "TMTpro": false,
+      "iTRAQ": false
+     }
+    }
+   },
+   "offset_histogram": {
+    "n_psms": 1329,
+    "bin_da": 0.01,
+    "peaks": [
+     {
+      "delta_da": -0.0006,
+      "count_3bin": 966,
+      "z": 965.0,
+      "annotation": "unmodified"
+     },
+     {
+      "delta_da": 0.9859,
+      "count_3bin": 20,
+      "z": 19.0,
+      "annotation": "deamidation"
+     },
+     {
+      "delta_da": 15.9941,
+      "count_3bin": 18,
+      "z": 17.0,
+      "annotation": "oxidation"
+     },
+     {
+      "delta_da": 1.0475,
+      "count_3bin": 6,
+      "z": 5.0,
+      "annotation": null
+     }
+    ],
+    "frac_unshifted_|d|<0.02": 0.7351392024078255
+   },
+   "labels": {
+    "TMT_label_offset": false,
+    "iTRAQ_label_offset": false,
+    "SILAC_offset": false,
+    "dimethyl_offset": false
+   },
+   "precursor_error_quantiles_before": [
+    -24.949,
+    -2.768,
+    -0.521,
+    1.416,
+    26.175
+   ],
+   "precursor_error_quantiles_after": [
+    -22.772,
+    -1.353,
+    -0.028,
+    1.233,
+    27.069
+   ]
+  },
+  "pilot_timings": {
+   "load_subsample": 0.03520210273563862,
+   "wide_search": {
+    "wall_s": 3.38,
+    "user_s": 36.02,
+    "sys_s": 5.0,
+    "core_s": 41.02,
+    "max_rss_mb": 677.265625,
+    "n_spectra": 1537,
+    "mgf_write_s": 0.14929795265197754,
+    "threads": 32,
+    "searcher": "sage",
+    "fragments": "/tmp/vulcan_ms1/pilot/Velos005137/wide/matched_fragments.sage.tsv"
+   },
+   "diagnostics_s": 0.06316320924088359,
+   "open_search": {
+    "wall_s": 3.01,
+    "user_s": 49.19,
+    "sys_s": 4.54,
+    "core_s": 53.73,
+    "max_rss_mb": 271.4140625,
+    "n_spectra": 1537,
+    "mgf_write_s": 0.14797186851501465,
+    "threads": 32,
+    "searcher": "sage"
+   },
+   "total_s": 7.066093581728637
+  },
+  "hypotheses_wall_s": 0.036221547052264214,
+  "hypothesis_stats": {
+   "n_ms2": 15374,
+   "n_rows": 120580,
+   "n_precursor_groups": 24116,
+   "rows_per_spectrum_mean": 7.843111747105503,
+   "groups_per_spectrum_mean": 1.5686223494211005,
+   "groups_per_spectrum_hist": {
+    "0": 0,
+    "1": 8923,
+    "2": 4617,
+    "3": 1437,
+    "4": 337,
+    "5": 60
+   },
+   "groups_by_source": {
+    "ms1_feature": 23631,
+    "instrument": 485,
+    "fallback": 0
+   },
+   "frac_ms2_master_found": 1.0,
+   "frac_ms2_with_instrument_charge": 1.0,
+   "frac_ms2_with_feature_group": 0.9793807727331859,
+   "frac_ms2_instrument_agrees_with_a_feature": 0.9684532327305841,
+   "frac_ms2_fallback_only": 0.0,
+   "frac_ms2_ge2_feature_groups(chimeric)": 0.41218941069337844,
+   "features_in_window_mean": 1.775074801613113,
+   "instrument_vs_feature_isotope_offset_hist": {
+    "-3": 2,
+    "-2": 21,
+    "-1": 166,
+    "0": 14529,
+    "1": 152,
+    "2": 16,
+    "3": 3
+   },
+   "top_feature_charge_vs_instrument": {
+    "n_both": 15005,
+    "agree_frac": 0.991669443518827
+   }
+  },
+  "e0": {
+   "A_raw_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 10870,
+    "peptides_q01": 6038,
+    "n_rank1": 11479,
+    "sage_wall_s": 4.03,
+    "sage_core_s": 60.03,
+    "delta_peptides_vs_A_pct": 0.0,
+    "delta_psms_vs_A_pct": 0.0
+   },
+   "B_cal_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -7.031913832219814,
+      7.042277892440376
+     ],
+     "fragment_ppm": [
+      -10.618543492685356,
+      11.043075898705181
+     ]
+    },
+    "psms_q01": 10552,
+    "peptides_q01": 5988,
+    "n_rank1": 10928,
+    "sage_wall_s": 3.8,
+    "sage_core_s": 56.19,
+    "delta_peptides_vs_A_pct": -0.8280887711162643,
+    "delta_psms_vs_A_pct": -2.9254829806807714
+   },
+   "C_cal_prodtol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 10874,
+    "peptides_q01": 6039,
+    "n_rank1": 11468,
+    "sage_wall_s": 3.91,
+    "sage_core_s": 59.73,
+    "delta_peptides_vs_A_pct": 0.01656177542233017,
+    "delta_psms_vs_A_pct": 0.03679852805886785
+   },
+   "D_raw_pilottol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -12.476930839296696,
+      11.47768805143961
+     ],
+     "fragment_ppm": [
+      -13.289280056290831,
+      14.265409009091794
+     ]
+    },
+    "psms_q01": 10886,
+    "peptides_q01": 6050,
+    "n_rank1": 11393,
+    "sage_wall_s": 3.91,
+    "sage_core_s": 57.53,
+    "delta_peptides_vs_A_pct": 0.19874130506789545,
+    "delta_psms_vs_A_pct": 0.14719411223551582
+   },
+   "E_cal_cov99tol": {
+    "tolerances": {
+     "precursor_ppm": [
+      -12.398476626650819,
+      12.336080276748309
+     ],
+     "fragment_ppm": [
+      -19.327695460916853,
+      19.754703775578466
+     ]
+    },
+    "psms_q01": 10950,
+    "peptides_q01": 6060,
+    "n_rank1": 11586,
+    "sage_wall_s": 3.8,
+    "sage_core_s": 58.339999999999996,
+    "delta_peptides_vs_A_pct": 0.36435905929115275,
+    "delta_psms_vs_A_pct": 0.7359705611775569
+   },
+   "F_cal_pilotprec_prodfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -7.031913832219814,
+      7.042277892440376
+     ],
+     "fragment_ppm": [
+      -20.0,
+      20.0
+     ]
+    },
+    "psms_q01": 10664,
+    "peptides_q01": 6003,
+    "n_rank1": 11218,
+    "sage_wall_s": 3.86,
+    "sage_core_s": 58.07000000000001,
+    "delta_peptides_vs_A_pct": -0.5796621397813895,
+    "delta_psms_vs_A_pct": -1.895124195032194
+   },
+   "G_cal_prodprec_pilotfrag": {
+    "tolerances": {
+     "precursor_ppm": [
+      -10.0,
+      10.0
+     ],
+     "fragment_ppm": [
+      -10.618543492685356,
+      11.043075898705181
+     ]
+    },
+    "psms_q01": 10771,
+    "peptides_q01": 6032,
+    "n_rank1": 11151,
+    "sage_wall_s": 3.74,
+    "sage_core_s": 56.489999999999995,
+    "delta_peptides_vs_A_pct": -0.09937065253394772,
+    "delta_psms_vs_A_pct": -0.910763569457218
+   },
+   "H_cal_pilotprec_frag6sd": {
+    "tolerances": {
+     "precursor_ppm": [
+      -7.031913832219814,
+      7.042277892440376
+     ],
+     "fragment_ppm": [
+      -16.03394834053299,
+      16.45848074655282
+     ]
+    },
+    "psms_q01": 10637,
+    "peptides_q01": 6001,
+    "n_rank1": 11136,
+    "sage_wall_s": 3.69,
+    "sage_core_s": 57.309999999999995,
+    "delta_peptides_vs_A_pct": -0.6127856906260387,
+    "delta_psms_vs_A_pct": -2.143514259429624
+   }
+  },
+  "hypothesis_coverage_of_baseline_ids": {
+   "n_anchors": 10870,
+   "frac_explained": 0.9942962281508739,
+   "frac_explained_same_charge_by_source": {
+    "ms1_feature": 0.9760809567617296,
+    "instrument": 0.018215271389144434,
+    "fallback": 0.0
+   },
+   "ms1_feature": {
+    "-1": 53,
+    "0": 10337,
+    "1": 194,
+    "2": 25,
+    "3": 1
+   },
+   "instrument": {
+    "0": 192,
+    "1": 5,
+    "2": 1
+   },
+   "fallback": {}
+  },
+  "total_wall_s": 35.794530366081744
+ }
+}

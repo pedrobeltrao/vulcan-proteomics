@@ -1,0 +1,223 @@
+[09:24:56] t1_driver D0 sha=e0b94aa7a635 dirty_tracked=False work=$VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2 out=$VULCAN_SCRATCH/vulcan_a3freeze/out/D0_frz2
+[09:24:56] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[09:24:56] cohort: $VULCAN_SCRATCH/vulcan_env/pred/bin/python -m vulcan.cohort --index $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/index/prod_1001 --raws $VULCAN_SCRATCH/vulcan_a3freeze/wt_code/data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw $VULCAN_SCRATCH/vulcan_a3freeze/wt_code/data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw --out $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/ours/cohort --stage $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/stage --keep-stores --workers 2 --params {"report_psms": 5}
+[09:25:20] loaded 2 stores in 0.3s
+[09:25:24] prod_1001: engine == cohort output: {'b1906_293T_proteinID_01A_QE3_122212': True, 'b1937_293T_proteinID_01B_QE3_122212': True}
+[09:25:24] searched prod_1001: 4.1s
+[09:25:27] searched P_1001_2001: 3.0s
+[09:25:30] searched P_1001_2002: 2.9s
+[09:25:33] searched P_1001_2003: 2.7s
+[09:25:36] searched C_1001: 2.9s
+[09:25:39] searched prod_1002: 3.4s
+[09:25:43] searched P_1002_2001: 3.6s
+[09:25:46] searched P_1002_2002: 3.1s
+[09:25:49] searched P_1002_2003: 3.0s
+[09:25:52] searched C_1002: 3.1s
+[09:25:54] searched prod_1003: 2.6s
+[09:25:57] searched P_1003_2001: 2.9s
+[09:26:00] searched P_1003_2002: 3.1s
+[09:26:03] searched P_1003_2003: 3.0s
+[09:26:06] searched C_1003: 2.8s
+[09:26:09] searched prod_1004: 2.8s
+[09:26:12] searched P_1004_2001: 3.2s
+[09:26:15] searched P_1004_2002: 3.0s
+[09:26:18] searched P_1004_2003: 2.9s
+[09:26:21] searched C_1004: 3.1s
+[09:26:24] searched prod_1005: 2.8s
+[09:26:27] searched P_1005_2001: 3.2s
+[09:26:30] searched P_1005_2002: 3.2s
+[09:26:33] searched P_1005_2003: 2.6s
+[09:26:36] searched C_1005: 2.8s
+[09:27:16] scored prod_1001: 29.6s nce=[23.0, 23.0]
+[09:27:29] scored P_1001_2001: 13.9s nce=[23.0, 23.0]
+[09:27:44] scored P_1001_2002: 13.7s nce=[23.0, 23.0]
+[09:27:57] scored P_1001_2003: 13.5s nce=[23.0, 23.0]
+[09:28:09] scored C_1001: 12.0s nce=[23.0, 23.0]
+[09:28:21] scored prod_1002: 11.8s nce=[23.0, 23.0]
+[09:28:32] scored P_1002_2001: 11.0s nce=[23.0, 23.0]
+[09:28:44] scored P_1002_2002: 11.7s nce=[23.0, 23.0]
+[09:28:56] scored P_1002_2003: 12.7s nce=[23.0, 23.0]
+[09:29:09] scored C_1002: 13.1s nce=[23.0, 23.0]
+[09:29:21] scored prod_1003: 12.0s nce=[23.0, 23.0]
+[09:29:34] scored P_1003_2001: 12.7s nce=[23.0, 23.0]
+[09:29:49] scored P_1003_2002: 14.4s nce=[23.0, 23.0]
+[09:30:01] scored P_1003_2003: 12.7s nce=[23.0, 23.0]
+[09:30:14] scored C_1003: 12.7s nce=[23.0, 23.0]
+[09:30:25] scored prod_1004: 10.6s nce=[23.0, 23.0]
+[09:30:35] scored P_1004_2001: 10.1s nce=[23.0, 23.0]
+[09:30:46] scored P_1004_2002: 11.1s nce=[23.0, 23.0]
+[09:30:59] scored P_1004_2003: 13.0s nce=[23.0, 23.0]
+[09:31:12] scored C_1004: 12.8s nce=[23.0, 23.0]
+[09:31:22] scored prod_1005: 10.7s nce=[23.0, 23.0]
+[09:31:33] scored P_1005_2001: 11.1s nce=[23.0, 23.0]
+[09:31:45] scored P_1005_2002: 12.0s nce=[23.0, 23.0]
+[09:32:00] scored P_1005_2003: 14.4s nce=[23.0, 23.0]
+[09:32:12] scored C_1005: 11.9s nce=[23.0, 23.0]
+[09:32:20] ms1 b1906_293T_proteinID_01A_QE3_122212: {'wall_s': 8.152537917718291, 'process_cpu_s': 14.324233452}
+[09:32:29] ms1 b1937_293T_proteinID_01B_QE3_122212: {'wall_s': 8.250408439897, 'process_cpu_s': 14.161779965000001}
+[09:32:32] chimeric search prod_1001: 3.4s
+[09:32:36] chimeric search P_1001_2001: 3.3s
+[09:32:40] chimeric search P_1001_2002: 3.6s
+[09:32:45] chimeric search P_1001_2003: 3.5s
+[09:32:49] chimeric search C_1001: 3.8s
+[09:32:53] chimeric search prod_1002: 3.2s
+[09:32:55] chimeric search P_1002_2001: 2.9s
+[09:32:59] chimeric search P_1002_2002: 3.8s
+[09:33:03] chimeric search P_1002_2003: 3.7s
+[09:33:07] chimeric search C_1002: 3.6s
+[09:33:09] chimeric search prod_1003: 2.7s
+[09:33:13] chimeric search P_1003_2001: 4.0s
+[09:33:17] chimeric search P_1003_2002: 4.1s
+[09:33:22] chimeric search P_1003_2003: 4.1s
+[09:33:25] chimeric search C_1003: 3.8s
+[09:33:29] chimeric search prod_1004: 3.6s
+[09:33:33] chimeric search P_1004_2001: 4.1s
+[09:33:36] chimeric search P_1004_2002: 3.1s
+[09:33:40] chimeric search P_1004_2003: 3.4s
+[09:33:44] chimeric search C_1004: 3.8s
+[09:33:47] chimeric search prod_1005: 3.3s
+[09:33:50] chimeric search P_1005_2001: 3.1s
+[09:33:53] chimeric search P_1005_2002: 2.9s
+[09:33:56] chimeric search P_1005_2003: 3.0s
+[09:33:59] chimeric search C_1005: 2.9s
+[09:34:43] chimeric scored prod_1001: 39.7s
+[09:35:04] chimeric scored P_1001_2001: 21.8s
+[09:35:31] chimeric scored P_1001_2002: 26.6s
+[09:35:58] chimeric scored P_1001_2003: 27.0s
+[09:36:21] chimeric scored C_1001: 23.4s
+[09:36:40] chimeric scored prod_1002: 18.4s
+[09:36:59] chimeric scored P_1002_2001: 19.1s
+[09:37:21] chimeric scored P_1002_2002: 21.9s
+[09:37:42] chimeric scored P_1002_2003: 20.8s
+[09:38:10] chimeric scored C_1002: 28.1s
+[09:38:35] chimeric scored prod_1003: 25.2s
+[09:39:01] chimeric scored P_1003_2001: 25.8s
+[09:39:25] chimeric scored P_1003_2002: 24.1s
+[09:39:48] chimeric scored P_1003_2003: 22.7s
+[09:40:06] chimeric scored C_1003: 18.4s
+[09:40:26] chimeric scored prod_1004: 19.1s
+[09:40:45] chimeric scored P_1004_2001: 18.8s
+[09:41:06] chimeric scored P_1004_2002: 21.4s
+[09:41:25] chimeric scored P_1004_2003: 18.7s
+[09:41:52] chimeric scored C_1004: 27.3s
+[09:42:41] chimeric scored prod_1005: 49.5s
+[09:43:13] chimeric scored P_1005_2001: 31.4s
+[09:43:41] chimeric scored P_1005_2002: 27.8s
+[09:44:08] chimeric scored P_1005_2003: 27.0s
+[09:44:29] chimeric scored C_1005: 21.6s
+[09:48:12] mzML b1906_293T_proteinID_01A_QE3_122212: {'wall_s': 217.56447052955627, 'rc': 0, 'loadavg_end': (21.2646484375, 28.029296875, 30.1181640625), 'core_s': 261.43, 'max_rss_mb': 3613.71875}
+[09:48:12] mzML b1937_293T_proteinID_01B_QE3_122212: {'wall_s': 215.18875098228455, 'rc': 0, 'loadavg_end': (21.2646484375, 28.029296875, 30.1181640625), 'core_s': 253.12, 'max_rss_mb': 3564.93359375}
+[09:49:19] sage prod_1001 done
+[09:50:17] sage P_1001_2001 done
+[09:51:20] sage P_1001_2002 done
+[09:52:24] sage P_1001_2003 done
+[09:53:20] sage C_1001 done
+[09:53:59] sage prod_1002 done
+[09:55:00] sage P_1002_2001 done
+[09:55:53] sage P_1002_2002 done
+[09:56:52] sage P_1002_2003 done
+[09:58:23] sage C_1002 done
+[09:59:32] sage prod_1003 done
+[10:00:32] sage P_1003_2001 done
+[10:01:33] sage P_1003_2002 done
+[10:02:28] sage P_1003_2003 done
+[10:03:24] sage C_1003 done
+[10:04:03] sage prod_1004 done
+[10:05:02] sage P_1004_2001 done
+[10:06:00] sage P_1004_2002 done
+[10:06:52] sage P_1004_2003 done
+[10:07:53] sage C_1004 done
+[10:08:42] sage prod_1005 done
+[10:09:43] sage P_1005_2001 done
+[10:10:41] sage P_1005_2002 done
+[10:11:37] sage P_1005_2003 done
+[10:12:33] sage C_1005 done
+[10:29:52] sage chimera R=2 done
+[10:30:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/prod_1001: 120844 PSMs, unmapped 0
+[10:30:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1001_2001: 130590 PSMs, unmapped 0
+[10:31:25] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1001_2002: 130501 PSMs, unmapped 0
+[10:31:55] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1001_2003: 130447 PSMs, unmapped 0
+[10:32:29] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/C_1001: 130540 PSMs, unmapped 0
+[10:32:51] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/prod_1002: 120919 PSMs, unmapped 0
+[10:33:25] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1002_2001: 130577 PSMs, unmapped 0
+[10:33:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1002_2002: 130597 PSMs, unmapped 0
+[10:34:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1002_2003: 130593 PSMs, unmapped 0
+[10:34:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/C_1002: 130540 PSMs, unmapped 0
+[10:35:17] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/prod_1003: 120907 PSMs, unmapped 0
+[10:35:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1003_2001: 130565 PSMs, unmapped 0
+[10:36:13] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1003_2002: 130404 PSMs, unmapped 0
+[10:36:40] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1003_2003: 130536 PSMs, unmapped 0
+[10:37:10] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/C_1003: 130544 PSMs, unmapped 0
+[10:37:34] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/prod_1004: 120996 PSMs, unmapped 0
+[10:38:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1004_2001: 130582 PSMs, unmapped 0
+[10:38:35] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1004_2002: 130474 PSMs, unmapped 0
+[10:39:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1004_2003: 130614 PSMs, unmapped 0
+[10:39:35] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/C_1004: 130561 PSMs, unmapped 0
+[10:40:00] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/prod_1005: 120792 PSMs, unmapped 0
+[10:40:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1005_2001: 130505 PSMs, unmapped 0
+[10:40:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1005_2002: 130485 PSMs, unmapped 0
+[10:41:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/P_1005_2003: 130352 PSMs, unmapped 0
+[10:41:48] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_chim2_pred_mokapot/C_1005: 130555 PSMs, unmapped 0
+[10:42:05] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/prod_1001: 72958 PSMs, unmapped 0
+[10:42:28] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1001_2001: 75613 PSMs, unmapped 0
+[10:42:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1001_2002: 75628 PSMs, unmapped 0
+[10:43:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1001_2003: 75521 PSMs, unmapped 0
+[10:43:51] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/C_1001: 75600 PSMs, unmapped 0
+[10:44:08] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/prod_1002: 73018 PSMs, unmapped 0
+[10:44:31] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1002_2001: 75667 PSMs, unmapped 0
+[10:44:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1002_2002: 75627 PSMs, unmapped 0
+[10:45:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1002_2003: 75535 PSMs, unmapped 0
+[10:45:42] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/C_1002: 75599 PSMs, unmapped 0
+[10:45:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/prod_1003: 73026 PSMs, unmapped 0
+[10:46:21] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1003_2001: 75661 PSMs, unmapped 0
+[10:46:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1003_2002: 75630 PSMs, unmapped 0
+[10:47:08] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1003_2003: 75638 PSMs, unmapped 0
+[10:47:33] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/C_1003: 75593 PSMs, unmapped 0
+[10:47:50] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/prod_1004: 73019 PSMs, unmapped 0
+[10:48:13] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1004_2001: 75640 PSMs, unmapped 0
+[10:48:44] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1004_2002: 75607 PSMs, unmapped 0
+[10:49:07] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1004_2003: 75624 PSMs, unmapped 0
+[10:49:30] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/C_1004: 75633 PSMs, unmapped 0
+[10:49:46] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/prod_1005: 72974 PSMs, unmapped 0
+[10:50:09] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1005_2001: 75627 PSMs, unmapped 0
+[10:50:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1005_2002: 75605 PSMs, unmapped 0
+[10:50:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/P_1005_2003: 75558 PSMs, unmapped 0
+[10:51:18] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D0_frz2/cmp/sage_pred_mokapot/C_1005: 75634 PSMs, unmapped 0
+[10:52:49] sage RT check: {'n_confident': 43967, 'frac_predicted_rt_nonzero': 0.9823871268400998, 'sd_predicted_rt': 0.2359752486561844, 'median_abs_delta_rt_model_confident': 0.05510366, 'spearman_aligned_vs_predicted_confident': 0.9210243368620381, 'pin_has_rt_features': True}
+[10:52:51] evaluate vulcan
+[11:10:17] evaluate sage
+[11:14:07] evaluate sage+mokapot
+[11:17:58] evaluate sage+pred+mokapot
+[11:21:48] evaluate comet+mokapot
+[11:26:14] evaluate vulcan_v2_sep
+[11:33:44] evaluate sage_chim2
+[11:40:34] evaluate sage_chim2+pred+mokapot
+[11:48:44] a3 strata prod_1001
+[11:49:21] a3 strata P_1001_2001
+[11:50:00] a3 strata P_1001_2002
+[11:50:38] a3 strata P_1001_2003
+[11:51:16] a3 strata C_1001
+[11:51:37] a3 strata prod_1002
+[11:52:16] a3 strata P_1002_2001
+[11:52:54] a3 strata P_1002_2002
+[11:53:31] a3 strata P_1002_2003
+[11:54:09] a3 strata C_1002
+[11:54:31] a3 strata prod_1003
+[11:55:07] a3 strata P_1003_2001
+[11:55:44] a3 strata P_1003_2002
+[11:56:22] a3 strata P_1003_2003
+[11:56:59] a3 strata C_1003
+[11:57:20] a3 strata prod_1004
+[11:57:57] a3 strata P_1004_2001
+[11:58:33] a3 strata P_1004_2002
+[11:59:10] a3 strata P_1004_2003
+[11:59:48] a3 strata C_1004
+[12:00:09] a3 strata prod_1005
+[12:00:46] a3 strata P_1005_2001
+[12:01:25] a3 strata P_1005_2002
+[12:02:02] a3 strata P_1005_2003
+[12:02:40] a3 strata C_1005
+[12:14:36] a3 sage rank split sage_chim2
+[12:26:00] a3 sage rank split sage_chim2+pred+mokapot
+[12:26:01] driver total 10865s
+[12:26:01] wrote metrics.json and tables.md

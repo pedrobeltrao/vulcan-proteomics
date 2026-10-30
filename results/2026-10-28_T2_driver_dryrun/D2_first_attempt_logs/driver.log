@@ -1,0 +1,35 @@
+t2: start D2
+t2: stage preflight start
+t2: stage preflight done
+t2: stage convert start
+t2: run 1/9 convert done
+t2: run 2/9 convert done
+t2: run 3/9 convert done
+t2: run 4/9 convert done
+t2: run 5/9 convert done
+t2: run 6/9 convert done
+t2: run 7/9 convert done
+t2: run 8/9 convert done
+t2: run 9/9 convert done
+t2: stage convert done
+t2: stage index start
+t2: stage index done
+t2: stage search start
+[W1028 12:56:10.459781717 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16973824, total: 85093777408).
+[W1028 12:56:11.030505226 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16973824, total: 85093777408).
+[W1028 12:56:11.262479261 CUDACachingAllocator.cpp:528] expandable_segments: memory mapping failed with OOM on device 0 while trying to map 20971520 bytes (free: 16973824, total: 85093777408).
+Traceback (most recent call last):
+  File "$VULCAN_ROOT/bench/t2_driver.py", line 129, in main
+    run(a, cfg, sealed, sha, dirty, base, out, logs, scratch, con)
+  File "$VULCAN_ROOT/bench/t2_driver.py", line 322, in run
+    con.say("t2: stage search start")
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/bench/t2_driver.py", line 397, in search_all
+    p = E.SearchParams(**s["params"])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$VULCAN_ROOT/vulcan/gpu/engine.py", line 137, in __init__
+    keys = torch.sort(keys).values
+           ^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.06 GiB. GPU 0 has a total capacity of 79.25 GiB of which 7.61 GiB is free. Process 1794264 has 14.04 GiB memory in use. Process 1798922 has 14.09 GiB memory in use. Process 1804147 has 1.66 GiB memory in use. Including non-PyTorch memory, this process has 41.81 GiB memory in use. Of the allocated memory 41.21 GiB is allocated by PyTorch, and 128.00 MiB is reserved by PyTorch but unallocated.
+t2: FAILED exception
+t2: exit 1

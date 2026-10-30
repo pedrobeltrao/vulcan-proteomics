@@ -1,0 +1,26 @@
+conda_envs/
+data/raw/
+data/cache/
+*.raw
+*.mzML
+*.d/
+__pycache__/
+target/
+tools/
+data/fasta/
+data/truth/IMP-X-FDR@*/
+data/manifests/.sha_cache.json
+data/manifests/*.log
+*.d.zip
+data/sealed/
+data/truth/sealed/
+bin/
+obj/
+# third-party truth downloads are re-fetchable via scripts/data/*; checksums live in data/manifests/*.sha256 (decision D5)
+data/truth/
+data/manifests/*.lock
+
+# agent worktrees (Claude Code)
+.claude/
+# A6 dry-run freeze intermediates (regenerable by scripts/a6; 75 MB of npy/npz)
+results/2026-10-28_A6_hn1/dry_run/*/freeze/

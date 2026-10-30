@@ -1,0 +1,322 @@
+{
+ "root": "/tmp/vulcan_ss/predlib",
+ "source": "/tmp/vulcan_m3/predcache",
+ "charges": [
+  2,
+  3,
+  4
+ ],
+ "steps": [
+  {
+   "family": "human_contam",
+   "nce": 20.0,
+   "key": "4b39db11decc1d58",
+   "n_rows": 7058668,
+   "wall_s": 201.4096632837318,
+   "n_predicted_rt": 1057484,
+   "n_predicted_ms2": 5168423,
+   "predict_s": 165.20105636911467,
+   "library_load_s": 6.790642581880093,
+   "loadavg": [
+    27.73779296875,
+    57.22314453125,
+    61.57373046875
+   ]
+  },
+  {
+   "family": "human_contam",
+   "nce": 23.0,
+   "key": "cf42ffa4110aab47",
+   "n_rows": 7058668,
+   "wall_s": 433.7190231299028,
+   "n_predicted_rt": 5891778,
+   "n_predicted_ms2": 19826171,
+   "predict_s": 390.7262021182105,
+   "library_load_s": 1.4345588190481067,
+   "loadavg": [
+    16.8349609375,
+    25.3544921875,
+    44.28564453125
+   ]
+  },
+  {
+   "family": "human_contam",
+   "nce": 26.0,
+   "key": "4578a4a70ef09bd4",
+   "n_rows": 7058668,
+   "wall_s": 442.9124124632217,
+   "n_predicted_rt": 6420742,
+   "n_predicted_ms2": 20464453,
+   "predict_s": 398.2664027996361,
+   "library_load_s": 1.5687269791960716,
+   "loadavg": [
+    12.01318359375,
+    21.46826171875,
+    36.162109375
+   ]
+  },
+  {
+   "family": "human_contam",
+   "nce": 29.0,
+   "key": "a9d5af1427616250",
+   "n_rows": 7058668,
+   "wall_s": 150.0211575748399,
+   "n_predicted_rt": 0,
+   "n_predicted_ms2": 6991294,
+   "predict_s": 112.62648693099618,
+   "library_load_s": 10.624525655061007,
+   "loadavg": [
+    25.95947265625,
+    21.2861328125,
+    33.73486328125
+   ]
+  },
+  {
+   "family": "human_contam",
+   "nce": 32.0,
+   "key": "e2c414ad4a966c58",
+   "n_rows": 7058668,
+   "wall_s": 446.9871515301056,
+   "n_predicted_rt": 6911369,
+   "n_predicted_ms2": 21008623,
+   "predict_s": 402.8869411177002,
+   "library_load_s": 0.4031727989204228,
+   "loadavg": [
+    25.71630859375,
+    28.15087890625,
+    33.27197265625
+   ]
+  },
+  {
+   "family": "human_contam",
+   "nce": 35.0,
+   "key": "69d18b78d9f1d385",
+   "n_rows": 7058668,
+   "wall_s": 453.55576702486724,
+   "n_predicted_rt": 7058250,
+   "n_predicted_ms2": 21156970,
+   "predict_s": 409.32188088679686,
+   "library_load_s": 0.12178507773205638,
+   "loadavg": [
+    13.0927734375,
+    25.583984375,
+    32.2666015625
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 20.0,
+   "key": "4b39db11decc1d58",
+   "n_rows": 511446,
+   "wall_s": 39.41710533481091,
+   "n_predicted_rt": 430314,
+   "n_predicted_ms2": 1290051,
+   "predict_s": 21.09980280091986,
+   "library_load_s": 15.621413634158671,
+   "loadavg": [
+    19.51513671875,
+    25.44140625,
+    31.923828125
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 23.0,
+   "key": "cf42ffa4110aab47",
+   "n_rows": 511446,
+   "wall_s": 43.102813316043466,
+   "n_predicted_rt": 430200,
+   "n_predicted_ms2": 1289936,
+   "predict_s": 21.121783296577632,
+   "library_load_s": 19.38746068952605,
+   "loadavg": [
+    21.14599609375,
+    25.18359375,
+    31.56591796875
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 26.0,
+   "key": "4578a4a70ef09bd4",
+   "n_rows": 511446,
+   "wall_s": 46.36189299495891,
+   "n_predicted_rt": 430174,
+   "n_predicted_ms2": 1289909,
+   "predict_s": 22.678140504751354,
+   "library_load_s": 21.163323488086462,
+   "loadavg": [
+    17.65576171875,
+    23.67333984375,
+    30.71875
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 29.0,
+   "key": "a9d5af1427616250",
+   "n_rows": 511446,
+   "wall_s": 47.60242076218128,
+   "n_predicted_rt": 414747,
+   "n_predicted_ms2": 1273578,
+   "predict_s": 20.592680721078068,
+   "library_load_s": 24.512605553027242,
+   "loadavg": [
+    16.896484375,
+    22.7177734375,
+    30.06640625
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 32.0,
+   "key": "e2c414ad4a966c58",
+   "n_rows": 511446,
+   "wall_s": 42.183598012663424,
+   "n_predicted_rt": 430259,
+   "n_predicted_ms2": 1289996,
+   "predict_s": 20.74925214704126,
+   "library_load_s": 18.929335713386536,
+   "loadavg": [
+    15.212890625,
+    21.4638671875,
+    29.2939453125
+   ]
+  },
+  {
+   "family": "pfu_contam",
+   "nce": 35.0,
+   "key": "69d18b78d9f1d385",
+   "n_rows": 511446,
+   "wall_s": 42.434752681758255,
+   "n_predicted_rt": 430314,
+   "n_predicted_ms2": 1290051,
+   "predict_s": 20.860822899267077,
+   "library_load_s": 19.027322873473167,
+   "loadavg": [
+    20.853515625,
+    22.06787109375,
+    29.16162109375
+   ]
+  }
+ ],
+ "copy_s": 2.457713708281517e-05,
+ "consolidate_s": 150.3973850067705,
+ "digest": {
+  "sha256": "efb1a107f1a787d57e1e675eb1f46e47b8756c2fb51fa6c772107f976152ed7f",
+  "n_ids": {
+   "4578a4a70ef09bd4/consolidated/ms2_z1/manifest.json": 25,
+   "4578a4a70ef09bd4/consolidated/ms2_z2/manifest.json": 7937775,
+   "4578a4a70ef09bd4/consolidated/ms2_z3/manifest.json": 7795178,
+   "4578a4a70ef09bd4/consolidated/ms2_z4/manifest.json": 7545658,
+   "4578a4a70ef09bd4/consolidated/ms2_z5/manifest.json": 9226,
+   "4578a4a70ef09bd4/consolidated/ms2_z6/manifest.json": 1412,
+   "4578a4a70ef09bd4/consolidated/ms2_z7/manifest.json": 33,
+   "4578a4a70ef09bd4/consolidated/ms2_z8/manifest.json": 4,
+   "4578a4a70ef09bd4/consolidated/rt/manifest.json": 8268757,
+   "4b39db11decc1d58/consolidated/ms2_z1/manifest.json": 25,
+   "4b39db11decc1d58/consolidated/ms2_z11/manifest.json": 5,
+   "4b39db11decc1d58/consolidated/ms2_z2/manifest.json": 7491839,
+   "4b39db11decc1d58/consolidated/ms2_z3/manifest.json": 7490727,
+   "4b39db11decc1d58/consolidated/ms2_z4/manifest.json": 7489200,
+   "4b39db11decc1d58/consolidated/ms2_z5/manifest.json": 1893,
+   "4b39db11decc1d58/consolidated/ms2_z6/manifest.json": 561,
+   "4b39db11decc1d58/consolidated/ms2_z7/manifest.json": 6,
+   "4b39db11decc1d58/consolidated/ms2_z8/manifest.json": 27,
+   "4b39db11decc1d58/consolidated/rt/manifest.json": 7488982,
+   "69d18b78d9f1d385/consolidated/ms2_z1/manifest.json": 25,
+   "69d18b78d9f1d385/consolidated/ms2_z2/manifest.json": 7492365,
+   "69d18b78d9f1d385/consolidated/ms2_z3/manifest.json": 7490752,
+   "69d18b78d9f1d385/consolidated/ms2_z4/manifest.json": 7489201,
+   "69d18b78d9f1d385/consolidated/ms2_z5/manifest.json": 86,
+   "69d18b78d9f1d385/consolidated/ms2_z6/manifest.json": 3,
+   "69d18b78d9f1d385/consolidated/rt/manifest.json": 7489570,
+   "a9d5af1427616250/consolidated/ms2_z1/manifest.json": 25,
+   "a9d5af1427616250/consolidated/ms2_z11/manifest.json": 5,
+   "a9d5af1427616250/consolidated/ms2_z2/manifest.json": 8052977,
+   "a9d5af1427616250/consolidated/ms2_z3/manifest.json": 7818723,
+   "a9d5af1427616250/consolidated/ms2_z4/manifest.json": 7551714,
+   "a9d5af1427616250/consolidated/ms2_z5/manifest.json": 15876,
+   "a9d5af1427616250/consolidated/ms2_z6/manifest.json": 3374,
+   "a9d5af1427616250/consolidated/ms2_z7/manifest.json": 88,
+   "a9d5af1427616250/consolidated/ms2_z8/manifest.json": 62,
+   "a9d5af1427616250/consolidated/ms2_z9/manifest.json": 5,
+   "a9d5af1427616250/consolidated/rt/manifest.json": 8403552,
+   "cf42ffa4110aab47/consolidated/ms2_z1/manifest.json": 25,
+   "cf42ffa4110aab47/consolidated/ms2_z11/manifest.json": 16,
+   "cf42ffa4110aab47/consolidated/ms2_z13/manifest.json": 1,
+   "cf42ffa4110aab47/consolidated/ms2_z2/manifest.json": 7819757,
+   "cf42ffa4110aab47/consolidated/ms2_z3/manifest.json": 7681842,
+   "cf42ffa4110aab47/consolidated/ms2_z4/manifest.json": 7531829,
+   "cf42ffa4110aab47/consolidated/ms2_z5/manifest.json": 8390,
+   "cf42ffa4110aab47/consolidated/ms2_z6/manifest.json": 2754,
+   "cf42ffa4110aab47/consolidated/ms2_z7/manifest.json": 91,
+   "cf42ffa4110aab47/consolidated/ms2_z8/manifest.json": 116,
+   "cf42ffa4110aab47/consolidated/ms2_z9/manifest.json": 18,
+   "cf42ffa4110aab47/consolidated/rt/manifest.json": 8032917,
+   "e2c414ad4a966c58/consolidated/ms2_z1/manifest.json": 6293,
+   "e2c414ad4a966c58/consolidated/ms2_z2/manifest.json": 7657744,
+   "e2c414ad4a966c58/consolidated/ms2_z3/manifest.json": 7590670,
+   "e2c414ad4a966c58/consolidated/ms2_z4/manifest.json": 7509921,
+   "e2c414ad4a966c58/consolidated/ms2_z5/manifest.json": 4147,
+   "e2c414ad4a966c58/consolidated/ms2_z6/manifest.json": 488,
+   "e2c414ad4a966c58/consolidated/ms2_z7/manifest.json": 27,
+   "e2c414ad4a966c58/consolidated/rt/manifest.json": 7770286
+  }
+ },
+ "keys": [
+  "4578a4a70ef09bd4",
+  "4b39db11decc1d58",
+  "69d18b78d9f1d385",
+  "a9d5af1427616250",
+  "cf42ffa4110aab47",
+  "e2c414ad4a966c58"
+ ],
+ "total_s": 2555.078628682997,
+ "bytes": 49894525243,
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

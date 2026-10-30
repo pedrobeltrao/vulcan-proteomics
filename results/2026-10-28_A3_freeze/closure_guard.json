@@ -1,0 +1,47 @@
+{
+ "note": "evidence-committed check evaluated on the working tree (evidence lands in the same commit as this record)",
+ "at_e0b94aa": {
+  "commit": "e0b94aa7a635fed98f54dc794c58d4518aa2271e",
+  "n_files": 90,
+  "pass": true,
+  "unallowed": [],
+  "by_entry": {
+   "scripts/a2/gates_a2.py": {
+    "n_files": 46,
+    "unallowed": [],
+    "pass": true
+   },
+   "bench/t1_driver.py": {
+    "n_files": 78,
+    "unallowed": [],
+    "pass": true
+   }
+  }
+ },
+ "at_HEAD_before_record": {
+  "commit": "279945dfe83b95e0967ef8aab4030723f915b126",
+  "n_files": 91,
+  "pass": false,
+  "unallowed": [
+   "vulcan/cohort.py",
+   "vulcan/ms1/features.py",
+   "vulcan/ms1/gpu.py"
+  ],
+  "by_entry": {
+   "scripts/a2/gates_a2.py": {
+    "n_files": 46,
+    "unallowed": [],
+    "pass": true
+   },
+   "bench/t1_driver.py": {
+    "n_files": 79,
+    "unallowed": [
+     "vulcan/cohort.py",
+     "vulcan/ms1/features.py",
+     "vulcan/ms1/gpu.py"
+    ],
+    "pass": false
+   }
+  }
+ }
+}

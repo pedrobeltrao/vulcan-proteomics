@@ -1,0 +1,693 @@
+{
+ "seed": 23,
+ "n_frame_candidates": 58,
+ "frame_drops": {
+  "not on ALLOW": 2496,
+  "excluded species": 11202,
+  "instrument": 46,
+  "excluded accession": 306,
+  "frame fields": 57,
+  "BAD_KW": 25
+ },
+ "n_exclusions": 405,
+ "admitted": [
+  "PXD006818",
+  "PXD018953",
+  "PXD044078",
+  "PXD011591",
+  "PXD062500",
+  "PXD038243"
+ ],
+ "final_state": {
+  "n_admitted": 6,
+  "totals": {
+   "n_A": 24581,
+   "n_A_with_candidate": 9608,
+   "tail_proxy": 22
+  },
+  "criteria": {
+   "projects": false,
+   "n_A": false,
+   "n_A_with_candidate": false,
+   "tail_proxy": false
+  },
+  "stop": false,
+  "reason": "continue"
+ },
+ "log": [
+  {
+   "accession": "PXD055378",
+   "organism": "Komagataella pastoris (strain gs115 / atcc 20864) (yeast) (pichia pastoris)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD054269",
+   "organism": "Fervidobacterium gondwanense dsm 13020",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "B|ALB|9913",
+    "B|SERPINA1|9913",
+    "H|ALB|9606",
+    "H|C3|9606",
+    "H|CALML5|9606",
+    "H|DSP|9606",
+    "H|EVPL|9606",
+    "H|FLG2|9606",
+    "H|IGHG1|9606",
+    "H|IGKC|9606",
+    "H|LTF|9606",
+    "H|LYZ|9606",
+    "H|S100A8|9606",
+    "H|SERPINB3|9606",
+    "H|TF|9606"
+   ],
+   "n_trigger_members_detected": 15,
+   "n_panel_members_detected": 25
+  },
+  {
+   "accession": "PXD003639",
+   "organism": "Sorangium cellulosum (strain so ce56) (polyangium cellulosum (strain so ce56))",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): serum"
+  },
+  {
+   "accession": "PXD054285",
+   "organism": "Fervidobacterium changbaicum",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "B|AHSG|9913",
+    "B|ALB|9913",
+    "B|HBA|9913",
+    "B|SERPINA1|9913",
+    "H|ALB|9606",
+    "H|ARG1|9606",
+    "H|CDSN|9606",
+    "H|DCD|9606",
+    "H|DSG1|9606",
+    "H|DSP|9606",
+    "H|FLG2|9606",
+    "H|HBA1|9606",
+    "H|HRNR|9606",
+    "H|JUP|9606",
+    "H|PKP1|9606",
+    "H|SPRR2A|9606"
+   ],
+   "n_trigger_members_detected": 16,
+   "n_panel_members_detected": 26
+  },
+  {
+   "accession": "PXD006818",
+   "organism": "Streptomyces lividans tk24",
+   "result": "admitted",
+   "slot": "Streptomyces",
+   "counts": {
+    "n_spectra": 40150,
+    "n_certified": 1983,
+    "removed_b_f": 1029,
+    "removed_b_hamming": 4,
+    "removed_d_family": 0,
+    "removed_c_pre": 598,
+    "n_A": 352,
+    "n_B_candidates": 39798,
+    "n_A_with_candidate": 143,
+    "tail_proxy": 3
+   },
+   "marker": {
+    "n_panel_members_detected": 5,
+    "n_trigger_members_detected": 1,
+    "detected_members": [
+     "B|CSN1S1|9913",
+     "K|KRT10|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT9|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 1,
+    "totals": {
+     "n_A": 352,
+     "n_A_with_candidate": 143,
+     "tail_proxy": 3
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD022955",
+   "organism": "Synechocystis sp. pcc 6803",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "accession": "PXD018953",
+   "organism": "Caballeronia mineralivorans",
+   "result": "admitted",
+   "slot": "Caballeronia",
+   "counts": {
+    "n_spectra": 141124,
+    "n_certified": 62234,
+    "removed_b_f": 35371,
+    "removed_b_hamming": 202,
+    "removed_d_family": 10,
+    "removed_c_pre": 21090,
+    "n_A": 5561,
+    "n_B_candidates": 135563,
+    "n_A_with_candidate": 1634,
+    "tail_proxy": 2
+   },
+   "marker": {
+    "n_panel_members_detected": 8,
+    "n_trigger_members_detected": 0,
+    "detected_members": [
+     "K|KRT10|9606",
+     "K|KRT14|9606",
+     "K|KRT16|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT5|9606",
+     "K|KRT6A|9606",
+     "K|KRT9|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 2,
+    "totals": {
+     "n_A": 5913,
+     "n_A_with_candidate": 1777,
+     "tail_proxy": 5
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD054278",
+   "organism": "Fervidobacterium",
+   "result": "no reference proteome"
+  },
+  {
+   "accession": "PXD020025",
+   "organism": "Synechocystis sp. pcc 6803",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD054267",
+   "organism": "Fervidobacterium pennivorans",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "H|ALB|9606",
+    "H|DSP|9606"
+   ],
+   "n_trigger_members_detected": 2,
+   "n_panel_members_detected": 12
+  },
+  {
+   "accession": "PXD054280",
+   "organism": "Fervidobacterium",
+   "result": "no reference proteome"
+  },
+  {
+   "accession": "PXD003139",
+   "organism": "Acaryochloris marina (strain mbic 11017)",
+   "result": "2 usable raw"
+  },
+  {
+   "accession": "PXD009626",
+   "organism": "Synechocystis sp.",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): N-termin"
+  },
+  {
+   "accession": "PXD044078",
+   "organism": "Bacillus pumilus",
+   "result": "admitted",
+   "slot": "Bacillus",
+   "counts": {
+    "n_spectra": 160805,
+    "n_certified": 49889,
+    "removed_b_f": 29489,
+    "removed_b_hamming": 105,
+    "removed_d_family": 5,
+    "removed_c_pre": 13796,
+    "n_A": 6494,
+    "n_B_candidates": 154311,
+    "n_A_with_candidate": 2975,
+    "tail_proxy": 4
+   },
+   "marker": {
+    "n_panel_members_detected": 9,
+    "n_trigger_members_detected": 0,
+    "detected_members": [
+     "K|KRT10|9606",
+     "K|KRT14|9606",
+     "K|KRT16|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606",
+     "K|KRT5|9606",
+     "K|KRT6A|9606",
+     "K|KRT77|9606",
+     "K|KRT9|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 3,
+    "totals": {
+     "n_A": 12407,
+     "n_A_with_candidate": 4752,
+     "tail_proxy": 9
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD020167",
+   "organism": "Phaeodactylum tricornutum (strain ccap 1055/1)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): single cell"
+  },
+  {
+   "accession": "PXD013401",
+   "organism": "Synechocystis sp. (strain pcc 6803 / kazusa)",
+   "result": "0 usable raw"
+  },
+  {
+   "accession": "PXD011591",
+   "organism": "Rhodobacter capsulatus",
+   "result": "admitted",
+   "slot": "Rhodobacter",
+   "counts": {
+    "n_spectra": 194576,
+    "n_certified": 32954,
+    "removed_b_f": 19078,
+    "removed_b_hamming": 164,
+    "removed_d_family": 4,
+    "removed_c_pre": 10958,
+    "n_A": 2750,
+    "n_B_candidates": 191826,
+    "n_A_with_candidate": 2022,
+    "tail_proxy": 2
+   },
+   "marker": {
+    "n_panel_members_detected": 2,
+    "n_trigger_members_detected": 0,
+    "detected_members": [
+     "K|KRT1|9606",
+     "K|KRT2|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 4,
+    "totals": {
+     "n_A": 15157,
+     "n_A_with_candidate": 6774,
+     "tail_proxy": 11
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD053918",
+   "organism": "Chlorella ohadii",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): N-termin"
+  },
+  {
+   "accession": "PXD027969",
+   "organism": "Deinococcus radiodurans",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "accession": "PXD049698",
+   "organism": "Streptomyces mirabilis",
+   "result": "genus slot taken",
+   "slot": "Streptomyces"
+  },
+  {
+   "accession": "PXD061233",
+   "organism": "Synechocystis sp. (strain pcc 6803 / kazusa)",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not applicable']"
+  },
+  {
+   "accession": "PXD052144",
+   "organism": "Bacillus pumilus",
+   "result": "genus slot taken",
+   "slot": "Bacillus"
+  },
+  {
+   "accession": "PXD024700",
+   "organism": "Propionibacterium freudenreichii",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "accession": "PXD038704",
+   "organism": "Chlorella ohadii",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): N-termin"
+  },
+  {
+   "accession": "PXD078403",
+   "organism": "Caballeronia jiangsuensis",
+   "result": "genus slot taken",
+   "slot": "Caballeronia"
+  },
+  {
+   "accession": "PXD054272",
+   "organism": "Fervidobacterium islandicum",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "H|ALB|9606",
+    "H|ARG1|9606",
+    "H|CDSN|9606",
+    "H|DCD|9606",
+    "H|DSC1|9606",
+    "H|DSG1|9606",
+    "H|DSP|9606",
+    "H|EVPL|9606",
+    "H|FLG2|9606",
+    "H|HRNR|9606",
+    "H|JUP|9606",
+    "H|LTF|9606",
+    "H|PIP|9606",
+    "H|PKP1|9606",
+    "H|SERPINB12|9606",
+    "H|SERPINB3|9606",
+    "H|SPRR2A|9606"
+   ],
+   "n_trigger_members_detected": 17,
+   "n_panel_members_detected": 27
+  },
+  {
+   "accession": "PXD031212",
+   "organism": "Geobacter",
+   "result": "0 usable raw"
+  },
+  {
+   "accession": "PXD061921",
+   "organism": "Synechocystis sp. (strain pcc 6803 / kazusa)",
+   "result": "protocol",
+   "reason": "SDRF organism part ['cell suspension culture']"
+  },
+  {
+   "accession": "PXD055382",
+   "organism": "Komagataella pastoris (strain gs115 / atcc 20864) (yeast) (pichia pastoris)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD081924",
+   "organism": "Schizosaccharomyces pombe",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "accession": "PXD015681",
+   "organism": "Chlorella vulgaris (green alga)",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "B|ALB|9823",
+    "B|ALB|9913",
+    "H|ALB|9606",
+    "H|APOA1|9606",
+    "H|S100A8|9606",
+    "H|SERPINB4|9606",
+    "H|TF|9606"
+   ],
+   "n_trigger_members_detected": 7,
+   "n_panel_members_detected": 11
+  },
+  {
+   "accession": "PXD058977",
+   "organism": "Abortiporus biennis",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): Phospho"
+  },
+  {
+   "accession": "PXD042182",
+   "organism": "Streptomyces rimosus subsp. rimosus",
+   "result": "genus slot taken",
+   "slot": "Streptomyces"
+  },
+  {
+   "accession": "PXD053716",
+   "organism": "Myxococcus xanthus",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD032691",
+   "organism": "Abortiporus biennis",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): Phospho"
+  },
+  {
+   "accession": "PXD040146",
+   "organism": "Streptomyces lividans tk24",
+   "result": "genus slot taken",
+   "slot": "Streptomyces"
+  },
+  {
+   "accession": "PXD062270",
+   "organism": "Halobacterium salinarum (strain atcc 700922 / jcm 11081 / nrc-1) (halobacterium halobium)",
+   "result": "protocol",
+   "reason": "SDRF organism part ['not available']"
+  },
+  {
+   "accession": "PXD008916",
+   "organism": "Corynebacterium glutamicum",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "accession": "PXD062500",
+   "organism": "Deinococcus radiodurans",
+   "result": "admitted",
+   "slot": "Deinococcus",
+   "counts": {
+    "n_spectra": 382856,
+    "n_certified": 47923,
+    "removed_b_f": 23567,
+    "removed_b_hamming": 170,
+    "removed_d_family": 2,
+    "removed_c_pre": 15147,
+    "n_A": 9037,
+    "n_B_candidates": 373819,
+    "n_A_with_candidate": 2771,
+    "tail_proxy": 10
+   },
+   "marker": {
+    "n_panel_members_detected": 5,
+    "n_trigger_members_detected": 1,
+    "detected_members": [
+     "H|ALB|9606",
+     "K|KRT10|9606",
+     "K|KRT14|9606",
+     "K|KRT1|9606",
+     "K|KRT2|9606"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 5,
+    "totals": {
+     "n_A": 24194,
+     "n_A_with_candidate": 9545,
+     "tail_proxy": 21
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD038243",
+   "organism": "Emiliania huxleyi",
+   "result": "admitted",
+   "slot": "Emiliania",
+   "counts": {
+    "n_spectra": 86929,
+    "n_certified": 8516,
+    "removed_b_f": 3253,
+    "removed_b_hamming": 168,
+    "removed_d_family": 0,
+    "removed_c_pre": 4708,
+    "n_A": 387,
+    "n_B_candidates": 86542,
+    "n_A_with_candidate": 63,
+    "tail_proxy": 1
+   },
+   "marker": {
+    "n_panel_members_detected": 1,
+    "n_trigger_members_detected": 1,
+    "detected_members": [
+     "B|CSN1S1|9913"
+    ]
+   },
+   "stopping": {
+    "n_admitted": 6,
+    "totals": {
+     "n_A": 24581,
+     "n_A_with_candidate": 9608,
+     "tail_proxy": 22
+    },
+    "criteria": {
+     "projects": false,
+     "n_A": false,
+     "n_A_with_candidate": false,
+     "tail_proxy": false
+    },
+    "stop": false,
+    "reason": "continue"
+   }
+  },
+  {
+   "accession": "PXD053718",
+   "organism": "Myxococcus xanthus",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD019019",
+   "organism": "Synechocystis sp. pcc 6803",
+   "result": "no reference proteome"
+  },
+  {
+   "accession": "PXD001219",
+   "organism": "Pseudomonas putida (strain f1 / atcc 700007)",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD033328",
+   "organism": "Phaeodactylum tricornutum",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): acetyl"
+  },
+  {
+   "accession": "PXD020577",
+   "organism": "Shewanella oneidensis (strain mr-1)",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): N-termin"
+  },
+  {
+   "accession": "PXD018045",
+   "organism": "Frankia alni",
+   "result": "marker screen exclude",
+   "trigger_members": [
+    "B|CSN3|9913",
+    "H|DCD|9606",
+    "H|DSP|9606",
+    "H|JUP|9606"
+   ],
+   "n_trigger_members_detected": 4,
+   "n_panel_members_detected": 14
+  },
+  {
+   "accession": "PXD011559",
+   "organism": "Emiliania huxleyi",
+   "result": "genus slot taken",
+   "slot": "Emiliania"
+  },
+  {
+   "accession": "PXD024819",
+   "organism": "Cupriavidus necator (strain atcc 17699 / h16 / dsm 428 / stanier 337) (ralstonia eutropha)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): Tissue"
+  },
+  {
+   "accession": "PXD042310",
+   "organism": "Bacillus licheniformis",
+   "result": "genus slot taken",
+   "slot": "Bacillus"
+  },
+  {
+   "accession": "PXD028644",
+   "organism": "Amycolatopsis",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "accession": "PXD033242",
+   "organism": "Streptomyces iranensis",
+   "result": "genus slot taken",
+   "slot": "Streptomyces"
+  },
+  {
+   "accession": "PXD022738",
+   "organism": "Aspergillus niger",
+   "result": "protocol",
+   "reason": "protocol text (dataProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD053714",
+   "organism": "Myxococcus xanthus",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): standard"
+  },
+  {
+   "accession": "PXD001683",
+   "organism": "Aeropyrum pernix (strain atcc 700893 / dsm 11879 / jcm 9820 / nbrc 100138 / k1)",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  },
+  {
+   "accession": "PXD006819",
+   "organism": "Streptomyces lividans tk24",
+   "result": "genus slot taken",
+   "slot": "Streptomyces"
+  },
+  {
+   "accession": "PXD062210",
+   "organism": "Caballeronia mineralivorans pml1(12)",
+   "result": "genus slot taken",
+   "slot": "Caballeronia"
+  },
+  {
+   "accession": "PXD021172",
+   "organism": "Phaeodactylum tricornutum",
+   "result": "1 usable raw"
+  },
+  {
+   "accession": "PXD056191",
+   "organism": "Trichoderma harzianum",
+   "result": "protocol",
+   "reason": "protocol text (sampleProcessingProtocol): dia"
+  }
+ ]
+}

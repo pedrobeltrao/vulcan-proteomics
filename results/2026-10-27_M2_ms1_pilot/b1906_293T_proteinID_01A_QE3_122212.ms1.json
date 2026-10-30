@@ -1,0 +1,63 @@
+{
+ "run": "b1906_293T_proteinID_01A_QE3_122212",
+ "threads": 32,
+ "device": "cpu",
+ "n_features": 671882,
+ "n_hills": 5656778,
+ "timings_s": {
+  "load": 1.412168693728745,
+  "link": 1.2693403391167521,
+  "split_filter": 2.0409480249509215,
+  "summaries": 0.22465474996715784,
+  "isotopes": 3.3886933540925384,
+  "table": 0.8057975461706519,
+  "total": 9.20046680374071
+ },
+ "import_s": 1.3160405028611422,
+ "features_wall_s": 10.552430676762015,
+ "features_process_cpu_s": 29.043678533999998,
+ "hypotheses_wall_s": 0.25585463689640164,
+ "hypothesis_stats": {
+  "n_ms2": 41820,
+  "n_rows": 427370,
+  "n_precursor_groups": 85474,
+  "rows_per_spectrum_mean": 10.219273075083692,
+  "groups_per_spectrum_mean": 2.0438546150167385,
+  "groups_per_spectrum_hist": {
+   "0": 0,
+   "1": 16966,
+   "2": 12537,
+   "3": 7365,
+   "4": 3493,
+   "5": 1387,
+   "6": 72
+  },
+  "groups_by_source": {
+   "ms1_feature": 78148,
+   "instrument": 7326,
+   "fallback": 0
+  },
+  "frac_ms2_master_found": 1.0,
+  "frac_ms2_with_instrument_charge": 1.0,
+  "frac_ms2_with_feature_group": 0.9146819703491152,
+  "frac_ms2_instrument_agrees_with_a_feature": 0.8248206599713056,
+  "frac_ms2_fallback_only": 0.0,
+  "frac_ms2_ge2_feature_groups(chimeric)": 0.550310856049737,
+  "features_in_window_mean": 2.3449545671927305,
+  "instrument_vs_feature_isotope_offset_hist": {
+   "-3": 21,
+   "-2": 142,
+   "-1": 1895,
+   "0": 27697,
+   "1": 3591,
+   "2": 911,
+   "3": 237
+  },
+  "top_feature_charge_vs_instrument": {
+   "n_both": 35893,
+   "agree_frac": 0.9262251692530576
+  }
+ },
+ "total_wall_s": 10.834732451941818,
+ "total_process_cpu_s": 29.318056827
+}

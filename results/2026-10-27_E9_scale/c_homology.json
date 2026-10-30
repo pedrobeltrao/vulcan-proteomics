@@ -1,0 +1,28 @@
+{
+ "n_human_6mers": 6275492,
+ "random_foreign_frac_shared_6mer": 0.925,
+ "score_0.01": {
+  "n_E": 2228,
+  "E_frac_shared_6mer": 0.9052962298025135,
+  "n_decE": 1869,
+  "decE_base_frac_shared_6mer": 0.8860353130016051
+ },
+ "score_0.05": {
+  "n_E": 11796,
+  "E_frac_shared_6mer": 0.9047982366904035,
+  "n_decE": 10853,
+  "decE_base_frac_shared_6mer": 0.8997512208605916
+ },
+ "hyperscore_0.01": {
+  "n_E": 1226,
+  "E_frac_shared_6mer": 0.9396411092985318,
+  "n_decE": 1150,
+  "decE_base_frac_shared_6mer": 0.931304347826087
+ },
+ "hyperscore_0.05": {
+  "n_E": 7516,
+  "E_frac_shared_6mer": 0.9321447578499201,
+  "n_decE": 7376,
+  "decE_base_frac_shared_6mer": 0.9338394793926247
+ }
+}

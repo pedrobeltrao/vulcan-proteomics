@@ -1,0 +1,34 @@
+t2: start D2
+t2: stage preflight start
+t2: stage preflight done
+t2: stage convert start
+t2: run 1/9 convert done
+t2: run 2/9 convert done
+t2: run 3/9 convert done
+t2: run 4/9 convert done
+t2: run 5/9 convert done
+t2: run 6/9 convert done
+t2: run 7/9 convert done
+t2: run 8/9 convert done
+t2: run 9/9 convert done
+t2: stage convert done
+t2: stage index start
+t2: stage index done
+t2: stage search start
+t2: run 1/9 search done
+t2: run 2/9 search done
+t2: run 3/9 search done
+t2: run 4/9 search done
+t2: run 5/9 search done
+t2: run 6/9 search done
+t2: run 7/9 search done
+t2: run 8/9 search done
+t2: run 9/9 search done
+t2: stage search done
+t2: stage e8 start
+t2: stage e8 done
+t2: stage claims start
+t2: stage claims done
+t2: done D2
+t2: exit 0
+rc=0

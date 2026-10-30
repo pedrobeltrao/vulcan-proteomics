@@ -1,0 +1,38 @@
+# M5 LiP (D7) + CF-MS (D10cf, E10). Dev data only. Work dir /tmp/vulcan_m5lc (VULCAN_M5LC_WORK).
+data:
+  D7_LiP_TrP: {accession: PXD031616, manifests: [dev_sealed (6 files), d7b (6 files, added here)],
+    design: scripts/m5lc/common.py:D7_DESIGN, groups: "LiP M1 x3, LiP F1 x3, TrP M1 x3, TrP F1 x3 (alpha-syn monomer vs fibril, 5 pmol/ug)"}
+  D10cf: {accession: PXD015406, files: "Control_HEK_SEC_020118_{10..38}{b,c}.raw (29 SEC fractions, 29.1 GB)",
+    manifest: data/manifests/d10cf.tsv, ms2: "ion-trap CID (ITMS), Orbitrap MS1"}
+  truth: {corum: data/truth/M5/omnipath_corum.tsv (OmniPath, rows with CORUM source), uniprot_features: data/truth/M5/yeast_uniprot_features.tsv,
+    snca: data/truth/M5/P37840.fasta, checksums: data/manifests/m5_truth.sha256}
+lip:
+  fasta: yeast UP000002311 + contaminants (Frankenfield 2022) + P37840   # newline-safe concatenation (see NOTES issue 1)
+  index: {module: vulcan.lip.index, enzyme: "trypsin KR/P, <=2 missed, len 7-50, semi (Sage-equivalent enumeration)",
+          static: {C: 57.021464}, variable: {M: 15.9949}, max_var: 2, mass: [500, 5000],
+          decoys: "paired C-term-fixed pseudo-reverse per peptide (class inherited from the pair)", decoy_seed: 1001}
+  search: {script: scripts/m4/search_runs.py, precursor_ppm: [-10, 10], fragment_ppm: [-20, 20], isotope_errors: [0, 2],
+           topk: 500, report_psms: 5, lock: "flock /tmp/vulcan_bench.lock", repeat: 2 (warm pass reported)}
+  scoring: {model: static_gbm_pred (frozen M3, OT-HCD), predictor: AlphaPeptDeep (D7 not in its training manifest)}
+  fdr: {unit: peptidoform, competition: paired double competition, strata: "specificity class of the pair (specific / N-semi / C-semi)",
+        estimator: Group-walk K=40 (pooled TDC and separate-per-class TDC reported), alpha: 0.01, tiebreak_seed: 11,
+        groups: "LiP and TrP runs are separate experiments"}
+  quant: {link: vulcan.quant.lfq, mbr: "M6 default (donors 0.1%, claimed-feature exclusion, per-run transfer q <= 1%), within digest group only",
+          xic: "M6d XICParams", normalisation: "none in our export (MSstatsLiP equalizeMedians)"}
+  halftryptic: {module: vulcan.lip.halftryptic, exclusions: [protein N-term, Met removal, signal, transit, propeptide, chain/peptide boundaries],
+                insource_tol_min: 0.1}
+  msstatslip: {version: 1.8.1, MSstats: 4.10.0, env: conda_envs/rlip (r-base 4.3, bioconda), contrast: "F1 vs M1", script: scripts/m5lc/msstatslip.R,
+               feature: "precursor MS1 (peptide x charge x Met-ox count), proteotypic peptides only"}
+  sage: {version: 0.14.7, mode: "semi_enzymatic true, generate_decoys true (reversed proteins), predict_rt true, LDA, own q-values",
+         threads: 32, input: "MGF written from our stores", configs: configs/sage_semi_{LiP,TrP}.json}
+cf:
+  fasta: human Swiss-Prot canonical + contaminants
+  index: {module: vulcan.index.build, entrapment: "paired shuffled, seed 2001, r = 1", decoys: pseudo-reverse}
+  search: {fragment_ppm: [-600, 600], precursor_ppm: [-10, 10], report_psms: 1}   # IT-CID MS2 (as D4)
+  scoring: hyperscore (no IT-CID static model exists; tree 3c)
+  ids: {per_fraction: true, alpha: 0.01, donors: 0.001, series_q: "pooled over fractions, stored as pf_q_series"}
+  transfer: {module: vulcan.cf.transfer, modes: [none, local (k=1), global, global_naive], transfer_q: 0.01,
+             score: "M6 a-priori score minus the intensity-consistency term (profile-agnostic)", normalisation: none}
+  e10: {script: scripts/m5lc/cf_e10.py, protein_profile: "sum of proteotypic precursor XICs per fraction, missing = 0",
+        corum_score: "Pearson r of raw protein profiles", eligibility_min_fractions: 3, pr_auc: sklearn average_precision}
+hw: see metrics.json:hw (gpu-node, EPYC 9354 32 cores, A100 80GB; shared, load 40-55)

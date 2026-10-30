@@ -1,0 +1,25 @@
+# M6d quant accuracy (dev only: D9, D11, D12).  Work dir /tmp/vulcan_m6d (+ M6 work dir /tmp/vulcan_m6 for D9).
+sealed_data_touched: none          # T1 not opened; no file under data/sealed read
+metrics_changed: none              # vulcan/quant/metrics.py untouched; ProteoBench epsilon, CV, completeness, DE pAUC as in M6
+data:
+  D9:  {role: dev, runs: "ProteoBench DDA-Astral HYE A/B x 3", expected_log2_A_over_B: {HUMAN: 0, YEAST: 1, ECOLI: -2},
+        selection_subset: [A_REP1, A_REP2, B_REP1], held_out_subset: [A_REP3, B_REP2, B_REP3]}
+  D11: {role: dev, accession: PXD003881, runs: "IonStar E group (3x E. coli) x 4 vs A group (1x) x 4, Orbitrap Fusion 2.5 h",
+        expected_log2_E_over_A: {HUMAN: 0.0, ECOLI: 1.677},
+        expected_note: "PRIDE description: E. coli 3% (A) vs 9% (E) of total protein -> per unit total protein E. coli +1.585, human log2(91/97) = -0.092; expressed in the human-normalised frame that the label-free median normalisation produces: human 0, E. coli log2(3 x 97/91) = 1.677. Defined before any D11 quant number was computed."}
+  D12: {role: dev, accession: PXD014415, donors: "a11869-a11874 human+yeast (10%)", acceptors: "a11866-a11868 human only",
+        absent_in_acceptors: [YEAST], truth: "any transfer of a yeast-unique (non-contaminant) precursor into an acceptor run is false (M6 definition)"}
+  fasta: ProteoBench HYE (human + yeast + E. coli SwissProt + Cont_), all sets; absent species act as entrapment
+front_end: scripts/m6d/run_set.py   # unchanged M6 chain: vulcan.io.convert -> vulcan.ms1 -> vulcan.gpu.run (report_psms 5) -> scripts/m6/score.py (frozen static_gbm_pred) -> scripts/m6/ids.py (pooled paired TDC, 1%)
+quant_versions:
+  m6:  {xic: "sum of M0..M2 XIC areas", window: "1.0 x median mono-hill width, centred on run apex", siblings: false}
+  m6d: {xic: "averagine projection of M0..M2 (sum a_j e_j / sum e_j^2 * sum e_j)", window: "1.5 x median mono-hill width, centred on run apex",
+        siblings: "charge-sibling completion: charge states identified in any run, integrated in runs where the peptidoform is MS2-quantified at another charge (same window anchor), mono seen in >= 3 MS1 scans; provenance ms2_sibling"}
+  code: vulcan/quant/lfq.py XICParams (defaults = m6d), xic_requant(params=...), charge_siblings(); scripts/m6/lfq_d9.py --xic m6|m6d (default m6d)
+  selection: "decided on the D9 selection subset only (scripts/m6d/grid.py d9 sel; grid width {1,1.25,1.5}(+1.75,2.0) x iso {M0-2, M0-1, avgproj} x recentre x siblings); D9 held-out runs and D11 are confirmation"
+mbr: "MBRParams() defaults unchanged (rt_k 4, ppm_k 3, w_iso 2, w_tr 1, exclude_claimed, per-run q, decoys RT/m-z/decoy-peptide, seed 11); donors at ID q <= 0.1%; transfer q <= 1% (and 5%)"
+evaluation: scripts/m6d/lfq_eval.py   # median normalisation; precursor + peptidoform (charges summed) epsilon; Top3 / MaxLFQ / directLFQ 0.3.3 (num_cores=1) DE pAUC
+diagnosis: scripts/m6d/diag_d9.py, scripts/m6d/plots.py
+mbr_truth: scripts/m6d/mbr_truth.py
+timing: "scripts/baselines/timed.py --lock (flock /tmp/vulcan_bench.lock), lfq_eval d9 all MBR on, --no-directlfq, 2 reps per version; timings.jsonl"
+seeds: {tie_break: 11, mbr_decoy: 11, decoy_seed_index: 1001}

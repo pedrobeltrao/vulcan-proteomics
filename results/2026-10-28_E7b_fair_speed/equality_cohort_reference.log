@@ -1,0 +1,16 @@
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+E9_0000__H0799BL True [] [] True [] {'ref': 42909, 'cohort': 42909, 'identical': True} [4002, 4002]
+$VULCAN_ROOT/vulcan/rescore/features_v2.py:61: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /home/conda/feedstock_root/build_artifacts/libtorch_1791585344983/work/torch/csrc/utils/tensor_numpy.cpp:213.)
+  obs = observed(peaks, torch.from_numpy(spec).to(dev), fmz, self.tol)
+E9_0001__QE-B_2018-09_E02_Pro1 True [] [] True [] {'ref': 10024, 'cohort': 10024, 'identical': True} [2639, 2639]
+E9_0002__MGP2 True [] [] True [] {'ref': 4395, 'cohort': 4395, 'identical': True} [1261, 1261]
+E9_0003__20180623_PC463-Graves True [] [] True [] {'ref': 9882, 'cohort': 9882, 'identical': True} [1123, 1123]
+E9_0004__20210122-YP202104470- True [] [] True [] {'ref': 8406, 'cohort': 8406, 'identical': True} [1504, 1504]
+E9_0005__20240423_LennonR_Hass True [] [] True [] {'ref': 14980, 'cohort': 14980, 'identical': True} [1939, 1939]
+E9_0006__CL_CTL_p53_ZNF_061025 True [] [] True [] {'ref': 8166, 'cohort': 8166, 'identical': True} [1357, 1357]
+E9_0007__170413_gc_M5-013-14-1 True [] [] True [] {'ref': 207, 'cohort': 207, 'identical': True} [120, 120]
+E9_0008__lgg1 True [] [] True [] {'ref': 14933, 'cohort': 14933, 'identical': True} [2216, 2216]
+E9_0009__20170210_MCF7_LysC_WT True [] [] True [] {'ref': 18289, 'cohort': 18289, 'identical': True} [3874, 3874]
+b1906_293T_proteinID_01A_QE3_1 True [] [] True [] {'ref': 13716, 'cohort': 13716, 'identical': True} [5265, 5265]
+b1937_293T_proteinID_01B_QE3_1 True [] [] True [] {'ref': 16711, 'cohort': 16711, 'identical': True} [5719, 5719]

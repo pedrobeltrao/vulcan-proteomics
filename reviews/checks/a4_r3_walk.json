@@ -1,0 +1,761 @@
+{
+ "seed": 131,
+ "spec": "Amendment A4 revision 3: walk and tail-G2 check implementing the FULL A4 selection spec (second review B1, M4,\nM5, minor 1).  METADATA + SYNTHETIC ONLY, seed 131.  Supersedes the walk numbers of a4_r1_walk.py (which is kept for\nthe record).\n\nDifferences from a4_r1_walk.py:\n  * person/lab keys (A4.3.4): normalised crawl `lab` plus every `labPIs` and `submitters` name from the cached PRIDE\n    project record; normalisation is ORDER-INSENSITIVE (lower-case, alphanumeric tokens, single-letter tokens dropped,\n    tokens sorted), so \"zhang yongqian\" == \"Yongqian Zhang\";\n  * cluster links: shared genus OR any shared key;\n  * A4.3.3 item 5 (same-lab exclusion) applied to the pool AND to tier 0: a project is excluded if any key is shared\n    with an A1 null project (g2null.tsv + g2null \"tried\"), a DNIT walk candidate, or a DN2 walk candidate not in\n    tier 0;\n  * the cap takes the minimum of the water-filling factors of the tail proxy, A_cand AND |A| (A4.3.6);\n  * tier 0 is shuffled correctly (random.Random(order_seed).shuffle) and, because 3 of its 5 protocol-eligible\n    projects already showed one non-keratin panel member at 3 runs (DN2 NOTES), its stage-2 extra exclusion is 0.5;\n  * a REFERENCE cell draws each project's raw-file count from the empirical distribution of DN2's 21 listing events\n    (label-free; usable ~ Binomial(n_raw, 0.8)) instead of an assumed median;\n  * IUT precedence (A4.3.6, second review minor 1): any invalid pool -> invalid; else any fail -> fail; else any\n    not-evaluable -> not-evaluable; else pass.",
+ "pool_r3": {
+  "exclusions": {
+   "excluded_rev0": 293,
+   "excluded_rev1": 351,
+   "n_exclusion_accessions_rev1": 576
+  },
+  "item5_removed": {
+   "I": {
+    "removed": 26,
+    "removed_rev1_passers": 13
+   },
+   "II": {
+    "removed": 5,
+    "removed_rev1_passers": 4
+   },
+   "III": {
+    "removed": 2,
+    "removed_rev1_passers": 0
+   }
+  },
+  "tiers": {
+   "I": {
+    "projects": 145,
+    "rev1_passers": 60
+   },
+   "II": {
+    "projects": 253,
+    "rev1_passers": 73
+   },
+   "III": {
+    "projects": 129,
+    "rev1_passers": 54
+   }
+  }
+ },
+ "tier0": [
+  {
+   "accession": "PXD006818",
+   "n_raw": 76,
+   "A_per_run": 117.33333333333333,
+   "cand_rate": 0.40625,
+   "proxy_rate": 0.009943181818181818,
+   "genus": "Streptomyces",
+   "keys": [
+    "economou tassos",
+    "konstantinos tsolis"
+   ],
+   "protocol_rev1": true,
+   "item5_hit": true,
+   "eligible": false
+  },
+  {
+   "accession": "PXD018953",
+   "n_raw": 12,
+   "A_per_run": 1853.6666666666667,
+   "cand_rate": 0.29383204459629564,
+   "proxy_rate": 0.0004495594317568783,
+   "genus": "Caballeronia",
+   "keys": [
+    "armengaud jean"
+   ],
+   "protocol_rev1": true,
+   "item5_hit": true,
+   "eligible": false
+  },
+  {
+   "accession": "PXD044078",
+   "n_raw": 4,
+   "A_per_run": 2164.6666666666665,
+   "cand_rate": 0.4581151832460733,
+   "proxy_rate": 0.0006929473360024638,
+   "genus": "Bacillus",
+   "keys": [
+    "armengaud jean"
+   ],
+   "protocol_rev1": true,
+   "item5_hit": true,
+   "eligible": false
+  },
+  {
+   "accession": "PXD011591",
+   "n_raw": 24,
+   "A_per_run": 916.6666666666666,
+   "cand_rate": 0.7352727272727273,
+   "proxy_rate": 0.0009090909090909091,
+   "genus": "Rhodobacter",
+   "keys": [
+    "beata siemiatkowska",
+    "hler leimk silke"
+   ],
+   "protocol_rev1": false,
+   "item5_hit": true,
+   "eligible": false
+  },
+  {
+   "accession": "PXD062500",
+   "n_raw": 8,
+   "A_per_run": 3012.3333333333335,
+   "cand_rate": 0.30662830585371254,
+   "proxy_rate": 0.0011618900077459333,
+   "genus": "Deinococcus",
+   "keys": [
+    "siyu zhu",
+    "yongqian zhang"
+   ],
+   "protocol_rev1": true,
+   "item5_hit": true,
+   "eligible": false
+  },
+  {
+   "accession": "PXD038243",
+   "n_raw": 9,
+   "A_per_run": 129.0,
+   "cand_rate": 0.16279069767441862,
+   "proxy_rate": 0.003875968992248062,
+   "genus": "Emiliania",
+   "keys": [
+    "craig dedman",
+    "rickaby rosalind"
+   ],
+   "protocol_rev1": true,
+   "item5_hit": false,
+   "eligible": true
+  }
+ ],
+ "empirical_raw_counts_dn2_listings": [
+  2,
+  2,
+  4,
+  5,
+  6,
+  6,
+  8,
+  9,
+  12,
+  12,
+  12,
+  12,
+  12,
+  12,
+  12,
+  16,
+  24,
+  24,
+  36,
+  48,
+  76
+ ],
+ "walk_r3": [
+  {
+   "tier0": true,
+   "files": "empirical DN2 raw counts (REFERENCE)",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.43333333333333335,
+   "P_full": 0.18,
+   "runs": [
+    597.8,
+    712.5,
+    852.1
+   ],
+   "J": [
+    30.0,
+    35.0,
+    40.0
+   ],
+   "admitted": [
+    52.0,
+    59.0,
+    65.0
+   ],
+   "downloaded": [
+    894.0,
+    1041.5,
+    1168.3000000000002
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "empirical DN2 raw counts (REFERENCE)",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.08333333333333333,
+   "P_full": 0.013333333333333334,
+   "runs": [
+    447.9,
+    572.5,
+    691.0
+   ],
+   "J": [
+    26.0,
+    31.0,
+    35.0
+   ],
+   "admitted": [
+    42.0,
+    49.0,
+    56.0
+   ],
+   "downloaded": [
+    939.8,
+    1087.0,
+    1234.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 6",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.08,
+   "P_full": 0.006666666666666667,
+   "runs": [
+    398.9,
+    477.0,
+    561.2
+   ],
+   "J": [
+    31.0,
+    36.0,
+    41.0
+   ],
+   "admitted": [
+    53.0,
+    59.5,
+    68.0
+   ],
+   "downloaded": [
+    667.6,
+    741.0,
+    826.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 6",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.013333333333333334,
+   "P_full": 0.006666666666666667,
+   "runs": [
+    305.0,
+    390.0,
+    476.60000000000014
+   ],
+   "J": [
+    27.0,
+    32.0,
+    37.0
+   ],
+   "admitted": [
+    45.0,
+    52.0,
+    58.10000000000002
+   ],
+   "downloaded": [
+    665.0,
+    766.0,
+    860.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 12",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.6366666666666667,
+   "P_full": 0.36666666666666664,
+   "runs": [
+    722.6,
+    863.5,
+    1002.4000000000001
+   ],
+   "J": [
+    28.900000000000002,
+    34.0,
+    39.0
+   ],
+   "admitted": [
+    49.0,
+    56.0,
+    63.0
+   ],
+   "downloaded": [
+    1038.1,
+    1200.0,
+    1382.3000000000002
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 12",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.21666666666666667,
+   "P_full": 0.06666666666666667,
+   "runs": [
+    580.9,
+    712.5,
+    850.4000000000001
+   ],
+   "J": [
+    25.0,
+    30.0,
+    35.0
+   ],
+   "admitted": [
+    41.0,
+    47.0,
+    54.0
+   ],
+   "downloaded": [
+    1142.3,
+    1293.0,
+    1457.2
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 24",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.98,
+   "P_full": 0.9333333333333333,
+   "runs": [
+    936.8,
+    1186.0,
+    1405.0
+   ],
+   "J": [
+    23.900000000000002,
+    29.0,
+    33.0
+   ],
+   "admitted": [
+    35.0,
+    45.0,
+    53.0
+   ],
+   "downloaded": [
+    1193.9,
+    1535.5,
+    1865.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": true,
+   "files": "median 24",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.7566666666666667,
+   "P_full": 0.5933333333333334,
+   "runs": [
+    897.7,
+    1101.5,
+    1316.1
+   ],
+   "J": [
+    23.0,
+    27.0,
+    32.0
+   ],
+   "admitted": [
+    35.0,
+    42.0,
+    50.0
+   ],
+   "downloaded": [
+    1575.9,
+    1889.5,
+    2209.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "empirical DN2 raw counts (REFERENCE)",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.41,
+   "P_full": 0.16,
+   "runs": [
+    578.0,
+    724.5,
+    856.1
+   ],
+   "J": [
+    30.0,
+    36.0,
+    40.0
+   ],
+   "admitted": [
+    51.0,
+    59.0,
+    65.0
+   ],
+   "downloaded": [
+    878.9,
+    1030.5,
+    1181.0
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "empirical DN2 raw counts (REFERENCE)",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.08,
+   "P_full": 0.013333333333333334,
+   "runs": [
+    435.9,
+    570.0,
+    706.9000000000002
+   ],
+   "J": [
+    26.0,
+    31.0,
+    35.0
+   ],
+   "admitted": [
+    42.0,
+    49.0,
+    56.0
+   ],
+   "downloaded": [
+    918.9,
+    1078.0,
+    1233.0
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 6",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.07666666666666666,
+   "P_full": 0.01,
+   "runs": [
+    395.1,
+    472.0,
+    572.6000000000001
+   ],
+   "J": [
+    32.0,
+    36.0,
+    41.0
+   ],
+   "admitted": [
+    53.0,
+    59.0,
+    66.0
+   ],
+   "downloaded": [
+    655.0,
+    736.5,
+    828.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 6",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.023333333333333334,
+   "P_full": 0.0,
+   "runs": [
+    311.9,
+    384.5,
+    474.20000000000005
+   ],
+   "J": [
+    27.0,
+    32.0,
+    37.0
+   ],
+   "admitted": [
+    44.0,
+    51.0,
+    58.0
+   ],
+   "downloaded": [
+    670.8,
+    759.0,
+    857.2
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 12",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.6366666666666667,
+   "P_full": 0.38333333333333336,
+   "runs": [
+    732.9,
+    865.0,
+    998.0
+   ],
+   "J": [
+    29.0,
+    34.0,
+    39.0
+   ],
+   "admitted": [
+    48.0,
+    55.0,
+    63.0
+   ],
+   "downloaded": [
+    1049.9,
+    1202.5,
+    1360.8000000000002
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 12",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.22666666666666666,
+   "P_full": 0.07666666666666666,
+   "runs": [
+    564.5,
+    716.0,
+    852.1
+   ],
+   "J": [
+    26.0,
+    29.0,
+    34.0
+   ],
+   "admitted": [
+    40.0,
+    47.0,
+    53.0
+   ],
+   "downloaded": [
+    1132.7,
+    1294.5,
+    1458.0000000000002
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 24",
+   "stage2_extra_exclusion": 0.15,
+   "P_v1_min": 0.9733333333333334,
+   "P_full": 0.9433333333333334,
+   "runs": [
+    915.9,
+    1177.5,
+    1395.0
+   ],
+   "J": [
+    23.900000000000002,
+    29.0,
+    33.0
+   ],
+   "admitted": [
+    34.0,
+    45.0,
+    53.0
+   ],
+   "downloaded": [
+    1182.9,
+    1535.0,
+    1857.3000000000002
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "tier0": false,
+   "files": "median 24",
+   "stage2_extra_exclusion": 0.35,
+   "P_v1_min": 0.7466666666666667,
+   "P_full": 0.62,
+   "runs": [
+    920.8,
+    1094.5,
+    1273.3000000000002
+   ],
+   "J": [
+    23.0,
+    27.0,
+    31.100000000000023
+   ],
+   "admitted": [
+    34.0,
+    42.0,
+    48.0
+   ],
+   "downloaded": [
+    1514.9,
+    1885.0,
+    2156.1
+   ],
+   "tier0_admitted": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "tail_r3": {
+  "kappa1.0": {
+   "n_snapshots": 300,
+   "J_median": 31.0,
+   "Jeff_capped_proxy_min": 10.369238761053134,
+   "max_capped_share_max": 0.1424068635307591,
+   "clean": {
+    "pass": 0.9133333333333333,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.08666666666666667,
+    "capped_only_pass": 0.9566666666666667,
+    "uncapped_only_pass": 0.9533333333333334
+   },
+   "margin0.60_tau0.10": {
+    "pass": 0.0033333333333333335,
+    "fail": 0.92,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.07666666666666666,
+    "capped_only_pass": 0.02,
+    "uncapped_only_pass": 0.01
+   },
+   "mean0.60_leak0.90_in_25pct": {
+    "pass": 0.03333333333333333,
+    "fail": 0.8566666666666667,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.11,
+    "capped_only_pass": 0.03333333333333333,
+    "uncapped_only_pass": 0.08333333333333333
+   },
+   "mean0.60_leak1.00_in_20pct": {
+    "pass": 0.056666666666666664,
+    "fail": 0.8566666666666667,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.08666666666666667,
+    "capped_only_pass": 0.06,
+    "uncapped_only_pass": 0.13
+   },
+   "uncapped_mean0.60_leak_in_largest": {
+    "pass": 0.0,
+    "fail": 0.9066666666666666,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.09333333333333334,
+    "capped_only_pass": 0.30666666666666664,
+    "uncapped_only_pass": 0.0
+   }
+  },
+  "kappa0.5": {
+   "n_snapshots": 300,
+   "J_median": 31.0,
+   "Jeff_capped_proxy_min": 10.369238761053134,
+   "max_capped_share_max": 0.1424068635307591,
+   "clean": {
+    "pass": 0.8533333333333334,
+    "fail": 0.06333333333333334,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.08333333333333333,
+    "capped_only_pass": 0.88,
+    "uncapped_only_pass": 0.9333333333333333
+   },
+   "margin0.60_tau0.10": {
+    "pass": 0.01,
+    "fail": 0.94,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.05,
+    "capped_only_pass": 0.023333333333333334,
+    "uncapped_only_pass": 0.03
+   },
+   "mean0.60_leak0.90_in_25pct": {
+    "pass": 0.023333333333333334,
+    "fail": 0.9066666666666666,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.07,
+    "capped_only_pass": 0.02666666666666667,
+    "uncapped_only_pass": 0.056666666666666664
+   },
+   "mean0.60_leak1.00_in_20pct": {
+    "pass": 0.04,
+    "fail": 0.86,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.1,
+    "capped_only_pass": 0.04,
+    "uncapped_only_pass": 0.11
+   },
+   "uncapped_mean0.60_leak_in_largest": {
+    "pass": 0.0,
+    "fail": 0.8866666666666667,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.11333333333333333,
+    "capped_only_pass": 0.24666666666666667,
+    "uncapped_only_pass": 0.0
+   }
+  }
+ },
+ "wall_s": 683.8002271410078
+}

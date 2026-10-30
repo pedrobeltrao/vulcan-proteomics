@@ -1,0 +1,2170 @@
+{
+ "experiment": "3c IT-CID instrument-class static-first scorer (dev only)",
+ "chosen_model": "itcid_linear_pred",
+ "chosen_model_sha256": "667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89",
+ "training": {
+  "n_runs": 13,
+  "runs": [
+   {
+    "run": "m06973_PMQ_02",
+    "accession": "PXD006293",
+    "fold": 0,
+    "species": "human",
+    "stratum": "TMT"
+   },
+   {
+    "run": "270120-Urine-Set31",
+    "accession": "PXD042759",
+    "fold": 1,
+    "species": "human",
+    "stratum": "TMT"
+   },
+   {
+    "run": "Fraction_4",
+    "accession": "PXD009023",
+    "fold": 2,
+    "species": "human",
+    "stratum": "TMT"
+   },
+   {
+    "run": "m21032",
+    "accession": "PXD043848",
+    "fold": 0,
+    "species": "mouse",
+    "stratum": "TMT"
+   },
+   {
+    "run": "Set3_6",
+    "accession": "PXD024175",
+    "fold": 1,
+    "species": "human",
+    "stratum": "TMT"
+   },
+   {
+    "run": "Req111-SM-Nik-Zainal_A_24",
+    "accession": "PXD062779",
+    "fold": 2,
+    "species": "human",
+    "stratum": "TMT"
+   },
+   {
+    "run": "141210_Christiano_plantaris_3hit_tech1_141216070912",
+    "accession": "PXD013226",
+    "fold": 0,
+    "species": "mouse",
+    "stratum": "LF"
+   },
+   {
+    "run": "MH_2",
+    "accession": "PXD005480",
+    "fold": 1,
+    "species": "human",
+    "stratum": "LF"
+   },
+   {
+    "run": "20210527_3d_mito_totalprot1",
+    "accession": "PXD044866",
+    "fold": 2,
+    "species": "mouse",
+    "stratum": "LF"
+   },
+   {
+    "run": "110804_110530_ProstateLMW_N_226_38",
+    "accession": "PXD000383",
+    "fold": 0,
+    "species": "human",
+    "stratum": "LF"
+   },
+   {
+    "run": "62598",
+    "accession": "PXD038703",
+    "fold": 1,
+    "species": "mouse",
+    "stratum": "LF"
+   },
+   {
+    "run": "ath017934",
+    "accession": "PXD002838",
+    "fold": 2,
+    "species": "mouse",
+    "stratum": "LF"
+   },
+   {
+    "run": "20150114_ZhongshanHospital_Af_1_240min_2ug",
+    "accession": "PXD007725",
+    "fold": 0,
+    "species": "human",
+    "stratum": "LF"
+   }
+  ],
+  "n_psms": 1950545,
+  "hyperscore_heldout": {
+   "total": 84091,
+   "per_fold": {
+    "0": 56584,
+    "1": 15495,
+    "2": 12012
+   }
+  },
+  "variants": {
+   "itcid_linear_base": {
+    "hp": {
+     "C": 0.01
+    },
+    "cv_heldout_best": 110727,
+    "sha256": "1c02c9bad4d087f6b0914430b4a68d0b081c30220715b4a8d73074702a873a6a"
+   },
+   "itcid_gbm_base": {
+    "hp": {
+     "n": 150
+    },
+    "cv_heldout_best": 106480,
+    "sha256": "834bafe9348aea8cb13972c27f4ce765ea139c6ad51c050cf06e748e0ba44e02"
+   },
+   "itcid_linear_pred": {
+    "hp": {
+     "C": 0.01
+    },
+    "cv_heldout_best": 127081,
+    "sha256": "667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89"
+   },
+   "itcid_gbm_pred": {
+    "hp": {
+     "n": 300
+    },
+    "cv_heldout_best": 125542,
+    "sha256": "f13ebf96b7bec749496f7cb36c8b854a8f74a09d87cd6fd22fb214b6b084ab37"
+   }
+  }
+ },
+ "dev": {
+  "D10cf": {
+   "hyperscore": {
+    "ids_peptidoforms": {
+     "0.001": 25864,
+     "0.01": 40547,
+     "0.05": 53666
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 23992,
+     "0.01": 37435,
+     "0.05": 49485
+    },
+    "protein_groups": {
+     "0.001": 3090,
+     "0.01": 3933,
+     "0.05": 3934
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.011835492411135032,
+       "ci95": [
+        0.010313559093219675,
+        0.013357425729050389
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.012959096565788177,
+       "ci95": [
+        0.011364690278098069,
+        0.014553502853478284
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.008374510599025513,
+       "verdict": "supported"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05701742731930517,
+       "ci95": [
+        0.05468226810732582,
+        0.059352586531284515
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05659407174653329,
+       "ci95": [
+        0.05368866204264373,
+        0.05949948145042285
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.008371294718759371,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0008193207532264135,
+       "ci95": [
+        0.00036469712670110965,
+        0.0012739443797517174
+       ],
+       "verdict": "supported",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0017368438563647136,
+       "ci95": [
+        0.0009797817198593326,
+        0.0024939059928700946
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "supported",
+      "protein_P": {
+       "mean_fdp": 0.00045406547621180683,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_linear_base": {
+    "ids_peptidoforms": {
+     "0.001": 44576,
+     "0.01": 55884,
+     "0.05": 66065
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 41368,
+     "0.01": 51584,
+     "0.05": 60884
+    },
+    "protein_groups": {
+     "0.001": 4243,
+     "0.01": 4879,
+     "0.05": 4886
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.011671485856585853,
+       "ci95": [
+        0.010386192221126125,
+        0.012956779492045581
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.008911971968189101,
+       "ci95": [
+        0.007773542453677375,
+        0.010050401482700828
+       ],
+       "verdict": "supported"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.011461558748525223,
+       "verdict": "inconclusive"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.055427328467406174,
+       "ci95": [
+        0.05320788887624324,
+        0.05764676805856911
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05094475642240899,
+       "ci95": [
+        0.04850136213162933,
+        0.05338815071318865
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.011719123736360313,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0011869570415863932,
+       "ci95": [
+        0.0008727181652103503,
+        0.001501195917962436
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0018712021638533259,
+       "ci95": [
+        0.0012740544023400477,
+        0.002468349925366604
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0004920585548959733,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_gbm_base": {
+    "ids_peptidoforms": {
+     "0.001": 45742,
+     "0.01": 53534,
+     "0.05": 62417
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 42065,
+     "0.01": 48884,
+     "0.05": 57076
+    },
+    "protein_groups": {
+     "0.001": 4594,
+     "0.01": 4850,
+     "0.05": 4853
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.011912131174775124,
+       "ci95": [
+        0.010482086091390341,
+        0.013342176258159907
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.009439046464681116,
+       "ci95": [
+        0.008262953030366393,
+        0.010615139898995839
+       ],
+       "verdict": "supported"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.012152721184287276,
+       "verdict": "inconclusive"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05507277891098645,
+       "ci95": [
+        0.052761040427280734,
+        0.057384517394692164
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05475977448737848,
+       "ci95": [
+        0.05220262097657601,
+        0.05731692799818095
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.012147601084183614,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0013619177845813936,
+       "ci95": [
+        0.00105287179901821,
+        0.0016709637701445772
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.0017105167848215609,
+       "ci95": [
+        0.001172559387284328,
+        0.0022484741823587937
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0019344081201793921,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_linear_pred": {
+    "ids_peptidoforms": {
+     "0.001": 63407,
+     "0.01": 72160,
+     "0.05": 78451
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 58324,
+     "0.01": 65786,
+     "0.05": 71455
+    },
+    "protein_groups": {
+     "0.001": 4834,
+     "0.01": 5394,
+     "0.05": 5406
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.011079976663148887,
+       "ci95": [
+        0.010193413506171967,
+        0.011966539820125806
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.011896238835592989,
+       "ci95": [
+        0.010734158559739703,
+        0.013058319111446275
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.007616824651147565,
+       "verdict": "supported"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.0556153702213932,
+       "ci95": [
+        0.05404009428939332,
+        0.05719064615339308
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05274089233947296,
+       "ci95": [
+        0.05048702051811975,
+        0.05499476416082617
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.008539966235764716,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0009062757626838704,
+       "ci95": [
+        0.0006959026211797862,
+        0.0011166489041879546
+       ],
+       "verdict": "supported",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0013863130241377711,
+       "ci95": [
+        0.0009590965221922031,
+        0.0018135295260833391
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.00021920768669663317,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_gbm_pred": {
+    "ids_peptidoforms": {
+     "0.001": 64374,
+     "0.01": 69071,
+     "0.05": 73890
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 58505,
+     "0.01": 62604,
+     "0.05": 67105
+    },
+    "protein_groups": {
+     "0.001": 5054,
+     "0.01": 5417,
+     "0.05": 5426
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.01164098385934026,
+       "ci95": [
+        0.010865705980596888,
+        0.01241626173808363
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.011794350202026415,
+       "ci95": [
+        0.010619273385427013,
+        0.012969427018625817
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.007853076161416686,
+       "verdict": "supported"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.054453966612433125,
+       "ci95": [
+        0.0521054040782118,
+        0.05680252914665445
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05486982890223473,
+       "ci95": [
+        0.05248013103716286,
+        0.05725952676730659
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.00902262784830246,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.001001209167413151,
+       "ci95": [
+        0.0006657536430595721,
+        0.0013366646917667298
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0020036384768099833,
+       "ci95": [
+        0.0015294146565015352,
+        0.0024778622971184314
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.00044183926916354987,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   }
+  },
+  "D4": {
+   "hyperscore": {
+    "ids_peptidoforms": {
+     "0.001": 29725,
+     "0.01": 43437,
+     "0.05": 54665
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 29059,
+     "0.01": 42410,
+     "0.05": 53253
+    },
+    "protein_groups": {
+     "0.001": 5896,
+     "0.01": 6734,
+     "0.05": 6760
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.009426073159185522,
+       "ci95": [
+        0.008430246473586098,
+        0.010421899844784947
+       ],
+       "verdict": "supported",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.010585842543459022,
+       "ci95": [
+        0.009159723129137485,
+        0.01201196195778056
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "supported",
+      "protein_P": {
+       "mean_fdp": 0.008126123903931848,
+       "verdict": "supported"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05070011926019024,
+       "ci95": [
+        0.04786983085011851,
+        0.053530407670261966
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.054226000913763145,
+       "ci95": [
+        0.0515040700835564,
+        0.05694793174396989
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.008123584881287692,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0010162667786143456,
+       "ci95": [
+        0.0006427371409333759,
+        0.0013897964162953153
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0014280536493748576,
+       "ci95": [
+        0.000776161293890291,
+        0.002079946004859424
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0005985048152058926,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_linear_base": {
+    "ids_peptidoforms": {
+     "0.001": 45454,
+     "0.01": 55589,
+     "0.05": 62043
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 44382,
+     "0.01": 54154,
+     "0.05": 60302
+    },
+    "protein_groups": {
+     "0.001": 7096,
+     "0.01": 7586,
+     "0.05": 7595
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.010735227890932784,
+       "ci95": [
+        0.009173613709937984,
+        0.012296842071927584
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.01154721441140627,
+       "ci95": [
+        0.010321447497047625,
+        0.012772981325764916
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.010629836706147285,
+       "verdict": "inconclusive"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05380584627199483,
+       "ci95": [
+        0.05208684341860258,
+        0.05552484912538708
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.0549137021413095,
+       "ci95": [
+        0.052361169656624004,
+        0.057466234625995
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.011073204705756743,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0013132819270317356,
+       "ci95": [
+        0.0008886268420520958,
+        0.0017379370120113753
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0019044454214186585,
+       "ci95": [
+        0.001304655042831548,
+        0.0025042358000057687
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0007034572209011795,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_gbm_base": {
+    "ids_peptidoforms": {
+     "0.001": 45287,
+     "0.01": 54127,
+     "0.05": 59733
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 44186,
+     "0.01": 52590,
+     "0.05": 57941
+    },
+    "protein_groups": {
+     "0.001": 6943,
+     "0.01": 7547,
+     "0.05": 7556
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.010091882127808005,
+       "ci95": [
+        0.009055031356366563,
+        0.011128732899249448
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.010504418239058325,
+       "ci95": [
+        0.009244960478347566,
+        0.011763875999769084
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.009562510228253225,
+       "verdict": "supported"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.0520511405756095,
+       "ci95": [
+        0.05050096957374143,
+        0.05360131157747757
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": false
+      },
+      "C": {
+       "mean_fdp": 0.05877809021611051,
+       "ci95": [
+        0.056065600520977275,
+        0.061490579911243744
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.009598881503294054,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0010654524827206065,
+       "ci95": [
+        0.0007049583310260205,
+        0.0014259466344151925
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.001421661206867001,
+       "ci95": [
+        0.0009028840724984861,
+        0.001940438341235516
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.00039741774244965417,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_linear_pred": {
+    "ids_peptidoforms": {
+     "0.001": 56134,
+     "0.01": 60873,
+     "0.05": 64827
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 54778,
+     "0.01": 59082,
+     "0.05": 62817
+    },
+    "protein_groups": {
+     "0.001": 7435,
+     "0.01": 7858,
+     "0.05": 7873
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.011069455124590052,
+       "ci95": [
+        0.0098066436717044,
+        0.012332266577475704
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.009746135919749018,
+       "ci95": [
+        0.008653474109851726,
+        0.01083879772964631
+       ],
+       "verdict": "supported"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.01057701112408511,
+       "verdict": "inconclusive"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05175154115405434,
+       "ci95": [
+        0.0498846353514321,
+        0.05361844695667657
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.05504130784968331,
+       "ci95": [
+        0.05250227966656507,
+        0.05758033603280154
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.010657472979786581,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.001029744173395604,
+       "ci95": [
+        0.0004949146942760514,
+        0.0015645736525151566
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0014046490587205668,
+       "ci95": [
+        0.0009492050115172592,
+        0.0018600931059238744
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0015271173403318742,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   },
+   "itcid_gbm_pred": {
+    "ids_peptidoforms": {
+     "0.001": 56308,
+     "0.01": 59343,
+     "0.05": 63071
+    },
+    "ids_unique_seq_IL": {
+     "0.001": 54749,
+     "0.01": 57521,
+     "0.05": 61080
+    },
+    "protein_groups": {
+     "0.001": 7528,
+     "0.01": 7832,
+     "0.05": 7838
+    },
+    "verdicts": {
+     "0.01": {
+      "P": {
+       "mean_fdp": 0.010676344764723011,
+       "ci95": [
+        0.00938290926566524,
+        0.011969780263780783
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.010917337838778662,
+       "ci95": [
+        0.009756931534169825,
+        0.0120777441433875
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.010886130263638957,
+       "verdict": "inconclusive"
+      }
+     },
+     "0.05": {
+      "P": {
+       "mean_fdp": 0.05209637499134804,
+       "ci95": [
+        0.04971848764556107,
+        0.05447426233713501
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.05634142385132023,
+       "ci95": [
+        0.053822182866838646,
+        0.05886066483580182
+       ],
+       "verdict": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.011683876859090928,
+       "verdict": "supported"
+      }
+     },
+     "0.001": {
+      "P": {
+       "mean_fdp": 0.0011446790111336964,
+       "ci95": [
+        0.0007787504834846826,
+        0.0015106075387827103
+       ],
+       "verdict": "inconclusive",
+       "consistent_with_control": true
+      },
+      "C": {
+       "mean_fdp": 0.0009842269893694622,
+       "ci95": [
+        0.0006213679817238248,
+        0.0013470859970150994
+       ],
+       "verdict": "supported"
+      },
+      "overall": "inconclusive",
+      "protein_P": {
+       "mean_fdp": 0.0014531633779965474,
+       "verdict": "not-evaluable"
+      }
+     }
+    }
+   }
+  }
+ },
+ "comparators": {
+  "D4": {
+   "sage": {
+    "peptides_IL_own_q": {
+     "0.001": 47154,
+     "0.01": 55151,
+     "0.05": 60029
+    },
+    "peptides_IL_vulcan_tdc": {
+     "0.001": 47156,
+     "0.01": 54790,
+     "0.05": 59541
+    },
+    "protein_groups": {
+     "0.001": 6813,
+     "0.01": 7608,
+     "0.05": 7617
+    },
+    "verdicts": {
+     "0.001": {
+      "arms": {
+       "P": "supported",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.005": {
+      "arms": {
+       "P": "supported",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.01": {
+      "arms": {
+       "P": "supported",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     },
+     "0.05": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     }
+    }
+   },
+   "sage+mokapot": {
+    "peptides_IL_own_q": {
+     "0.001": 47906,
+     "0.01": 55606,
+     "0.05": 60051
+    },
+    "peptides_IL_vulcan_tdc": {
+     "0.001": 47577,
+     "0.01": 55574,
+     "0.05": 59961
+    },
+    "protein_groups": {
+     "0.001": 7133,
+     "0.01": 7662,
+     "0.05": 7670
+    },
+    "verdicts": {
+     "0.001": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.005": {
+      "arms": {
+       "P": "supported",
+       "C": "supported"
+      },
+      "overall": "supported",
+      "gated": false
+     },
+     "0.01": {
+      "arms": {
+       "P": "supported",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     },
+     "0.05": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     }
+    }
+   }
+  },
+  "D10cf": {
+   "sage": {
+    "peptides_IL_own_q": {
+     "0.001": 45054,
+     "0.01": 55640,
+     "0.05": 63795
+    },
+    "peptides_IL_vulcan_tdc": {
+     "0.001": 44491,
+     "0.01": 54856,
+     "0.05": 62703
+    },
+    "protein_groups": {
+     "0.001": 4564,
+     "0.01": 5009,
+     "0.05": 5014
+    },
+    "verdicts": {
+     "0.001": {
+      "arms": {
+       "P": "supported",
+       "C": "supported"
+      },
+      "overall": "supported",
+      "gated": false
+     },
+     "0.005": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.01": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     },
+     "0.05": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     }
+    }
+   },
+   "sage+mokapot": {
+    "peptides_IL_own_q": {
+     "0.001": 44273,
+     "0.01": 55447,
+     "0.05": 63647
+    },
+    "peptides_IL_vulcan_tdc": {
+     "0.001": 44162,
+     "0.01": 55005,
+     "0.05": 63032
+    },
+    "protein_groups": {
+     "0.001": 4639,
+     "0.01": 5019,
+     "0.05": 5022
+    },
+    "verdicts": {
+     "0.001": {
+      "arms": {
+       "P": "supported",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.005": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": false
+     },
+     "0.01": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     },
+     "0.05": {
+      "arms": {
+       "P": "inconclusive",
+       "C": "inconclusive"
+      },
+      "overall": "inconclusive",
+      "gated": true
+     }
+    }
+   }
+  }
+ },
+ "gates": {
+  "G4": {
+   "wall_s": 109.21185325086117,
+   "partition": "IT-CID x CID x precursor charge {1, 2, 3, 4+} (as M3e; frozen before estimation)",
+   "runs": "the 13 IT-CID training runs (train_itcid.tsv)",
+   "hyperscore": {
+    "tau": 0.7419283332156973,
+    "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+    "n_within_pairs": 201,
+    "within_ks_quantiles_10_50_90": [
+     0.09507498025196515,
+     0.36385113333871105,
+     0.6772620713838959
+    ],
+    "strata": {
+     "2": {
+      "n": 64648,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.09651408178519572,
+      "quantiles_50_90_99": [
+       24.62846142990357,
+       31.333857306761086,
+       36.92053886769697
+      ],
+      "pass_": true
+     },
+     "3": {
+      "n": 48354,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.0657431754668858,
+      "quantiles_50_90_99": [
+       24.10610626749822,
+       29.380301027780625,
+       33.69094241721157
+      ],
+      "pass_": true
+     },
+     "4": {
+      "n": 15802,
+      "n_runs_used_for_tau": 10,
+      "ks_vs_rest": 0.09743104815294712,
+      "quantiles_50_90_99": [
+       23.501785844288094,
+       28.821048521505606,
+       32.84355191732726
+      ],
+      "pass_": true
+     }
+    },
+    "pass": true
+   },
+   "itcid_linear_base": {
+    "tau": 0.23576588149534133,
+    "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+    "n_within_pairs": 201,
+    "within_ks_quantiles_10_50_90": [
+     0.04329947022578484,
+     0.09959667831467534,
+     0.20913808856025828
+    ],
+    "strata": {
+     "2": {
+      "n": 64368,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.207167774255417,
+      "quantiles_50_90_99": [
+       -5.3558840974369275,
+       -1.855589485614512,
+       1.7773100662106802
+      ],
+      "pass_": true
+     },
+     "3": {
+      "n": 47121,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.1873912815752936,
+      "quantiles_50_90_99": [
+       -4.177763125735341,
+       -1.4820272907980492,
+       1.0924620825578417
+      ],
+      "pass_": true
+     },
+     "4": {
+      "n": 15534,
+      "n_runs_used_for_tau": 10,
+      "ks_vs_rest": 0.09385848197256796,
+      "quantiles_50_90_99": [
+       -4.541366364102695,
+       -2.0685289055100946,
+       0.2977636636310868
+      ],
+      "pass_": true
+     }
+    },
+    "pass": true
+   },
+   "itcid_gbm_base": {
+    "tau": 0.22017524410508982,
+    "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+    "n_within_pairs": 201,
+    "within_ks_quantiles_10_50_90": [
+     0.04333744390054045,
+     0.0897561199791661,
+     0.19468553060102356
+    ],
+    "strata": {
+     "2": {
+      "n": 64670,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.12017700262453401,
+      "quantiles_50_90_99": [
+       -8.247952435795195,
+       -5.109215346435592,
+       2.5412344352660696
+      ],
+      "pass_": true
+     },
+     "3": {
+      "n": 48340,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.07009538481295846,
+      "quantiles_50_90_99": [
+       -7.992288634068155,
+       -5.793778813045831,
+       -0.5655391204312133
+      ],
+      "pass_": true
+     },
+     "4": {
+      "n": 15775,
+      "n_runs_used_for_tau": 10,
+      "ks_vs_rest": 0.12893435653773677,
+      "quantiles_50_90_99": [
+       -7.837401814559476,
+       -5.891414453262425,
+       -1.8515399497024803
+      ],
+      "pass_": true
+     }
+    },
+    "pass": true
+   },
+   "itcid_linear_pred": {
+    "tau": 0.3242494572134462,
+    "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+    "n_within_pairs": 201,
+    "within_ks_quantiles_10_50_90": [
+     0.05840012870419231,
+     0.14131270704437318,
+     0.283623161594672
+    ],
+    "strata": {
+     "2": {
+      "n": 63521,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.2468227203633555,
+      "quantiles_50_90_99": [
+       -5.546862775200789,
+       -2.2768580546724024,
+       1.044572933873472
+      ],
+      "pass_": true
+     },
+     "3": {
+      "n": 46136,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.17783231696777124,
+      "quantiles_50_90_99": [
+       -4.24236032577104,
+       -1.6903559983068508,
+       0.5305788428664323
+      ],
+      "pass_": true
+     },
+     "4": {
+      "n": 15347,
+      "n_runs_used_for_tau": 10,
+      "ks_vs_rest": 0.19506012819269924,
+      "quantiles_50_90_99": [
+       -3.9281280804436216,
+       -1.5412916369714775,
+       0.25050346583517524
+      ],
+      "pass_": true
+     }
+    },
+    "pass": true
+   },
+   "itcid_gbm_pred": {
+    "tau": 0.3993882578217841,
+    "tau_rule": "95.0th pct of within-stratum between-run KS (runs with >= 200 decoys)",
+    "n_within_pairs": 201,
+    "within_ks_quantiles_10_50_90": [
+     0.05087091411217348,
+     0.1338842975206611,
+     0.31292344786015674
+    ],
+    "strata": {
+     "2": {
+      "n": 64492,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.12777419914990118,
+      "quantiles_50_90_99": [
+       -8.557333048959073,
+       -4.383132776431168,
+       1.6971024161089936
+      ],
+      "pass_": true
+     },
+     "3": {
+      "n": 47636,
+      "n_runs_used_for_tau": 13,
+      "ks_vs_rest": 0.06942974523203299,
+      "quantiles_50_90_99": [
+       -8.18951029767327,
+       -5.250140556340199,
+       -0.8911111936115291
+      ],
+      "pass_": true
+     },
+     "4": {
+      "n": 15712,
+      "n_runs_used_for_tau": 10,
+      "ks_vs_rest": 0.15489466068455954,
+      "quantiles_50_90_99": [
+       -7.876853979140454,
+       -5.244258715508337,
+       -1.427958503014898
+      ],
+      "pass_": true
+     }
+    },
+    "pass": true
+   }
+  },
+  "G0": {
+   "wall_s": 133.94773737573996,
+   "LF_D10cf": {
+    "store": "/tmp/vulcan_m5lc/store/Control_HEK_SEC_020118_20b.vspec.arrow",
+    "n_psms": 162420,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": true,
+     "pred_sa_sqrt": true,
+     "pred_pearson": true,
+     "pred_entropy": true,
+     "pred_frac_obs": true,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "features_max_abs_diff": {
+     "pred_sa": 0.0,
+     "pred_sa_sqrt": 0.0,
+     "pred_pearson": 0.0,
+     "pred_entropy": 0.0,
+     "pred_frac_obs": 0.0,
+     "pred_top6": 0.0,
+     "pred_obs_tic": 0.0,
+     "rt_abs_resid": 0.0,
+     "rt_resid_z": 0.0,
+     "pred_missing": 0.0,
+     "rt_pred": 0.0
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": true,
+     "itcid_gbm_pred": true
+    },
+    "pass": true
+   },
+   "TMT_D4": {
+    "store": "/tmp/vulcan_m6/d4/store/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+    "n_psms": 77247,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": false,
+     "pred_sa_sqrt": false,
+     "pred_pearson": false,
+     "pred_entropy": false,
+     "pred_frac_obs": false,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "features_max_abs_diff": {
+     "pred_sa": 1.341104507446289e-05,
+     "pred_sa_sqrt": 1.609325408935547e-05,
+     "pred_pearson": 2.7045607566833496e-05,
+     "pred_entropy": 2.7477741241455078e-05,
+     "pred_frac_obs": 2.9101967811584473e-05,
+     "pred_top6": 0.0,
+     "pred_obs_tic": 0.0,
+     "rt_abs_resid": 0.0,
+     "rt_resid_z": 0.0,
+     "pred_missing": 0.0,
+     "rt_pred": 0.0
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": false,
+     "itcid_gbm_pred": true
+    },
+    "pass": false
+   },
+   "pass": false
+  },
+  "G0_shared_prediction_cache": {
+   "LF_D10cf": {
+    "store": "/tmp/vulcan_m5lc/store/Control_HEK_SEC_020118_20b.vspec.arrow",
+    "n_psms": 162420,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": true,
+     "pred_sa_sqrt": true,
+     "pred_pearson": true,
+     "pred_entropy": true,
+     "pred_frac_obs": true,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "features_max_abs_diff": {
+     "pred_sa": 0.0,
+     "pred_sa_sqrt": 0.0,
+     "pred_pearson": 0.0,
+     "pred_entropy": 0.0,
+     "pred_frac_obs": 0.0,
+     "pred_top6": 0.0,
+     "pred_obs_tic": 0.0,
+     "rt_abs_resid": 0.0,
+     "rt_resid_z": 0.0,
+     "pred_missing": 0.0,
+     "rt_pred": 0.0
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": true,
+     "itcid_gbm_pred": true
+    },
+    "pass": true
+   },
+   "TMT_D4": {
+    "store": "/tmp/vulcan_m6/d4/store/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+    "n_psms": 77247,
+    "psm_tables_bit_identical": true,
+    "features_bit_identical": {
+     "pred_sa": true,
+     "pred_sa_sqrt": true,
+     "pred_pearson": true,
+     "pred_entropy": true,
+     "pred_frac_obs": true,
+     "pred_top6": true,
+     "pred_obs_tic": true,
+     "rt_abs_resid": true,
+     "rt_resid_z": true,
+     "pred_missing": true,
+     "rt_pred": true
+    },
+    "features_max_abs_diff": {
+     "pred_sa": 0.0,
+     "pred_sa_sqrt": 0.0,
+     "pred_pearson": 0.0,
+     "pred_entropy": 0.0,
+     "pred_frac_obs": 0.0,
+     "pred_top6": 0.0,
+     "pred_obs_tic": 0.0,
+     "rt_abs_resid": 0.0,
+     "rt_resid_z": 0.0,
+     "pred_missing": 0.0,
+     "rt_pred": 0.0
+    },
+    "static_scores_bit_identical": {
+     "itcid_linear_base": true,
+     "itcid_gbm_base": true,
+     "itcid_linear_pred": true,
+     "itcid_gbm_pred": true
+    },
+    "pass": true
+   },
+   "pass": true,
+   "wall_s": 313.25417878106236
+  },
+  "G2_G5": {
+   "wall_s": 296.4078111969866,
+   "class": "IT-CID",
+   "n_null_competitions": 504807,
+   "n_offset": 449105,
+   "n_species_yeast": 55702,
+   "homolog_filter_spectra_excluded": 10731,
+   "p_target_win_fixed": 0.5015976402862876,
+   "budget_g2_sample_size": 107570,
+   "scorers": {
+    "itcid_linear_base": {
+     "g2": {
+      "conf_one_sided": 0.95,
+      "strata": {
+       "0": {
+        "overall": {
+         "n": 504807,
+         "diff": 0.0003090289952397649,
+         "se": 0.0006834444018349929,
+         "ucb": 0.0014331949984177322,
+         "margin": 0.01,
+         "pass": true,
+         "p_fixed": 0.5015976402862876,
+         "p_learned": 0.5019066692815274
+        },
+        "top": {
+         "n": 50481,
+         "diff": -0.0031695093203383453,
+         "se": 0.001794876276535274,
+         "ucb": -0.0002172005669501464,
+         "margin": 0.02,
+         "pass": true,
+         "p_fixed": 0.5103108100077257,
+         "p_learned": 0.5071413006873874
+        },
+        "pass": true
+       }
+      },
+      "pass": true,
+      "fires": false
+     },
+     "g2_pass_by_source": {
+      "offset": true,
+      "yeast": true
+     },
+     "g5_leak_auc": {
+      "auc": 0.500565057149033,
+      "alarm": false
+     },
+     "g5_gate": {
+      "all": {
+       "auc": 0.500565057149033,
+       "alarm": false,
+       "se": 0.0008126046691302512,
+       "ci": [
+        0.4989723812638686,
+        0.5021577330341974
+       ],
+       "n_target": 253366,
+       "n_decoy": 251441
+      },
+      "top_decile": {
+       "auc": 0.5039029384758814,
+       "alarm": false,
+       "se": 0.0025696114222144876,
+       "ci": [
+        0.4988665926340783,
+        0.5089392843176845
+       ],
+       "n_target": 25432,
+       "n_decoy": 25049
+      },
+      "alarm_at": 0.55,
+      "pass": true
+     },
+     "g5_fixed_reference": {
+      "auc": 0.5026105059920708,
+      "alarm": false
+     },
+     "frac_winner_changed": 0.235793085278136
+    },
+    "itcid_gbm_base": {
+     "g2": {
+      "conf_one_sided": 0.95,
+      "strata": {
+       "0": {
+        "overall": {
+         "n": 504807,
+         "diff": 0.0003011051748490017,
+         "se": 0.000327942366057299,
+         "ucb": 0.0008405223650893973,
+         "margin": 0.01,
+         "pass": true,
+         "p_fixed": 0.5015976402862876,
+         "p_learned": 0.5018987454611367
+        },
+        "top": {
+         "n": 50481,
+         "diff": 0.0003763792317901785,
+         "se": 0.0003175681005764138,
+         "ucb": 0.0008987322738273826,
+         "margin": 0.02,
+         "pass": true,
+         "p_fixed": 0.5103108100077257,
+         "p_learned": 0.5106871892395158
+        },
+        "pass": true
+       }
+      },
+      "pass": true,
+      "fires": false
+     },
+     "g2_pass_by_source": {
+      "offset": true,
+      "yeast": true
+     },
+     "g5_leak_auc": {
+      "auc": 0.5008587430823929,
+      "alarm": false
+     },
+     "g5_gate": {
+      "all": {
+       "auc": 0.5008587430823929,
+       "alarm": false,
+       "se": 0.0008126031901917475,
+       "ci": [
+        0.4992660700958947,
+        0.502451416068891
+       ],
+       "n_target": 253362,
+       "n_decoy": 251445
+      },
+      "top_decile": {
+       "auc": 0.5067831763589036,
+       "alarm": false,
+       "se": 0.00256922989764336,
+       "ci": [
+        0.5017475782915191,
+        0.5118187744262881
+       ],
+       "n_target": 25441,
+       "n_decoy": 25046
+      },
+      "alarm_at": 0.55,
+      "pass": true
+     },
+     "g5_fixed_reference": {
+      "auc": 0.5026105059920708,
+      "alarm": false
+     },
+     "frac_winner_changed": 0.05429005540731408
+    },
+    "itcid_linear_pred": {
+     "g2": {
+      "conf_one_sided": 0.95,
+      "strata": {
+       "0": {
+        "overall": {
+         "n": 504807,
+         "diff": -0.001786821498117102,
+         "se": 0.0006471043836644929,
+         "ucb": -0.0007224295056303641,
+         "margin": 0.01,
+         "pass": true,
+         "p_fixed": 0.5015976402862876,
+         "p_learned": 0.4998108187881705
+        },
+        "top": {
+         "n": 50481,
+         "diff": -0.004536360214734256,
+         "se": 0.0019263233647679099,
+         "ucb": -0.0013678402415143957,
+         "margin": 0.02,
+         "pass": true,
+         "p_fixed": 0.5103108100077257,
+         "p_learned": 0.5057744497929915
+        },
+        "pass": true
+       }
+      },
+      "pass": true,
+      "fires": false
+     },
+     "g2_pass_by_source": {
+      "offset": true,
+      "yeast": true
+     },
+     "g5_leak_auc": {
+      "auc": 0.5012536966419904,
+      "alarm": false
+     },
+     "g5_gate": {
+      "all": {
+       "auc": 0.5012536966419904,
+       "alarm": false,
+       "se": 0.0008125977554361315,
+       "ci": [
+        0.4996610343074175,
+        0.5028463589765633
+       ],
+       "n_target": 252308,
+       "n_decoy": 252499
+      },
+      "top_decile": {
+       "auc": 0.5022212725787545,
+       "alarm": false,
+       "se": 0.0025696500853478288,
+       "ci": [
+        0.4971848509586025,
+        0.5072576941989065
+       ],
+       "n_target": 25281,
+       "n_decoy": 25200
+      },
+      "alarm_at": 0.55,
+      "pass": true
+     },
+     "g5_fixed_reference": {
+      "auc": 0.5026105059920708,
+      "alarm": false
+     },
+     "frac_winner_changed": 0.21138771847458535
+    },
+    "itcid_gbm_pred": {
+     "g2": {
+      "conf_one_sided": 0.95,
+      "strata": {
+       "0": {
+        "overall": {
+         "n": 504807,
+         "diff": 7.923820390763202e-06,
+         "se": 2.5522843895068528e-05,
+         "ucb": 4.9905162741682907e-05,
+         "margin": 0.01,
+         "pass": true,
+         "p_fixed": 0.5015976402862876,
+         "p_learned": 0.5016055641066784
+        },
+        "top": {
+         "n": 50481,
+         "diff": 0.00017828489926903192,
+         "se": 6.569631609349052e-05,
+         "ucb": 0.00028634572307276017,
+         "margin": 0.02,
+         "pass": true,
+         "p_fixed": 0.5103108100077257,
+         "p_learned": 0.5104890949069947
+        },
+        "pass": true
+       }
+      },
+      "pass": true,
+      "fires": false
+     },
+     "g2_pass_by_source": {
+      "offset": true,
+      "yeast": true
+     },
+     "g5_leak_auc": {
+      "auc": 0.5007559860117768,
+      "alarm": false
+     },
+     "g5_gate": {
+      "all": {
+       "auc": 0.5007559860117768,
+       "alarm": false,
+       "se": 0.000812602301563485,
+       "ci": [
+        0.4991633147669581,
+        0.5023486572565956
+       ],
+       "n_target": 253214,
+       "n_decoy": 251593
+      },
+      "top_decile": {
+       "auc": 0.5077472582482371,
+       "alarm": false,
+       "se": 0.0025692728644617783,
+       "ci": [
+        0.502711575967436,
+        0.5127829405290382
+       ],
+       "n_target": 25359,
+       "n_decoy": 25122
+      },
+      "alarm_at": 0.55,
+      "pass": true
+     },
+     "g5_fixed_reference": {
+      "auc": 0.5026105059920708,
+      "alarm": false
+     },
+     "frac_winner_changed": 0.0003288385462166729
+    }
+   }
+  }
+ },
+ "check_da": {
+  "store": "/tmp/vulcan_m6/d4/store/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+  "search_s_bin20": 0.10304722702130675,
+  "k1_gpu_ms_bin20": 34.48342514038086,
+  "search_s_bin200": 0.07854188699275255,
+  "k1_gpu_ms_bin200": 10.494208335876465,
+  "k1_vs_brute": {
+   "n": 2000000,
+   "mismatch": 0
+  },
+  "topk_recall_best_exhaustive": {
+   "T": 1.0,
+   "D": 0.997698504027618
+  },
+  "topk_recall_n": {
+   "T": 1382,
+   "D": 869
+  },
+  "bin20_vs_bin200_identical": true,
+  "sage_oracle": {
+   "n_common_scans": 16938,
+   "same_top1_peptide": 0.5423898925492975,
+   "n_sage_target_psm_q_le_1pct": 5048,
+   "same_top1_peptide_sage_q_le_1pct": 0.9966323296354992,
+   "median_hyperscore_diff": 0.0
+  }
+ },
+ "koina_repeat": {
+  "human_tmt": {
+   "n": 20000,
+   "n_ms2_differ": 0,
+   "max_abs_diff": 0.0,
+   "rt_identical": true
+  },
+  "human": {
+   "n": 20000,
+   "n_ms2_differ": 0,
+   "max_abs_diff": 0.0,
+   "rt_identical": true
+  }
+ },
+ "runtime": {
+  "bench_locked_warm_cache": {
+   "D4": {
+    "median": {
+     "load_s": 0.15496398345567286,
+     "search_s": 0.10620203567668796,
+     "features_s": 0.6241916809231043,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.03279629023745656,
+     "total_s": 0.9193543496076018,
+     "total_core_s": 0.9093499999999999,
+     "n_ms2": 20457.0
+    },
+    "first_run_incl_cache_load": {
+     "load_s": 0.1762917758896947,
+     "search_s": 0.09538791375234723,
+     "features_s": 10.611581821925938,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 1.0974797140806913,
+     "total_s": 11.980750918854028,
+     "total_core_s": 3.2551750000000013,
+     "n_ms2": 18089,
+     "run": "dq_00096_11cell_90min_sps_A3"
+    },
+    "setup_s_unlocked": 53.95911528263241
+   },
+   "D10cf": {
+    "median": {
+     "load_s": 0.31629596115089953,
+     "search_s": 0.01857032859697938,
+     "features_s": 0.10154736344702542,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.002218625508248806,
+     "total_s": 0.43310519913211465,
+     "total_core_s": 0.19501100000000093,
+     "n_ms2": 3395.0
+    },
+    "first_run_incl_cache_load": {
+     "load_s": 0.3196223513223231,
+     "search_s": 0.020302664954215288,
+     "features_s": 12.367591196671128,
+     "predict_s_in_features": 0.0,
+     "model_apply_s": 0.0033240532502532005,
+     "total_s": 12.710844993125647,
+     "total_core_s": 10.343151999999996,
+     "n_ms2": 3782,
+     "run": "Control_HEK_SEC_020118_11b"
+    },
+    "setup_s_unlocked": 0.7794755403883755
+   }
+  },
+  "first_contact_unlocked": {
+   "D4": {
+    "n_runs": 12,
+    "features_total_s_cold": 234.82203746913,
+    "of_which_koina_predict_s": 196.736207424663,
+    "search_wall_s": 6.580534771550447,
+    "search_core_s": 4.600296000000001
+   },
+   "D10cf": {
+    "n_runs": 29,
+    "features_total_s_cold": 563.2593129267916,
+    "of_which_koina_predict_s": 506.0618527191691,
+    "search_wall_s": 32.01592778135091,
+    "search_core_s": 24.23301000000001
+   }
+  },
+  "comparators_unlocked_16thr": {
+   "3c_sage:D10cf:prod@t16": {
+    "wall_s": 438.488,
+    "core_s": 4138.38,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D10cf:prod": {
+    "wall_s": 299.188,
+    "core_s": 527.98,
+    "rc": 0
+   },
+   "3c_sage:D10cf:P2001@t16": {
+    "wall_s": 803.056,
+    "core_s": 7682.97,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D10cf:P2001": {
+    "wall_s": 206.337,
+    "core_s": 485.84000000000003,
+    "rc": 0
+   },
+   "3c_sage:D10cf:P2002@t16": {
+    "wall_s": 606.189,
+    "core_s": 7421.65,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D10cf:P2002": {
+    "wall_s": 224.121,
+    "core_s": 423.74,
+    "rc": 0
+   },
+   "3c_sage:D10cf:P2003@t16": {
+    "wall_s": 915.697,
+    "core_s": 8884.95,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D10cf:P2003": {
+    "wall_s": 272.809,
+    "core_s": 412.68,
+    "rc": 0
+   },
+   "3c_sage:D10cf:C@t16": {
+    "wall_s": 607.196,
+    "core_s": 7641.02,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D10cf:C": {
+    "wall_s": 158.918,
+    "core_s": 337.77,
+    "rc": 0
+   },
+   "3c_sage:D4:prod@t16": {
+    "wall_s": 67.798,
+    "core_s": 642.82,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D4:prod": {
+    "wall_s": 34.249,
+    "core_s": 79.01,
+    "rc": 0
+   },
+   "3c_sage:D4:P2001@t16": {
+    "wall_s": 103.762,
+    "core_s": 1120.3700000000001,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D4:P2001": {
+    "wall_s": 35.422,
+    "core_s": 85.10000000000001,
+    "rc": 0
+   },
+   "3c_sage:D4:P2002@t16": {
+    "wall_s": 122.556,
+    "core_s": 1372.86,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D4:P2002": {
+    "wall_s": 36.57,
+    "core_s": 82.86,
+    "rc": 0
+   },
+   "3c_sage:D4:P2003@t16": {
+    "wall_s": 112.758,
+    "core_s": 1341.2,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D4:P2003": {
+    "wall_s": 38.236,
+    "core_s": 86.31,
+    "rc": 0
+   },
+   "3c_sage:D4:C@t16": {
+    "wall_s": 177.153,
+    "core_s": 1558.7,
+    "rc": 0
+   },
+   "3c_mokapot:sage:D4:C": {
+    "wall_s": 48.916,
+    "core_s": 89.77,
+    "rc": 0
+   }
+  }
+ }
+}

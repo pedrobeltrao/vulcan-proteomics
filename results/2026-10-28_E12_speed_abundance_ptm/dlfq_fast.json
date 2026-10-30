@@ -1,0 +1,341 @@
+{
+ "runs": [
+  {
+   "input": "D9",
+   "cfg": "ref",
+   "rep": 0,
+   "wall_s": 22.23891015490517,
+   "core_s": 22.198512,
+   "lock_wait_s": 6.211921572685242e-07,
+   "locked": false,
+   "loadavg_before": [
+    10.12255859375,
+    15.806640625,
+    16.37548828125
+   ],
+   "loadavg_after": [
+    11.451171875,
+    15.72607421875,
+    16.3349609375
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D9",
+   "cfg": "fast",
+   "rep": 0,
+   "wall_s": 2.909758349414915,
+   "core_s": 2.902958999999999,
+   "lock_wait_s": 2.1979212760925293e-07,
+   "locked": false,
+   "loadavg_before": [
+    11.451171875,
+    15.72607421875,
+    16.3349609375
+   ],
+   "loadavg_after": [
+    11.4150390625,
+    15.6474609375,
+    16.30615234375
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D9",
+   "cfg": "fast_8",
+   "rep": 0,
+   "wall_s": 1.1929593798704445,
+   "core_s": 4.784941,
+   "lock_wait_s": 3.5995617508888245e-07,
+   "locked": false,
+   "loadavg_before": [
+    11.4150390625,
+    15.6474609375,
+    16.30615234375
+   ],
+   "loadavg_after": [
+    11.4150390625,
+    15.6474609375,
+    16.30615234375
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D9",
+   "cfg": "ref",
+   "rep": 1,
+   "wall_s": 21.115748641081154,
+   "core_s": 21.085418,
+   "lock_wait_s": 9.553972631692886e-06,
+   "locked": true,
+   "loadavg_before": [
+    11.4150390625,
+    15.6474609375,
+    16.30615234375
+   ],
+   "loadavg_after": [
+    10.609375,
+    15.171875,
+    16.1337890625
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D9",
+   "cfg": "fast",
+   "rep": 1,
+   "wall_s": 2.932048197835684,
+   "core_s": 2.923924999999997,
+   "lock_wait_s": 1.2557953596115112e-05,
+   "locked": true,
+   "loadavg_before": [
+    10.609375,
+    15.171875,
+    16.1337890625
+   ],
+   "loadavg_after": [
+    10.88134765625,
+    15.15234375,
+    16.1220703125
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D9",
+   "cfg": "fast_8",
+   "rep": 1,
+   "wall_s": 1.1132320491597056,
+   "core_s": 4.601524000000005,
+   "lock_wait_s": 3.584660589694977e-06,
+   "locked": true,
+   "loadavg_before": [
+    10.88134765625,
+    15.15234375,
+    16.1220703125
+   ],
+   "loadavg_after": [
+    10.88134765625,
+    15.15234375,
+    16.1220703125
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "3f12ddce8cae13960c37c477a91f5282d1975e8510a4b782ff8c8fda607cee06",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "3c1814f7566c89a7d11e8018c7c2825dcbb6b6b698afb7b4f9d33c1cc679c8a9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "ref",
+   "rep": 0,
+   "wall_s": 23.881991072092205,
+   "core_s": 23.850583999999998,
+   "lock_wait_s": 3.310851752758026e-07,
+   "locked": false,
+   "loadavg_before": [
+    10.88134765625,
+    15.15234375,
+    16.1220703125
+   ],
+   "loadavg_after": [
+    9.59814453125,
+    14.5107421875,
+    15.8837890625
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "fast",
+   "rep": 0,
+   "wall_s": 3.340714513324201,
+   "core_s": 3.331345000000013,
+   "lock_wait_s": 2.998858690261841e-07,
+   "locked": false,
+   "loadavg_before": [
+    9.59814453125,
+    14.5107421875,
+    15.8837890625
+   ],
+   "loadavg_after": [
+    9.59814453125,
+    14.5107421875,
+    15.8837890625
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "fast_8",
+   "rep": 0,
+   "wall_s": 1.2899346631020308,
+   "core_s": 5.019396999999984,
+   "lock_wait_s": 3.511086106300354e-07,
+   "locked": false,
+   "loadavg_before": [
+    9.59814453125,
+    14.5107421875,
+    15.8837890625
+   ],
+   "loadavg_after": [
+    9.3095703125,
+    14.369140625,
+    15.83056640625
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "ref",
+   "rep": 1,
+   "wall_s": 23.777476869989187,
+   "core_s": 23.735298,
+   "lock_wait_s": 7.751863449811935e-06,
+   "locked": true,
+   "loadavg_before": [
+    9.3095703125,
+    14.369140625,
+    15.83056640625
+   ],
+   "loadavg_after": [
+    8.294921875,
+    13.81005859375,
+    15.61474609375
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "fast",
+   "rep": 1,
+   "wall_s": 3.3617386212572455,
+   "core_s": 3.3540680000000123,
+   "lock_wait_s": 62.25757014518604,
+   "locked": true,
+   "loadavg_before": [
+    17.98974609375,
+    15.828125,
+    16.20703125
+   ],
+   "loadavg_after": [
+    17.98974609375,
+    15.828125,
+    16.20703125
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  },
+  {
+   "input": "D11",
+   "cfg": "fast_8",
+   "rep": 1,
+   "wall_s": 1.2809546859934926,
+   "core_s": 5.084217999999993,
+   "lock_wait_s": 3.606081008911133e-06,
+   "locked": true,
+   "loadavg_before": [
+    17.98974609375,
+    15.828125,
+    16.20703125
+   ],
+   "loadavg_after": [
+    17.669921875,
+    15.79736328125,
+    16.19482421875
+   ],
+   "sha256": {
+    "precursors.aq_reformat.tsv.ion_intensities.tsv": "6f099c3e85c139e2d4af8a17523b789d1dacd7a55daa3b40de5ed10f846cc16a",
+    "precursors.aq_reformat.tsv.protein_intensities.tsv": "87f96bcb8840e40ffd70c60c91c9c264717de8bafe38abb66d075e77ea5c99d9"
+   }
+  }
+ ],
+ "equal_to_ref_rep0": {
+  "D9": {
+   "ref_rep0": true,
+   "fast_rep0": true,
+   "fast_8_rep0": true,
+   "ref_rep1": true,
+   "fast_rep1": true,
+   "fast_8_rep1": true
+  },
+  "D11": {
+   "ref_rep0": true,
+   "fast_rep0": true,
+   "fast_8_rep0": true,
+   "ref_rep1": true,
+   "fast_rep1": true,
+   "fast_8_rep1": true
+  }
+ },
+ "all_equal": true,
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "note": "directLFQ 0.3.3 run_lfq defaults; output files byte-compared (sha256); rep 1 timed under the lock"
+}

@@ -1,0 +1,50 @@
+{
+ "D1": {
+  "ours_hyperscore": {
+   "n_psms": 11502,
+   "peptides_at_1pct": 5758,
+   "peptidoforms_unique_seq_at_1pct": 5634
+  },
+  "sage_hyperscore": {
+   "n_psms": 11501,
+   "peptides_at_1pct": 5758
+  },
+  "sage_own_q": {
+   "peptides_at_1pct": 6037,
+   "psms_spectrum_q_at_1pct": 10864,
+   "score": "Sage LDA discriminant"
+  },
+  "ours_hyperscore_entrapment_E2001": {
+   "targets_plus_entrapments_at_1pct": 5703,
+   "N_T": 5553,
+   "N_E": 32,
+   "paired_FDP_hat": 0.010922112802148613,
+   "lower_bound": 0.005729632945389436,
+   "note": "single entrapment seed, single decoy seed, no CI: dev diagnostic only (DESIGN \u00a76.3)"
+  }
+ },
+ "D0": {
+  "ours_hyperscore": {
+   "n_psms": 73112,
+   "peptides_at_1pct": 19601,
+   "peptidoforms_unique_seq_at_1pct": 18613
+  },
+  "sage_hyperscore": {
+   "n_psms": 72982,
+   "peptides_at_1pct": 19605
+  },
+  "sage_own_q": {
+   "peptides_at_1pct": 23637,
+   "psms_spectrum_q_at_1pct": 43050,
+   "score": "Sage LDA discriminant"
+  },
+  "ours_hyperscore_entrapment_E2001": {
+   "targets_plus_entrapments_at_1pct": 18584,
+   "N_T": 17567,
+   "N_E": 83,
+   "paired_FDP_hat": 0.009405099150141642,
+   "lower_bound": 0.004702549575070821,
+   "note": "single entrapment seed, single decoy seed, no CI: dev diagnostic only (DESIGN \u00a76.3)"
+  }
+ }
+}

@@ -1,0 +1,4698 @@
+{
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": "12.9",
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "dev_only": true,
+ "sealed_touched": false,
+ "lip": {
+  "index": {
+   "n_targets": 11508035,
+   "n_peptidoforms": 33256558,
+   "n_peptidoforms_by_family": {
+    "T": 16628279,
+    "E": 0,
+    "DT": 16628279,
+    "DE": 0
+   },
+   "timing_s": {
+    "digest_s": 4.196066340897232,
+    "families_s": 29.02170852618292,
+    "expand_s": 50.08069603797048,
+    "arrays_s": 139.52404548833147,
+    "total_s": 279.4761480358429
+   },
+   "semi": {
+    "version": "lip-semi-0.1",
+    "digest_s": 20.68316732114181,
+    "n_targets_by_class": {
+     "specific": 682407,
+     "n_semi": 5418016,
+     "c_semi": 5407612
+    }
+   },
+   "n_forward_without_decoy": 315,
+   "n_decoy_shuffled": 11846,
+   "content_hash": "adb0660b805f4f31"
+  },
+  "search": {
+   "setup": {
+    "python_import_s": 89.64517533266917,
+    "cuda_init_s": 2.809455845039338,
+    "l1_load_s": 1.5565512590110302,
+    "gpu_index_build_s": 6.275616101920605,
+    "gpu_index_bytes": 7132931084,
+    "n_postings": 835854913,
+    "n_slices": 1,
+    "n_peptidoforms": 33256558,
+    "cpu_core_s_setup_total": 7.118242
+   },
+   "gpu_max_mem_bytes": 42549661696,
+   "params": {
+    "precursor_ppm": [
+     -10.0,
+     10.0
+    ],
+    "fragment_ppm": [
+     -20.0,
+     20.0
+    ],
+    "isotope_errors": [
+     0,
+     2
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "max_peaks": 150,
+    "min_peaks": 15,
+    "fragment_min_mz": 150.0,
+    "fragment_max_mz": 2000.0,
+    "min_ion_index": 2,
+    "max_fragment_charge": 1,
+    "min_matched_peaks": 4,
+    "topk": 500,
+    "k1_threshold": 1,
+    "pair_closure": true,
+    "report_psms": 1,
+    "peak_mode": "global",
+    "window_th": 100.0,
+    "window_k": 15,
+    "chunk_size": 8192,
+    "bin_ppm": 20.0,
+    "tile": 1024,
+    "k2_threads": 128,
+    "max_slice_entries": 2147483647
+   },
+   "n_runs": 12,
+   "warm_per_run_wall_s_median": 0.9067796722520143,
+   "warm_per_run_search_s_median": 0.6077485242858529,
+   "warm_per_run_core_s_median": 0.9061050000000037,
+   "warm_total_wall_s": 11.125343287363648,
+   "n_spectra_median": 66518.5,
+   "process_wall_s": 128.1278530349955,
+   "hw": {
+    "hostname": "gpu-node",
+    "cpu_model": "AMD EPYC 9354 32-Core Processor",
+    "os_cpu_count": 64,
+    "affinity_count": 32,
+    "n_threads": 32,
+    "VULCAN_THREADS": null,
+    "avx2": true,
+    "avx512": [
+     "avx512_bf16",
+     "avx512_bitalg",
+     "avx512_vbmi2",
+     "avx512_vnni",
+     "avx512_vpopcntdq",
+     "avx512bw",
+     "avx512cd",
+     "avx512dq",
+     "avx512f",
+     "avx512ifma",
+     "avx512vbmi",
+     "avx512vl"
+    ],
+    "ram_gb": 1503.3,
+    "cgroup_mem_limit_gb": null,
+    "kernel": "5.15.0-194-generic",
+    "python": "3.12.16",
+    "physical_cores_in_affinity": 32,
+    "sockets_in_affinity": 2,
+    "gpus": [
+     {
+      "name": "NVIDIA A100 80GB PCIe",
+      "mem_mib": 81920,
+      "compute_cap": "8.0"
+     }
+    ],
+    "driver": "580.178.04",
+    "cuda_driver": "13.0",
+    "nvcc": "12.9",
+    "torch_cuda": {
+     "torch": "2.14.1",
+     "cuda": "12.9",
+     "available": true
+    },
+    "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+   }
+  },
+  "scoring": {
+   "model": "static_gbm_pred",
+   "per_run_features_s_median": 2.2437714650295675,
+   "python_import_s": 4.840563350822777,
+   "model_load_s": 146.0325529910624
+  },
+  "ids_lip": {
+   "n_psm_winners": 349217,
+   "strata_counts": {
+    "0": 26722,
+    "1": 96309,
+    "2": 61230
+   },
+   "0.001": {
+    "peptidoforms": 24535,
+    "pooled_tdc_peptidoforms": 23520,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15328,
+      "score_threshold": 5.1361226295381766,
+      "decoy_pair_winners_above": 12,
+      "pooled_tdc_accepted": 14198,
+      "separate_tdc_accepted": 15414
+     },
+     "n_semi": {
+      "accepted": 5473,
+      "score_threshold": 6.823271616545121,
+      "decoy_pair_winners_above": 9,
+      "pooled_tdc_accepted": 5746,
+      "separate_tdc_accepted": 5128
+     },
+     "c_semi": {
+      "accepted": 3734,
+      "score_threshold": 6.160668759938129,
+      "decoy_pair_winners_above": 2,
+      "pooled_tdc_accepted": 3576,
+      "separate_tdc_accepted": 3734
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 26976,
+    "pooled_tdc_peptidoforms": 26858,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15906,
+      "score_threshold": 3.702760094074513,
+      "decoy_pair_winners_above": 58,
+      "pooled_tdc_accepted": 15667,
+      "separate_tdc_accepted": 16132
+     },
+     "n_semi": {
+      "accepted": 6611,
+      "score_threshold": 4.676131118862305,
+      "decoy_pair_winners_above": 160,
+      "pooled_tdc_accepted": 6687,
+      "separate_tdc_accepted": 6184
+     },
+     "c_semi": {
+      "accepted": 4459,
+      "score_threshold": 4.658938178331551,
+      "decoy_pair_winners_above": 48,
+      "pooled_tdc_accepted": 4504,
+      "separate_tdc_accepted": 4444
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 28753,
+    "pooled_tdc_peptidoforms": 28995,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15976,
+      "score_threshold": 3.314732073686016,
+      "decoy_pair_winners_above": 84,
+      "pooled_tdc_accepted": 16101,
+      "separate_tdc_accepted": 16909
+     },
+     "n_semi": {
+      "accepted": 8048,
+      "score_threshold": 2.2235202789052484,
+      "decoy_pair_winners_above": 1223,
+      "pooled_tdc_accepted": 7735,
+      "separate_tdc_accepted": 6994
+     },
+     "c_semi": {
+      "accepted": 4729,
+      "score_threshold": 3.810336270765764,
+      "decoy_pair_winners_above": 127,
+      "pooled_tdc_accepted": 5159,
+      "separate_tdc_accepted": 4956
+     }
+    }
+   }
+  },
+  "ids_trp": {
+   "n_psm_winners": 334234,
+   "strata_counts": {
+    "0": 29520,
+    "1": 86811,
+    "2": 36340
+   },
+   "0.001": {
+    "peptidoforms": 20034,
+    "pooled_tdc_peptidoforms": 18580,
+    "by_stratum": {
+     "specific": {
+      "accepted": 18978,
+      "score_threshold": 5.080681916162449,
+      "decoy_pair_winners_above": 16,
+      "pooled_tdc_accepted": 17023,
+      "separate_tdc_accepted": 19069
+     },
+     "n_semi": {
+      "accepted": 622,
+      "score_threshold": 8.276978671411028,
+      "decoy_pair_winners_above": 2,
+      "pooled_tdc_accepted": 985,
+      "separate_tdc_accepted": 0
+     },
+     "c_semi": {
+      "accepted": 434,
+      "score_threshold": 7.65353234775916,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 572,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 21743,
+    "pooled_tdc_peptidoforms": 21212,
+    "by_stratum": {
+     "specific": {
+      "accepted": 19798,
+      "score_threshold": 3.0174615966445253,
+      "decoy_pair_winners_above": 97,
+      "pooled_tdc_accepted": 19163,
+      "separate_tdc_accepted": 19985
+     },
+     "n_semi": {
+      "accepted": 1242,
+      "score_threshold": 5.2161454329744,
+      "decoy_pair_winners_above": 106,
+      "pooled_tdc_accepted": 1322,
+      "separate_tdc_accepted": 910
+     },
+     "c_semi": {
+      "accepted": 703,
+      "score_threshold": 5.1250758036435275,
+      "decoy_pair_winners_above": 10,
+      "pooled_tdc_accepted": 727,
+      "separate_tdc_accepted": 686
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 22844,
+    "pooled_tdc_peptidoforms": 22934,
+    "by_stratum": {
+     "specific": {
+      "accepted": 19798,
+      "score_threshold": 3.0174615966445253,
+      "decoy_pair_winners_above": 97,
+      "pooled_tdc_accepted": 19841,
+      "separate_tdc_accepted": 20955
+     },
+     "n_semi": {
+      "accepted": 2343,
+      "score_threshold": 2.5601558314019006,
+      "decoy_pair_winners_above": 1027,
+      "pooled_tdc_accepted": 2167,
+      "separate_tdc_accepted": 1146
+     },
+     "c_semi": {
+      "accepted": 703,
+      "score_threshold": 5.1250758036435275,
+      "decoy_pair_winners_above": 10,
+      "pooled_tdc_accepted": 926,
+      "separate_tdc_accepted": 761
+     }
+    }
+   }
+  },
+  "calls_all_identified_1pct": {
+   "lip": {
+    "tryptic": 15906,
+    "half_tryptic": 10928,
+    "bio_terminal": 142
+   },
+   "trp": {
+    "tryptic": 19798,
+    "half_tryptic": 1779,
+    "bio_terminal": 166
+   }
+  },
+  "quant": {
+   "groups": {
+    "LiP": {
+     "runs": [
+      "LM2480_DDA",
+      "LM2481_DDA",
+      "LM2492_DDA",
+      "LM2494_DDA",
+      "LM2497_DDA",
+      "LM2498_DDA"
+     ],
+     "linking": {
+      "LM2480_DDA": {
+       "ppm_offset": -0.8329348036515151,
+       "ppm_sd": 0.5028617957160385,
+       "ppm_tol": 3.0,
+       "n_psms": 21529,
+       "linked_hyp": 17582,
+       "linked_targeted": 227,
+       "unlinked": 3720
+      },
+      "LM2481_DDA": {
+       "ppm_offset": -0.6103684164511637,
+       "ppm_sd": 0.5128457306618939,
+       "ppm_tol": 3.0,
+       "n_psms": 23591,
+       "linked_hyp": 19325,
+       "linked_targeted": 255,
+       "unlinked": 4011
+      },
+      "LM2492_DDA": {
+       "ppm_offset": -1.096887454940106,
+       "ppm_sd": 0.4449233116852852,
+       "ppm_tol": 3.0,
+       "n_psms": 16915,
+       "linked_hyp": 13926,
+       "linked_targeted": 211,
+       "unlinked": 2778
+      },
+      "LM2494_DDA": {
+       "ppm_offset": -1.0506961012257636,
+       "ppm_sd": 0.5182629937706702,
+       "ppm_tol": 3.0,
+       "n_psms": 17897,
+       "linked_hyp": 14710,
+       "linked_targeted": 197,
+       "unlinked": 2990
+      },
+      "LM2497_DDA": {
+       "ppm_offset": -1.5220422744999347,
+       "ppm_sd": 0.47165055560648084,
+       "ppm_tol": 3.0,
+       "n_psms": 18057,
+       "linked_hyp": 14800,
+       "linked_targeted": 171,
+       "unlinked": 3086
+      },
+      "LM2498_DDA": {
+       "ppm_offset": -1.486517303637931,
+       "ppm_sd": 0.5694057622429564,
+       "ppm_tol": 3.0,
+       "n_psms": 17243,
+       "linked_hyp": 14058,
+       "linked_targeted": 214,
+       "unlinked": 2971
+      }
+     },
+     "alignment": {
+      "LM2480_DDA": {
+       "n_anchors": 15347,
+       "resid_sd_min": 0.07732696219565323,
+       "n_knots": 30
+      },
+      "LM2481_DDA": {
+       "n_anchors": 17247,
+       "resid_sd_min": 0.04311704038137554,
+       "n_knots": 30
+      },
+      "LM2492_DDA": {
+       "n_anchors": 12473,
+       "resid_sd_min": 0.06716776633993896,
+       "n_knots": 30
+      },
+      "LM2494_DDA": {
+       "n_anchors": 12934,
+       "resid_sd_min": 0.07061699883906626,
+       "n_knots": 30
+      },
+      "LM2497_DDA": {
+       "n_anchors": 13185,
+       "resid_sd_min": 0.05032812416764434,
+       "n_knots": 30
+      },
+      "LM2498_DDA": {
+       "n_anchors": 12512,
+       "resid_sd_min": 0.06279137228924762,
+       "n_knots": 30
+      }
+     },
+     "mbr": {
+      "sd_log2_intensity": 1.0,
+      "runs": {
+       "LM2480_DDA": {
+        "n_candidates": 9134,
+        "n_with_target_peak": 4843,
+        "median_rt_window_min": 0.28434771097806527,
+        "ppm_tol": 2.0
+       },
+       "LM2481_DDA": {
+        "n_candidates": 7466,
+        "n_with_target_peak": 3610,
+        "median_rt_window_min": 0.17750190358216658,
+        "ppm_tol": 2.0
+       },
+       "LM2492_DDA": {
+        "n_candidates": 11929,
+        "n_with_target_peak": 5481,
+        "median_rt_window_min": 0.3111490342634277,
+        "ppm_tol": 2.0
+       },
+       "LM2494_DDA": {
+        "n_candidates": 11416,
+        "n_with_target_peak": 5339,
+        "median_rt_window_min": 0.2971186007392149,
+        "ppm_tol": 2.0
+       },
+       "LM2497_DDA": {
+        "n_candidates": 11186,
+        "n_with_target_peak": 5000,
+        "median_rt_window_min": 0.19683444026966168,
+        "ppm_tol": 2.0
+       },
+       "LM2498_DDA": {
+        "n_candidates": 11750,
+        "n_with_target_peak": 5234,
+        "median_rt_window_min": 0.30935162702603675,
+        "ppm_tol": 2.0
+       }
+      }
+     },
+     "n_transfers_accepted": 3553,
+     "transfers_per_run": {
+      "LM2481_DDA": 809,
+      "LM2494_DDA": 650,
+      "LM2497_DDA": 116,
+      "LM2498_DDA": 1978
+     },
+     "peptidoforms_identified": 26976,
+     "peptidoforms_by_class": {
+      "0": 15906,
+      "1": 6611,
+      "2": 4459
+     },
+     "per_run_peptidoforms": {
+      "LM2480_DDA": 15465,
+      "LM2481_DDA": 17464,
+      "LM2492_DDA": 12408,
+      "LM2494_DDA": 13143,
+      "LM2497_DDA": 13500,
+      "LM2498_DDA": 12849
+     },
+     "per_run_by_class": {
+      "LM2480_DDA": {
+       "0": 9136,
+       "1": 3659,
+       "2": 2670
+      },
+      "LM2481_DDA": {
+       "0": 10485,
+       "1": 3972,
+       "2": 3007
+      },
+      "LM2492_DDA": {
+       "0": 7970,
+       "1": 2548,
+       "2": 1890
+      },
+      "LM2494_DDA": {
+       "0": 8327,
+       "1": 2906,
+       "2": 1910
+      },
+      "LM2497_DDA": {
+       "0": 8318,
+       "1": 3106,
+       "2": 2076
+      },
+      "LM2498_DDA": {
+       "0": 8352,
+       "1": 2603,
+       "2": 1894
+      }
+     }
+    },
+    "TrP": {
+     "runs": [
+      "LM2486_DDA",
+      "LM2487_DDA",
+      "LM2489_DDA",
+      "LM2490_DDA",
+      "LM2500_DDA",
+      "LM2502_DDA"
+     ],
+     "linking": {
+      "LM2486_DDA": {
+       "ppm_offset": -0.7302787071572049,
+       "ppm_sd": 0.5157604376547439,
+       "ppm_tol": 3.0,
+       "n_psms": 22145,
+       "linked_hyp": 17078,
+       "linked_targeted": 457,
+       "unlinked": 4610
+      },
+      "LM2487_DDA": {
+       "ppm_offset": -0.7150309423924506,
+       "ppm_sd": 0.5119944306136955,
+       "ppm_tol": 3.0,
+       "n_psms": 23931,
+       "linked_hyp": 19140,
+       "linked_targeted": 314,
+       "unlinked": 4477
+      },
+      "LM2489_DDA": {
+       "ppm_offset": -0.8414025749324524,
+       "ppm_sd": 0.4965611751577374,
+       "ppm_tol": 3.0,
+       "n_psms": 19461,
+       "linked_hyp": 15675,
+       "linked_targeted": 257,
+       "unlinked": 3529
+      },
+      "LM2490_DDA": {
+       "ppm_offset": -1.0133615719696643,
+       "ppm_sd": 0.5701627873156973,
+       "ppm_tol": 3.0,
+       "n_psms": 15843,
+       "linked_hyp": 12250,
+       "linked_targeted": 337,
+       "unlinked": 3256
+      },
+      "LM2500_DDA": {
+       "ppm_offset": -1.4604535469592024,
+       "ppm_sd": 0.5443117444973093,
+       "ppm_tol": 3.0,
+       "n_psms": 16747,
+       "linked_hyp": 12698,
+       "linked_targeted": 471,
+       "unlinked": 3578
+      },
+      "LM2502_DDA": {
+       "ppm_offset": -1.2722501450963872,
+       "ppm_sd": 0.5293475108851835,
+       "ppm_tol": 3.0,
+       "n_psms": 18544,
+       "linked_hyp": 14818,
+       "linked_targeted": 268,
+       "unlinked": 3458
+      }
+     },
+     "alignment": {
+      "LM2486_DDA": {
+       "n_anchors": 13985,
+       "resid_sd_min": 0.056060951258963515,
+       "n_knots": 30
+      },
+      "LM2487_DDA": {
+       "n_anchors": 16008,
+       "resid_sd_min": 0.03460953606593359,
+       "n_knots": 30
+      },
+      "LM2489_DDA": {
+       "n_anchors": 13241,
+       "resid_sd_min": 0.03790578151273183,
+       "n_knots": 30
+      },
+      "LM2490_DDA": {
+       "n_anchors": 9935,
+       "resid_sd_min": 0.06402625434120987,
+       "n_knots": 30
+      },
+      "LM2500_DDA": {
+       "n_anchors": 9797,
+       "resid_sd_min": 0.09587381008779643,
+       "n_knots": 30
+      },
+      "LM2502_DDA": {
+       "n_anchors": 12349,
+       "resid_sd_min": 0.05433997107207921,
+       "n_knots": 30
+      }
+     },
+     "mbr": {
+      "sd_log2_intensity": 1.0,
+      "runs": {
+       "LM2486_DDA": {
+        "n_candidates": 6373,
+        "n_with_target_peak": 3093,
+        "median_rt_window_min": 0.3081846221303406,
+        "ppm_tol": 2.0
+       },
+       "LM2487_DDA": {
+        "n_candidates": 4812,
+        "n_with_target_peak": 2680,
+        "median_rt_window_min": 0.1728126707332464,
+        "ppm_tol": 2.0
+       },
+       "LM2489_DDA": {
+        "n_candidates": 7230,
+        "n_with_target_peak": 3492,
+        "median_rt_window_min": 0.12273022918620285,
+        "ppm_tol": 2.0
+       },
+       "LM2490_DDA": {
+        "n_candidates": 10183,
+        "n_with_target_peak": 4125,
+        "median_rt_window_min": 0.3486922773716805,
+        "ppm_tol": 2.0
+       },
+       "LM2500_DDA": {
+        "n_candidates": 10262,
+        "n_with_target_peak": 4079,
+        "median_rt_window_min": 0.5862883563024447,
+        "ppm_tol": 2.0
+       },
+       "LM2502_DDA": {
+        "n_candidates": 8135,
+        "n_with_target_peak": 4068,
+        "median_rt_window_min": 0.20604987490808138,
+        "ppm_tol": 2.0
+       }
+      }
+     },
+     "n_transfers_accepted": 10331,
+     "transfers_per_run": {
+      "LM2486_DDA": 607,
+      "LM2487_DDA": 900,
+      "LM2489_DDA": 2772,
+      "LM2490_DDA": 1104,
+      "LM2500_DDA": 1641,
+      "LM2502_DDA": 3307
+     },
+     "peptidoforms_identified": 21743,
+     "peptidoforms_by_class": {
+      "0": 19798,
+      "1": 1242,
+      "2": 703
+     },
+     "per_run_peptidoforms": {
+      "LM2486_DDA": 13835,
+      "LM2487_DDA": 15492,
+      "LM2489_DDA": 12891,
+      "LM2490_DDA": 10120,
+      "LM2500_DDA": 9910,
+      "LM2502_DDA": 12135
+     },
+     "per_run_by_class": {
+      "LM2486_DDA": {
+       "0": 12815,
+       "1": 646,
+       "2": 374
+      },
+      "LM2487_DDA": {
+       "0": 14352,
+       "1": 719,
+       "2": 421
+      },
+      "LM2489_DDA": {
+       "0": 11895,
+       "1": 600,
+       "2": 396
+      },
+      "LM2490_DDA": {
+       "0": 9309,
+       "1": 471,
+       "2": 340
+      },
+      "LM2500_DDA": {
+       "0": 9133,
+       "1": 463,
+       "2": 314
+      },
+      "LM2502_DDA": {
+       "0": 11162,
+       "1": 597,
+       "2": 376
+      }
+     }
+    }
+   },
+   "alpha": 0.01,
+   "donor_alpha": 0.001,
+   "transfer_q": 0.01,
+   "no_LiP_TrP_transfer": "MBR runs separately inside each digest group (acceptors and donors of one group)",
+   "LiP_calls_peptidoforms_ms2": {
+    "tryptic": 13741,
+    "half_tryptic": 8983,
+    "bio_terminal": 127
+   },
+   "LiP_half_tryptic": {
+    "peptidoforms": 8983,
+    "cut_sites_unique": 8473,
+    "proteins_with_cut": 1368,
+    "by_side": {
+     "N": 5113,
+     "C": 3870
+    },
+    "search_class_vs_call": {
+     "bio_terminal": {
+      "0": 0,
+      "1": 126,
+      "2": 1
+     },
+     "half_tryptic": {
+      "0": 0,
+      "1": 5113,
+      "2": 3870
+     },
+     "tryptic": {
+      "0": 13741,
+      "1": 0,
+      "2": 0
+     }
+    },
+    "bio_excluded_reasons": {
+     "Nbio_MetRemoval": 92,
+     "Nbio": 34,
+     "Cbio": 1
+    },
+    "frac_semi_peptidoforms_rescued_as_bio": 0.01394072447859495,
+    "insource_flagged_peptidoforms": 288,
+    "insource_flagged_frac": 0.03206055883335188,
+    "half_tryptic_also_identified_in_TrP": 872
+   },
+   "TrP_calls_peptidoforms_ms2": {
+    "tryptic": 16776,
+    "half_tryptic": 1294,
+    "bio_terminal": 147
+   },
+   "matrix_rows": {
+    "LiP": 26465,
+    "TrP": 22108
+   },
+   "timing_s": {
+    "LiP_link_s": 0.9574210159480572,
+    "LiP_align_s": 0.23716806806623936,
+    "LiP_mbr_s": 19.602630507200956,
+    "LiP_xic_s": 1.901646934915334,
+    "TrP_link_s": 1.052374002058059,
+    "TrP_align_s": 0.17136942595243454,
+    "TrP_mbr_s": 0.7552374936640263,
+    "TrP_xic_s": 1.4925461946986616,
+    "annotate_s": 1.1841273899190128,
+    "insource_s": 4.55580457020551,
+    "total_s": 61.19251662027091
+   }
+  },
+  "sage_semi": {
+   "LiP": {
+    "psms_spectrum_q01": 110672,
+    "peptides_peptide_q01": 24123,
+    "peptides_semi_enzymatic_flag": 9655,
+    "peptides_by_our_call": {
+     "tryptic": 14498,
+     "half_tryptic": 9492,
+     "bio_terminal": 133
+    },
+    "timing": {
+     "wall_s": 229.749,
+     "core_s": 2676.4300000000003,
+     "max_rss_mb": 24259.91796875,
+     "lock_wait_s": 39.34
+    },
+    "overlap_stripped_with_ours_quantified": 20596,
+    "ours_quantified_stripped": 22531
+   },
+   "TrP": {
+    "psms_spectrum_q01": 112276,
+    "peptides_peptide_q01": 19902,
+    "peptides_semi_enzymatic_flag": 1907,
+    "peptides_by_our_call": {
+     "tryptic": 18030,
+     "half_tryptic": 1715,
+     "bio_terminal": 157
+    },
+    "timing": {
+     "wall_s": 315.278,
+     "core_s": 2700.62,
+     "max_rss_mb": 23955.671875,
+     "lock_wait_s": 13.27
+    },
+    "overlap_stripped_with_ours_quantified": 16793,
+    "ours_quantified_stripped": 17949
+   }
+  },
+  "msstatslip": {
+   "summarization_s": 121.4854,
+   "comparison_s": 123.6962,
+   "msstatslip": "1.8.1",
+   "msstats": "4.10.0",
+   "n_peptides_tested": 10852,
+   "adjusted_sig_adjp05": 461,
+   "unadjusted_sig_adjp05": 816,
+   "trp_proteins_tested": 1972
+  },
+  "snca": {
+   "adjusted": [
+    {
+     "PeptideSequence": "AKEGVVAA",
+     "log2FC": -4.56930881524999,
+     "pvalue": 0.462594038301776,
+     "adj.pvalue": 0.685158129053676,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 10.0,
+     "EndPos": 18.0
+    },
+    {
+     "PeptideSequence": "AKEGVVAAAEK",
+     "log2FC": 0.168859962324628,
+     "pvalue": 0.89207931035977,
+     "adj.pvalue": 0.946589444482811,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 10.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "EGVVAAAEK",
+     "log2FC": 9.16168390692209,
+     "pvalue": 0.0447441616493513,
+     "adj.pvalue": 0.197794284674235,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 12.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "GVVAAAEK",
+     "log2FC": -3.12991948703716,
+     "pvalue": 0.0955962320778236,
+     "adj.pvalue": 0.295824208474908,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 13.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "TKQGVAEAAGK",
+     "log2FC": 0.48631208047674,
+     "pvalue": 0.875777168183005,
+     "adj.pvalue": 0.938110062715603,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 21.0,
+     "EndPos": 32.0
+    },
+    {
+     "PeptideSequence": "QGVAEAAGKT",
+     "log2FC": -1.45897838276832,
+     "pvalue": 0.349410351593524,
+     "adj.pvalue": 0.588436151432046,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 23.0,
+     "EndPos": 33.0
+    },
+    {
+     "PeptideSequence": "QGVAEAAGK",
+     "log2FC": 1.99133506417851,
+     "pvalue": 0.505480818850758,
+     "adj.pvalue": 0.716560721227998,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 23.0,
+     "EndPos": 32.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVG",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 41.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVGS",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 42.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVGSK",
+     "log2FC": -0.809918468938362,
+     "pvalue": 0.711078038827484,
+     "adj.pvalue": 0.847727502827701,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "KEGVLYVGSK",
+     "log2FC": -1.12377497814002,
+     "pvalue": 0.017133272286385,
+     "adj.pvalue": 0.121996267828432,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 33.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGSKTK",
+     "log2FC": -1.87961643007077,
+     "pvalue": 0.742468707111721,
+     "adj.pvalue": 0.866125628034881,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 45.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGSK",
+     "log2FC": -2.1876876362807,
+     "pvalue": 9.5915306761369e-05,
+     "adj.pvalue": 0.0170129775367978,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGS",
+     "log2FC": -1.88973945097112,
+     "pvalue": 0.426342253389342,
+     "adj.pvalue": 0.657484490438804,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 42.0
+    },
+    {
+     "PeptideSequence": "GVLYVGSK",
+     "log2FC": -0.547327768798076,
+     "pvalue": 0.0897082565172787,
+     "adj.pvalue": 0.286242246060434,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 35.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "VLYVGSK",
+     "log2FC": -0.529723412020082,
+     "pvalue": 0.315066911282588,
+     "adj.pvalue": 0.558052715722173,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 36.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "TKEGVVHGVATVAEK",
+     "log2FC": 1.06100713019645,
+     "pvalue": 0.374197531017652,
+     "adj.pvalue": 0.611042361513552,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 43.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVA",
+     "log2FC": -3.60286433946231,
+     "pvalue": 0.0163341151906985,
+     "adj.pvalue": 0.119680811372285,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 56.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAE",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 57.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVA",
+     "log2FC": -5.65728655672878,
+     "pvalue": 0.000125052829760831,
+     "adj.pvalue": 0.0185106018281482,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 53.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAEKT",
+     "log2FC": 0.686425435621203,
+     "pvalue": 0.0379735190498781,
+     "adj.pvalue": 0.182293428838137,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 59.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATV",
+     "log2FC": -1.44623119475125,
+     "pvalue": 0.0602040537682398,
+     "adj.pvalue": 0.230648127723364,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 55.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVAT",
+     "log2FC": -6.35205571861738,
+     "pvalue": 1.14501116450942e-06,
+     "adj.pvalue": 0.00275244720378826,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 54.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAEK",
+     "log2FC": 3.22005056080768,
+     "pvalue": 1.93741999038774e-05,
+     "adj.pvalue": 0.00846188561098211,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "GVVHGVATVAEK",
+     "log2FC": 1.50029438970053,
+     "pvalue": 0.0574739152460116,
+     "adj.pvalue": 0.225904570252005,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 46.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "VHGVATVAEK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 48.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "GVATVAEK",
+     "log2FC": -2.92365357144875,
+     "pvalue": 0.0117015978872573,
+     "adj.pvalue": 0.102840648709391,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 50.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAAT",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIA",
+     "log2FC": 2.22563852597435,
+     "pvalue": 0.0152153950037291,
+     "adj.pvalue": 0.115729008419874,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVT",
+     "log2FC": -0.63182295196305,
+     "pvalue": 0.80054298831106,
+     "adj.pvalue": 0.897960597482818,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 75.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTA",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 76.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAV",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 77.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVT",
+     "log2FC": -5.32263643466789,
+     "pvalue": 0.0581936227608394,
+     "adj.pvalue": 0.226886574408477,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 72.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQK",
+     "log2FC": 0.778024351882232,
+     "pvalue": 0.320579711673139,
+     "adj.pvalue": 0.562655840915109,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQ",
+     "log2FC": -2.82296566257664,
+     "pvalue": 0.0116394773337169,
+     "adj.pvalue": 0.102840648709391,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 79.0
+    },
+    {
+     "PeptideSequence": "KEQVTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 59.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIA",
+     "log2FC": 2.49960703877025,
+     "pvalue": 0.0501008310041709,
+     "adj.pvalue": 0.209546994118261,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTG",
+     "log2FC": -4.68196298556336,
+     "pvalue": 0.00204716239480524,
+     "adj.pvalue": 0.0468409379917163,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 73.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGV",
+     "log2FC": -1.44844022317023,
+     "pvalue": 0.546814002986386,
+     "adj.pvalue": 0.747317486469974,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 74.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVT",
+     "log2FC": -4.9778555508068,
+     "pvalue": 8.86816135664929e-07,
+     "adj.pvalue": 0.00275244720378826,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 72.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVV",
+     "log2FC": -4.40145892247235,
+     "pvalue": 3.86076586158634e-06,
+     "adj.pvalue": 0.00373672038130387,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 71.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAV",
+     "log2FC": -3.69355798422332,
+     "pvalue": 2.70704594123668e-06,
+     "adj.pvalue": 0.00336113591678799,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 70.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGA",
+     "log2FC": -3.59055797791226,
+     "pvalue": 5.41934843736797e-06,
+     "adj.pvalue": 0.00373672038130387,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 69.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTA",
+     "log2FC": -0.265691218731836,
+     "pvalue": 0.792397310659665,
+     "adj.pvalue": 0.894012095272882,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 76.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVA",
+     "log2FC": 0.546328841223857,
+     "pvalue": 0.446041473838372,
+     "adj.pvalue": 0.673947362281191,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 78.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAV",
+     "log2FC": -1.74482099388817,
+     "pvalue": 0.0893676610629602,
+     "adj.pvalue": 0.285685213472301,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 77.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQK",
+     "log2FC": 1.04868785469193,
+     "pvalue": 0.569322682614216,
+     "adj.pvalue": 0.762387946558059,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVT",
+     "log2FC": -1.84613850533631,
+     "pvalue": 0.493815727257435,
+     "adj.pvalue": 0.708211322386386,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 75.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAAT",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQ",
+     "log2FC": -0.461784029443584,
+     "pvalue": 0.357153345103512,
+     "adj.pvalue": 0.595535366277183,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 79.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKT",
+     "log2FC": 1.44484347620028,
+     "pvalue": 0.00277207350690931,
+     "adj.pvalue": 0.0547200255893915,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 81.0
+    },
+    {
+     "PeptideSequence": "QVTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 61.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 62.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 63.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "NVGGAVVTGVTAVAQK",
+     "log2FC": 6.38321897528959,
+     "pvalue": 2.74202762840209e-07,
+     "adj.pvalue": 0.0027236560432918,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 64.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VGGAVVTGVTAVAQK",
+     "log2FC": 2.7715053398647,
+     "pvalue": 0.0539356525971876,
+     "adj.pvalue": 0.21789295260212,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 65.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 66.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GAVVTGVTAVAQK",
+     "log2FC": 2.61094992231308,
+     "pvalue": 0.00015423140069132,
+     "adj.pvalue": 0.0192768185734836,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 67.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "AVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 68.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VVTGVTAVAQK",
+     "log2FC": -1.17324174657509,
+     "pvalue": 0.17469578021171,
+     "adj.pvalue": 0.406858894453205,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 69.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TGVTAVAQK",
+     "log2FC": 0.378874752832422,
+     "pvalue": 0.811191947396621,
+     "adj.pvalue": 0.902896839573786,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 71.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GVTAVAQK",
+     "log2FC": -4.82425082360709,
+     "pvalue": 0.00351069680832879,
+     "adj.pvalue": 0.06043631091357,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 72.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "KTVEGAGSIAAATGFVK",
+     "log2FC": 2.77082177022685,
+     "pvalue": 0.00195846205605353,
+     "adj.pvalue": 0.046350106822156,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 79.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGF",
+     "log2FC": 1.41246618008252,
+     "pvalue": 0.00198237076201965,
+     "adj.pvalue": 0.046350106822156,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 94.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGFVK",
+     "log2FC": 3.30337525947028,
+     "pvalue": 0.119596598332985,
+     "adj.pvalue": 0.334616475497968,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAA",
+     "log2FC": -3.04835291089682,
+     "pvalue": 4.51300314034901e-05,
+     "adj.pvalue": 0.0135841394524505,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 90.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAAT",
+     "log2FC": 1.59356049001534,
+     "pvalue": 0.116365626467006,
+     "adj.pvalue": 0.330019792052278,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIA",
+     "log2FC": -4.278729404687,
+     "pvalue": 1.7271522026789e-06,
+     "adj.pvalue": 0.00275244720378826,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGFVKK",
+     "log2FC": 2.66943427454463,
+     "pvalue": 2.42216252414187e-05,
+     "adj.pvalue": 0.00891086679714859,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "EGAGSIAAATGFVKK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 82.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "EGAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 82.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "GAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 83.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "SIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 86.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "AATGFVKK",
+     "log2FC": -5.83041670417076,
+     "pvalue": 0.00189313975171606,
+     "adj.pvalue": 0.0453812354505014,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 89.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "ATGFVKK",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 90.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGILE",
+     "log2FC": -1.18120098202379,
+     "pvalue": 0.328194888015962,
+     "adj.pvalue": 0.571221276092964,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQ",
+     "log2FC": -1.35772957008974,
+     "pvalue": 0.365695374996193,
+     "adj.pvalue": 0.602896624039366,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 109.0
+    },
+    {
+     "PeptideSequence": "KDQLGKN",
+     "log2FC": -2.18552896466343,
+     "pvalue": 0.330093087681564,
+     "adj.pvalue": 0.572259006771075,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 103.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGIL",
+     "log2FC": -1.50255380867976,
+     "pvalue": 0.163865391490934,
+     "adj.pvalue": 0.394821632370814,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -1.63681736845682,
+     "pvalue": 0.1750904551112,
+     "adj.pvalue": 0.407491445787148,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -3.24052237052396,
+     "pvalue": 0.0595647585898033,
+     "adj.pvalue": 0.229697876009746,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEG",
+     "log2FC": -0.188758169028407,
+     "pvalue": 0.583084373191221,
+     "adj.pvalue": 0.769978340721669,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 111.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDN",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 122.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -2.23161694440456,
+     "pvalue": 0.094947404378452,
+     "adj.pvalue": 0.295095945430517,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILED",
+     "log2FC": -2.99749447054891,
+     "pvalue": 0.000332503091495402,
+     "adj.pvalue": 0.0251549320239834,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 115.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQE",
+     "log2FC": -3.78193155084933,
+     "pvalue": 7.04273011313694e-05,
+     "adj.pvalue": 0.0162005467298248,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 110.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQ",
+     "log2FC": -1.84915956647263,
+     "pvalue": 0.0121981971191028,
+     "adj.pvalue": 0.105360601725259,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 109.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNE",
+     "log2FC": -2.77794941035954,
+     "pvalue": 0.162966516121112,
+     "adj.pvalue": 0.394359170282063,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 123.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGIL",
+     "log2FC": -1.86661584547969,
+     "pvalue": 0.00794437399393969,
+     "adj.pvalue": 0.086053944254965,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILE",
+     "log2FC": -1.39634251913148,
+     "pvalue": 0.00515154945574603,
+     "adj.pvalue": 0.0713672813722808,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVD",
+     "log2FC": -2.92903505099762,
+     "pvalue": 0.00100623885890539,
+     "adj.pvalue": 0.0355692903398834,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 119.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQD",
+     "log2FC": -3.22788395257561,
+     "pvalue": 0.0666783279970443,
+     "adj.pvalue": 0.244126734977752,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 135.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNE",
+     "log2FC": -2.21845053852296,
+     "pvalue": 0.060478047719364,
+     "adj.pvalue": 0.23113830242264,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 123.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVD",
+     "log2FC": -2.01959107532718,
+     "pvalue": 0.0026872668417591,
+     "adj.pvalue": 0.0539081302945121,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 119.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDN",
+     "log2FC": -3.27312375583432,
+     "pvalue": 0.0457132908668412,
+     "adj.pvalue": 0.199742222635186,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 122.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPD",
+     "log2FC": -1.89924679797225,
+     "pvalue": 0.153201989345755,
+     "adj.pvalue": 0.3816969603302,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 121.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILE",
+     "log2FC": -0.318157443086052,
+     "pvalue": 0.412098241187057,
+     "adj.pvalue": 0.643713135667721,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILED",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 115.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGIL",
+     "log2FC": -1.1380390319809,
+     "pvalue": 0.022766212650233,
+     "adj.pvalue": 0.140104633640792,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEG",
+     "log2FC": 0.458381153997398,
+     "pvalue": 0.145434916640533,
+     "adj.pvalue": 0.372224948979751,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 111.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -1.66436174408019,
+     "pvalue": 0.0378350745547324,
+     "adj.pvalue": 0.182059824041386,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "EDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -0.413549041605763,
+     "pvalue": 0.921198979834439,
+     "adj.pvalue": 0.961061807236161,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 113.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -3.31383778562211,
+     "pvalue": 0.0387946738234254,
+     "adj.pvalue": 0.18446505269894,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 116.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -3.15462219226931,
+     "pvalue": 0.0644519691152774,
+     "adj.pvalue": 0.239238194776551,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 119.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "NEAYEMPSEEGYQDYEPEA",
+     "log2FC": -1.47967972314205,
+     "pvalue": 0.575445958762348,
+     "adj.pvalue": 0.765884300066813,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 121.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "EAYEMPSEEGYQDYEPEA",
+     "log2FC": -2.05454909540666,
+     "pvalue": 0.290337691558149,
+     "adj.pvalue": 0.535983093515243,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 122.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "AYEMPSEEGYQDYEPEA",
+     "log2FC": -2.51502200048505,
+     "pvalue": 0.378744696065247,
+     "adj.pvalue": 0.614516672005242,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 123.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "YEMPSEEGYQDYEPEA",
+     "log2FC": -0.211431050671635,
+     "pvalue": 0.86584008787315,
+     "adj.pvalue": 0.933303265636896,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 124.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "EMPSEEGYQDYEPEA",
+     "log2FC": -1.39853836976968,
+     "pvalue": 0.010007570658614,
+     "adj.pvalue": 0.0954203688811769,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 125.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PSEEGYQDYEPEA",
+     "log2FC": -0.587263133283126,
+     "pvalue": 0.564224609614865,
+     "adj.pvalue": 0.757537900189636,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 127.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "SEEGYQDYEPEA",
+     "log2FC": 0.268371580526773,
+     "pvalue": 0.589115396800662,
+     "adj.pvalue": 0.774339451689953,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 128.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "GYQDYEPEA",
+     "log2FC": -1.25781101633695,
+     "pvalue": 0.0117407928759135,
+     "adj.pvalue": 0.102840648709391,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 131.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "YQDYEPEA",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": NaN,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 132.0,
+     "EndPos": 140.0
+    }
+   ],
+   "unadjusted": [
+    {
+     "PeptideSequence": "AKEGVVAA",
+     "log2FC": -3.816818335774,
+     "pvalue": 0.53006425938204,
+     "adj.pvalue": 0.76174948113367,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 10.0,
+     "EndPos": 18.0
+    },
+    {
+     "PeptideSequence": "AKEGVVAAAEK",
+     "log2FC": 0.921350441800615,
+     "pvalue": 0.468266241006867,
+     "adj.pvalue": 0.721530582302624,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 10.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "EGVVAAAEK",
+     "log2FC": 9.91417438639808,
+     "pvalue": 0.0356023209352665,
+     "adj.pvalue": 0.290144277344738,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 12.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "GVVAAAEK",
+     "log2FC": -2.37742900756117,
+     "pvalue": 0.168126679873928,
+     "adj.pvalue": 0.487740347376329,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 13.0,
+     "EndPos": 21.0
+    },
+    {
+     "PeptideSequence": "TKQGVAEAAGK",
+     "log2FC": 1.23880255995273,
+     "pvalue": 0.702859784598446,
+     "adj.pvalue": 0.864467797446359,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 21.0,
+     "EndPos": 32.0
+    },
+    {
+     "PeptideSequence": "QGVAEAAGKT",
+     "log2FC": -0.706487903292334,
+     "pvalue": 0.586141583186797,
+     "adj.pvalue": 0.797415951896385,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 23.0,
+     "EndPos": 33.0
+    },
+    {
+     "PeptideSequence": "QGVAEAAGK",
+     "log2FC": 2.74382554365449,
+     "pvalue": 0.370046397643072,
+     "adj.pvalue": 0.659690731236346,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 23.0,
+     "EndPos": 32.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVG",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 41.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVGS",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 42.0
+    },
+    {
+     "PeptideSequence": "TKEGVLYVGSK",
+     "log2FC": -0.0574279894623749,
+     "pvalue": 0.978749269955474,
+     "adj.pvalue": 0.992209157792912,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 32.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "KEGVLYVGSK",
+     "log2FC": -0.37128449866403,
+     "pvalue": 0.269113191173449,
+     "adj.pvalue": 0.583068912369979,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 33.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGSKTK",
+     "log2FC": -1.12712595059478,
+     "pvalue": 0.840004886388025,
+     "adj.pvalue": 0.934833053972749,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 45.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGSK",
+     "log2FC": -1.43519715680472,
+     "pvalue": 0.00144891612428655,
+     "adj.pvalue": 0.142656164244317,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "EGVLYVGS",
+     "log2FC": -1.13724897149514,
+     "pvalue": 0.611396224090955,
+     "adj.pvalue": 0.813449303948402,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 34.0,
+     "EndPos": 42.0
+    },
+    {
+     "PeptideSequence": "GVLYVGSK",
+     "log2FC": 0.205162710677912,
+     "pvalue": 0.257823017008841,
+     "adj.pvalue": 0.57344083734363,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 35.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "VLYVGSK",
+     "log2FC": 0.222767067455905,
+     "pvalue": 0.623722877942048,
+     "adj.pvalue": 0.820769657789412,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 36.0,
+     "EndPos": 43.0
+    },
+    {
+     "PeptideSequence": "TKEGVVHGVATVAEK",
+     "log2FC": 1.81349760967244,
+     "pvalue": 0.15864838453678,
+     "adj.pvalue": 0.477274741987182,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 43.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVA",
+     "log2FC": -2.85037385998633,
+     "pvalue": 0.0380507740990443,
+     "adj.pvalue": 0.297342391747236,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 56.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAE",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 57.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVA",
+     "log2FC": -4.90479607725279,
+     "pvalue": 0.00144178793020755,
+     "adj.pvalue": 0.142656164244317,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 53.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAEKT",
+     "log2FC": 1.43891591509719,
+     "pvalue": 0.000592893837001451,
+     "adj.pvalue": 0.10524579354203,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 59.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATV",
+     "log2FC": -0.693740715275267,
+     "pvalue": 0.272043965742052,
+     "adj.pvalue": 0.586024829594246,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 55.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVAT",
+     "log2FC": -5.59956523914139,
+     "pvalue": 8.12370895468817e-05,
+     "adj.pvalue": 0.0510321241897317,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 54.0
+    },
+    {
+     "PeptideSequence": "EGVVHGVATVAEK",
+     "log2FC": 3.97254104028367,
+     "pvalue": 0.000119785281498697,
+     "adj.pvalue": 0.0631548476151792,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 45.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "GVVHGVATVAEK",
+     "log2FC": 2.25278486917652,
+     "pvalue": 0.023512867052577,
+     "adj.pvalue": 0.254407905169585,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 46.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "VHGVATVAEK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 48.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "GVATVAEK",
+     "log2FC": -2.17116309197276,
+     "pvalue": 0.037082449495931,
+     "adj.pvalue": 0.293914038826017,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 50.0,
+     "EndPos": 58.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAAT",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIA",
+     "log2FC": 2.97812900545034,
+     "pvalue": 0.0101986406916725,
+     "adj.pvalue": 0.204603867449103,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVT",
+     "log2FC": 0.120667527512938,
+     "pvalue": 0.96116074772487,
+     "adj.pvalue": 0.983570217408132,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 75.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTA",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 76.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAV",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 77.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVT",
+     "log2FC": -4.5701459551919,
+     "pvalue": 0.0874891271803664,
+     "adj.pvalue": 0.386252882289708,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 72.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQK",
+     "log2FC": 1.53051483135822,
+     "pvalue": 0.0831955659869359,
+     "adj.pvalue": 0.379487372506182,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TKEQVTNVGGAVVTGVTAVAQ",
+     "log2FC": -2.07047518310065,
+     "pvalue": 0.0386311921343177,
+     "adj.pvalue": 0.298166541825313,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 58.0,
+     "EndPos": 79.0
+    },
+    {
+     "PeptideSequence": "KEQVTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 59.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIA",
+     "log2FC": 3.25209751824624,
+     "pvalue": 0.0388640270526166,
+     "adj.pvalue": 0.29909826639039,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTG",
+     "log2FC": -3.92947250608738,
+     "pvalue": 0.00591826608707136,
+     "adj.pvalue": 0.1888280081577,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 73.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGV",
+     "log2FC": -0.695949743694239,
+     "pvalue": 0.750746204517299,
+     "adj.pvalue": 0.89224337525795,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 74.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVT",
+     "log2FC": -4.22536507133081,
+     "pvalue": 5.33272999891921e-06,
+     "adj.pvalue": 0.0178664230730456,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 72.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVV",
+     "log2FC": -3.64896844299637,
+     "pvalue": 4.74227497715418e-06,
+     "adj.pvalue": 0.0178664230730456,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 71.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAV",
+     "log2FC": -2.94106750474733,
+     "pvalue": 0.000168332934939563,
+     "adj.pvalue": 0.0735614925685892,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 70.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGA",
+     "log2FC": -2.83806749843627,
+     "pvalue": 3.32384697006027e-05,
+     "adj.pvalue": 0.0371199843289731,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 69.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTA",
+     "log2FC": 0.486799260744152,
+     "pvalue": 0.625776335164723,
+     "adj.pvalue": 0.822072663016681,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 76.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVA",
+     "log2FC": 1.29881932069984,
+     "pvalue": 0.104372537027608,
+     "adj.pvalue": 0.411069110370098,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 78.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAV",
+     "log2FC": -0.992330514412182,
+     "pvalue": 0.274021308448432,
+     "adj.pvalue": 0.587121758945895,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 77.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQK",
+     "log2FC": 1.80117833416791,
+     "pvalue": 0.344855419646203,
+     "adj.pvalue": 0.642353933073384,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVT",
+     "log2FC": -1.09364802586032,
+     "pvalue": 0.678162322605802,
+     "adj.pvalue": 0.851068735736162,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 75.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAAT",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQ",
+     "log2FC": 0.290706450032403,
+     "pvalue": 0.511626896079862,
+     "adj.pvalue": 0.749615442055204,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 79.0
+    },
+    {
+     "PeptideSequence": "EQVTNVGGAVVTGVTAVAQKT",
+     "log2FC": 2.19733395567627,
+     "pvalue": 0.00089711027202144,
+     "adj.pvalue": 0.13067906295779,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 60.0,
+     "EndPos": 81.0
+    },
+    {
+     "PeptideSequence": "QVTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 61.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VTNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 62.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TNVGGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 63.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "NVGGAVVTGVTAVAQK",
+     "log2FC": 7.13570945476558,
+     "pvalue": 1.30220157228411e-05,
+     "adj.pvalue": 0.0289547411488965,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 64.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VGGAVVTGVTAVAQK",
+     "log2FC": 3.52399581934069,
+     "pvalue": 0.0417133258749725,
+     "adj.pvalue": 0.305126859454959,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 65.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GGAVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 66.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GAVVTGVTAVAQK",
+     "log2FC": 3.36344040178907,
+     "pvalue": 0.0205805689476894,
+     "adj.pvalue": 0.24221931907872,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 67.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "AVVTGVTAVAQK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 68.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "VVTGVTAVAQK",
+     "log2FC": -0.420751267099106,
+     "pvalue": 0.580962473929072,
+     "adj.pvalue": 0.793773029801301,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 69.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "TGVTAVAQK",
+     "log2FC": 1.13136523230841,
+     "pvalue": 0.528297665838172,
+     "adj.pvalue": 0.760575824189754,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 71.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "GVTAVAQK",
+     "log2FC": -4.07176034413111,
+     "pvalue": 0.00853398163967967,
+     "adj.pvalue": 0.199041619760316,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 72.0,
+     "EndPos": 80.0
+    },
+    {
+     "PeptideSequence": "KTVEGAGSIAAATGFVK",
+     "log2FC": 3.52331224970283,
+     "pvalue": 0.00308759060300212,
+     "adj.pvalue": 0.174382755970262,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 79.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGF",
+     "log2FC": 2.16495665955851,
+     "pvalue": 0.0012669314476832,
+     "adj.pvalue": 0.140095230413946,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 94.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGFVK",
+     "log2FC": 4.05586573894626,
+     "pvalue": 0.0724840574830561,
+     "adj.pvalue": 0.363223265237658,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAA",
+     "log2FC": -2.29586243142083,
+     "pvalue": 0.00133774742864334,
+     "adj.pvalue": 0.140095230413946,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 90.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAAT",
+     "log2FC": 2.34605096949133,
+     "pvalue": 0.0419651209349676,
+     "adj.pvalue": 0.305867607336737,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 92.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIA",
+     "log2FC": -3.52623892521102,
+     "pvalue": 1.44039106302341e-05,
+     "adj.pvalue": 0.0289547411488965,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 89.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATGFVKK",
+     "log2FC": 3.42192475402062,
+     "pvalue": 4.32358628059681e-05,
+     "adj.pvalue": 0.0382522974727798,
+     "fully_TRI": true,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "TVEGAGSIAAATG",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 80.0,
+     "EndPos": 93.0
+    },
+    {
+     "PeptideSequence": "EGAGSIAAATGFVKK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 82.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "EGAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 82.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "GAGSIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 83.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "SIAAATGFVK",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 86.0,
+     "EndPos": 96.0
+    },
+    {
+     "PeptideSequence": "AATGFVKK",
+     "log2FC": -5.07792622469477,
+     "pvalue": 0.00439024383265285,
+     "adj.pvalue": 0.179226828827839,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 89.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "ATGFVKK",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": true,
+     "StartPos": 90.0,
+     "EndPos": 97.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGILE",
+     "log2FC": -0.428710502547804,
+     "pvalue": 0.70376511039892,
+     "adj.pvalue": 0.865053580117347,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQ",
+     "log2FC": -0.605239090613749,
+     "pvalue": 0.627351937380395,
+     "adj.pvalue": 0.82306674358574,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 109.0
+    },
+    {
+     "PeptideSequence": "KDQLGKN",
+     "log2FC": -1.43303848518744,
+     "pvalue": 0.506567049090477,
+     "adj.pvalue": 0.74721241714241,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 103.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGIL",
+     "log2FC": -0.750063329203771,
+     "pvalue": 0.440216048194828,
+     "adj.pvalue": 0.70310050856606,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "KDQLGKNEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -0.884326888980829,
+     "pvalue": 0.421492104096041,
+     "adj.pvalue": 0.69188586285633,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 96.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -2.48803189104798,
+     "pvalue": 0.107660238185121,
+     "adj.pvalue": 0.413282912286793,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEG",
+     "log2FC": 0.56373231044758,
+     "pvalue": 0.0753863111896305,
+     "adj.pvalue": 0.366751119925932,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 111.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDN",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 122.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -1.47912646492857,
+     "pvalue": 0.223129434334452,
+     "adj.pvalue": 0.53968826407403,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILED",
+     "log2FC": -2.24500399107292,
+     "pvalue": 0.00402119239378895,
+     "adj.pvalue": 0.177336741681794,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 115.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQE",
+     "log2FC": -3.02944107137335,
+     "pvalue": 0.00531521169510252,
+     "adj.pvalue": 0.183857059054079,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 110.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQ",
+     "log2FC": -1.09666908699664,
+     "pvalue": 0.0770873106604957,
+     "adj.pvalue": 0.370174230120917,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 109.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVDPDNE",
+     "log2FC": -2.02545893088356,
+     "pvalue": 0.247127571471151,
+     "adj.pvalue": 0.56424839772729,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 123.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGIL",
+     "log2FC": -1.1141253660037,
+     "pvalue": 0.0587881139896664,
+     "adj.pvalue": 0.334063979829397,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILE",
+     "log2FC": -0.64385203965549,
+     "pvalue": 0.0822012790353819,
+     "adj.pvalue": 0.378645763329342,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "DQLGKNEEGAPQEGILEDMPVD",
+     "log2FC": -2.17654457152163,
+     "pvalue": 0.00767671522622537,
+     "adj.pvalue": 0.193329032176528,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 97.0,
+     "EndPos": 119.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQD",
+     "log2FC": -2.47539347309962,
+     "pvalue": 0.117634428388551,
+     "adj.pvalue": 0.427261362571881,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 135.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNE",
+     "log2FC": -1.46596005904697,
+     "pvalue": 0.165062816985278,
+     "adj.pvalue": 0.484251714395514,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 123.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVD",
+     "log2FC": -1.26710059585119,
+     "pvalue": 0.0300675127878456,
+     "adj.pvalue": 0.27416169100089,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 119.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDN",
+     "log2FC": -2.52063327635833,
+     "pvalue": 0.0901361977317694,
+     "adj.pvalue": 0.391342947473872,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 122.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPD",
+     "log2FC": -1.14675631849626,
+     "pvalue": 0.335789906778643,
+     "adj.pvalue": 0.636269428163532,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 121.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILE",
+     "log2FC": 0.434333036389936,
+     "pvalue": 0.202578077735329,
+     "adj.pvalue": 0.520618033872211,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 114.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILED",
+     "log2FC": -Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 115.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGIL",
+     "log2FC": -0.385548552504909,
+     "pvalue": 0.296034011683082,
+     "adj.pvalue": 0.603537089538877,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 113.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEG",
+     "log2FC": 1.21087163347339,
+     "pvalue": 0.0145174487412523,
+     "adj.pvalue": 0.217233821848879,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 111.0
+    },
+    {
+     "PeptideSequence": "NEEGAPQEGILEDMPVDPDNEAY",
+     "log2FC": -0.911871264604202,
+     "pvalue": 0.178787198008816,
+     "adj.pvalue": 0.498971643495443,
+     "fully_TRI": false,
+     "NSEMI_TRI": true,
+     "CSEMI_TRI": false,
+     "StartPos": 102.0,
+     "EndPos": 125.0
+    },
+    {
+     "PeptideSequence": "EDMPVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": 0.338941437870224,
+     "pvalue": 0.935274270240322,
+     "adj.pvalue": 0.972650618492843,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 113.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PVDPDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -2.56134730614612,
+     "pvalue": 0.0783604780937215,
+     "adj.pvalue": 0.372564411220433,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 116.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PDNEAYEMPSEEGYQDYEPEA",
+     "log2FC": -2.40213171279333,
+     "pvalue": 0.121875903633825,
+     "adj.pvalue": 0.431584136366182,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 119.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "NEAYEMPSEEGYQDYEPEA",
+     "log2FC": -0.727189243666067,
+     "pvalue": 0.765563746895133,
+     "adj.pvalue": 0.899421986478634,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 121.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "EAYEMPSEEGYQDYEPEA",
+     "log2FC": -1.30205861593067,
+     "pvalue": 0.475593141781501,
+     "adj.pvalue": 0.725369752359009,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 122.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "AYEMPSEEGYQDYEPEA",
+     "log2FC": -1.76253152100907,
+     "pvalue": 0.492499408881132,
+     "adj.pvalue": 0.737141719957993,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 123.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "YEMPSEEGYQDYEPEA",
+     "log2FC": 0.541059428804353,
+     "pvalue": 0.664315925947317,
+     "adj.pvalue": 0.842528627343405,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 124.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "EMPSEEGYQDYEPEA",
+     "log2FC": -0.646047890293688,
+     "pvalue": 0.121926035446352,
+     "adj.pvalue": 0.431584136366182,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 125.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "PSEEGYQDYEPEA",
+     "log2FC": 0.165227346192862,
+     "pvalue": 0.865626769277517,
+     "adj.pvalue": 0.946520306571837,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 127.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "SEEGYQDYEPEA",
+     "log2FC": 1.02086206000276,
+     "pvalue": 0.0853718848309888,
+     "adj.pvalue": 0.38242841342087,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 128.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "GYQDYEPEA",
+     "log2FC": -0.505320536860967,
+     "pvalue": 0.169453465892195,
+     "adj.pvalue": 0.488461052593979,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 131.0,
+     "EndPos": 140.0
+    },
+    {
+     "PeptideSequence": "YQDYEPEA",
+     "log2FC": Infinity,
+     "pvalue": NaN,
+     "adj.pvalue": 0.0,
+     "fully_TRI": false,
+     "NSEMI_TRI": false,
+     "CSEMI_TRI": false,
+     "StartPos": 132.0,
+     "EndPos": 140.0
+    }
+   ],
+   "trp": [
+    {
+     "Protein": "P37840",
+     "Label": "F1 vs M1",
+     "log2FC": 0.752490479475987,
+     "SE": 0.230571117854079,
+     "Tvalue": 3.26359383811556,
+     "DF": 4.0,
+     "pvalue": 0.0309756275516084,
+     "adj.pvalue": 0.219149009234214,
+     "MissingPercentage": 0.184599156118143,
+     "ImputationPercentage": 0.184599156118143
+    }
+   ],
+   "summary": {
+    "peptides_tested": 118,
+    "in_core_37_99": 88,
+    "sig_in_core": 20,
+    "sig_outside_core": 0,
+    "sig_in_core_down": 14,
+    "sig_in_core_up": 6
+   }
+  }
+ },
+ "cf": {
+  "search": {
+   "setup": {
+    "python_import_s": 7.228371201083064,
+    "cuda_init_s": 0.36357765924185514,
+    "l1_load_s": 1.967349834740162,
+    "gpu_index_build_s": 4.932749997358769,
+    "gpu_index_bytes": 3007581030,
+    "n_postings": 350793509,
+    "n_slices": 1,
+    "n_peptidoforms": 14116962,
+    "cpu_core_s_setup_total": 4.078872
+   },
+   "gpu_max_mem_bytes": 17905866752,
+   "params": {
+    "precursor_ppm": [
+     -10.0,
+     10.0
+    ],
+    "fragment_ppm": [
+     -600.0,
+     600.0
+    ],
+    "isotope_errors": [
+     0,
+     2
+    ],
+    "precursor_charge": [
+     2,
+     4
+    ],
+    "max_peaks": 150,
+    "min_peaks": 15,
+    "fragment_min_mz": 150.0,
+    "fragment_max_mz": 2000.0,
+    "min_ion_index": 2,
+    "max_fragment_charge": 1,
+    "min_matched_peaks": 4,
+    "topk": 500,
+    "k1_threshold": 1,
+    "pair_closure": true,
+    "report_psms": 1,
+    "peak_mode": "global",
+    "window_th": 100.0,
+    "window_k": 15,
+    "chunk_size": 8192,
+    "bin_ppm": 20.0,
+    "tile": 1024,
+    "k2_threads": 128,
+    "max_slice_entries": 2147483647
+   },
+   "n_runs": 29,
+   "warm_per_run_wall_s_median": 0.6120639769360423,
+   "warm_per_run_search_s_median": 0.3061319887638092,
+   "warm_per_run_core_s_median": 0.6117410000000056,
+   "warm_total_wall_s": 15.171549544204026,
+   "n_spectra_median": 41731.0,
+   "process_wall_s": 52.120997874066234,
+   "hw": {
+    "hostname": "gpu-node",
+    "cpu_model": "AMD EPYC 9354 32-Core Processor",
+    "os_cpu_count": 64,
+    "affinity_count": 32,
+    "n_threads": 32,
+    "VULCAN_THREADS": null,
+    "avx2": true,
+    "avx512": [
+     "avx512_bf16",
+     "avx512_bitalg",
+     "avx512_vbmi2",
+     "avx512_vnni",
+     "avx512_vpopcntdq",
+     "avx512bw",
+     "avx512cd",
+     "avx512dq",
+     "avx512f",
+     "avx512ifma",
+     "avx512vbmi",
+     "avx512vl"
+    ],
+    "ram_gb": 1503.3,
+    "cgroup_mem_limit_gb": null,
+    "kernel": "5.15.0-194-generic",
+    "python": "3.12.16",
+    "physical_cores_in_affinity": 32,
+    "sockets_in_affinity": 2,
+    "gpus": [
+     {
+      "name": "NVIDIA A100 80GB PCIe",
+      "mem_mib": 81920,
+      "compute_cap": "8.0"
+     }
+    ],
+    "driver": "580.178.04",
+    "cuda_driver": "13.0",
+    "nvcc": "12.9",
+    "torch_cuda": {
+     "torch": "2.14.1",
+     "cuda": "12.9",
+     "available": true
+    },
+    "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+   }
+  },
+  "ids": {
+   "Control_HEK_SEC_020118_10b": 0,
+   "Control_HEK_SEC_020118_11b": 0,
+   "Control_HEK_SEC_020118_12b": 0,
+   "Control_HEK_SEC_020118_13b": 0,
+   "Control_HEK_SEC_020118_14b": 0,
+   "Control_HEK_SEC_020118_15b": 322,
+   "Control_HEK_SEC_020118_16b": 5056,
+   "Control_HEK_SEC_020118_17b": 8142,
+   "Control_HEK_SEC_020118_18b": 7819,
+   "Control_HEK_SEC_020118_19b": 7318,
+   "Control_HEK_SEC_020118_20b": 4600,
+   "Control_HEK_SEC_020118_21b": 7108,
+   "Control_HEK_SEC_020118_22b": 8725,
+   "Control_HEK_SEC_020118_23b": 8227,
+   "Control_HEK_SEC_020118_24b": 7805,
+   "Control_HEK_SEC_020118_25c": 7007,
+   "Control_HEK_SEC_020118_26b": 7547,
+   "Control_HEK_SEC_020118_27b": 8325,
+   "Control_HEK_SEC_020118_28b": 7390,
+   "Control_HEK_SEC_020118_29b": 7014,
+   "Control_HEK_SEC_020118_30b": 6854,
+   "Control_HEK_SEC_020118_31b": 7428,
+   "Control_HEK_SEC_020118_32b": 7825,
+   "Control_HEK_SEC_020118_33b": 7105,
+   "Control_HEK_SEC_020118_34b": 8472,
+   "Control_HEK_SEC_020118_35b": 10106,
+   "Control_HEK_SEC_020118_36c": 8640,
+   "Control_HEK_SEC_020118_37c": 8281,
+   "Control_HEK_SEC_020118_38b": 9315
+  },
+  "e10": {
+   "runs": [
+    "Control_HEK_SEC_020118_15b",
+    "Control_HEK_SEC_020118_16b",
+    "Control_HEK_SEC_020118_17b",
+    "Control_HEK_SEC_020118_18b",
+    "Control_HEK_SEC_020118_19b",
+    "Control_HEK_SEC_020118_20b",
+    "Control_HEK_SEC_020118_21b",
+    "Control_HEK_SEC_020118_22b",
+    "Control_HEK_SEC_020118_23b",
+    "Control_HEK_SEC_020118_24b",
+    "Control_HEK_SEC_020118_25c",
+    "Control_HEK_SEC_020118_26b",
+    "Control_HEK_SEC_020118_27b",
+    "Control_HEK_SEC_020118_28b",
+    "Control_HEK_SEC_020118_29b",
+    "Control_HEK_SEC_020118_30b",
+    "Control_HEK_SEC_020118_31b",
+    "Control_HEK_SEC_020118_32b",
+    "Control_HEK_SEC_020118_33b",
+    "Control_HEK_SEC_020118_34b",
+    "Control_HEK_SEC_020118_35b",
+    "Control_HEK_SEC_020118_36c",
+    "Control_HEK_SEC_020118_37c",
+    "Control_HEK_SEC_020118_38b"
+   ],
+   "fractions": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "alpha": 0.01,
+   "donor_alpha": 0.001,
+   "transfer_q": 0.01,
+   "transfer_info": {
+    "local": {
+     "mode": "local",
+     "k": 1,
+     "runs": {
+      "Control_HEK_SEC_020118_15b": {
+       "fraction": 15,
+       "n_candidates": 3472,
+       "n_with_target_peak": 858
+      },
+      "Control_HEK_SEC_020118_16b": {
+       "fraction": 16,
+       "n_candidates": 3404,
+       "n_with_target_peak": 1774
+      },
+      "Control_HEK_SEC_020118_17b": {
+       "fraction": 17,
+       "n_candidates": 2544,
+       "n_with_target_peak": 1642
+      },
+      "Control_HEK_SEC_020118_18b": {
+       "fraction": 18,
+       "n_candidates": 2521,
+       "n_with_target_peak": 1649
+      },
+      "Control_HEK_SEC_020118_19b": {
+       "fraction": 19,
+       "n_candidates": 2328,
+       "n_with_target_peak": 1567
+      },
+      "Control_HEK_SEC_020118_20b": {
+       "fraction": 20,
+       "n_candidates": 4455,
+       "n_with_target_peak": 2534
+      },
+      "Control_HEK_SEC_020118_21b": {
+       "fraction": 21,
+       "n_candidates": 2886,
+       "n_with_target_peak": 1656
+      },
+      "Control_HEK_SEC_020118_22b": {
+       "fraction": 22,
+       "n_candidates": 2520,
+       "n_with_target_peak": 1772
+      },
+      "Control_HEK_SEC_020118_23b": {
+       "fraction": 23,
+       "n_candidates": 3341,
+       "n_with_target_peak": 2277
+      },
+      "Control_HEK_SEC_020118_24b": {
+       "fraction": 24,
+       "n_candidates": 2779,
+       "n_with_target_peak": 1848
+      },
+      "Control_HEK_SEC_020118_25c": {
+       "fraction": 25,
+       "n_candidates": 3141,
+       "n_with_target_peak": 2019
+      },
+      "Control_HEK_SEC_020118_26b": {
+       "fraction": 26,
+       "n_candidates": 2658,
+       "n_with_target_peak": 1782
+      },
+      "Control_HEK_SEC_020118_27b": {
+       "fraction": 27,
+       "n_candidates": 2580,
+       "n_with_target_peak": 1706
+      },
+      "Control_HEK_SEC_020118_28b": {
+       "fraction": 28,
+       "n_candidates": 3350,
+       "n_with_target_peak": 2093
+      },
+      "Control_HEK_SEC_020118_29b": {
+       "fraction": 29,
+       "n_candidates": 3214,
+       "n_with_target_peak": 2055
+      },
+      "Control_HEK_SEC_020118_30b": {
+       "fraction": 30,
+       "n_candidates": 3287,
+       "n_with_target_peak": 2018
+      },
+      "Control_HEK_SEC_020118_31b": {
+       "fraction": 31,
+       "n_candidates": 2798,
+       "n_with_target_peak": 1885
+      },
+      "Control_HEK_SEC_020118_32b": {
+       "fraction": 32,
+       "n_candidates": 2827,
+       "n_with_target_peak": 1781
+      },
+      "Control_HEK_SEC_020118_33b": {
+       "fraction": 33,
+       "n_candidates": 3994,
+       "n_with_target_peak": 2196
+      },
+      "Control_HEK_SEC_020118_34b": {
+       "fraction": 34,
+       "n_candidates": 3537,
+       "n_with_target_peak": 2176
+      },
+      "Control_HEK_SEC_020118_35b": {
+       "fraction": 35,
+       "n_candidates": 3327,
+       "n_with_target_peak": 1834
+      },
+      "Control_HEK_SEC_020118_36c": {
+       "fraction": 36,
+       "n_candidates": 4325,
+       "n_with_target_peak": 2119
+      },
+      "Control_HEK_SEC_020118_37c": {
+       "fraction": 37,
+       "n_candidates": 4416,
+       "n_with_target_peak": 2173
+      },
+      "Control_HEK_SEC_020118_38b": {
+       "fraction": 38,
+       "n_candidates": 2154,
+       "n_with_target_peak": 820
+      }
+     }
+    },
+    "global": {
+     "mode": "global",
+     "k": 1,
+     "runs": {
+      "Control_HEK_SEC_020118_15b": {
+       "fraction": 15,
+       "n_candidates": 29345,
+       "n_with_target_peak": 2590
+      },
+      "Control_HEK_SEC_020118_16b": {
+       "fraction": 16,
+       "n_candidates": 25495,
+       "n_with_target_peak": 4687
+      },
+      "Control_HEK_SEC_020118_17b": {
+       "fraction": 17,
+       "n_candidates": 22723,
+       "n_with_target_peak": 4462
+      },
+      "Control_HEK_SEC_020118_18b": {
+       "fraction": 18,
+       "n_candidates": 22761,
+       "n_with_target_peak": 3697
+      },
+      "Control_HEK_SEC_020118_19b": {
+       "fraction": 19,
+       "n_candidates": 23112,
+       "n_with_target_peak": 4319
+      },
+      "Control_HEK_SEC_020118_20b": {
+       "fraction": 20,
+       "n_candidates": 25251,
+       "n_with_target_peak": 4501
+      },
+      "Control_HEK_SEC_020118_21b": {
+       "fraction": 21,
+       "n_candidates": 23135,
+       "n_with_target_peak": 4460
+      },
+      "Control_HEK_SEC_020118_22b": {
+       "fraction": 22,
+       "n_candidates": 22037,
+       "n_with_target_peak": 4834
+      },
+      "Control_HEK_SEC_020118_23b": {
+       "fraction": 23,
+       "n_candidates": 22450,
+       "n_with_target_peak": 4954
+      },
+      "Control_HEK_SEC_020118_24b": {
+       "fraction": 24,
+       "n_candidates": 22603,
+       "n_with_target_peak": 4805
+      },
+      "Control_HEK_SEC_020118_25c": {
+       "fraction": 25,
+       "n_candidates": 23478,
+       "n_with_target_peak": 4636
+      },
+      "Control_HEK_SEC_020118_26b": {
+       "fraction": 26,
+       "n_candidates": 23086,
+       "n_with_target_peak": 4924
+      },
+      "Control_HEK_SEC_020118_27b": {
+       "fraction": 27,
+       "n_candidates": 22599,
+       "n_with_target_peak": 4940
+      },
+      "Control_HEK_SEC_020118_28b": {
+       "fraction": 28,
+       "n_candidates": 23242,
+       "n_with_target_peak": 5037
+      },
+      "Control_HEK_SEC_020118_29b": {
+       "fraction": 29,
+       "n_candidates": 23329,
+       "n_with_target_peak": 5137
+      },
+      "Control_HEK_SEC_020118_30b": {
+       "fraction": 30,
+       "n_candidates": 23457,
+       "n_with_target_peak": 4669
+      },
+      "Control_HEK_SEC_020118_31b": {
+       "fraction": 31,
+       "n_candidates": 23160,
+       "n_with_target_peak": 4664
+      },
+      "Control_HEK_SEC_020118_32b": {
+       "fraction": 32,
+       "n_candidates": 22977,
+       "n_with_target_peak": 4337
+      },
+      "Control_HEK_SEC_020118_33b": {
+       "fraction": 33,
+       "n_candidates": 23455,
+       "n_with_target_peak": 5063
+      },
+      "Control_HEK_SEC_020118_34b": {
+       "fraction": 34,
+       "n_candidates": 22171,
+       "n_with_target_peak": 4522
+      },
+      "Control_HEK_SEC_020118_35b": {
+       "fraction": 35,
+       "n_candidates": 21207,
+       "n_with_target_peak": 4007
+      },
+      "Control_HEK_SEC_020118_36c": {
+       "fraction": 36,
+       "n_candidates": 22273,
+       "n_with_target_peak": 4488
+      },
+      "Control_HEK_SEC_020118_37c": {
+       "fraction": 37,
+       "n_candidates": 22990,
+       "n_with_target_peak": 3894
+      },
+      "Control_HEK_SEC_020118_38b": {
+       "fraction": 38,
+       "n_candidates": 22449,
+       "n_with_target_peak": 3229
+      }
+     }
+    }
+   },
+   "corum": {
+    "n_complexes_corum_subset": 2734,
+    "n_member_proteins_in_proteome": 3525,
+    "n_positive_pairs_possible": 37510
+   },
+   "ids_per_fraction": {
+    "Control_HEK_SEC_020118_15b": 322,
+    "Control_HEK_SEC_020118_16b": 5056,
+    "Control_HEK_SEC_020118_17b": 8142,
+    "Control_HEK_SEC_020118_18b": 7819,
+    "Control_HEK_SEC_020118_19b": 7318,
+    "Control_HEK_SEC_020118_20b": 4600,
+    "Control_HEK_SEC_020118_21b": 7108,
+    "Control_HEK_SEC_020118_22b": 8725,
+    "Control_HEK_SEC_020118_23b": 8227,
+    "Control_HEK_SEC_020118_24b": 7805,
+    "Control_HEK_SEC_020118_25c": 7007,
+    "Control_HEK_SEC_020118_26b": 7547,
+    "Control_HEK_SEC_020118_27b": 8325,
+    "Control_HEK_SEC_020118_28b": 7390,
+    "Control_HEK_SEC_020118_29b": 7014,
+    "Control_HEK_SEC_020118_30b": 6854,
+    "Control_HEK_SEC_020118_31b": 7428,
+    "Control_HEK_SEC_020118_32b": 7825,
+    "Control_HEK_SEC_020118_33b": 7105,
+    "Control_HEK_SEC_020118_34b": 8472,
+    "Control_HEK_SEC_020118_35b": 10106,
+    "Control_HEK_SEC_020118_36c": 8640,
+    "Control_HEK_SEC_020118_37c": 8281,
+    "Control_HEK_SEC_020118_38b": 9315
+   },
+   "entrapment_ids_per_fraction": {
+    "Control_HEK_SEC_020118_15b": 1,
+    "Control_HEK_SEC_020118_16b": 22,
+    "Control_HEK_SEC_020118_17b": 35,
+    "Control_HEK_SEC_020118_18b": 34,
+    "Control_HEK_SEC_020118_19b": 36,
+    "Control_HEK_SEC_020118_20b": 22,
+    "Control_HEK_SEC_020118_21b": 36,
+    "Control_HEK_SEC_020118_22b": 52,
+    "Control_HEK_SEC_020118_23b": 51,
+    "Control_HEK_SEC_020118_24b": 32,
+    "Control_HEK_SEC_020118_25c": 27,
+    "Control_HEK_SEC_020118_26b": 43,
+    "Control_HEK_SEC_020118_27b": 47,
+    "Control_HEK_SEC_020118_28b": 29,
+    "Control_HEK_SEC_020118_29b": 22,
+    "Control_HEK_SEC_020118_30b": 23,
+    "Control_HEK_SEC_020118_31b": 44,
+    "Control_HEK_SEC_020118_32b": 45,
+    "Control_HEK_SEC_020118_33b": 32,
+    "Control_HEK_SEC_020118_34b": 52,
+    "Control_HEK_SEC_020118_35b": 52,
+    "Control_HEK_SEC_020118_36c": 47,
+    "Control_HEK_SEC_020118_37c": 70,
+    "Control_HEK_SEC_020118_38b": 40
+   },
+   "modes": {
+    "none": {
+     "matrix_precursors": 48101,
+     "values_by_provenance_target": {
+      "ms2": 171388
+     },
+     "values_by_provenance_entrapment": {
+      "ms2": 238
+     },
+     "entrapment_combined_FDP_by_provenance": {
+      "ms2": 0.0027734725507790195
+     },
+     "entrapment_combined_FDP_all_values": 0.0027734725507790195,
+     "entrapment_precursors": 183,
+     "median_precursor_fwhm_fracs": 1.0,
+     "median_precursor_n_fracs": 2.0,
+     "proteins": 4344,
+     "median_protein_fwhm_fracs": 1.0,
+     "median_protein_n_fracs": 4.0,
+     "corum_own": {
+      "proteins": 1513,
+      "pairs": 1143828,
+      "positives": 20917,
+      "pr_auc": 0.07571986093753787,
+      "baseline_prevalence": 0.018286840329140394
+     },
+     "entrapment_null": {
+      "entrapment_profiles_ge_min_fracs": 13,
+      "frac_with_max_r_ge_0.8": 1.0,
+      "n_with_max_r_ge_0.8": 13,
+      "n_pairs_r_ge_0.8": 1395,
+      "median_max_r": 0.9591922003420458
+     },
+     "precursor_width_inflation_common": {
+      "n": 47918,
+      "mean_fwhm_ratio": 1.0,
+      "mean_n_fracs_ratio": 1.0,
+      "median_n_fracs": 2.0,
+      "median_fwhm": 1.0
+     },
+     "protein_width_inflation_common": {
+      "n": 4344,
+      "mean_fwhm_ratio": 1.0,
+      "mean_n_fracs_ratio": 1.0
+     },
+     "corum_common": {
+      "proteins": 1513,
+      "pairs": 1143828,
+      "positives": 20917,
+      "pr_auc": 0.07571986093753787,
+      "baseline_prevalence": 0.018286840329140394
+     }
+    },
+    "local": {
+     "matrix_precursors": 48101,
+     "values_by_provenance_target": {
+      "ms2": 171388,
+      "transfer_local": 33247
+     },
+     "values_by_provenance_entrapment": {
+      "ms2": 238,
+      "transfer_local": 13
+     },
+     "entrapment_combined_FDP_by_provenance": {
+      "transfer_local": 0.0007817197835237522,
+      "ms2": 0.0027734725507790195
+     },
+     "entrapment_combined_FDP_all_values": 0.002450143006354753,
+     "entrapment_precursors": 183,
+     "median_precursor_fwhm_fracs": 1.0,
+     "median_precursor_n_fracs": 3.0,
+     "proteins": 4344,
+     "median_protein_fwhm_fracs": 2.0,
+     "median_protein_n_fracs": 5.0,
+     "corum_own": {
+      "proteins": 1575,
+      "pairs": 1239525,
+      "positives": 21748,
+      "pr_auc": 0.07807144685374649,
+      "baseline_prevalence": 0.017545430709344306
+     },
+     "entrapment_null": {
+      "entrapment_profiles_ge_min_fracs": 15,
+      "frac_with_max_r_ge_0.8": 1.0,
+      "n_with_max_r_ge_0.8": 15,
+      "n_pairs_r_ge_0.8": 1845,
+      "median_max_r": 0.9548762978880168
+     },
+     "transfer_placement": {
+      "n_target_transfers": 33247,
+      "frac_ge3_from_same_precursor_ms2": 0.0,
+      "frac_ge3_from_same_protein_ms2": 0.0,
+      "median_dist_precursor": 1.0
+     },
+     "precursor_width_inflation_common": {
+      "n": 47918,
+      "mean_fwhm_ratio": 1.077256287011494,
+      "mean_n_fracs_ratio": 1.202311052085915,
+      "median_n_fracs": 3.0,
+      "median_fwhm": 1.0
+     },
+     "protein_width_inflation_common": {
+      "n": 4344,
+      "mean_fwhm_ratio": 1.0769724341547546,
+      "mean_n_fracs_ratio": 1.135981531647494
+     },
+     "corum_common": {
+      "proteins": 1513,
+      "pairs": 1143828,
+      "positives": 20917,
+      "pr_auc": 0.08203993042205114,
+      "baseline_prevalence": 0.018286840329140394
+     }
+    },
+    "global": {
+     "matrix_precursors": 48101,
+     "values_by_provenance_target": {
+      "ms2": 171388,
+      "transfer_global": 6196
+     },
+     "values_by_provenance_entrapment": {
+      "ms2": 238,
+      "transfer_global": 3
+     },
+     "entrapment_combined_FDP_by_provenance": {
+      "ms2": 0.0027734725507790195,
+      "transfer_global": 0.0009678980480722697
+     },
+     "entrapment_combined_FDP_all_values": 0.002710530015464642,
+     "entrapment_precursors": 183,
+     "median_precursor_fwhm_fracs": 1.0,
+     "median_precursor_n_fracs": 2.0,
+     "proteins": 4344,
+     "median_protein_fwhm_fracs": 2.0,
+     "median_protein_n_fracs": 5.0,
+     "corum_own": {
+      "proteins": 1527,
+      "pairs": 1165101,
+      "positives": 21024,
+      "pr_auc": 0.07380753100280676,
+      "baseline_prevalence": 0.018044787533441308
+     },
+     "entrapment_null": {
+      "entrapment_profiles_ge_min_fracs": 13,
+      "frac_with_max_r_ge_0.8": 1.0,
+      "n_with_max_r_ge_0.8": 13,
+      "n_pairs_r_ge_0.8": 1406,
+      "median_max_r": 0.956432408373348
+     },
+     "transfer_placement": {
+      "n_target_transfers": 6196,
+      "frac_ge3_from_same_precursor_ms2": 0.28082633957391867,
+      "frac_ge3_from_same_protein_ms2": 0.03916768665850673,
+      "median_dist_precursor": 1.0
+     },
+     "precursor_width_inflation_common": {
+      "n": 47918,
+      "mean_fwhm_ratio": 1.0106367075981835,
+      "mean_n_fracs_ratio": 1.0391026021935912,
+      "median_n_fracs": 2.0,
+      "median_fwhm": 1.0
+     },
+     "protein_width_inflation_common": {
+      "n": 4344,
+      "mean_fwhm_ratio": 1.0121550615335144,
+      "mean_n_fracs_ratio": 1.0359165313507697
+     },
+     "corum_common": {
+      "proteins": 1513,
+      "pairs": 1143828,
+      "positives": 20917,
+      "pr_auc": 0.07572662899889068,
+      "baseline_prevalence": 0.018286840329140394
+     }
+    },
+    "global_naive": {
+     "matrix_precursors": 48101,
+     "values_by_provenance_target": {
+      "ms2": 171388,
+      "transfer_global": 106703
+     },
+     "values_by_provenance_entrapment": {
+      "ms2": 238,
+      "transfer_global": 61
+     },
+     "entrapment_combined_FDP_by_provenance": {
+      "ms2": 0.0027734725507790195,
+      "transfer_global": 0.0011427072796073583
+     },
+     "entrapment_combined_FDP_all_values": 0.002148065663278135,
+     "entrapment_precursors": 183,
+     "median_precursor_fwhm_fracs": 1.0,
+     "median_precursor_n_fracs": 4.0,
+     "proteins": 4344,
+     "median_protein_fwhm_fracs": 2.0,
+     "median_protein_n_fracs": 9.0,
+     "corum_own": {
+      "proteins": 1653,
+      "pairs": 1365378,
+      "positives": 22487,
+      "pr_auc": 0.07278102981945815,
+      "baseline_prevalence": 0.01646943190823347
+     },
+     "entrapment_null": {
+      "entrapment_profiles_ge_min_fracs": 17,
+      "frac_with_max_r_ge_0.8": 0.9411764705882353,
+      "n_with_max_r_ge_0.8": 16,
+      "n_pairs_r_ge_0.8": 2424,
+      "median_max_r": 0.9529340476317959
+     },
+     "transfer_placement": {
+      "n_target_transfers": 106704,
+      "frac_ge3_from_same_precursor_ms2": 0.4123369320737742,
+      "frac_ge3_from_same_protein_ms2": 0.09244961193367043,
+      "median_dist_precursor": 2.0,
+      "est_false_frac_rt_decoy_window_has_peak": 0.01668149674518803
+     },
+     "precursor_width_inflation_common": {
+      "n": 47918,
+      "mean_fwhm_ratio": 1.1517713067177777,
+      "mean_n_fracs_ratio": 1.765392389563232,
+      "median_n_fracs": 4.0,
+      "median_fwhm": 1.0
+     },
+     "protein_width_inflation_common": {
+      "n": 4344,
+      "mean_fwhm_ratio": 1.1724936237539827,
+      "mean_n_fracs_ratio": 1.7731444014277478
+     },
+     "corum_common": {
+      "proteins": 1513,
+      "pairs": 1143828,
+      "positives": 20917,
+      "pr_auc": 0.0883272625938491,
+      "baseline_prevalence": 0.018286840329140394
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.4278409583494067,
+    "align_s": 0.7053828351199627,
+    "transfer_local_s": 3.4083954701200128,
+    "transfer_global_s": 3.3591602756641805,
+    "xic_s": 4.957502530887723,
+    "total_s": 33.678895788267255
+   }
+  },
+  "index": {
+   "n_targets": 2417893,
+   "n_peptidoforms": 14116962,
+   "n_peptidoforms_by_family": {
+    "T": 3529277,
+    "E": 3529204,
+    "DT": 3529277,
+    "DE": 3529204
+   },
+   "timing_s": {
+    "digest_s": 9.256396879907697,
+    "families_s": 38.52047395892441,
+    "expand_s": 21.32362858625129,
+    "arrays_s": 36.17167998570949,
+    "total_s": 135.1289218980819
+   }
+  }
+ },
+ "ingest_runs": [
+  {
+   "run": "LM2500_DDA",
+   "wall_s": 23.513872171752155,
+   "copy_s": 1.1152725680731237,
+   "core_s": 7.48
+  },
+  {
+   "run": "LM2502_DDA",
+   "wall_s": 22.452011126093566,
+   "copy_s": 1.4629625817760825,
+   "core_s": 7.619999999999999
+  },
+  {
+   "run": "LM2498_DDA",
+   "wall_s": 23.954784110188484,
+   "copy_s": 1.2140526012517512,
+   "core_s": 7.9399999999999995
+  },
+  {
+   "run": "LM2497_DDA",
+   "wall_s": 23.872750252950937,
+   "copy_s": 1.3836238700896502,
+   "core_s": 7.800000000000001
+  },
+  {
+   "run": "LM2494_DDA",
+   "wall_s": 24.03331760317087,
+   "copy_s": 1.428606600034982,
+   "core_s": 7.98
+  },
+  {
+   "run": "LM2489_DDA",
+   "wall_s": 25.79531507799402,
+   "copy_s": 1.4929060526192188,
+   "core_s": 7.949999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_12b",
+   "wall_s": 46.9436162780039,
+   "copy_s": 0.5453475578688085,
+   "core_s": 5.140000000000001
+  },
+  {
+   "run": "Control_HEK_SEC_020118_10b",
+   "wall_s": 44.74672006489709,
+   "copy_s": 2.7444645636714995,
+   "core_s": 5.02
+  },
+  {
+   "run": "Control_HEK_SEC_020118_13b",
+   "wall_s": 45.77432968933135,
+   "copy_s": 1.7208298579789698,
+   "core_s": 5.369999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_15b",
+   "wall_s": 46.3391992659308,
+   "copy_s": 1.155260318890214,
+   "core_s": 5.42
+  },
+  {
+   "run": "Control_HEK_SEC_020118_14b",
+   "wall_s": 46.00253551220521,
+   "copy_s": 1.5093547441065311,
+   "core_s": 5.1000000000000005
+  },
+  {
+   "run": "Control_HEK_SEC_020118_11b",
+   "wall_s": 46.74941912293434,
+   "copy_s": 0.7699347389861941,
+   "core_s": 5.01
+  },
+  {
+   "run": "Control_HEK_SEC_020118_18b",
+   "wall_s": 45.10098036797717,
+   "copy_s": 2.415415372233838,
+   "core_s": 5.91
+  },
+  {
+   "run": "Control_HEK_SEC_020118_16b",
+   "wall_s": 44.23834253102541,
+   "copy_s": 3.296781545970589,
+   "core_s": 5.819999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_19b",
+   "wall_s": 46.438483643811196,
+   "copy_s": 1.1134412758983672,
+   "core_s": 6.38
+  },
+  {
+   "run": "Control_HEK_SEC_020118_17b",
+   "wall_s": 44.75329834036529,
+   "copy_s": 2.890348774846643,
+   "core_s": 6.7700000000000005
+  },
+  {
+   "run": "Control_HEK_SEC_020118_24b",
+   "wall_s": 25.871805570088327,
+   "copy_s": 3.497976329177618,
+   "core_s": 6.34
+  },
+  {
+   "run": "Control_HEK_SEC_020118_20b",
+   "wall_s": 28.213481139857322,
+   "copy_s": 1.7573222573846579,
+   "core_s": 5.6899999999999995
+  },
+  {
+   "run": "Control_HEK_SEC_020118_26b",
+   "wall_s": 29.805210133083165,
+   "copy_s": 1.0332783600315452,
+   "core_s": 6.59
+  },
+  {
+   "run": "Control_HEK_SEC_020118_27b",
+   "wall_s": 29.174676964990795,
+   "copy_s": 1.8273454741574824,
+   "core_s": 6.82
+  },
+  {
+   "run": "Control_HEK_SEC_020118_22b",
+   "wall_s": 29.900781442876905,
+   "copy_s": 1.8469785409979522,
+   "core_s": 6.529999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_21b",
+   "wall_s": 31.864272324368358,
+   "copy_s": 0.8300929819233716,
+   "core_s": 7.05
+  },
+  {
+   "run": "Control_HEK_SEC_020118_23b",
+   "wall_s": 30.2949120500125,
+   "copy_s": 2.4333893349394202,
+   "core_s": 6.279999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_29b",
+   "wall_s": 30.142959679942578,
+   "copy_s": 2.4585761688649654,
+   "core_s": 6.279999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_28b",
+   "wall_s": 31.7130786026828,
+   "copy_s": 0.9972494188696146,
+   "core_s": 6.71
+  },
+  {
+   "run": "Control_HEK_SEC_020118_25c",
+   "wall_s": 29.561602820642292,
+   "copy_s": 3.3724827617406845,
+   "core_s": 6.36
+  },
+  {
+   "run": "Control_HEK_SEC_020118_30b",
+   "wall_s": 12.334201059304178,
+   "copy_s": 1.6593508729711175,
+   "core_s": 5.739999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_34b",
+   "wall_s": 10.720758287701756,
+   "copy_s": 1.0939041851088405,
+   "core_s": 5.62
+  },
+  {
+   "run": "Control_HEK_SEC_020118_33b",
+   "wall_s": 10.555948353838176,
+   "copy_s": 2.1800612276419997,
+   "core_s": 5.53
+  },
+  {
+   "run": "Control_HEK_SEC_020118_37c",
+   "wall_s": 8.549905925057828,
+   "copy_s": 2.762695411220193,
+   "core_s": 5.859999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_36c",
+   "wall_s": 7.038287105038762,
+   "copy_s": 4.317393435630947,
+   "core_s": 5.49
+  },
+  {
+   "run": "Control_HEK_SEC_020118_38b",
+   "wall_s": 10.048060500063002,
+   "copy_s": 1.4048732789233327,
+   "core_s": 6.4
+  },
+  {
+   "run": "Control_HEK_SEC_020118_31b",
+   "wall_s": 12.048482992686331,
+   "copy_s": 2.252474302891642,
+   "core_s": 6.369999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_32b",
+   "wall_s": 11.606280812993646,
+   "copy_s": 1.965540774166584,
+   "core_s": 6.43
+  },
+  {
+   "run": "Control_HEK_SEC_020118_35b",
+   "wall_s": 7.433464544825256,
+   "copy_s": 4.465903586708009,
+   "core_s": 6.0600000000000005
+  }
+ ],
+ "ms1_runs": [
+  {
+   "run": "LM2481_DDA",
+   "wall_s": 83.2,
+   "core_s": 9.87
+  },
+  {
+   "run": "LM2489_DDA",
+   "wall_s": 83.2,
+   "core_s": 10.12
+  },
+  {
+   "run": "LM2490_DDA",
+   "wall_s": 83.22,
+   "core_s": 9.649999999999999
+  },
+  {
+   "run": "LM2480_DDA",
+   "wall_s": 83.22,
+   "core_s": 10.92
+  },
+  {
+   "run": "LM2486_DDA",
+   "wall_s": 83.22,
+   "core_s": 9.559999999999999
+  },
+  {
+   "run": "LM2487_DDA",
+   "wall_s": 83.27,
+   "core_s": 10.379999999999999
+  },
+  {
+   "run": "LM2502_DDA",
+   "wall_s": 15.02,
+   "core_s": 9.44
+  },
+  {
+   "run": "LM2494_DDA",
+   "wall_s": 15.09,
+   "core_s": 9.06
+  },
+  {
+   "run": "LM2500_DDA",
+   "wall_s": 15.05,
+   "core_s": 8.95
+  },
+  {
+   "run": "LM2497_DDA",
+   "wall_s": 15.07,
+   "core_s": 9.61
+  },
+  {
+   "run": "LM2492_DDA",
+   "wall_s": 15.09,
+   "core_s": 9.85
+  },
+  {
+   "run": "LM2498_DDA",
+   "wall_s": 15.08,
+   "core_s": 8.649999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_11b",
+   "wall_s": 74.32,
+   "core_s": 7.460000000000001
+  },
+  {
+   "run": "Control_HEK_SEC_020118_13b",
+   "wall_s": 74.32,
+   "core_s": 7.24
+  },
+  {
+   "run": "Control_HEK_SEC_020118_19b",
+   "wall_s": 74.32,
+   "core_s": 7.91
+  },
+  {
+   "run": "Control_HEK_SEC_020118_14b",
+   "wall_s": 74.33,
+   "core_s": 7.35
+  },
+  {
+   "run": "Control_HEK_SEC_020118_15b",
+   "wall_s": 74.32,
+   "core_s": 6.53
+  },
+  {
+   "run": "Control_HEK_SEC_020118_10b",
+   "wall_s": 74.33,
+   "core_s": 6.6899999999999995
+  },
+  {
+   "run": "Control_HEK_SEC_020118_12b",
+   "wall_s": 74.33,
+   "core_s": 6.7
+  },
+  {
+   "run": "Control_HEK_SEC_020118_18b",
+   "wall_s": 74.34,
+   "core_s": 7.37
+  },
+  {
+   "run": "Control_HEK_SEC_020118_17b",
+   "wall_s": 74.47,
+   "core_s": 8.01
+  },
+  {
+   "run": "Control_HEK_SEC_020118_16b",
+   "wall_s": 74.49,
+   "core_s": 7.85
+  },
+  {
+   "run": "Control_HEK_SEC_020118_23b",
+   "wall_s": 14.53,
+   "core_s": 8.05
+  },
+  {
+   "run": "Control_HEK_SEC_020118_29b",
+   "wall_s": 14.43,
+   "core_s": 7.220000000000001
+  },
+  {
+   "run": "Control_HEK_SEC_020118_20b",
+   "wall_s": 14.73,
+   "core_s": 6.84
+  },
+  {
+   "run": "Control_HEK_SEC_020118_26b",
+   "wall_s": 14.81,
+   "core_s": 7.409999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_22b",
+   "wall_s": 14.94,
+   "core_s": 7.53
+  },
+  {
+   "run": "Control_HEK_SEC_020118_28b",
+   "wall_s": 14.94,
+   "core_s": 7.49
+  },
+  {
+   "run": "Control_HEK_SEC_020118_25c",
+   "wall_s": 15.08,
+   "core_s": 7.58
+  },
+  {
+   "run": "Control_HEK_SEC_020118_21b",
+   "wall_s": 15.17,
+   "core_s": 7.54
+  },
+  {
+   "run": "Control_HEK_SEC_020118_24b",
+   "wall_s": 15.17,
+   "core_s": 8.01
+  },
+  {
+   "run": "Control_HEK_SEC_020118_27b",
+   "wall_s": 15.5,
+   "core_s": 8.23
+  },
+  {
+   "run": "Control_HEK_SEC_020118_37c",
+   "wall_s": 11.7,
+   "core_s": 6.37
+  },
+  {
+   "run": "Control_HEK_SEC_020118_33b",
+   "wall_s": 12.31,
+   "core_s": 6.8
+  },
+  {
+   "run": "Control_HEK_SEC_020118_30b",
+   "wall_s": 12.61,
+   "core_s": 7.39
+  },
+  {
+   "run": "Control_HEK_SEC_020118_34b",
+   "wall_s": 12.21,
+   "core_s": 7.279999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_31b",
+   "wall_s": 12.55,
+   "core_s": 7.090000000000001
+  },
+  {
+   "run": "Control_HEK_SEC_020118_32b",
+   "wall_s": 12.52,
+   "core_s": 7.27
+  },
+  {
+   "run": "Control_HEK_SEC_020118_38b",
+   "wall_s": 12.28,
+   "core_s": 7.74
+  },
+  {
+   "run": "Control_HEK_SEC_020118_36c",
+   "wall_s": 12.45,
+   "core_s": 6.949999999999999
+  },
+  {
+   "run": "Control_HEK_SEC_020118_35b",
+   "wall_s": 12.56,
+   "core_s": 7.22
+  }
+ ],
+ "ingest_median": {
+  "wall_s": 29.174676964990795,
+  "core_s": 6.34,
+  "copy_s": 1.7208298579789698
+ },
+ "ms1_median": {
+  "wall_s": 15.09,
+  "core_s": 7.54
+ }
+}

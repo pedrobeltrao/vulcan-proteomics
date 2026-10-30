@@ -1,0 +1,54 @@
+# M6 quant (dev only).  Every number in metrics.json comes from the scripts below; work dir /tmp/vulcan_m6.
+data:
+  D9:   # dev, added 2026-10-27 (DATA.md "D9"); manifest data/manifests/d9.tsv, fetch scripts/data/fetch_d9.py
+    hye_runs: [LFQ_Astral_DDA_15min_50ng_Condition_{A,B}_REP{1,2,3}.raw]      # ProteoBench DDA-Astral
+    mbr_control_runs: [LFQ_Astral_DDA_15min_50ng_Human_0{1,2,3}.raw]           # ProteoBench DDA-astral-entrapment, human only
+    fasta: ProteoBenchFASTA_MixedSpecies_HYE.fasta (31,889 entries incl. Cont_)
+    expected_log2fc_A_over_B: {HUMAN: 0.0, YEAST: 1.0, ECOLI: -2.0}
+  D4:   # dev; PXD016766 12 x 90 min SPS-MS3 TMT11 fractions of one plex (11 human cell lines)
+    fasta: human SwissProt canonical + Frankenfield 2022 contaminants (/tmp/vulcan_e2/human_contam.fasta, as M1e/E2)
+    submitter_reference: data/manifests/d4_ref.tsv (12 SEQUEST/LDA mzIdentML)
+sealed_data_touched: none
+pipeline_d9:
+  ingest: python -m vulcan.io.convert RAW (direct RawFileReader)
+  ms1: python -m vulcan.ms1 STORE (FeatureParams defaults; hypothesis table, no calibration json)
+  index: scripts/m6/build_indexes.py   # trypsin KR/P, 2 missed, len 7-50, 500-5000 Da, CAM static, Met-ox var <= 2, paired pseudo-reverse decoys (seed 1001)
+  search: python -m vulcan.gpu.run --params '{"report_psms": 5}'   # 10 ppm precursor, 20 ppm fragment, iso 0..2, z 2-4 if unknown
+  scoring: scripts/m6/score.py   # frozen M3 static_gbm_pred (OT-HCD class; applied OUT OF CLASS to Astral HCD), AlphaPeptDeep generic, instrument 'QE', per-run label-blind NCE choice
+  ids: scripts/m6/ids.py   # paired double competition pooled over the experiment's runs, units = peptidoforms, hash tie-break seed 11; run-level evidence = PSM winner of an accepted peptidoform with score >= the alpha threshold
+  id_alpha: 0.01
+  lfq: scripts/m6/lfq_d9.py
+    link: hypothesis table (ms1_feature groups, same charge, |ppm - run offset| <= clip(4 SD, 3, 10)) then targeted feature lookup (PSM RT within hill bounds +- 0.05 min)
+    precursor_feature: feature linked by most PSMs (ties: larger area)
+    intensity: xic   # fixed-window XIC re-integration (isotopes M..M+2, +-max(3 SD, 3) ppm, window = precursor's median mono-hill width across runs, centred on the run's apex); 'area' = feature hill areas (kept as an arm)
+    alignment: star to consensus, 2 rounds, monotone piecewise-linear on <= 30 quantile knots, local robust residual SD
+    mbr:   # opt-in (--mbr)
+      donors: precursors with an accepted PSM at ID q <= 0.1% (--donor-alpha 0.001); decoy peptidoforms above the same threshold are decoy-peptide donors
+      window: RT +- max(4 local SD, 0.05 min), mass +- max(3 run SD, 2 ppm)
+      score: fixed a-priori -0.5 (dppm/sd)^2 - 0.5 (dRT/sd_rt)^2 + 2 iso_cos + 1 trace_cos - 0.5 ((log2 I - mu)/sd_I)^2   # nothing fitted
+      decoys: RT-shifted window (4-8 windows, >= 0.5 min, random sign, seed 11); m/z-shifted window (+11 x 1.0005 Da); decoy-peptide donors
+      exclude_claimed: true   # features explained by an MS2-identified precursor of the acceptor run are excluded from target AND decoy windows
+      transfer_q: per acceptor run; FDR(s) = (max(D_rt, D_mz) + 1)/T + D_pep/T, monotone; accepted if target beats both decoy peaks
+      transfer_q_threshold: 0.01
+      provenance: mbr (never counted as identification)
+  normalisation: per-run median of log2 ratio to the row mean over precursors observed in all runs (no species information)
+  rollup: [top3 (mean of the 3 most intense precursors per run), maxlfq (own implementation, pairwise medians, least squares per connected component), directlfq 0.3.3]
+metrics_d9:   # DESIGN 6.8, ProteoBench HYE convention; vulcan/quant/metrics.py
+  epsilon: mean log2 A - mean log2 B - expected, per precursor; contaminant and multi-species precursors removed; min 1 (and 3) observations per condition
+  cv: SD/mean of linear intensities per condition, >= 3 values
+  de: protein Welch t-test A vs B, positives = YEAST+ECOLI, negatives = HUMAN; standardised pAUC over FPR [0, 0.05]; TPR at empirical FDP <= 1% / 5%
+comparators_d9:
+  sage: tools/bin/sage 0.14.6 (reports 0.14.6), config configs/sage_D9_t32.json, built-in LFQ defaults, ProteoBench mzML, 32 threads
+  flashlfq: FlashLFQ 2.1.5 (.NET 10.0.14 runtime, invariant globalization), MBR on (default), mzML input (its RawFileReader path fails on this node); inputs = our PSMs and Sage PSMs (spectrum_q and peptide_q <= 1%)
+  same_post_processing: identical normalisation / roll-up / metrics for every tool (scripts/m6/evaluate_lfq.py)
+pipeline_d4:
+  script: scripts/m6/tmt_d4.py search|quant ; scripts/m6/tmt_agree.py
+  index: CAM + TMT-K static in the index; TMT peptide-N-term static added at load (mass32 + 229.162932 on every row, mask bit 63, kernel N-term delta)
+  search: report_psms 1, precursor +-10 ppm, fragment +-600 ppm (ppm-only kernels; IT-CID MS2)
+  scoring: plain hyperscore paired TDC (no IT-CID static model exists), pooled over the 12 fractions, q <= 1%
+  reporters: SPS-MS3 via master_scan + filter-string parent check; first pass +-20 ppm -> per-plex offset/SD -> window offset +- clip(3 SD, 3, 15) ppm; most intense centroid in window
+  purity: isolation_fraction of the MS1 feature matching the PSM (hypothesis table, |ppm| <= 15)
+  impurity: OpenMS TMT11 default matrix (pyopenms TMTElevenPlexQuantitationMethod), NNLS per spectrum
+  comparators: Sage 0.14.6 TMT11 level 3 (configs/sage_D4_t32.json); submitter mzIdentML (IDs only)
+timing: scripts/baselines/timed.py --lock (flock /tmp/vulcan_bench.lock), records in timings.jsonl with vulcan.hw fingerprint; scripts/m6/bench.sh
+seeds: {tie_break: 11, mbr_decoy_rt_shift: 11, decoy_seed_index: 1001}

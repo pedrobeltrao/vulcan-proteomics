@@ -1,0 +1,151 @@
+{
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 32,
+  "VULCAN_THREADS": null,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": "12.9",
+  "torch_cuda": null,
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "gpu_torch": {
+  "fp32_tflops": 18.63406863892292,
+  "bf16_tflops": 260.34719189929706,
+  "matmul_2000_matches_cpu": true,
+  "bf16_relerr_vs_fp32": 0.002535950093121636,
+  "torch": "2.14.1",
+  "torch_arch_list": [
+   "sm_50",
+   "sm_60",
+   "sm_70",
+   "sm_75",
+   "sm_80",
+   "sm_86",
+   "sm_90",
+   "sm_100",
+   "sm_120",
+   "compute_120"
+  ]
+ },
+ "nvcc_kernel": "sum correct on A100; cubins sm_80, sm_86 + PTX compute_86 (cuobjdump)",
+ "torch_load_inline_cuda_ext": {
+  "ok": true,
+  "first_build_s": 220.6,
+  "note": "cold Lustre header reads + 32-core contention; cached in data/cache/torch_extensions"
+ },
+ "tools": {
+  "cargo": "1.99.1",
+  "rustc": "1.99.1",
+  "sage_smoke": "LQSRPAAPPAPGPGQLTLR charge 3 identified, 2.1 s",
+  "comet": "2026.01 rev.1",
+  "trfp": "2.0.0.0",
+  "diann": "2.7.0 --threads 8 starts (reports 64 logical cores)"
+ },
+ "thermo_direct": {
+  "E1_old_node_core_s_per_1e5_ms2": 17.8,
+  "E1_old_node_01A": 19.13,
+  "Velos005137_15374_MS2": [
+   {
+    "n_concurrent": 1,
+    "core_s_per_1e5_ms2": 27.06,
+    "batch_wall_s": 4.6,
+    "files_per_hour": 781.0
+   },
+   {
+    "n_concurrent": 1,
+    "core_s_per_1e5_ms2": 25.11,
+    "batch_wall_s": 4.6,
+    "files_per_hour": 789.0
+   },
+   {
+    "n_concurrent": 8,
+    "core_s_per_1e5_ms2": 28.77,
+    "batch_wall_s": 7.2,
+    "files_per_hour": 4005.0
+   }
+  ],
+  "b1906_01A": [
+   {
+    "n_concurrent": 1,
+    "core_s_per_1e5_ms2": 19.23,
+    "batch_wall_s": 8.3,
+    "files_per_hour": 433.0
+   },
+   {
+    "n_concurrent": 8,
+    "core_s_per_1e5_ms2": 24.98,
+    "batch_wall_s": 13.4,
+    "files_per_hour": 2152.0
+   }
+  ],
+  "note": "1 thread/process, page-cache warm, same input file in all 8 concurrent processes; small file inflated by fixed ~2 core-s startup"
+ },
+ "trfp_mzml_Velos005137": {
+  "wall_s": 44.1,
+  "core_s": 36.2,
+  "core_s_per_1e5_ms2": 235,
+  "E1_old_node": 531
+ },
+ "sage_velos_prod": {
+  "sage_t32": {
+   "wall_s_median": 5.25,
+   "core_s_median": 56.06,
+   "n": 3
+  },
+  "sage-znver4_t32": {
+   "wall_s_median": 5.171,
+   "core_s_median": 56.77,
+   "n": 3
+  },
+  "sage_t4": {
+   "wall_s_median": 4.159,
+   "core_s_median": 8.65,
+   "n": 3
+  },
+  "sage-znver4_t4": {
+   "wall_s_median": 4.188,
+   "core_s_median": 8.44,
+   "n": 3
+  }
+ },
+ "sage_znver4": "identical PSMs/hyperscores (max abs diff 0.0); spectrum_q<=1% counts 10979/10979 (32-thr stock 10980); no speed gain; stock kept as default",
+ "vulcan_core_build": {
+  "from_scratch_s": 26.7,
+  "jobs": 32,
+  "persistent_target": "data/cache/cargo_target/vulcan_core",
+  "import_ok": true
+ },
+ "tests": "tests/hw tests/stats tests/io: 75 passed, 11 skipped (bruker/slow)"
+}

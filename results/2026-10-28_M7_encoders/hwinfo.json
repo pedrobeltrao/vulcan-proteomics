@@ -1,0 +1,41 @@
+{
+  "VULCAN_THREADS": null,
+  "affinity_count": 32,
+  "avx2": true,
+  "avx512": [
+    "avx512_bf16",
+    "avx512_bitalg",
+    "avx512_vbmi2",
+    "avx512_vnni",
+    "avx512_vpopcntdq",
+    "avx512bw",
+    "avx512cd",
+    "avx512dq",
+    "avx512f",
+    "avx512ifma",
+    "avx512vbmi",
+    "avx512vl"
+  ],
+  "cgroup_mem_limit_gb": null,
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "cuda_driver": "13.0",
+  "driver": "580.178.04",
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04",
+  "gpus": [
+    {
+      "compute_cap": "8.0",
+      "mem_mib": 81920,
+      "name": "NVIDIA A100 80GB PCIe"
+    }
+  ],
+  "hostname": "gpu-node",
+  "kernel": "5.15.0-194-generic",
+  "n_threads": 32,
+  "nvcc": null,
+  "os_cpu_count": 64,
+  "physical_cores_in_affinity": 32,
+  "python": "3.14.7",
+  "ram_gb": 1503.3,
+  "sockets_in_affinity": 2,
+  "torch_cuda": null
+}

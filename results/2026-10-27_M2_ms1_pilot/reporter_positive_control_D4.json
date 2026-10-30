@@ -1,0 +1,46 @@
+{
+ "ms2": {
+  "detected": {
+   "TMT": false,
+   "TMTpro": false,
+   "iTRAQ": false
+  },
+  "TMT_median": 0.001,
+  "TMT_ctrl": 0.0019,
+  "TMTpro_median": 0.001
+ },
+ "ms3": {
+  "detected": {
+   "TMT": true,
+   "TMTpro": false,
+   "iTRAQ": false
+  },
+  "TMT_median": 0.901,
+  "TMT_ctrl": 0.0119,
+  "TMTpro_median": 0.001
+ },
+ "meta": {
+  "ms2": {
+   "n": 18469,
+   "analyzer": {
+    "IT": 18469
+   },
+   "activation": {
+    "CID": 18469
+   },
+   "supplemental_activation": {},
+   "nce_median": 35.0
+  },
+  "ms3": {
+   "n": 18469,
+   "analyzer": {
+    "OT": 18469
+   },
+   "activation": {
+    "HCD": 18469
+   },
+   "supplemental_activation": {},
+   "nce_median": 65.0
+  }
+ }
+}

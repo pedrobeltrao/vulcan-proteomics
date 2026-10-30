@@ -1,0 +1,57 @@
+{"t": "2026-10-27T20:08:24", "run": 2, "ev": "start", "n_exclusions": 372, "exclusions_sha256": "3099fa7571420eb7ca5737483fdb004b1b6cdc533fadec89e9b7aae691348c99", "git_head": "df2e3802df791e1db57a9dc6f4c9692ba753ba95"}
+{"t": "2026-10-27T20:08:24", "run": 2, "ev": "candidate", "accession": "PXD055378"}
+{"t": "2026-10-27T20:08:25", "run": 2, "ev": "candidate", "accession": "PXD054269"}
+{"t": "2026-10-27T20:08:26", "run": 2, "ev": "listed", "accession": "PXD054269", "n_raw_records": 12}
+{"t": "2026-10-27T20:08:26", "run": 2, "ev": "proteome", "accession": "PXD054269", "proteome": {"upid": "UP000184207", "organism": "Fervidobacterium gondwanense DSM 13020", "taxid": "1121883", "n_proteins": 2001}}
+{"t": "2026-10-27T20:15:54", "run": 2, "ev": "downloaded", "accession": "PXD054269", "filename": "E04224_MS23-009_32.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054269/E04224_MS23-009_32.raw", "expected_size": 1124168945, "sha256": "cfbdc95263777ade62b5f82279a60b0d70357d6303228b77ac13d4cd8bfbc763", "sha1": "2401f47df0260f4d1b599fe3f46cfe9dc1716a7f", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:21:56", "run": 2, "ev": "downloaded", "accession": "PXD054269", "filename": "E04227_MS23-009_35.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054269/E04227_MS23-009_35.raw", "expected_size": 1169100267, "sha256": "a752fad75fbd81a388d625341aab3cf7c7a664cfaf102402bde85e3e02ea5b28", "sha1": "4db12f6c8c60cdba142bd706a2271e1cf97ee423", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:29:56", "run": 2, "ev": "downloaded", "accession": "PXD054269", "filename": "E04266_MS23-009_69.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054269/E04266_MS23-009_69.raw", "expected_size": 1466882906, "sha256": "e618a76eb617385179714485d48820ae55ccb7c92fdc2575b9da9f41376eeb3b", "sha1": "305cbb0a9b6b6d704c0bb9f95746d3c5504ee7f6", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:32:10", "run": 2, "ev": "marker_admit", "accession": "PXD054269", "upid": "UP000184207", "exclude": true, "detected_members": ["B|ALB|9913", "B|SERPINA1|9913", "H|ALB|9606", "H|C3|9606", "H|CALML5|9606", "H|DSP|9606", "H|EVPL|9606", "H|FLG2|9606", "H|IGHG1|9606", "H|IGKC|9606", "H|LTF|9606", "H|LYZ|9606", "H|S100A8|9606", "H|SERPINB3|9606", "H|TF|9606", "K|KRT10|9606", "K|KRT14|9606", "K|KRT16|9606", "K|KRT17|9606", "K|KRT1|9606", "K|KRT2|9606", "K|KRT5|9606", "K|KRT6A|9606", "K|KRT77|9606", "K|KRT9|9606"], "trigger_members": ["B|ALB|9913", "B|SERPINA1|9913", "H|ALB|9606", "H|C3|9606", "H|CALML5|9606", "H|DSP|9606", "H|EVPL|9606", "H|FLG2|9606", "H|IGHG1|9606", "H|IGKC|9606", "H|LTF|9606", "H|LYZ|9606", "H|S100A8|9606", "H|SERPINB3|9606", "H|TF|9606"], "counts": null, "seconds": 134}
+{"t": "2026-10-27T20:32:11", "run": 2, "ev": "candidate", "accession": "PXD003639"}
+{"t": "2026-10-27T20:32:12", "run": 2, "ev": "candidate", "accession": "PXD054285"}
+{"t": "2026-10-27T20:32:13", "run": 2, "ev": "listed", "accession": "PXD054285", "n_raw_records": 12}
+{"t": "2026-10-27T20:32:13", "run": 2, "ev": "proteome", "accession": "PXD054285", "proteome": {"upid": "UP000288947", "organism": "Fervidobacterium changbaicum", "taxid": "310769", "n_proteins": 1919}}
+{"t": "2026-10-27T20:38:22", "run": 2, "ev": "downloaded", "accession": "PXD054285", "filename": "E04184_MS23-009_1.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054285/E04184_MS23-009_1.raw", "expected_size": 1056905699, "sha256": "c478097457a97533ff8a7071d8c0aaf0c724a04031db680e53660e6e451a781b", "sha1": "bdbad1ae18b35c211b9b89695222ce365aa63c76", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:46:11", "run": 2, "ev": "downloaded", "accession": "PXD054285", "filename": "E04231_MS23-009_39.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054285/E04231_MS23-009_39.raw", "expected_size": 1365993574, "sha256": "6ffe645affcc0ae3e39f55834697ce41c71a7d9a7d800fcf1f9f0317bd297eea", "sha1": "a6cc63ff76c51abc3203a674cb1ee0f5b271d598", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:52:31", "run": 2, "ev": "downloaded", "accession": "PXD054285", "filename": "E04234_MS23-009_42.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/05/PXD054285/E04234_MS23-009_42.raw", "expected_size": 1346034796, "sha256": "ad12f75c8de08a6a8ca9166fb4b007b8ac192ed707eea2017e683c23daf9f251", "sha1": "2335af3f434a8ebe73dff43f8adefa0fd2f9d154", "pride_sha1": "", "pride_sha1_source": "none", "sha1_status": "no_pride_checksum"}
+{"t": "2026-10-27T20:54:16", "run": 2, "ev": "marker_admit", "accession": "PXD054285", "upid": "UP000288947", "exclude": true, "detected_members": ["B|AHSG|9913", "B|ALB|9913", "B|HBA|9913", "B|SERPINA1|9913", "H|ALB|9606", "H|ARG1|9606", "H|CDSN|9606", "H|DCD|9606", "H|DSG1|9606", "H|DSP|9606", "H|FLG2|9606", "H|HBA1|9606", "H|HRNR|9606", "H|JUP|9606", "H|PKP1|9606", "H|SPRR2A|9606", "K|KRT10|9606", "K|KRT14|9606", "K|KRT16|9606", "K|KRT17|9606", "K|KRT1|9606", "K|KRT2|9606", "K|KRT5|9606", "K|KRT6A|9606", "K|KRT77|9606", "K|KRT9|9606"], "trigger_members": ["B|AHSG|9913", "B|ALB|9913", "B|HBA|9913", "B|SERPINA1|9913", "H|ALB|9606", "H|ARG1|9606", "H|CDSN|9606", "H|DCD|9606", "H|DSG1|9606", "H|DSP|9606", "H|FLG2|9606", "H|HBA1|9606", "H|HRNR|9606", "H|JUP|9606", "H|PKP1|9606", "H|SPRR2A|9606"], "counts": null, "seconds": 105}
+{"t": "2026-10-27T20:54:16", "run": 2, "ev": "candidate", "accession": "PXD006818"}
+{"t": "2026-10-27T20:54:17", "run": 2, "ev": "listed", "accession": "PXD006818", "n_raw_records": 76}
+{"t": "2026-10-27T20:54:17", "run": 2, "ev": "proteome", "accession": "PXD006818", "proteome": {"upid": "UP000028682", "organism": "Streptomyces lividans TK24", "taxid": "457428", "n_proteins": 7430}}
+{"t": "2026-10-27T20:57:05", "run": 2, "ev": "downloaded", "accession": "PXD006818", "filename": "SL203_set1_rep1.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/02/PXD006818/SL203_set1_rep1.raw", "expected_size": 580829183, "sha256": "2369e190a7295d7c3bf83e43dff0a95fef9602ed9780feff2fb54a5acb0d1e04", "sha1": "c940539b6bc5627ceb18cd0d6091bb17c4c1ae4c", "pride_sha1": "c940539b6bc5627ceb18cd0d6091bb17c4c1ae4c", "pride_sha1_source": "api", "sha1_status": "OK"}
+{"t": "2026-10-27T21:01:42", "run": 2, "ev": "downloaded", "accession": "PXD006818", "filename": "SL203_set1_rep6.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/02/PXD006818/SL203_set1_rep6.raw", "expected_size": 623186987, "sha256": "1f7dbc2c707644688e2dfcabd9c1fa8f2dcdd5e838d9783ffd097ce3da68a414", "sha1": "5f6b0f98891eb2b642143dd69f1203d5b7aea0be", "pride_sha1": "5f6b0f98891eb2b642143dd69f1203d5b7aea0be", "pride_sha1_source": "api", "sha1_status": "OK"}
+{"t": "2026-10-27T21:05:10", "run": 2, "ev": "downloaded", "accession": "PXD006818", "filename": "SL322_set1_rep5.raw", "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/02/PXD006818/SL322_set1_rep5.raw", "expected_size": 632534029, "sha256": "1584d3e7d4ddc1da374d261cee4a0cb190d7692881f1e3f5079c198b9a94298f", "sha1": "6d4b8e56e90160a8f82170e3a675f658e8d12b79", "pride_sha1": "6d4b8e56e90160a8f82170e3a675f658e8d12b79", "pride_sha1_source": "api", "sha1_status": "OK"}
+Traceback (most recent call last):
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 169, in <module>
+    main()
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 164, in main
+    S.main()
+  File "/tmp/vulcan_a2/wt/scripts/a2/select_dn2.py", line 399, in main
+    w = walk(shuffled(cands, cfg), cfg, WalkIO(io_.project_record, io_.sdrf, io_.list_files, io_.proteome,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/select_dn2.py", line 235, in walk
+    res = io.marker_and_admit(acc, got, prot)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 118, in marker_and_admit
+    res = super().marker_and_admit(acc, files, prot)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/select_dn2.py", line 386, in marker_and_admit
+    return admit.run_project(acc, files, prot, self.cfg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/admit.py", line 159, in run_project
+    res = admit_project(cm["certified"], db, ph, gpu_exhaustive(gate_idx, sp_by_run), near, thr, cfg)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/admit.py", line 66, in admit_project
+    ex = exhaustive(run, c)
+         ^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/admit.py", line 115, in run_one
+    tbl, _, _ = E.search_exhaustive(sub, gi, l1, p, report=1)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/vulcan/gpu/engine.py", line 520, in search_exhaustive
+    tbl = psm_table(sp, gi, l1, hyp, h, r, c, k2, scored, matched, peaks, p, report)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/vulcan/gpu/engine.py", line 364, in psm_table
+    mb = k2["matched_b"].long()
+         ~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+EXIT=1

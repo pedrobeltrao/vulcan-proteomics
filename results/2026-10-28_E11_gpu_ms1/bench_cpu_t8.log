@@ -1,0 +1,95 @@
+$VULCAN_SCRATCH/vulcan_env/pred/lib/python3.12/site-packages/peptdeep/model/ms2.py:416: UserWarning: mask_modloss is deprecated and will be removed in the future. To mask the modloss fragments, the charged_frag_types should not include the modloss fragments.
+  warnings.warn(
+D0 b1906_293T_proteinID_01A_QE3 0 {'ms1': 7.393, 'search': 0.433, 'features': 9.653, 'model': 0.12, 'compete': 2.183, 'proteins': 0.503, 'total': 20.284} 18.04
+D0 b1906_293T_proteinID_01A_QE3 1 {'ms1': 6.511, 'search': 0.345, 'features': 0.662, 'model': 0.078, 'compete': 0.254, 'proteins': 0.576, 'total': 8.427} 14.47
+D0 b1906_293T_proteinID_01A_QE3 2 {'ms1': 6.449, 'search': 0.335, 'features': 0.662, 'model': 0.083, 'compete': 0.254, 'proteins': 0.58, 'total': 8.363} 14.42
+D0 b1906_293T_proteinID_01A_QE3 3 {'ms1': 6.468, 'search': 0.33, 'features': 0.666, 'model': 0.073, 'compete': 0.257, 'proteins': 0.37, 'total': 8.164} 14.21
+D0 b1937_293T_proteinID_01B_QE3 0 {'ms1': 6.227, 'search': 0.353, 'features': 0.977, 'model': 0.088, 'compete': 0.275, 'proteins': 0.697, 'total': 8.617} 14.26
+D0 b1937_293T_proteinID_01B_QE3 1 {'ms1': 6.2, 'search': 0.353, 'features': 0.669, 'model': 0.082, 'compete': 0.274, 'proteins': 0.609, 'total': 8.187} 14.15
+D0 b1937_293T_proteinID_01B_QE3 2 {'ms1': 6.219, 'search': 0.355, 'features': 0.669, 'model': 0.089, 'compete': 0.274, 'proteins': 0.602, 'total': 8.208} 14.25
+D0 b1937_293T_proteinID_01B_QE3 3 {'ms1': 6.229, 'search': 0.359, 'features': 0.682, 'model': 0.078, 'compete': 0.274, 'proteins': 0.399, 'total': 8.021} 14.11
+D1 Velos005137 0 {'ms1': 0.78, 'search': 0.071, 'features': 2.946, 'model': 0.007, 'compete': 0.127, 'proteins': 0.066, 'total': 3.997} 2.23
+D1 Velos005137 1 {'ms1': 0.771, 'search': 0.069, 'features': 0.125, 'model': 0.007, 'compete': 0.034, 'proteins': 0.234, 'total': 1.24} 2.08
+D1 Velos005137 2 {'ms1': 0.761, 'search': 0.069, 'features': 0.125, 'model': 0.007, 'compete': 0.034, 'proteins': 0.046, 'total': 1.042} 1.85
+D1 Velos005137 3 {'ms1': 0.78, 'search': 0.068, 'features': 0.124, 'model': 0.007, 'compete': 0.034, 'proteins': 0.046, 'total': 1.058} 1.85
+D8h E9_0000__H0799BL 0 {'ms1': 12.417, 'search': 1.06, 'features': 23.042, 'model': 0.288, 'compete': 0.953, 'proteins': 2.444, 'total': 40.204} 34.12
+D8h E9_0000__H0799BL 1 {'ms1': 13.314, 'search': 1.252, 'features': 1.953, 'model': 0.277, 'compete': 0.926, 'proteins': 1.736, 'total': 19.458} 31.7
+D8h E9_0000__H0799BL 2 {'ms1': 13.524, 'search': 1.418, 'features': 2.793, 'model': 0.313, 'compete': 0.952, 'proteins': 1.418, 'total': 20.418} 32.59
+D8h E9_0000__H0799BL 3 {'ms1': 13.693, 'search': 1.092, 'features': 1.345, 'model': 0.278, 'compete': 0.788, 'proteins': 1.456, 'total': 18.652} 29.94
+D8h E9_0001__QE-B_2018-09_E02_Pr 0 {'ms1': 0.868, 'search': 0.052, 'features': 0.55, 'model': 0.028, 'compete': 0.044, 'proteins': 0.217, 'total': 1.759} 1.86
+D8h E9_0001__QE-B_2018-09_E02_Pr 1 {'ms1': 0.593, 'search': 0.069, 'features': 0.876, 'model': 0.029, 'compete': 0.044, 'proteins': 0.16, 'total': 1.772} 1.92
+D8h E9_0001__QE-B_2018-09_E02_Pr 2 {'ms1': 0.589, 'search': 0.065, 'features': 0.789, 'model': 0.027, 'compete': 0.044, 'proteins': 0.158, 'total': 1.671} 1.92
+D8h E9_0001__QE-B_2018-09_E02_Pr 3 {'ms1': 0.75, 'search': 0.068, 'features': 0.805, 'model': 0.025, 'compete': 0.044, 'proteins': 0.17, 'total': 1.861} 2.02
+D8h E9_0002__MGP2 0 {'ms1': 9.11, 'search': 0.081, 'features': 3.386, 'model': 0.007, 'compete': 0.035, 'proteins': 0.145, 'total': 12.765} 13.96
+D8h E9_0002__MGP2 1 {'ms1': 11.622, 'search': 0.088, 'features': 0.452, 'model': 0.008, 'compete': 0.036, 'proteins': 0.117, 'total': 12.323} 15.66
+D8h E9_0002__MGP2 2 {'ms1': 6.777, 'search': 0.121, 'features': 0.679, 'model': 0.012, 'compete': 0.039, 'proteins': 0.717, 'total': 8.344} 12.05
+D8h E9_0002__MGP2 3 {'ms1': 5.734, 'search': 0.102, 'features': 0.719, 'model': 0.012, 'compete': 0.039, 'proteins': 0.145, 'total': 6.751} 10.51
+D8h E9_0003__20180623_PC463-Grav 0 {'ms1': 4.028, 'search': 0.27, 'features': 1.907, 'model': 0.033, 'compete': 0.145, 'proteins': 0.336, 'total': 6.719} 8.51
+D8h E9_0003__20180623_PC463-Grav 1 {'ms1': 5.457, 'search': 0.431, 'features': 0.537, 'model': 0.029, 'compete': 0.121, 'proteins': 0.503, 'total': 7.078} 7.98
+D8h E9_0003__20180623_PC463-Grav 2 {'ms1': 3.813, 'search': 0.263, 'features': 0.683, 'model': 0.051, 'compete': 0.132, 'proteins': 0.259, 'total': 5.201} 7.71
+D8h E9_0003__20180623_PC463-Grav 3 {'ms1': 3.465, 'search': 0.266, 'features': 0.745, 'model': 0.052, 'compete': 0.133, 'proteins': 0.277, 'total': 4.939} 7.97
+D8h E9_0004__20210122-YP20210447 0 {'ms1': 2.407, 'search': 0.519, 'features': 1.059, 'model': 0.163, 'compete': 0.421, 'proteins': 1.092, 'total': 5.661} 7.94
+D8h E9_0004__20210122-YP20210447 1 {'ms1': 2.352, 'search': 0.525, 'features': 1.066, 'model': 0.162, 'compete': 0.425, 'proteins': 0.904, 'total': 5.433} 7.64
+D8h E9_0004__20210122-YP20210447 2 {'ms1': 2.431, 'search': 0.518, 'features': 1.089, 'model': 0.226, 'compete': 0.417, 'proteins': 1.012, 'total': 5.693} 7.94
+D8h E9_0004__20210122-YP20210447 3 {'ms1': 2.423, 'search': 0.525, 'features': 1.116, 'model': 0.167, 'compete': 0.424, 'proteins': 0.981, 'total': 5.636} 7.69
+D8h E9_0005__20240423_LennonR_Ha 0 {'ms1': 0.863, 'search': 0.252, 'features': 0.5, 'model': 0.064, 'compete': 0.157, 'proteins': 0.365, 'total': 2.201} 2.96
+D8h E9_0005__20240423_LennonR_Ha 1 {'ms1': 0.856, 'search': 0.24, 'features': 0.461, 'model': 0.045, 'compete': 0.181, 'proteins': 0.591, 'total': 2.374} 3.1
+D8h E9_0005__20240423_LennonR_Ha 2 {'ms1': 0.943, 'search': 0.301, 'features': 0.926, 'model': 0.071, 'compete': 0.175, 'proteins': 0.357, 'total': 2.773} 3.47
+D8h E9_0005__20240423_LennonR_Ha 3 {'ms1': 0.84, 'search': 0.305, 'features': 0.443, 'model': 0.038, 'compete': 0.157, 'proteins': 0.302, 'total': 2.085} 2.75
+D8h E9_0006__CL_CTL_p53_ZNF_0610 0 {'ms1': 1.03, 'search': 0.223, 'features': 0.51, 'model': 0.043, 'compete': 0.144, 'proteins': 0.597, 'total': 2.546} 2.9
+D8h E9_0006__CL_CTL_p53_ZNF_0610 1 {'ms1': 0.571, 'search': 0.222, 'features': 0.507, 'model': 0.043, 'compete': 0.146, 'proteins': 0.291, 'total': 1.78} 2.36
+D8h E9_0006__CL_CTL_p53_ZNF_0610 2 {'ms1': 0.595, 'search': 0.22, 'features': 0.504, 'model': 0.044, 'compete': 0.147, 'proteins': 0.563, 'total': 2.072} 2.68
+D8h E9_0006__CL_CTL_p53_ZNF_0610 3 {'ms1': 0.587, 'search': 0.221, 'features': 0.501, 'model': 0.043, 'compete': 0.148, 'proteins': 0.295, 'total': 1.795} 2.4
+D8h E9_0007__170413_gc_M5-013-14 0 {'ms1': 3.553, 'search': 0.025, 'features': 1.797, 'model': 0.001, 'compete': 0.002, 'proteins': 0.042, 'total': 5.42} 7.36
+D8h E9_0007__170413_gc_M5-013-14 1 {'ms1': 6.124, 'search': 0.027, 'features': 0.64, 'model': 0.001, 'compete': 0.002, 'proteins': 0.006, 'total': 6.801} 8.5
+D8h E9_0007__170413_gc_M5-013-14 2 {'ms1': 3.834, 'search': 0.023, 'features': 0.425, 'model': 0.001, 'compete': 0.002, 'proteins': 0.005, 'total': 4.29} 7.42
+D8h E9_0007__170413_gc_M5-013-14 3 {'ms1': 3.681, 'search': 0.027, 'features': 0.688, 'model': 0.001, 'compete': 0.002, 'proteins': 0.006, 'total': 4.405} 7.52
+D8h E9_0008__lgg1 0 {'ms1': 1.928, 'search': 0.557, 'features': 1.105, 'model': 0.145, 'compete': 0.408, 'proteins': 0.837, 'total': 4.981} 6.55
+D8h E9_0008__lgg1 1 {'ms1': 1.918, 'search': 0.559, 'features': 1.018, 'model': 0.146, 'compete': 0.4, 'proteins': 0.801, 'total': 4.842} 6.59
+D8h E9_0008__lgg1 2 {'ms1': 1.979, 'search': 0.563, 'features': 1.03, 'model': 0.15, 'compete': 0.403, 'proteins': 0.465, 'total': 4.589} 6.32
+D8h E9_0008__lgg1 3 {'ms1': 2.198, 'search': 0.657, 'features': 1.565, 'model': 0.386, 'compete': 0.409, 'proteins': 0.77, 'total': 5.985} 7.53
+D8h E9_0009__20170210_MCF7_LysC_ 0 {'ms1': 1.604, 'search': 0.389, 'features': 1.103, 'model': 0.061, 'compete': 0.236, 'proteins': 0.864, 'total': 4.256} 5.37
+D8h E9_0009__20170210_MCF7_LysC_ 1 {'ms1': 1.516, 'search': 0.388, 'features': 0.711, 'model': 0.064, 'compete': 0.234, 'proteins': 0.616, 'total': 3.528} 5.0
+D8h E9_0009__20170210_MCF7_LysC_ 2 {'ms1': 1.515, 'search': 0.396, 'features': 1.176, 'model': 0.123, 'compete': 0.265, 'proteins': 1.117, 'total': 4.592} 6.0
+D8h E9_0009__20170210_MCF7_LysC_ 3 {'ms1': 1.593, 'search': 0.482, 'features': 0.999, 'model': 0.059, 'compete': 0.238, 'proteins': 0.693, 'total': 4.064} 5.38
+{
+ "ms1": {
+  "wall_s": 49.35953613463789,
+  "core_s": 90.82450700000021,
+  "sub_wall_s": {
+   "load": 4.13626913446933,
+   "link": 4.215783774852753,
+   "split_filter": 9.737628357950598,
+   "summaries": 1.2551230085082352,
+   "isotopes": 21.394995086826384,
+   "table": 5.406068004667759,
+   "total": 46.70192775502801
+  }
+ },
+ "search": {
+  "wall_s": 4.478324203751981,
+  "core_s": 4.412284000000163,
+  "gpu_s": 3.20181857547164
+ },
+ "features": {
+  "wall_s": 10.298715759068727,
+  "core_s": 10.11136400000008,
+  "gpu_stream_s_features_model": 11.018159759521485
+ },
+ "model": {
+  "wall_s": 1.006061912048608,
+  "core_s": 1.0057420000001258
+ },
+ "compete": {
+  "wall_s": 3.0920671578496695,
+  "core_s": 3.092314000000009
+ },
+ "proteins": {
+  "wall_s": 6.3636672385036945,
+  "core_s": 6.358838999999989
+ },
+ "total": {
+  "wall_s": 75.49889204697683,
+  "core_s": 116.73770400000008
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "runs": [
+  "LM2480_DDA",
+  "LM2481_DDA",
+  "LM2492_DDA",
+  "LM2494_DDA",
+  "LM2497_DDA",
+  "LM2498_DDA"
+ ],
+ "score": "static",
+ "strata": "lip",
+ "per_run": false,
+ "groups": {
+  "all": {
+   "n_psm_winners": 349217,
+   "strata_counts": {
+    "0": 26722,
+    "1": 96309,
+    "2": 61230
+   },
+   "0.001": {
+    "peptidoforms": 24535,
+    "pooled_tdc_peptidoforms": 23520,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15328,
+      "score_threshold": 5.1361226295381766,
+      "decoy_pair_winners_above": 12,
+      "pooled_tdc_accepted": 14198,
+      "separate_tdc_accepted": 15414
+     },
+     "n_semi": {
+      "accepted": 5473,
+      "score_threshold": 6.823271616545121,
+      "decoy_pair_winners_above": 9,
+      "pooled_tdc_accepted": 5746,
+      "separate_tdc_accepted": 5128
+     },
+     "c_semi": {
+      "accepted": 3734,
+      "score_threshold": 6.160668759938129,
+      "decoy_pair_winners_above": 2,
+      "pooled_tdc_accepted": 3576,
+      "separate_tdc_accepted": 3734
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 26976,
+    "pooled_tdc_peptidoforms": 26858,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15906,
+      "score_threshold": 3.702760094074513,
+      "decoy_pair_winners_above": 58,
+      "pooled_tdc_accepted": 15667,
+      "separate_tdc_accepted": 16132
+     },
+     "n_semi": {
+      "accepted": 6611,
+      "score_threshold": 4.676131118862305,
+      "decoy_pair_winners_above": 160,
+      "pooled_tdc_accepted": 6687,
+      "separate_tdc_accepted": 6184
+     },
+     "c_semi": {
+      "accepted": 4459,
+      "score_threshold": 4.658938178331551,
+      "decoy_pair_winners_above": 48,
+      "pooled_tdc_accepted": 4504,
+      "separate_tdc_accepted": 4444
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 28753,
+    "pooled_tdc_peptidoforms": 28995,
+    "by_stratum": {
+     "specific": {
+      "accepted": 15976,
+      "score_threshold": 3.314732073686016,
+      "decoy_pair_winners_above": 84,
+      "pooled_tdc_accepted": 16101,
+      "separate_tdc_accepted": 16909
+     },
+     "n_semi": {
+      "accepted": 8048,
+      "score_threshold": 2.2235202789052484,
+      "decoy_pair_winners_above": 1223,
+      "pooled_tdc_accepted": 7735,
+      "separate_tdc_accepted": 6994
+     },
+     "c_semi": {
+      "accepted": 4729,
+      "score_threshold": 3.810336270765764,
+      "decoy_pair_winners_above": 127,
+      "pooled_tdc_accepted": 5159,
+      "separate_tdc_accepted": 4956
+     }
+    }
+   }
+  }
+ },
+ "wall_s": 45.95940487086773
+}

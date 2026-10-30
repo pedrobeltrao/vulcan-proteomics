@@ -1,0 +1,412 @@
+{
+ "rule": "leave-one-fold-out over project folds; metric = sum over held-out runs of target peptidoforms at q <= 1%\nafter the full chimeric pipeline (group winners -> CONGA neighbour filter -> paired double competition, pooled TDC,\nper run).  Highest wins; a candidate within 0.5% of the best is preferred if it uses the v1 feature set, then linear.",
+ "excluded_runs": {
+  "MN-WT1-Frac8": "not OT-HCD (FTMS+HCD fraction of MS2 = 0.00)",
+  "uzorak_07": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)",
+  "Sh-271": "RAW not decodable by RawFileReader (vulcan.io.convert exit 1)"
+ },
+ "runs": [
+  {
+   "run": "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE",
+   "accession": "PXD068465",
+   "fold": 0,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "KA121LQ_CSF_65",
+   "accession": "PXD026663",
+   "fold": 1,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "30min_LPS_2",
+   "accession": "PXD074418",
+   "fold": 2,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "PT10402-292_190921044254",
+   "accession": "PXD044783",
+   "fold": 0,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "Ctrl_JH_repli1_SCX4",
+   "accession": "PXD009743",
+   "fold": 1,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "P22_081_Singapur_Smim26_SampleII_02",
+   "accession": "PXD047664",
+   "fold": 2,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "No_guide_control_2_promoter_reporter",
+   "accession": "PXD047868",
+   "fold": 0,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "c3",
+   "accession": "PXD045252",
+   "fold": 1,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "211221_LL_17183_1",
+   "accession": "PXD031264",
+   "fold": 2,
+   "species": "human",
+   "source": "m3_train"
+  },
+  {
+   "run": "210521-MClass-21_0844-14-BAZ",
+   "accession": "PXD059835",
+   "fold": 0,
+   "species": "mouse",
+   "source": "m3_train"
+  },
+  {
+   "run": "XS_Shura_High_pH_Frac12_api05_4",
+   "accession": "PXD019012",
+   "fold": 2,
+   "species": "ecoli",
+   "source": "m3_train"
+  },
+  {
+   "run": "005_ECOLI72_F20",
+   "accession": "PXD029006",
+   "fold": 0,
+   "species": "ecoli",
+   "source": "m3_train"
+  },
+  {
+   "run": "shRB-1",
+   "accession": "PXD042073",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "20151118_HER2_04",
+   "accession": "PXD021865",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "YIG_130_L012_05_SoL_014_U01",
+   "accession": "PXD071247",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "QEAGF160127_112",
+   "accession": "PXD043497",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "q104758a",
+   "accession": "PXD013968",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "20171221_KW_KK_Ex229_KO_S_2_91",
+   "accession": "PXD037793",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "QE1_160915_OPL4019_GK_ALT_splice_SW480_I9",
+   "accession": "PXD006486",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "220912_25_Orbi3_KN_SER_G30_T55_Hart_UP1",
+   "accession": "PXD047127",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "oecf3-CP0480-07",
+   "accession": "PXD029658",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "A549_LPS",
+   "accession": "PXD032209",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "Christine_TPA_180223_LysC_H27",
+   "accession": "PXD014131",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "MEC2878-S30-LRRK2-BioID2-Rab29",
+   "accession": "PXD048808",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "55603_1_EXP_1171_hs_plasma_20_WT_1ug",
+   "accession": "PXD077276",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "20160930_AR_YE_10",
+   "accession": "PXD020844",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "1MLDCS-HBSS_OA",
+   "accession": "PXD035813",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "PP185_186AA_3",
+   "accession": "PXD042242",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "QE1123_MSQ1631_20190401_DOB_TAU_A4",
+   "accession": "PXD041199",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "aral2",
+   "accession": "PXD053278",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "BT474_H1",
+   "accession": "PXD040532",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "EH8725",
+   "accession": "PXD033125",
+   "fold": 0,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "CD1524_Marsh3B_Anti-TG2_2",
+   "accession": "PXD013777",
+   "fold": 1,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "E20212002382a",
+   "accession": "PXD037401",
+   "fold": 2,
+   "species": "human",
+   "source": "m7_new"
+  },
+  {
+   "run": "20151103_Qep8_MiWi_SA_074350_FR2_50",
+   "accession": "PXD006752",
+   "fold": 0,
+   "species": "mouse",
+   "source": "m7_new"
+  },
+  {
+   "run": "QEHF_20180116_LSantambrogio_S12_1",
+   "accession": "PXD015865",
+   "fold": 1,
+   "species": "mouse",
+   "source": "m7_new"
+  },
+  {
+   "run": "F1_TA",
+   "accession": "PXD035034",
+   "fold": 2,
+   "species": "mouse",
+   "source": "m7_new"
+  },
+  {
+   "run": "hm_5265_CB_072718_pt5ul_07",
+   "accession": "PXD024782",
+   "fold": 0,
+   "species": "ecoli",
+   "source": "m7_new"
+  },
+  {
+   "run": "qExHF01_05548_Chymo_B3",
+   "accession": "PXD007556",
+   "fold": 1,
+   "species": "ecoli",
+   "source": "m7_new"
+  },
+  {
+   "run": "20210921_HF1_MaRa_SA_P0114B_3",
+   "accession": "PXD039702",
+   "fold": 2,
+   "species": "ecoli",
+   "source": "m7_new"
+  }
+ ],
+ "n_runs": 40,
+ "n_psms": 6061439,
+ "cv": {
+  "v1|linear|{\"C\": 0.01}": {
+   "heldout_ids": 407941,
+   "per_fold": {
+    "0": 195814,
+    "1": 68061,
+    "2": 144066
+   }
+  },
+  "v1|linear|{\"C\": 0.1}": {
+   "heldout_ids": 405974,
+   "per_fold": {
+    "0": 194361,
+    "1": 68268,
+    "2": 143345
+   }
+  },
+  "v1|linear|{\"C\": 1.0}": {
+   "heldout_ids": 404444,
+   "per_fold": {
+    "0": 193383,
+    "1": 68406,
+    "2": 142655
+   }
+  },
+  "v1|gbm|{\"n\": 50}": {
+   "heldout_ids": 394786,
+   "per_fold": {
+    "0": 187524,
+    "1": 67416,
+    "2": 139846
+   }
+  },
+  "v1|gbm|{\"n\": 150}": {
+   "heldout_ids": 400482,
+   "per_fold": {
+    "0": 190718,
+    "1": 67798,
+    "2": 141966
+   }
+  },
+  "v1|gbm|{\"n\": 300}": {
+   "heldout_ids": 398703,
+   "per_fold": {
+    "0": 189563,
+    "1": 67715,
+    "2": 141425
+   }
+  },
+  "v2|linear|{\"C\": 0.01}": {
+   "heldout_ids": 407393,
+   "per_fold": {
+    "0": 195868,
+    "1": 67489,
+    "2": 144036
+   }
+  },
+  "v2|linear|{\"C\": 0.1}": {
+   "heldout_ids": 404591,
+   "per_fold": {
+    "0": 194128,
+    "1": 67419,
+    "2": 143044
+   }
+  },
+  "v2|linear|{\"C\": 1.0}": {
+   "heldout_ids": 403018,
+   "per_fold": {
+    "0": 192979,
+    "1": 67719,
+    "2": 142320
+   }
+  },
+  "v2|gbm|{\"n\": 50}": {
+   "heldout_ids": 394720,
+   "per_fold": {
+    "0": 187452,
+    "1": 67535,
+    "2": 139733
+   }
+  },
+  "v2|gbm|{\"n\": 150}": {
+   "heldout_ids": 398909,
+   "per_fold": {
+    "0": 189944,
+    "1": 67477,
+    "2": 141488
+   }
+  },
+  "v2|gbm|{\"n\": 300}": {
+   "heldout_ids": 397053,
+   "per_fold": {
+    "0": 188798,
+    "1": 67161,
+    "2": 141094
+   }
+  }
+ },
+ "hyperscore_ids_all_runs": 286288,
+ "best_cv": 407941,
+ "within_tolerance": [
+  "v1|linear|{\"C\": 0.01}: 407941",
+  "v1|linear|{\"C\": 0.1}: 405974",
+  "v2|linear|{\"C\": 0.01}: 407393"
+ ],
+ "chosen": {
+  "features": "v1",
+  "kind": "linear",
+  "hyperparams": {
+   "C": 0.01
+  },
+  "cv_heldout_ids": 407941,
+  "sha256": "3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186",
+  "train_positives_per_iter": [
+   532217,
+   747362,
+   799980
+  ]
+ },
+ "train_wall_s": 2634.610821017064
+}

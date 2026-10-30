@@ -1,0 +1,28 @@
+{
+ "P1": {
+  "files": 1,
+  "bytes": 3470679015,
+  "seconds": 11.677,
+  "GBps": 0.297
+ },
+ "P4": {
+  "files": 4,
+  "bytes": 9742710498,
+  "seconds": 12.127,
+  "GBps": 0.803
+ },
+ "P8": {
+  "files": 8,
+  "bytes": 15091726586,
+  "seconds": 13.094,
+  "GBps": 1.153
+ },
+ "P16": {
+  "files": 16,
+  "bytes": 20543185931,
+  "seconds": 16.172,
+  "GBps": 1.27
+ },
+ "aggregate_GBps_best": 1.27,
+ "note": "dd iflag=direct (no page cache), distinct dev RAW files, largest first; shared Lustre (shared-fs), other users active"
+}

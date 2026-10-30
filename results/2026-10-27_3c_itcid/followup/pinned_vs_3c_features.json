@@ -1,0 +1,142 @@
+{
+ "D10cf_prod": {
+  "n_values": 51267700,
+  "n_values_differ_from_3c": 225540,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.0001569986343383789,
+   "pred_sa_sqrt": 6.788969039916992e-05,
+   "pred_pearson": 0.00036016106605529785,
+   "pred_entropy": 0.00010353326797485352,
+   "pred_frac_obs": 7.513165473937988e-05,
+   "rt_abs_resid": 6.580352783203125e-05,
+   "rt_resid_z": 4.482269287109375e-05,
+   "rt_pred": 0.000186920166015625
+  }
+ },
+ "D10cf_E2001": {
+  "n_values": 51680332,
+  "n_values_differ_from_3c": 384499,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00020521879196166992,
+   "pred_sa_sqrt": 6.937980651855469e-05,
+   "pred_pearson": 0.0003934502601623535,
+   "pred_entropy": 0.00010526180267333984,
+   "pred_frac_obs": 0.00011146068572998047,
+   "rt_abs_resid": 4.57763671875e-05,
+   "rt_resid_z": 3.5762786865234375e-05,
+   "rt_pred": 0.0001373291015625
+  }
+ },
+ "D10cf_E2002": {
+  "n_values": 51675921,
+  "n_values_differ_from_3c": 887408,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00017189979553222656,
+   "pred_sa_sqrt": 6.365776062011719e-05,
+   "pred_pearson": 0.0003694295883178711,
+   "pred_entropy": 7.873773574829102e-05,
+   "pred_frac_obs": 8.130073547363281e-05,
+   "rt_abs_resid": 6.4849853515625e-05,
+   "rt_resid_z": 0.000217437744140625,
+   "rt_pred": 0.0002593994140625
+  }
+ },
+ "D10cf_E2003": {
+  "n_values": 51675679,
+  "n_values_differ_from_3c": 222416,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00022715330123901367,
+   "pred_sa_sqrt": 7.987022399902344e-05,
+   "pred_pearson": 0.0003701150417327881,
+   "pred_entropy": 0.00010901689529418945,
+   "pred_frac_obs": 9.47415828704834e-05,
+   "rt_abs_resid": 6.4849853515625e-05,
+   "rt_resid_z": 4.38690185546875e-05,
+   "rt_pred": 0.000186920166015625
+  }
+ },
+ "D10cf_C": {
+  "n_values": 51719008,
+  "n_values_differ_from_3c": 343426,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00013774633407592773,
+   "pred_sa_sqrt": 6.031990051269531e-05,
+   "pred_pearson": 0.000249713659286499,
+   "pred_entropy": 9.66787338256836e-05,
+   "pred_frac_obs": 9.316205978393555e-05,
+   "rt_abs_resid": 0.0001087188720703125,
+   "rt_resid_z": 8.20159912109375e-05,
+   "rt_pred": 0.0003948211669921875
+  }
+ },
+ "D4_prod": {
+  "n_values": 11740905,
+  "n_values_differ_from_3c": 150067,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00014668703079223633,
+   "pred_sa_sqrt": 5.418062210083008e-05,
+   "pred_pearson": 0.0002671480178833008,
+   "pred_entropy": 7.516145706176758e-05,
+   "pred_frac_obs": 0.0001087188720703125,
+   "rt_abs_resid": 6.29425048828125e-05,
+   "rt_resid_z": 2.765655517578125e-05,
+   "rt_pred": 0.000102996826171875
+  }
+ },
+ "D4_E2001": {
+  "n_values": 11825902,
+  "n_values_differ_from_3c": 66545,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00014668703079223633,
+   "pred_sa_sqrt": 5.418062210083008e-05,
+   "pred_pearson": 0.0002671480178833008,
+   "pred_entropy": 7.94529914855957e-05,
+   "pred_frac_obs": 7.796287536621094e-05,
+   "rt_abs_resid": 6.198883056640625e-05,
+   "rt_resid_z": 2.765655517578125e-05,
+   "rt_pred": 0.000102996826171875
+  }
+ },
+ "D4_E2002": {
+  "n_values": 11826584,
+  "n_values_differ_from_3c": 150693,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00014668703079223633,
+   "pred_sa_sqrt": 5.418062210083008e-05,
+   "pred_pearson": 0.0002671480178833008,
+   "pred_entropy": 8.118152618408203e-05,
+   "pred_frac_obs": 0.00010210275650024414,
+   "rt_abs_resid": 8.58306884765625e-05,
+   "rt_resid_z": 4.1961669921875e-05,
+   "rt_pred": 0.00012969970703125
+  }
+ },
+ "D4_E2003": {
+  "n_values": 11826210,
+  "n_values_differ_from_3c": 72291,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00014668703079223633,
+   "pred_sa_sqrt": 5.418062210083008e-05,
+   "pred_pearson": 0.0002671480178833008,
+   "pred_entropy": 7.516145706176758e-05,
+   "pred_frac_obs": 0.00010147690773010254,
+   "rt_abs_resid": 5.054473876953125e-05,
+   "rt_resid_z": 2.09808349609375e-05,
+   "rt_pred": 9.1552734375e-05
+  }
+ },
+ "D4_C": {
+  "n_values": 11822008,
+  "n_values_differ_from_3c": 250793,
+  "max_abs_diff_by_feature": {
+   "pred_sa": 0.00011420249938964844,
+   "pred_sa_sqrt": 3.814697265625e-05,
+   "pred_pearson": 0.0002247542142868042,
+   "pred_entropy": 6.0498714447021484e-05,
+   "pred_frac_obs": 0.0001087188720703125,
+   "rt_abs_resid": 3.4332275390625e-05,
+   "rt_resid_z": 0.000118255615234375,
+   "rt_pred": 6.103515625e-05
+  }
+ }
+}

@@ -1,0 +1,45 @@
+# Conda environment for Vulcan (linux-64, NVIDIA GPU with a CUDA 12.x-capable driver).
+#   mamba env create -f environment.yml && conda activate vulcan
+# Versions are lower bounds; the exact versions used for all recorded results are in env/environment.lock.yml.
+name: vulcan
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2.0
+  - scipy>=1.11
+  - pandas>=2.2
+  - polars>=1.0
+  - pyarrow>=16
+  - numba>=0.60
+  - scikit-learn>=1.5
+  - matplotlib>=3.8
+  - pyyaml
+  - pytest>=8
+  - maturin>=1.5            # PyO3 tooling (the build scripts call cargo directly)
+  - pytorch=*=cuda12*       # CUDA build of PyTorch
+  - cuda-version=12.9
+  - cuda-nvcc               # nvcc for vulcan/gpu/kernels.cu and the MS1 kernels
+  - cuda-nvcc-impl
+  - cuda-nvvm-impl
+  - cuda-cudart-dev
+  - cuda-cccl
+  - cuda-driver-dev
+  - cuda-nvrtc-dev
+  - cuda-profiler-api
+  - cuda-nvtx-dev
+  - libcublas-dev
+  - libcusparse-dev
+  - libcurand-dev
+  - ninja
+  - pip
+  - pip:
+      - pyteomics>=4.7          # mzML reading, reference checks
+      - mokapot==0.10.0         # comparator rescoring (benchmarks only)
+      - psm-utils>=1.5
+      - pythonnet>=3.0          # in-process Thermo RAW reading (.NET 8 + RawFileReader, obtained separately)
+      - timsrust_pyo3>=0.4      # optional Bruker .d reader
+      - koinapy>=0.0.11         # optional: Prosit predictions via a Koina server (IT-CID/TMT scorer)
+      - xxhash
+      # optional extras: directlfq (LFQ comparator, vulcan/quant/lfq.py); peptdeep==1.5.1 (AlphaPeptDeep
+      # predicted spectra/RT for the production scorer; kept in a second env during development)

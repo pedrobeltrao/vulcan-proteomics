@@ -1,0 +1,222 @@
+{
+ "crawl_rows": 41754,
+ "after_metadata_filters": 10890,
+ "excluded_by_prior_use": 293,
+ "n_exclusion_accessions": 488,
+ "class_counts_after_exclusion": {
+  "denied_lineage": 8752,
+  "I_microbe": 1034,
+  "II_land_plant": 749,
+  "unresolved": 62
+ },
+ "denied_by_genus_or_species": 8745,
+ "tiers": {
+  "I (microbes, A1 instruments)": {
+   "projects": 198,
+   "genera": 95,
+   "labs": 143,
+   "label_LFQ": 83,
+   "label_UNK": 115,
+   "top_genera": [
+    [
+     "Chlamydomonas",
+     28
+    ],
+    [
+     "Dictyostelium",
+     18
+    ],
+    [
+     "Synechocystis",
+     7
+    ],
+    [
+     "Aspergillus",
+     7
+    ],
+    [
+     "Haloferax",
+     6
+    ],
+    [
+     "Paramecium",
+     5
+    ],
+    [
+     "Sordaria",
+     5
+    ],
+    [
+     "Phaeodactylum",
+     4
+    ],
+    [
+     "Emiliania",
+     4
+    ],
+    [
+     "Tetrahymena",
+     4
+    ],
+    [
+     "Podospora",
+     3
+    ],
+    [
+     "Neurospora",
+     3
+    ],
+    [
+     "Rhodotorula",
+     3
+    ],
+    [
+     "Pseudomonas",
+     3
+    ],
+    [
+     "Bacillus",
+     3
+    ]
+   ]
+  },
+  "II (land plants, A1 instruments)": {
+   "projects": 259,
+   "genera": 49,
+   "labs": 176,
+   "label_LFQ": 127,
+   "label_UNK": 132,
+   "top_genera": [
+    [
+     "Oryza",
+     48
+    ],
+    [
+     "Zea",
+     34
+    ],
+    [
+     "Solanum",
+     32
+    ],
+    [
+     "Triticum",
+     24
+    ],
+    [
+     "Nicotiana",
+     12
+    ],
+    [
+     "Marchantia",
+     10
+    ],
+    [
+     "Glycine",
+     6
+    ],
+    [
+     "Camellia",
+     6
+    ],
+    [
+     "Coffea",
+     5
+    ],
+    [
+     "Hordeum",
+     5
+    ],
+    [
+     "Olea",
+     5
+    ],
+    [
+     "Citrus",
+     4
+    ],
+    [
+     "Gossypium",
+     4
+    ],
+    [
+     "Vitis",
+     4
+    ],
+    [
+     "Avena",
+     4
+    ]
+   ]
+  },
+  "III (microbes + plants, Fusion/Lumos/Eclipse/Ascend/Exploris 120)": {
+   "projects": 135,
+   "genera": 59,
+   "labs": 104,
+   "label_LFQ": 63,
+   "label_UNK": 72,
+   "top_genera": [
+    [
+     "Triticum",
+     12
+    ],
+    [
+     "Chlamydomonas",
+     10
+    ],
+    [
+     "Pseudomonas",
+     10
+    ],
+    [
+     "Solanum",
+     9
+    ],
+    [
+     "Glycine",
+     6
+    ],
+    [
+     "Zea",
+     5
+    ],
+    [
+     "Gossypium",
+     5
+    ],
+    [
+     "Oryza",
+     5
+    ],
+    [
+     "Streptomyces",
+     4
+    ],
+    [
+     "Bacillus",
+     4
+    ],
+    [
+     "Hordeum",
+     4
+    ],
+    [
+     "Chenopodium",
+     3
+    ],
+    [
+     "Schizosaccharomyces",
+     3
+    ],
+    [
+     "Nicotiana",
+     3
+    ],
+    [
+     "Zymomonas",
+     3
+    ]
+   ]
+  }
+ }
+}

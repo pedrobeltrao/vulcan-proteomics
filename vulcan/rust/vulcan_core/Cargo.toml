@@ -1,0 +1,25 @@
+[package]
+name = "vulcan_core"
+version = "0.1.0"
+edition = "2021"
+description = "Vulcan L1: proteome digestion, modifications and masses on top of sage-core (MIT, Lazear) at v0.14.7 / 99407db6"
+license = "MIT"
+
+[lib]
+name = "vulcan_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Sage (MIT, Michael Lazear): digestion (enzyme.rs), FASTA parsing (fasta.rs), modification
+# enumeration (peptide.rs Peptide::apply), ion series (ion_series.rs). Pinned to the release used
+# for tools/bin/sage (v0.14.7 tag = commit 99407db6).
+sage-core = { git = "https://github.com/lazear/sage", rev = "99407db6e3754b31a9b88b7316a0aee67293c93f" }
+pyo3 = { version = "0.22", features = ["extension-module", "abi3-py39"] }
+numpy = "0.22"
+rayon = "1.9"
+twox-hash = "1.6"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4

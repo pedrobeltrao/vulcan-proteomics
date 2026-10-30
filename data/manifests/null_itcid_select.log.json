@@ -1,0 +1,57 @@
+{
+ "candidates": 40,
+ "tried": [
+  [
+   "PXD008785",
+   "candidate"
+  ],
+  [
+   "PXD041682",
+   "candidate"
+  ],
+  [
+   "PXD010849",
+   "candidate"
+  ],
+  [
+   "PXD041908",
+   "candidate"
+  ],
+  [
+   "PXD029363",
+   "candidate"
+  ],
+  [
+   "PXD065210",
+   "0 raw files in size range"
+  ],
+  [
+   "PXD002607",
+   "candidate"
+  ],
+  [
+   "PXD022685",
+   "candidate"
+  ],
+  [
+   "PXD047795",
+   "candidate"
+  ],
+  [
+   "PXD008586",
+   "candidate"
+  ],
+  [
+   "PXD053260",
+   "candidate"
+  ],
+  [
+   "PXD024352",
+   "candidate"
+  ],
+  [
+   "PXD015273",
+   "candidate"
+  ]
+ ]
+}

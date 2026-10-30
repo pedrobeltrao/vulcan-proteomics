@@ -1,0 +1,25 @@
+{"t": "2026-10-28T00:50:42", "run": "2r2", "ev": "start", "n_exclusions": 405, "exclusions_sha256": "e3e825ec4a5d2f93eb5414ef68ea2f8c041b3352dec80758dbbe16daba8f2c11", "git_head": "5095c294333e822b97c99152e04b63d32b794954"}
+{"t": "2026-10-28T00:50:43", "run": "2r2", "ev": "candidate", "accession": "PXD055378"}
+{"t": "2026-10-28T00:50:43", "run": "2r2", "ev": "candidate", "accession": "PXD054269"}
+{"t": "2026-10-28T00:50:44", "run": "2r2", "ev": "listed", "accession": "PXD054269", "n_raw_records": 12}
+{"t": "2026-10-28T00:50:44", "run": "2r2", "ev": "proteome", "accession": "PXD054269", "proteome": {"upid": "UP000184207", "organism": "Fervidobacterium gondwanense DSM 13020", "taxid": "1121883", "n_proteins": 2001}}
+curl: (23) Failure writing output to destination
+{"t": "2026-10-28T01:11:27", "run": "2r2", "ev": "curl_retry", "accession": "PXD054269", "file": "E04224_MS23-009_32.raw", "attempt": 0}
+{"t": "2026-10-28T01:20:06", "run": "2r2", "ev": "ABORT_download_unverifiable", "accession": "PXD054269", "file": "E04224_MS23-009_32.raw"}
+download of PXD054269/E04224_MS23-009_32.raw cTraceback (most recent call last):
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 209, in <module>
+    main()
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 193, in main
+    S.main()
+  File "/tmp/vulcan_a2/wt/scripts/a2/select_dn2.py", line 399, in main
+    w = walk(shuffled(cands, cfg), cfg, WalkIO(io_.project_record, io_.sdrf, io_.list_files, io_.proteome,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2/select_dn2.py", line 234, in walk
+    got = io.download(acc, pick)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/vulcan_a2/wt/scripts/a2_ops/run_dn2_walk.py", line 127, in download
+    if os.path.getsize(p) != f["fileSizeBytes"]:
+       ^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 62, in getsize
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/vulcan_a2/raw/dn2/PXD054269/E04224_MS23-009_32.raw'
+EXIT=1

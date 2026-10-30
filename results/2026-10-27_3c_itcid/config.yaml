@@ -1,0 +1,33 @@
+# 3c: IT-CID instrument-class static-first scorer. Dev only (D4 PXD016766, D10cf PXD015406); no sealed access.
+experiment: tree 3c (DESIGN v0.4 §4 L3 static-first per instrument class; §6 incl. A1; A2 draft not applied)
+work_dir: /tmp/vulcan_3c   # rebuilt by scripts/m3c/{fetch_train_itcid, train_prep, dev_search.sh, dev_features.sh, gates_itcid}
+instrument_class: IT-CID   # >= 95% of MS2 ion-trap (analyzer IT) + CID, Orbitrap MS1
+engine_change: vulcan/gpu (kernels.cu tol_bound, host.SearchParams.fragment_unit) -- "da" mode for K1/K1-brute/K2;
+  ppm path unchanged op for op; OT-HCD D0/D1 top-5 PSM tables re-searched bit-identical (3 runs)
+search: {fragment_unit: da, fragment_tol_da: [-0.5, 0.5], precursor_ppm: [-10, 10], isotope_errors: [0, 2],
+         precursor_charge_unknown: [2, 4], max_fragment_charge: 1, report_psms: 5, topk: 500, bin_ppm: 200 (layout only;
+         identical PSMs to 20), max_peaks: 150, min_peaks: 15, min_matched_peaks: 4}
+indexes:
+  human: E2/M3 human_contam {prod, E2001, E2002, E2003, C}; mouse: M3 mouse_contam_prod
+  human_tmt / mouse_tmt: same FASTAs, CAM + TMT-K static (229.162932); TMT N-term static at load time (mass32 + TMT, mask bit 63)
+predictor:
+  label_free: Prosit_2020_intensity_CID + Prosit_2019_irt (Koina)
+  tmt: Prosit_2020_intensity_TMT (fragmentation_types CID, CE 35) + Prosit_2020_irt_TMT (Koina)
+  why: AlphaPeptDeep pretrained MS2 has no CID/ion-trap model (instruments QE/Lumos/timsTOF/SciexTOF/ThermoTOF)
+  D4_decision: Prosit allowed everywhere; training accessions PXD004732/PXD010595/PXD021013/PXD023119/PXD023120 not in any 3c set
+  cache: vulcan.predict.cache.PredCache content-keyed by pf_id, key = (koina model ids, 'IT', CE 35, mods)
+features: vulcan.rescore.static.BASE_FEATURES + vulcan.rescore.itcid.ITCID_PRED_FEATURES
+  (pred_sa, pred_sa_sqrt, pred_pearson, pred_entropy, pred_frac_obs, pred_top6, pred_obs_tic, rt_abs_resid, rt_resid_z,
+   pred_missing); fragment matching +-0.5 Th; rt_pred excluded (as M3)
+training: data/manifests/train_itcid.tsv (13 runs / 13 projects: 6 TMT SPS-MS3, 7 label-free), folds train_itcid_folds.tsv;
+  recipe = scripts/m3/train_static.py (Percolator-style labels, 3 iterations, leave-one-project-fold-out hp)
+model_choice_rule: NOTES.md (training-CV held-out PSMs at 1%; tie within 0.5% -> linear, then base); chosen itcid_linear_pred
+  sha256 667ce39cb653026baed40bb18b25f5cbe196b192e2d5a7f2f8e7aa3618c23b89
+statistics: as M3 (scripts/m3/evaluate.py functions): paired double competition pooled per set (peptidoforms), picked protein,
+  entrapment arm P (seeds 2001-2003) + arm C (Arabidopsis, r from M1e human_contam.C.json), CI convention (a)
+comparators: Sage 0.14.7 (LDA, predict_rt true) and Sage+mokapot 0.10.0 (seed 11), M1e DBs/settings (fragment +-0.5 Da,
+  TMT statics on D4), MGFs from our stores; analysed with scripts/baselines/analyze.py (own peptide q, I/L sequences);
+  16 threads, unlocked
+gates: G0 (Pfu E2001 vs swap index; LF D10cf + TMT D4 fraction), G2-original + G5 (D10cf hosts + offsets + DN3c yeast
+  IT-CID nulls, M3 homolog filter), G4 (training decoys, charge {1,2,3,4+}); arm M not run (no IT-CID yeast dev run)
+timing: scripts/m3c/bench.py (flock /tmp/vulcan_bench.lock only around the per-run loop; setup unlocked)

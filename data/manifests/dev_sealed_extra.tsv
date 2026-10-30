@@ -1,0 +1,12 @@
+id	accession	filename	url	expected_size	purpose	role	set_id	member
+D7	PXD031616	LM2481_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: LiP, M1 (alpha-syn monomer 5 pmol/ug), rep 1 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7	PXD031616	LM2486_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: TrP, M1, rep 1 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7	PXD031616	LM2492_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: LiP, M1, rep 2 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7	PXD031616	LM2490_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: TrP, M1, rep 2 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7	PXD031616	LM2480_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: LiP, F1 (alpha-syn fibrils 5 pmol/ug), rep 1 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7	PXD031616	LM2487_DDA.raw			D7 yeast + alpha-synuclein, DDA library run on Orbitrap Fusion Lumos: TrP, F1, rep 1 (condition/replicate from the submitter MSStats reports)	dev	D7	
+D7-truth	PXD031616	PXD031616_community_annotated.sdrf.tsv			D7 sample metadata (does not distinguish LiP/TrP; see DATA.md for the LM-number mapping)	dev	D7	
+T5	PXD052597	HFX_19152_EL_298-1_DDA_191223.raw			T5 yeast whole-cell tryptic digest, label-free DDA, Q Exactive HF-X (2023-12), Levy lab (PI E. Levy; submitted from the Weizmann Institute); sample 298 rep 1 (rep index inferred from the file name)	sealed	T5	
+T5	PXD052597	HFX_19152_EL_298-2_DDA_191223.raw			T5 yeast whole-cell tryptic digest, label-free DDA, Q Exactive HF-X (2023-12), Levy lab (PI E. Levy; submitted from the Weizmann Institute); sample 298 rep 2 (rep index inferred from the file name)	sealed	T5	
+T5-truth	PXD052597	PXD052597_community_annotated.sdrf.tsv			T5 sample metadata	sealed	T5	
+T5-truth	PXD052597	Sample_info.xlsx			T5 submitter sample table	sealed	T5	

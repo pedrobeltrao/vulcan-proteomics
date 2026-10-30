@@ -1,0 +1,87 @@
+{
+ "freeze_code_commit": "06ce624e945940738bda757e0f96061e85ab5f4a",
+ "g0": {
+  "commit": "06ce624e945940738bda757e0f96061e85ab5f4a",
+  "clean_tree": true,
+  "pass": true,
+  "bit_identical": {
+   "ms1_hypotheses_bit_identical": true,
+   "ms1_features_bit_identical": true,
+   "chimeric_psm_tables_bit_identical": true,
+   "nce_same": true
+  },
+  "n_psms": 42833,
+  "identical_to_rehearsal_e0b94aa_except_wall": true
+ },
+ "a3_1_6_D1": {
+  "with_commit": "06ce624e945940738bda757e0f96061e85ab5f4a",
+  "without_commit": "40d9fb937dcc313560036ee5ca53bc2b8be15102",
+  "v1_artefacts": {
+   "n_files": 51,
+   "n_not_identical": 0,
+   "not_identical": [],
+   "identical": true
+  },
+  "v1_columns_bitwise_identical": true,
+  "a1_comparator_artefacts_identical": true,
+  "a1_comparator_artefacts": {
+   "sage_pred_mokapot": {
+    "n_files": 150,
+    "n_not_identical": 0
+   },
+   "sage_mokapot": {
+    "n_files": 125,
+    "n_not_identical": 0
+   },
+   "comet_mokapot": {
+    "n_files": 125,
+    "n_not_identical": 0
+   }
+  }
+ },
+ "a3_1_6_D0": "not re-run (D32); rehearsal at e0b94aa: v1 artefacts 102/102 byte-identical, A1 comparator artefacts 425/425, v1 metrics identical (results/2026-10-28_A3_freeze/D0/)",
+ "sage_independent_run_nonreproducibility_vs_3f_D1": {
+  "sage": {
+   "max_abs_delta_arm_P_mean_fdp": 2.1782933071944066e-05,
+   "max_abs_delta_v1_ratio_gated_1_5pct": 1.8791093990500052e-05,
+   "max_abs_delta_v1_ratio_any": 1.8791093990500052e-05,
+   "ratio_at": "sequence/matched_fdp/0.05"
+  },
+  "sage+mokapot": {
+   "max_abs_delta_arm_P_mean_fdp": 4.169189247926752e-05,
+   "max_abs_delta_v1_ratio_gated_1_5pct": 1.7985590724300948e-05,
+   "max_abs_delta_v1_ratio_any": 1.7985590724300948e-05,
+   "ratio_at": "sequence/matched_fdp/0.05"
+  },
+  "sage+pred+mokapot": {
+   "max_abs_delta_arm_P_mean_fdp": 2.2516475052440296e-05,
+   "max_abs_delta_v1_ratio_gated_1_5pct": 0.00047437757931845237,
+   "max_abs_delta_v1_ratio_any": 0.014329404411535407,
+   "ratio_at": "sequence/own_q/0.001"
+  }
+ },
+ "dev_look": {
+  "commit": "ed63785ac5124095f7da18798891c2c4bdca724d",
+  "wall_s": 2964,
+  "sealed_run_exit": 0,
+  "leak_test_files": 0,
+  "T5_manifest_matches_ledger": true,
+  "T1_manifest_matches_ledger": true,
+  "scratch_removed": true,
+  "claims_exit": 0,
+  "v1_bit_identical_with_and_without_armM_step": {
+   "methods.vulcan": true,
+   "matched_fdp_curves.vulcan": true,
+   "noninferiority_ours_side": true,
+   "comparators_differing": "Sage-based only (independent Sage invocations)"
+  }
+ },
+ "closure_guard": "see closure_guard.json",
+ "wall_s": {
+  "D1_with_driver": 2235,
+  "D1_tag_ours": 104,
+  "D1_tag_cmp_eval": 490,
+  "g0": "~1 min",
+  "dev_look": 2964
+ }
+}

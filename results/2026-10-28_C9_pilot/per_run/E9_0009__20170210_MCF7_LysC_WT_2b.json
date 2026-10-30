@@ -1,0 +1,103 @@
+{
+ "project": "PXD007543",
+ "run": "E9_0009__20170210_MCF7_LysC_WT_2b",
+ "n_ms2": 44644,
+ "n_searched": 44617,
+ "n_rank1": 34730,
+ "n_certified": 6874,
+ "n_identified_peptides_run": 9741,
+ "search_full_gpu_wall_s": 0.15844609402120113,
+ "n_candidate_rows": 44900,
+ "removed_rows_homolog": 17921,
+ "removed_rows_ladder": 7005,
+ "kept_rows": 19974,
+ "spectra_with_any_candidate_before_removal": 6874,
+ "n_identified_peptides_project": 9741,
+ "host_thr_own_run": 32.56935298206429,
+ "host_thr_D0max": 33.874883688117755,
+ "A_cand": 4458,
+ "frac_certified_with_candidate": 0.6485306953738725,
+ "tail_proxy_own_thr": 62,
+ "tail_proxy_D0max_thr": 39,
+ "certified_single_ms1_feature": 2965,
+ "A_cand_single_ms1_feature": 2014,
+ "tail_proxy_own_thr_single_ms1_feature": 27,
+ "ms1_mapped_fraction": 1.0,
+ "timing_wall_cpu_s": {
+  "load_store": [
+   0.48,
+   0.26
+  ],
+  "search_full": [
+   0.16,
+   0.16
+  ],
+  "certify": [
+   4.17,
+   4.16
+  ],
+  "search_null_exhaustive": [
+   0.15,
+   0.14
+  ],
+  "removal_homolog": [
+   4.69,
+   4.69
+  ],
+  "removal_ladder": [
+   0.44,
+   0.44
+  ]
+ },
+ "project_I_filter_wall_cpu_s": {
+  "build_I_filter": [
+   0.15,
+   0.15
+  ]
+ },
+ "diag_ladder_threshold": {
+  "0.15": {
+   "A_cand": 3974,
+   "tail_proxy_own_thr": 45
+  },
+  "0.1": {
+   "A_cand": 3221,
+   "tail_proxy_own_thr": 32
+  },
+  "0.05": {
+   "A_cand": 2156,
+   "tail_proxy_own_thr": 15
+  }
+ },
+ "diag_winner_f_hist_bins": [
+  0,
+  0.05,
+  0.1,
+  0.15,
+  0.2
+ ],
+ "diag_winner_f_hist_A_cand": [
+  838,
+  898,
+  1266,
+  1456
+ ],
+ "diag_winner_f_hist_tail": [
+  12,
+  12,
+  15,
+  23
+ ],
+ "diag_coisolation": {
+  "single_A_cand": 2014,
+  "single_tail": 27,
+  "multi_A_cand": 2444,
+  "multi_tail": 35
+ },
+ "max_hs_A_cand_quantiles": {
+  "0.5": 24.420072586548123,
+  "0.9": 28.405924812605026,
+  "0.99": 33.38585705466756,
+  "0.999": 37.593094387756864
+ }
+}

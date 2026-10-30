@@ -1,0 +1,61 @@
+[09:56:37] t1_driver D1 sha=40d9fb937dcc dirty_tracked=False work=$VULCAN_SCRATCH/vulcan_a3freeze/D1_tag out=$VULCAN_SCRATCH/vulcan_a3freeze/out/D1_tag
+[09:56:38] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[09:56:38] mzML Velos005137: {'reused_from': '$VULCAN_SCRATCH/vulcan_a3freeze/D1_frz2/mzml'}
+[09:56:38] sage prod_1001 done
+[09:56:38] sage P_1001_2001 done
+[09:56:38] sage P_1001_2002 done
+[09:56:38] sage P_1001_2003 done
+[09:56:38] sage C_1001 done
+[09:56:38] sage prod_1002 done
+[09:56:38] sage P_1002_2001 done
+[09:56:38] sage P_1002_2002 done
+[09:56:38] sage P_1002_2003 done
+[09:56:38] sage C_1002 done
+[09:56:38] sage prod_1003 done
+[09:56:38] sage P_1003_2001 done
+[09:56:38] sage P_1003_2002 done
+[09:56:38] sage P_1003_2003 done
+[09:56:38] sage C_1003 done
+[09:56:38] sage prod_1004 done
+[09:56:38] sage P_1004_2001 done
+[09:56:38] sage P_1004_2002 done
+[09:56:38] sage P_1004_2003 done
+[09:56:38] sage C_1004 done
+[09:56:38] sage prod_1005 done
+[09:56:38] sage P_1005_2001 done
+[09:56:38] sage P_1005_2002 done
+[09:56:38] sage P_1005_2003 done
+[09:56:38] sage C_1005 done
+[09:56:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/prod_1001: 11489 PSMs, unmapped 0
+[09:56:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1001_2001: 11744 PSMs, unmapped 0
+[09:57:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1001_2002: 11754 PSMs, unmapped 0
+[09:57:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1001_2003: 11723 PSMs, unmapped 0
+[09:57:15] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/C_1001: 12400 PSMs, unmapped 0
+[09:57:17] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/prod_1002: 11500 PSMs, unmapped 0
+[09:57:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1002_2001: 11745 PSMs, unmapped 0
+[09:57:22] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1002_2002: 11738 PSMs, unmapped 0
+[09:57:25] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1002_2003: 11738 PSMs, unmapped 0
+[09:57:37] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/C_1002: 12422 PSMs, unmapped 0
+[09:57:39] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/prod_1003: 11502 PSMs, unmapped 0
+[09:57:41] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1003_2001: 11767 PSMs, unmapped 0
+[09:57:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1003_2002: 11742 PSMs, unmapped 0
+[09:57:45] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1003_2003: 11724 PSMs, unmapped 0
+[09:57:54] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/C_1003: 12399 PSMs, unmapped 0
+[09:57:56] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/prod_1004: 11486 PSMs, unmapped 0
+[09:57:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1004_2001: 11713 PSMs, unmapped 0
+[09:58:01] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1004_2002: 11720 PSMs, unmapped 0
+[09:58:04] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1004_2003: 11726 PSMs, unmapped 0
+[09:58:14] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/C_1004: 12399 PSMs, unmapped 0
+[09:58:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/prod_1005: 11507 PSMs, unmapped 0
+[09:58:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1005_2001: 11731 PSMs, unmapped 0
+[09:58:22] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1005_2002: 11717 PSMs, unmapped 0
+[09:58:24] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/P_1005_2003: 11723 PSMs, unmapped 0
+[09:58:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_a3freeze/D1_tag/cmp/sage_pred_mokapot/C_1005: 12395 PSMs, unmapped 0
+[10:00:06] sage RT check: {'n_confident': 10827, 'frac_predicted_rt_nonzero': 0.9900774654016886, 'sd_predicted_rt': 0.20851611616966198, 'median_abs_delta_rt_model_confident': 0.043854356, 'spearman_aligned_vs_predicted_confident': 0.9426438660677244, 'pin_has_rt_features': True}
+[10:00:06] evaluate vulcan
+[10:02:51] evaluate sage
+[10:03:28] evaluate sage+mokapot
+[10:04:06] evaluate sage+pred+mokapot
+[10:04:44] evaluate comet+mokapot
+[10:05:40] driver total 543s
+[10:05:40] wrote metrics.json and tables.md

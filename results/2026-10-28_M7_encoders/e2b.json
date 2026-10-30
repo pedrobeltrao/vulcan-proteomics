@@ -1,0 +1,1526 @@
+{
+ "rows": [
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "fp16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 72654.83144761661,
+   "full_candidates_per_s": 363274.1572380831,
+   "split_spectra_per_s": 1019140.5596737642,
+   "split_peptides_per_s": 1405347.1743297703,
+   "peak_mem_gib": 2.6309938430786133,
+   "loadavg": [
+    25.412109375,
+    39.32177734375,
+    54.70947265625
+   ],
+   "gpu_before": {
+    "util_pct": 14,
+    "mem_used_mib": 4855
+   },
+   "lock_wait_s": 1.2218020856380463e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "fp16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 37483.87691447881,
+   "full_candidates_per_s": 374838.7691447881,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1401209.0160949389,
+   "peak_mem_gib": 2.6203408241271973,
+   "loadavg": [
+    25.412109375,
+    39.32177734375,
+    54.70947265625
+   ],
+   "gpu_before": {
+    "util_pct": 91,
+    "mem_used_mib": 4855
+   },
+   "lock_wait_s": 1.2950040400028229e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "fp16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 19016.044491943136,
+   "full_candidates_per_s": 380320.8898388627,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1394973.233137251,
+   "peak_mem_gib": 2.6134138107299805,
+   "loadavg": [
+    25.412109375,
+    39.32177734375,
+    54.70947265625
+   ],
+   "gpu_before": {
+    "util_pct": 99,
+    "mem_used_mib": 4855
+   },
+   "lock_wait_s": 1.1797994375228882e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "fp16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 7672.220732375887,
+   "full_candidates_per_s": 383611.0366187944,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1405738.7380390968,
+   "peak_mem_gib": 2.603719711303711,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 46,
+    "mem_used_mib": 4855
+   },
+   "lock_wait_s": 1.2878794223070145e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "bf16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 71225.62293069108,
+   "full_candidates_per_s": 356128.11465345544,
+   "split_spectra_per_s": 1019118.9756411789,
+   "split_peptides_per_s": 1425802.3389675058,
+   "peak_mem_gib": 2.63120698928833,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 99,
+    "mem_used_mib": 4843
+   },
+   "lock_wait_s": 1.1447351425886154e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "bf16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 36525.330436397875,
+   "full_candidates_per_s": 365253.30436397874,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1414012.014619663,
+   "peak_mem_gib": 2.6203408241271973,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 79,
+    "mem_used_mib": 4843
+   },
+   "lock_wait_s": 1.219799742102623e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "bf16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 18584.515668306252,
+   "full_candidates_per_s": 371690.3133661251,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1421870.6991688819,
+   "peak_mem_gib": 2.6134138107299805,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 86,
+    "mem_used_mib": 4843
+   },
+   "lock_wait_s": 1.2018252164125443e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xs",
+   "params": 293076,
+   "dtype": "bf16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 7487.990402909158,
+   "full_candidates_per_s": 374399.5201454579,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 1424901.5223161038,
+   "peak_mem_gib": 2.603719711303711,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 50,
+    "mem_used_mib": 4843
+   },
+   "lock_wait_s": 1.1457130312919617e-05,
+   "config": {
+    "d": 96,
+    "heads": 4,
+    "ff": 192,
+    "n_spec": 1,
+    "n_pep": 1,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "fp16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 41970.6271135999,
+   "full_candidates_per_s": 209853.1355679995,
+   "split_spectra_per_s": 418805.34006118384,
+   "split_peptides_per_s": 612270.5670720242,
+   "peak_mem_gib": 4.538341999053955,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 98,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.1927913874387741e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "fp16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 22003.052367097294,
+   "full_candidates_per_s": 220030.52367097294,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 612709.5296629211,
+   "peak_mem_gib": 4.519374847412109,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 79,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.2419186532497406e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "fp16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 11281.459059169903,
+   "full_candidates_per_s": 225629.1811833981,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 612563.0197507279,
+   "peak_mem_gib": 4.5073442459106445,
+   "loadavg": [
+    24.177734375,
+    38.8349609375,
+    54.46923828125
+   ],
+   "gpu_before": {
+    "util_pct": 79,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.1797994375228882e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "fp16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 4574.133021234896,
+   "full_candidates_per_s": 228706.65106174478,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 612267.9521888258,
+   "peak_mem_gib": 4.481988906860352,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 47,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.3400334864854813e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "bf16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 41859.35204196791,
+   "full_candidates_per_s": 209296.76020983956,
+   "split_spectra_per_s": 433448.83029752155,
+   "split_peptides_per_s": 626923.5280061285,
+   "peak_mem_gib": 4.538341999053955,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 72,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.2089032679796219e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "bf16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 21917.05417934082,
+   "full_candidates_per_s": 219170.5417934082,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 629455.8854187356,
+   "peak_mem_gib": 4.519374847412109,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 55,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.4390796422958374e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "bf16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 11256.549019959151,
+   "full_candidates_per_s": 225130.98039918303,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 629860.2806309222,
+   "peak_mem_gib": 4.5073442459106445,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 80,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.216912642121315e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "s",
+   "params": 1659164,
+   "dtype": "bf16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 4539.54141736878,
+   "full_candidates_per_s": 226977.07086843898,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 629148.4330375424,
+   "peak_mem_gib": 4.481988906860352,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 61,
+    "mem_used_mib": 7903
+   },
+   "lock_wait_s": 1.1576805263757706e-05,
+   "config": {
+    "d": 192,
+    "heads": 6,
+    "ff": 384,
+    "n_spec": 2,
+    "n_pep": 2,
+    "n_joint": 1,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "fp16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 19729.0073677934,
+   "full_candidates_per_s": 98645.036838967,
+   "split_spectra_per_s": 219176.0324255427,
+   "split_peptides_per_s": 324130.2646747514,
+   "peak_mem_gib": 6.050836563110352,
+   "loadavg": [
+    23.0419921875,
+    38.35595703125,
+    54.22998046875
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.3510230928659439e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "fp16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 10271.71906006734,
+   "full_candidates_per_s": 102717.19060067339,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 325765.0738607514,
+   "peak_mem_gib": 6.024679183959961,
+   "loadavg": [
+    21.99755859375,
+    37.884765625,
+    53.9921875
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.3180077075958252e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "fp16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 5255.436682244214,
+   "full_candidates_per_s": 105108.73364488428,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 326481.8572849956,
+   "peak_mem_gib": 6.008028507232666,
+   "loadavg": [
+    21.99755859375,
+    37.884765625,
+    53.9921875
+   ],
+   "gpu_before": {
+    "util_pct": 90,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.4442019164562225e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "fp16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 2127.590364824056,
+   "full_candidates_per_s": 106379.51824120281,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 326411.1958160563,
+   "peak_mem_gib": 5.976040840148926,
+   "loadavg": [
+    21.99755859375,
+    37.884765625,
+    53.9921875
+   ],
+   "gpu_before": {
+    "util_pct": 69,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.88387930393219e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "bf16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 19566.51829846581,
+   "full_candidates_per_s": 97832.59149232904,
+   "split_spectra_per_s": 227764.39056421764,
+   "split_peptides_per_s": 334456.44006623945,
+   "peak_mem_gib": 6.050836563110352,
+   "loadavg": [
+    21.99755859375,
+    37.884765625,
+    53.9921875
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.2808945029973984e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "bf16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 10226.08349916576,
+   "full_candidates_per_s": 102260.83499165758,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 332732.0687579906,
+   "peak_mem_gib": 6.024679183959961,
+   "loadavg": [
+    20.95654296875,
+    37.40478515625,
+    53.75048828125
+   ],
+   "gpu_before": {
+    "util_pct": 93,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.1656899005174637e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "bf16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 5216.07073203917,
+   "full_candidates_per_s": 104321.4146407834,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 334307.4921143097,
+   "peak_mem_gib": 6.008028507232666,
+   "loadavg": [
+    20.95654296875,
+    37.40478515625,
+    53.75048828125
+   ],
+   "gpu_before": {
+    "util_pct": 72,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.2728851288557053e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "m",
+   "params": 5532740,
+   "dtype": "bf16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 2108.8753631256122,
+   "full_candidates_per_s": 105443.76815628061,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 333662.4993264598,
+   "peak_mem_gib": 5.976040840148926,
+   "loadavg": [
+    20.95654296875,
+    37.40478515625,
+    53.75048828125
+   ],
+   "gpu_before": {
+    "util_pct": 58,
+    "mem_used_mib": 9773
+   },
+   "lock_wait_s": 1.1937227100133896e-05,
+   "config": {
+    "d": 256,
+    "heads": 8,
+    "ff": 768,
+    "n_spec": 3,
+    "n_pep": 3,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "fp16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 9971.757100664572,
+   "full_candidates_per_s": 49858.785503322855,
+   "split_spectra_per_s": 82480.63363020614,
+   "split_peptides_per_s": 125865.47921741678,
+   "peak_mem_gib": 9.541821956634521,
+   "loadavg": [
+    20.0791015625,
+    36.94970703125,
+    53.51513671875
+   ],
+   "gpu_before": {
+    "util_pct": 88,
+    "mem_used_mib": 15197
+   },
+   "lock_wait_s": 1.3090204447507858e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "fp16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 5300.5662617288135,
+   "full_candidates_per_s": 53005.66261728814,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 126206.09352740593,
+   "peak_mem_gib": 9.497357368469238,
+   "loadavg": [
+    20.0791015625,
+    36.94970703125,
+    53.51513671875
+   ],
+   "gpu_before": {
+    "util_pct": 95,
+    "mem_used_mib": 15197
+   },
+   "lock_wait_s": 1.3340264558792114e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "fp16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 2733.626971399819,
+   "full_candidates_per_s": 54672.53942799639,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 126295.00413973005,
+   "peak_mem_gib": 9.463597774505615,
+   "loadavg": [
+    19.27197265625,
+    36.501953125,
+    53.28125
+   ],
+   "gpu_before": {
+    "util_pct": 99,
+    "mem_used_mib": 15197
+   },
+   "lock_wait_s": 1.3940967619419098e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "fp16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 1115.6350362737746,
+   "full_candidates_per_s": 55781.75181368873,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 126026.51274041408,
+   "peak_mem_gib": 9.413730144500732,
+   "loadavg": [
+    19.27197265625,
+    36.501953125,
+    53.28125
+   ],
+   "gpu_before": {
+    "util_pct": 91,
+    "mem_used_mib": 15197
+   },
+   "lock_wait_s": 1.3419892638921738e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "bf16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 10201.682862185025,
+   "full_candidates_per_s": 51008.41431092513,
+   "split_spectra_per_s": 87039.40548214121,
+   "split_peptides_per_s": 132761.96208364627,
+   "peak_mem_gib": 9.541821956634521,
+   "loadavg": [
+    18.44921875,
+    36.044921875,
+    53.04296875
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 15195
+   },
+   "lock_wait_s": 1.3459939509630203e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "bf16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 5419.896710766562,
+   "full_candidates_per_s": 54198.96710766562,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 133028.37816120192,
+   "peak_mem_gib": 9.497357368469238,
+   "loadavg": [
+    17.6123046875,
+    35.5791015625,
+    52.80078125
+   ],
+   "gpu_before": {
+    "util_pct": 98,
+    "mem_used_mib": 15195
+   },
+   "lock_wait_s": 1.1688098311424255e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "bf16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 2798.0814794310386,
+   "full_candidates_per_s": 55961.62958862077,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 133157.89119692746,
+   "peak_mem_gib": 9.463597774505615,
+   "loadavg": [
+    17.6123046875,
+    35.5791015625,
+    52.80078125
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 15195
+   },
+   "lock_wait_s": 1.3781245797872543e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "l",
+   "params": 22482436,
+   "dtype": "bf16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 1138.890599765575,
+   "full_candidates_per_s": 56944.52998827875,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 132023.32139742977,
+   "peak_mem_gib": 9.413730144500732,
+   "loadavg": [
+    17.00244140625,
+    35.154296875,
+    52.57080078125
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 15195
+   },
+   "lock_wait_s": 1.2229196727275848e-05,
+   "config": {
+    "d": 448,
+    "heads": 8,
+    "ff": 1536,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "fp16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 6317.055931757329,
+   "full_candidates_per_s": 31585.279658786643,
+   "split_spectra_per_s": 49416.70430973058,
+   "split_peptides_per_s": 75589.00504163736,
+   "peak_mem_gib": 13.28671646118164,
+   "loadavg": [
+    17.00244140625,
+    35.154296875,
+    52.57080078125
+   ],
+   "gpu_before": {
+    "util_pct": 57,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.2238044291734695e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "fp16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 3370.957215111368,
+   "full_candidates_per_s": 33709.57215111368,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 75601.87281218203,
+   "peak_mem_gib": 13.22455644607544,
+   "loadavg": [
+    16.521484375,
+    34.7529296875,
+    52.34716796875
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.2628734111785889e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "fp16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 1747.485092263067,
+   "full_candidates_per_s": 34949.701845261334,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 75737.63577250172,
+   "peak_mem_gib": 13.175491333007812,
+   "loadavg": [
+    16.3193359375,
+    34.408203125,
+    52.14111328125
+   ],
+   "gpu_before": {
+    "util_pct": 75,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.258915290236473e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "fp16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 714.5784165862877,
+   "full_candidates_per_s": 35728.92082931439,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 75601.93248082043,
+   "peak_mem_gib": 13.107378005981445,
+   "loadavg": [
+    16.7744140625,
+    34.2021484375,
+    51.97900390625
+   ],
+   "gpu_before": {
+    "util_pct": 71,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.229904592037201e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "bf16",
+   "K": 5,
+   "batch_spectra": 1638,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 6495.050557792371,
+   "full_candidates_per_s": 32475.252788961858,
+   "split_spectra_per_s": 51387.5100092974,
+   "split_peptides_per_s": 78706.84337494681,
+   "peak_mem_gib": 13.28671646118164,
+   "loadavg": [
+    16.3916015625,
+    33.83349609375,
+    51.76416015625
+   ],
+   "gpu_before": {
+    "util_pct": 80,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.2859702110290527e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "bf16",
+   "K": 10,
+   "batch_spectra": 819,
+   "batch_candidates": 8190,
+   "full_spectra_per_s": 3457.916829556487,
+   "full_candidates_per_s": 34579.16829556487,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 78649.93889828262,
+   "peak_mem_gib": 13.22455644607544,
+   "loadavg": [
+    17.5615234375,
+    33.7861328125,
+    51.65234375
+   ],
+   "gpu_before": {
+    "util_pct": 97,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.4712102711200714e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "bf16",
+   "K": 20,
+   "batch_spectra": 409,
+   "batch_candidates": 8180,
+   "full_spectra_per_s": 1789.13925645728,
+   "full_candidates_per_s": 35782.785129145595,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 78686.7880651466,
+   "peak_mem_gib": 13.175491333007812,
+   "loadavg": [
+    16.95556640625,
+    33.39111328125,
+    51.42822265625
+   ],
+   "gpu_before": {
+    "util_pct": 100,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.574307680130005e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  },
+  {
+   "size": "xl",
+   "params": 50389460,
+   "dtype": "bf16",
+   "K": 50,
+   "batch_spectra": 163,
+   "batch_candidates": 8150,
+   "full_spectra_per_s": 731.470537932504,
+   "full_candidates_per_s": 36573.526896625204,
+   "split_spectra_per_s": null,
+   "split_peptides_per_s": 78840.36105601415,
+   "peak_mem_gib": 13.107378005981445,
+   "loadavg": [
+    16.3984375,
+    33.00244140625,
+    51.20556640625
+   ],
+   "gpu_before": {
+    "util_pct": 90,
+    "mem_used_mib": 20291
+   },
+   "lock_wait_s": 1.2499280273914337e-05,
+   "config": {
+    "d": 640,
+    "heads": 10,
+    "ff": 2560,
+    "n_spec": 4,
+    "n_pep": 4,
+    "n_joint": 2,
+    "n_peaks": 63,
+    "emb": 128,
+    "n_freq": 24,
+    "max_len": 63,
+    "tol_ppm": 20.0,
+    "dropout": 0.0
+   }
+  }
+ ],
+ "int8": "not measured: no GPU int8 kernels for these layers in torch 2.x without TensorRT",
+ "hwinfo": {
+  "VULCAN_THREADS": null,
+  "affinity_count": 32,
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "cgroup_mem_limit_gb": null,
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "cuda_driver": "13.0",
+  "driver": "580.178.04",
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04",
+  "gpus": [
+   {
+    "compute_cap": "8.0",
+    "mem_mib": 81920,
+    "name": "NVIDIA A100 80GB PCIe"
+   }
+  ],
+  "hostname": "gpu-node",
+  "kernel": "5.15.0-194-generic",
+  "n_threads": 32,
+  "nvcc": null,
+  "os_cpu_count": 64,
+  "physical_cores_in_affinity": 32,
+  "python": "3.12.16",
+  "ram_gb": 1503.3,
+  "sockets_in_affinity": 2,
+  "torch_cuda": null
+ }
+}

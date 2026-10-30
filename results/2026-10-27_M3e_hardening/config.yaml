@@ -1,0 +1,47 @@
+# M3e: hardening of the frozen default scorer per DESIGN §6.0 Amendment A1 (prereg-v0.4.1). Dev data only; no sealed access.
+experiment: tree 3e (A1.1-A1.6 + review M6 speed); DESIGN §6.0, §6.3, §6.4, §6.7
+frozen_scorer:
+  file: results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl   # sha256 in metrics.json:frozen_scorer; never retrained or tuned
+  reference: hyperscore (fixed-score pipeline)
+  without_RT_ablation: rt_abs_resid and rt_resid_z replaced per run by the run median over all PSMs (label-blind); same frozen model
+work_dir: /tmp/vulcan_m3e   # node-local, rebuilt by scripts/m3e/*; reuses /tmp/vulcan_e2 (D0/D1 stores, prod/E2001 indexes) and /tmp/vulcan_m3 (E2002/E2003/C indexes, D7 stores, prediction cache)
+search: E2 SearchParams, report_psms 5, prod index T + pseudo-reverse decoys (identical to M3)
+features: scripts/m3/features.py unchanged (per-run label-blind NCE grid {20..35}; AlphaPeptDeep QE)
+nulls:   # A1.3; scripts/m3e/g2mix.py
+  offset: D0 MS2 x2 copies, precursor mass + n + 0.5 + U(-0.1,0.1) Da, n in {-2,-1,1,2}, seed 11 (M3 recipe); first two mixtures only (no host spectrum duplicated > 2x)
+  species_sources:   # 6 projects (>= 3 required); OT-HCD
+    pfu: D1 PXD001077 (1 run)
+    yeast: D7 PXD031616 LM2480/2481/2486/2487/2490/2492 (6 runs)
+    tbrucei: DN PXD015648 (3 runs)
+    saureus: DN PXD023811 (3 runs)
+    synechococcus: DN PXD021787 (3 runs)
+    bcereus: DN PXD055392 (3 runs)
+  dn_selection: scripts/m3e/select_nulls.py (seed 11; manifest data/manifests/g2null.tsv, sha256 g2null.sha256, proteomes g2null_fasta.sha256)
+  mixture: every species-null spectrum used once; pooled, permuted (seed 11), 20,000 per mixture -> 45 mixtures; host = D0 run k % 2
+  rt_mapping: quantile map of source-run MS2 RT onto host-run MS2 RT (vulcan.gates.nulls.quantile_map)
+  homolog_filter: species nulls removed if, for any compared pipeline, the matched peptide or its pair partner (target or decoy) shares a 6-mer with / is within Hamming <= 2 of the source proteome + contaminants (I/L collapsed; vulcan.gates.homolog); yeast also + P37840 (spiked); offsets unfiltered (as specified)
+gates:   # vulcan.gates.stats (specs in its docstring, fixed before the re-run), vulcan.stats.g2 (unchanged)
+  G1: sequence-only classifier (scripts/m3e/seqclf.py, HistGBM on order-sensitive sequence features + rt_pred, trained on training-run candidates); Spearman(score, logit) in top score decile of clean null winners; 99% CI inside (-0.05, 0.05)
+  G2: vulcan.stats.g2.g2_differential on clean nulls (margins 0.01 / 0.02 top decile, one-sided 95%)
+  tail_G2: own 1% threshold per mixture run (paired double competition); n_tail >= 200; CP one-sided 95% UCB of target fraction <= 0.60; delta-method one-sided 95% UCB of (learned - hyperscore) <= 0.10
+  G3: K1 top-K = 500 vs exhaustive (vulcan.gpu.engine.search_exhaustive) on null spectra of mixtures 00/01, deciles of exhaustive best score; |recall_T - recall_D| <= 0.01 per bin, on all nulls AND on clean species nulls
+  G4: 12 OT-HCD training runs, decoy PSM winners, strata charge {1,2,3,4+}; tau = 95th pct of within-stratum between-run KS; KS(stratum vs rest) <= tau
+  G5: leak AUC <= 0.55 on clean null winners (+ Hanley-McNeil CI, top decile)
+arm_M:   # scripts/m3e/armM_prepare.py, armM.py
+  sample: D7 TrP runs LM2486/2487/2490 (one experiment)
+  targets: yeast UP000002311 + contaminants + human P37840 (spike)
+  entrapment: human Swiss-Prot peptides neighbour-filtered vs targets (scripts/entrapment/build_dbs.py arm C), effective space, subsampled to r = 1 with seeds 2001/2002/2003 (3 replicates)
+  estimator: combined FDP_C = N_E (1 + 1/r)/(N_T + N_E), r = 1.0 (peptide, effective space); peptidoform r 1.035 and per-mass-decile r reported
+ci_convention_sim:   # scripts/m3e/ci_convention_sim.py (model, scenarios and rule in its docstring)
+  replicates: 10000 per scenario x 4 scenarios; estimator vulcan.stats.entrapment.evaluate_arm (n_boot 2000)
+  rule: eligible iff coverage >= 0.93 in every scenario; adopt eligible with smallest mean |coverage - 0.95|; none/tie -> (a)
+d0d1_recompute: scripts/m3e/recompute_d0d1.py (M3 evaluate.py code path; both conventions)
+d8_confirmation:   # scripts/m3e/fetch_d8.py, d8.py
+  runs: first 10 rows of data/manifests/e9_d8.tsv (manifest order), sha256 == E9 record
+  indexes: prod, E2001-E2003 (arm P), C (Arabidopsis, r 1.022)
+  unit: per-run experiments; pooled = union of per-run lists (run-prefixed keys)
+speed:   # scripts/m3e/bench_prod.py under flock /tmp/vulcan_bench.lock; staged NVMe pred env (/tmp/vulcan_env_*/pred)
+  path: load store -> GPU search -> features with per-run NCE choice -> GBM (sklearn CPU) -> paired double competition -> picked protein
+  cache: fresh root with only the shipped NCE-29 human library (key a9d5af1427616250); other NCEs fill lazily
+  runs: D0 run 1 warm-up (excluded), 10 D8 runs, D0 run 2
+seeds: SEEDS[0] = 11 (general, hash tie-break, selection), ENTRAP_SEEDS_DEV 2001-2003, DECOY default pseudo-reverse (1001 label in replicates)

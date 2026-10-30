@@ -1,0 +1,166 @@
+{
+ "01A_direct_vs_mzml_path": {
+  "n_a": 67599,
+  "n_b": 67599,
+  "fields": {
+   "ms_level": 0,
+   "scan": 0,
+   "precursor_charge": 0,
+   "master_scan": 0,
+   "activation": 0,
+   "rt_min": 0,
+   "injection_time_ms": 0,
+   "isolation_target_mz": 0,
+   "isolation_lower_offset": 0,
+   "isolation_upper_offset": 0,
+   "nce": 0,
+   "scan_window_lower": 0,
+   "scan_window_upper": 0,
+   "analyzer": 0,
+   "polarity": 0,
+   "faims_cv": 0,
+   "filter_string": 0
+  },
+  "precursor_mz_equal_frac": 0.6755380200860832,
+  "b_precursor_eq_a_isolation_target_frac": 0.8654949784791965,
+  "precursor_mz_max_abs_diff": 6.009575062514955,
+  "peak_count_mismatch_spectra": 0,
+  "mz_max_abs_diff": 0.0,
+  "intensity_max_rel_diff": 0.0,
+  "ok": true
+ },
+ "01A_counts": {
+  "direct": {
+   "n_spectra": 67599,
+   "n_ms1": 25779,
+   "n_ms2": 41820,
+   "n_peaks": 59228868
+  },
+  "mzml_path": {
+   "n_spectra": 67599,
+   "n_ms1": 25779,
+   "n_ms2": 41820,
+   "n_peaks": 59228868
+  }
+ },
+ "01B_direct_vs_mzml_path": {
+  "n_a": 71295,
+  "n_b": 71295,
+  "fields": {
+   "ms_level": 0,
+   "scan": 0,
+   "precursor_charge": 0,
+   "master_scan": 0,
+   "activation": 0,
+   "rt_min": 0,
+   "injection_time_ms": 0,
+   "isolation_target_mz": 0,
+   "isolation_lower_offset": 0,
+   "isolation_upper_offset": 0,
+   "nce": 0,
+   "scan_window_lower": 0,
+   "scan_window_upper": 0,
+   "analyzer": 0,
+   "polarity": 0,
+   "faims_cv": 0,
+   "filter_string": 0
+  },
+  "precursor_mz_equal_frac": 0.6860688653451812,
+  "b_precursor_eq_a_isolation_target_frac": 0.8729494190020506,
+  "precursor_mz_max_abs_diff": 8.509102217379791,
+  "peak_count_mismatch_spectra": 0,
+  "mz_max_abs_diff": 0.0,
+  "intensity_max_rel_diff": 0.0,
+  "ok": true
+ },
+ "01B_counts": {
+  "direct": {
+   "n_spectra": 71295,
+   "n_ms1": 24479,
+   "n_ms2": 46816,
+   "n_peaks": 57190690
+  },
+  "mzml_path": {
+   "n_spectra": 71295,
+   "n_ms1": 24479,
+   "n_ms2": 46816,
+   "n_peaks": 57190690
+  }
+ },
+ "01A_trfp_mzml_text_counts": {
+  "spectrumList_count": 67599,
+  "ms_level_hist": {
+   "1": 25779,
+   "2": 41820
+  }
+ },
+ "01A_pyteomics_check_direct": {
+  "n_checked": 200,
+  "n_bad": 0,
+  "bad": []
+ },
+ "01A_pyteomics_check_mzml_path": {
+  "n_checked": 200,
+  "n_bad": 0,
+  "bad": []
+ },
+ "01A_direct_ms2_metadata": {
+  "frac_mono_present": 0.5503586800573889,
+  "charge_hist": {
+   "2": 23895,
+   "3": 13790,
+   "4": 3563,
+   "5": 427,
+   "6": 111,
+   "7": 6,
+   "8": 9,
+   "9": 1,
+   "11": 8,
+   "13": 1,
+   "19": 3,
+   "20": 1,
+   "21": 1,
+   "23": 2,
+   "24": 1,
+   "25": 1
+  },
+  "frac_master_scan_present": 1.0,
+  "nce_values": [
+   25.0
+  ],
+  "activation_codes": [
+   2.0
+  ],
+  "analyzer_codes": [
+   1
+  ],
+  "n_filter_strings_null": 0
+ },
+ "A9_R1_bruker_native_vs_pyo3": {
+  "identical": {
+   "n_rows": true,
+   "offsets": true,
+   "mz": true,
+   "intensity": true,
+   "im_index": true,
+   "scan": true,
+   "ms_level": true,
+   "isolation_target_mz": true,
+   "window_index": true,
+   "im_scan_begin": true,
+   "im_scan_end": true,
+   "nce": true,
+   "rt_min": true
+  },
+  "all_identical": true,
+  "n_rows": 50902,
+  "n_ms1": 1886,
+  "n_ms2_rows": 49016,
+  "n_events_stored": 300461735,
+  "events_outside_windows": [
+   35185460,
+   35185460
+  ],
+  "im_index_within_window_rows": true
+ }
+}

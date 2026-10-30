@@ -1,0 +1,559 @@
+{
+ "runs": {
+  "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 7648,
+   "n_by_kind": [
+    7648,
+    35908,
+    0,
+    6161
+   ]
+  },
+  "KA121LQ_CSF_65": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 11133,
+   "n_by_kind": [
+    11133,
+    10489,
+    0,
+    1332
+   ]
+  },
+  "30min_LPS_2": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 7630,
+   "n_by_kind": [
+    7630,
+    24990,
+    0,
+    3781
+   ]
+  },
+  "PT10402-292_190921044254": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 11656,
+   "n_by_kind": [
+    11656,
+    26989,
+    0,
+    4122
+   ]
+  },
+  "Ctrl_JH_repli1_SCX4": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 24409,
+   "n_by_kind": [
+    24409,
+    100313,
+    0,
+    16152
+   ]
+  },
+  "P22_081_Singapur_Smim26_SampleII_02": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 3232,
+   "n_by_kind": [
+    3232,
+    10497,
+    0,
+    1626
+   ]
+  },
+  "No_guide_control_2_promoter_reporter": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 12125,
+   "n_by_kind": [
+    12125,
+    31081,
+    0,
+    4807
+   ]
+  },
+  "c3": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 6427,
+   "n_by_kind": [
+    6427,
+    15962,
+    0,
+    2495
+   ]
+  },
+  "211221_LL_17183_1": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 7697,
+   "n_by_kind": [
+    7697,
+    18151,
+    0,
+    2673
+   ]
+  },
+  "shRB-1": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 32939,
+   "n_by_kind": [
+    32939,
+    137402,
+    0,
+    22582
+   ]
+  },
+  "20151118_HER2_04": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 5523,
+   "n_by_kind": [
+    5523,
+    4538,
+    0,
+    557
+   ]
+  },
+  "YIG_130_L012_05_SoL_014_U01": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 40208,
+   "n_by_kind": [
+    40208,
+    172325,
+    0,
+    28493
+   ]
+  },
+  "QEAGF160127_112": {
+   "species": "human",
+   "fold": 3,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "q104758a": {
+   "species": "human",
+   "fold": 4,
+   "n_pos": 6584,
+   "n_by_kind": [
+    6584,
+    28170,
+    0,
+    4867
+   ]
+  },
+  "20171221_KW_KK_Ex229_KO_S_2_91": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 2071,
+   "n_by_kind": [
+    2071,
+    5383,
+    0,
+    839
+   ]
+  },
+  "QE1_160915_OPL4019_GK_ALT_splice_SW480_I9": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 4609,
+   "n_by_kind": [
+    4609,
+    7709,
+    0,
+    1122
+   ]
+  },
+  "220912_25_Orbi3_KN_SER_G30_T55_Hart_UP1": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "oecf3-CP0480-07": {
+   "species": "human",
+   "fold": 3,
+   "n_pos": 6951,
+   "n_by_kind": [
+    6951,
+    21448,
+    0,
+    3108
+   ]
+  },
+  "A549_LPS": {
+   "species": "human",
+   "fold": 4,
+   "n_pos": 13293,
+   "n_by_kind": [
+    13293,
+    53399,
+    0,
+    8824
+   ]
+  },
+  "Christine_TPA_180223_LysC_H27": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "MEC2878-S30-LRRK2-BioID2-Rab29": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 14756,
+   "n_by_kind": [
+    14756,
+    64358,
+    0,
+    10813
+   ]
+  },
+  "uzorak_07": {
+   "skipped": "not OT-HCD"
+  },
+  "55603_1_EXP_1171_hs_plasma_20_WT_1ug": {
+   "species": "human",
+   "fold": 3,
+   "n_pos": 11921,
+   "n_by_kind": [
+    11921,
+    43870,
+    0,
+    7277
+   ]
+  },
+  "20160930_AR_YE_10": {
+   "species": "human",
+   "fold": 4,
+   "n_pos": 14681,
+   "n_by_kind": [
+    14681,
+    35645,
+    0,
+    5256
+   ]
+  },
+  "1MLDCS-HBSS_OA": {
+   "species": "human",
+   "fold": 0,
+   "n_pos": 33577,
+   "n_by_kind": [
+    33577,
+    121464,
+    0,
+    19495
+   ]
+  },
+  "PP185_186AA_3": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 10734,
+   "n_by_kind": [
+    10734,
+    15300,
+    0,
+    2461
+   ]
+  },
+  "QE1123_MSQ1631_20190401_DOB_TAU_A4": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 10225,
+   "n_by_kind": [
+    10225,
+    39402,
+    0,
+    6194
+   ]
+  },
+  "aral2": {
+   "species": "human",
+   "fold": 3,
+   "n_pos": 5016,
+   "n_by_kind": [
+    5016,
+    11918,
+    0,
+    1899
+   ]
+  },
+  "BT474_H1": {
+   "species": "human",
+   "fold": 4,
+   "n_pos": 24510,
+   "n_by_kind": [
+    24510,
+    48748,
+    0,
+    7315
+   ]
+  },
+  "Sh-271": {
+   "skipped": "not OT-HCD"
+  },
+  "EH8725": {
+   "species": "human",
+   "fold": 1,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "CD1524_Marsh3B_Anti-TG2_2": {
+   "species": "human",
+   "fold": 2,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "E20212002382a": {
+   "species": "human",
+   "fold": 3,
+   "n_pos": 15440,
+   "n_by_kind": [
+    15440,
+    60527,
+    0,
+    9485
+   ]
+  },
+  "210521-MClass-21_0844-14-BAZ": {
+   "species": "mouse",
+   "fold": 0,
+   "n_pos": 26272,
+   "n_by_kind": [
+    26272,
+    37271,
+    0,
+    5768
+   ]
+  },
+  "MN-WT1-Frac8": {
+   "skipped": "not OT-HCD"
+  },
+  "20151103_Qep8_MiWi_SA_074350_FR2_50": {
+   "species": "mouse",
+   "fold": 4,
+   "n_pos": 32634,
+   "n_by_kind": [
+    32634,
+    50739,
+    0,
+    7654
+   ]
+  },
+  "QEHF_20180116_LSantambrogio_S12_1": {
+   "species": "mouse",
+   "fold": 0,
+   "n_pos": 6555,
+   "n_by_kind": [
+    6555,
+    20500,
+    0,
+    3488
+   ]
+  },
+  "F1_TA": {
+   "species": "mouse",
+   "fold": 1,
+   "n_pos": 17866,
+   "n_by_kind": [
+    17866,
+    58001,
+    0,
+    9877
+   ]
+  },
+  "XS_Shura_High_pH_Frac12_api05_4": {
+   "species": "ecoli",
+   "fold": 2,
+   "n_pos": 26091,
+   "n_by_kind": [
+    26091,
+    31419,
+    0,
+    0
+   ]
+  },
+  "005_ECOLI72_F20": {
+   "species": "ecoli",
+   "fold": 0,
+   "n_pos": 18822,
+   "n_by_kind": [
+    18822,
+    11147,
+    0,
+    0
+   ]
+  },
+  "hm_5265_CB_072718_pt5ul_07": {
+   "species": "ecoli",
+   "fold": 2,
+   "n_pos": 19176,
+   "n_by_kind": [
+    19176,
+    19983,
+    0,
+    0
+   ]
+  },
+  "qExHF01_05548_Chymo_B3": {
+   "species": "ecoli",
+   "fold": 3,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "20210921_HF1_MaRa_SA_P0114B_3": {
+   "species": "ecoli",
+   "fold": 4,
+   "n_pos": 0,
+   "n_by_kind": [
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "dropped_dup_within_train": 0,
+ "dropped_in_eval": 0,
+ "n_shifted": {
+  "human": 689990,
+  "mouse": 166654,
+  "ecoli": 128176
+ },
+ "n_spectra": 492411,
+ "n_candidates": 3062800,
+ "n_by_kind": [
+  492411,
+  1375046,
+  984820,
+  210523
+ ],
+ "n_spectra_by_fold": [
+  151665,
+  95457,
+  114259,
+  39328,
+  91702
+ ],
+ "raw_sha256": {
+  "n_train_files": 43,
+  "n_other_manifest_hashes": 1228,
+  "overlap": [],
+  "duplicate_sha256_within_train": false
+ },
+ "n_eval_spectrum_hashes": 1479690,
+ "eval_stores": [
+  "20170221_QEP2_FBU_FB_collabJanzen_2T1p99xC4x48_2.vspec.arrow",
+  "20170221_QEP2_FBU_FB_collabJanzen_2T1p99xC4x72_4.vspec.arrow",
+  "20170221_QEP2_FBU_FB_collabJanzen_2T1p99xC9x72_3.vspec.arrow",
+  "374-A.vspec.arrow",
+  "536-A.vspec.arrow",
+  "860-A2.vspec.arrow",
+  "E9_0000__H0799BL.vspec.arrow",
+  "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm.vspec.arrow",
+  "E9_0002__MGP2.vspec.arrow",
+  "E9_0003__20180623_PC463-Graves-McDonald_Sample1.vspec.arrow",
+  "E9_0004__20210122-YP202104470-xh-BT1-3.vspec.arrow",
+  "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r.vspec.arrow",
+  "E9_0006__CL_CTL_p53_ZNF_061025_1.vspec.arrow",
+  "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B.vspec.arrow",
+  "E9_0008__lgg1.vspec.arrow",
+  "E9_0009__20170210_MCF7_LysC_WT_2b.vspec.arrow",
+  "LM2480_DDA.vspec.arrow",
+  "LM2481_DDA.vspec.arrow",
+  "LM2486_DDA.vspec.arrow",
+  "LM2487_DDA.vspec.arrow",
+  "LM2490_DDA.vspec.arrow",
+  "LM2492_DDA.vspec.arrow",
+  "Q15827_MS23-053_6.vspec.arrow",
+  "Q15836_MS23-053_11.vspec.arrow",
+  "Q15837_MS23-053_12.vspec.arrow",
+  "TL190218_KDahlgren_CameronLab_0p5ug_GFP-APEX-B.vspec.arrow",
+  "TL190621_KDahlgren_CameronLab_250ng_GFP-APEX-A.vspec.arrow",
+  "TL190621_KDahlgren_CameronLab_250ng_psbU-APEX-B.vspec.arrow",
+  "Velos005137.vspec.arrow",
+  "b1906_293T_proteinID_01A_QE3_122212.vspec.arrow",
+  "b1937_293T_proteinID_01B_QE3_122212.vspec.arrow"
+ ],
+ "ot_hcd_fraction": {
+  "DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE": 1.0,
+  "KA121LQ_CSF_65": 1.0,
+  "30min_LPS_2": 1.0,
+  "PT10402-292_190921044254": 1.0,
+  "Ctrl_JH_repli1_SCX4": 1.0,
+  "P22_081_Singapur_Smim26_SampleII_02": 1.0,
+  "No_guide_control_2_promoter_reporter": 1.0,
+  "c3": 1.0,
+  "211221_LL_17183_1": 1.0,
+  "210521-MClass-21_0844-14-BAZ": 1.0,
+  "MN-WT1-Frac8": 0.0,
+  "XS_Shura_High_pH_Frac12_api05_4": 1.0,
+  "005_ECOLI72_F20": 1.0,
+  "shRB-1": 1.0,
+  "20151118_HER2_04": 1.0,
+  "YIG_130_L012_05_SoL_014_U01": 1.0,
+  "QEAGF160127_112": 1.0,
+  "q104758a": 1.0,
+  "20171221_KW_KK_Ex229_KO_S_2_91": 1.0,
+  "QE1_160915_OPL4019_GK_ALT_splice_SW480_I9": 1.0,
+  "220912_25_Orbi3_KN_SER_G30_T55_Hart_UP1": 1.0,
+  "oecf3-CP0480-07": 1.0,
+  "A549_LPS": 1.0,
+  "Christine_TPA_180223_LysC_H27": 1.0,
+  "MEC2878-S30-LRRK2-BioID2-Rab29": 1.0,
+  "55603_1_EXP_1171_hs_plasma_20_WT_1ug": 1.0,
+  "1MLDCS-HBSS_OA": 1.0,
+  "20160930_AR_YE_10": 1.0,
+  "PP185_186AA_3": 1.0,
+  "QE1123_MSQ1631_20190401_DOB_TAU_A4": 1.0,
+  "aral2": 1.0,
+  "BT474_H1": 1.0,
+  "EH8725": 1.0,
+  "CD1524_Marsh3B_Anti-TG2_2": 1.0,
+  "E20212002382a": 1.0,
+  "20151103_Qep8_MiWi_SA_074350_FR2_50": 1.0,
+  "QEHF_20180116_LSantambrogio_S12_1": 1.0,
+  "F1_TA": 1.0,
+  "hm_5265_CB_072718_pt5ul_07": 1.0,
+  "qExHF01_05548_Chymo_B3": 1.0,
+  "20210921_HF1_MaRa_SA_P0114B_3": 1.0
+ },
+ "wall_s": 251.52283334732056
+}

@@ -1,0 +1,15 @@
+{
+ "amendment": "A3.1.8(i); DESIGN §6.4 G4 with the partition extended to chimeric stratum",
+ "frozen_before_estimation": true,
+ "script": "scripts/a3/dev_g4.py (docstring = specification)",
+ "data": "40 frozen v2 training runs (results/2026-10-28_E7_chimeric_v2/train_v2_folds.tsv minus E7's 3 label-independent exclusions); training decoys only",
+ "score": "static_v2.pkl sha256 3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186 (v2_sep scorer)",
+ "decoys": "stage-1 unit winners (best PSM per (run, spectrum, precursor group), hash tie-break pf_id seed 11) that are decoys",
+ "instrument_class": "OT-HCD (single class; every training run)",
+ "activation": "HCD (single)",
+ "chimeric_stratum": [1, 2, ">=3"],
+ "charge": [2, 3, "4+", "1 kept as its own class if present"],
+ "stratum_label": "r{1|2|3}_z{1|2|3|4}",
+ "statistic": "vulcan.gates.stats.g4_gate: tau = 95th pct of within-stratum between-run KS (runs with >= 200 decoys in the stratum); pass iff every stratum's KS vs the rest <= tau",
+ "reported_only": ["hyperscore reference", "v2 on the A1 charge-only partition", "pair-winner decoys after the full v2_sep competition", "partition split by instrument model"]
+}

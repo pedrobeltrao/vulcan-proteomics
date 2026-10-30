@@ -1,0 +1,1286 @@
+{
+ "runs": [
+  "Control_HEK_SEC_020118_10b",
+  "Control_HEK_SEC_020118_11b",
+  "Control_HEK_SEC_020118_12b",
+  "Control_HEK_SEC_020118_13b",
+  "Control_HEK_SEC_020118_14b",
+  "Control_HEK_SEC_020118_15b",
+  "Control_HEK_SEC_020118_16b",
+  "Control_HEK_SEC_020118_17b",
+  "Control_HEK_SEC_020118_18b",
+  "Control_HEK_SEC_020118_19b",
+  "Control_HEK_SEC_020118_20b",
+  "Control_HEK_SEC_020118_21b",
+  "Control_HEK_SEC_020118_22b",
+  "Control_HEK_SEC_020118_23b",
+  "Control_HEK_SEC_020118_24b",
+  "Control_HEK_SEC_020118_25c",
+  "Control_HEK_SEC_020118_26b",
+  "Control_HEK_SEC_020118_27b",
+  "Control_HEK_SEC_020118_28b",
+  "Control_HEK_SEC_020118_29b",
+  "Control_HEK_SEC_020118_30b",
+  "Control_HEK_SEC_020118_31b",
+  "Control_HEK_SEC_020118_32b",
+  "Control_HEK_SEC_020118_33b",
+  "Control_HEK_SEC_020118_34b",
+  "Control_HEK_SEC_020118_35b",
+  "Control_HEK_SEC_020118_36c",
+  "Control_HEK_SEC_020118_37c",
+  "Control_HEK_SEC_020118_38b"
+ ],
+ "score": "hyperscore",
+ "strata": "none",
+ "per_run": true,
+ "groups": {
+  "Control_HEK_SEC_020118_10b": {
+   "n_psm_winners": 2704,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_11b": {
+   "n_psm_winners": 2512,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_12b": {
+   "n_psm_winners": 2129,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_13b": {
+   "n_psm_winners": 2165,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_14b": {
+   "n_psm_winners": 1862,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_15b": {
+   "n_psm_winners": 7061,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 0,
+    "pooled_tdc_peptidoforms": 0,
+    "by_stratum": {
+     "all": {
+      "accepted": 0,
+      "score_threshold": Infinity,
+      "decoy_pair_winners_above": 0,
+      "pooled_tdc_accepted": 0,
+      "separate_tdc_accepted": 0
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 322,
+    "pooled_tdc_peptidoforms": 322,
+    "by_stratum": {
+     "all": {
+      "accepted": 322,
+      "score_threshold": 31.395209596598857,
+      "decoy_pair_winners_above": 2,
+      "pooled_tdc_accepted": 322,
+      "separate_tdc_accepted": 322
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 691,
+    "pooled_tdc_peptidoforms": 691,
+    "by_stratum": {
+     "all": {
+      "accepted": 691,
+      "score_threshold": 26.011360966796627,
+      "decoy_pair_winners_above": 33,
+      "pooled_tdc_accepted": 691,
+      "separate_tdc_accepted": 691
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_16b": {
+   "n_psm_winners": 33592,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 2328,
+    "pooled_tdc_peptidoforms": 2328,
+    "by_stratum": {
+     "all": {
+      "accepted": 2328,
+      "score_threshold": 38.31321025607535,
+      "decoy_pair_winners_above": 1,
+      "pooled_tdc_accepted": 2328,
+      "separate_tdc_accepted": 2328
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 5056,
+    "pooled_tdc_peptidoforms": 5056,
+    "by_stratum": {
+     "all": {
+      "accepted": 5056,
+      "score_threshold": 31.65076588816108,
+      "decoy_pair_winners_above": 49,
+      "pooled_tdc_accepted": 5056,
+      "separate_tdc_accepted": 5056
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 7461,
+    "pooled_tdc_peptidoforms": 7461,
+    "by_stratum": {
+     "all": {
+      "accepted": 7461,
+      "score_threshold": 27.52060593980694,
+      "decoy_pair_winners_above": 371,
+      "pooled_tdc_accepted": 7461,
+      "separate_tdc_accepted": 7461
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_17b": {
+   "n_psm_winners": 40659,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5057,
+    "pooled_tdc_peptidoforms": 5057,
+    "by_stratum": {
+     "all": {
+      "accepted": 5057,
+      "score_threshold": 38.48097421127393,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5057,
+      "separate_tdc_accepted": 5057
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8142,
+    "pooled_tdc_peptidoforms": 8142,
+    "by_stratum": {
+     "all": {
+      "accepted": 8142,
+      "score_threshold": 33.3071322965894,
+      "decoy_pair_winners_above": 80,
+      "pooled_tdc_accepted": 8142,
+      "separate_tdc_accepted": 8142
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 11083,
+    "pooled_tdc_peptidoforms": 11083,
+    "by_stratum": {
+     "all": {
+      "accepted": 11083,
+      "score_threshold": 29.318191969352643,
+      "decoy_pair_winners_above": 553,
+      "pooled_tdc_accepted": 11083,
+      "separate_tdc_accepted": 11083
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_18b": {
+   "n_psm_winners": 38840,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5274,
+    "pooled_tdc_peptidoforms": 5274,
+    "by_stratum": {
+     "all": {
+      "accepted": 5274,
+      "score_threshold": 37.282363025505745,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5274,
+      "separate_tdc_accepted": 5274
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7819,
+    "pooled_tdc_peptidoforms": 7819,
+    "by_stratum": {
+     "all": {
+      "accepted": 7819,
+      "score_threshold": 32.65477619868054,
+      "decoy_pair_winners_above": 77,
+      "pooled_tdc_accepted": 7819,
+      "separate_tdc_accepted": 7819
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10294,
+    "pooled_tdc_peptidoforms": 10294,
+    "by_stratum": {
+     "all": {
+      "accepted": 10294,
+      "score_threshold": 28.929402201538178,
+      "decoy_pair_winners_above": 512,
+      "pooled_tdc_accepted": 10294,
+      "separate_tdc_accepted": 10294
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_19b": {
+   "n_psm_winners": 41327,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4155,
+    "pooled_tdc_peptidoforms": 4155,
+    "by_stratum": {
+     "all": {
+      "accepted": 4155,
+      "score_threshold": 38.88990460868128,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4155,
+      "separate_tdc_accepted": 4155
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7318,
+    "pooled_tdc_peptidoforms": 7318,
+    "by_stratum": {
+     "all": {
+      "accepted": 7318,
+      "score_threshold": 32.938546719969466,
+      "decoy_pair_winners_above": 72,
+      "pooled_tdc_accepted": 7318,
+      "separate_tdc_accepted": 7318
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10124,
+    "pooled_tdc_peptidoforms": 10124,
+    "by_stratum": {
+     "all": {
+      "accepted": 10124,
+      "score_threshold": 29.00865644657821,
+      "decoy_pair_winners_above": 505,
+      "pooled_tdc_accepted": 10124,
+      "separate_tdc_accepted": 10124
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_20b": {
+   "n_psm_winners": 36129,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 2864,
+    "pooled_tdc_peptidoforms": 2864,
+    "by_stratum": {
+     "all": {
+      "accepted": 2864,
+      "score_threshold": 36.56705187668903,
+      "decoy_pair_winners_above": 1,
+      "pooled_tdc_accepted": 2864,
+      "separate_tdc_accepted": 2864
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 4600,
+    "pooled_tdc_peptidoforms": 4600,
+    "by_stratum": {
+     "all": {
+      "accepted": 4600,
+      "score_threshold": 31.47612126582893,
+      "decoy_pair_winners_above": 45,
+      "pooled_tdc_accepted": 4600,
+      "separate_tdc_accepted": 4600
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 6402,
+    "pooled_tdc_peptidoforms": 6402,
+    "by_stratum": {
+     "all": {
+      "accepted": 6402,
+      "score_threshold": 27.785926608711662,
+      "decoy_pair_winners_above": 319,
+      "pooled_tdc_accepted": 6402,
+      "separate_tdc_accepted": 6402
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_21b": {
+   "n_psm_winners": 38563,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4338,
+    "pooled_tdc_peptidoforms": 4338,
+    "by_stratum": {
+     "all": {
+      "accepted": 4338,
+      "score_threshold": 36.893640096779016,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4338,
+      "separate_tdc_accepted": 4338
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7108,
+    "pooled_tdc_peptidoforms": 7108,
+    "by_stratum": {
+     "all": {
+      "accepted": 7108,
+      "score_threshold": 31.577393290660883,
+      "decoy_pair_winners_above": 70,
+      "pooled_tdc_accepted": 7108,
+      "separate_tdc_accepted": 7108
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9638,
+    "pooled_tdc_peptidoforms": 9638,
+    "by_stratum": {
+     "all": {
+      "accepted": 9638,
+      "score_threshold": 27.898700991005057,
+      "decoy_pair_winners_above": 479,
+      "pooled_tdc_accepted": 9638,
+      "separate_tdc_accepted": 9638
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_22b": {
+   "n_psm_winners": 42330,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5195,
+    "pooled_tdc_peptidoforms": 5195,
+    "by_stratum": {
+     "all": {
+      "accepted": 5195,
+      "score_threshold": 38.78970760790136,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5195,
+      "separate_tdc_accepted": 5195
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8725,
+    "pooled_tdc_peptidoforms": 8725,
+    "by_stratum": {
+     "all": {
+      "accepted": 8725,
+      "score_threshold": 32.883086040278805,
+      "decoy_pair_winners_above": 85,
+      "pooled_tdc_accepted": 8725,
+      "separate_tdc_accepted": 8725
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 11164,
+    "pooled_tdc_peptidoforms": 11164,
+    "by_stratum": {
+     "all": {
+      "accepted": 11164,
+      "score_threshold": 29.45263583029927,
+      "decoy_pair_winners_above": 556,
+      "pooled_tdc_accepted": 11164,
+      "separate_tdc_accepted": 11164
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_23b": {
+   "n_psm_winners": 42651,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4568,
+    "pooled_tdc_peptidoforms": 4568,
+    "by_stratum": {
+     "all": {
+      "accepted": 4568,
+      "score_threshold": 38.855935583343864,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4568,
+      "separate_tdc_accepted": 4568
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8227,
+    "pooled_tdc_peptidoforms": 8227,
+    "by_stratum": {
+     "all": {
+      "accepted": 8227,
+      "score_threshold": 32.685017028920214,
+      "decoy_pair_winners_above": 81,
+      "pooled_tdc_accepted": 8227,
+      "separate_tdc_accepted": 8227
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10821,
+    "pooled_tdc_peptidoforms": 10821,
+    "by_stratum": {
+     "all": {
+      "accepted": 10821,
+      "score_threshold": 29.182610739510398,
+      "decoy_pair_winners_above": 540,
+      "pooled_tdc_accepted": 10821,
+      "separate_tdc_accepted": 10821
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_24b": {
+   "n_psm_winners": 42916,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5297,
+    "pooled_tdc_peptidoforms": 5297,
+    "by_stratum": {
+     "all": {
+      "accepted": 5297,
+      "score_threshold": 37.66962436689313,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5297,
+      "separate_tdc_accepted": 5297
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7805,
+    "pooled_tdc_peptidoforms": 7805,
+    "by_stratum": {
+     "all": {
+      "accepted": 7805,
+      "score_threshold": 33.69139562182847,
+      "decoy_pair_winners_above": 77,
+      "pooled_tdc_accepted": 7805,
+      "separate_tdc_accepted": 7805
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10853,
+    "pooled_tdc_peptidoforms": 10853,
+    "by_stratum": {
+     "all": {
+      "accepted": 10853,
+      "score_threshold": 29.54291758238482,
+      "decoy_pair_winners_above": 541,
+      "pooled_tdc_accepted": 10853,
+      "separate_tdc_accepted": 10853
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_25c": {
+   "n_psm_winners": 38166,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 2572,
+    "pooled_tdc_peptidoforms": 2572,
+    "by_stratum": {
+     "all": {
+      "accepted": 2572,
+      "score_threshold": 40.8011073326368,
+      "decoy_pair_winners_above": 1,
+      "pooled_tdc_accepted": 2572,
+      "separate_tdc_accepted": 2572
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7007,
+    "pooled_tdc_peptidoforms": 7007,
+    "by_stratum": {
+     "all": {
+      "accepted": 7007,
+      "score_threshold": 31.19643769786014,
+      "decoy_pair_winners_above": 69,
+      "pooled_tdc_accepted": 7007,
+      "separate_tdc_accepted": 7007
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9213,
+    "pooled_tdc_peptidoforms": 9213,
+    "by_stratum": {
+     "all": {
+      "accepted": 9213,
+      "score_threshold": 27.866552252295367,
+      "decoy_pair_winners_above": 459,
+      "pooled_tdc_accepted": 9213,
+      "separate_tdc_accepted": 9213
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_26b": {
+   "n_psm_winners": 38146,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4179,
+    "pooled_tdc_peptidoforms": 4179,
+    "by_stratum": {
+     "all": {
+      "accepted": 4179,
+      "score_threshold": 37.86775510931388,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4179,
+      "separate_tdc_accepted": 4179
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7547,
+    "pooled_tdc_peptidoforms": 7547,
+    "by_stratum": {
+     "all": {
+      "accepted": 7547,
+      "score_threshold": 31.645144523329623,
+      "decoy_pair_winners_above": 74,
+      "pooled_tdc_accepted": 7547,
+      "separate_tdc_accepted": 7547
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9929,
+    "pooled_tdc_peptidoforms": 9929,
+    "by_stratum": {
+     "all": {
+      "accepted": 9929,
+      "score_threshold": 28.091586404323774,
+      "decoy_pair_winners_above": 495,
+      "pooled_tdc_accepted": 9929,
+      "separate_tdc_accepted": 9929
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_27b": {
+   "n_psm_winners": 41539,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4131,
+    "pooled_tdc_peptidoforms": 4131,
+    "by_stratum": {
+     "all": {
+      "accepted": 4131,
+      "score_threshold": 39.41461141485874,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4131,
+      "separate_tdc_accepted": 4131
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8325,
+    "pooled_tdc_peptidoforms": 8325,
+    "by_stratum": {
+     "all": {
+      "accepted": 8325,
+      "score_threshold": 32.264662710821185,
+      "decoy_pair_winners_above": 82,
+      "pooled_tdc_accepted": 8325,
+      "separate_tdc_accepted": 8325
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10965,
+    "pooled_tdc_peptidoforms": 10965,
+    "by_stratum": {
+     "all": {
+      "accepted": 10965,
+      "score_threshold": 28.70711397225718,
+      "decoy_pair_winners_above": 547,
+      "pooled_tdc_accepted": 10965,
+      "separate_tdc_accepted": 10965
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_28b": {
+   "n_psm_winners": 40120,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4005,
+    "pooled_tdc_peptidoforms": 4005,
+    "by_stratum": {
+     "all": {
+      "accepted": 4005,
+      "score_threshold": 38.73713318366647,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4005,
+      "separate_tdc_accepted": 4005
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7390,
+    "pooled_tdc_peptidoforms": 7390,
+    "by_stratum": {
+     "all": {
+      "accepted": 7390,
+      "score_threshold": 32.45682384595767,
+      "decoy_pair_winners_above": 72,
+      "pooled_tdc_accepted": 7390,
+      "separate_tdc_accepted": 7390
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10381,
+    "pooled_tdc_peptidoforms": 10381,
+    "by_stratum": {
+     "all": {
+      "accepted": 10381,
+      "score_threshold": 28.36298905329405,
+      "decoy_pair_winners_above": 518,
+      "pooled_tdc_accepted": 10381,
+      "separate_tdc_accepted": 10381
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_29b": {
+   "n_psm_winners": 38899,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4413,
+    "pooled_tdc_peptidoforms": 4413,
+    "by_stratum": {
+     "all": {
+      "accepted": 4413,
+      "score_threshold": 36.57823188807039,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4413,
+      "separate_tdc_accepted": 4413
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7014,
+    "pooled_tdc_peptidoforms": 7014,
+    "by_stratum": {
+     "all": {
+      "accepted": 7014,
+      "score_threshold": 31.567481874371488,
+      "decoy_pair_winners_above": 69,
+      "pooled_tdc_accepted": 7014,
+      "separate_tdc_accepted": 7014
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9930,
+    "pooled_tdc_peptidoforms": 9930,
+    "by_stratum": {
+     "all": {
+      "accepted": 9930,
+      "score_threshold": 27.44541424192783,
+      "decoy_pair_winners_above": 495,
+      "pooled_tdc_accepted": 9930,
+      "separate_tdc_accepted": 9930
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_30b": {
+   "n_psm_winners": 40932,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4034,
+    "pooled_tdc_peptidoforms": 4034,
+    "by_stratum": {
+     "all": {
+      "accepted": 4034,
+      "score_threshold": 38.35791507425715,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4034,
+      "separate_tdc_accepted": 4034
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 6854,
+    "pooled_tdc_peptidoforms": 6854,
+    "by_stratum": {
+     "all": {
+      "accepted": 6854,
+      "score_threshold": 32.86640417906582,
+      "decoy_pair_winners_above": 67,
+      "pooled_tdc_accepted": 6854,
+      "separate_tdc_accepted": 6854
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9642,
+    "pooled_tdc_peptidoforms": 9642,
+    "by_stratum": {
+     "all": {
+      "accepted": 9642,
+      "score_threshold": 28.713083806222482,
+      "decoy_pair_winners_above": 481,
+      "pooled_tdc_accepted": 9642,
+      "separate_tdc_accepted": 9642
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_31b": {
+   "n_psm_winners": 42303,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4175,
+    "pooled_tdc_peptidoforms": 4175,
+    "by_stratum": {
+     "all": {
+      "accepted": 4175,
+      "score_threshold": 39.11213908165798,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4175,
+      "separate_tdc_accepted": 4175
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7428,
+    "pooled_tdc_peptidoforms": 7428,
+    "by_stratum": {
+     "all": {
+      "accepted": 7428,
+      "score_threshold": 32.97587289561247,
+      "decoy_pair_winners_above": 73,
+      "pooled_tdc_accepted": 7428,
+      "separate_tdc_accepted": 7428
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10309,
+    "pooled_tdc_peptidoforms": 10309,
+    "by_stratum": {
+     "all": {
+      "accepted": 10309,
+      "score_threshold": 28.893166326938005,
+      "decoy_pair_winners_above": 514,
+      "pooled_tdc_accepted": 10309,
+      "separate_tdc_accepted": 10309
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_32b": {
+   "n_psm_winners": 42709,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4130,
+    "pooled_tdc_peptidoforms": 4130,
+    "by_stratum": {
+     "all": {
+      "accepted": 4130,
+      "score_threshold": 39.03404493447287,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4130,
+      "separate_tdc_accepted": 4130
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7825,
+    "pooled_tdc_peptidoforms": 7825,
+    "by_stratum": {
+     "all": {
+      "accepted": 7825,
+      "score_threshold": 32.08925186421135,
+      "decoy_pair_winners_above": 77,
+      "pooled_tdc_accepted": 7825,
+      "separate_tdc_accepted": 7825
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10128,
+    "pooled_tdc_peptidoforms": 10128,
+    "by_stratum": {
+     "all": {
+      "accepted": 10128,
+      "score_threshold": 28.869288565890667,
+      "decoy_pair_winners_above": 505,
+      "pooled_tdc_accepted": 10128,
+      "separate_tdc_accepted": 10128
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_33b": {
+   "n_psm_winners": 40466,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 3679,
+    "pooled_tdc_peptidoforms": 3679,
+    "by_stratum": {
+     "all": {
+      "accepted": 3679,
+      "score_threshold": 38.323838561180196,
+      "decoy_pair_winners_above": 2,
+      "pooled_tdc_accepted": 3679,
+      "separate_tdc_accepted": 3679
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 7105,
+    "pooled_tdc_peptidoforms": 7105,
+    "by_stratum": {
+     "all": {
+      "accepted": 7105,
+      "score_threshold": 31.156987181363206,
+      "decoy_pair_winners_above": 70,
+      "pooled_tdc_accepted": 7105,
+      "separate_tdc_accepted": 7105
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 9474,
+    "pooled_tdc_peptidoforms": 9474,
+    "by_stratum": {
+     "all": {
+      "accepted": 9474,
+      "score_threshold": 27.771617740427068,
+      "decoy_pair_winners_above": 472,
+      "pooled_tdc_accepted": 9474,
+      "separate_tdc_accepted": 9474
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_34b": {
+   "n_psm_winners": 42668,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5374,
+    "pooled_tdc_peptidoforms": 5374,
+    "by_stratum": {
+     "all": {
+      "accepted": 5374,
+      "score_threshold": 36.961314864063255,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5374,
+      "separate_tdc_accepted": 5374
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8472,
+    "pooled_tdc_peptidoforms": 8472,
+    "by_stratum": {
+     "all": {
+      "accepted": 8472,
+      "score_threshold": 31.82823497159138,
+      "decoy_pair_winners_above": 83,
+      "pooled_tdc_accepted": 8472,
+      "separate_tdc_accepted": 8472
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 11014,
+    "pooled_tdc_peptidoforms": 11014,
+    "by_stratum": {
+     "all": {
+      "accepted": 11014,
+      "score_threshold": 28.491471086231737,
+      "decoy_pair_winners_above": 549,
+      "pooled_tdc_accepted": 11014,
+      "separate_tdc_accepted": 11014
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_35b": {
+   "n_psm_winners": 46025,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 6310,
+    "pooled_tdc_peptidoforms": 6310,
+    "by_stratum": {
+     "all": {
+      "accepted": 6310,
+      "score_threshold": 38.27269317269088,
+      "decoy_pair_winners_above": 5,
+      "pooled_tdc_accepted": 6310,
+      "separate_tdc_accepted": 6310
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 10106,
+    "pooled_tdc_peptidoforms": 10106,
+    "by_stratum": {
+     "all": {
+      "accepted": 10106,
+      "score_threshold": 32.67441524454013,
+      "decoy_pair_winners_above": 100,
+      "pooled_tdc_accepted": 10106,
+      "separate_tdc_accepted": 10106
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 12911,
+    "pooled_tdc_peptidoforms": 12911,
+    "by_stratum": {
+     "all": {
+      "accepted": 12911,
+      "score_threshold": 29.159028329827102,
+      "decoy_pair_winners_above": 644,
+      "pooled_tdc_accepted": 12911,
+      "separate_tdc_accepted": 12911
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_36c": {
+   "n_psm_winners": 40388,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5077,
+    "pooled_tdc_peptidoforms": 5077,
+    "by_stratum": {
+     "all": {
+      "accepted": 5077,
+      "score_threshold": 37.1414280512132,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5077,
+      "separate_tdc_accepted": 5077
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8640,
+    "pooled_tdc_peptidoforms": 8640,
+    "by_stratum": {
+     "all": {
+      "accepted": 8640,
+      "score_threshold": 31.174814015311295,
+      "decoy_pair_winners_above": 85,
+      "pooled_tdc_accepted": 8640,
+      "separate_tdc_accepted": 8640
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 11309,
+    "pooled_tdc_peptidoforms": 11309,
+    "by_stratum": {
+     "all": {
+      "accepted": 11309,
+      "score_threshold": 27.715366430118237,
+      "decoy_pair_winners_above": 564,
+      "pooled_tdc_accepted": 11309,
+      "separate_tdc_accepted": 11309
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_37c": {
+   "n_psm_winners": 39289,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 4400,
+    "pooled_tdc_peptidoforms": 4400,
+    "by_stratum": {
+     "all": {
+      "accepted": 4400,
+      "score_threshold": 37.390338196893026,
+      "decoy_pair_winners_above": 3,
+      "pooled_tdc_accepted": 4400,
+      "separate_tdc_accepted": 4400
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 8281,
+    "pooled_tdc_peptidoforms": 8281,
+    "by_stratum": {
+     "all": {
+      "accepted": 8281,
+      "score_threshold": 30.674121659727792,
+      "decoy_pair_winners_above": 81,
+      "pooled_tdc_accepted": 8281,
+      "separate_tdc_accepted": 8281
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 10821,
+    "pooled_tdc_peptidoforms": 10821,
+    "by_stratum": {
+     "all": {
+      "accepted": 10821,
+      "score_threshold": 27.337072384025873,
+      "decoy_pair_winners_above": 540,
+      "pooled_tdc_accepted": 10821,
+      "separate_tdc_accepted": 10821
+     }
+    }
+   }
+  },
+  "Control_HEK_SEC_020118_38b": {
+   "n_psm_winners": 43322,
+   "strata_counts": null,
+   "0.001": {
+    "peptidoforms": 5038,
+    "pooled_tdc_peptidoforms": 5038,
+    "by_stratum": {
+     "all": {
+      "accepted": 5038,
+      "score_threshold": 41.14654258782433,
+      "decoy_pair_winners_above": 4,
+      "pooled_tdc_accepted": 5038,
+      "separate_tdc_accepted": 5038
+     }
+    }
+   },
+   "0.01": {
+    "peptidoforms": 9315,
+    "pooled_tdc_peptidoforms": 9315,
+    "by_stratum": {
+     "all": {
+      "accepted": 9315,
+      "score_threshold": 33.715390995631935,
+      "decoy_pair_winners_above": 92,
+      "pooled_tdc_accepted": 9315,
+      "separate_tdc_accepted": 9315
+     }
+    }
+   },
+   "0.05": {
+    "peptidoforms": 12204,
+    "pooled_tdc_peptidoforms": 12204,
+    "by_stratum": {
+     "all": {
+      "accepted": 12204,
+      "score_threshold": 29.906961427630996,
+      "decoy_pair_winners_above": 609,
+      "pooled_tdc_accepted": 12204,
+      "separate_tdc_accepted": 12204
+     }
+    }
+   }
+  }
+ },
+ "wall_s": 21.355717526283115
+}

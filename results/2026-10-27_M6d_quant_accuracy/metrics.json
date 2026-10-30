@@ -1,0 +1,3769 @@
+{
+ "experiment": "M6d quant accuracy (dev only: D9, D11, D12)",
+ "date": "2026-10-27",
+ "diagnosis_d9": {
+  "n_matched": 14154,
+  "decomposition": {
+   "sage": {
+    "n": 13706,
+    "eps": 0.11453880658829085,
+    "eps_sp": {
+     "HUMAN": 0.11268116528087724,
+     "YEAST": 0.12150193748442817,
+     "ECOLI": 0.12136200361332072
+    },
+    "lfc_sp": {
+     "HUMAN": -0.03734072516243181,
+     "YEAST": 0.9912116485959501,
+     "ECOLI": -2.019864111203969
+    },
+    "eps_min3": 0.11448027981467845,
+    "cv": 0.053653820042684174,
+    "completeness": 0.9999391993774016
+   },
+   "ours_M6": {
+    "n": 13706,
+    "eps": 0.134048344818253,
+    "eps_sp": {
+     "HUMAN": 0.12973374749611288,
+     "YEAST": 0.14209205936480984,
+     "ECOLI": 0.17994155415546587
+    },
+    "lfc_sp": {
+     "HUMAN": -0.023762474391126,
+     "YEAST": 1.0267315052791055,
+     "ECOLI": -2.05003931760654
+    },
+    "eps_min3": 0.11134659676788772,
+    "cv": 0.048391598207227826,
+    "completeness": 0.7987620993238971
+   },
+   "sage_masked_to_our_missingness": {
+    "n": 13706,
+    "eps": 0.12584073064827273,
+    "eps_sp": {
+     "HUMAN": 0.12381497618042836,
+     "YEAST": 0.13149418304272587,
+     "ECOLI": 0.13001732618957362
+    },
+    "lfc_sp": {
+     "HUMAN": -0.01956734286893358,
+     "YEAST": 1.0019160897651176,
+     "ECOLI": -1.9866305144552783
+    },
+    "eps_min3": 0.1072523721034706,
+    "cv": 0.047455739168247774,
+    "completeness": 0.798725618950338
+   },
+   "complete_6of6_rows": {
+    "n": 6034,
+    "ours": 0.11134659676788772,
+    "sage": 0.10569357873868768
+   },
+   "charge_set_varies_across_runs": {
+    "n": 1083,
+    "ours": {
+     "n": 1039,
+     "eps": 0.2972178671632939,
+     "eps_sp": {
+      "HUMAN": 0.3335958844965923,
+      "YEAST": 0.23821488438816374,
+      "ECOLI": 0.27028490460938315
+     },
+     "lfc_sp": {
+      "HUMAN": -0.08416621559093329,
+      "YEAST": 1.0759064439667263,
+      "ECOLI": -2.218121322845004
+     },
+     "eps_min3": 0.24919259879466793,
+     "cv": 0.07786894921631503,
+     "completeness": 0.9149823548283607
+    },
+    "sage": {
+     "n": 1039,
+     "eps": 0.09740094847403569,
+     "eps_sp": {
+      "HUMAN": 0.09479392045182067,
+      "YEAST": 0.10677886549830617,
+      "ECOLI": 0.10438011181420848
+     },
+     "lfc_sp": {
+      "HUMAN": -0.04739624626789407,
+      "YEAST": 0.9805460153877839,
+      "ECOLI": -2.0537855267927405
+     },
+     "eps_min3": 0.09740094847403569,
+     "cv": 0.0426789209512259,
+     "completeness": 1.0
+    }
+   },
+   "charge_set_constant": {
+    "n": 13071,
+    "ours": {
+     "n": 12667,
+     "eps": 0.1276279640660718,
+     "eps_sp": {
+      "HUMAN": 0.12378842819714286,
+      "YEAST": 0.13805048726622893,
+      "ECOLI": 0.1767775435791945
+     },
+     "lfc_sp": {
+      "HUMAN": -0.01992940294524459,
+      "YEAST": 1.0247215742841052,
+      "ECOLI": -2.0347575928008865
+     },
+     "eps_min3": 0.1023567719307934,
+     "cv": 0.04641153113411859,
+     "completeness": 0.7892292308097155
+    },
+    "sage": {
+     "n": 12667,
+     "eps": 0.11604524650427095,
+     "eps_sp": {
+      "HUMAN": 0.11412308399565063,
+      "YEAST": 0.12253539884624054,
+      "ECOLI": 0.122760974398048
+     },
+     "lfc_sp": {
+      "HUMAN": -0.036591868164510544,
+      "YEAST": 0.9920756701391706,
+      "ECOLI": -2.0157391971713654
+     },
+     "eps_min3": 0.11604195290548347,
+     "cv": 0.05479523059852913,
+     "completeness": 0.9999342122575722
+    }
+   },
+   "ours_charge_rule_dominant": {
+    "n": 13674,
+    "eps": 0.12550007501555882,
+    "eps_sp": {
+     "HUMAN": 0.122086136658071,
+     "YEAST": 0.13512889485824253,
+     "ECOLI": 0.16268114849350823
+    },
+    "lfc_sp": {
+     "HUMAN": -0.023163391191211247,
+     "YEAST": 1.0207916911941801,
+     "ECOLI": -2.0381063972719424
+    },
+    "eps_min3": 0.10242315215392495,
+    "cv": 0.046706323967773314,
+    "completeness": 0.7958679896882144
+   },
+   "ours_charge_rule_consistent": {
+    "n": 13488,
+    "eps": 0.12587790225377393,
+    "eps_sp": {
+     "HUMAN": 0.1226642033751606,
+     "YEAST": 0.13625048905806025,
+     "ECOLI": 0.16477408348200484
+    },
+    "lfc_sp": {
+     "HUMAN": -0.022965619418748418,
+     "YEAST": 1.021377819519417,
+     "ECOLI": -2.0383677938162563
+    },
+    "eps_min3": 0.10224647468823278,
+    "cv": 0.04629510086107779,
+    "completeness": 0.7982651245551602
+   }
+  },
+  "species_by_intensity": [
+   {
+    "species": "HUMAN",
+    "sage_intensity_quintile": 1,
+    "n": 2300,
+    "ours_median_abs_eps": 0.21550662540123877,
+    "sage_median_abs_eps": 0.18473624061239136,
+    "ours_median_eps": -0.0939279816607046,
+    "sage_median_eps": -0.10531441647781037,
+    "ours_complete_frac": 0.18391304347826087
+   },
+   {
+    "species": "HUMAN",
+    "sage_intensity_quintile": 2,
+    "n": 2215,
+    "ours_median_abs_eps": 0.15393315756096548,
+    "sage_median_abs_eps": 0.1304031236753076,
+    "ours_median_eps": -0.05308215360039448,
+    "sage_median_eps": -0.06274954563513546,
+    "ours_complete_frac": 0.3358916478555305
+   },
+   {
+    "species": "HUMAN",
+    "sage_intensity_quintile": 3,
+    "n": 2162,
+    "ours_median_abs_eps": 0.13318685698249944,
+    "sage_median_abs_eps": 0.11518576933016789,
+    "ours_median_eps": -0.023752992023299058,
+    "sage_median_eps": -0.02641836096512762,
+    "ours_complete_frac": 0.41766882516188714
+   },
+   {
+    "species": "HUMAN",
+    "sage_intensity_quintile": 4,
+    "n": 2120,
+    "ours_median_abs_eps": 0.09854066701147879,
+    "sage_median_abs_eps": 0.08792309909452989,
+    "ours_median_eps": -0.008425250985368393,
+    "sage_median_eps": -0.022130191432705004,
+    "ours_complete_frac": 0.5084905660377359
+   },
+   {
+    "species": "HUMAN",
+    "sage_intensity_quintile": 5,
+    "n": 2053,
+    "ours_median_abs_eps": 0.08048664973001252,
+    "sage_median_abs_eps": 0.07464487826343813,
+    "ours_median_eps": 0.012431264336004944,
+    "sage_median_eps": -0.003013876807663962,
+    "ours_complete_frac": 0.7062834875791525
+   },
+   {
+    "species": "YEAST",
+    "sage_intensity_quintile": 1,
+    "n": 412,
+    "ours_median_abs_eps": 0.2392047371762951,
+    "sage_median_abs_eps": 0.18099306027664852,
+    "ours_median_eps": 0.05043297803563185,
+    "sage_median_eps": -0.00866830353751169,
+    "ours_complete_frac": 0.13106796116504854
+   },
+   {
+    "species": "YEAST",
+    "sage_intensity_quintile": 2,
+    "n": 457,
+    "ours_median_abs_eps": 0.19092033981000256,
+    "sage_median_abs_eps": 0.1484720900316745,
+    "ours_median_eps": 0.013058942571436916,
+    "sage_median_eps": -0.03857289535293873,
+    "ours_complete_frac": 0.2910284463894967
+   },
+   {
+    "species": "YEAST",
+    "sage_intensity_quintile": 3,
+    "n": 471,
+    "ours_median_abs_eps": 0.15261884405512305,
+    "sage_median_abs_eps": 0.13869222027349792,
+    "ours_median_eps": 0.019995087456809557,
+    "sage_median_eps": -0.02302454595545811,
+    "ours_complete_frac": 0.3651804670912951
+   },
+   {
+    "species": "YEAST",
+    "sage_intensity_quintile": 4,
+    "n": 513,
+    "ours_median_abs_eps": 0.12337767954054257,
+    "sage_median_abs_eps": 0.10383587629021918,
+    "ours_median_eps": 0.01422337237307758,
+    "sage_median_eps": -0.016921240921405456,
+    "ours_complete_frac": 0.4619883040935672
+   },
+   {
+    "species": "YEAST",
+    "sage_intensity_quintile": 5,
+    "n": 630,
+    "ours_median_abs_eps": 0.09761207040513398,
+    "sage_median_abs_eps": 0.0863220026222784,
+    "ours_median_eps": 0.03603646298262042,
+    "sage_median_eps": 0.013600766838617773,
+    "ours_complete_frac": 0.6682539682539682
+   },
+   {
+    "species": "ECOLI",
+    "sage_intensity_quintile": 1,
+    "n": 30,
+    "ours_median_abs_eps": 0.2917454409459035,
+    "sage_median_abs_eps": 0.2543646613856012,
+    "ours_median_eps": -0.12271436094152222,
+    "sage_median_eps": -0.04783110017142711,
+    "ours_complete_frac": 0.1
+   },
+   {
+    "species": "ECOLI",
+    "sage_intensity_quintile": 2,
+    "n": 69,
+    "ours_median_abs_eps": 0.26376141977729084,
+    "sage_median_abs_eps": 0.203569227900271,
+    "ours_median_eps": -0.2084082573483581,
+    "sage_median_eps": -0.10626887905345228,
+    "ours_complete_frac": 0.2463768115942029
+   },
+   {
+    "species": "ECOLI",
+    "sage_intensity_quintile": 3,
+    "n": 108,
+    "ours_median_abs_eps": 0.17489844848776048,
+    "sage_median_abs_eps": 0.12891810239244705,
+    "ours_median_eps": -0.04163214609878629,
+    "sage_median_eps": -0.019217690045605806,
+    "ours_complete_frac": 0.3611111111111111
+   },
+   {
+    "species": "ECOLI",
+    "sage_intensity_quintile": 4,
+    "n": 108,
+    "ours_median_abs_eps": 0.14395859290590352,
+    "sage_median_abs_eps": 0.08994156680623,
+    "ours_median_eps": -0.04243400702672062,
+    "sage_median_eps": -0.013001386867918185,
+    "ours_complete_frac": 0.48148148148148145
+   },
+   {
+    "species": "ECOLI",
+    "sage_intensity_quintile": 5,
+    "n": 58,
+    "ours_median_abs_eps": 0.08430402815164406,
+    "sage_median_abs_eps": 0.07126432781636183,
+    "ours_median_eps": 0.025020626075976438,
+    "sage_median_eps": 0.008667326397011621,
+    "ours_complete_frac": 0.6379310344827587
+   },
+   {
+    "species": "ALL",
+    "sage_intensity_quintile": 1,
+    "n": 2742,
+    "ours_median_abs_eps": 0.2179083640518451,
+    "sage_median_abs_eps": 0.18429107984444926,
+    "ours_median_eps": -0.0771130285673598,
+    "sage_median_eps": -0.09229517880487315,
+    "ours_complete_frac": 0.175054704595186
+   },
+   {
+    "species": "ALL",
+    "sage_intensity_quintile": 2,
+    "n": 2741,
+    "ours_median_abs_eps": 0.16322514011898726,
+    "sage_median_abs_eps": 0.13519052849657598,
+    "ours_median_eps": -0.045261515836825694,
+    "sage_median_eps": -0.06248237367044851,
+    "ours_complete_frac": 0.32615833637358627
+   },
+   {
+    "species": "ALL",
+    "sage_intensity_quintile": 3,
+    "n": 2741,
+    "ours_median_abs_eps": 0.13701291632352408,
+    "sage_median_abs_eps": 0.11954170808832032,
+    "ours_median_eps": -0.01862788441249208,
+    "sage_median_eps": -0.025988012354392964,
+    "ours_complete_frac": 0.4064210142283838
+   },
+   {
+    "species": "ALL",
+    "sage_intensity_quintile": 4,
+    "n": 2741,
+    "ours_median_abs_eps": 0.10434366529307937,
+    "sage_median_abs_eps": 0.09035025536236319,
+    "ours_median_eps": -0.006281742775737342,
+    "sage_median_eps": -0.02045801360389987,
+    "ours_complete_frac": 0.49872309376140095
+   },
+   {
+    "species": "ALL",
+    "sage_intensity_quintile": 5,
+    "n": 2741,
+    "ours_median_abs_eps": 0.08488412413671043,
+    "sage_median_abs_eps": 0.07696925843871583,
+    "ours_median_eps": 0.01683632337144303,
+    "sage_median_eps": 0.0008192527397206106,
+    "ours_complete_frac": 0.6960963152134257
+   }
+  ],
+  "integration_variants": [
+   {
+    "variant": "M6 baseline (XIC M0-2, x1 window, apex)",
+    "prec_n": 18933,
+    "prec_eps": 0.13021327271570726,
+    "prec_eps_H": 0.12798820049960824,
+    "prec_eps_Y": 0.1334732198666142,
+    "prec_eps_E": 0.16248322447453933,
+    "prec_lfc_Y": 1.0146751386236872,
+    "prec_lfc_E": -2.0434326914613408,
+    "prec_cv": 0.049813618547632894,
+    "matched_eps_sum": 0.134048344818253,
+    "matched_eps_dominant": 0.12550007501555882,
+    "matched_eps_dominant_E": 0.16268114849350823,
+    "group": "baseline"
+   },
+   {
+    "variant": "iso M0",
+    "prec_n": 18932,
+    "prec_eps": 0.13426142422770493,
+    "prec_eps_H": 0.13481979340320915,
+    "prec_eps_Y": 0.13253999880183898,
+    "prec_eps_E": 0.12948659612018787,
+    "prec_lfc_Y": 0.9949566129790366,
+    "prec_lfc_E": -2.0129776199557394,
+    "prec_cv": 0.06003495399560908,
+    "matched_eps_sum": 0.1376543020569736,
+    "matched_eps_dominant": 0.1295343424700075,
+    "matched_eps_dominant_E": 0.12793614924412466,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M1",
+    "prec_n": 18908,
+    "prec_eps": 0.16889318686694033,
+    "prec_eps_H": 0.1673925982254012,
+    "prec_eps_Y": 0.17334193060741043,
+    "prec_eps_E": 0.18314088505339576,
+    "prec_lfc_Y": 1.006683574681226,
+    "prec_lfc_E": -2.0663529838517167,
+    "prec_cv": 0.07290589360908897,
+    "matched_eps_sum": 0.17070100185631176,
+    "matched_eps_dominant": 0.1613443959177463,
+    "matched_eps_dominant_E": 0.18171662180730408,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M0-1",
+    "prec_n": 18933,
+    "prec_eps": 0.1255369207727881,
+    "prec_eps_H": 0.12440977891197491,
+    "prec_eps_Y": 0.12855670722449197,
+    "prec_eps_E": 0.13383156677065067,
+    "prec_lfc_Y": 1.0057984685752341,
+    "prec_lfc_E": -2.0362210570123276,
+    "prec_cv": 0.05047834971292998,
+    "matched_eps_sum": 0.1282784872460656,
+    "matched_eps_dominant": 0.1213391374580528,
+    "matched_eps_dominant_E": 0.1363932371368719,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M0-2 (M6)",
+    "prec_n": 18933,
+    "prec_eps": 0.13021327271570726,
+    "prec_eps_H": 0.12798820049960824,
+    "prec_eps_Y": 0.1334732198666142,
+    "prec_eps_E": 0.16248322447453933,
+    "prec_lfc_Y": 1.0146751386236872,
+    "prec_lfc_E": -2.0434326914613408,
+    "prec_cv": 0.049813618547632894,
+    "matched_eps_sum": 0.134048344818253,
+    "matched_eps_dominant": 0.12550007501555882,
+    "matched_eps_dominant_E": 0.16268114849350823,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M0-3",
+    "prec_n": 18933,
+    "prec_eps": 0.1332299257355185,
+    "prec_eps_H": 0.13130988255095133,
+    "prec_eps_Y": 0.13697676694960936,
+    "prec_eps_E": 0.1794068429178246,
+    "prec_lfc_Y": 1.014087190826551,
+    "prec_lfc_E": -2.0513301043213588,
+    "prec_cv": 0.05001826455334727,
+    "matched_eps_sum": 0.13699213331080085,
+    "matched_eps_dominant": 0.12907822029620775,
+    "matched_eps_dominant_E": 0.17754022532404612,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M0-4",
+    "prec_n": 18933,
+    "prec_eps": 0.13511586053112623,
+    "prec_eps_H": 0.13315455479137484,
+    "prec_eps_Y": 0.13684324375318724,
+    "prec_eps_E": 0.1855096899526023,
+    "prec_lfc_Y": 1.008435074959885,
+    "prec_lfc_E": -2.04366692166416,
+    "prec_cv": 0.04998721905357174,
+    "matched_eps_sum": 0.13857790499290168,
+    "matched_eps_dominant": 0.13032150336406012,
+    "matched_eps_dominant_E": 0.189012632730428,
+    "group": "isotopes"
+   },
+   {
+    "variant": "iso M0-2 averagine projection",
+    "prec_n": 18933,
+    "prec_eps": 0.12505232566700286,
+    "prec_eps_H": 0.12443085380491326,
+    "prec_eps_Y": 0.12636612857996,
+    "prec_eps_E": 0.1406811847931433,
+    "prec_lfc_Y": 1.0088343602895877,
+    "prec_lfc_E": -2.031177686401331,
+    "prec_cv": 0.049632266758739316,
+    "matched_eps_sum": 0.12845620925325463,
+    "matched_eps_dominant": 0.1209998152549403,
+    "matched_eps_dominant_E": 0.1396876973446819,
+    "group": "isotopes"
+   },
+   {
+    "variant": "window x0.5",
+    "prec_n": 18933,
+    "prec_eps": 0.14275765710805288,
+    "prec_eps_H": 0.14251955637751834,
+    "prec_eps_Y": 0.14105356084531628,
+    "prec_eps_E": 0.1602078053742959,
+    "prec_lfc_Y": 1.0128118937180073,
+    "prec_lfc_E": -2.0473673963614756,
+    "prec_cv": 0.06099766498667481,
+    "matched_eps_sum": 0.14601454345503662,
+    "matched_eps_dominant": 0.13724461671804988,
+    "matched_eps_dominant_E": 0.15434846393727852,
+    "group": "window"
+   },
+   {
+    "variant": "window x0.75",
+    "prec_n": 18933,
+    "prec_eps": 0.13592239295865838,
+    "prec_eps_H": 0.13527032830304364,
+    "prec_eps_Y": 0.13665870258267176,
+    "prec_eps_E": 0.1516442684553967,
+    "prec_lfc_Y": 1.0131648765424188,
+    "prec_lfc_E": -2.0440351392401137,
+    "prec_cv": 0.05478394494038129,
+    "matched_eps_sum": 0.1395883905148363,
+    "matched_eps_dominant": 0.13144325971919368,
+    "matched_eps_dominant_E": 0.150414079232565,
+    "group": "window"
+   },
+   {
+    "variant": "window x1.5",
+    "prec_n": 18933,
+    "prec_eps": 0.1264161822037444,
+    "prec_eps_H": 0.12365815466767316,
+    "prec_eps_Y": 0.13505273178279253,
+    "prec_eps_E": 0.18238514952734963,
+    "prec_lfc_Y": 1.0183439469586215,
+    "prec_lfc_E": -2.0541142760171365,
+    "prec_cv": 0.045148142913520616,
+    "matched_eps_sum": 0.13046764012134737,
+    "matched_eps_dominant": 0.12251206274369153,
+    "matched_eps_dominant_E": 0.1817198325990983,
+    "group": "window"
+   },
+   {
+    "variant": "window x2.0",
+    "prec_n": 18933,
+    "prec_eps": 0.12778769429777093,
+    "prec_eps_H": 0.12316362106735745,
+    "prec_eps_Y": 0.14162789310338653,
+    "prec_eps_E": 0.21303714279815278,
+    "prec_lfc_Y": 1.0167277409027182,
+    "prec_lfc_E": -2.0585996428155777,
+    "prec_cv": 0.04460074120653721,
+    "matched_eps_sum": 0.13192910477771136,
+    "matched_eps_dominant": 0.12395038204416942,
+    "matched_eps_dominant_E": 0.21059686637893904,
+    "group": "window"
+   },
+   {
+    "variant": "window x3.0",
+    "prec_n": 18933,
+    "prec_eps": 0.13470268505068717,
+    "prec_eps_H": 0.12921309268982029,
+    "prec_eps_Y": 0.14951168970528173,
+    "prec_eps_E": 0.24339857855048663,
+    "prec_lfc_Y": 0.9982203486764849,
+    "prec_lfc_E": -2.037162519223232,
+    "prec_cv": 0.044084271913034344,
+    "matched_eps_sum": 0.13736973499082872,
+    "matched_eps_dominant": 0.1300898247175688,
+    "matched_eps_dominant_E": 0.24704461814369338,
+    "group": "window"
+   },
+   {
+    "variant": "fixed half-width 0.05 min",
+    "prec_n": 18933,
+    "prec_eps": 0.1335714784555435,
+    "prec_eps_H": 0.13147421401194137,
+    "prec_eps_Y": 0.14086401921167813,
+    "prec_eps_E": 0.16159180092025682,
+    "prec_lfc_Y": 1.0242152362856798,
+    "prec_lfc_E": -2.05003800423194,
+    "prec_cv": 0.052000414895272615,
+    "matched_eps_sum": 0.13721816103638673,
+    "matched_eps_dominant": 0.12953517881550436,
+    "matched_eps_dominant_E": 0.16348942533042532,
+    "group": "window"
+   },
+   {
+    "variant": "fixed half-width 0.1 min",
+    "prec_n": 18933,
+    "prec_eps": 0.1313819642654508,
+    "prec_eps_H": 0.12658322938264632,
+    "prec_eps_Y": 0.14350470436875096,
+    "prec_eps_E": 0.20295306971600713,
+    "prec_lfc_Y": 1.0183569980326652,
+    "prec_lfc_E": -2.0576161629931002,
+    "prec_cv": 0.04611337470852945,
+    "matched_eps_sum": 0.1339542373543674,
+    "matched_eps_dominant": 0.12657994470417666,
+    "matched_eps_dominant_E": 0.2002240507100641,
+    "group": "window"
+   },
+   {
+    "variant": "fixed half-width 0.2 min",
+    "prec_n": 18933,
+    "prec_eps": 0.1373899075865488,
+    "prec_eps_H": 0.13163364581999737,
+    "prec_eps_Y": 0.15038547142825998,
+    "prec_eps_E": 0.259822985614079,
+    "prec_lfc_Y": 0.9819876996786547,
+    "prec_lfc_E": -2.010206865425558,
+    "prec_cv": 0.044534838557761025,
+    "matched_eps_sum": 0.14165261638257576,
+    "matched_eps_dominant": 0.13339121195331138,
+    "matched_eps_dominant_E": 0.25752527283597537,
+    "group": "window"
+   },
+   {
+    "variant": "centre = aligned consensus RT",
+    "prec_n": 18919,
+    "prec_eps": 0.1343769299669706,
+    "prec_eps_H": 0.13296391632289328,
+    "prec_eps_Y": 0.1374214145656758,
+    "prec_eps_E": 0.1618784207874544,
+    "prec_lfc_Y": 1.0191734967998265,
+    "prec_lfc_E": -2.0388058404489904,
+    "prec_cv": 0.046179064935874425,
+    "matched_eps_sum": 0.13829064188603724,
+    "matched_eps_dominant": 0.13064770116024782,
+    "matched_eps_dominant_E": 0.1608318108440301,
+    "group": "window"
+   },
+   {
+    "variant": "feature hill area (variable bounds)",
+    "prec_n": 18933,
+    "prec_eps": 0.16637202758629144,
+    "prec_eps_H": 0.15683763205858625,
+    "prec_eps_Y": 0.19040274595433537,
+    "prec_eps_E": 0.37531283132212323,
+    "prec_lfc_Y": 1.1203876977795666,
+    "prec_lfc_E": -2.275342771754713,
+    "prec_cv": 0.05879362609200807,
+    "matched_eps_sum": 0.17016584406583846,
+    "matched_eps_dominant": 0.161193966169348,
+    "matched_eps_dominant_E": 0.37472302719681494,
+    "group": "window"
+   },
+   {
+    "variant": "tol max(3.0 SD,3.0 ppm) sum",
+    "prec_n": 18933,
+    "prec_eps": 0.1300766678765477,
+    "prec_eps_H": 0.12785779036411782,
+    "prec_eps_Y": 0.1335401891453465,
+    "prec_eps_E": 0.16247428917245887,
+    "prec_lfc_Y": 1.0146853647799077,
+    "prec_lfc_E": -2.0434250134544403,
+    "prec_cv": 0.04980581825254072,
+    "matched_eps_sum": 0.13401317849081185,
+    "matched_eps_dominant": 0.12544247010242593,
+    "matched_eps_dominant_E": 0.1626681665118621,
+    "group": "peak"
+   },
+   {
+    "variant": "tol max(5.0 SD,5.0 ppm) max",
+    "prec_n": 18933,
+    "prec_eps": 0.1290789001119066,
+    "prec_eps_H": 0.1272347372597693,
+    "prec_eps_Y": 0.1333261272237145,
+    "prec_eps_E": 0.16775566625226457,
+    "prec_lfc_Y": 0.9997085432688841,
+    "prec_lfc_E": -2.0227711324060262,
+    "prec_cv": 0.04887246504443664,
+    "matched_eps_sum": 0.1324237229025922,
+    "matched_eps_dominant": 0.12434898454344001,
+    "matched_eps_dominant_E": 0.17597695594362328,
+    "group": "peak"
+   },
+   {
+    "variant": "tol max(22.2 SD,10.0 ppm) max",
+    "prec_n": 18933,
+    "prec_eps": 0.13299157746664036,
+    "prec_eps_H": 0.1315395611122554,
+    "prec_eps_Y": 0.1350086033114275,
+    "prec_eps_E": 0.17568170769716307,
+    "prec_lfc_Y": 0.9734628154586922,
+    "prec_lfc_E": -1.9809676365501812,
+    "prec_cv": 0.048774462495058755,
+    "matched_eps_sum": 0.13536427950022656,
+    "matched_eps_dominant": 0.1274126487326157,
+    "matched_eps_dominant_E": 0.18225927452288104,
+    "group": "peak"
+   },
+   {
+    "variant": "tol max(1.5 SD,2.0 ppm) max",
+    "prec_n": 18933,
+    "prec_eps": 0.13460420869539114,
+    "prec_eps_H": 0.13296960044500317,
+    "prec_eps_Y": 0.13830518722105456,
+    "prec_eps_E": 0.16216870326878396,
+    "prec_lfc_Y": 1.0306759524965496,
+    "prec_lfc_E": -2.069657921022305,
+    "prec_cv": 0.0521282620931567,
+    "matched_eps_sum": 0.1385165243951736,
+    "matched_eps_dominant": 0.13009271676897072,
+    "matched_eps_dominant_E": 0.16238654512334172,
+    "group": "peak"
+   },
+   {
+    "variant": "m/z from peptide (not feature)",
+    "prec_n": 18933,
+    "prec_eps": 0.13056767581799988,
+    "prec_eps_H": 0.12835207951648542,
+    "prec_eps_Y": 0.13663292116254944,
+    "prec_eps_E": 0.1626962090477866,
+    "prec_lfc_Y": 1.017417859460874,
+    "prec_lfc_E": -2.044350218735951,
+    "prec_cv": 0.050032577137150244,
+    "matched_eps_sum": 0.13392047822996567,
+    "matched_eps_dominant": 0.12556251012447017,
+    "matched_eps_dominant_E": 0.15846602871118165,
+    "group": "peak"
+   }
+  ],
+  "paired_residuals": {
+   "summary": {
+    "n_values": 58391,
+    "median_abs_resid": 0.03808035976362234,
+    "frac_abs_resid_gt_0.5": 0.014231645287801202,
+    "frac_abs_resid_gt_1": 0.005343289205528249
+   },
+   "strata": [
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(-inf, -5.0]",
+     "n": 1239,
+     "median_abs_resid": 0.10914954038611668,
+     "frac_gt_0.5": 0.16626311541565778,
+     "median_resid": -0.01657326207315002
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(-5.0, -3.0]",
+     "n": 1571,
+     "median_abs_resid": 0.07346660293283058,
+     "frac_gt_0.5": 0.03373647358370465,
+     "median_resid": -0.040110738692686
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(-3.0, -1.0]",
+     "n": 9464,
+     "median_abs_resid": 0.04352564947391535,
+     "frac_gt_0.5": 0.006762468300929839,
+     "median_resid": -0.014283433138735369
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(-1.0, 1.0]",
+     "n": 33889,
+     "median_abs_resid": 0.032395239824291266,
+     "frac_gt_0.5": 0.003659004396706896,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(1.0, 3.0]",
+     "n": 9285,
+     "median_abs_resid": 0.03934830766602104,
+     "frac_gt_0.5": 0.005600430802369413,
+     "median_resid": 0.006948133644421262
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(3.0, 5.0]",
+     "n": 1624,
+     "median_abs_resid": 0.06162775353723404,
+     "frac_gt_0.5": 0.03633004926108374,
+     "median_resid": 0.0035071204907577425
+    },
+    {
+     "factor": "d_rt_cons_sd",
+     "bin": "(5.0, inf]",
+     "n": 1319,
+     "median_abs_resid": 0.12561162909902812,
+     "frac_gt_0.5": 0.20697498104624715,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "m_minus1_ratio",
+     "bin": "(-inf, 0.05]",
+     "n": 54155,
+     "median_abs_resid": 0.03799804769007409,
+     "frac_gt_0.5": 0.013886067768442433,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "m_minus1_ratio",
+     "bin": "(0.05, 0.15]",
+     "n": 2906,
+     "median_abs_resid": 0.03717359254196673,
+     "frac_gt_0.5": 0.014108740536820371,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "m_minus1_ratio",
+     "bin": "(0.15, 0.3]",
+     "n": 912,
+     "median_abs_resid": 0.04283233418236243,
+     "frac_gt_0.5": 0.02412280701754386,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "m_minus1_ratio",
+     "bin": "(0.3, 0.6]",
+     "n": 315,
+     "median_abs_resid": 0.041588984352918246,
+     "frac_gt_0.5": 0.031746031746031744,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "m_minus1_ratio",
+     "bin": "(0.6, inf]",
+     "n": 103,
+     "median_abs_resid": 0.054984666774661406,
+     "frac_gt_0.5": 0.05825242718446602,
+     "median_resid": 0.019511731546082878
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(-inf, 0.8]",
+     "n": 413,
+     "median_abs_resid": 0.05030293789202034,
+     "frac_gt_0.5": 0.03631961259079903,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(0.8, 0.9]",
+     "n": 475,
+     "median_abs_resid": 0.07718980186086366,
+     "frac_gt_0.5": 0.06947368421052631,
+     "median_resid": -0.009314945615722436
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(0.9, 0.95]",
+     "n": 1875,
+     "median_abs_resid": 0.08258275031349527,
+     "frac_gt_0.5": 0.034666666666666665,
+     "median_resid": -0.028649526992765573
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(0.95, 0.98]",
+     "n": 7973,
+     "median_abs_resid": 0.05574240293491428,
+     "frac_gt_0.5": 0.01693214599272545,
+     "median_resid": -0.005009841696070438
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(0.98, 0.99]",
+     "n": 11364,
+     "median_abs_resid": 0.045594086295300595,
+     "frac_gt_0.5": 0.011263639563533967,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "xic_iso_cos",
+     "bin": "(0.99, inf]",
+     "n": 36291,
+     "median_abs_resid": 0.032369034646455574,
+     "frac_gt_0.5": 0.012537543743627897,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_iso_cos",
+     "bin": "(0.8, 0.9]",
+     "n": 327,
+     "median_abs_resid": 0.04948507567342375,
+     "frac_gt_0.5": 0.03669724770642202,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_iso_cos",
+     "bin": "(0.9, 0.95]",
+     "n": 701,
+     "median_abs_resid": 0.054317872288891955,
+     "frac_gt_0.5": 0.03281027104136947,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_iso_cos",
+     "bin": "(0.95, 0.99]",
+     "n": 11646,
+     "median_abs_resid": 0.04738217387193888,
+     "frac_gt_0.5": 0.012450626824660829,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_iso_cos",
+     "bin": "(0.99, inf]",
+     "n": 45717,
+     "median_abs_resid": 0.03586784270895471,
+     "frac_gt_0.5": 0.01423977951309141,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_n_iso",
+     "bin": "(0, 2]",
+     "n": 11462,
+     "median_abs_resid": 0.05584237815935733,
+     "frac_gt_0.5": 0.025998953062292794,
+     "median_resid": -0.0013347665250229568
+    },
+    {
+     "factor": "feat_n_iso",
+     "bin": "(2, 3]",
+     "n": 23536,
+     "median_abs_resid": 0.042117238987978034,
+     "frac_gt_0.5": 0.011854180829367776,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_n_iso",
+     "bin": "(3, 4]",
+     "n": 16056,
+     "median_abs_resid": 0.032057714776655644,
+     "frac_gt_0.5": 0.010587942202291978,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "feat_n_iso",
+     "bin": "(4, 20]",
+     "n": 7337,
+     "median_abs_resid": 0.02496500765692211,
+     "frac_gt_0.5": 0.011448821044023443,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "n_scans",
+     "bin": "(0.0, 3.0]",
+     "n": 638,
+     "median_abs_resid": 0.11413078727537718,
+     "frac_gt_0.5": 0.0987460815047022,
+     "median_resid": -0.0662756113232339
+    },
+    {
+     "factor": "n_scans",
+     "bin": "(3.0, 5.0]",
+     "n": 6982,
+     "median_abs_resid": 0.06717235366549712,
+     "frac_gt_0.5": 0.019192208536236037,
+     "median_resid": -0.004809879547913454
+    },
+    {
+     "factor": "n_scans",
+     "bin": "(5.0, 8.0]",
+     "n": 17063,
+     "median_abs_resid": 0.04362047352336873,
+     "frac_gt_0.5": 0.005157358026138428,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "n_scans",
+     "bin": "(8.0, 12.0]",
+     "n": 15299,
+     "median_abs_resid": 0.032491157320993835,
+     "frac_gt_0.5": 0.006536374926465782,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "n_scans",
+     "bin": "(12.0, 1000000000.0]",
+     "n": 18409,
+     "median_abs_resid": 0.031797734764651864,
+     "frac_gt_0.5": 0.024227280134716714,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "log2_sage",
+     "bin": "(-inf, 18.0]",
+     "n": 16,
+     "median_abs_resid": 5.792068853672847,
+     "frac_gt_0.5": 0.9375,
+     "median_resid": 5.792068853672847
+    },
+    {
+     "factor": "log2_sage",
+     "bin": "(18.0, 20.0]",
+     "n": 453,
+     "median_abs_resid": 0.09427958053704,
+     "frac_gt_0.5": 0.10154525386313466,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "log2_sage",
+     "bin": "(20.0, 22.0]",
+     "n": 15402,
+     "median_abs_resid": 0.06011556101381954,
+     "frac_gt_0.5": 0.017595117517205557,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "log2_sage",
+     "bin": "(22.0, 24.0]",
+     "n": 27799,
+     "median_abs_resid": 0.03937637468487676,
+     "frac_gt_0.5": 0.010647865031116227,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "log2_sage",
+     "bin": "(24.0, inf]",
+     "n": 14721,
+     "median_abs_resid": 0.02402403404265563,
+     "frac_gt_0.5": 0.01378982406086543,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "dt_psm_apex",
+     "bin": "(-inf, -0.1]",
+     "n": 211,
+     "median_abs_resid": 0.1202400494912137,
+     "frac_gt_0.5": 0.20853080568720378,
+     "median_resid": -0.009735424477659294
+    },
+    {
+     "factor": "dt_psm_apex",
+     "bin": "(-0.1, -0.03]",
+     "n": 1874,
+     "median_abs_resid": 0.048296501404399006,
+     "frac_gt_0.5": 0.06670224119530416,
+     "median_resid": 0.0034539439572096597
+    },
+    {
+     "factor": "dt_psm_apex",
+     "bin": "(-0.03, 0.03]",
+     "n": 47616,
+     "median_abs_resid": 0.039104689685194316,
+     "frac_gt_0.5": 0.008064516129032258,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "dt_psm_apex",
+     "bin": "(0.03, 0.1]",
+     "n": 6794,
+     "median_abs_resid": 0.030706614182003378,
+     "frac_gt_0.5": 0.026493965263467766,
+     "median_resid": 0.0
+    },
+    {
+     "factor": "dt_psm_apex",
+     "bin": "(0.1, inf]",
+     "n": 1896,
+     "median_abs_resid": 0.030988941871404663,
+     "frac_gt_0.5": 0.05168776371308017,
+     "median_resid": 0.0
+    }
+   ]
+  },
+  "linking": {
+   "precursor_values": 92709,
+   "frac_apex_off_consensus_gt3sd": 0.09976377697958128,
+   "frac_apex_off_consensus_gt0.1min": 0.007507361744814419,
+   "frac_xic_apex_ne_feature_apex_gt0.05min": 0.007733876969873475,
+   "alignment_resid_sd_min": {
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP1": 0.00558954127463292,
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP2": 0.00594448818957177,
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP3": 0.005609174861776725,
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP1": 0.004948672106426261,
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP2": 0.004817807421211723,
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP3": 0.005232583386705121
+   }
+  }
+ },
+ "before_after": {
+  "d11_all_m6_off": {
+   "prec_n": 22451,
+   "prec_eps": 0.10800298755481563,
+   "prec_eps_species": {
+    "HUMAN": 0.10400617686840619,
+    "ECOLI": 0.1650128139843754
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.014077988205787761,
+    "ECOLI": 1.7854053036281812
+   },
+   "prec_cv": 0.11464313706690224,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.5980525649145029,
+   "pf_n": 18378,
+   "pf_eps": 0.11826862415188977,
+   "pf_cv": 0.0976883995019805,
+   "provenance_counts": {
+    "ms2": 158437
+   },
+   "protein": {
+    "top3": {
+     "n": 5299,
+     "eps_min2": 0.13451377489234595,
+     "cv_min3": 0.13832641610590235,
+     "de": {
+      "n_proteins": 3716,
+      "n_pos": 356,
+      "n_neg": 3360,
+      "pauc_fpr5pct_std": 0.8172150882825041,
+      "auc": 0.9706535914927769,
+      "tpr_at_fdp1pct": 0.15168539325842698,
+      "tp_at_fdp1pct": 54,
+      "tpr_at_fdp5pct": 0.6235955056179775,
+      "tp_at_fdp5pct": 222
+     }
+    },
+    "maxlfq": {
+     "n": 5299,
+     "eps_min2": 0.06880486137255026,
+     "cv_min3": 0.0752055005983238,
+     "de": {
+      "n_proteins": 3716,
+      "n_pos": 356,
+      "n_neg": 3360,
+      "pauc_fpr5pct_std": 0.9242074638844302,
+      "auc": 0.9860988496522205,
+      "tpr_at_fdp1pct": 0.8033707865168539,
+      "tp_at_fdp1pct": 286,
+      "tpr_at_fdp5pct": 0.8876404494382022,
+      "tp_at_fdp5pct": 316
+     }
+    },
+    "directlfq": {
+     "n": 4673,
+     "eps_min2": 0.198050354067,
+     "cv_min3": 0.14130425116068956,
+     "de": {
+      "n_proteins": 3665,
+      "n_pos": 356,
+      "n_neg": 3309,
+      "pauc_fpr5pct_std": 0.8983738595115128,
+      "auc": 0.9812292657749887,
+      "tpr_at_fdp1pct": 0.7780898876404494,
+      "tp_at_fdp1pct": 277,
+      "tpr_at_fdp5pct": 0.8567415730337079,
+      "tp_at_fdp5pct": 305
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 3.035788742825389,
+    "align_s": 0.4131145691499114,
+    "xic_s": 4.106511957012117,
+    "top3_s": 0.11358495289459825,
+    "maxlfq_s": 4.453240271192044,
+    "directlfq_s": 32.647281079087406,
+    "total_s": 44.769521572161466
+   }
+  },
+  "d11_all_m6_on": {
+   "prec_n": 26726,
+   "prec_eps": 0.11035900710945867,
+   "prec_eps_species": {
+    "HUMAN": 0.10637227124643367,
+    "ECOLI": 0.16720308070000733
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.010777151846014021,
+    "ECOLI": 1.7770561969163623
+   },
+   "prec_cv": 0.1199486048652246,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.7079059423180423,
+   "pf_n": 21709,
+   "pf_eps": 0.11418763213519512,
+   "pf_cv": 0.09891502050146624,
+   "provenance_counts": {
+    "ms2": 158437,
+    "mbr": 28479
+   },
+   "protein": {
+    "top3": {
+     "n": 5300,
+     "eps_min2": 0.10882448910610165,
+     "cv_min3": 0.12019733691248127,
+     "de": {
+      "n_proteins": 4273,
+      "n_pos": 423,
+      "n_neg": 3850,
+      "pauc_fpr5pct_std": 0.8215713364649535,
+      "auc": 0.9649313806760615,
+      "tpr_at_fdp1pct": 0.29314420803782504,
+      "tp_at_fdp1pct": 124,
+      "tpr_at_fdp5pct": 0.6879432624113475,
+      "tp_at_fdp5pct": 291
+     }
+    },
+    "maxlfq": {
+     "n": 5300,
+     "eps_min2": 0.06799072559955022,
+     "cv_min3": 0.07505983370089718,
+     "de": {
+      "n_proteins": 4273,
+      "n_pos": 423,
+      "n_neg": 3850,
+      "pauc_fpr5pct_std": 0.9076049246262013,
+      "auc": 0.9839261920112984,
+      "tpr_at_fdp1pct": 0.7446808510638298,
+      "tp_at_fdp1pct": 315,
+      "tpr_at_fdp5pct": 0.8486997635933806,
+      "tp_at_fdp5pct": 359
+     }
+    },
+    "directlfq": {
+     "n": 5099,
+     "eps_min2": 0.19798625987852603,
+     "cv_min3": 0.1418149827266773,
+     "de": {
+      "n_proteins": 4255,
+      "n_pos": 422,
+      "n_neg": 3833,
+      "pauc_fpr5pct_std": 0.8762746317524415,
+      "auc": 0.97198313968369,
+      "tpr_at_fdp1pct": 0.7488151658767772,
+      "tp_at_fdp1pct": 316,
+      "tpr_at_fdp5pct": 0.8199052132701422,
+      "tp_at_fdp5pct": 346
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 4.772589125204831,
+    "align_s": 0.3296864447183907,
+    "mbr_s": 2.824868724681437,
+    "xic_s": 4.5348216337151825,
+    "top3_s": 0.08942144876345992,
+    "maxlfq_s": 4.935883576981723,
+    "directlfq_s": 37.696572315879166,
+    "total_s": 55.18384326994419
+   }
+  },
+  "d11_all_m6d_off": {
+   "prec_n": 24438,
+   "prec_eps": 0.10643122865120525,
+   "prec_eps_species": {
+    "HUMAN": 0.10172287480902753,
+    "ECOLI": 0.19238080280423553
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.018569542095949743,
+    "ECOLI": 1.8017518253654483
+   },
+   "prec_cv": 0.12304760728671484,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.642086497499537,
+   "pf_n": 18380,
+   "pf_eps": 0.0994070945689991,
+   "pf_cv": 0.08425247496339769,
+   "provenance_counts": {
+    "ms2": 158454,
+    "ms2_sibling": 15880
+   },
+   "protein": {
+    "top3": {
+     "n": 5299,
+     "eps_min2": 0.11543955897239933,
+     "cv_min3": 0.11997468914673488,
+     "de": {
+      "n_proteins": 3716,
+      "n_pos": 356,
+      "n_neg": 3360,
+      "pauc_fpr5pct_std": 0.8489834135901551,
+      "auc": 0.9769646201177098,
+      "tpr_at_fdp1pct": 0.3792134831460674,
+      "tp_at_fdp1pct": 135,
+      "tpr_at_fdp5pct": 0.7247191011235955,
+      "tp_at_fdp5pct": 258
+     }
+    },
+    "maxlfq": {
+     "n": 5299,
+     "eps_min2": 0.06430820128429637,
+     "cv_min3": 0.07114164963997843,
+     "de": {
+      "n_proteins": 3716,
+      "n_pos": 356,
+      "n_neg": 3360,
+      "pauc_fpr5pct_std": 0.9268492509363296,
+      "auc": 0.9879865569823434,
+      "tpr_at_fdp1pct": 0.7612359550561798,
+      "tp_at_fdp1pct": 271,
+      "tpr_at_fdp5pct": 0.8848314606741573,
+      "tp_at_fdp5pct": 315
+     }
+    },
+    "directlfq": {
+     "n": 4682,
+     "eps_min2": 0.2034808741728824,
+     "cv_min3": 0.14144496278508628,
+     "de": {
+      "n_proteins": 3669,
+      "n_pos": 356,
+      "n_neg": 3313,
+      "pauc_fpr5pct_std": 0.897572382544759,
+      "auc": 0.9854709231932768,
+      "tpr_at_fdp1pct": 0.7640449438202247,
+      "tp_at_fdp1pct": 272,
+      "tpr_at_fdp5pct": 0.848314606741573,
+      "tp_at_fdp5pct": 302
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.4333607628941536,
+    "align_s": 0.3067231220193207,
+    "xic_s": 3.0862812171690166,
+    "siblings_s": 2.547650477848947,
+    "top3_s": 0.08383083390071988,
+    "maxlfq_s": 4.329720777925104,
+    "directlfq_s": 27.471150344703346,
+    "total_s": 40.25871753646061
+   }
+  },
+  "d11_all_m6d_on": {
+   "prec_n": 27856,
+   "prec_eps": 0.10683789277764433,
+   "prec_eps_species": {
+    "HUMAN": 0.1015245734584429,
+    "ECOLI": 0.19276962504228967
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.015313982278458482,
+    "ECOLI": 1.7966736249388138
+   },
+   "prec_cv": 0.12247514069515403,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.729238687573307,
+   "pf_n": 21713,
+   "pf_eps": 0.10330872862300566,
+   "pf_cv": 0.08985571002756484,
+   "provenance_counts": {
+    "ms2": 158454,
+    "mbr": 23107,
+    "ms2_sibling": 15880
+   },
+   "protein": {
+    "top3": {
+     "n": 5300,
+     "eps_min2": 0.10072859233338605,
+     "cv_min3": 0.10850308622668002,
+     "de": {
+      "n_proteins": 4273,
+      "n_pos": 423,
+      "n_neg": 3850,
+      "pauc_fpr5pct_std": 0.8344232599551749,
+      "auc": 0.9701746952810784,
+      "tpr_at_fdp1pct": 0.14184397163120568,
+      "tp_at_fdp1pct": 60,
+      "tpr_at_fdp5pct": 0.7044917257683215,
+      "tp_at_fdp5pct": 298
+     }
+    },
+    "maxlfq": {
+     "n": 5300,
+     "eps_min2": 0.06371753003903535,
+     "cv_min3": 0.07044198200673837,
+     "de": {
+      "n_proteins": 4273,
+      "n_pos": 423,
+      "n_neg": 3850,
+      "pauc_fpr5pct_std": 0.9122225292438059,
+      "auc": 0.9856571796997329,
+      "tpr_at_fdp1pct": 0.7494089834515366,
+      "tp_at_fdp1pct": 317,
+      "tpr_at_fdp5pct": 0.8463356973995272,
+      "tp_at_fdp5pct": 358
+     }
+    },
+    "directlfq": {
+     "n": 5104,
+     "eps_min2": 0.20171466156939388,
+     "cv_min3": 0.14141668350827355,
+     "de": {
+      "n_proteins": 4255,
+      "n_pos": 422,
+      "n_neg": 3833,
+      "pauc_fpr5pct_std": 0.883928295433891,
+      "auc": 0.9744869634243902,
+      "tpr_at_fdp1pct": 0.7369668246445498,
+      "tp_at_fdp1pct": 311,
+      "tpr_at_fdp5pct": 0.8364928909952607,
+      "tp_at_fdp5pct": 353
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.6056011677719653,
+    "align_s": 0.3123664138838649,
+    "mbr_s": 1.7377648553811014,
+    "xic_s": 3.4837319650687277,
+    "siblings_s": 2.7025577067397535,
+    "top3_s": 0.09354684175923467,
+    "maxlfq_s": 4.552127984818071,
+    "directlfq_s": 28.268341141287237,
+    "total_s": 43.756038076709956
+   }
+  },
+  "d9_all_m6_off": {
+   "prec_n": 18933,
+   "prec_eps": 0.13021327271570726,
+   "prec_eps_species": {
+    "HUMAN": 0.12798820049960824,
+    "YEAST": 0.1334732198666142,
+    "ECOLI": 0.16248322447453933
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.028219529135666832,
+    "YEAST": 1.0146751386236872,
+    "ECOLI": -2.0434326914613408
+   },
+   "prec_cv": 0.049813618547632894,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.5859202457426653,
+   "pf_n": 18007,
+   "pf_eps": 0.1364476483651007,
+   "pf_cv": 0.05054829677522761,
+   "provenance_counts": {
+    "ms2": 108551
+   },
+   "protein": {
+    "top3": {
+     "n": 5135,
+     "eps_min2": 0.15349504072709763,
+     "cv_min3": 0.1009256460040713,
+     "de": {
+      "n_proteins": 3254,
+      "n_pos": 721,
+      "n_neg": 2533,
+      "pauc_fpr5pct_std": 0.3823345980080962,
+      "auc": 0.9058803817350228,
+      "tpr_at_fdp1pct": 0.012482662968099861,
+      "tp_at_fdp1pct": 9,
+      "tpr_at_fdp5pct": 0.04160887656033287,
+      "tp_at_fdp5pct": 30
+     }
+    },
+    "maxlfq": {
+     "n": 5135,
+     "eps_min2": 0.08709044638969843,
+     "cv_min3": 0.041220349452981135,
+     "de": {
+      "n_proteins": 3254,
+      "n_pos": 721,
+      "n_neg": 2533,
+      "pauc_fpr5pct_std": 0.5679701997434147,
+      "auc": 0.9364658354382347,
+      "tpr_at_fdp1pct": 0.0638002773925104,
+      "tp_at_fdp1pct": 46,
+      "tpr_at_fdp5pct": 0.34674063800277394,
+      "tp_at_fdp5pct": 250
+     }
+    },
+    "directlfq": {
+     "n": 4267,
+     "eps_min2": 0.08695088012649244,
+     "cv_min3": 0.0443312770665137,
+     "de": {
+      "n_proteins": 3167,
+      "n_pos": 710,
+      "n_neg": 2457,
+      "pauc_fpr5pct_std": 0.624548430182233,
+      "auc": 0.9520140787746421,
+      "tpr_at_fdp1pct": 0.1,
+      "tp_at_fdp1pct": 71,
+      "tpr_at_fdp5pct": 0.45492957746478874,
+      "tp_at_fdp5pct": 323
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 1.8744604741223156,
+    "align_s": 0.20901827095076442,
+    "xic_s": 1.2892751549370587,
+    "top3_s": 0.06732751475647092,
+    "maxlfq_s": 2.8711651358753443,
+    "directlfq_s": 26.27658276259899,
+    "total_s": 32.587829313240945
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13674,
+     "ours_eps": 0.1338679560599978,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.12967206967052647,
+      "YEAST": 0.1416219039529416,
+      "ECOLI": 0.17885038247553187
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.04850292889334506,
+     "sage_cv": 0.053653820042684174
+    },
+    "matched_m6_set": {
+     "n": 13674,
+     "ours_eps": 0.1338679560599978,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.12967206967052647,
+      "YEAST": 0.1416219039529416,
+      "ECOLI": 0.17885038247553187
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.04850292889334506,
+     "sage_cv": 0.053653820042684174
+    }
+   }
+  },
+  "d9_all_m6_on": {
+   "prec_n": 23695,
+   "prec_eps": 0.13415956804822393,
+   "prec_eps_species": {
+    "HUMAN": 0.12816003691147593,
+    "YEAST": 0.1457696162177058,
+    "ECOLI": 0.22126652086166843
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.04392862169190437,
+    "YEAST": 1.0072050418130303,
+    "ECOLI": -2.0616773132234627
+   },
+   "prec_cv": 0.05718411200548923,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.7602159217031581,
+   "pf_n": 22473,
+   "pf_eps": 0.13596738226779337,
+   "pf_cv": 0.05669902034076531,
+   "provenance_counts": {
+    "ms2": 108551,
+    "mbr": 31842
+   },
+   "protein": {
+    "top3": {
+     "n": 5135,
+     "eps_min2": 0.12687986084828395,
+     "cv_min3": 0.06546279566632048,
+     "de": {
+      "n_proteins": 3978,
+      "n_pos": 1023,
+      "n_neg": 2955,
+      "pauc_fpr5pct_std": 0.3745776084076395,
+      "auc": 0.8983772554429179,
+      "tpr_at_fdp1pct": 0.01466275659824047,
+      "tp_at_fdp1pct": 15,
+      "tpr_at_fdp5pct": 0.1710654936461388,
+      "tp_at_fdp5pct": 175
+     }
+    },
+    "maxlfq": {
+     "n": 5135,
+     "eps_min2": 0.09008154530197121,
+     "cv_min3": 0.0418224840002839,
+     "de": {
+      "n_proteins": 3978,
+      "n_pos": 1023,
+      "n_neg": 2955,
+      "pauc_fpr5pct_std": 0.5305883462097641,
+      "auc": 0.9286908713795892,
+      "tpr_at_fdp1pct": 0.15835777126099707,
+      "tp_at_fdp1pct": 162,
+      "tpr_at_fdp5pct": 0.3098729227761486,
+      "tp_at_fdp5pct": 317
+     }
+    },
+    "directlfq": {
+     "n": 4616,
+     "eps_min2": 0.08836777869529122,
+     "cv_min3": 0.04533926838263427,
+     "de": {
+      "n_proteins": 3954,
+      "n_pos": 1019,
+      "n_neg": 2935,
+      "pauc_fpr5pct_std": 0.6333780821963612,
+      "auc": 0.9470219157974631,
+      "tpr_at_fdp1pct": 0.10402355250245339,
+      "tp_at_fdp1pct": 106,
+      "tpr_at_fdp5pct": 0.48773307163886165,
+      "tp_at_fdp5pct": 497
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.1684591909870505,
+    "align_s": 0.2070874096825719,
+    "mbr_s": 3.4703352572396398,
+    "xic_s": 2.072325676679611,
+    "top3_s": 0.21933466102927923,
+    "maxlfq_s": 3.151343197096139,
+    "directlfq_s": 28.51612788392231,
+    "total_s": 39.8050132766366
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 16408,
+     "ours_eps": 0.12997027333965683,
+     "sage_eps": 0.12032233798196224,
+     "ours_eps_species": {
+      "HUMAN": 0.12254939938239673,
+      "YEAST": 0.14291169839323103,
+      "ECOLI": 0.2227769138982847
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.1156789611222031,
+      "YEAST": 0.13051799958425292,
+      "ECOLI": 0.1583501472268356
+     },
+     "ours_cv": 0.05357192805931783,
+     "sage_cv": 0.057080182736831034
+    },
+    "matched_m6_set": {
+     "n": 13674,
+     "ours_eps": 0.12145437181142782,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.11793675293351669,
+      "YEAST": 0.12836878704636945,
+      "ECOLI": 0.17864005921363546
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.05088688759510671,
+     "sage_cv": 0.053653820042684174
+    }
+   }
+  },
+  "d9_all_m6d_off": {
+   "prec_n": 19565,
+   "prec_eps": 0.12237403647545264,
+   "prec_eps_species": {
+    "HUMAN": 0.1203617933374872,
+    "YEAST": 0.12549554979208644,
+    "ECOLI": 0.17085838243010443
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.02551933706884313,
+    "YEAST": 1.01323135728407,
+    "ECOLI": -2.044885003480446
+   },
+   "prec_cv": 0.04603106983379232,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.6000133529176125,
+   "pf_n": 18007,
+   "pf_eps": 0.12030681142918453,
+   "pf_cv": 0.04371586318850386,
+   "provenance_counts": {
+    "ms2": 108551,
+    "ms2_sibling": 3435
+   },
+   "protein": {
+    "top3": {
+     "n": 5135,
+     "eps_min2": 0.1454530789008901,
+     "cv_min3": 0.09508274120696718,
+     "de": {
+      "n_proteins": 3254,
+      "n_pos": 721,
+      "n_neg": 2533,
+      "pauc_fpr5pct_std": 0.4027891471959867,
+      "auc": 0.9118142598148271,
+      "tpr_at_fdp1pct": 0.016643550624133148,
+      "tp_at_fdp1pct": 12,
+      "tpr_at_fdp5pct": 0.13314840499306518,
+      "tp_at_fdp5pct": 96
+     }
+    },
+    "maxlfq": {
+     "n": 5135,
+     "eps_min2": 0.08165891362507338,
+     "cv_min3": 0.03725108416974693,
+     "de": {
+      "n_proteins": 3254,
+      "n_pos": 721,
+      "n_neg": 2533,
+      "pauc_fpr5pct_std": 0.5885572577894128,
+      "auc": 0.9406650521028115,
+      "tpr_at_fdp1pct": 0.14840499306518723,
+      "tp_at_fdp1pct": 107,
+      "tpr_at_fdp5pct": 0.42857142857142855,
+      "tp_at_fdp5pct": 309
+     }
+    },
+    "directlfq": {
+     "n": 4267,
+     "eps_min2": 0.08230842401997762,
+     "cv_min3": 0.04055920923143687,
+     "de": {
+      "n_proteins": 3169,
+      "n_pos": 710,
+      "n_neg": 2459,
+      "pauc_fpr5pct_std": 0.6556890754858554,
+      "auc": 0.9564210803658879,
+      "tpr_at_fdp1pct": 0.17746478873239438,
+      "tp_at_fdp1pct": 126,
+      "tpr_at_fdp5pct": 0.4704225352112676,
+      "tp_at_fdp5pct": 334
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.4798399447463453,
+    "align_s": 0.21587828872725368,
+    "xic_s": 2.2252687900327146,
+    "siblings_s": 1.6146288262680173,
+    "top3_s": 0.06036891508847475,
+    "maxlfq_s": 2.8482288396917284,
+    "directlfq_s": 34.784791802987456,
+    "total_s": 44.22900540754199
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13674,
+     "ours_eps": 0.11771188668575405,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.11479655238417763,
+      "YEAST": 0.12620349491069405,
+      "ECOLI": 0.15952608350207242
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.041662778640848316,
+     "sage_cv": 0.053653820042684174
+    },
+    "matched_m6_set": {
+     "n": 13674,
+     "ours_eps": 0.11771188668575405,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.11479655238417763,
+      "YEAST": 0.12620349491069405,
+      "ECOLI": 0.15952608350207242
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.041662778640848316,
+     "sage_cv": 0.053653820042684174
+    }
+   }
+  },
+  "d9_all_m6d_on": {
+   "prec_n": 24071,
+   "prec_eps": 0.12511943870204334,
+   "prec_eps_species": {
+    "HUMAN": 0.11940701309622348,
+    "YEAST": 0.1342319271035599,
+    "ECOLI": 0.21854365444545998
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.042270036431968805,
+    "YEAST": 1.0037669098146011,
+    "ECOLI": -2.058913539768831
+   },
+   "prec_cv": 0.05241830424437013,
+   "prec_cv_kind": "min3",
+   "prec_completeness": 0.7642152935416389,
+   "pf_n": 22473,
+   "pf_eps": 0.12479729661212602,
+   "pf_cv": 0.05127855916367164,
+   "provenance_counts": {
+    "ms2": 108551,
+    "mbr": 30199,
+    "ms2_sibling": 3435
+   },
+   "protein": {
+    "top3": {
+     "n": 5135,
+     "eps_min2": 0.12046917613922137,
+     "cv_min3": 0.06077427309110099,
+     "de": {
+      "n_proteins": 3978,
+      "n_pos": 1023,
+      "n_neg": 2955,
+      "pauc_fpr5pct_std": 0.40292395049231466,
+      "auc": 0.8987993575843585,
+      "tpr_at_fdp1pct": 0.026392961876832845,
+      "tp_at_fdp1pct": 27,
+      "tpr_at_fdp5pct": 0.2130987292277615,
+      "tp_at_fdp5pct": 218
+     }
+    },
+    "maxlfq": {
+     "n": 5135,
+     "eps_min2": 0.08361438440239333,
+     "cv_min3": 0.03804135789679334,
+     "de": {
+      "n_proteins": 3978,
+      "n_pos": 1023,
+      "n_neg": 2955,
+      "pauc_fpr5pct_std": 0.5650379676906614,
+      "auc": 0.9339386992571862,
+      "tpr_at_fdp1pct": 0.1378299120234604,
+      "tp_at_fdp1pct": 141,
+      "tpr_at_fdp5pct": 0.4398826979472141,
+      "tp_at_fdp5pct": 450
+     }
+    },
+    "directlfq": {
+     "n": 4616,
+     "eps_min2": 0.08299484752789432,
+     "cv_min3": 0.04144219853296304,
+     "de": {
+      "n_proteins": 3954,
+      "n_pos": 1019,
+      "n_neg": 2935,
+      "pauc_fpr5pct_std": 0.6584602936038103,
+      "auc": 0.9504752128635984,
+      "tpr_at_fdp1pct": 0.31894013738959764,
+      "tp_at_fdp1pct": 325,
+      "tpr_at_fdp5pct": 0.5534838076545633,
+      "tp_at_fdp5pct": 564
+     }
+    }
+   },
+   "timing_s": {
+    "link_s": 2.5927261780016124,
+    "align_s": 0.2127264328300953,
+    "mbr_s": 1.2707590460777283,
+    "xic_s": 2.368132771924138,
+    "siblings_s": 2.5016396236605942,
+    "top3_s": 0.07739499118179083,
+    "maxlfq_s": 3.2600716119632125,
+    "directlfq_s": 26.513572133146226,
+    "total_s": 38.7970227887854
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 16408,
+     "ours_eps": 0.11918680349247168,
+     "sage_eps": 0.12032233798196224,
+     "ours_eps_species": {
+      "HUMAN": 0.11301498016340616,
+      "YEAST": 0.13152220129407777,
+      "ECOLI": 0.2147259779858519
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.1156789611222031,
+      "YEAST": 0.13051799958425292,
+      "ECOLI": 0.1583501472268356
+     },
+     "ours_cv": 0.04865484935180413,
+     "sage_cv": 0.057080182736831034
+    },
+    "matched_m6_set": {
+     "n": 13674,
+     "ours_eps": 0.1113959952026562,
+     "sage_eps": 0.11453880658829085,
+     "ours_eps_species": {
+      "HUMAN": 0.10846465816772977,
+      "YEAST": 0.11943819515878573,
+      "ECOLI": 0.17022609029353397
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.11268116528087724,
+      "YEAST": 0.12150193748442817,
+      "ECOLI": 0.12136200361332072
+     },
+     "ours_cv": 0.04609800910528573,
+     "sage_cv": 0.053653820042684174
+    }
+   }
+  },
+  "d9_hold_m6_off": {
+   "prec_n": 13932,
+   "prec_eps": 0.1369700172874735,
+   "prec_eps_species": {
+    "HUMAN": 0.1352094772329293,
+    "YEAST": 0.1426841199629667,
+    "ECOLI": 0.15439926094051692
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.03214636613481048,
+    "YEAST": 1.0095301020757477,
+    "ECOLI": -2.0473744766600497
+   },
+   "prec_cv": 0.04166782590990473,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.6880829964545966,
+   "pf_n": 13305,
+   "pf_eps": 0.1421430260344536,
+   "pf_cv": 0.042962472339689285,
+   "provenance_counts": {
+    "ms2": 54615
+   },
+   "protein": {
+    "top3": {
+     "n": 4675,
+     "eps_min2": 0.1904926951562329,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4675,
+     "eps_min2": 0.10849199905479434,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.9961465680971742,
+    "align_s": 0.1180606740526855,
+    "xic_s": 1.140945442020893,
+    "top3_s": 0.05422387504950166,
+    "maxlfq_s": 2.1871808329597116,
+    "total_s": 5.496557392179966
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 10422,
+     "ours_eps": 0.14026370855777515,
+     "sage_eps": 0.13213704321261943,
+     "ours_eps_species": {
+      "HUMAN": 0.13681177551335466,
+      "YEAST": 0.15047349838150836,
+      "ECOLI": 0.1616061370090831
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13144731686868028,
+      "YEAST": 0.1348908314731272,
+      "ECOLI": 0.13337934049773637
+     },
+     "ours_cv": 0.03866191750331427,
+     "sage_cv": 0.04160915667664468
+    },
+    "matched_m6_set": {
+     "n": 10423,
+     "ours_eps": 0.14023835520762518,
+     "sage_eps": 0.1366489445819461,
+     "ours_eps_species": {
+      "HUMAN": 0.13674795408052098,
+      "YEAST": 0.15049603074655238,
+      "ECOLI": 0.1616061370090831
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13603715109346126,
+      "YEAST": 0.13709161938225733,
+      "ECOLI": 0.15110401736492562
+     },
+     "ours_cv": 0.04023876411133561,
+     "sage_cv": 0.043181048516050424
+    }
+   }
+  },
+  "d9_hold_m6_on": {
+   "prec_n": 18712,
+   "prec_eps": 0.14436837455722973,
+   "prec_eps_species": {
+    "HUMAN": 0.14100862291940253,
+    "YEAST": 0.1514472344794271,
+    "ECOLI": 0.20764201430918483
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.03854810580848245,
+    "YEAST": 1.0107752951384086,
+    "ECOLI": -2.0537819678471436
+   },
+   "prec_cv": 0.04580781527910961,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.8199693865536324,
+   "pf_n": 17789,
+   "pf_eps": 0.14557945057022081,
+   "pf_cv": 0.04589015477123675,
+   "provenance_counts": {
+    "ms2": 54615,
+    "mbr": 10337
+   },
+   "protein": {
+    "top3": {
+     "n": 4675,
+     "eps_min2": 0.14322685694698567,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4675,
+     "eps_min2": 0.10357286198125859,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.7639451120048761,
+    "align_s": 0.12146068084985018,
+    "mbr_s": 0.7048525451682508,
+    "xic_s": 0.7804560950025916,
+    "top3_s": 0.04136269213631749,
+    "maxlfq_s": 1.9066398767754436,
+    "total_s": 5.31871700193733
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13569,
+     "ours_eps": 0.1413585930133241,
+     "sage_eps": 0.13720459873971436,
+     "ours_eps_species": {
+      "HUMAN": 0.13624471662812,
+      "YEAST": 0.15276276364931896,
+      "ECOLI": 0.2120554925249678
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13406548260620355,
+      "YEAST": 0.14183943408344746,
+      "ECOLI": 0.16244784851383898
+     },
+     "ours_cv": 0.04208347269600882,
+     "sage_cv": 0.04378487875238256
+    },
+    "matched_m6_set": {
+     "n": 12197,
+     "ours_eps": 0.1357905672633084,
+     "sage_eps": 0.1366489445819461,
+     "ours_eps_species": {
+      "HUMAN": 0.1335036863425607,
+      "YEAST": 0.1412129906164168,
+      "ECOLI": 0.16929327860253096
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13603715109346126,
+      "YEAST": 0.13709161938225733,
+      "ECOLI": 0.15110401736492562
+     },
+     "ours_cv": 0.04168706639661281,
+     "sage_cv": 0.043181048516050424
+    }
+   }
+  },
+  "d9_hold_m6d_off": {
+   "prec_n": 14431,
+   "prec_eps": 0.12956570692035285,
+   "prec_eps_species": {
+    "HUMAN": 0.12919344676615907,
+    "YEAST": 0.12836514667343657,
+    "ECOLI": 0.17035916734346213
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.031198697731383618,
+    "YEAST": 1.0084135043906315,
+    "ECOLI": -2.057541119765136
+   },
+   "prec_cv": 0.03815255276564282,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.6982846003898635,
+   "pf_n": 13305,
+   "pf_eps": 0.1278088317782391,
+   "pf_cv": 0.03723530406083231,
+   "provenance_counts": {
+    "ms2": 54615,
+    "ms2_sibling": 1176
+   },
+   "protein": {
+    "top3": {
+     "n": 4675,
+     "eps_min2": 0.17948551000352353,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4675,
+     "eps_min2": 0.10025118658568744,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.5411136471666396,
+    "align_s": 0.20443172194063663,
+    "xic_s": 1.155738543253392,
+    "siblings_s": 0.7660215967334807,
+    "top3_s": 0.037568403873592615,
+    "maxlfq_s": 1.673931669909507,
+    "total_s": 5.3788055828772485
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 10422,
+     "ours_eps": 0.12585586302555818,
+     "sage_eps": 0.13213704321261943,
+     "ours_eps_species": {
+      "HUMAN": 0.12386140414463398,
+      "YEAST": 0.1300213453487018,
+      "ECOLI": 0.1566089671081361
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13144731686868028,
+      "YEAST": 0.1348908314731272,
+      "ECOLI": 0.13337934049773637
+     },
+     "ours_cv": 0.0335225204162322,
+     "sage_cv": 0.04160915667664468
+    },
+    "matched_m6_set": {
+     "n": 10423,
+     "ours_eps": 0.1258650209403811,
+     "sage_eps": 0.1366489445819461,
+     "ours_eps_species": {
+      "HUMAN": 0.12386567200738519,
+      "YEAST": 0.13002943687981272,
+      "ECOLI": 0.15661705863924347
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13603715109346126,
+      "YEAST": 0.13709161938225733,
+      "ECOLI": 0.15110401736492562
+     },
+     "ours_cv": 0.034617545286240566,
+     "sage_cv": 0.043181048516050424
+    }
+   }
+  },
+  "d9_hold_m6d_on": {
+   "prec_n": 18951,
+   "prec_eps": 0.1356343172008465,
+   "prec_eps_species": {
+    "HUMAN": 0.13283000224278219,
+    "YEAST": 0.13789380837514287,
+    "ECOLI": 0.20994135877000986
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.03766990265765813,
+    "YEAST": 1.0089525801732293,
+    "ECOLI": -2.0497596646118623
+   },
+   "prec_cv": 0.04162668711242076,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.8223391812865497,
+   "pf_n": 17789,
+   "pf_eps": 0.13527547949000152,
+   "pf_cv": 0.041247758444699606,
+   "provenance_counts": {
+    "ms2": 54615,
+    "mbr": 9782,
+    "ms2_sibling": 1176
+   },
+   "protein": {
+    "top3": {
+     "n": 4675,
+     "eps_min2": 0.1389248952519555,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4675,
+     "eps_min2": 0.09765142648313052,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.440173318143934,
+    "align_s": 0.12524790735915303,
+    "mbr_s": 1.0958374007605016,
+    "xic_s": 1.2299695671536028,
+    "siblings_s": 0.8387519111856818,
+    "top3_s": 0.08449660334736109,
+    "maxlfq_s": 2.146403446793556,
+    "total_s": 6.960880154743791
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13569,
+     "ours_eps": 0.13225315033731277,
+     "sage_eps": 0.13720459873971436,
+     "ours_eps_species": {
+      "HUMAN": 0.12817867386216975,
+      "YEAST": 0.13816491957207333,
+      "ECOLI": 0.2076323793381274
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13406548260620355,
+      "YEAST": 0.14183943408344746,
+      "ECOLI": 0.16244784851383898
+     },
+     "ours_cv": 0.03749288546380973,
+     "sage_cv": 0.04378487875238256
+    },
+    "matched_m6_set": {
+     "n": 12197,
+     "ours_eps": 0.1264343305333533,
+     "sage_eps": 0.1366489445819461,
+     "ours_eps_species": {
+      "HUMAN": 0.12455340215825572,
+      "YEAST": 0.12752240211848687,
+      "ECOLI": 0.17483254865948084
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.13603715109346126,
+      "YEAST": 0.13709161938225733,
+      "ECOLI": 0.15110401736492562
+     },
+     "ours_cv": 0.03714420905216085,
+     "sage_cv": 0.043181048516050424
+    }
+   }
+  },
+  "d9_sel_m6_off": {
+   "prec_n": 13878,
+   "prec_eps": 0.145336808006169,
+   "prec_eps_species": {
+    "HUMAN": 0.14625622826682516,
+    "YEAST": 0.13962486533127638,
+    "ECOLI": 0.15425194166845912
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.054694030348809264,
+    "YEAST": 0.9900435036817914,
+    "ECOLI": -2.0426071004640036
+   },
+   "prec_cv": 0.04261969316348435,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.6830281986531986,
+   "pf_n": 13288,
+   "pf_eps": 0.14971157935128065,
+   "pf_cv": 0.043155222762264134,
+   "provenance_counts": {
+    "ms2": 53936
+   },
+   "protein": {
+    "top3": {
+     "n": 4673,
+     "eps_min2": 0.19249818789019457,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4673,
+     "eps_min2": 0.11773482814990999,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.4863366456702352,
+    "align_s": 0.11808290891349316,
+    "xic_s": 1.0159920528531075,
+    "top3_s": 0.03162807272747159,
+    "maxlfq_s": 1.7441582423634827,
+    "total_s": 4.39619792252779
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 10373,
+     "ours_eps": 0.1478106906214478,
+     "sage_eps": 0.1414125675818685,
+     "ours_eps_species": {
+      "HUMAN": 0.14925874509901682,
+      "YEAST": 0.14113228170180747,
+      "ECOLI": 0.15542199709742732
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14126674337667744,
+      "YEAST": 0.1460309088094398,
+      "ECOLI": 0.13798948241207398
+     },
+     "ours_cv": 0.04039599560097529,
+     "sage_cv": 0.04264139702661553
+    },
+    "matched_m6_set": {
+     "n": 10373,
+     "ours_eps": 0.1478106906214478,
+     "sage_eps": 0.14243295694983615,
+     "ours_eps_species": {
+      "HUMAN": 0.14925874509901682,
+      "YEAST": 0.14113228170180747,
+      "ECOLI": 0.15542199709742732
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14078633801700846,
+      "YEAST": 0.14669465591582487,
+      "ECOLI": 0.1513213422576989
+     },
+     "ours_cv": 0.041019327984498255,
+     "sage_cv": 0.044393896750613365
+    }
+   }
+  },
+  "d9_sel_m6_on": {
+   "prec_n": 18619,
+   "prec_eps": 0.1521916512123287,
+   "prec_eps_species": {
+    "HUMAN": 0.15036650786995054,
+    "YEAST": 0.150419195041815,
+    "ECOLI": 0.21931970088157549
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.06088288292452404,
+    "YEAST": 0.9901407007271423,
+    "ECOLI": -2.079090727773769
+   },
+   "prec_cv": 0.04646208372456724,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.8125131523569024,
+   "pf_n": 17745,
+   "pf_eps": 0.1519792501363746,
+   "pf_cv": 0.04601439890780128,
+   "provenance_counts": {
+    "ms2": 53936,
+    "mbr": 10086
+   },
+   "protein": {
+    "top3": {
+     "n": 4673,
+     "eps_min2": 0.15087276680889872,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4673,
+     "eps_min2": 0.11349811425586864,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.4509628536179662,
+    "align_s": 0.11021017702296376,
+    "mbr_s": 0.8636214551515877,
+    "xic_s": 0.8851991160772741,
+    "top3_s": 0.03179883072152734,
+    "maxlfq_s": 1.8967167288064957,
+    "total_s": 5.238509161397815
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13561,
+     "ours_eps": 0.14681528132300947,
+     "sage_eps": 0.14234081952698574,
+     "ours_eps_species": {
+      "HUMAN": 0.1437607013411304,
+      "YEAST": 0.14536757341417061,
+      "ECOLI": 0.2130605668756509
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.1396273890876394,
+      "YEAST": 0.14587980134909273,
+      "ECOLI": 0.173618842632969
+     },
+     "ours_cv": 0.042581083669910855,
+     "sage_cv": 0.04468143342812243
+    },
+    "matched_m6_set": {
+     "n": 12155,
+     "ours_eps": 0.14174198592556309,
+     "sage_eps": 0.14243295694983615,
+     "ours_eps_species": {
+      "HUMAN": 0.1417389768377575,
+      "YEAST": 0.1368034883355964,
+      "ECOLI": 0.16494617233116315
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14078633801700846,
+      "YEAST": 0.14669465591582487,
+      "ECOLI": 0.1513213422576989
+     },
+     "ours_cv": 0.04210577657015547,
+     "sage_cv": 0.044393896750613365
+    }
+   }
+  },
+  "d9_sel_m6d_off": {
+   "prec_n": 14385,
+   "prec_eps": 0.1355251163611655,
+   "prec_eps_species": {
+    "HUMAN": 0.13553060410886264,
+    "YEAST": 0.13325478744200758,
+    "ECOLI": 0.15516944407515254
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.04795364041212835,
+    "YEAST": 0.9916775043685693,
+    "ECOLI": -2.055383624185005
+   },
+   "prec_cv": 0.039324057304017446,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.6939955018567917,
+   "pf_n": 13288,
+   "pf_eps": 0.13191386918130465,
+   "pf_cv": 0.03769608303501924,
+   "provenance_counts": {
+    "ms2": 53936,
+    "ms2_sibling": 1191
+   },
+   "protein": {
+    "top3": {
+     "n": 4673,
+     "eps_min2": 0.18223589459506684,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4673,
+     "eps_min2": 0.10896982434460156,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.2708105184137821,
+    "align_s": 0.11896050674840808,
+    "xic_s": 1.1661426732316613,
+    "siblings_s": 0.7272714837454259,
+    "top3_s": 0.0323731629177928,
+    "maxlfq_s": 1.8155705127865076,
+    "total_s": 5.131128857843578
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 10373,
+     "ours_eps": 0.1305567601931692,
+     "sage_eps": 0.1414125675818685,
+     "ours_eps_species": {
+      "HUMAN": 0.1305165609329002,
+      "YEAST": 0.1285168192781665,
+      "ECOLI": 0.1523117002584975
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14126674337667744,
+      "YEAST": 0.1460309088094398,
+      "ECOLI": 0.13798948241207398
+     },
+     "ours_cv": 0.03489331041585611,
+     "sage_cv": 0.04264139702661553
+    },
+    "matched_m6_set": {
+     "n": 10373,
+     "ours_eps": 0.1305567601931692,
+     "sage_eps": 0.14243295694983615,
+     "ours_eps_species": {
+      "HUMAN": 0.1305165609329002,
+      "YEAST": 0.1285168192781665,
+      "ECOLI": 0.1523117002584975
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14078633801700846,
+      "YEAST": 0.14669465591582487,
+      "ECOLI": 0.1513213422576989
+     },
+     "ours_cv": 0.03566925881270391,
+     "sage_cv": 0.044393896750613365
+    }
+   }
+  },
+  "d9_sel_m6d_on": {
+   "prec_n": 18867,
+   "prec_eps": 0.14107823215676873,
+   "prec_eps_species": {
+    "HUMAN": 0.13790714806257576,
+    "YEAST": 0.1426301870457305,
+    "ECOLI": 0.2090507136046318
+   },
+   "prec_lfc_species": {
+    "HUMAN": -0.05553580009844339,
+    "YEAST": 0.9859866055655289,
+    "ECOLI": -2.0825374794164375
+   },
+   "prec_cv": 0.04261599713888869,
+   "prec_cv_kind": "min2",
+   "prec_completeness": 0.8157461164286836,
+   "pf_n": 17745,
+   "pf_eps": 0.1390978329403012,
+   "pf_cv": 0.04156831768846854,
+   "provenance_counts": {
+    "ms2": 53936,
+    "mbr": 9528,
+    "ms2_sibling": 1191
+   },
+   "protein": {
+    "top3": {
+     "n": 4673,
+     "eps_min2": 0.14441494840744085,
+     "cv_min3": null,
+     "de": null
+    },
+    "maxlfq": {
+     "n": 4673,
+     "eps_min2": 0.10681178606540342,
+     "cv_min3": null,
+     "de": null
+    }
+   },
+   "timing_s": {
+    "link_s": 1.4402621709741652,
+    "align_s": 0.13066120585426688,
+    "mbr_s": 1.0362241002731025,
+    "xic_s": 1.428669773042202,
+    "siblings_s": 0.7186746532097459,
+    "top3_s": 0.03508609579876065,
+    "maxlfq_s": 2.0822299672290683,
+    "total_s": 6.871807966381311
+   },
+   "vs_sage": {
+    "matched_this_version": {
+     "n": 13561,
+     "ours_eps": 0.13610250274376412,
+     "sage_eps": 0.14234081952698574,
+     "ours_eps_species": {
+      "HUMAN": 0.13143343802889618,
+      "YEAST": 0.13859206333887553,
+      "ECOLI": 0.21016279284565087
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.1396273890876394,
+      "YEAST": 0.14587980134909273,
+      "ECOLI": 0.173618842632969
+     },
+     "ours_cv": 0.03917146846975675,
+     "sage_cv": 0.04468143342812243
+    },
+    "matched_m6_set": {
+     "n": 12155,
+     "ours_eps": 0.13080763633486825,
+     "sage_eps": 0.14243295694983615,
+     "ours_eps_species": {
+      "HUMAN": 0.12930286873115904,
+      "YEAST": 0.13146323901913703,
+      "ECOLI": 0.16831445317923865
+     },
+     "sage_eps_species": {
+      "HUMAN": 0.14078633801700846,
+      "YEAST": 0.14669465591582487,
+      "ECOLI": 0.1513213422576989
+     },
+     "ours_cv": 0.03819821421131585,
+     "sage_cv": 0.044393896750613365
+    }
+   }
+  }
+ },
+ "mbr_truth": {
+  "d12": {
+   "dataset": "d12",
+   "donor_runs": [
+    "a11869_human_yaeast_90min_hrMS2",
+    "a11870_human_yaeast_90min_hrMS2",
+    "a11871_human_yaeast_90min_hrMS2",
+    "a11872_human_yaeast_90min_hrMS2",
+    "a11873_human_yaeast_90min_hrMS2",
+    "a11874_human_yaeast_90min_hrMS2"
+   ],
+   "acceptor_runs": [
+    "a11866_human_90min_hrMS2",
+    "a11867_human_90min_hrMS2",
+    "a11868_human_90min_hrMS2"
+   ],
+   "absent_species": [
+    "YEAST"
+   ],
+   "present_species": [
+    "HUMAN"
+   ],
+   "mbr_params": {
+    "rt_k": 4.0,
+    "rt_min_w": 0.05,
+    "ppm_k": 3.0,
+    "ppm_min": 2.0,
+    "w_iso": 2.0,
+    "w_tr": 1.0,
+    "rt_shift_lo": 4.0,
+    "rt_shift_hi": 8.0,
+    "rt_shift_min": 0.5,
+    "seed": 11,
+    "exclude_claimed": true,
+    "per_run_q": true
+   },
+   "donor_alpha": 0.001,
+   "id_alpha": 0.01,
+   "alignment": {
+    "a11869_human_yaeast_90min_hrMS2": {
+     "n_anchors": 24041,
+     "resid_sd_min": 0.02163295665485708,
+     "n_knots": 30
+    },
+    "a11870_human_yaeast_90min_hrMS2": {
+     "n_anchors": 24013,
+     "resid_sd_min": 0.02623174408515192,
+     "n_knots": 30
+    },
+    "a11871_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23949,
+     "resid_sd_min": 0.024995062717824455,
+     "n_knots": 30
+    },
+    "a11872_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23977,
+     "resid_sd_min": 0.029546409405091442,
+     "n_knots": 30
+    },
+    "a11873_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23730,
+     "resid_sd_min": 0.0301559983638147,
+     "n_knots": 30
+    },
+    "a11874_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23631,
+     "resid_sd_min": 0.02830790918332248,
+     "n_knots": 30
+    },
+    "a11866_human_90min_hrMS2": {
+     "n_anchors": 21646,
+     "resid_sd_min": 0.027995238081109156,
+     "n_knots": 30
+    },
+    "a11867_human_90min_hrMS2": {
+     "n_anchors": 21506,
+     "resid_sd_min": 0.028422086962115536,
+     "n_knots": 30
+    },
+    "a11868_human_90min_hrMS2": {
+     "n_anchors": 21599,
+     "resid_sd_min": 0.030954415184254132,
+     "n_knots": 30
+    }
+   },
+   "mbr_wall_s_incl_link": 5.386787041090429,
+   "candidates_in_acceptors": 39081,
+   "absent_candidates_in_acceptors": 9003,
+   "present_candidates_in_acceptors": 29918,
+   "q0.01": {
+    "accepted_in_acceptors": 22383,
+    "accepted_absent_species (false)": 41,
+    "false_fraction_lower_bound": 0.001831747308224992,
+    "combined_est_FDP": 0.007918853380364872,
+    "absent_null_acceptance_rate": 0.004554037543041209,
+    "present_acceptance_rate": 0.7467745170131693,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     17,
+     8
+    ],
+    "absent_target_wins_above_thr": 41,
+    "per_acceptor_run": {
+     "a11866_human_90min_hrMS2": {
+      "accepted": 7457,
+      "false": 21,
+      "lb": 0.002816145903178222
+     },
+     "a11867_human_90min_hrMS2": {
+      "accepted": 7456,
+      "false": 10,
+      "lb": 0.0013412017167381974
+     },
+     "a11868_human_90min_hrMS2": {
+      "accepted": 7470,
+      "false": 10,
+      "lb": 0.0013386880856760374
+     }
+    },
+    "accepted_in_donor_runs": 46284
+   },
+   "q0.05": {
+    "accepted_in_acceptors": 22383,
+    "accepted_absent_species (false)": 41,
+    "false_fraction_lower_bound": 0.001831747308224992,
+    "combined_est_FDP": 0.007918853380364872,
+    "absent_null_acceptance_rate": 0.004554037543041209,
+    "present_acceptance_rate": 0.7467745170131693,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     17,
+     8
+    ],
+    "absent_target_wins_above_thr": 41,
+    "per_acceptor_run": {
+     "a11866_human_90min_hrMS2": {
+      "accepted": 7457,
+      "false": 21,
+      "lb": 0.002816145903178222
+     },
+     "a11867_human_90min_hrMS2": {
+      "accepted": 7456,
+      "false": 10,
+      "lb": 0.0013412017167381974
+     },
+     "a11868_human_90min_hrMS2": {
+      "accepted": 7470,
+      "false": 10,
+      "lb": 0.0013386880856760374
+     }
+    },
+    "accepted_in_donor_runs": 46284
+   },
+   "ms2_psm_winners_in_acceptors": {
+    "n": 77690,
+    "absent_species": 53
+   }
+  },
+  "d12ye": {
+   "dataset": "d12ye",
+   "donor_runs": [
+    "a11869_human_yaeast_90min_hrMS2",
+    "a11870_human_yaeast_90min_hrMS2",
+    "a11871_human_yaeast_90min_hrMS2",
+    "a11872_human_yaeast_90min_hrMS2",
+    "a11873_human_yaeast_90min_hrMS2",
+    "a11874_human_yaeast_90min_hrMS2"
+   ],
+   "acceptor_runs": [
+    "a11866_human_90min_hrMS2",
+    "a11867_human_90min_hrMS2",
+    "a11868_human_90min_hrMS2"
+   ],
+   "absent_species": [
+    "ECOLI",
+    "YEAST"
+   ],
+   "present_species": [
+    "HUMAN"
+   ],
+   "mbr_params": {
+    "rt_k": 4.0,
+    "rt_min_w": 0.05,
+    "ppm_k": 3.0,
+    "ppm_min": 2.0,
+    "w_iso": 2.0,
+    "w_tr": 1.0,
+    "rt_shift_lo": 4.0,
+    "rt_shift_hi": 8.0,
+    "rt_shift_min": 0.5,
+    "seed": 11,
+    "exclude_claimed": true,
+    "per_run_q": true
+   },
+   "donor_alpha": 0.001,
+   "id_alpha": 0.01,
+   "alignment": {
+    "a11869_human_yaeast_90min_hrMS2": {
+     "n_anchors": 24041,
+     "resid_sd_min": 0.02163295665485708,
+     "n_knots": 30
+    },
+    "a11870_human_yaeast_90min_hrMS2": {
+     "n_anchors": 24013,
+     "resid_sd_min": 0.02623174408515192,
+     "n_knots": 30
+    },
+    "a11871_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23949,
+     "resid_sd_min": 0.024995062717824455,
+     "n_knots": 30
+    },
+    "a11872_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23977,
+     "resid_sd_min": 0.029546409405091442,
+     "n_knots": 30
+    },
+    "a11873_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23730,
+     "resid_sd_min": 0.0301559983638147,
+     "n_knots": 30
+    },
+    "a11874_human_yaeast_90min_hrMS2": {
+     "n_anchors": 23631,
+     "resid_sd_min": 0.02830790918332248,
+     "n_knots": 30
+    },
+    "a11866_human_90min_hrMS2": {
+     "n_anchors": 21646,
+     "resid_sd_min": 0.027995238081109156,
+     "n_knots": 30
+    },
+    "a11867_human_90min_hrMS2": {
+     "n_anchors": 21506,
+     "resid_sd_min": 0.028422086962115536,
+     "n_knots": 30
+    },
+    "a11868_human_90min_hrMS2": {
+     "n_anchors": 21599,
+     "resid_sd_min": 0.030954415184254132,
+     "n_knots": 30
+    }
+   },
+   "mbr_wall_s_incl_link": 4.860826717689633,
+   "candidates_in_acceptors": 39081,
+   "absent_candidates_in_acceptors": 9003,
+   "present_candidates_in_acceptors": 29918,
+   "q0.01": {
+    "accepted_in_acceptors": 22383,
+    "accepted_absent_species (false)": 41,
+    "false_fraction_lower_bound": 0.001831747308224992,
+    "combined_est_FDP": 0.007918853380364872,
+    "absent_null_acceptance_rate": 0.004554037543041209,
+    "present_acceptance_rate": 0.7467745170131693,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     17,
+     8
+    ],
+    "absent_target_wins_above_thr": 41,
+    "per_acceptor_run": {
+     "a11866_human_90min_hrMS2": {
+      "accepted": 7457,
+      "false": 21,
+      "lb": 0.002816145903178222
+     },
+     "a11867_human_90min_hrMS2": {
+      "accepted": 7456,
+      "false": 10,
+      "lb": 0.0013412017167381974
+     },
+     "a11868_human_90min_hrMS2": {
+      "accepted": 7470,
+      "false": 10,
+      "lb": 0.0013386880856760374
+     }
+    },
+    "accepted_in_donor_runs": 46284
+   },
+   "q0.05": {
+    "accepted_in_acceptors": 22383,
+    "accepted_absent_species (false)": 41,
+    "false_fraction_lower_bound": 0.001831747308224992,
+    "combined_est_FDP": 0.007918853380364872,
+    "absent_null_acceptance_rate": 0.004554037543041209,
+    "present_acceptance_rate": 0.7467745170131693,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     17,
+     8
+    ],
+    "absent_target_wins_above_thr": 41,
+    "per_acceptor_run": {
+     "a11866_human_90min_hrMS2": {
+      "accepted": 7457,
+      "false": 21,
+      "lb": 0.002816145903178222
+     },
+     "a11867_human_90min_hrMS2": {
+      "accepted": 7456,
+      "false": 10,
+      "lb": 0.0013412017167381974
+     },
+     "a11868_human_90min_hrMS2": {
+      "accepted": 7470,
+      "false": 10,
+      "lb": 0.0013386880856760374
+     }
+    },
+    "accepted_in_donor_runs": 46284
+   },
+   "ms2_psm_winners_in_acceptors": {
+    "n": 77690,
+    "absent_species": 79
+   }
+  },
+  "d9": {
+   "dataset": "d9all9",
+   "donor_runs": [
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP1",
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP2",
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP3",
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP1",
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP2",
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP3"
+   ],
+   "acceptor_runs": [
+    "LFQ_Astral_DDA_15min_50ng_Human_01",
+    "LFQ_Astral_DDA_15min_50ng_Human_02",
+    "LFQ_Astral_DDA_15min_50ng_Human_03"
+   ],
+   "absent_species": [
+    "ECOLI",
+    "YEAST"
+   ],
+   "present_species": [
+    "HUMAN"
+   ],
+   "mbr_params": {
+    "rt_k": 4.0,
+    "rt_min_w": 0.05,
+    "ppm_k": 3.0,
+    "ppm_min": 2.0,
+    "w_iso": 2.0,
+    "w_tr": 1.0,
+    "rt_shift_lo": 4.0,
+    "rt_shift_hi": 8.0,
+    "rt_shift_min": 0.5,
+    "seed": 11,
+    "exclude_claimed": true,
+    "per_run_q": true
+   },
+   "donor_alpha": 0.001,
+   "id_alpha": 0.01,
+   "alignment": {
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP1": {
+     "n_anchors": 17514,
+     "resid_sd_min": 0.00623137527859958,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP2": {
+     "n_anchors": 17378,
+     "resid_sd_min": 0.006231825379524805,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Condition_A_REP3": {
+     "n_anchors": 17508,
+     "resid_sd_min": 0.006568618711555741,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP1": {
+     "n_anchors": 17957,
+     "resid_sd_min": 0.006883480607200001,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP2": {
+     "n_anchors": 18076,
+     "resid_sd_min": 0.006970956469576771,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Condition_B_REP3": {
+     "n_anchors": 17957,
+     "resid_sd_min": 0.006972773646665402,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Human_01": {
+     "n_anchors": 18420,
+     "resid_sd_min": 0.005350164280479896,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Human_02": {
+     "n_anchors": 18329,
+     "resid_sd_min": 0.00595230942812543,
+     "n_knots": 30
+    },
+    "LFQ_Astral_DDA_15min_50ng_Human_03": {
+     "n_anchors": 18206,
+     "resid_sd_min": 0.0061887980763910425,
+     "n_knots": 30
+    }
+   },
+   "mbr_wall_s_incl_link": 7.357116421684623,
+   "candidates_in_acceptors": 38146,
+   "absent_candidates_in_acceptors": 19338,
+   "present_candidates_in_acceptors": 18548,
+   "q0.01": {
+    "accepted_in_acceptors": 10806,
+    "accepted_absent_species (false)": 68,
+    "false_fraction_lower_bound": 0.006292800296131778,
+    "combined_est_FDP": 0.012328525805111623,
+    "absent_null_acceptance_rate": 0.0035163925948908884,
+    "present_acceptance_rate": 0.5789303428941126,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     205,
+     82
+    ],
+    "absent_target_wins_above_thr": 196,
+    "per_acceptor_run": {
+     "LFQ_Astral_DDA_15min_50ng_Human_01": {
+      "accepted": 3340,
+      "false": 16,
+      "lb": 0.004790419161676647
+     },
+     "LFQ_Astral_DDA_15min_50ng_Human_02": {
+      "accepted": 3901,
+      "false": 32,
+      "lb": 0.008203024865419123
+     },
+     "LFQ_Astral_DDA_15min_50ng_Human_03": {
+      "accepted": 3565,
+      "false": 20,
+      "lb": 0.005610098176718092
+     }
+    },
+    "accepted_in_donor_runs": 43637
+   },
+   "q0.05": {
+    "accepted_in_acceptors": 13031,
+    "accepted_absent_species (false)": 345,
+    "false_fraction_lower_bound": 0.02647532806384775,
+    "combined_est_FDP": 0.05186908051644099,
+    "absent_null_acceptance_rate": 0.017840521253490536,
+    "present_acceptance_rate": 0.6839551434116886,
+    "decoy_wins_in_absent_null_subset_rt_mz": [
+     353,
+     167
+    ],
+    "absent_target_wins_above_thr": 345,
+    "per_acceptor_run": {
+     "LFQ_Astral_DDA_15min_50ng_Human_01": {
+      "accepted": 4303,
+      "false": 121,
+      "lb": 0.028119916337438995
+     },
+     "LFQ_Astral_DDA_15min_50ng_Human_02": {
+      "accepted": 4339,
+      "false": 99,
+      "lb": 0.022816317123761237
+     },
+     "LFQ_Astral_DDA_15min_50ng_Human_03": {
+      "accepted": 4389,
+      "false": 125,
+      "lb": 0.028480291638186377
+     }
+    },
+    "accepted_in_donor_runs": 45089
+   },
+   "ms2_psm_winners_in_acceptors": {
+    "n": 84013,
+    "absent_species": 80
+   }
+  }
+ },
+ "same_precursors_as_m6": {
+  "d11": {
+   "mbr_off": {
+    "n_keys": 23507,
+    "m6": {
+     "n": 22451,
+     "eps": 0.10800298755481563,
+     "eps_sp": {
+      "HUMAN": 0.10400617686840619,
+      "ECOLI": 0.1650128139843754
+     },
+     "lfc_sp": {
+      "HUMAN": -0.014077988205787761,
+      "ECOLI": 1.7854053036281812
+     },
+     "eps_min3": 0.07618290142328732,
+     "cv": 0.1140757407306087,
+     "completeness": 0.7579840541623981
+    },
+    "m6_no_sibling_values": {
+     "n": 22451,
+     "eps": 0.10800298755481563,
+     "eps_sp": {
+      "HUMAN": 0.10400617686840619,
+      "ECOLI": 0.1650128139843754
+     },
+     "lfc_sp": {
+      "HUMAN": -0.014077988205787761,
+      "ECOLI": 1.7854053036281812
+     },
+     "eps_min3": 0.07618290142328732,
+     "cv": 0.11464313706690224,
+     "completeness": 0.5980525649145029
+    },
+    "m6d": {
+     "n": 22451,
+     "eps": 0.0997041497507638,
+     "eps_sp": {
+      "HUMAN": 0.09571750757782738,
+      "ECOLI": 0.16799921054982114
+     },
+     "lfc_sp": {
+      "HUMAN": -0.018627934823726378,
+      "ECOLI": 1.7844994100101577
+     },
+     "eps_min3": 0.07598942809114106,
+     "cv": 0.11753044518949343,
+     "completeness": 0.7955213576232685
+    },
+    "m6d_no_sibling_values": {
+     "n": 22454,
+     "eps": 0.10097947934087337,
+     "eps_sp": {
+      "HUMAN": 0.09707471672525081,
+      "ECOLI": 0.16773535937776662
+     },
+     "lfc_sp": {
+      "HUMAN": -0.014412085339181147,
+      "ECOLI": 1.7788432349427783
+     },
+     "eps_min3": 0.0720070292392414,
+     "cv": 0.11022428402689613,
+     "completeness": 0.5980062369404167
+    }
+   },
+   "mbr_on": {
+    "n_keys": 27871,
+    "m6": {
+     "n": 26726,
+     "eps": 0.11035900710945867,
+     "eps_sp": {
+      "HUMAN": 0.10637227124643367,
+      "ECOLI": 0.16720308070000733
+     },
+     "lfc_sp": {
+      "HUMAN": -0.010777151846014021,
+      "ECOLI": 1.7770561969163623
+     },
+     "eps_min3": 0.07976176149934311,
+     "cv": 0.11916125005446045,
+     "completeness": 0.7917664446606301
+    },
+    "m6_no_sibling_values": {
+     "n": 26726,
+     "eps": 0.11035900710945867,
+     "eps_sp": {
+      "HUMAN": 0.10637227124643367,
+      "ECOLI": 0.16720308070000733
+     },
+     "lfc_sp": {
+      "HUMAN": -0.010777151846014021,
+      "ECOLI": 1.7770561969163623
+     },
+     "eps_min3": 0.07976176149934311,
+     "cv": 0.1199486048652246,
+     "completeness": 0.7079059423180423
+    },
+    "m6d": {
+     "n": 26726,
+     "eps": 0.10217360535962161,
+     "eps_sp": {
+      "HUMAN": 0.09808398186882883,
+      "ECOLI": 0.17805084518140113
+     },
+     "lfc_sp": {
+      "HUMAN": -0.015211826055995914,
+      "ECOLI": 1.782327912401973
+     },
+     "eps_min3": 0.07849820765249405,
+     "cv": 0.11953849213522634,
+     "completeness": 0.8164474668861783
+    },
+    "m6d_no_sibling_values": {
+     "n": 26215,
+     "eps": 0.10402849485427978,
+     "eps_sp": {
+      "HUMAN": 0.09979672859975963,
+      "ECOLI": 0.1752529816383901
+     },
+     "lfc_sp": {
+      "HUMAN": -0.012157875820204112,
+      "ECOLI": 1.7759047241932926
+     },
+     "eps_min3": 0.07432253520980936,
+     "cv": 0.1111855907380975,
+     "completeness": 0.6873931623931624
+    }
+   }
+  },
+  "d9": {
+   "mbr_off": {
+    "n_keys": 19663,
+    "m6": {
+     "n": 18933,
+     "eps": 0.13021327271570726,
+     "eps_sp": {
+      "HUMAN": 0.12798820049960824,
+      "YEAST": 0.1334732198666142,
+      "ECOLI": 0.16248322447453933
+     },
+     "lfc_sp": {
+      "HUMAN": -0.028219529135666832,
+      "YEAST": 1.0146751386236872,
+      "ECOLI": -2.0434326914613408
+     },
+     "eps_min3": 0.10154792063775187,
+     "cv": 0.04810419111461527,
+     "completeness": 0.776210848782549
+    },
+    "m6_no_sibling_values": {
+     "n": 18933,
+     "eps": 0.13021327271570726,
+     "eps_sp": {
+      "HUMAN": 0.12798820049960824,
+      "YEAST": 0.1334732198666142,
+      "ECOLI": 0.16248322447453933
+     },
+     "lfc_sp": {
+      "HUMAN": -0.028219529135666832,
+      "YEAST": 1.0146751386236872,
+      "ECOLI": -2.0434326914613408
+     },
+     "eps_min3": 0.10154792063775187,
+     "cv": 0.049813618547632894,
+     "completeness": 0.5859202457426653
+    },
+    "m6d": {
+     "n": 18933,
+     "eps": 0.11989649895989984,
+     "eps_sp": {
+      "HUMAN": 0.11845744615898113,
+      "YEAST": 0.12356704006589858,
+      "ECOLI": 0.167258715454067
+     },
+     "lfc_sp": {
+      "HUMAN": -0.024033736400273398,
+      "YEAST": 1.0121792211669165,
+      "ECOLI": -2.0415153369082475
+     },
+     "eps_min3": 0.09521549738867208,
+     "cv": 0.04405360345592537,
+     "completeness": 0.7863430694202362
+    },
+    "m6d_no_sibling_values": {
+     "n": 18933,
+     "eps": 0.12017091376662137,
+     "eps_sp": {
+      "HUMAN": 0.11889507085675,
+      "YEAST": 0.12316478700894606,
+      "ECOLI": 0.16527060056977305
+     },
+     "lfc_sp": {
+      "HUMAN": -0.024052636451575182,
+      "YEAST": 1.011099593223781,
+      "ECOLI": -2.0404823933722387
+     },
+     "eps_min3": 0.09543213801663519,
+     "cv": 0.04483193734373967,
+     "completeness": 0.5859202457426653
+    }
+   },
+   "mbr_on": {
+    "n_keys": 24512,
+    "m6": {
+     "n": 23695,
+     "eps": 0.13415956804822393,
+     "eps_sp": {
+      "HUMAN": 0.12816003691147593,
+      "YEAST": 0.1457696162177058,
+      "ECOLI": 0.22126652086166843
+     },
+     "lfc_sp": {
+      "HUMAN": -0.04392862169190437,
+      "YEAST": 1.0072050418130303,
+      "ECOLI": -2.0616773132234627
+     },
+     "eps_min3": 0.1058349440451245,
+     "cv": 0.05648607531900884,
+     "completeness": 0.886424702820567
+    },
+    "m6_no_sibling_values": {
+     "n": 23695,
+     "eps": 0.13415956804822393,
+     "eps_sp": {
+      "HUMAN": 0.12816003691147593,
+      "YEAST": 0.1457696162177058,
+      "ECOLI": 0.22126652086166843
+     },
+     "lfc_sp": {
+      "HUMAN": -0.04392862169190437,
+      "YEAST": 1.0072050418130303,
+      "ECOLI": -2.0616773132234627
+     },
+     "eps_min3": 0.1058349440451245,
+     "cv": 0.05718411200548923,
+     "completeness": 0.7602159217031581
+    },
+    "m6d": {
+     "n": 23695,
+     "eps": 0.1236644764898891,
+     "eps_sp": {
+      "HUMAN": 0.11815148396507524,
+      "YEAST": 0.13356731335944616,
+      "ECOLI": 0.21541307984116642
+     },
+     "lfc_sp": {
+      "HUMAN": -0.04157204834573491,
+      "YEAST": 1.0036900739844903,
+      "ECOLI": -2.056044772191729
+     },
+     "eps_min3": 0.09918975248285733,
+     "cv": 0.0514176202336727,
+     "completeness": 0.8894633185622846
+    },
+    "m6d_no_sibling_values": {
+     "n": 23535,
+     "eps": 0.12374960526720002,
+     "eps_sp": {
+      "HUMAN": 0.11839052042700615,
+      "YEAST": 0.13290123061794556,
+      "ECOLI": 0.21507177997482074
+     },
+     "lfc_sp": {
+      "HUMAN": -0.041750157053659365,
+      "YEAST": 1.0025294029577454,
+      "ECOLI": -2.0549073803809765
+     },
+     "eps_min3": 0.0988919567470159,
+     "cv": 0.05156735577136234,
+     "completeness": 0.7513537147277436
+    }
+   }
+  }
+ },
+ "grid_d11_all": "diag_tables/grid_d11_all.tsv",
+ "grid_d9_sel": "diag_tables/grid_d9_sel.tsv",
+ "frontend_new_sets": {
+  "d11": {
+   "convert_s": [
+    6.989021205343306,
+    7.069318155292422,
+    7.330128408968449,
+    7.08821901679039,
+    7.46301816124469,
+    6.9191146469675004,
+    6.1858368050307035,
+    6.646832847967744
+   ],
+   "ms1_s": [
+    9.802060974296182,
+    9.288239049725235,
+    9.264811181928962,
+    9.081419778987765,
+    8.200002315919846,
+    7.948617186862975,
+    8.387182056903839,
+    8.445839534047991
+   ],
+   "search_s": 9.564288197085261,
+   "score_s": 73.91145907295868,
+   "ids_all_s": 10.914159887935966,
+   "ids_summary": {
+    "n_psm_winners": 378537,
+    "runs": [
+     "B03_05_150304_human_ecoli_E_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_06_150304_human_ecoli_E_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_10_150304_human_ecoli_A_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_11_150304_human_ecoli_A_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_15_150304_human_ecoli_E_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_16_150304_human_ecoli_E_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_20_150304_human_ecoli_A_3ul_3um_column_95_HCD_OT_2hrs_30B_9B",
+     "B03_21_150304_human_ecoli_A_3ul_3um_column_95_HCD_OT_2hrs_30B_9B"
+    ],
+    "score": "static",
+    "0.001": {
+     "peptidoforms": 29206,
+     "score_threshold": 4.64321489982911,
+     "decoy_pair_winners_above": 28
+    },
+    "0.01": {
+     "peptidoforms": 30549,
+     "score_threshold": 1.6606236281484446,
+     "decoy_pair_winners_above": 304
+    },
+    "0.05": {
+     "peptidoforms": 32380,
+     "score_threshold": -0.8833476662528247,
+     "decoy_pair_winners_above": 1617
+    },
+    "wall_s": 10.082320403307676
+   }
+  },
+  "d12": {
+   "convert_s": [
+    7.283822305966169,
+    7.710573001764715,
+    7.105091516859829,
+    7.996565461158752,
+    6.670398375019431,
+    6.6564533757045865,
+    7.405642197001725,
+    7.23658184800297,
+    5.102821790147573
+   ],
+   "ms1_s": [
+    6.656917412765324,
+    6.568096076138318,
+    6.102105896919966,
+    6.041268451139331,
+    6.296254336833954,
+    4.587872660718858,
+    4.655349956825376,
+    5.041582459118217,
+    5.323690842837095
+   ],
+   "search_s": 10.463568850886077,
+   "score_s": 64.36277825199068,
+   "ids_all_s": 10.047305772081017,
+   "ids_ab_s": 8.498753899242729,
+   "ids_summary": {
+    "n_psm_winners": 449334,
+    "runs": [
+     "a11866_human_90min_hrMS2",
+     "a11867_human_90min_hrMS2",
+     "a11868_human_90min_hrMS2",
+     "a11869_human_yaeast_90min_hrMS2",
+     "a11870_human_yaeast_90min_hrMS2",
+     "a11871_human_yaeast_90min_hrMS2",
+     "a11872_human_yaeast_90min_hrMS2",
+     "a11873_human_yaeast_90min_hrMS2",
+     "a11874_human_yaeast_90min_hrMS2"
+    ],
+    "score": "static",
+    "0.001": {
+     "peptidoforms": 36833,
+     "score_threshold": 4.408768415542443,
+     "decoy_pair_winners_above": 35
+    },
+    "0.01": {
+     "peptidoforms": 41331,
+     "score_threshold": 1.4538046060220824,
+     "decoy_pair_winners_above": 412
+    },
+    "0.05": {
+     "peptidoforms": 44709,
+     "score_threshold": -0.6575139318051657,
+     "decoy_pair_winners_above": 2234
+    },
+    "wall_s": 9.434880387969315
+   }
+  }
+ },
+ "runtime": {
+  "locked_records": [
+   {
+    "label": "m6d_quant_d9_mbr_m6_r1",
+    "cmd": [
+     "scripts/m2b/vpy.sh",
+     "scripts/m6d/lfq_eval.py",
+     "d9",
+     "all",
+     "m6",
+     "/tmp/vulcan_m6d/timing/m6_1.json",
+     "--mbr",
+     "--no-directlfq"
+    ],
+    "rc": 0,
+    "locked": true,
+    "start": "2026-10-27T18:21:30",
+    "lock_wait_s": 227.75,
+    "wall_s": 21.946,
+    "threads_env": 32,
+    "loadavg_before": [
+     50.33251953125,
+     53.82275390625,
+     58.72705078125
+    ],
+    "loadavg_after": [
+     57.8173828125,
+     55.322265625,
+     59.11669921875
+    ],
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 32,
+     "VULCAN_THREADS": null,
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": null,
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    },
+    "wall_s_timev": 21.93,
+    "user_s": 14.05,
+    "sys_s": 4.53,
+    "core_s": 18.580000000000002,
+    "max_rss_mb": 1356.1953125,
+    "cpu_percent": 84,
+    "fs_inputs": 194496,
+    "fs_outputs": 24
+   },
+   {
+    "label": "m6d_quant_d9_mbr_m6_r2",
+    "cmd": [
+     "scripts/m2b/vpy.sh",
+     "scripts/m6d/lfq_eval.py",
+     "d9",
+     "all",
+     "m6",
+     "/tmp/vulcan_m6d/timing/m6_2.json",
+     "--mbr",
+     "--no-directlfq"
+    ],
+    "rc": 0,
+    "locked": true,
+    "start": "2026-10-27T18:21:52",
+    "lock_wait_s": 0.0,
+    "wall_s": 16.148,
+    "threads_env": 32,
+    "loadavg_before": [
+     57.8173828125,
+     55.322265625,
+     59.11669921875
+    ],
+    "loadavg_after": [
+     55.66455078125,
+     54.955078125,
+     58.91162109375
+    ],
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 32,
+     "VULCAN_THREADS": null,
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": null,
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    },
+    "wall_s_timev": 16.14,
+    "user_s": 15.09,
+    "sys_s": 3.22,
+    "core_s": 18.31,
+    "max_rss_mb": 1352.0390625,
+    "cpu_percent": 113,
+    "fs_inputs": 0,
+    "fs_outputs": 24
+   },
+   {
+    "label": "m6d_quant_d9_mbr_m6d_r1",
+    "cmd": [
+     "scripts/m2b/vpy.sh",
+     "scripts/m6d/lfq_eval.py",
+     "d9",
+     "all",
+     "m6d",
+     "/tmp/vulcan_m6d/timing/m6d_1.json",
+     "--mbr",
+     "--no-directlfq"
+    ],
+    "rc": 0,
+    "locked": true,
+    "start": "2026-10-27T18:22:09",
+    "lock_wait_s": 0.0,
+    "wall_s": 19.361,
+    "threads_env": 32,
+    "loadavg_before": [
+     55.66455078125,
+     54.955078125,
+     58.91162109375
+    ],
+    "loadavg_after": [
+     49.6943359375,
+     53.63134765625,
+     58.390625
+    ],
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 32,
+     "VULCAN_THREADS": null,
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": null,
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    },
+    "wall_s_timev": 19.34,
+    "user_s": 15.13,
+    "sys_s": 2.67,
+    "core_s": 17.8,
+    "max_rss_mb": 1387.9921875,
+    "cpu_percent": 92,
+    "fs_inputs": 0,
+    "fs_outputs": 24
+   },
+   {
+    "label": "m6d_quant_d9_mbr_m6d_r2",
+    "cmd": [
+     "scripts/m2b/vpy.sh",
+     "scripts/m6d/lfq_eval.py",
+     "d9",
+     "all",
+     "m6d",
+     "/tmp/vulcan_m6d/timing/m6d_2.json",
+     "--mbr",
+     "--no-directlfq"
+    ],
+    "rc": 0,
+    "locked": true,
+    "start": "2026-10-27T18:22:28",
+    "lock_wait_s": 0.0,
+    "wall_s": 18.363,
+    "threads_env": 32,
+    "loadavg_before": [
+     49.6943359375,
+     53.63134765625,
+     58.390625
+    ],
+    "loadavg_after": [
+     48.26513671875,
+     53.1123046875,
+     58.1435546875
+    ],
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 32,
+     "VULCAN_THREADS": null,
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": null,
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    },
+    "wall_s_timev": 18.35,
+    "user_s": 15.51,
+    "sys_s": 3.75,
+    "core_s": 19.259999999999998,
+    "max_rss_mb": 1361.01171875,
+    "cpu_percent": 105,
+    "fs_inputs": 0,
+    "fs_outputs": 24
+   }
+  ],
+  "stage_timing_s": {
+   "m6": [
+    {
+     "link_s": 2.3489883113652468,
+     "align_s": 0.24369126511737704,
+     "mbr_s": 2.4415437560528517,
+     "xic_s": 2.238699695561081,
+     "top3_s": 0.06779990484938025,
+     "maxlfq_s": 5.8535836222581565,
+     "total_s": 13.194306555204093
+    },
+    {
+     "link_s": 2.176452161744237,
+     "align_s": 0.27898433804512024,
+     "mbr_s": 1.3286425061523914,
+     "xic_s": 1.5237417868338525,
+     "top3_s": 0.09638589713722467,
+     "maxlfq_s": 3.587101132143289,
+     "total_s": 8.991307822056115
+    }
+   ],
+   "m6d": [
+    {
+     "link_s": 2.1154810660518706,
+     "align_s": 0.2157088560052216,
+     "mbr_s": 0.9408160047605634,
+     "xic_s": 1.4302759496495128,
+     "siblings_s": 1.121909855864942,
+     "top3_s": 0.07226140378043056,
+     "maxlfq_s": 3.874487995635718,
+     "total_s": 9.770941131748259
+    },
+    {
+     "link_s": 2.2492894991301,
+     "align_s": 0.2322956109419465,
+     "mbr_s": 1.0678729242645204,
+     "xic_s": 1.7425763681530952,
+     "siblings_s": 1.7987292129546404,
+     "top3_s": 0.0893313642591238,
+     "maxlfq_s": 4.282492539845407,
+     "total_s": 11.462587519548833
+    }
+   ]
+  }
+ }
+}

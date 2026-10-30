@@ -1,0 +1,25 @@
+{
+ "context_idle_mib": 416,
+ "runs": {
+  "E9_0000__H0799BL.vspec.arrow": {
+   "n_peaks": 79903044,
+   "peak_mib": 4514,
+   "after_trim_mib": 418,
+   "gpu_ms": {
+    "hills": 698.1325073242188,
+    "isotopes": 220.45733642578125,
+    "peak_map": 7.824512004852295
+   }
+  },
+  "b1906_293T_proteinID_01A_QE3_122212.vspec.arrow": {
+   "n_peaks": 50348308,
+   "peak_mib": 3490,
+   "after_trim_mib": 418,
+   "gpu_ms": {
+    "hills": 104.37078094482422,
+    "isotopes": 31.541088104248047,
+    "peak_map": 5.59497594833374
+   }
+  }
+ }
+}

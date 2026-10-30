@@ -1,0 +1,77 @@
+t2: start D2
+t2: stage preflight start
+t2: stage preflight done
+t2: stage convert start
+t2: run 1/9 convert done
+t2: run 2/9 convert done
+t2: run 3/9 convert done
+t2: run 4/9 convert done
+t2: run 5/9 convert done
+t2: run 6/9 convert done
+t2: run 7/9 convert done
+t2: run 8/9 convert done
+t2: run 9/9 convert done
+t2: stage convert done
+t2: stage index start
+cgroup memory headroom 207.136935936 GB after 0 s wait
+t2: stage index done
+t2: stage search start
+gpu free 83.0 GB after 0 s wait
+t2: run 1/9 search done
+t2: run 2/9 search done
+t2: run 3/9 search done
+t2: run 4/9 search done
+t2: run 5/9 search done
+t2: run 6/9 search done
+t2: run 7/9 search done
+t2: run 8/9 search done
+t2: run 9/9 search done
+t2: stage search done
+t2: stage e8 start
+PXD000138 ours_A done
+PXD000138 pyascore_A done
+PXD000138 ours_L done
+PXD000138 pyascore_L done
+PXD000138 repeat 1/10 done
+PXD000138 repeat 2/10 done
+PXD000138 repeat 3/10 done
+PXD000138 repeat 4/10 done
+PXD000138 repeat 5/10 done
+PXD000138 repeat 6/10 done
+PXD000138 repeat 7/10 done
+PXD000138 repeat 8/10 done
+PXD000138 repeat 9/10 done
+PXD000138 repeat 10/10 done
+PXD009449 ours_A done
+PXD009449 pyascore_A done
+PXD009449 ours_L done
+PXD009449 pyascore_L done
+PXD009449 repeat 1/10 done
+PXD009449 repeat 2/10 done
+PXD009449 repeat 3/10 done
+PXD009449 repeat 4/10 done
+PXD009449 repeat 5/10 done
+PXD009449 repeat 6/10 done
+PXD009449 repeat 7/10 done
+PXD009449 repeat 8/10 done
+PXD009449 repeat 9/10 done
+PXD009449 repeat 10/10 done
+PXD007058 ours_A done
+PXD007058 pyascore_A done
+PXD007058 ours_L done
+PXD007058 pyascore_L done
+PXD007058 repeat 1/10 done
+PXD007058 repeat 2/10 done
+PXD007058 repeat 3/10 done
+PXD007058 repeat 4/10 done
+PXD007058 repeat 5/10 done
+PXD007058 repeat 6/10 done
+PXD007058 repeat 7/10 done
+PXD007058 repeat 8/10 done
+PXD007058 repeat 9/10 done
+PXD007058 repeat 10/10 done
+t2: stage e8 done
+t2: stage claims start
+t2: stage claims done
+t2: done D2
+t2: exit 0

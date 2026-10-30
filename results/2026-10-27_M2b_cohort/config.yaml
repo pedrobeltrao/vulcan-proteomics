@@ -1,0 +1,38 @@
+# M2b: cohort driver + startup + family top-2 + ingest (E3 groundwork). Dev data only; no sealed data touched.
+experiment: M2b (DESIGN v0.4 §2, §4 L0-L2, §10 E3 groundwork)
+node: "see metrics.json:hw (vulcan.hw.fingerprint): 32 Zen 4 affinity cores, A100 80GB PCIe; batch-scheduler job memory.max 256 GB"
+code:
+  cohort_driver: vulcan/cohort.py  # python -m vulcan.cohort
+  family_top2: vulcan/gpu/family.py  # + vulcan.index.build.build_multi_decoy, decoys.make_shuffled_decoys
+  schema: vulcan/gpu/PSM_SCHEMA.md  # PSM table unchanged; family table added
+  ingest: vulcan/io/thermo_direct.py, vulcan/io/dotnet/VulcanRaw/Extractor.cs (profiling knobs; output unchanged)
+  local_env: scripts/m2b/stage_env.sh, scripts/m2b/vpy.sh  # pe env + .NET runtime + RawFileReader staged on /tmp NVMe
+cohort:
+  raw_list: scripts/m2b/dev_dda_raws.txt  # 35 dev Thermo DDA files: D0 x2, D1, D2 (PXD000138 x4, PXD009449 x4, PXD007058 x4), D3, D3b, D4 x12, D7 x6
+  excluded: [D6 PXD059608 (DIA), data/raw/train (other agent), data/sealed]
+  repeat_to: [50, 200]                       # final round: runs/{c200,c50,ab*,ms1}_w*.json; earlier rounds archived in runs/v1_*, v2_*, v3_*, discarded_lustre_mmap
+  ab_test: "abA = --no-worker-prep --hyp-in-gpu-thread (E2-style host work in GPU process), abB = default; interleaved A B A B at 24 workers"
+  repeats: files cycled to reach N runs; repeats get unique run names (_rNN)
+  order: largest RAW first (LPT)
+  index: /tmp/vulcan_e2/index/human_contam_prod  # human SP canonical + contaminants, T + pseudo-reverse dec(T), 7.06 M peptidoforms
+  index_note: every run is searched against the human index (throughput emulation; not the right DB for D1 Pfu / D2 pools / D3 XL / D4 TMT)
+  search: "vulcan.gpu.engine.SearchParams defaults (= E2 config.yaml: 10/20 ppm, iso 0..2, topk 500, global top-150 peaks)"
+  decode_workers: [4, 8, 16, 24, 28]         # spawn processes, 1 thread each, persistent (runtime + JIT paid once)
+  raw_staging: copy RAW -> /tmp stage (NVMe), decode local copy, delete  # DESIGN L0 "never mmap on Lustre"
+  store_staging: /tmp/vulcan_m2b_<uid>/cohort_<tag>.stage (Arrow IPC, uncompressed), deleted after search
+  worker_prep: true  # decode workers also emit MS2 arrays + precursor hypotheses (.npy), GPU process mmaps
+  supervision: {stall_s: 30, timeout_s: "45 + 12 s/GB RAW (x6 with --ms1)", retries: 2}
+  search_threads: 1  # 2-3 threads tested (round v2): GIL-bound, slower; kept 1
+  loader_threads: 2
+  writer_threads: 2  # PSM parquet to /tmp out dir
+  torch_threads: 4
+  ms1_stage: "optional (--ms1): vulcan.ms1 features + hypotheses in the decode worker (1 numba thread), not fed to search yet"
+timing:
+  lock: flock /tmp/vulcan_bench.lock, one hold per config (scripts/m2b/cohort_bench.sh)
+  page_cache: RAWs were page-cache warm for most runs (repeats and earlier reads); Lustre O_DIRECT read bandwidth measured separately (lustre_read.json)
+  gpu_util: NVML utilization.gpu sampled every 100 ms (vulcan.cohort.GpuSampler)
+family_top2_validation:
+  index: build_multi_decoy, entrap_seeds [2001, 2002], decoy_seeds [1001, 1002] (C-term-fixed hash shuffles; shared used-set so sets never collide)
+  datasets: D1 (Pfu+contam), D0 01A (human+contam)
+  rule: K1 top-K (500) per family per spectrum; closure over all decoy sets; admissibility per decoy context; top-2 per retention group
+  check: "per replicate (j, s): reconstructed top-2 (spec, rank, pf_id, hyperscore bits) == separate search of the row-subset index"

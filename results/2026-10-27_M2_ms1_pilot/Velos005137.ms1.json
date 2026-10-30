@@ -1,0 +1,62 @@
+{
+ "run": "Velos005137",
+ "threads": 32,
+ "device": "cpu",
+ "n_features": 87107,
+ "n_hills": 578223,
+ "timings_s": {
+  "load": 1.2238638969138265,
+  "link": 1.1304479679092765,
+  "split_filter": 0.27746411599218845,
+  "summaries": 0.053010613191872835,
+  "isotopes": 0.5706191598437726,
+  "table": 0.07723535876721144,
+  "total": 3.3444081051275134
+ },
+ "import_s": 1.9176989770494401,
+ "features_wall_s": 5.270751055330038,
+ "features_process_cpu_s": 4.215609799,
+ "hypotheses_wall_s": 0.058644064236432314,
+ "hypothesis_stats": {
+  "n_ms2": 15374,
+  "n_rows": 120580,
+  "n_precursor_groups": 24116,
+  "rows_per_spectrum_mean": 7.843111747105503,
+  "groups_per_spectrum_mean": 1.5686223494211005,
+  "groups_per_spectrum_hist": {
+   "0": 0,
+   "1": 8923,
+   "2": 4617,
+   "3": 1437,
+   "4": 337,
+   "5": 60
+  },
+  "groups_by_source": {
+   "ms1_feature": 23631,
+   "instrument": 485,
+   "fallback": 0
+  },
+  "frac_ms2_master_found": 1.0,
+  "frac_ms2_with_instrument_charge": 1.0,
+  "frac_ms2_with_feature_group": 0.9793807727331859,
+  "frac_ms2_instrument_agrees_with_a_feature": 0.9684532327305841,
+  "frac_ms2_fallback_only": 0.0,
+  "frac_ms2_ge2_feature_groups(chimeric)": 0.41218941069337844,
+  "features_in_window_mean": 1.775074801613113,
+  "instrument_vs_feature_isotope_offset_hist": {
+   "-3": 2,
+   "-2": 21,
+   "-1": 166,
+   "0": 14529,
+   "1": 152,
+   "2": 16,
+   "3": 3
+  },
+  "top_feature_charge_vs_instrument": {
+   "n_both": 15005,
+   "agree_frac": 0.991669443518827
+  }
+ },
+ "total_wall_s": 5.346362385433167,
+ "total_process_cpu_s": 4.282493321
+}

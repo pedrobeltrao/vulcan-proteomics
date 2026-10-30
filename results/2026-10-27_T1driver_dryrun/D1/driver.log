@@ -1,0 +1,214 @@
+[17:38:06] t1_driver D1 sha=54777d146d51 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[17:38:07] armC: $VULCAN_SCRATCH/vulcan_env/pred/bin/python $VULCAN_ROOT/scripts/entrapment/build_dbs.py --name ds --target $VULCAN_SCRATCH/vulcan_t1/D1/target.fasta --foreign $VULCAN_ROOT/data/fasta/human_sp_canonical.fasta --arms C --out $VULCAN_SCRATCH/vulcan_t1/D1/armC
+[17:46:58] full index built in 365s: 26911146 peptidoforms
+[17:47:07] materialized prod_1001: 510844 peptidoforms, 510844 sequences
+[17:47:12] materialized P_1001_2001: 1021686 peptidoforms, 1021686 sequences
+[17:47:18] materialized P_1001_2002: 1021674 peptidoforms, 1021674 sequences
+[17:47:22] materialized P_1001_2003: 1021682 peptidoforms, 1021682 sequences
+[17:48:00] materialized C_1001: 7437872 peptidoforms, 7437872 sequences
+[17:48:03] materialized prod_1002: 510844 peptidoforms, 510844 sequences
+[17:48:09] materialized P_1002_2001: 1021686 peptidoforms, 1021686 sequences
+[17:48:54] t1_driver D1 sha=e0771df44ed7 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[17:55:16] full index built in 378s: 26911146 peptidoforms
+[17:55:20] materialized prod_1001: 510844 peptidoforms, 354056 sequences
+[17:55:23] materialized P_1001_2001: 1021686 peptidoforms, 708110 sequences
+[17:55:26] materialized P_1001_2002: 1021674 peptidoforms, 708098 sequences
+[17:55:31] materialized P_1001_2003: 1021682 peptidoforms, 708106 sequences
+[17:55:54] materialized C_1001: 7437872 peptidoforms, 4941772 sequences
+[17:55:56] materialized prod_1002: 510844 peptidoforms, 354056 sequences
+[17:55:59] materialized P_1002_2001: 1021686 peptidoforms, 708110 sequences
+[17:56:03] materialized P_1002_2002: 1021674 peptidoforms, 708098 sequences
+[17:56:07] materialized P_1002_2003: 1021682 peptidoforms, 708106 sequences
+[17:56:34] materialized C_1002: 7437872 peptidoforms, 4941772 sequences
+[17:56:39] materialized prod_1003: 510844 peptidoforms, 354056 sequences
+[17:56:43] materialized P_1003_2001: 1021686 peptidoforms, 708110 sequences
+[17:56:49] materialized P_1003_2002: 1021674 peptidoforms, 708098 sequences
+[17:56:52] materialized P_1003_2003: 1021682 peptidoforms, 708106 sequences
+[17:57:13] materialized C_1003: 7437872 peptidoforms, 4941772 sequences
+[17:57:15] materialized prod_1004: 510844 peptidoforms, 354056 sequences
+[17:57:19] materialized P_1004_2001: 1021686 peptidoforms, 708110 sequences
+[17:57:22] materialized P_1004_2002: 1021674 peptidoforms, 708098 sequences
+[17:57:27] materialized P_1004_2003: 1021682 peptidoforms, 708106 sequences
+[17:57:47] materialized C_1004: 7437872 peptidoforms, 4941772 sequences
+[17:57:48] materialized prod_1005: 510844 peptidoforms, 354056 sequences
+[17:57:51] materialized P_1005_2001: 1021686 peptidoforms, 708110 sequences
+[17:57:53] materialized P_1005_2002: 1021674 peptidoforms, 708098 sequences
+[17:57:56] materialized P_1005_2003: 1021682 peptidoforms, 708106 sequences
+[17:58:18] materialized C_1005: 7437872 peptidoforms, 4941772 sequences
+[17:59:22] t1_driver D1 sha=499f31b4c6d2 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[17:59:59] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[17:59:59] driver total 37s
+[18:00:04] t1_driver D1 sha=499f31b4c6d2 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[18:00:04] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:00:04] cohort: $VULCAN_SCRATCH/vulcan_env/pred/bin/python -m vulcan.cohort --index $VULCAN_SCRATCH/vulcan_t1/D1/index/prod_1001 --raws $VULCAN_ROOT/data/raw/PXD001077/Velos005137.raw --out $VULCAN_SCRATCH/vulcan_t1/D1/ours/cohort --stage $VULCAN_SCRATCH/vulcan_t1/D1/stage --keep-stores --workers 1 --params {"report_psms": 5}
+[18:00:19] loaded 1 stores in 0.1s
+[18:00:21] prod_1001: engine == cohort output: {'Velos005137': True}
+[18:00:21] searched prod_1001: 2.0s
+[18:00:22] searched P_1001_2001: 1.1s
+[18:00:23] searched P_1001_2002: 0.7s
+[18:00:24] searched P_1001_2003: 0.7s
+[18:00:26] searched C_1001: 2.1s
+[18:00:28] searched prod_1002: 1.4s
+[18:00:29] searched P_1002_2001: 1.4s
+[18:00:30] searched P_1002_2002: 0.9s
+[18:00:31] searched P_1002_2003: 1.2s
+[18:00:33] searched C_1002: 1.4s
+[18:00:34] searched prod_1003: 1.3s
+[18:00:35] searched P_1003_2001: 0.7s
+[18:00:36] searched P_1003_2002: 1.1s
+[18:00:37] searched P_1003_2003: 1.3s
+[18:00:39] searched C_1003: 1.7s
+[18:00:40] searched prod_1004: 1.2s
+[18:00:41] searched P_1004_2001: 0.7s
+[18:00:42] searched P_1004_2002: 1.6s
+[18:00:43] searched P_1004_2003: 0.7s
+[18:00:45] searched C_1004: 1.8s
+[18:00:46] searched prod_1005: 1.0s
+[18:00:47] searched P_1005_2001: 0.7s
+[18:00:47] searched P_1005_2002: 0.6s
+[18:00:48] searched P_1005_2003: 0.6s
+[18:00:49] searched C_1005: 0.9s
+[18:01:14] scored prod_1001: 7.1s nce=[29.0]
+[18:01:18] scored P_1001_2001: 4.6s nce=[29.0]
+[18:01:22] scored P_1001_2002: 3.2s nce=[29.0]
+[18:01:25] scored P_1001_2003: 3.1s nce=[29.0]
+[18:01:29] scored C_1001: 4.4s nce=[29.0]
+[18:01:32] scored prod_1002: 2.4s nce=[29.0]
+[18:01:35] scored P_1002_2001: 3.2s nce=[29.0]
+[18:01:38] scored P_1002_2002: 3.7s nce=[29.0]
+[18:01:42] scored P_1002_2003: 3.6s nce=[29.0]
+[18:01:46] scored C_1002: 3.7s nce=[29.0]
+[18:01:48] scored prod_1003: 2.0s nce=[29.0]
+[18:01:50] scored P_1003_2001: 2.4s nce=[29.0]
+[18:01:52] scored P_1003_2002: 2.2s nce=[29.0]
+[18:01:55] scored P_1003_2003: 2.5s nce=[29.0]
+[18:01:57] scored C_1003: 2.6s nce=[29.0]
+[18:02:00] scored prod_1004: 3.0s nce=[29.0]
+[18:02:03] scored P_1004_2001: 2.8s nce=[29.0]
+[18:02:06] scored P_1004_2002: 2.9s nce=[29.0]
+[18:02:10] scored P_1004_2003: 4.2s nce=[29.0]
+[18:02:17] scored C_1004: 6.7s nce=[29.0]
+[18:02:19] scored prod_1005: 1.5s nce=[29.0]
+[18:02:21] scored P_1005_2001: 2.4s nce=[29.0]
+[18:02:23] scored P_1005_2002: 2.4s nce=[29.0]
+[18:02:26] scored P_1005_2003: 2.3s nce=[29.0]
+[18:02:32] scored C_1005: 6.4s nce=[29.0]
+[18:02:32] driver total 149s
+[18:10:30] t1_driver D1 sha=499f31b4c6d2 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[18:10:31] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:10:31] mzML Velos005137: {'reused_from': '/tmp/vulcan_m1e/mzml'}
+[18:11:01] sage prod_1001 done
+[18:11:20] sage P_1001_2001 done
+[18:11:54] sage P_1001_2002 done
+[18:12:14] sage P_1001_2003 done
+[18:12:57] sage C_1001 done
+[18:13:28] sage prod_1002 done
+[18:13:55] sage P_1002_2001 done
+[18:14:33] sage P_1002_2002 done
+[18:15:07] sage P_1002_2003 done
+[18:15:50] sage C_1002 done
+[18:16:13] sage prod_1003 done
+[18:16:31] sage P_1003_2001 done
+[18:16:49] sage P_1003_2002 done
+[18:17:08] sage P_1003_2003 done
+[18:17:38] sage C_1003 done
+[18:17:52] sage prod_1004 done
+[18:18:06] sage P_1004_2001 done
+[18:18:19] sage P_1004_2002 done
+[18:18:34] sage P_1004_2003 done
+[18:19:03] sage C_1004 done
+[18:19:16] sage prod_1005 done
+[18:19:31] sage P_1005_2001 done
+[18:19:45] sage P_1005_2002 done
+[18:19:59] sage P_1005_2003 done
+[18:20:41] sage C_1005 done
+[18:21:08] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/prod_1001: 11489 PSMs, unmapped 0
+[18:21:11] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1001_2001: 11744 PSMs, unmapped 0
+[18:21:13] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1001_2002: 11754 PSMs, unmapped 0
+[18:21:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1001_2003: 11723 PSMs, unmapped 0
+[18:21:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/C_1001: 12400 PSMs, unmapped 0
+[18:21:34] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/prod_1002: 11500 PSMs, unmapped 0
+[18:21:37] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1002_2001: 11745 PSMs, unmapped 0
+[18:21:40] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1002_2002: 11738 PSMs, unmapped 0
+[18:21:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1002_2003: 11738 PSMs, unmapped 0
+[18:21:55] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/C_1002: 12422 PSMs, unmapped 0
+[18:21:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/prod_1003: 11502 PSMs, unmapped 0
+[18:22:00] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1003_2001: 11767 PSMs, unmapped 0
+[18:22:02] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1003_2002: 11742 PSMs, unmapped 0
+[18:22:05] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1003_2003: 11724 PSMs, unmapped 0
+[18:22:14] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/C_1003: 12399 PSMs, unmapped 0
+[18:22:15] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/prod_1004: 11486 PSMs, unmapped 0
+[18:22:17] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1004_2001: 11713 PSMs, unmapped 0
+[18:22:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1004_2002: 11720 PSMs, unmapped 0
+[18:22:22] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1004_2003: 11726 PSMs, unmapped 0
+[18:22:33] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/C_1004: 12399 PSMs, unmapped 0
+[18:22:35] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/prod_1005: 11507 PSMs, unmapped 0
+[18:22:37] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1005_2001: 11731 PSMs, unmapped 0
+[18:22:41] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1005_2002: 11717 PSMs, unmapped 0
+[18:22:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/P_1005_2003: 11723 PSMs, unmapped 0
+[18:22:55] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D1/cmp/sage_pred_mokapot/C_1005: 12395 PSMs, unmapped 0
+[18:24:08] sage RT check: {'n_confident': 10827, 'frac_predicted_rt_nonzero': 0.9900774654016886, 'sd_predicted_rt': 0.20851611616966198, 'median_abs_delta_rt_model_confident': 0.043854356, 'spearman_aligned_vs_predicted_confident': 0.9426438660677244, 'pin_has_rt_features': True}
+[18:24:08] driver total 829s
+[18:24:24] t1_driver D1 sha=d9a6ae026349 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[18:24:24] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:24:24] evaluate vulcan
+[18:27:12] evaluate sage
+[18:27:48] evaluate sage+mokapot
+[18:28:24] evaluate sage+pred+mokapot
+[18:29:01] evaluate comet+mokapot
+[18:29:57] driver total 334s
+[18:29:57] wrote metrics.json and tables.md
+[18:30:42] t1_driver D1 sha=23059e24131d dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=/tmp/t1drv_scratch/D1test
+[18:30:43] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:30:43] evaluate vulcan
+[18:33:21] evaluate sage
+[18:33:57] evaluate sage+mokapot
+[18:34:33] evaluate sage+pred+mokapot
+[18:35:13] evaluate comet+mokapot
+[18:36:12] driver total 331s
+[18:36:13] wrote metrics.json and tables.md
+[19:28:36] t1_driver D1 sha=4cadf634986d dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-27_T1driver_dryrun/D1
+[19:28:37] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[19:28:37] mzML Velos005137: {'cached': True}
+[19:28:37] sage prod_1001 done
+[19:28:37] sage P_1001_2001 done
+[19:28:37] sage P_1001_2002 done
+[19:28:37] sage P_1001_2003 done
+[19:28:37] sage C_1001 done
+[19:28:37] sage prod_1002 done
+[19:28:37] sage P_1002_2001 done
+[19:28:37] sage P_1002_2002 done
+[19:28:37] sage P_1002_2003 done
+[19:28:37] sage C_1002 done
+[19:28:37] sage prod_1003 done
+[19:28:37] sage P_1003_2001 done
+[19:28:37] sage P_1003_2002 done
+[19:28:37] sage P_1003_2003 done
+[19:28:37] sage C_1003 done
+[19:28:37] sage prod_1004 done
+[19:28:37] sage P_1004_2001 done
+[19:28:37] sage P_1004_2002 done
+[19:28:37] sage P_1004_2003 done
+[19:28:37] sage C_1004 done
+[19:28:37] sage prod_1005 done
+[19:28:37] sage P_1005_2001 done
+[19:28:37] sage P_1005_2002 done
+[19:28:37] sage P_1005_2003 done
+[19:28:37] sage C_1005 done
+[19:31:23] sage RT check: {'n_confident': 10827, 'frac_predicted_rt_nonzero': 0.9900774654016886, 'sd_predicted_rt': 0.20851611616966198, 'median_abs_delta_rt_model_confident': 0.043854356, 'spearman_aligned_vs_predicted_confident': 0.9426438660677244, 'pin_has_rt_features': True}
+[19:31:23] evaluate vulcan
+[19:33:55] evaluate sage
+[19:34:30] evaluate sage+mokapot
+[19:35:05] evaluate sage+pred+mokapot
+[19:35:40] evaluate comet+mokapot
+[19:36:33] driver total 477s
+[19:36:33] wrote metrics.json and tables.md
+[20:10:22] t1_driver D1 sha=2c658b1e2d67 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D1 out=results/2026-10-27_T1driver_dryrun/D1
+[20:10:22] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[20:10:22] evaluate vulcan
+[20:13:52] evaluate sage
+[20:14:30] evaluate sage+mokapot
+[20:15:10] evaluate sage+pred+mokapot
+[20:15:48] evaluate comet+mokapot
+[20:17:00] driver total 398s
+[20:17:00] wrote metrics.json and tables.md

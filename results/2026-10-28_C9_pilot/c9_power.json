@@ -1,0 +1,1551 @@
+{
+ "seed": 131,
+ "spec": "C9 pilot step 3: projected evaluability and gate power of a human removed-peptide null set, A4 rules.\n\nSYNTHETIC SIMULATION + LABEL-FREE PILOT YIELDS + METADATA ONLY.  Seed 131 (SEEDS[4], as the A4 checks).\nInputs (all label-free):\n  * results/2026-10-28_C9_pilot/per_run/*.json -- per run: certified count, certified with a single MS1 feature,\n    A_cand (certified with >= 1 candidate after removal), tail proxy (label-collapsed max >= host 1% threshold);\n  * results/2026-10-28_C9_pilot/pool_count.json -- the eligible human pool (seeded walk order over the real projects\n    and their normalised lab keys) and E9's label-free usable-RAW-per-project listing counts.\nMachinery reused unchanged: reviews/checks/a4_power.py (cap_factors, g1_pass_prob, tost_pass_prob) and\nvulcan.gates.a2_stats.tail_g2_a2 (tail-G2 with CP + cluster bootstrap + Wilson validity control), under the A4 levels\n(tail 0.975, G1 0.995, TOST 0.95) and the A4 intersection-union rule over capped and uncapped pools.\nRules simulated (A4.3.6/A4.3.7 carried over; nothing relaxed):\n  * cluster = normalised crawl lab; <= 5 projects per cluster; 10% cap = min of the water-filling factors of the tail\n    proxy, A_cand and |A| per cluster;\n  * v1 minimum: J >= 20, J_eff >= 10 (capped proxy and capped A_cand), capped proxy >= 1,200, capped A_cand >= 120,000;\n    full stop (v2_sep tier 1): the same with capped A_cand >= 450,000;\n  * R_cap runs per project (2 or 3, C9 design), drawn from that project's usable RAWs (E9 listing counts).\nScenarios for tail-G2: clean; margin 0.60 (tau 0.10 between clusters); 25% of clusters leak at 0.90; and RESIDUAL\nCONTAMINATION (unremoved co-isolates / homologs, pro-target for every scorer): hyperscore tail target fraction 0.5+d,\nlearned 0.5+1.5d, d in {0.02, 0.05}.",
+ "pool_projects": 1465,
+ "pool_labs": 969,
+ "criteria": {
+  "v1_minimum": {
+   "J_min": 20,
+   "Jeff_min": 10,
+   "proxy_min": 1200,
+   "A_cand_min": 120000
+  },
+  "full_stop": {
+   "J_min": 20,
+   "Jeff_min": 10,
+   "proxy_min": 1200,
+   "A_cand_min": 450000
+  },
+  "cap_share": 0.1,
+  "per_cluster": 5
+ },
+ "pilot_yields": {
+  "f0.20/own": {
+   "variant": "f0.20",
+   "thr": "own",
+   "n_runs": 12,
+   "n_projects": 10,
+   "zero_run_fraction": 0.08333333333333333,
+   "log_A_mean_project": 8.43284330300542,
+   "log_A_sd_between": 0.6301471915023324,
+   "log_A_sd_within": 0.32,
+   "cand_rate_per_project": [
+    0.7552952659834066,
+    0.6485306953738725,
+    0.4384325004493978,
+    0.5277777777777778,
+    0.52088772845953,
+    0.5734715766893099,
+    0.7871621621621622,
+    0.9199659429544487,
+    0.5588652482269504,
+    0.9112592972557066
+   ],
+   "cand_logit_mean": 0.8298426788456787,
+   "cand_logit_sd": 0.9476000095528698,
+   "proxy_per_cand_per_project": [
+    0.02361721375032308,
+    0.014019739793629431,
+    0.008302583025830259,
+    0.021710526315789475,
+    0.035266738274257074,
+    0.0381857855361596,
+    0.002806206668867613,
+    0.0006941230911614993,
+    0.020558375634517765,
+    0.015902054601745003
+   ],
+   "proxy_log_mean": -4.4418898709057855,
+   "proxy_log_sd": 1.2503944085764342,
+   "totals": {
+    "A": 64507,
+    "A_cand": 42286,
+    "proxy": 808
+   }
+  },
+  "f0.20/D0max": {
+   "variant": "f0.20",
+   "thr": "D0max",
+   "n_runs": 12,
+   "n_projects": 10,
+   "zero_run_fraction": 0.08333333333333333,
+   "log_A_mean_project": 8.43284330300542,
+   "log_A_sd_between": 0.6301471915023324,
+   "log_A_sd_within": 0.32,
+   "cand_rate_per_project": [
+    0.7552952659834066,
+    0.6485306953738725,
+    0.4384325004493978,
+    0.5277777777777778,
+    0.52088772845953,
+    0.5734715766893099,
+    0.7871621621621622,
+    0.9199659429544487,
+    0.5588652482269504,
+    0.9112592972557066
+   ],
+   "cand_logit_mean": 0.8298426788456787,
+   "cand_logit_sd": 0.9476000095528698,
+   "proxy_per_cand_per_project": [
+    0.020709485655208065,
+    0.0088604755495738,
+    0.0035875358753587536,
+    0.0006578947368421052,
+    0.0012531328320802004,
+    0.018547381546134663,
+    0.0018157807857378673,
+    0.021980564553447476,
+    0.009898477157360405,
+    0.029974669293554742
+   ],
+   "proxy_log_mean": -5.048122217835875,
+   "proxy_log_sd": 1.352787584701761,
+   "totals": {
+    "A": 64507,
+    "A_cand": 42286,
+    "proxy": 615
+   }
+  },
+  "f0.05/own": {
+   "variant": "f0.05",
+   "thr": "own",
+   "n_runs": 12,
+   "n_projects": 10,
+   "zero_run_fraction": 0.08333333333333333,
+   "log_A_mean_project": 8.43284330300542,
+   "log_A_sd_between": 0.6301471915023324,
+   "log_A_sd_within": 0.32,
+   "cand_rate_per_project": [
+    0.45324548560273303,
+    0.3136456211812627,
+    0.19773503505302895,
+    0.18819444444444444,
+    0.24692279000372996,
+    0.2626027887021809,
+    0.4352910602910603,
+    0.7194550872711792,
+    0.24,
+    0.669145934855091
+   ],
+   "cand_logit_mean": -0.5747458670867382,
+   "cand_logit_sd": 0.8519426357378682,
+   "proxy_per_cand_per_project": [
+    0.005545386023473673,
+    0.007189239332096475,
+    0.001590909090909091,
+    0.00922509225092251,
+    0.01623867069486405,
+    0.014635806671204902,
+    0.00208955223880597,
+    0.0002958579881656805,
+    0.0076832151300236405,
+    0.006707550785741663
+   ],
+   "proxy_log_mean": -5.377355580562294,
+   "proxy_log_sd": 1.2171705025188364,
+   "totals": {
+    "A": 64507,
+    "A_cand": 23527,
+    "proxy": 139
+   }
+  },
+  "f0.20_single_ms1/own": {
+   "variant": "f0.20_single_ms1",
+   "thr": "own",
+   "n_runs": 12,
+   "n_projects": 10,
+   "zero_run_fraction": 0.08333333333333333,
+   "log_A_mean_project": 7.527345777471595,
+   "log_A_sd_between": 0.6260600250203505,
+   "log_A_sd_within": 0.32,
+   "cand_rate_per_project": [
+    0.6587224067200625,
+    0.6792580101180439,
+    0.32108317214700194,
+    0.4235294117647059,
+    0.38300418910831835,
+    0.5734715766893099,
+    0.760035682426405,
+    0.9047619047619048,
+    0.4904386951631046,
+    0.9130845536136042
+   ],
+   "cand_logit_mean": 0.5887893068921588,
+   "cand_logit_sd": 1.0765065737161668,
+   "proxy_per_cand_per_project": [
+    0.02001779359430605,
+    0.01365441906653426,
+    0.00783132530120482,
+    0.021825396825396824,
+    0.02890625,
+    0.0381857855361596,
+    0.004107981220657277,
+    0.0005159958720330237,
+    0.010894495412844037,
+    0.015261251939989654
+   ],
+   "proxy_log_mean": -4.545429088423205,
+   "proxy_log_sd": 1.2426757727064965,
+   "totals": {
+    "A": 24616,
+    "A_cand": 14942,
+    "proxy": 286
+   }
+  }
+ },
+ "walk_cells": [
+  {
+   "variant": "f0.20",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 1.0,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0475,
+    "150": 0.9975,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    37.0,
+    42.0,
+    48.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    41.0,
+    46.0,
+    53.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    20.0,
+    23.0,
+    26.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    20.0,
+    22.0,
+    26.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1975.3138282667708,
+   "capped_A_cand_at_v1_minimum_p50": 126020.116947009,
+   "runs_at_full_stop_p10_50_90": [
+    105.0,
+    119.0,
+    134.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.6460948568889755,
+    "A_cand_over_min_p50": 1.0501676412250749,
+    "J_over_min_p50": 1.1
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.1775,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.015,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    58.0,
+    68.0,
+    78.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    63.0,
+    76.0,
+    86.10000000000002
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    31.900000000000006,
+    37.0,
+    43.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    31.0,
+    36.0,
+    41.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2335.442290776747,
+   "capped_A_cand_at_v1_minimum_p50": 122583.87620302162,
+   "runs_at_full_stop_p10_50_90": [
+    211.0,
+    230.0,
+    251.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.9462019089806226,
+    "A_cand_over_min_p50": 1.0215323016918467,
+    "J_over_min_p50": 1.8
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.965,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0225,
+    "150": 0.9675,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    51.0,
+    54.0,
+    58.10000000000002
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    57.0,
+    60.0,
+    65.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    20.0,
+    20.0,
+    22.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    20.0,
+    20.0,
+    21.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2312.3089438759416,
+   "capped_A_cand_at_v1_minimum_p50": 157408.98027875123,
+   "runs_at_full_stop_p10_50_90": [
+    109.0,
+    124.0,
+    140.10000000000002
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.926924119896618,
+    "A_cand_over_min_p50": 1.3117415023229269,
+    "J_over_min_p50": 1.0
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0325,
+    "100": 0.9975,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0325,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    64.9,
+    74.0,
+    85.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    71.0,
+    82.0,
+    95.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    24.0,
+    28.0,
+    32.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    23.0,
+    27.0,
+    31.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2093.176796522794,
+   "capped_A_cand_at_v1_minimum_p50": 123773.55490773867,
+   "runs_at_full_stop_p10_50_90": [
+    211.0,
+    233.0,
+    258.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.7443139971023283,
+    "A_cand_over_min_p50": 1.0314462908978221,
+    "J_over_min_p50": 1.35
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "D0max",
+   "R_cap": 2,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.9775,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0375,
+    "150": 0.995,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    39.0,
+    46.0,
+    55.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    44.0,
+    51.0,
+    61.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    21.0,
+    25.0,
+    30.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    21.0,
+    24.0,
+    30.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1326.4958012103825,
+   "capped_A_cand_at_v1_minimum_p50": 138022.95903012351,
+   "runs_at_full_stop_p10_50_90": [
+    105.0,
+    120.0,
+    133.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.1054131676753187,
+    "A_cand_over_min_p50": 1.1501913252510292,
+    "J_over_min_p50": 1.2
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "D0max",
+   "R_cap": 2,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.08,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.03,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    62.0,
+    72.0,
+    83.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    68.0,
+    80.0,
+    93.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    34.0,
+    40.0,
+    46.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    33.0,
+    39.0,
+    45.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1360.595238690416,
+   "capped_A_cand_at_v1_minimum_p50": 124225.89292906204,
+   "runs_at_full_stop_p10_50_90": [
+    213.0,
+    234.0,
+    253.10000000000002
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.1338293655753466,
+    "A_cand_over_min_p50": 1.0352157744088504,
+    "J_over_min_p50": 1.95
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "D0max",
+   "R_cap": 3,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.6775,
+    "100": 1.0,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0325,
+    "150": 0.975,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    52.0,
+    57.5,
+    68.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    58.0,
+    63.0,
+    76.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    20.0,
+    21.0,
+    26.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    20.0,
+    20.5,
+    25.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1405.287455624822,
+   "capped_A_cand_at_v1_minimum_p50": 177283.00717896555,
+   "runs_at_full_stop_p10_50_90": [
+    107.0,
+    123.0,
+    138.10000000000002
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.1710728796873517,
+    "A_cand_over_min_p50": 1.4773583931580463,
+    "J_over_min_p50": 1.025
+   }
+  },
+  {
+   "variant": "f0.20",
+   "thr": "D0max",
+   "R_cap": 3,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0125,
+    "100": 0.945,
+    "150": 0.9975,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0425,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    67.9,
+    80.0,
+    96.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    75.0,
+    89.0,
+    107.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    25.0,
+    30.0,
+    36.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    25.0,
+    29.0,
+    35.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1315.9803036169942,
+   "capped_A_cand_at_v1_minimum_p50": 128602.88461413124,
+   "runs_at_full_stop_p10_50_90": [
+    207.0,
+    232.5,
+    258.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.096650253014162,
+    "A_cand_over_min_p50": 1.0716907051177604,
+    "J_over_min_p50": 1.45
+   }
+  },
+  {
+   "variant": "f0.05",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0575,
+    "100": 0.8825,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.3825,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    64.0,
+    80.0,
+    102.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    68.0,
+    88.5,
+    113.10000000000002
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    34.0,
+    44.0,
+    56.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    33.900000000000006,
+    43.0,
+    53.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1238.6236636355588,
+   "capped_A_cand_at_v1_minimum_p50": 164393.1348238114,
+   "runs_at_full_stop_p10_50_90": [
+    184.0,
+    205.0,
+    230.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.032186386362966,
+    "A_cand_over_min_p50": 1.3699427901984282,
+    "J_over_min_p50": 2.15
+   }
+  },
+  {
+   "variant": "f0.05",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0,
+    "100": 0.02,
+    "150": 0.705,
+    "200": 0.9925,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    111.0,
+    135.0,
+    168.10000000000002
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    122.0,
+    150.0,
+    186.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    61.0,
+    74.0,
+    92.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    58.0,
+    70.0,
+    87.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1223.0097897008,
+   "capped_A_cand_at_v1_minimum_p50": 146254.13102524812,
+   "runs_at_full_stop_p10_50_90": [
+    376.0,
+    409.0,
+    440.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.0191748247506667,
+    "A_cand_over_min_p50": 1.218784425210401,
+    "J_over_min_p50": 3.5
+   }
+  },
+  {
+   "variant": "f0.05",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.01,
+    "100": 0.6675,
+    "150": 0.9975,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0025,
+    "200": 0.38,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    72.0,
+    92.0,
+    116.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    79.0,
+    102.0,
+    128.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    27.0,
+    34.0,
+    43.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    26.0,
+    34.0,
+    42.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1248.6687437537244,
+   "capped_A_cand_at_v1_minimum_p50": 179754.6151344778,
+   "runs_at_full_stop_p10_50_90": [
+    181.9,
+    209.0,
+    238.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.040557286461437,
+    "A_cand_over_min_p50": 1.4979551261206483,
+    "J_over_min_p50": 1.7
+   }
+  },
+  {
+   "variant": "f0.05",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0,
+    "100": 0.01,
+    "150": 0.565,
+    "200": 0.97,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    118.0,
+    146.0,
+    179.10000000000002
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    130.0,
+    161.0,
+    199.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    44.0,
+    54.0,
+    67.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    43.0,
+    52.5,
+    65.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 1234.0309021509015,
+   "capped_A_cand_at_v1_minimum_p50": 153688.61915892796,
+   "runs_at_full_stop_p10_50_90": [
+    369.0,
+    406.0,
+    444.1
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.0283590851257514,
+    "A_cand_over_min_p50": 1.2807384929910663,
+    "J_over_min_p50": 2.625
+   }
+  },
+  {
+   "variant": "f0.20_single_ms1",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0,
+    "100": 0.9,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.345,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    76.0,
+    89.0,
+    100.10000000000002
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    83.0,
+    98.5,
+    112.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    41.0,
+    49.0,
+    55.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    39.0,
+    47.0,
+    53.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2254.4444444985,
+   "capped_A_cand_at_v1_minimum_p50": 121659.23226892466,
+   "runs_at_full_stop_p10_50_90": [
+    281.9,
+    309.0,
+    336.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.87870370374875,
+    "A_cand_over_min_p50": 1.013826935574372,
+    "J_over_min_p50": 2.35
+   }
+  },
+  {
+   "variant": "f0.20_single_ms1",
+   "thr": "own",
+   "R_cap": 2,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.14,
+    "200": 0.975,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.0,
+    "500": 0.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    146.9,
+    168.0,
+    188.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    162.0,
+    186.0,
+    209.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    79.0,
+    92.0,
+    103.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    75.0,
+    86.5,
+    96.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2459.5238097980355,
+   "capped_A_cand_at_v1_minimum_p50": 120781.01947080648,
+   "runs_at_full_stop_p10_50_90": [
+    577.0,
+    615.0,
+    654.1
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 2.049603174831696,
+    "A_cand_over_min_p50": 1.006508495590054,
+    "J_over_min_p50": 4.324999999999999
+   }
+  },
+  {
+   "variant": "f0.20_single_ms1",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 1.0,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0025,
+    "100": 0.7175,
+    "150": 1.0,
+    "200": 1.0,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.3325,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    79.9,
+    94.0,
+    108.10000000000002
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    88.0,
+    104.0,
+    120.0
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    30.0,
+    35.0,
+    41.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    29.0,
+    34.0,
+    40.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2065.000000378675,
+   "capped_A_cand_at_v1_minimum_p50": 123137.74024846198,
+   "runs_at_full_stop_p10_50_90": [
+    279.9,
+    311.5,
+    344.0
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.720833333648896,
+    "A_cand_over_min_p50": 1.02614783540385,
+    "J_over_min_p50": 1.7
+   }
+  },
+  {
+   "variant": "f0.20_single_ms1",
+   "thr": "own",
+   "R_cap": 3,
+   "yield_scale": 0.5,
+   "P_v1_minimum_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.1175,
+    "200": 0.965,
+    "300": 1.0,
+    "500": 1.0,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "P_full_stop_by_run_budget": {
+    "60": 0.0,
+    "100": 0.0,
+    "150": 0.0,
+    "200": 0.0,
+    "300": 0.0,
+    "500": 0.0025,
+    "1000": 1.0,
+    "2000": 1.0
+   },
+   "runs_at_v1_minimum_p10_50_90": [
+    150.0,
+    171.0,
+    193.0
+   ],
+   "files_downloaded_at_v1_minimum_p10_50_90": [
+    165.9,
+    189.0,
+    214.10000000000002
+   ],
+   "projects_at_v1_minimum_p10_50_90": [
+    56.0,
+    63.0,
+    72.0
+   ],
+   "J_at_v1_minimum_p10_50_90": [
+    54.0,
+    61.0,
+    69.0
+   ],
+   "capped_proxy_at_v1_minimum_p50": 2367.7083334793806,
+   "capped_A_cand_at_v1_minimum_p50": 121083.01511896703,
+   "runs_at_full_stop_p10_50_90": [
+    573.0,
+    617.0,
+    667.1
+   ],
+   "binding_at_v1_minimum": {
+    "proxy_over_min_p50": 1.9730902778994839,
+    "A_cand_over_min_p50": 1.0090251259913918,
+    "J_over_min_p50": 3.05
+   }
+  }
+ ],
+ "gates_at_v1_minimum": {
+  "f0.20/own/R3": {
+   "kappa1.0/clean": {
+    "pass": 0.935,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.065,
+    "n_tail_capped_p50": 2333.5
+   },
+   "kappa1.0/margin0.60_tau0.10": {
+    "pass": 0.005,
+    "fail": 0.92,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.075,
+    "n_tail_capped_p50": 2290.0
+   },
+   "kappa1.0/margin0.60_tau0": {
+    "pass": 0.0,
+    "fail": 0.91,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.09,
+    "n_tail_capped_p50": 2320.0
+   },
+   "kappa1.0/leak0.90_in_25pct_clusters": {
+    "pass": 0.015,
+    "fail": 0.885,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.1,
+    "n_tail_capped_p50": 2304.5
+   },
+   "kappa1.0/contam_d0.02": {
+    "pass": 0.22,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.78,
+    "n_tail_capped_p50": 2276.5
+   },
+   "kappa1.0/contam_d0.05": {
+    "pass": 0.0,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 1.0,
+    "n_tail_capped_p50": 2337.0
+   },
+   "kappa0.5/clean": {
+    "pass": 0.92,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.08,
+    "n_tail_capped_p50": 1151.0
+   },
+   "kappa0.5/margin0.60_tau0.10": {
+    "pass": 0.015,
+    "fail": 0.925,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_capped_p50": 1141.0
+   },
+   "kappa0.5/margin0.60_tau0": {
+    "pass": 0.0,
+    "fail": 0.925,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.075,
+    "n_tail_capped_p50": 1144.5
+   },
+   "kappa0.5/leak0.90_in_25pct_clusters": {
+    "pass": 0.01,
+    "fail": 0.915,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.075,
+    "n_tail_capped_p50": 1149.5
+   },
+   "kappa0.5/contam_d0.02": {
+    "pass": 0.44,
+    "fail": 0.035,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.525,
+    "n_tail_capped_p50": 1157.5
+   },
+   "kappa0.5/contam_d0.05": {
+    "pass": 0.0,
+    "fail": 0.005,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.995,
+    "n_tail_capped_p50": 1141.0
+   },
+   "G1_clean_pass": 0.98505,
+   "G1_rho0.05_pass": 0.0,
+   "G3_clean_pass_all_bins": 1.0,
+   "G1_n_top": 15740,
+   "G3_n_per_label_per_bin": 7870,
+   "J_median": 20
+  },
+  "f0.05/own/R3": {
+   "kappa1.0/clean": {
+    "pass": 0.9,
+    "fail": 0.005,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.095,
+    "n_tail_capped_p50": 1252.0
+   },
+   "kappa1.0/margin0.60_tau0.10": {
+    "pass": 0.01,
+    "fail": 0.905,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.085,
+    "n_tail_capped_p50": 1256.5
+   },
+   "kappa1.0/margin0.60_tau0": {
+    "pass": 0.0,
+    "fail": 0.89,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.11,
+    "n_tail_capped_p50": 1250.0
+   },
+   "kappa1.0/leak0.90_in_25pct_clusters": {
+    "pass": 0.005,
+    "fail": 0.9,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.095,
+    "n_tail_capped_p50": 1247.5
+   },
+   "kappa1.0/contam_d0.02": {
+    "pass": 0.54,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.46,
+    "n_tail_capped_p50": 1253.5
+   },
+   "kappa1.0/contam_d0.05": {
+    "pass": 0.005,
+    "fail": 0.01,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.985,
+    "n_tail_capped_p50": 1248.5
+   },
+   "kappa0.5/clean": {
+    "pass": 0.87,
+    "fail": 0.055,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.075,
+    "n_tail_capped_p50": 626.0
+   },
+   "kappa0.5/margin0.60_tau0.10": {
+    "pass": 0.005,
+    "fail": 0.91,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.085,
+    "n_tail_capped_p50": 627.5
+   },
+   "kappa0.5/margin0.60_tau0": {
+    "pass": 0.0,
+    "fail": 0.935,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.065,
+    "n_tail_capped_p50": 626.5
+   },
+   "kappa0.5/leak0.90_in_25pct_clusters": {
+    "pass": 0.015,
+    "fail": 0.895,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.09,
+    "n_tail_capped_p50": 627.0
+   },
+   "kappa0.5/contam_d0.02": {
+    "pass": 0.525,
+    "fail": 0.15,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.325,
+    "n_tail_capped_p50": 625.5
+   },
+   "kappa0.5/contam_d0.05": {
+    "pass": 0.01,
+    "fail": 0.1,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.89,
+    "n_tail_capped_p50": 622.5
+   },
+   "G1_clean_pass": 0.99,
+   "G1_rho0.05_pass": 0.0,
+   "G3_clean_pass_all_bins": 1.0,
+   "G1_n_top": 17975,
+   "G3_n_per_label_per_bin": 8987,
+   "J_median": 34
+  },
+  "f0.20_single_ms1/own/R3": {
+   "kappa1.0/clean": {
+    "pass": 0.95,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.05,
+    "n_tail_capped_p50": 2018.5
+   },
+   "kappa1.0/margin0.60_tau0.10": {
+    "pass": 0.01,
+    "fail": 0.93,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_capped_p50": 2035.0
+   },
+   "kappa1.0/margin0.60_tau0": {
+    "pass": 0.005,
+    "fail": 0.93,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.065,
+    "n_tail_capped_p50": 2035.0
+   },
+   "kappa1.0/leak0.90_in_25pct_clusters": {
+    "pass": 0.02,
+    "fail": 0.895,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.085,
+    "n_tail_capped_p50": 2054.5
+   },
+   "kappa1.0/contam_d0.02": {
+    "pass": 0.38,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.62,
+    "n_tail_capped_p50": 2041.0
+   },
+   "kappa1.0/contam_d0.05": {
+    "pass": 0.0,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 1.0,
+    "n_tail_capped_p50": 2033.0
+   },
+   "kappa0.5/clean": {
+    "pass": 0.93,
+    "fail": 0.01,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_capped_p50": 1031.0
+   },
+   "kappa0.5/margin0.60_tau0.10": {
+    "pass": 0.005,
+    "fail": 0.925,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.07,
+    "n_tail_capped_p50": 1034.0
+   },
+   "kappa0.5/margin0.60_tau0": {
+    "pass": 0.01,
+    "fail": 0.9,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.09,
+    "n_tail_capped_p50": 1018.5
+   },
+   "kappa0.5/leak0.90_in_25pct_clusters": {
+    "pass": 0.01,
+    "fail": 0.89,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.1,
+    "n_tail_capped_p50": 1022.0
+   },
+   "kappa0.5/contam_d0.02": {
+    "pass": 0.535,
+    "fail": 0.035,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.43,
+    "n_tail_capped_p50": 1027.0
+   },
+   "kappa0.5/contam_d0.05": {
+    "pass": 0.005,
+    "fail": 0.055,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.94,
+    "n_tail_capped_p50": 1014.0
+   },
+   "G1_clean_pass": 0.93555,
+   "G1_rho0.05_pass": 0.0,
+   "G3_clean_pass_all_bins": 1.0,
+   "G1_n_top": 12313,
+   "G3_n_per_label_per_bin": 6156,
+   "J_median": 34
+  }
+ },
+ "summary": {
+  "f0.20/own/R3/kappa1.0/budget100": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.9210217500000001,
+   "P_clean_v1_passes": 0.9210217500000001,
+   "P_margin_leak_caught_given_evaluable": 0.92,
+   "P_margin_leak_caught": 0.92,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20/own/R3/kappa1.0/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.9210217500000001,
+   "P_clean_v1_passes": 0.9210217500000001,
+   "P_margin_leak_caught_given_evaluable": 0.92,
+   "P_margin_leak_caught": 0.92,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20/own/R3/kappa1.0/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.9210217500000001,
+   "P_clean_v1_passes": 0.9210217500000001,
+   "P_margin_leak_caught_given_evaluable": 0.92,
+   "P_margin_leak_caught": 0.92,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20/own/R3/kappa0.5/budget100": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.906246,
+   "P_clean_v1_passes": 0.906246,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.925,
+   "P_false_pass_margin_given_evaluable": 0.015
+  },
+  "f0.20/own/R3/kappa0.5/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.906246,
+   "P_clean_v1_passes": 0.906246,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.925,
+   "P_false_pass_margin_given_evaluable": 0.015
+  },
+  "f0.20/own/R3/kappa0.5/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.906246,
+   "P_clean_v1_passes": 0.906246,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.925,
+   "P_false_pass_margin_given_evaluable": 0.015
+  },
+  "f0.05/own/R3/kappa1.0/budget100": {
+   "P_v1_minimum": 0.6675,
+   "joint_clean_pass_given_evaluable": 0.891,
+   "P_clean_v1_passes": 0.5947425,
+   "P_margin_leak_caught_given_evaluable": 0.905,
+   "P_margin_leak_caught": 0.6040875,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.05/own/R3/kappa1.0/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.891,
+   "P_clean_v1_passes": 0.891,
+   "P_margin_leak_caught_given_evaluable": 0.905,
+   "P_margin_leak_caught": 0.905,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.05/own/R3/kappa1.0/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.891,
+   "P_clean_v1_passes": 0.891,
+   "P_margin_leak_caught_given_evaluable": 0.905,
+   "P_margin_leak_caught": 0.905,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.05/own/R3/kappa0.5/budget100": {
+   "P_v1_minimum": 0.6675,
+   "joint_clean_pass_given_evaluable": 0.8613,
+   "P_clean_v1_passes": 0.57491775,
+   "P_margin_leak_caught_given_evaluable": 0.91,
+   "P_margin_leak_caught": 0.607425,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.05/own/R3/kappa0.5/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8613,
+   "P_clean_v1_passes": 0.8613,
+   "P_margin_leak_caught_given_evaluable": 0.91,
+   "P_margin_leak_caught": 0.91,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.05/own/R3/kappa0.5/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8613,
+   "P_clean_v1_passes": 0.8613,
+   "P_margin_leak_caught_given_evaluable": 0.91,
+   "P_margin_leak_caught": 0.91,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20_single_ms1/own/R3/kappa1.0/budget100": {
+   "P_v1_minimum": 0.7175,
+   "joint_clean_pass_given_evaluable": 0.8887725,
+   "P_clean_v1_passes": 0.63769426875,
+   "P_margin_leak_caught_given_evaluable": 0.93,
+   "P_margin_leak_caught": 0.6672750000000001,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.20_single_ms1/own/R3/kappa1.0/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8887725,
+   "P_clean_v1_passes": 0.8887725,
+   "P_margin_leak_caught_given_evaluable": 0.93,
+   "P_margin_leak_caught": 0.93,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.20_single_ms1/own/R3/kappa1.0/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8887725,
+   "P_clean_v1_passes": 0.8887725,
+   "P_margin_leak_caught_given_evaluable": 0.93,
+   "P_margin_leak_caught": 0.93,
+   "P_false_pass_margin_given_evaluable": 0.01
+  },
+  "f0.20_single_ms1/own/R3/kappa0.5/budget100": {
+   "P_v1_minimum": 0.7175,
+   "joint_clean_pass_given_evaluable": 0.8700615,
+   "P_clean_v1_passes": 0.6242691262500001,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.6636875000000001,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20_single_ms1/own/R3/kappa0.5/budget200": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8700615,
+   "P_clean_v1_passes": 0.8700615,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.925,
+   "P_false_pass_margin_given_evaluable": 0.005
+  },
+  "f0.20_single_ms1/own/R3/kappa0.5/budget300": {
+   "P_v1_minimum": 1.0,
+   "joint_clean_pass_given_evaluable": 0.8700615,
+   "P_clean_v1_passes": 0.8700615,
+   "P_margin_leak_caught_given_evaluable": 0.925,
+   "P_margin_leak_caught": 0.925,
+   "P_false_pass_margin_given_evaluable": 0.005
+  }
+ },
+ "wall_s": 351.035810821224
+}

@@ -1,0 +1,38 @@
+{
+ "D0": {
+  "n_psms": 72982,
+  "0.001": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 21324,
+   "sage_lda_vulcan_unique_sequences": 20186,
+   "sage_own_peptide_q_peptidoforms": 20951
+  },
+  "0.01": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 23703,
+   "sage_lda_vulcan_unique_sequences": 22410,
+   "sage_own_peptide_q_peptidoforms": 23637
+  },
+  "0.05": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 25423,
+   "sage_lda_vulcan_unique_sequences": 24071,
+   "sage_own_peptide_q_peptidoforms": 25430
+  }
+ },
+ "D1": {
+  "n_psms": 11501,
+  "0.001": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 5883,
+   "sage_lda_vulcan_unique_sequences": 5753,
+   "sage_own_peptide_q_peptidoforms": 5806
+  },
+  "0.01": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 6044,
+   "sage_lda_vulcan_unique_sequences": 5910,
+   "sage_own_peptide_q_peptidoforms": 6037
+  },
+  "0.05": {
+   "sage_lda_vulcan_paired_tdc_peptidoforms": 6299,
+   "sage_lda_vulcan_unique_sequences": 6161,
+   "sage_own_peptide_q_peptidoforms": 6291
+  }
+ }
+}

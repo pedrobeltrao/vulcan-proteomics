@@ -1,0 +1,7128 @@
+{
+ "model_v2_sha256": "3f2c69cc6cad002e42c51475dc1ad52b9bfbbc84f3dd51997b22cb24a70f0186",
+ "v1_feature_columns": [
+  "pred_sa",
+  "pred_sa_sqrt",
+  "pred_pearson",
+  "pred_entropy",
+  "pred_frac_obs",
+  "pred_top6",
+  "pred_obs_tic",
+  "rt_abs_resid",
+  "rt_resid_z"
+ ],
+ "datasets": {
+  "D0": {
+   "runs": [
+    "b1906_293T_proteinID_01A_QE3_122212",
+    "b1937_293T_proteinID_01B_QE3_122212"
+   ],
+   "replicates": {
+    "prod_1001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 594366,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 287463
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 306903
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 25349,
+       "new": 25349,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 29496,
+       "new": 29496,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 31728,
+       "new": 31728,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 2.928973436355591,
+      "fast": 0.6611835956573486
+     }
+    },
+    "P_1001_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669208,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323278
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345930
+      }
+     }
+    },
+    "P_1001_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669631,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323678
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345953
+      }
+     }
+    },
+    "P_1001_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669624,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323172
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346452
+      }
+     }
+    },
+    "C_1001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 667573,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 322501
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345072
+      }
+     }
+    },
+    "prod_1002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 594037,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 287551
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 306486
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 25460,
+       "new": 25460,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 29494,
+       "new": 29494,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 31544,
+       "new": 31544,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 3.271850824356079,
+      "fast": 0.5946128368377686
+     }
+    },
+    "P_1002_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669067,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323591
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345476
+      }
+     }
+    },
+    "P_1002_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669110,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323467
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345643
+      }
+     }
+    },
+    "P_1002_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669363,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323417
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345946
+      }
+     }
+    },
+    "C_1002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 667337,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 322358
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 344979
+      }
+     }
+    },
+    "prod_1003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 594250,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 287542
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 306708
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 26345,
+       "new": 26345,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 29435,
+       "new": 29435,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 31639,
+       "new": 31639,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 3.2387359142303467,
+      "fast": 0.6195311546325684
+     }
+    },
+    "P_1003_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669221,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323341
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345880
+      }
+     }
+    },
+    "P_1003_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669171,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323280
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345891
+      }
+     }
+    },
+    "P_1003_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669328,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323158
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346170
+      }
+     }
+    },
+    "C_1003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 667551,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 322528
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345023
+      }
+     }
+    },
+    "prod_1004": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 594291,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 287525
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 306766
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 25949,
+       "new": 25949,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 29487,
+       "new": 29487,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 31648,
+       "new": 31648,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 2.737443447113037,
+      "fast": 0.5992884635925293
+     }
+    },
+    "P_1004_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669111,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323417
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345694
+      }
+     }
+    },
+    "P_1004_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669317,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323407
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345910
+      }
+     }
+    },
+    "P_1004_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669454,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323203
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346251
+      }
+     }
+    },
+    "C_1004": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 667568,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 322579
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 344989
+      }
+     }
+    },
+    "prod_1005": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 594831,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 287703
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 307128
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 25863,
+       "new": 25863,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 29507,
+       "new": 29507,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 31695,
+       "new": 31695,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 3.1336469650268555,
+      "fast": 0.6089506149291992
+     }
+    },
+    "P_1005_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669402,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323363
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346039
+      }
+     }
+    },
+    "P_1005_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669803,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323520
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346283
+      }
+     }
+    },
+    "P_1005_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 669554,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 323241
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 346313
+      }
+     }
+    },
+    "C_1005": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 667805,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "b1906_293T_proteinID_01A_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 322719
+      },
+      "b1937_293T_proteinID_01B_QE3_122212": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 345086
+      }
+     }
+    }
+   },
+   "all_features_bitwise": true,
+   "all_scores_bitwise": true,
+   "all_nce_equal": true,
+   "lib_misses_total": 0,
+   "all_prod_id_sets_identical": true,
+   "all_prod_competition_equal": true,
+   "wall_s": 125.53679418563843
+  },
+  "D1": {
+   "runs": [
+    "Velos005137"
+   ],
+   "replicates": {
+    "prod_1001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 30979,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 30979
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 5777,
+       "new": 5777,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 7121,
+       "new": 7121,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 7463,
+       "new": 7463,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 0.23973560333251953,
+      "fast": 0.03437972068786621
+     }
+    },
+    "P_1001_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42156,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42156
+      }
+     }
+    },
+    "P_1001_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42241,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42241
+      }
+     }
+    },
+    "P_1001_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 41831,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 41831
+      }
+     }
+    },
+    "C_1001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 71059,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 71059
+      }
+     }
+    },
+    "prod_1002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 30945,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 30945
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 5828,
+       "new": 5828,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 7049,
+       "new": 7049,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 7452,
+       "new": 7452,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 0.24065852165222168,
+      "fast": 0.03533577919006348
+     }
+    },
+    "P_1002_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 41937,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 41937
+      }
+     }
+    },
+    "P_1002_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42031,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42031
+      }
+     }
+    },
+    "P_1002_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42002,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42002
+      }
+     }
+    },
+    "C_1002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 71226,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 71226
+      }
+     }
+    },
+    "prod_1003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 31093,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 31093
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 5833,
+       "new": 5833,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 6864,
+       "new": 6864,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 7452,
+       "new": 7452,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 0.24183893203735352,
+      "fast": 0.03551054000854492
+     }
+    },
+    "P_1003_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42264,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42264
+      }
+     }
+    },
+    "P_1003_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42311,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42311
+      }
+     }
+    },
+    "P_1003_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42035,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42035
+      }
+     }
+    },
+    "C_1003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 70978,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 70978
+      }
+     }
+    },
+    "prod_1004": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 30903,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 30903
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 5758,
+       "new": 5758,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 7086,
+       "new": 7086,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 7455,
+       "new": 7455,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 0.2425839900970459,
+      "fast": 0.03395557403564453
+     }
+    },
+    "P_1004_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 41873,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 41873
+      }
+     }
+    },
+    "P_1004_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42036,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42036
+      }
+     }
+    },
+    "P_1004_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 41949,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 41949
+      }
+     }
+    },
+    "C_1004": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 70753,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 70753
+      }
+     }
+    },
+    "prod_1005": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 31017,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 31017
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 5734,
+       "new": 5734,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 6857,
+       "new": 6857,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 7459,
+       "new": 7459,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 0.23828744888305664,
+      "fast": 0.033979177474975586
+     }
+    },
+    "P_1005_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42128,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42128
+      }
+     }
+    },
+    "P_1005_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42199,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42199
+      }
+     }
+    },
+    "P_1005_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 42065,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42065
+      }
+     }
+    },
+    "C_1005": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 71126,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "Velos005137": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 71126
+      }
+     }
+    }
+   },
+   "all_features_bitwise": true,
+   "all_scores_bitwise": true,
+   "all_nce_equal": true,
+   "lib_misses_total": 0,
+   "all_prod_id_sets_identical": true,
+   "all_prod_competition_equal": true,
+   "wall_s": 13.3108811378479
+  },
+  "D8h": {
+   "runs": [
+    "E9_0000__H0799BL",
+    "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+    "E9_0002__MGP2",
+    "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+    "E9_0004__20210122-YP202104470-xh-BT1-3",
+    "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+    "E9_0006__CL_CTL_p53_ZNF_061025_1",
+    "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+    "E9_0008__lgg1",
+    "E9_0009__20170210_MCF7_LysC_WT_2b"
+   ],
+   "replicates": {
+    "prod_1001": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2278683,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 644183
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 48901
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 33028
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 114382
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 453965
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 151183
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 168133
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1277
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 439178
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 224453
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 67253,
+       "new": 67253,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 79209,
+       "new": 79209,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 86702,
+       "new": 86702,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 12.878154039382935,
+      "fast": 3.3978230953216553
+     }
+    },
+    "P_1001_2001": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2748999,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842444
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56566
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43377
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146671
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487459
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190853
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183350
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1620
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515689
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 280970
+      }
+     }
+    },
+    "P_1001_2002": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 2749638,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842198
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56498
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43423
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146323
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487715
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191102
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183352
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1660
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515624
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281743
+      }
+     }
+    },
+    "P_1001_2003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2748770,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 841667
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56681
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43338
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146185
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487365
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190734
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183598
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1662
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516259
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281281
+      }
+     }
+    },
+    "C_1001": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2734682,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 838451
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 55850
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42961
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 145207
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487581
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 188145
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183246
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1612
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 510534
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281095
+      }
+     }
+    },
+    "prod_1002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2277493,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 643458
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 48722
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 33067
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 114748
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 453405
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 151032
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 168137
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1311
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 439359
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 224254
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 67031,
+       "new": 67031,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 79086,
+       "new": 79086,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 86734,
+       "new": 86734,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 12.454899072647095,
+      "fast": 2.829817771911621
+     }
+    },
+    "P_1002_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 2749031,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 841784
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56556
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43532
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146580
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487285
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191098
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183260
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1640
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516125
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281171
+      }
+     }
+    },
+    "P_1002_2002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2749624,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 841383
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56467
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43508
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146534
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487532
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191383
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183431
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1663
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516052
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281671
+      }
+     }
+    },
+    "P_1002_2003": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 2748374,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 840916
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56458
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43429
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146230
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487280
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190791
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183480
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1685
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516636
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281469
+      }
+     }
+    },
+    "C_1002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2735529,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 838168
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 55868
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43057
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 145377
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487548
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 188689
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183205
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1609
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 510474
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281534
+      }
+     }
+    },
+    "prod_1003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2276853,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 644001
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 48694
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 33085
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 114912
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 453346
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 150615
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 168245
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1303
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 438948
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 223704
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 68768,
+       "new": 68768,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 79250,
+       "new": 79250,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 86591,
+       "new": 86591,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 12.862611770629883,
+      "fast": 2.9314088821411133
+     }
+    },
+    "P_1003_2001": {
+     "features_bitwise": true,
+     "scores_bitwise": true,
+     "n_psms": 2748806,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842192
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56460
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43255
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146640
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487543
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190834
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183251
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1622
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516093
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 280916
+      }
+     }
+    },
+    "P_1003_2002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2748463,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 841824
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56398
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43425
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146515
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487456
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191119
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183339
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1663
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515586
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281138
+      }
+     }
+    },
+    "P_1003_2003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2747256,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 841428
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56500
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43483
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146187
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487240
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190272
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183323
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1677
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515929
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281217
+      }
+     }
+    },
+    "C_1003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2734756,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 838717
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 55824
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 42876
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 145642
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487326
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 187938
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183139
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1636
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 510572
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281086
+      }
+     }
+    },
+    "prod_1004": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2279220,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 644747
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 48730
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 33058
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 114963
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 453630
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 150573
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 168385
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1335
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 439602
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 224197
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": true
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 66373,
+       "new": 66373,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 79680,
+       "new": 79680,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 86742,
+       "new": 86742,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 11.877686977386475,
+      "fast": 2.7249462604522705
+     }
+    },
+    "P_1004_2001": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2750896,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 843422
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56480
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43338
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146784
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487588
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191126
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183389
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1653
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516069
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281047
+      }
+     }
+    },
+    "P_1004_2002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2750298,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842936
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56417
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43479
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146339
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487594
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190992
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183403
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1703
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516124
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281311
+      }
+     }
+    },
+    "P_1004_2003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2749601,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842471
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56498
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43327
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146219
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487708
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190830
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183481
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1694
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515928
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": false,
+        "pred_frac_obs": false,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281445
+      }
+     }
+    },
+    "C_1004": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2735690,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 838451
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 55861
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43055
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 145473
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487779
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 188061
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183278
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1622
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 510810
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281300
+      }
+     }
+    },
+    "prod_1005": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2280146,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 645264
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 48955
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 33211
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 115103
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 453763
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 151045
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 168354
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1318
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 438901
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 224232
+      }
+     },
+     "competition_equal": {
+      "win": true,
+      "survivors": true,
+      "stratum": true,
+      "merged": true,
+      "q_sep": true,
+      "q_pooled": false
+     },
+     "id_sets_q_sep": {
+      "0.001": {
+       "ref": 67786,
+       "new": 67786,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.01": {
+       "ref": 79311,
+       "new": 79311,
+       "identical": true,
+       "jaccard": 1.0
+      },
+      "0.05": {
+       "ref": 86715,
+       "new": 86715,
+       "identical": true,
+       "jaccard": 1.0
+      }
+     },
+     "competition_s": {
+      "reference": 12.384294509887695,
+      "fast": 2.6976966857910156
+     }
+    },
+    "P_1005_2001": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2750594,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 843080
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56726
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43414
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146508
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487514
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191045
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183494
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1654
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516016
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281143
+      }
+     }
+    },
+    "P_1005_2002": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2751902,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842875
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56556
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43553
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146525
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487552
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 191335
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183635
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1671
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 516369
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281831
+      }
+     }
+    },
+    "P_1005_2003": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2750165,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 842764
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 56587
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43431
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 146248
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487605
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 190900
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183617
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1699
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 515795
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281519
+      }
+     }
+    },
+    "C_1005": {
+     "features_bitwise": false,
+     "scores_bitwise": false,
+     "n_psms": 2736055,
+     "nce_equal": true,
+     "lib_misses": 0,
+     "per_run": {
+      "E9_0000__H0799BL": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 839003
+      },
+      "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 23.0,
+       "ref_nce": 23.0,
+       "misses": 0,
+       "n": 55921
+      },
+      "E9_0002__MGP2": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 43079
+      },
+      "E9_0003__20180623_PC463-Graves-McDonald_Sample1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 145961
+      },
+      "E9_0004__20210122-YP202104470-xh-BT1-3": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 487408
+      },
+      "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 26.0,
+       "ref_nce": 26.0,
+       "misses": 0,
+       "n": 188195
+      },
+      "E9_0006__CL_CTL_p53_ZNF_061025_1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 32.0,
+       "ref_nce": 32.0,
+       "misses": 0,
+       "n": 183234
+      },
+      "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": true,
+        "rt_resid_z": true
+       },
+       "score": true,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 1668
+      },
+      "E9_0008__lgg1": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 510285
+      },
+      "E9_0009__20170210_MCF7_LysC_WT_2b": {
+       "features": {
+        "pred_sa": true,
+        "pred_sa_sqrt": true,
+        "pred_pearson": true,
+        "pred_entropy": true,
+        "pred_frac_obs": true,
+        "pred_top6": true,
+        "pred_obs_tic": true,
+        "rt_abs_resid": false,
+        "rt_resid_z": false
+       },
+       "score": false,
+       "nce": 29.0,
+       "ref_nce": 29.0,
+       "misses": 0,
+       "n": 281301
+      }
+     }
+    }
+   },
+   "all_features_bitwise": false,
+   "all_scores_bitwise": false,
+   "all_nce_equal": true,
+   "lib_misses_total": 0,
+   "all_prod_id_sets_identical": true,
+   "all_prod_competition_equal": false,
+   "wall_s": 448.4212965965271
+  }
+ },
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 8,
+  "VULCAN_THREADS": "8",
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ },
+ "loadavg_start": [
+  28.87109375,
+  27.044921875,
+  20.57275390625
+ ],
+ "loadavg_end": [
+  30.580078125,
+  30.021484375,
+  25.24853515625
+ ]
+}

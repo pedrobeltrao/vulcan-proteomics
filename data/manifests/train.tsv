@@ -1,0 +1,14 @@
+id	accession	filename	url	expected_size	species	instrument	year	lab	fold	role
+TR00	PXD068465	DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/06/PXD068465/DAI-1333_hCells_WT-3_STrapMicro_PSRTandC_90m_20240617_QE.raw	1050266312	human	Q Exactive	2025	Mu-Shui Dai	0	train
+TR01	PXD026663	KA121LQ_CSF_65.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/05/PXD026663/KA121LQ_CSF_65.raw	645067665	human	Q Exactive	2021	Liping Li	1	train
+TR02	PXD074418	30min_LPS_2.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/08/PXD074418/30min_LPS_2.raw	1283744578	human	Q Exactive HF	2026	Helen Ruth Irving	2	train
+TR03	PXD044783	PT10402-292_190921044254.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD044783/PT10402-292_190921044254.raw	1278946759	human	Q Exactive	2023	Angus Lamond	0	train
+TR04	PXD009743	Ctrl_JH_repli1_SCX4.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD009743/Ctrl_JH_repli1_SCX4.raw	916293263	human	Q Exactive Plus	2019	David Meierhofer	1	train
+TR05	PXD047664	P22_081_Singapur_Smim26_SampleII_02.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/06/PXD047664/P22_081_Singapur_Smim26_SampleII_02.raw	580640937	human	Q Exactive Plus	2023	Lena Ho	2	train
+TR06	PXD047868	No_guide_control_2_promoter_reporter.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/05/PXD047868/No_guide_control_2_promoter_reporter.raw	1275063819	human	Q Exactive HF	2023	Dr.Stefan Koch	0	train
+TR07	PXD045252	c3.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2024/03/PXD045252/c3.raw	515478016	human	Q Exactive	2023	Dr. Sujatha	1	train
+TR08	PXD031264	211221_LL_17183_1.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/01/PXD031264/211221_LL_17183_1.raw	547614046	human	Q Exactive HF	2022	Olivier De Wever	2	train
+TR09	PXD059835	210521-MClass-21_0844-14-BAZ.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/04/PXD059835/210521-MClass-21_0844-14-BAZ.raw	1109102212	mouse	Q Exactive Plus	2025	Pierre Close	0	train
+TR10	PXD019362	MN-WT1-Frac8.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2020/06/PXD019362/MN-WT1-Frac8.raw	1023762710	mouse	Q Exactive HF	2020	Professor Paul Crocker	1	train
+TR11	PXD019012	XS_Shura_High_pH_Frac12_api05_4.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2020/10/PXD019012/XS_Shura_High_pH_Frac12_api05_4.raw	1158541821	ecoli	Q Exactive HF	2020	Yu Gao	2	train
+TR12	PXD029006	005_ECOLI72_F20.raw	https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029006/005_ECOLI72_F20.raw	600901192	ecoli	Q Exactive HF	2021	ALexander Schmidt	0	train

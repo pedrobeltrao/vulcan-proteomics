@@ -1,0 +1,3 @@
+5082c12d08686b12ab66edb0b027183ee964054c  (HEAD when the E1 benchmark started, 2026-10-26T18:04)
+2ace1ba1204cdbb1f97a69bfe97bd55a546bbf6a  (HEAD when results were finalised; other agents committed in between)
+E1 code (vulcan/io/, scripts/ingest/, tests/io/) is untracked/uncommitted per task instructions.

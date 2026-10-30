@@ -1,0 +1,144 @@
+{
+ "design": "A3.1.9 input for V12's n_min: the DEV top-5 truncation rate of the exhaustive v2-best candidate.  Dev only.\n\nV12 (A3.2.4) asks, per A spectrum, whether the exhaustive v2-best target / decoy of the single-hypothesis window W is\ninside the production top-5 (hyperscore-ranked); n_min \"from A3.1.9 by the V6 rule\" = the smallest n per label per bin\nat which a symmetric process at the DEV rate passes the 90% Newcombe TOST in [-0.01, +0.01] with probability >= 0.90.\nThis script measures that dev rate on A-like dev nulls, with the same scoring path step 4b uses for V12\n(scripts/a3/step4b_chimeric.exhaustive_v12_scores):\n  * a dev MIXTURE built like a DN2 mixture (A2.9.3 / A1): the D0 host run b1906 (production hypotheses) + a seeded\n    subsample of 12,000 charge-known MS2 spectra of the D7 yeast null run LM2480_DDA (numpy default_rng(47); an M3\n    G2 species-null source; yeast is not in DN2 and not in any training set), RT quantile-mapped onto the host\n    (vulcan.gates.nulls.quantile_map); the null spectra carry ONE hypothesis (instrument precursor m/z, charge,\n    isotope error 0), as A2.2(e) for A spectra;\n  * index: the human prod gate index (E2 human_contam_prod), as DN2;\n  * exhaustive (null spectra only): every candidate (report = all), v2 features calibrated on the mixture's\n    production primary PSMs with the production NCE (independent review M1; step4b.exhaustive_v12_scores), frozen v2;\n  * production: vulcan.gpu.engine.search with the same hypotheses, report_psms 5 (K1 top-K 500 + top-5);\n  * per spectrum and label: v2-best candidate of the exhaustive set; \"kept\" iff its peptidoform row is among the\n    production top-5 rows of that spectrum.  Rates overall and per decile of the exhaustive v2-best score\n    max(best T, best D) (A2.8 binning).  Labels are read (dev data).",
+ "n_spectra": 12000,
+ "n_exhaustive_psms": 75524,
+ "per_label": {
+  "T": {
+   "n": 7650,
+   "kept": 6987,
+   "miss_rate": 0.08666666666666667
+  },
+  "D": {
+   "n": 7640,
+   "kept": 6944,
+   "miss_rate": 0.09109947643979055
+  }
+ },
+ "per_decile": [
+  {
+   "decile": 0,
+   "T": {
+    "n": 719,
+    "miss_rate": 0.06397774687065372
+   },
+   "D": {
+    "n": 739,
+    "miss_rate": 0.0757780784844384
+   },
+   "pooled_miss_rate": 0.06995884773662553
+  },
+  {
+   "decile": 1,
+   "T": {
+    "n": 754,
+    "miss_rate": 0.08620689655172409
+   },
+   "D": {
+    "n": 760,
+    "miss_rate": 0.10131578947368425
+   },
+   "pooled_miss_rate": 0.09379128137384407
+  },
+  {
+   "decile": 2,
+   "T": {
+    "n": 759,
+    "miss_rate": 0.07378129117259558
+   },
+   "D": {
+    "n": 756,
+    "miss_rate": 0.09259259259259256
+   },
+   "pooled_miss_rate": 0.08316831683168313
+  },
+  {
+   "decile": 3,
+   "T": {
+    "n": 759,
+    "miss_rate": 0.0974967061923584
+   },
+   "D": {
+    "n": 758,
+    "miss_rate": 0.08443271767810023
+   },
+   "pooled_miss_rate": 0.09096901779828614
+  },
+  {
+   "decile": 4,
+   "T": {
+    "n": 753,
+    "miss_rate": 0.09428950863213814
+   },
+   "D": {
+    "n": 776,
+    "miss_rate": 0.10180412371134018
+   },
+   "pooled_miss_rate": 0.09810333551340744
+  },
+  {
+   "decile": 5,
+   "T": {
+    "n": 789,
+    "miss_rate": 0.08998732572877055
+   },
+   "D": {
+    "n": 762,
+    "miss_rate": 0.09973753280839892
+   },
+   "pooled_miss_rate": 0.09477756286266925
+  },
+  {
+   "decile": 6,
+   "T": {
+    "n": 747,
+    "miss_rate": 0.10174029451137889
+   },
+   "D": {
+    "n": 770,
+    "miss_rate": 0.07532467532467535
+   },
+   "pooled_miss_rate": 0.0883322346736981
+  },
+  {
+   "decile": 7,
+   "T": {
+    "n": 774,
+    "miss_rate": 0.08139534883720934
+   },
+   "D": {
+    "n": 787,
+    "miss_rate": 0.09911054637865313
+   },
+   "pooled_miss_rate": 0.09032671364509925
+  },
+  {
+   "decile": 8,
+   "T": {
+    "n": 782,
+    "miss_rate": 0.10230179028132991
+   },
+   "D": {
+    "n": 760,
+    "miss_rate": 0.08552631578947367
+   },
+   "pooled_miss_rate": 0.0940337224383917
+  },
+  {
+   "decile": 9,
+   "T": {
+    "n": 814,
+    "miss_rate": 0.07493857493857492
+   },
+   "D": {
+    "n": 772,
+    "miss_rate": 0.09455958549222798
+   },
+   "pooled_miss_rate": 0.08448928121059274
+  }
+ ],
+ "wall_s": 23.17038592370227,
+ "pooled_miss_rate": 0.08888162197514715,
+ "max_variance_decile_miss_rate": 0.09810333551340744,
+ "production_nce": 23.0,
+ "n_host_spectra": 41820
+}

@@ -1,0 +1,46 @@
+{
+ "n_runs_admitted": 3,
+ "wall_to_last_admission_s": 434.34,
+ "fill_latency_s": 313.14,
+ "r_direct_runs_per_h": 24.865312888520517,
+ "N_direct": 31.081641110650647,
+ "per_run": {
+  "download_MBps_single_stream": 3.5436700926157645,
+  "core_s_mean": {
+   "decode": 6.711428571428571,
+   "trfp": 68.97,
+   "sage": 82.75666666666666
+  },
+  "admission_serial_wall_s": 26.661283493041992,
+  "swap_test_wall_s": 28.926723798116047,
+  "admission_pool_core_s_bound": 89.83333333333333,
+  "core_s_total": 352.0018562380952
+ },
+ "load_other": 47.38623046875,
+ "free_cores": 0.0,
+ "r_bounds_runs_per_h": {
+  "cpu": 0.0,
+  "download_aggregate": 592.7433628318585,
+  "serial_admission": 135.02725781898388,
+  "swap_process": 124.4523930578845
+ },
+ "r_steady_state": 0.0,
+ "N_steady_state": 0.0,
+ "window_h": 1.25,
+ "r_cpu_by_load_other": {
+  "0": 327.2710014406241,
+  "10": 224.99881349042906,
+  "20": 122.72662554023404,
+  "30": 20.454437590039007,
+  "40": 0.0
+ },
+ "N_steady_state_by_load_other": {
+  "0": 144.74020733287063,
+  "10": 144.74020733287063,
+  "20": 142.7331109470512,
+  "30": 23.78885182450853,
+  "40": 0.0
+ },
+ "N_used": 0.0,
+ "r_used": 0.0
+}

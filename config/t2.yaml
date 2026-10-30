@@ -1,0 +1,103 @@
+# T2 look (DESIGN §6.5 FLR, §6.6 T2; RESEARCH_TREE D4, D8; M4 E8 pipeline, results/2026-10-27_M4_ptm).
+# Read by bench/t2_driver.py and bench/t2/claims.py.  Every choice is fixed here, before the look; stricter-reading
+# decisions are explained in bench/t2/IMPLEMENTATION_NOTES.md.  Nothing here may change after the T2 ledger line.
+version: t2-1
+
+# ---------------------------------------------------------------- where outputs go (A5.5.3 pattern; outside the repo)
+look_root: $VULCAN_LOOK_ROOT/T2      # <look_root>/<look-id>/{out,logs}, mode 0700
+dev_root: $VULCAN_LOOK_ROOT/T2_dev   # dry runs, same layout
+scratch_prefix: /dev/shm/vulcan_look_t2_                                           # node-local RAM work/ (staged RAW, stores, index ~30 GB, PSMs); off /tmp (full twice on 2026-10-28; PI D35). tmpfs is charged to the job memory cgroup, so the driver waits for cgroup headroom (memory_guard) and aborts below the floor; deleted at the end in sealed mode
+
+# ---------------------------------------------------------------- frozen pipeline (= M4 E8 at 6522cad, unchanged code paths)
+search:                       # vulcan.gpu.engine closed search, report 1 (scripts/m4/bench.sh d2_phospho)
+  params: {chunk_size: 32768, max_slice_entries: 536870912}
+  static: {C: 57.021464}
+  variable: {S: 79.966331, T: 79.966331, Y: 79.966331, M: 15.994915, "^": 42.010565}
+  max_variable_mods: 3
+  report: 1
+convert_threads: 4
+memory_guard:                 # job memory cgroup (shared by all agents; tmpfs scratch counts against it)
+  headroom_before_index_gb: 170   # D2T peak RSS 115 GB + index ~30 GB in /dev/shm + margin; the driver waits (logged) up to 90 min
+  abort_floor_gb: 6               # watchdog: below this the driver stops itself (instead of the kernel OOM-killing another agent)
+  scratch_min_free_gb: 60
+fdr: {unit: "(sequence, composition)", score: hyperscore, q: 0.01, tiebreak_seed: 11}
+localization:                 # vulcan.ptm.localize.LocParams; must equal results/2026-10-27_M4_ptm/e8.json loc_params
+  mod_mass: 79.966331
+  nl_mass: 97.976895573
+  frag_ppm: 20.0
+  peaks_per_window: 12
+  window_th: 100.0
+  max_frag_charge: 2
+  min_mz: 100.0
+  max_mz: 2000.0
+  weight: intensity
+  max_configs: 20000
+  batch_ions: 60000000
+decoys: {primary: A, secondary: L}
+alphas: [0.01, 0.05]
+
+# ---------------------------------------------------------------- comparator (M4 config.yaml baseline_localizer)
+comparator:
+  name: pyAscore
+  version: 1.0.1
+  pylib: data/cache/t2_pylib/pylib                     # persistent copy of /tmp/vulcan_m4/pylib (M4's install)
+  tree_sha256: 5cfe3f9fd7aa3a1407aa2d9cad9f4a59550ed989d880cb8614bdf0c119e96565   # sha256 of `sha256sum` over sorted non-.pyc files of pyascore/ and the dist-info
+  params: {bin_size: 100, n_top: 10, mz_error_da: 0.02, neutral_loss: "H3PO4 on every modified acceptor"}
+
+# ---------------------------------------------------------------- remote predictors (D4, LESSONS 10)
+predictors:
+  used: none                  # the frozen E8 pipeline has no predicted feature; adding Prosit/MS2PIP now would be a new, unregistered pipeline
+  forbidden_modules: [koina, koinapy, peptdeep, alphabase, deeplc, ms2pip]   # the driver fails if any is imported
+
+# ---------------------------------------------------------------- statistics fixed before the look
+stats:
+  bootstrap: {n: 2000, seed: 11, cluster: stripped_sequence}   # DESIGN §6.1 general seed
+  ci: one-sided 95% upper bound = max(Clopper-Pearson, cluster-bootstrap 95th percentile)
+  localization_repeats: 10      # PI D35: our frozen localizer is not run-to-run reproducible (CUDA atomics); run 0 is the
+                                #   result of record, 10 more runs on the same PSMs give the [min, max] band printed next to every number
+  n_min_accepted_eligible_sites: 200                           # A1 n >= 200 convention; below it a cell is "not evaluable"
+  e8_rule: >-
+    Per T2 component (PXD000138, PXD009449), mono-phospho, Ala decoy, threshold FLR̂ <= alpha computed on all localized
+    sites, true FLR on the truth-eligible accepted STY sites. Cell verdict: PASS iff UCB <= alpha; inconclusive iff
+    point <= alpha < UCB; FAILED iff point > alpha; not evaluable iff no truth or n < n_min. E8 gate PASS iff every
+    evaluable component PASSes at alpha 1% and 5% and at least one component is evaluable; FAILED iff any cell FAILED;
+    otherwise not passed (inconclusive / not evaluable).
+  recall_rule: >-
+    Site recall = correct accepted STY sites / truth-eligible mono-phospho PSMs. Ours vs pyAscore, paired cluster
+    bootstrap of the difference (thresholds re-chosen in every replicate). "higher" iff the 95% two-sided CI lower bound
+    > 0; "lower" iff upper bound < 0; else "no difference shown". A missing or failed comparator output is "not
+    evaluable" and counts as NOT beaten (completeness rule).
+
+# ---------------------------------------------------------------- labels (inserted verbatim by bench/t2/claims.py)
+labels:
+  L-PSM: >-
+    Phospho PSM list: localization-agnostic peptidoform FDR by hyperscore paired double competition at the method's own
+    q <= 1% (no learned scorer, no top-K re-ranking; neither v1 nor v2_sep is used). This list is not entrapment-checked
+    on T2 and no null-spectrum test covers this pipeline on phospho data; FLR numbers are conditional on it.
+  L-D-A5: >-
+    v1: engine default, FDR not validated by null-spectrum tests. v2_sep: candidate. No OT-HCD scorer has
+    gate-validated FDR claims.
+  L-TUNE: >-
+    Localization parameters were tuned on dev PXD000138 pools and PXD009449 Ymod_Phospho with truth (M4, disclosed);
+    T2 pools are held out and were never searched before this look.
+  L-TRUTH: >-
+    Truth as declared in results/2026-10-27_M4_ptm/NOTES.md §0 (97daf98): PXD000138 pool design (one {S,T,Y} slot per
+    pool); PXD009449 phospho truth exists only for Ymod_Phospho kits, so the T2 K-acyl pools carry no phospho truth.
+  L-E8-VOID: "void: E8 gate not passed on this data (DESIGN §6.5: E8 is a gate before any FLR claim)"
+  L-DESC: "descriptive; not a claim"
+
+# ---------------------------------------------------------------- console (A5.5.3 pattern): only these templates reach the terminal
+console_whitelist:
+  - '^t2: (start|done) [A-Za-z0-9_-]+$'
+  - '^t2: stage [a-z_0-9]+ (start|done)$'
+  - '^t2: run [0-9]+/[0-9]+ (convert|search) done$'
+  - '^t2: exit [0-9]+$'
+  - '^t2: (FAILED|REFUSED) [a-z_ ]+$'
+
+# ---------------------------------------------------------------- T2 contents (DATA.md; data/manifests/dev_sealed.tsv)
+t2:
+  PXD000138: {pools: {"76": G4, "25": C1, "24": B12, "61": F1}, pool_fasta_dir: data/truth/sealed/PXD000138}
+  PXD009449:
+    pools: [Kmod_Acetyl, Kmod_Succinyl, Kmod_Ubiquitinyl, Kmod_Crotonyl]
+    evidence_dir: data/truth/sealed/PXD009449
+    phospho_truth: none (K-acyl kits carry no phospho; L-TRUTH)

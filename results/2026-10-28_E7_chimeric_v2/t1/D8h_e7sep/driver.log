@@ -1,0 +1,10 @@
+[01:29:50] t1_driver D8h sha=8fb233098a14 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h_e7sep
+[01:29:51] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[01:29:53] evaluate vulcan
+[01:40:37] t1_driver D8h sha=8fb233098a14 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7_chimeric_v2/t1/D8h_e7sep
+[01:40:37] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[01:40:39] evaluate vulcan
+[01:56:55] evaluate vulcan_chim_v1_sep
+[02:07:52] evaluate vulcan_chim_v1_sep
+[02:49:08] driver total 4114s
+[02:49:08] wrote metrics.json and tables.md

@@ -1,0 +1,614 @@
+{
+ "runs": [
+  "Control_HEK_SEC_020118_15b",
+  "Control_HEK_SEC_020118_16b",
+  "Control_HEK_SEC_020118_17b",
+  "Control_HEK_SEC_020118_18b",
+  "Control_HEK_SEC_020118_19b",
+  "Control_HEK_SEC_020118_20b",
+  "Control_HEK_SEC_020118_21b",
+  "Control_HEK_SEC_020118_22b",
+  "Control_HEK_SEC_020118_23b",
+  "Control_HEK_SEC_020118_24b",
+  "Control_HEK_SEC_020118_25c",
+  "Control_HEK_SEC_020118_26b",
+  "Control_HEK_SEC_020118_27b",
+  "Control_HEK_SEC_020118_28b",
+  "Control_HEK_SEC_020118_29b",
+  "Control_HEK_SEC_020118_30b",
+  "Control_HEK_SEC_020118_31b",
+  "Control_HEK_SEC_020118_32b",
+  "Control_HEK_SEC_020118_33b",
+  "Control_HEK_SEC_020118_34b",
+  "Control_HEK_SEC_020118_35b",
+  "Control_HEK_SEC_020118_36c",
+  "Control_HEK_SEC_020118_37c",
+  "Control_HEK_SEC_020118_38b"
+ ],
+ "fractions": [
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "alpha": 0.01,
+ "donor_alpha": 0.001,
+ "transfer_q": 0.01,
+ "transfer_info": {
+  "local": {
+   "mode": "local",
+   "k": 1,
+   "runs": {
+    "Control_HEK_SEC_020118_15b": {
+     "fraction": 15,
+     "n_candidates": 3472,
+     "n_with_target_peak": 858
+    },
+    "Control_HEK_SEC_020118_16b": {
+     "fraction": 16,
+     "n_candidates": 3404,
+     "n_with_target_peak": 1774
+    },
+    "Control_HEK_SEC_020118_17b": {
+     "fraction": 17,
+     "n_candidates": 2544,
+     "n_with_target_peak": 1642
+    },
+    "Control_HEK_SEC_020118_18b": {
+     "fraction": 18,
+     "n_candidates": 2521,
+     "n_with_target_peak": 1649
+    },
+    "Control_HEK_SEC_020118_19b": {
+     "fraction": 19,
+     "n_candidates": 2328,
+     "n_with_target_peak": 1567
+    },
+    "Control_HEK_SEC_020118_20b": {
+     "fraction": 20,
+     "n_candidates": 4455,
+     "n_with_target_peak": 2534
+    },
+    "Control_HEK_SEC_020118_21b": {
+     "fraction": 21,
+     "n_candidates": 2886,
+     "n_with_target_peak": 1656
+    },
+    "Control_HEK_SEC_020118_22b": {
+     "fraction": 22,
+     "n_candidates": 2520,
+     "n_with_target_peak": 1772
+    },
+    "Control_HEK_SEC_020118_23b": {
+     "fraction": 23,
+     "n_candidates": 3341,
+     "n_with_target_peak": 2277
+    },
+    "Control_HEK_SEC_020118_24b": {
+     "fraction": 24,
+     "n_candidates": 2779,
+     "n_with_target_peak": 1848
+    },
+    "Control_HEK_SEC_020118_25c": {
+     "fraction": 25,
+     "n_candidates": 3141,
+     "n_with_target_peak": 2019
+    },
+    "Control_HEK_SEC_020118_26b": {
+     "fraction": 26,
+     "n_candidates": 2658,
+     "n_with_target_peak": 1782
+    },
+    "Control_HEK_SEC_020118_27b": {
+     "fraction": 27,
+     "n_candidates": 2580,
+     "n_with_target_peak": 1706
+    },
+    "Control_HEK_SEC_020118_28b": {
+     "fraction": 28,
+     "n_candidates": 3350,
+     "n_with_target_peak": 2093
+    },
+    "Control_HEK_SEC_020118_29b": {
+     "fraction": 29,
+     "n_candidates": 3214,
+     "n_with_target_peak": 2055
+    },
+    "Control_HEK_SEC_020118_30b": {
+     "fraction": 30,
+     "n_candidates": 3287,
+     "n_with_target_peak": 2018
+    },
+    "Control_HEK_SEC_020118_31b": {
+     "fraction": 31,
+     "n_candidates": 2798,
+     "n_with_target_peak": 1885
+    },
+    "Control_HEK_SEC_020118_32b": {
+     "fraction": 32,
+     "n_candidates": 2827,
+     "n_with_target_peak": 1781
+    },
+    "Control_HEK_SEC_020118_33b": {
+     "fraction": 33,
+     "n_candidates": 3994,
+     "n_with_target_peak": 2196
+    },
+    "Control_HEK_SEC_020118_34b": {
+     "fraction": 34,
+     "n_candidates": 3537,
+     "n_with_target_peak": 2176
+    },
+    "Control_HEK_SEC_020118_35b": {
+     "fraction": 35,
+     "n_candidates": 3327,
+     "n_with_target_peak": 1834
+    },
+    "Control_HEK_SEC_020118_36c": {
+     "fraction": 36,
+     "n_candidates": 4325,
+     "n_with_target_peak": 2119
+    },
+    "Control_HEK_SEC_020118_37c": {
+     "fraction": 37,
+     "n_candidates": 4416,
+     "n_with_target_peak": 2173
+    },
+    "Control_HEK_SEC_020118_38b": {
+     "fraction": 38,
+     "n_candidates": 2154,
+     "n_with_target_peak": 820
+    }
+   }
+  },
+  "global": {
+   "mode": "global",
+   "k": 1,
+   "runs": {
+    "Control_HEK_SEC_020118_15b": {
+     "fraction": 15,
+     "n_candidates": 29345,
+     "n_with_target_peak": 2590
+    },
+    "Control_HEK_SEC_020118_16b": {
+     "fraction": 16,
+     "n_candidates": 25495,
+     "n_with_target_peak": 4687
+    },
+    "Control_HEK_SEC_020118_17b": {
+     "fraction": 17,
+     "n_candidates": 22723,
+     "n_with_target_peak": 4462
+    },
+    "Control_HEK_SEC_020118_18b": {
+     "fraction": 18,
+     "n_candidates": 22761,
+     "n_with_target_peak": 3697
+    },
+    "Control_HEK_SEC_020118_19b": {
+     "fraction": 19,
+     "n_candidates": 23112,
+     "n_with_target_peak": 4319
+    },
+    "Control_HEK_SEC_020118_20b": {
+     "fraction": 20,
+     "n_candidates": 25251,
+     "n_with_target_peak": 4501
+    },
+    "Control_HEK_SEC_020118_21b": {
+     "fraction": 21,
+     "n_candidates": 23135,
+     "n_with_target_peak": 4460
+    },
+    "Control_HEK_SEC_020118_22b": {
+     "fraction": 22,
+     "n_candidates": 22037,
+     "n_with_target_peak": 4834
+    },
+    "Control_HEK_SEC_020118_23b": {
+     "fraction": 23,
+     "n_candidates": 22450,
+     "n_with_target_peak": 4954
+    },
+    "Control_HEK_SEC_020118_24b": {
+     "fraction": 24,
+     "n_candidates": 22603,
+     "n_with_target_peak": 4805
+    },
+    "Control_HEK_SEC_020118_25c": {
+     "fraction": 25,
+     "n_candidates": 23478,
+     "n_with_target_peak": 4636
+    },
+    "Control_HEK_SEC_020118_26b": {
+     "fraction": 26,
+     "n_candidates": 23086,
+     "n_with_target_peak": 4924
+    },
+    "Control_HEK_SEC_020118_27b": {
+     "fraction": 27,
+     "n_candidates": 22599,
+     "n_with_target_peak": 4940
+    },
+    "Control_HEK_SEC_020118_28b": {
+     "fraction": 28,
+     "n_candidates": 23242,
+     "n_with_target_peak": 5037
+    },
+    "Control_HEK_SEC_020118_29b": {
+     "fraction": 29,
+     "n_candidates": 23329,
+     "n_with_target_peak": 5137
+    },
+    "Control_HEK_SEC_020118_30b": {
+     "fraction": 30,
+     "n_candidates": 23457,
+     "n_with_target_peak": 4669
+    },
+    "Control_HEK_SEC_020118_31b": {
+     "fraction": 31,
+     "n_candidates": 23160,
+     "n_with_target_peak": 4664
+    },
+    "Control_HEK_SEC_020118_32b": {
+     "fraction": 32,
+     "n_candidates": 22977,
+     "n_with_target_peak": 4337
+    },
+    "Control_HEK_SEC_020118_33b": {
+     "fraction": 33,
+     "n_candidates": 23455,
+     "n_with_target_peak": 5063
+    },
+    "Control_HEK_SEC_020118_34b": {
+     "fraction": 34,
+     "n_candidates": 22171,
+     "n_with_target_peak": 4522
+    },
+    "Control_HEK_SEC_020118_35b": {
+     "fraction": 35,
+     "n_candidates": 21207,
+     "n_with_target_peak": 4007
+    },
+    "Control_HEK_SEC_020118_36c": {
+     "fraction": 36,
+     "n_candidates": 22273,
+     "n_with_target_peak": 4488
+    },
+    "Control_HEK_SEC_020118_37c": {
+     "fraction": 37,
+     "n_candidates": 22990,
+     "n_with_target_peak": 3894
+    },
+    "Control_HEK_SEC_020118_38b": {
+     "fraction": 38,
+     "n_candidates": 22449,
+     "n_with_target_peak": 3229
+    }
+   }
+  }
+ },
+ "corum": {
+  "n_complexes_corum_subset": 2734,
+  "n_member_proteins_in_proteome": 3525,
+  "n_positive_pairs_possible": 37510
+ },
+ "ids_per_fraction": {
+  "Control_HEK_SEC_020118_15b": 322,
+  "Control_HEK_SEC_020118_16b": 5056,
+  "Control_HEK_SEC_020118_17b": 8142,
+  "Control_HEK_SEC_020118_18b": 7819,
+  "Control_HEK_SEC_020118_19b": 7318,
+  "Control_HEK_SEC_020118_20b": 4600,
+  "Control_HEK_SEC_020118_21b": 7108,
+  "Control_HEK_SEC_020118_22b": 8725,
+  "Control_HEK_SEC_020118_23b": 8227,
+  "Control_HEK_SEC_020118_24b": 7805,
+  "Control_HEK_SEC_020118_25c": 7007,
+  "Control_HEK_SEC_020118_26b": 7547,
+  "Control_HEK_SEC_020118_27b": 8325,
+  "Control_HEK_SEC_020118_28b": 7390,
+  "Control_HEK_SEC_020118_29b": 7014,
+  "Control_HEK_SEC_020118_30b": 6854,
+  "Control_HEK_SEC_020118_31b": 7428,
+  "Control_HEK_SEC_020118_32b": 7825,
+  "Control_HEK_SEC_020118_33b": 7105,
+  "Control_HEK_SEC_020118_34b": 8472,
+  "Control_HEK_SEC_020118_35b": 10106,
+  "Control_HEK_SEC_020118_36c": 8640,
+  "Control_HEK_SEC_020118_37c": 8281,
+  "Control_HEK_SEC_020118_38b": 9315
+ },
+ "entrapment_ids_per_fraction": {
+  "Control_HEK_SEC_020118_15b": 1,
+  "Control_HEK_SEC_020118_16b": 22,
+  "Control_HEK_SEC_020118_17b": 35,
+  "Control_HEK_SEC_020118_18b": 34,
+  "Control_HEK_SEC_020118_19b": 36,
+  "Control_HEK_SEC_020118_20b": 22,
+  "Control_HEK_SEC_020118_21b": 36,
+  "Control_HEK_SEC_020118_22b": 52,
+  "Control_HEK_SEC_020118_23b": 51,
+  "Control_HEK_SEC_020118_24b": 32,
+  "Control_HEK_SEC_020118_25c": 27,
+  "Control_HEK_SEC_020118_26b": 43,
+  "Control_HEK_SEC_020118_27b": 47,
+  "Control_HEK_SEC_020118_28b": 29,
+  "Control_HEK_SEC_020118_29b": 22,
+  "Control_HEK_SEC_020118_30b": 23,
+  "Control_HEK_SEC_020118_31b": 44,
+  "Control_HEK_SEC_020118_32b": 45,
+  "Control_HEK_SEC_020118_33b": 32,
+  "Control_HEK_SEC_020118_34b": 52,
+  "Control_HEK_SEC_020118_35b": 52,
+  "Control_HEK_SEC_020118_36c": 47,
+  "Control_HEK_SEC_020118_37c": 70,
+  "Control_HEK_SEC_020118_38b": 40
+ },
+ "modes": {
+  "none": {
+   "matrix_precursors": 48101,
+   "values_by_provenance_target": {
+    "ms2": 171388
+   },
+   "values_by_provenance_entrapment": {
+    "ms2": 238
+   },
+   "entrapment_combined_FDP_by_provenance": {
+    "ms2": 0.0027734725507790195
+   },
+   "entrapment_combined_FDP_all_values": 0.0027734725507790195,
+   "entrapment_precursors": 183,
+   "median_precursor_fwhm_fracs": 1.0,
+   "median_precursor_n_fracs": 2.0,
+   "proteins": 4344,
+   "median_protein_fwhm_fracs": 1.0,
+   "median_protein_n_fracs": 4.0,
+   "corum_own": {
+    "proteins": 1513,
+    "pairs": 1143828,
+    "positives": 20917,
+    "pr_auc": 0.07571986093753787,
+    "baseline_prevalence": 0.018286840329140394
+   },
+   "entrapment_null": {
+    "entrapment_profiles_ge_min_fracs": 13,
+    "frac_with_max_r_ge_0.8": 1.0,
+    "n_with_max_r_ge_0.8": 13,
+    "n_pairs_r_ge_0.8": 1395,
+    "median_max_r": 0.9591922003420458
+   },
+   "precursor_width_inflation_common": {
+    "n": 47918,
+    "mean_fwhm_ratio": 1.0,
+    "mean_n_fracs_ratio": 1.0,
+    "median_n_fracs": 2.0,
+    "median_fwhm": 1.0
+   },
+   "protein_width_inflation_common": {
+    "n": 4344,
+    "mean_fwhm_ratio": 1.0,
+    "mean_n_fracs_ratio": 1.0
+   },
+   "corum_common": {
+    "proteins": 1513,
+    "pairs": 1143828,
+    "positives": 20917,
+    "pr_auc": 0.07571986093753787,
+    "baseline_prevalence": 0.018286840329140394
+   }
+  },
+  "local": {
+   "matrix_precursors": 48101,
+   "values_by_provenance_target": {
+    "ms2": 171388,
+    "transfer_local": 33247
+   },
+   "values_by_provenance_entrapment": {
+    "ms2": 238,
+    "transfer_local": 13
+   },
+   "entrapment_combined_FDP_by_provenance": {
+    "transfer_local": 0.0007817197835237522,
+    "ms2": 0.0027734725507790195
+   },
+   "entrapment_combined_FDP_all_values": 0.002450143006354753,
+   "entrapment_precursors": 183,
+   "median_precursor_fwhm_fracs": 1.0,
+   "median_precursor_n_fracs": 3.0,
+   "proteins": 4344,
+   "median_protein_fwhm_fracs": 2.0,
+   "median_protein_n_fracs": 5.0,
+   "corum_own": {
+    "proteins": 1575,
+    "pairs": 1239525,
+    "positives": 21748,
+    "pr_auc": 0.07807144685374649,
+    "baseline_prevalence": 0.017545430709344306
+   },
+   "entrapment_null": {
+    "entrapment_profiles_ge_min_fracs": 15,
+    "frac_with_max_r_ge_0.8": 1.0,
+    "n_with_max_r_ge_0.8": 15,
+    "n_pairs_r_ge_0.8": 1845,
+    "median_max_r": 0.9548762978880168
+   },
+   "transfer_placement": {
+    "n_target_transfers": 33247,
+    "frac_ge3_from_same_precursor_ms2": 0.0,
+    "frac_ge3_from_same_protein_ms2": 0.0,
+    "median_dist_precursor": 1.0
+   },
+   "precursor_width_inflation_common": {
+    "n": 47918,
+    "mean_fwhm_ratio": 1.077256287011494,
+    "mean_n_fracs_ratio": 1.202311052085915,
+    "median_n_fracs": 3.0,
+    "median_fwhm": 1.0
+   },
+   "protein_width_inflation_common": {
+    "n": 4344,
+    "mean_fwhm_ratio": 1.0769724341547546,
+    "mean_n_fracs_ratio": 1.135981531647494
+   },
+   "corum_common": {
+    "proteins": 1513,
+    "pairs": 1143828,
+    "positives": 20917,
+    "pr_auc": 0.08203993042205114,
+    "baseline_prevalence": 0.018286840329140394
+   }
+  },
+  "global": {
+   "matrix_precursors": 48101,
+   "values_by_provenance_target": {
+    "ms2": 171388,
+    "transfer_global": 6196
+   },
+   "values_by_provenance_entrapment": {
+    "ms2": 238,
+    "transfer_global": 3
+   },
+   "entrapment_combined_FDP_by_provenance": {
+    "ms2": 0.0027734725507790195,
+    "transfer_global": 0.0009678980480722697
+   },
+   "entrapment_combined_FDP_all_values": 0.002710530015464642,
+   "entrapment_precursors": 183,
+   "median_precursor_fwhm_fracs": 1.0,
+   "median_precursor_n_fracs": 2.0,
+   "proteins": 4344,
+   "median_protein_fwhm_fracs": 2.0,
+   "median_protein_n_fracs": 5.0,
+   "corum_own": {
+    "proteins": 1527,
+    "pairs": 1165101,
+    "positives": 21024,
+    "pr_auc": 0.07380753100280676,
+    "baseline_prevalence": 0.018044787533441308
+   },
+   "entrapment_null": {
+    "entrapment_profiles_ge_min_fracs": 13,
+    "frac_with_max_r_ge_0.8": 1.0,
+    "n_with_max_r_ge_0.8": 13,
+    "n_pairs_r_ge_0.8": 1406,
+    "median_max_r": 0.956432408373348
+   },
+   "transfer_placement": {
+    "n_target_transfers": 6196,
+    "frac_ge3_from_same_precursor_ms2": 0.28082633957391867,
+    "frac_ge3_from_same_protein_ms2": 0.03916768665850673,
+    "median_dist_precursor": 1.0
+   },
+   "precursor_width_inflation_common": {
+    "n": 47918,
+    "mean_fwhm_ratio": 1.0106367075981835,
+    "mean_n_fracs_ratio": 1.0391026021935912,
+    "median_n_fracs": 2.0,
+    "median_fwhm": 1.0
+   },
+   "protein_width_inflation_common": {
+    "n": 4344,
+    "mean_fwhm_ratio": 1.0121550615335144,
+    "mean_n_fracs_ratio": 1.0359165313507697
+   },
+   "corum_common": {
+    "proteins": 1513,
+    "pairs": 1143828,
+    "positives": 20917,
+    "pr_auc": 0.07572662899889068,
+    "baseline_prevalence": 0.018286840329140394
+   }
+  },
+  "global_naive": {
+   "matrix_precursors": 48101,
+   "values_by_provenance_target": {
+    "ms2": 171388,
+    "transfer_global": 106703
+   },
+   "values_by_provenance_entrapment": {
+    "ms2": 238,
+    "transfer_global": 61
+   },
+   "entrapment_combined_FDP_by_provenance": {
+    "ms2": 0.0027734725507790195,
+    "transfer_global": 0.0011427072796073583
+   },
+   "entrapment_combined_FDP_all_values": 0.002148065663278135,
+   "entrapment_precursors": 183,
+   "median_precursor_fwhm_fracs": 1.0,
+   "median_precursor_n_fracs": 4.0,
+   "proteins": 4344,
+   "median_protein_fwhm_fracs": 2.0,
+   "median_protein_n_fracs": 9.0,
+   "corum_own": {
+    "proteins": 1653,
+    "pairs": 1365378,
+    "positives": 22487,
+    "pr_auc": 0.07278102981945815,
+    "baseline_prevalence": 0.01646943190823347
+   },
+   "entrapment_null": {
+    "entrapment_profiles_ge_min_fracs": 17,
+    "frac_with_max_r_ge_0.8": 0.9411764705882353,
+    "n_with_max_r_ge_0.8": 16,
+    "n_pairs_r_ge_0.8": 2424,
+    "median_max_r": 0.9529340476317959
+   },
+   "transfer_placement": {
+    "n_target_transfers": 106704,
+    "frac_ge3_from_same_precursor_ms2": 0.4123369320737742,
+    "frac_ge3_from_same_protein_ms2": 0.09244961193367043,
+    "median_dist_precursor": 2.0,
+    "est_false_frac_rt_decoy_window_has_peak": 0.01668149674518803
+   },
+   "precursor_width_inflation_common": {
+    "n": 47918,
+    "mean_fwhm_ratio": 1.1517713067177777,
+    "mean_n_fracs_ratio": 1.765392389563232,
+    "median_n_fracs": 4.0,
+    "median_fwhm": 1.0
+   },
+   "protein_width_inflation_common": {
+    "n": 4344,
+    "mean_fwhm_ratio": 1.1724936237539827,
+    "mean_n_fracs_ratio": 1.7731444014277478
+   },
+   "corum_common": {
+    "proteins": 1513,
+    "pairs": 1143828,
+    "positives": 20917,
+    "pr_auc": 0.0883272625938491,
+    "baseline_prevalence": 0.018286840329140394
+   }
+  }
+ },
+ "timing_s": {
+  "link_s": 2.4278409583494067,
+  "align_s": 0.7053828351199627,
+  "transfer_local_s": 3.4083954701200128,
+  "transfer_global_s": 3.3591602756641805,
+  "xic_s": 4.957502530887723,
+  "total_s": 33.678895788267255
+ }
+}

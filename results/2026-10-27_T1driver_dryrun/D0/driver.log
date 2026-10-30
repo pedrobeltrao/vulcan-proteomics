@@ -1,0 +1,184 @@
+[17:48:54] t1_driver D0 sha=e0771df44ed7 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=/tmp/t1drv_scratch/D0test
+[17:48:55] armC: $VULCAN_SCRATCH/vulcan_env/pred/bin/python $VULCAN_ROOT/scripts/entrapment/build_dbs.py --name ds --target $VULCAN_SCRATCH/vulcan_t1/D0/target.fasta --foreign $VULCAN_ROOT/data/fasta/arath_UP000006548.fasta --arms C --out $VULCAN_SCRATCH/vulcan_t1/D0/armC
+[18:17:38] full index built in 1425s: 107672256 peptidoforms
+[18:24:24] t1_driver D0 sha=d9a6ae026349 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=/tmp/t1drv_scratch/D0test
+[18:24:47] materialized prod_1001: 7039400 peptidoforms, 4672086 sequences
+[18:25:16] materialized P_1001_2001: 14078874 peptidoforms, 9344242 sequences
+[18:25:46] materialized P_1001_2002: 14078830 peptidoforms, 9344196 sequences
+[18:26:14] materialized P_1001_2003: 14078660 peptidoforms, 9344032 sequences
+[18:26:45] materialized C_1001: 14772588 peptidoforms, 9468306 sequences
+[18:27:01] materialized prod_1002: 7039400 peptidoforms, 4672086 sequences
+[18:27:31] materialized P_1002_2001: 14078874 peptidoforms, 9344242 sequences
+[18:28:00] materialized P_1002_2002: 14078830 peptidoforms, 9344196 sequences
+[18:28:29] materialized P_1002_2003: 14078660 peptidoforms, 9344032 sequences
+[18:28:59] materialized C_1002: 14772588 peptidoforms, 9468306 sequences
+[18:29:16] materialized prod_1003: 7039400 peptidoforms, 4672086 sequences
+[18:29:45] materialized P_1003_2001: 14078874 peptidoforms, 9344242 sequences
+[18:30:18] materialized P_1003_2002: 14078830 peptidoforms, 9344196 sequences
+[18:30:50] materialized P_1003_2003: 14078660 peptidoforms, 9344032 sequences
+[18:31:24] materialized C_1003: 14772588 peptidoforms, 9468306 sequences
+[18:31:42] materialized prod_1004: 7039400 peptidoforms, 4672086 sequences
+[18:32:14] materialized P_1004_2001: 14078874 peptidoforms, 9344242 sequences
+[18:32:46] materialized P_1004_2002: 14078830 peptidoforms, 9344196 sequences
+[18:33:18] materialized P_1004_2003: 14078660 peptidoforms, 9344032 sequences
+[18:33:51] materialized C_1004: 14772588 peptidoforms, 9468306 sequences
+[18:34:09] materialized prod_1005: 7039400 peptidoforms, 4672086 sequences
+[18:34:41] materialized P_1005_2001: 14078874 peptidoforms, 9344242 sequences
+[18:35:13] materialized P_1005_2002: 14078830 peptidoforms, 9344196 sequences
+[18:35:48] materialized P_1005_2003: 14078660 peptidoforms, 9344032 sequences
+[18:36:21] materialized C_1005: 14772588 peptidoforms, 9468306 sequences
+[18:39:16] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:39:16] driver total 893s
+[18:39:30] t1_driver D0 sha=23059e24131d dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=results/2026-10-27_T1driver_dryrun/D0
+[18:39:30] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[18:39:30] cohort: $VULCAN_SCRATCH/vulcan_env/pred/bin/python -m vulcan.cohort --index $VULCAN_SCRATCH/vulcan_t1/D0/index/prod_1001 --raws $VULCAN_ROOT/data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw $VULCAN_ROOT/data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw --out $VULCAN_SCRATCH/vulcan_t1/D0/ours/cohort --stage $VULCAN_SCRATCH/vulcan_t1/D0/stage --keep-stores --workers 2 --params {"report_psms": 5}
+[18:39:49] loaded 2 stores in 0.4s
+[18:39:52] prod_1001: engine == cohort output: {'b1906_293T_proteinID_01A_QE3_122212': True, 'b1937_293T_proteinID_01B_QE3_122212': True}
+[18:39:52] searched prod_1001: 2.9s
+[18:39:55] searched P_1001_2001: 2.9s
+[18:39:58] searched P_1001_2002: 2.9s
+[18:40:01] searched P_1001_2003: 3.0s
+[18:40:04] searched C_1001: 3.1s
+[18:40:07] searched prod_1002: 2.3s
+[18:40:10] searched P_1002_2001: 2.9s
+[18:40:13] searched P_1002_2002: 2.9s
+[18:40:16] searched P_1002_2003: 3.1s
+[18:40:19] searched C_1002: 3.1s
+[18:40:21] searched prod_1003: 2.2s
+[18:40:24] searched P_1003_2001: 2.5s
+[18:40:27] searched P_1003_2002: 3.0s
+[18:40:30] searched P_1003_2003: 2.9s
+[18:40:32] searched C_1003: 3.0s
+[18:40:35] searched prod_1004: 2.1s
+[18:40:37] searched P_1004_2001: 2.8s
+[18:40:40] searched P_1004_2002: 2.8s
+[18:40:43] searched P_1004_2003: 2.9s
+[18:40:46] searched C_1004: 2.7s
+[18:40:48] searched prod_1005: 2.0s
+[18:40:50] searched P_1005_2001: 2.4s
+[18:40:53] searched P_1005_2002: 2.5s
+[18:40:55] searched P_1005_2003: 2.4s
+[18:40:58] searched C_1005: 2.5s
+[18:41:41] scored prod_1001: 32.4s nce=[23.0, 23.0]
+[18:41:58] scored P_1001_2001: 17.8s nce=[23.0, 23.0]
+[18:42:12] scored P_1001_2002: 14.0s nce=[23.0, 23.0]
+[18:42:26] scored P_1001_2003: 13.6s nce=[23.0, 23.0]
+[18:42:39] scored C_1001: 12.9s nce=[23.0, 23.0]
+[18:42:54] scored prod_1002: 14.9s nce=[23.0, 23.0]
+[18:43:05] scored P_1002_2001: 11.4s nce=[23.0, 23.0]
+[18:43:19] scored P_1002_2002: 14.0s nce=[23.0, 23.0]
+[18:43:30] scored P_1002_2003: 11.1s nce=[23.0, 23.0]
+[18:43:42] scored C_1002: 11.0s nce=[23.0, 23.0]
+[18:43:56] scored prod_1003: 14.6s nce=[23.0, 23.0]
+[18:44:09] scored P_1003_2001: 12.7s nce=[23.0, 23.0]
+[18:44:22] scored P_1003_2002: 12.9s nce=[23.0, 23.0]
+[18:44:35] scored P_1003_2003: 12.7s nce=[23.0, 23.0]
+[18:44:47] scored C_1003: 12.4s nce=[23.0, 23.0]
+[18:45:01] scored prod_1004: 13.6s nce=[23.0, 23.0]
+[18:45:14] scored P_1004_2001: 12.9s nce=[23.0, 23.0]
+[18:45:25] scored P_1004_2002: 10.9s nce=[23.0, 23.0]
+[18:45:35] scored P_1004_2003: 10.6s nce=[23.0, 23.0]
+[18:45:47] scored C_1004: 11.7s nce=[23.0, 23.0]
+[18:45:58] scored prod_1005: 11.6s nce=[23.0, 23.0]
+[18:46:10] scored P_1005_2001: 11.5s nce=[23.0, 23.0]
+[18:46:21] scored P_1005_2002: 10.7s nce=[23.0, 23.0]
+[18:46:32] scored P_1005_2003: 11.1s nce=[23.0, 23.0]
+[18:46:42] scored C_1005: 10.5s nce=[23.0, 23.0]
+[18:46:42] mzML b1906_293T_proteinID_01A_QE3_122212: {'reused_from': '/tmp/vulcan_m1e/mzml'}
+[18:46:42] mzML b1937_293T_proteinID_01B_QE3_122212: {'reused_from': '/tmp/vulcan_m1e/mzml'}
+[18:48:08] sage prod_1001 done
+[18:49:10] sage P_1001_2001 done
+[18:50:15] sage P_1001_2002 done
+[18:51:18] sage P_1001_2003 done
+[18:52:26] sage C_1001 done
+[18:53:17] sage prod_1002 done
+[18:54:18] sage P_1002_2001 done
+[18:55:16] sage P_1002_2002 done
+[18:56:15] sage P_1002_2003 done
+[18:57:14] sage C_1002 done
+[18:57:54] sage prod_1003 done
+[18:58:55] sage P_1003_2001 done
+[18:59:55] sage P_1003_2002 done
+[19:01:02] sage P_1003_2003 done
+[19:02:02] sage C_1003 done
+[19:02:45] sage prod_1004 done
+[19:03:58] sage P_1004_2001 done
+[19:05:45] sage P_1004_2002 done
+[19:06:47] sage P_1004_2003 done
+[19:08:30] sage C_1004 done
+[19:10:02] sage prod_1005 done
+[19:12:05] sage P_1005_2001 done
+[19:13:31] sage P_1005_2002 done
+[19:14:47] sage P_1005_2003 done
+[19:16:01] sage C_1005 done
+[19:17:15] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/prod_1001: 72958 PSMs, unmapped 0
+[19:17:43] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1001_2001: 75613 PSMs, unmapped 0
+[19:18:20] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1001_2002: 75628 PSMs, unmapped 0
+[19:18:49] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1001_2003: 75521 PSMs, unmapped 0
+[19:19:17] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/C_1001: 75600 PSMs, unmapped 0
+[19:19:33] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/prod_1002: 73018 PSMs, unmapped 0
+[19:20:03] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1002_2001: 75667 PSMs, unmapped 0
+[19:20:27] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1002_2002: 75627 PSMs, unmapped 0
+[19:20:51] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1002_2003: 75535 PSMs, unmapped 0
+[19:21:16] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/C_1002: 75599 PSMs, unmapped 0
+[19:21:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/prod_1003: 73026 PSMs, unmapped 0
+[19:21:55] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1003_2001: 75661 PSMs, unmapped 0
+[19:22:19] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1003_2002: 75630 PSMs, unmapped 0
+[19:22:42] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1003_2003: 75638 PSMs, unmapped 0
+[19:23:06] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/C_1003: 75593 PSMs, unmapped 0
+[19:23:23] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/prod_1004: 73019 PSMs, unmapped 0
+[19:23:47] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1004_2001: 75640 PSMs, unmapped 0
+[19:24:10] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1004_2002: 75607 PSMs, unmapped 0
+[19:24:33] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1004_2003: 75624 PSMs, unmapped 0
+[19:24:57] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/C_1004: 75633 PSMs, unmapped 0
+[19:25:14] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/prod_1005: 72974 PSMs, unmapped 0
+[19:25:41] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1005_2001: 75627 PSMs, unmapped 0
+[19:26:06] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1005_2002: 75605 PSMs, unmapped 0
+[19:26:32] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/P_1005_2003: 75558 PSMs, unmapped 0
+[19:26:58] sage+pred PIN $VULCAN_SCRATCH/vulcan_t1/D0/cmp/sage_pred_mokapot/C_1005: 75634 PSMs, unmapped 0
+[19:36:40] t1_driver D0 sha=4cadf634986d dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=results/2026-10-27_T1driver_dryrun/D0
+[19:36:41] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[19:36:41] mzML b1906_293T_proteinID_01A_QE3_122212: {'cached': True}
+[19:36:41] mzML b1937_293T_proteinID_01B_QE3_122212: {'cached': True}
+[19:36:41] sage prod_1001 done
+[19:36:41] sage P_1001_2001 done
+[19:36:41] sage P_1001_2002 done
+[19:36:41] sage P_1001_2003 done
+[19:36:41] sage C_1001 done
+[19:36:41] sage prod_1002 done
+[19:36:41] sage P_1002_2001 done
+[19:36:41] sage P_1002_2002 done
+[19:36:41] sage P_1002_2003 done
+[19:36:41] sage C_1002 done
+[19:36:41] sage prod_1003 done
+[19:36:41] sage P_1003_2001 done
+[19:36:41] sage P_1003_2002 done
+[19:36:41] sage P_1003_2003 done
+[19:36:41] sage C_1003 done
+[19:36:41] sage prod_1004 done
+[19:36:41] sage P_1004_2001 done
+[19:36:41] sage P_1004_2002 done
+[19:36:41] sage P_1004_2003 done
+[19:36:41] sage C_1004 done
+[19:36:41] sage prod_1005 done
+[19:36:41] sage P_1005_2001 done
+[19:36:41] sage P_1005_2002 done
+[19:36:42] sage P_1005_2003 done
+[19:36:42] sage C_1005 done
+[19:41:05] sage RT check: {'n_confident': 43967, 'frac_predicted_rt_nonzero': 0.9823871268400998, 'sd_predicted_rt': 0.2359752486561844, 'median_abs_delta_rt_model_confident': 0.05510366, 'spearman_aligned_vs_predicted_confident': 0.9210243368620381, 'pin_has_rt_features': True}
+[19:41:07] evaluate vulcan
+[19:58:24] evaluate sage
+[20:02:47] evaluate sage+mokapot
+[20:07:02] evaluate sage+pred+mokapot
+[20:11:22] evaluate comet+mokapot
+[20:17:27] driver total 2452s
+[20:17:27] wrote metrics.json and tables.md
+[20:17:56] t1_driver D0 sha=2c658b1e2d67 dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D0 out=results/2026-10-27_T1driver_dryrun/D0
+[20:17:56] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[20:18:01] evaluate vulcan
+[20:43:55] evaluate sage
+[20:48:33] evaluate sage+mokapot
+[20:53:32] evaluate sage+pred+mokapot
+[20:58:19] evaluate comet+mokapot
+[21:05:28] driver total 2858s
+[21:05:28] wrote metrics.json and tables.md

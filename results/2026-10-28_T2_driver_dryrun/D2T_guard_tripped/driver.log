@@ -1,0 +1,62 @@
+t2: start D2T
+t2: stage preflight start
+t2: stage preflight done
+t2: stage convert start
+t2: run 1/8 convert done
+t2: run 2/8 convert done
+t2: run 3/8 convert done
+t2: run 4/8 convert done
+t2: run 5/8 convert done
+t2: run 6/8 convert done
+t2: run 7/8 convert done
+t2: run 8/8 convert done
+t2: stage convert done
+t2: stage index start
+cgroup memory headroom 179.566374912 GB after 0 s wait
+guard: abort (cgroup headroom 5.014474752 GB, scratch free 787.2 GB)
+t2: stage index done
+t2: stage search start
+gpu free 79.3 GB after 0 s wait
+t2: run 1/8 search done
+t2: run 2/8 search done
+t2: run 3/8 search done
+t2: run 4/8 search done
+t2: run 5/8 search done
+t2: run 6/8 search done
+t2: run 7/8 search done
+t2: run 8/8 search done
+t2: stage search done
+t2: stage e8 start
+PXD000138 ours_A done
+PXD000138 pyascore_A done
+PXD000138 ours_L done
+PXD000138 pyascore_L done
+PXD000138 repeat 1/10 done
+PXD000138 repeat 2/10 done
+PXD000138 repeat 3/10 done
+PXD000138 repeat 4/10 done
+PXD000138 repeat 5/10 done
+PXD000138 repeat 6/10 done
+PXD000138 repeat 7/10 done
+PXD000138 repeat 8/10 done
+PXD000138 repeat 9/10 done
+PXD000138 repeat 10/10 done
+PXD009449 ours_A done
+PXD009449 pyascore_A done
+PXD009449 ours_L done
+PXD009449 pyascore_L done
+PXD009449 repeat 1/10 done
+PXD009449 repeat 2/10 done
+PXD009449 repeat 3/10 done
+PXD009449 repeat 4/10 done
+PXD009449 repeat 5/10 done
+PXD009449 repeat 6/10 done
+PXD009449 repeat 7/10 done
+PXD009449 repeat 8/10 done
+PXD009449 repeat 9/10 done
+PXD009449 repeat 10/10 done
+t2: stage e8 done
+t2: stage claims start
+t2: stage claims done
+t2: done D2T
+t2: exit 0

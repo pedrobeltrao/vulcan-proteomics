@@ -1,0 +1,162 @@
+{
+ "what": "A5.6 / A5.11.3.3 dev equivalence of bench/t5_armM.py (--mode dev) on D7 (LM2486/2487/2490), entrapment seeds 2001-2003, decoy seed 1001, db recipe dev_foreign, targets = the dev yeast+contaminants+P37840 FASTA (sha256 15716a2c...), stores = the dev stores /tmp/vulcan_m3/store_null",
+ "references": {
+  "v2_sep_raw_strata": "results/2026-10-28_A3_preconditions/armM.json",
+  "v1": "results/2026-10-27_M3e_hardening/armM.json"
+ },
+ "db_rebuilt_byte_identical": {
+  "foreign_lists_2001_2003": true,
+  "armC_peptides_tsv": true,
+  "index_2001_peptidoforms_and_labels_arrow": true,
+  "content_hash_2001": "0d85ff81268ae0b7"
+ },
+ "rows": [
+  {
+   "list": "v2_sep/overall/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/overall/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/overall/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:1/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:1/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:1/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:2/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:2/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:2/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:>=3/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:>=3/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v2_sep/raw:>=3/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v2/overall/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v2/overall/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v2/overall/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v1/overall/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v1/overall/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "v1/overall/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v1/overall/peptidoform/0.001",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v1/overall/peptidoform/0.01",
+   "identical_fields": true,
+   "identical_counts": true
+  },
+  {
+   "list": "hyperscore_v1/overall/peptidoform/0.05",
+   "identical_fields": true,
+   "identical_counts": true
+  }
+ ],
+ "all_identical": true,
+ "single_vs_two_bootstrap_calls_identical": true,
+ "v1_path": "bench/t1/ours.py Scorer (T1 path), not scripts/m3/features.py: identical on D7",
+ "merge_maps": {
+  "M_1001_2001": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "M_1001_2002": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  },
+  "M_1001_2003": {
+   "1": [
+    1
+   ],
+   "2": [
+    2
+   ],
+   "3": [
+    3
+   ]
+  }
+ },
+ "wall_s_first_run": 1102.8745532035828,
+ "wall_s_rerun_eval_parallel": 93.11563849449158,
+ "armM_json_sha256": "f8d4df58a903a25077722359a3cdcc015315dfe2ac2d886fabffc9b7fe9b3712",
+ "git_sha_of_run": "80512c888718acb71124467c98c297cfbb29c9c6"
+}

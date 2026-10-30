@@ -1,0 +1,48 @@
+{
+ "sources": [
+  {
+   "dataset": "D0",
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "hypotheses_sha256": "85907865e33714e163459e06e18c32a0fb14e0ab90847a3b332f9a003aa527d6",
+   "store_sha256": "f9993b0befd5ecf9137ae00159c1117bb5c06dd7add0837cf2027bf00dc588eb",
+   "n_spectra": 41820,
+   "n_secondary_groups": 43654
+  },
+  {
+   "dataset": "D0",
+   "run": "b1937_293T_proteinID_01B_QE3_122212",
+   "hypotheses_sha256": "e3c930477db91b0fa307eb161d275a5e23d94affc04bf4bb61eac4a1dc5b46ab",
+   "store_sha256": "50d13cbc82f021ed9217c920f5bb8adb034a44cb367cf92a6c98b7c31f5c5973",
+   "n_spectra": 46816,
+   "n_secondary_groups": 47727
+  },
+  {
+   "dataset": "D1",
+   "run": "Velos005137",
+   "hypotheses_sha256": "2727475488c82c2e68fdb971753456c96d34894b7d125d8712afbb1cf24f4920",
+   "store_sha256": "e85ddc7dc8fc15219d6cba95faaf6c174128e1e3385959bdcf434d812556ae98",
+   "n_spectra": 15374,
+   "n_secondary_groups": 8742
+  }
+ ],
+ "n_rows": 100123,
+ "sha256": "c53f6f0d367cf763ba7c7a78d5088c0bd4ba574c0b688580ff78dc5b36c9b1d0",
+ "summary": {
+  "delta_mz_quantiles_1_5_25_50_75_95_99": [
+   -2.2911,
+   -1.5097,
+   -0.8616,
+   -0.1961,
+   0.4542,
+   0.9789,
+   1.9759
+  ],
+  "charge_counts": {
+   "2": 51769,
+   "3": 36205,
+   "4": 9734,
+   "5": 1783,
+   "6": 632
+  }
+ }
+}

@@ -1,0 +1,7 @@
+[05:52:46] t1_driver D8h sha=7865f8e5d28d dirty_tracked=True work=$VULCAN_SCRATCH/vulcan_t1/D8h out=results/2026-10-28_E7b_fair_speed/t1/D8h
+[05:52:46] db verify: {'sequence_in_two_families_or_decoy_sets': 0, 'contains_I': 0, 'partner_not_cterm_fixed_shuffle': 0}
+[05:52:48] evaluate vulcan_v2_sep
+[06:33:08] evaluate sage_chim2
+[07:07:55] evaluate sage_chim2+pred+mokapot
+[07:43:11] driver total 6626s
+[07:43:11] wrote metrics.json and tables.md

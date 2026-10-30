@@ -1,0 +1,2 @@
+sage_chim2 {"rank_1": {"0.01": [0.0093, "supported", 61929], "0.05": [0.0437, "supported", 69398]}, "rank_ge2": {"0.01": [0.0564, "not-evaluable", 828], "0.05": [0.2403, "violated", 1894]}}
+sage_chim2+pred+mokapot {"rank_1": {"0.01": [0.008, "supported", 69492], "0.05": [0.0359, "supported", 72379]}, "rank_ge2": {"0.01": [0.0534, "violated", 2631], "0.05": [0.2598, "violated", 4088]}}

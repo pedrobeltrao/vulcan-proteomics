@@ -1,0 +1,8 @@
+{
+ "amendment": "A6",
+ "status": "not tagged",
+ "step5_commit": null,
+ "gate_output": null,
+ "gate_output_sha256": null,
+ "note": "A6.8.2 tag-feasibility rule (13:27 CET): throughput ~116 admitted runs/h gives N~145 by 16:30; P(v1 minimum within N)=0.63 (<0.8) at full yields, 0.003 (<0.5) at half; also a6_stats acceptance item (iii) failed (G2-original percentile bootstrap coverage 0.923-0.944 at J=37). No HN1 candidate listed; pool not burnt. PI decision D34."
+}

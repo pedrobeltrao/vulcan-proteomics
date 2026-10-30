@@ -1,0 +1,67 @@
+{
+ "root": "$VULCAN_ROOT/data/cache/koina_pinned",
+ "snapshot_id": "416ea7bf952a342697dbf740ec5e839809c5fced69e0d564dcd9977f1dc831f4",
+ "tables": {
+  "Prosit_2019_irt|frag=na|ce=na|z=na": {
+   "n": 7379162,
+   "content_sha256": "4f5fe5bfd8fd19754a5d44818f0f6363fa89ecaec16e5e7ee7bafd3223c99dd6",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=2": {
+   "n": 4462101,
+   "content_sha256": "32f1e2af01572db20929b47440b23c48a8faa90889303023c55100e03bbe648a",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=3": {
+   "n": 3037840,
+   "content_sha256": "aec120610f4c992bf0cf256369ebd4b1705322e5630eb2a7db0ade92741b73d1",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=4": {
+   "n": 651291,
+   "content_sha256": "7d3acb2201ec08a62b76a1fe7a28c28b8188fef42113a9603c49ae3e9dfe5d43",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=5": {
+   "n": 84555,
+   "content_sha256": "2c2b2836797f281e68ad55d4ea6387b15905b2f9d75cd49d3f8eeb62e6d60140",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_CID|frag=na|ce=na|z=6": {
+   "n": 15476,
+   "content_sha256": "0969499e002fa297c6d75889d69f7c79e1d82646c76057733e6888fa8e8010fa",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=2": {
+   "n": 1215901,
+   "content_sha256": "6b6cca58cbcb243fbadbd4e5d895b412e6f76846a5224c89b367caaf29acdbf0",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=3": {
+   "n": 1129533,
+   "content_sha256": "7878892f8280840c25ec2137627892fcc43c894b335fd808b23cee3369a9b10a",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=4": {
+   "n": 321658,
+   "content_sha256": "cef7a08ddb085a093ad16a2cd6e5b8036091f2e33e27c689aa5fcaa09d96e55a",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=5": {
+   "n": 49389,
+   "content_sha256": "6f89639a544951f332c031c8c17666bbcc9f5ea9ecc740e18354b289945dce2e",
+   "content_ok": true
+  },
+  "Prosit_2020_intensity_TMT|frag=CID|ce=35.0|z=6": {
+   "n": 9216,
+   "content_sha256": "e381434dc3eb8098049b8b636514e702918bf9675af28558a4f85e17fcad28d8",
+   "content_ok": true
+  },
+  "Prosit_2020_irt_TMT|frag=na|ce=na|z=na": {
+   "n": 2551687,
+   "content_sha256": "b2348f413542de3f86dd735c9f318ea107aaeaa54d14cd36bdb9d4bbbcf9d65b",
+   "content_ok": true
+  }
+ },
+ "all_ok": true
+}

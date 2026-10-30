@@ -1,0 +1,7531 @@
+{
+ "n_runs": 50,
+ "workers": 16,
+ "makespan_s": 81.62083840370178,
+ "runs_per_hour": 2205.319174862046,
+ "runs_per_hour_steady": 33201.04050324292,
+ "ms2_per_s": 17189.07851767876,
+ "n_ms2": 1402987,
+ "time_to_first_result_s": 3.1014339923858643,
+ "first_ingest_start_s": 0.6167604923248291,
+ "setup": {
+  "torch_import_s": 1.4818175132386386,
+  "cuda_init_s": 0.2775338739156723,
+  "l1_load_s": 0.3274433189071715,
+  "gpu_index_build_s": 0.7207345827482641,
+  "setup_total_s": 2.807618070859462,
+  "gpu_index_bytes": 1503928856,
+  "n_postings": 175429652,
+  "n_rows": 7058668,
+  "setup_done_at_s": 2.872140407562256
+ },
+ "core_s": {
+  "main_process": 13.299837,
+  "decode_workers": 154.56484,
+  "total": 167.864677,
+  "per_run": 3.35729354,
+  "per_1e5_ms2": 11.964806302553052,
+  "decode_jobs_sum": 131.756549,
+  "ms1_jobs_sum": 0.0,
+  "decode_worker_fixed": 22.808290999999997
+ },
+ "ms1_share_of_worker_busy": 0.0,
+ "gpu_s": {
+  "events_total": 4.4979666813611985,
+  "per_run": 0.08995933362722397,
+  "util_mean_pct_after_setup": 2.903722721437741,
+  "util_samples": 798
+ },
+ "host_busy_cores_mean": 6.940484848484847,
+ "stage_busy_fraction": {
+  "decode_pool": 0.22218181490665687,
+  "loader": 0.02695593174029938,
+  "gpu_stage_wall": 0.056037216798800527,
+  "gpu_kernels_events": 0.05510806761275807,
+  "writer": 0.014737033507856453
+ },
+ "bottleneck": "decode_pool",
+ "per_run_median": {
+  "ingest_wall_s": 1.5477628707885742,
+  "ingest_core_s": 1.6294460000000006,
+  "ms1_wall_s": 0.0,
+  "ms1_core_s": 0.0,
+  "load_s": 0.05380392074584961,
+  "search_wall_s": 0.0748680830001831,
+  "gpu_ms": 74.28435230255127,
+  "write_s": 0.03445327281951904
+ },
+ "per_run_sum": {
+  "ingest_wall_s": 290.1546561717987,
+  "ingest_core_s": 131.756549,
+  "ms1_wall_s": 0.0,
+  "ms1_core_s": 0.0,
+  "load_s": 4.400331497192383,
+  "search_wall_s": 4.573804616928101,
+  "gpu_s": 4.4979666813611985,
+  "write_s": 2.40569806098938
+ },
+ "runs": [
+  {
+   "run": "02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 958963,
+   "t_start": 0.6441764831542969,
+   "t_end": 2.821171522140503,
+   "wall_s": 2.176995038986206,
+   "core_s": 2.937806,
+   "n_spectra": 52590,
+   "n_ms2": 47913,
+   "n_peaks": 8032201,
+   "store_bytes": 74784354,
+   "raw_bytes": 552477520,
+   "timing_s": {
+    "prefetch": 0.07219415158033371,
+    "runtime_load": 4.6370550990104675e-06,
+    "decode": 1.7326350146904588,
+    "arrow_write": 0.24708766490221024,
+    "close": 0.0004170536994934082
+   },
+   "cpu_s": {
+    "prefetch": 0.06982555400000001,
+    "runtime_load": 5.016999999996052e-06,
+    "decode": 2.193056959,
+    "arrow_write": 0.32474171499999915
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    2.9025962352752686,
+    2.95983624458313
+   ],
+   "gpu_wait_s": 0.0670161247253418,
+   "search_t": [
+    2.959975481033325,
+    3.1014339923858643
+   ],
+   "search_wall_s": 0.14145851135253906,
+   "gpu_ms": {
+    "k0": 53.78611373901367,
+    "hyp": 33.4101448059082,
+    "k1": 11.531231880187988,
+    "topk": 10.55241584777832,
+    "k2": 4.208640098571777,
+    "features": 27.329471588134766
+   },
+   "h2d_bytes": 33824824,
+   "n_psms": 19744,
+   "n_searched": 43381,
+   "write_t": [
+    3.101787567138672,
+    3.1387248039245605
+   ]
+  },
+  {
+   "run": "02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GA2_3990_09_PTM_TrainKit_Kmod_Dimethyl_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 958958,
+   "t_start": 0.6443848609924316,
+   "t_end": 3.4908952713012695,
+   "wall_s": 2.846510410308838,
+   "core_s": 3.635225,
+   "n_spectra": 52590,
+   "n_ms2": 47913,
+   "n_peaks": 8032201,
+   "store_bytes": 74784370,
+   "raw_bytes": 552477520,
+   "timing_s": {
+    "prefetch": 0.1680955602787435,
+    "runtime_load": 1.3680662959814072e-05,
+    "decode": 2.274614218622446,
+    "arrow_write": 0.2751164250075817,
+    "close": 0.0005911840125918388
+   },
+   "cpu_s": {
+    "prefetch": 0.16746981299999997,
+    "runtime_load": 1.4061000000009649e-05,
+    "decode": 2.827024328999999,
+    "arrow_write": 0.32066893599999857
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    3.4920685291290283,
+    3.5251729488372803
+   ],
+   "gpu_wait_s": 0.42340970039367676,
+   "search_t": [
+    3.5253090858459473,
+    3.62088942527771
+   ],
+   "search_wall_s": 0.0955803394317627,
+   "gpu_ms": {
+    "k0": 9.789407730102539,
+    "hyp": 35.5645751953125,
+    "k1": 21.40003204345703,
+    "topk": 8.311391830444336,
+    "k2": 4.084735870361328,
+    "features": 15.634367942810059
+   },
+   "h2d_bytes": 33824824,
+   "n_psms": 19744,
+   "n_searched": 43381,
+   "write_t": [
+    3.621089220046997,
+    3.655620813369751
+   ]
+  },
+  {
+   "run": "XLpeplib_Beveridge_QEx-HFX_DSS_R1",
+   "raw": "data/raw/PXD014337/XLpeplib_Beveridge_QEx-HFX_DSS_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/XLpeplib_Beveridge_QEx-HFX_DSS_R1.vspec.arrow",
+   "pid": 958952,
+   "t_start": 0.6423735618591309,
+   "t_end": 3.5511181354522705,
+   "wall_s": 2.9087445735931396,
+   "core_s": 3.5875589999999997,
+   "n_spectra": 30115,
+   "n_ms2": 5502,
+   "n_peaks": 17359900,
+   "store_bytes": 144574098,
+   "raw_bytes": 960697429,
+   "timing_s": {
+    "prefetch": 0.2547248820774257,
+    "runtime_load": 8.692964911460876e-06,
+    "decode": 2.2080019214190543,
+    "arrow_write": 0.30090663814917207,
+    "close": 0.0005266577936708927
+   },
+   "cpu_s": {
+    "prefetch": 0.253226754,
+    "runtime_load": 8.993999999984403e-06,
+    "decode": 2.6557863409999998,
+    "arrow_write": 0.4076374890000001
+   },
+   "instrument": "Q Exactive HF-X Orbitrap",
+   "load_t": [
+    3.551945686340332,
+    3.5920400619506836
+   ],
+   "gpu_wait_s": 1.2874603271484375e-05,
+   "search_t": [
+    3.620971202850342,
+    3.645589590072632
+   ],
+   "search_wall_s": 0.02461838722229004,
+   "gpu_ms": {
+    "k0": 3.6258881092071533,
+    "hyp": 10.053888320922852,
+    "k1": 2.4588799476623535,
+    "topk": 1.9952319860458374,
+    "k2": 1.5411200523376465,
+    "features": 4.543295860290527
+   },
+   "h2d_bytes": 7867672,
+   "n_psms": 4142,
+   "n_searched": 5502,
+   "write_t": [
+    3.6459388732910156,
+    3.6871306896209717
+   ]
+  },
+  {
+   "run": "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 958959,
+   "t_start": 0.6438970565795898,
+   "t_end": 3.558966636657715,
+   "wall_s": 2.915069580078125,
+   "core_s": 3.6671159999999996,
+   "n_spectra": 58537,
+   "n_ms2": 55131,
+   "n_peaks": 11119548,
+   "store_bytes": 100711290,
+   "raw_bytes": 636373246,
+   "timing_s": {
+    "prefetch": 0.1728082220070064,
+    "runtime_load": 9.833835065364838e-06,
+    "decode": 2.3304934720508754,
+    "arrow_write": 0.2751981080509722,
+    "close": 0.0006798268295824528
+   },
+   "cpu_s": {
+    "prefetch": 0.17285234000000005,
+    "runtime_load": 1.0284999999998767e-05,
+    "decode": 2.9386981109999994,
+    "arrow_write": 0.30331826799999906
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    3.560270309448242,
+    3.653834819793701
+   ],
+   "gpu_wait_s": 0.007865190505981445,
+   "search_t": [
+    3.6539146900177,
+    3.734452486038208
+   ],
+   "search_wall_s": 0.08053779602050781,
+   "gpu_ms": {
+    "k0": 13.979231834411621,
+    "hyp": 31.86115264892578,
+    "k1": 9.063712120056152,
+    "topk": 5.60975980758667,
+    "k2": 3.1938560009002686,
+    "features": 16.240415573120117
+   },
+   "h2d_bytes": 54317240,
+   "n_psms": 22832,
+   "n_searched": 53249,
+   "write_t": [
+    3.7345781326293945,
+    3.775512456893921
+   ]
+  },
+  {
+   "run": "02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_BA4_4087_1_PTM_TrainKit_Ymod_Phospho_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 958964,
+   "t_start": 0.64371657371521,
+   "t_end": 3.970076322555542,
+   "wall_s": 3.326359748840332,
+   "core_s": 3.9205379999999996,
+   "n_spectra": 58537,
+   "n_ms2": 55131,
+   "n_peaks": 11119548,
+   "store_bytes": 100711274,
+   "raw_bytes": 636373246,
+   "timing_s": {
+    "prefetch": 0.1779353548772633,
+    "runtime_load": 9.124167263507843e-06,
+    "decode": 2.6447065197862685,
+    "arrow_write": 0.28360545774921775,
+    "close": 0.0005282806232571602
+   },
+   "cpu_s": {
+    "prefetch": 0.177806807,
+    "runtime_load": 9.253999999958573e-06,
+    "decode": 3.2159939149999994,
+    "arrow_write": 0.33258313699999964
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    3.9712436199188232,
+    4.021611452102661
+   ],
+   "gpu_wait_s": 0.2872443199157715,
+   "search_t": [
+    4.021758079528809,
+    4.102809429168701
+   ],
+   "search_wall_s": 0.08105134963989258,
+   "gpu_ms": {
+    "k0": 13.074239730834961,
+    "hyp": 31.089344024658203,
+    "k1": 9.044768333435059,
+    "topk": 5.62278413772583,
+    "k2": 3.190783977508545,
+    "features": 18.310047149658203
+   },
+   "h2d_bytes": 54317240,
+   "n_psms": 22832,
+   "n_searched": 53249,
+   "write_t": [
+    4.102931022644043,
+    4.148084402084351
+   ]
+  },
+  {
+   "run": "02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 958963,
+   "t_start": 2.8218770027160645,
+   "t_end": 4.145540237426758,
+   "wall_s": 1.3236632347106934,
+   "core_s": 1.4821719999999994,
+   "n_spectra": 55924,
+   "n_ms2": 51861,
+   "n_peaks": 7339496,
+   "store_bytes": 69929154,
+   "raw_bytes": 521663368,
+   "timing_s": {
+    "prefetch": 0.10419056192040443,
+    "runtime_load": 4.225876182317734e-06,
+    "decode": 1.1122292862273753,
+    "arrow_write": 0.061081983149051666,
+    "close": 0.000521521084010601
+   },
+   "cpu_s": {
+    "prefetch": 0.10245244600000003,
+    "runtime_load": 4.2069999999228e-06,
+    "decode": 1.2526923689999996,
+    "arrow_write": 0.0655031399999988
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.146459341049194,
+    4.177183389663696
+   ],
+   "gpu_wait_s": 0.07442188262939453,
+   "search_t": [
+    4.177302837371826,
+    4.2511351108551025
+   ],
+   "search_wall_s": 0.07383227348327637,
+   "gpu_ms": {
+    "k0": 8.682527542114258,
+    "hyp": 27.721023559570312,
+    "k1": 8.310751914978027,
+    "topk": 8.921088218688965,
+    "k2": 4.51584005355835,
+    "features": 15.013152122497559
+   },
+   "h2d_bytes": 33765728,
+   "n_psms": 24134,
+   "n_searched": 44734,
+   "write_t": [
+    4.251298427581787,
+    4.2887091636657715
+   ]
+  },
+  {
+   "run": "02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GC2_3990_11_PTM_TrainKit_Kmod_Formyl_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 958958,
+   "t_start": 3.4912614822387695,
+   "t_end": 4.62140154838562,
+   "wall_s": 1.1301400661468506,
+   "core_s": 1.3288799999999998,
+   "n_spectra": 55924,
+   "n_ms2": 51861,
+   "n_peaks": 7339496,
+   "store_bytes": 69929170,
+   "raw_bytes": 521663368,
+   "timing_s": {
+    "prefetch": 0.06821599788963795,
+    "runtime_load": 6.659887731075287e-06,
+    "decode": 0.9554141699336469,
+    "arrow_write": 0.055419216863811016,
+    "close": 0.00043455976992845535
+   },
+   "cpu_s": {
+    "prefetch": 0.06792568899999996,
+    "runtime_load": 7.021000000051458e-06,
+    "decode": 1.1086404710000002,
+    "arrow_write": 0.0596726289999987
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.622721910476685,
+    4.660175323486328
+   ],
+   "gpu_wait_s": 0.40908265113830566,
+   "search_t": [
+    4.660276651382446,
+    4.735322952270508
+   ],
+   "search_wall_s": 0.07504630088806152,
+   "gpu_ms": {
+    "k0": 8.88105583190918,
+    "hyp": 28.457759857177734,
+    "k1": 8.67251205444336,
+    "topk": 8.942239761352539,
+    "k2": 4.511744022369385,
+    "features": 14.84000015258789
+   },
+   "h2d_bytes": 33765728,
+   "n_psms": 24134,
+   "n_searched": 44734,
+   "write_t": [
+    4.7354209423065186,
+    4.7709643840789795
+   ]
+  },
+  {
+   "run": "02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1_r01",
+   "raw": "data/raw/PXD009449/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1_r01.vspec.arrow",
+   "pid": 958959,
+   "t_start": 3.5593254566192627,
+   "t_end": 4.776873350143433,
+   "wall_s": 1.21754789352417,
+   "core_s": 1.4993309999999997,
+   "n_spectra": 54408,
+   "n_ms2": 50088,
+   "n_peaks": 6957605,
+   "store_bytes": 66561426,
+   "raw_bytes": 518683564,
+   "timing_s": {
+    "prefetch": 0.09144291561096907,
+    "runtime_load": 7.120892405509949e-06,
+    "decode": 0.9717256375588477,
+    "arrow_write": 0.04507666453719139,
+    "close": 0.0003793472424149513
+   },
+   "cpu_s": {
+    "prefetch": 0.09120260700000049,
+    "runtime_load": 6.499999999576289e-06,
+    "decode": 1.127663279,
+    "arrow_write": 0.050731329000000436
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.7780375480651855,
+    4.818984031677246
+   ],
+   "gpu_wait_s": 0.08376288414001465,
+   "search_t": [
+    4.819145917892456,
+    4.895095586776733
+   ],
+   "search_wall_s": 0.07594966888427734,
+   "gpu_ms": {
+    "k0": 15.813152313232422,
+    "hyp": 27.289888381958008,
+    "k1": 7.313727855682373,
+    "topk": 6.6735358238220215,
+    "k2": 3.3761279582977295,
+    "features": 14.705599784851074
+   },
+   "h2d_bytes": 29302672,
+   "n_psms": 18807,
+   "n_searched": 42135,
+   "write_t": [
+    4.895294427871704,
+    4.9313108921051025
+   ]
+  },
+  {
+   "run": "02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1",
+   "raw": "data/raw/PXD009449/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/02330a_GE1_3990_05_PTM_TrainKit_Rmod_Citrullin_200fmol_3xHCD_R1.vspec.arrow",
+   "pid": 958952,
+   "t_start": 3.55180025100708,
+   "t_end": 4.8680689334869385,
+   "wall_s": 1.3162686824798584,
+   "core_s": 1.593776,
+   "n_spectra": 54408,
+   "n_ms2": 50088,
+   "n_peaks": 6957605,
+   "store_bytes": 66561410,
+   "raw_bytes": 518683564,
+   "timing_s": {
+    "prefetch": 0.08864373713731766,
+    "runtime_load": 4.485715180635452e-06,
+    "decode": 1.0977875236421824,
+    "arrow_write": 0.052588862366974354,
+    "close": 0.0005140188150107861
+   },
+   "cpu_s": {
+    "prefetch": 0.08784214699999993,
+    "runtime_load": 4.796999999889806e-06,
+    "decode": 1.2441404300000007,
+    "arrow_write": 0.054912683000001294
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    4.868884325027466,
+    4.907212495803833
+   ],
+   "gpu_wait_s": 0.012094974517822266,
+   "search_t": [
+    4.907287359237671,
+    4.9743332862854
+   ],
+   "search_wall_s": 0.06704592704772949,
+   "gpu_ms": {
+    "k0": 8.131199836730957,
+    "hyp": 26.564512252807617,
+    "k1": 7.389440059661865,
+    "topk": 6.640160083770752,
+    "k2": 3.3607680797576904,
+    "features": 14.367103576660156
+   },
+   "h2d_bytes": 29302672,
+   "n_psms": 18807,
+   "n_searched": 42135,
+   "write_t": [
+    4.974442958831787,
+    5.009061813354492
+   ]
+  },
+  {
+   "run": "LM2486_DDA",
+   "raw": "data/raw/PXD031616/LM2486_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2486_DDA.vspec.arrow",
+   "pid": 958961,
+   "t_start": 0.6418259143829346,
+   "t_end": 5.16405725479126,
+   "wall_s": 4.522231340408325,
+   "core_s": 5.31344,
+   "n_spectra": 74286,
+   "n_ms2": 61467,
+   "n_peaks": 38059849,
+   "store_bytes": 319219154,
+   "raw_bytes": 1279637792,
+   "timing_s": {
+    "prefetch": 0.3403513040393591,
+    "runtime_load": 7.111113518476486e-06,
+    "decode": 3.580585147254169,
+    "arrow_write": 0.4185031773522496,
+    "close": 0.0005785860121250153
+   },
+   "cpu_s": {
+    "prefetch": 0.340010406,
+    "runtime_load": 7.230999999996435e-06,
+    "decode": 4.183571502999998,
+    "arrow_write": 0.5103536109999984
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    5.1653382778167725,
+    5.382360458374023
+   ],
+   "gpu_wait_s": 0.4082987308502197,
+   "search_t": [
+    5.382691860198975,
+    5.663840055465698
+   ],
+   "search_wall_s": 0.28114819526672363,
+   "gpu_ms": {
+    "k0": 46.527870178222656,
+    "hyp": 119.95683288574219,
+    "k1": 32.32547378540039,
+    "topk": 35.53548812866211,
+    "k2": 11.728896141052246,
+    "features": 34.05254364013672
+   },
+   "h2d_bytes": 195811880,
+   "n_psms": 48590,
+   "n_searched": 61373,
+   "write_t": [
+    5.665254831314087,
+    5.7957470417022705
+   ]
+  },
+  {
+   "run": "LM2492_DDA",
+   "raw": "data/raw/PXD031616/LM2492_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2492_DDA.vspec.arrow",
+   "pid": 958968,
+   "t_start": 0.6418039798736572,
+   "t_end": 5.335236310958862,
+   "wall_s": 4.693432331085205,
+   "core_s": 5.513515,
+   "n_spectra": 77516,
+   "n_ms2": 65929,
+   "n_peaks": 40062928,
+   "store_bytes": 335922266,
+   "raw_bytes": 1348489012,
+   "timing_s": {
+    "prefetch": 0.4441918823868036,
+    "runtime_load": 1.100730150938034e-05,
+    "decode": 3.6883168034255505,
+    "arrow_write": 0.3952648784033954,
+    "close": 0.0004665781743824482
+   },
+   "cpu_s": {
+    "prefetch": 0.44334272999999996,
+    "runtime_load": 1.1346999999939378e-05,
+    "decode": 4.293491563000001,
+    "arrow_write": 0.48534649599999824
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    5.336563587188721,
+    5.605237245559692
+   ],
+   "gpu_wait_s": 1.3589859008789062e-05,
+   "search_t": [
+    5.6650285720825195,
+    5.935000658035278
+   ],
+   "search_wall_s": 0.2699720859527588,
+   "gpu_ms": {
+    "k0": 79.6263656616211,
+    "hyp": 91.92249298095703,
+    "k1": 21.726335525512695,
+    "topk": 30.601024627685547,
+    "k2": 13.16044807434082,
+    "features": 31.945056915283203
+   },
+   "h2d_bytes": 204626400,
+   "n_psms": 47574,
+   "n_searched": 65832,
+   "write_t": [
+    5.937042236328125,
+    6.060873508453369
+   ]
+  },
+  {
+   "run": "LM2487_DDA",
+   "raw": "data/raw/PXD031616/LM2487_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2487_DDA.vspec.arrow",
+   "pid": 958967,
+   "t_start": 0.6413941383361816,
+   "t_end": 5.402021169662476,
+   "wall_s": 4.760627031326294,
+   "core_s": 5.538528,
+   "n_spectra": 78075,
+   "n_ms2": 66640,
+   "n_peaks": 40112297,
+   "store_bytes": 336432466,
+   "raw_bytes": 1355740750,
+   "timing_s": {
+    "prefetch": 0.290873606223613,
+    "runtime_load": 4.7869980335235596e-06,
+    "decode": 3.8671192680485547,
+    "arrow_write": 0.433982512447983,
+    "close": 0.0009930459782481194
+   },
+   "cpu_s": {
+    "prefetch": 0.28974539899999996,
+    "runtime_load": 4.9079999999701585e-06,
+    "decode": 4.499412622000002,
+    "arrow_write": 0.4801151080000001
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    5.40301775932312,
+    5.714601755142212
+   ],
+   "gpu_wait_s": 1.8835067749023438e-05,
+   "search_t": [
+    5.936789512634277,
+    6.211360216140747
+   ],
+   "search_wall_s": 0.2745707035064697,
+   "gpu_ms": {
+    "k0": 56.327327728271484,
+    "hyp": 123.02063751220703,
+    "k1": 19.960416793823242,
+    "topk": 20.894624710083008,
+    "k2": 12.666879653930664,
+    "features": 40.793697357177734
+   },
+   "h2d_bytes": 204606584,
+   "n_psms": 53724,
+   "n_searched": 66559,
+   "write_t": [
+    6.212697982788086,
+    6.32818078994751
+   ]
+  },
+  {
+   "run": "66",
+   "raw": "data/raw/PXD000138/66.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/66.vspec.arrow",
+   "pid": 958958,
+   "t_start": 4.621578931808472,
+   "t_end": 5.612162351608276,
+   "wall_s": 0.9905834197998047,
+   "core_s": 1.1871020000000012,
+   "n_spectra": 14890,
+   "n_ms2": 10841,
+   "n_peaks": 10051586,
+   "store_bytes": 83260138,
+   "raw_bytes": 495419462,
+   "timing_s": {
+    "prefetch": 0.09093013778328896,
+    "runtime_load": 3.5353004932403564e-06,
+    "decode": 0.7772501525469124,
+    "arrow_write": 0.050441840663552284,
+    "close": 0.000549892894923687
+   },
+   "cpu_s": {
+    "prefetch": 0.10418092000000012,
+    "runtime_load": 3.4049999992902258e-06,
+    "decode": 0.8457099219999993,
+    "arrow_write": 0.05037531599999934
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.715224981307983,
+    5.735124588012695
+   ],
+   "gpu_wait_s": 2.0503997802734375e-05,
+   "search_t": [
+    6.212541580200195,
+    6.245387315750122
+   ],
+   "search_wall_s": 0.03284573554992676,
+   "gpu_ms": {
+    "k0": 5.237088203430176,
+    "hyp": 14.041631698608398,
+    "k1": 2.869568109512329,
+    "topk": 1.96396803855896,
+    "k2": 1.1847679615020752,
+    "features": 5.4996161460876465
+   },
+   "h2d_bytes": 12051008,
+   "n_psms": 5884,
+   "n_searched": 10837,
+   "write_t": [
+    6.245584011077881,
+    6.2684972286224365
+   ]
+  },
+  {
+   "run": "LM2490_DDA",
+   "raw": "data/raw/PXD031616/LM2490_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2490_DDA.vspec.arrow",
+   "pid": 958965,
+   "t_start": 0.642186164855957,
+   "t_end": 5.463084936141968,
+   "wall_s": 4.820898771286011,
+   "core_s": 5.579217,
+   "n_spectra": 74553,
+   "n_ms2": 61778,
+   "n_peaks": 38611625,
+   "store_bytes": 323688970,
+   "raw_bytes": 1270724976,
+   "timing_s": {
+    "prefetch": 0.3435181831009686,
+    "runtime_load": 8.773058652877808e-06,
+    "decode": 3.8915031044743955,
+    "arrow_write": 0.4165978799574077,
+    "close": 0.0006594369187951088
+   },
+   "cpu_s": {
+    "prefetch": 0.34324862800000006,
+    "runtime_load": 8.652999999969602e-06,
+    "decode": 4.551479739000001,
+    "arrow_write": 0.46629940999999997
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    5.605461597442627,
+    5.877258539199829
+   ],
+   "gpu_wait_s": 1.430511474609375e-05,
+   "search_t": [
+    6.245489835739136,
+    6.466281175613403
+   ],
+   "search_wall_s": 0.22079133987426758,
+   "gpu_ms": {
+    "k0": 50.446495056152344,
+    "hyp": 91.32144165039062,
+    "k1": 21.93414306640625,
+    "topk": 19.210336685180664,
+    "k2": 11.493375778198242,
+    "features": 25.575040817260742
+   },
+   "h2d_bytes": 203272344,
+   "n_psms": 48458,
+   "n_searched": 61695,
+   "write_t": [
+    6.468273162841797,
+    6.581502914428711
+   ]
+  },
+  {
+   "run": "66_r01",
+   "raw": "data/raw/PXD000138/66.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/66_r01.vspec.arrow",
+   "pid": 958959,
+   "t_start": 4.777037858963013,
+   "t_end": 5.739217281341553,
+   "wall_s": 0.96217942237854,
+   "core_s": 1.167866,
+   "n_spectra": 14890,
+   "n_ms2": 10841,
+   "n_peaks": 10051586,
+   "store_bytes": 83260138,
+   "raw_bytes": 495419462,
+   "timing_s": {
+    "prefetch": 0.08743673097342253,
+    "runtime_load": 3.895722329616547e-06,
+    "decode": 0.7549551008269191,
+    "arrow_write": 0.0545099382288754,
+    "close": 0.000488561112433672
+   },
+   "cpu_s": {
+    "prefetch": 0.10033487200000035,
+    "runtime_load": 3.9660000004104745e-06,
+    "decode": 0.8219510869999995,
+    "arrow_write": 0.06693259799999929
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.877418756484985,
+    5.901618003845215
+   ],
+   "gpu_wait_s": 2.574920654296875e-05,
+   "search_t": [
+    6.46799635887146,
+    6.501663446426392
+   ],
+   "search_wall_s": 0.03366708755493164,
+   "gpu_ms": {
+    "k0": 6.606048107147217,
+    "hyp": 14.679488182067871,
+    "k1": 3.206592082977295,
+    "topk": 2.0104000568389893,
+    "k2": 1.1960320472717285,
+    "features": 5.500671863555908
+   },
+   "h2d_bytes": 12051008,
+   "n_psms": 5884,
+   "n_searched": 10837,
+   "write_t": [
+    6.50188136100769,
+    6.527545928955078
+   ]
+  },
+  {
+   "run": "60",
+   "raw": "data/raw/PXD000138/60.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/60.vspec.arrow",
+   "pid": 958952,
+   "t_start": 4.868714332580566,
+   "t_end": 5.747344255447388,
+   "wall_s": 0.8786299228668213,
+   "core_s": 1.0896209999999993,
+   "n_spectra": 14682,
+   "n_ms2": 10611,
+   "n_peaks": 9338286,
+   "store_bytes": 77512290,
+   "raw_bytes": 460032922,
+   "timing_s": {
+    "prefetch": 0.058947218116372824,
+    "runtime_load": 4.176981747150421e-06,
+    "decode": 0.6936033726669848,
+    "arrow_write": 0.05045752413570881,
+    "close": 0.0005488418973982334
+   },
+   "cpu_s": {
+    "prefetch": 0.05811776999999996,
+    "runtime_load": 4.276999999497377e-06,
+    "decode": 0.7830496010000001,
+    "arrow_write": 0.05353301000000066
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.901670694351196,
+    5.924922943115234
+   ],
+   "gpu_wait_s": 1.5497207641601562e-05,
+   "search_t": [
+    6.501768350601196,
+    6.539156913757324
+   ],
+   "search_wall_s": 0.03738856315612793,
+   "gpu_ms": {
+    "k0": 4.687647819519043,
+    "hyp": 17.6079044342041,
+    "k1": 4.937888145446777,
+    "topk": 2.5559680461883545,
+    "k2": 1.423359990119934,
+    "features": 5.5688958168029785
+   },
+   "h2d_bytes": 11982576,
+   "n_psms": 6069,
+   "n_searched": 10611,
+   "write_t": [
+    6.539415121078491,
+    6.565082550048828
+   ]
+  },
+  {
+   "run": "72",
+   "raw": "data/raw/PXD000138/72.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/72.vspec.arrow",
+   "pid": 958964,
+   "t_start": 3.970381498336792,
+   "t_end": 5.755958318710327,
+   "wall_s": 1.7855768203735352,
+   "core_s": 1.5221079999999994,
+   "n_spectra": 14640,
+   "n_ms2": 10155,
+   "n_peaks": 9908387,
+   "store_bytes": 82058042,
+   "raw_bytes": 495419780,
+   "timing_s": {
+    "prefetch": 0.9061209568753839,
+    "runtime_load": 5.698762834072113e-06,
+    "decode": 0.7488424531184137,
+    "arrow_write": 0.0488292770460248,
+    "close": 0.0004930081777274609
+   },
+   "cpu_s": {
+    "prefetch": 0.4655641930000005,
+    "runtime_load": 5.557999999794561e-06,
+    "decode": 0.8211186899999996,
+    "arrow_write": 0.049434654999998884
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.924968004226685,
+    5.952901124954224
+   ],
+   "gpu_wait_s": 1.621246337890625e-05,
+   "search_t": [
+    6.5392961502075195,
+    6.573277711868286
+   ],
+   "search_wall_s": 0.0339815616607666,
+   "gpu_ms": {
+    "k0": 5.221471786499023,
+    "hyp": 13.50592041015625,
+    "k1": 3.1510720252990723,
+    "topk": 2.7503039836883545,
+    "k2": 1.8257919549942017,
+    "features": 6.949151992797852
+   },
+   "h2d_bytes": 10910016,
+   "n_psms": 5878,
+   "n_searched": 10151,
+   "write_t": [
+    6.573509454727173,
+    6.59793758392334
+   ]
+  },
+  {
+   "run": "72_r01",
+   "raw": "data/raw/PXD000138/72.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/72_r01.vspec.arrow",
+   "pid": 958963,
+   "t_start": 4.1458094120025635,
+   "t_end": 5.854976177215576,
+   "wall_s": 1.7091667652130127,
+   "core_s": 1.5582029999999998,
+   "n_spectra": 14640,
+   "n_ms2": 10155,
+   "n_peaks": 9908387,
+   "store_bytes": 82058042,
+   "raw_bytes": 495419780,
+   "timing_s": {
+    "prefetch": 0.7310966979712248,
+    "runtime_load": 5.679205060005188e-06,
+    "decode": 0.8171927221119404,
+    "arrow_write": 0.04840283002704382,
+    "close": 0.0004007401876151562
+   },
+   "cpu_s": {
+    "prefetch": 0.4848584770000004,
+    "runtime_load": 5.697999999831893e-06,
+    "decode": 0.9122985989999988,
+    "arrow_write": 0.048361467000000324
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    5.952948093414307,
+    5.978755235671997
+   ],
+   "gpu_wait_s": 1.621246337890625e-05,
+   "search_t": [
+    6.573397636413574,
+    6.605777978897095
+   ],
+   "search_wall_s": 0.03238034248352051,
+   "gpu_ms": {
+    "k0": 4.807807922363281,
+    "hyp": 13.91215991973877,
+    "k1": 3.220128059387207,
+    "topk": 2.8332159519195557,
+    "k2": 1.854464054107666,
+    "features": 5.251455783843994
+   },
+   "h2d_bytes": 10910016,
+   "n_psms": 5878,
+   "n_searched": 10151,
+   "write_t": [
+    6.606006860733032,
+    6.631479740142822
+   ]
+  },
+  {
+   "run": "LM2480_DDA",
+   "raw": "data/raw/PXD031616/LM2480_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2480_DDA.vspec.arrow",
+   "pid": 958955,
+   "t_start": 0.6412477493286133,
+   "t_end": 5.699409008026123,
+   "wall_s": 5.05816125869751,
+   "core_s": 5.945936999999999,
+   "n_spectra": 79274,
+   "n_ms2": 68204,
+   "n_peaks": 45629707,
+   "store_bytes": 380820346,
+   "raw_bytes": 1477148524,
+   "timing_s": {
+    "prefetch": 0.3336003818549216,
+    "runtime_load": 5.19677996635437e-06,
+    "decode": 4.111362123396248,
+    "arrow_write": 0.43007613765075803,
+    "close": 0.0005054259672760963
+   },
+   "cpu_s": {
+    "prefetch": 0.33452166599999994,
+    "runtime_load": 5.4789999999194094e-06,
+    "decode": 4.766655405999998,
+    "arrow_write": 0.526794813
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    5.735168695449829,
+    6.0606606006622314
+   ],
+   "gpu_wait_s": 1.5735626220703125e-05,
+   "search_t": [
+    6.605900049209595,
+    6.837118625640869
+   ],
+   "search_wall_s": 0.23121857643127441,
+   "gpu_ms": {
+    "k0": 48.068511962890625,
+    "hyp": 95.62000274658203,
+    "k1": 23.255199432373047,
+    "topk": 20.792736053466797,
+    "k2": 12.274687767028809,
+    "features": 30.32793617248535
+   },
+   "h2d_bytes": 242486672,
+   "n_psms": 55325,
+   "n_searched": 68153,
+   "write_t": [
+    6.838517189025879,
+    6.989109516143799
+   ]
+  },
+  {
+   "run": "58",
+   "raw": "data/raw/PXD000138/58.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/58.vspec.arrow",
+   "pid": 958968,
+   "t_start": 5.335441827774048,
+   "t_end": 6.153684139251709,
+   "wall_s": 0.8182423114776611,
+   "core_s": 0.9090090000000002,
+   "n_spectra": 15060,
+   "n_ms2": 10777,
+   "n_peaks": 8479744,
+   "store_bytes": 70713954,
+   "raw_bytes": 417126672,
+   "timing_s": {
+    "prefetch": 0.04275806434452534,
+    "runtime_load": 3.955792635679245e-06,
+    "decode": 0.6881774426437914,
+    "arrow_write": 0.049213262274861336,
+    "close": 0.00038782088086009026
+   },
+   "cpu_s": {
+    "prefetch": 0.04231956600000064,
+    "runtime_load": 3.9459999996438455e-06,
+    "decode": 0.7627316439999987,
+    "arrow_write": 0.04915836300000098
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    6.154649019241333,
+    6.179283857345581
+   ],
+   "gpu_wait_s": 1.7642974853515625e-05,
+   "search_t": [
+    6.838436126708984,
+    6.877311706542969
+   ],
+   "search_wall_s": 0.038875579833984375,
+   "gpu_ms": {
+    "k0": 4.974783897399902,
+    "hyp": 14.73964786529541,
+    "k1": 4.225088119506836,
+    "topk": 2.808799982070923,
+    "k2": 2.4647679328918457,
+    "features": 8.04259204864502
+   },
+   "h2d_bytes": 11706048,
+   "n_psms": 6394,
+   "n_searched": 10774,
+   "write_t": [
+    6.877568006515503,
+    6.9040021896362305
+   ]
+  },
+  {
+   "run": "60_r01",
+   "raw": "data/raw/PXD000138/60.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/60_r01.vspec.arrow",
+   "pid": 958961,
+   "t_start": 5.164388656616211,
+   "t_end": 6.180003881454468,
+   "wall_s": 1.0156152248382568,
+   "core_s": 1.163323,
+   "n_spectra": 14682,
+   "n_ms2": 10611,
+   "n_peaks": 9338286,
+   "store_bytes": 77512290,
+   "raw_bytes": 460032922,
+   "timing_s": {
+    "prefetch": 0.07022374402731657,
+    "runtime_load": 6.109010428190231e-06,
+    "decode": 0.8050224194303155,
+    "arrow_write": 0.052749122492969036,
+    "close": 0.0006182449869811535
+   },
+   "cpu_s": {
+    "prefetch": 0.07002211200000019,
+    "runtime_load": 5.619000000400831e-06,
+    "decode": 0.8784523250000005,
+    "arrow_write": 0.052635517000000576
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    6.1809868812561035,
+    6.20831036567688
+   ],
+   "gpu_wait_s": 2.0742416381835938e-05,
+   "search_t": [
+    6.877461194992065,
+    6.922430992126465
+   ],
+   "search_wall_s": 0.044969797134399414,
+   "gpu_ms": {
+    "k0": 5.701183795928955,
+    "hyp": 16.257471084594727,
+    "k1": 9.312000274658203,
+    "topk": 2.5245440006256104,
+    "k2": 1.4120960235595703,
+    "features": 9.055744171142578
+   },
+   "h2d_bytes": 11982576,
+   "n_psms": 6069,
+   "n_searched": 10611,
+   "write_t": [
+    6.92267370223999,
+    6.9459099769592285
+   ]
+  },
+  {
+   "run": "58_r01",
+   "raw": "data/raw/PXD000138/58.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/58_r01.vspec.arrow",
+   "pid": 958967,
+   "t_start": 5.402554273605347,
+   "t_end": 6.2812416553497314,
+   "wall_s": 0.8786873817443848,
+   "core_s": 0.9740069999999994,
+   "n_spectra": 15060,
+   "n_ms2": 10777,
+   "n_peaks": 8479744,
+   "store_bytes": 70713954,
+   "raw_bytes": 417126672,
+   "timing_s": {
+    "prefetch": 0.05049247806891799,
+    "runtime_load": 8.262228220701218e-06,
+    "decode": 0.7203909382224083,
+    "arrow_write": 0.04845503019168973,
+    "close": 0.0006642336957156658
+   },
+   "cpu_s": {
+    "prefetch": 0.05022903799999945,
+    "runtime_load": 8.272000000530966e-06,
+    "decode": 0.7869583500000008,
+    "arrow_write": 0.05634725300000021
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    6.283277988433838,
+    6.304489850997925
+   ],
+   "gpu_wait_s": 1.2874603271484375e-05,
+   "search_t": [
+    6.922551870346069,
+    6.9748170375823975
+   ],
+   "search_wall_s": 0.052265167236328125,
+   "gpu_ms": {
+    "k0": 14.747424125671387,
+    "hyp": 20.54230308532715,
+    "k1": 4.93225622177124,
+    "topk": 2.9057281017303467,
+    "k2": 1.4561280012130737,
+    "features": 7.0797438621521
+   },
+   "h2d_bytes": 11706048,
+   "n_psms": 6394,
+   "n_searched": 10774,
+   "write_t": [
+    6.975044012069702,
+    7.0152812004089355
+   ]
+  },
+  {
+   "run": "Velos005137",
+   "raw": "data/raw/PXD001077/Velos005137.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/Velos005137.vspec.arrow",
+   "pid": 958965,
+   "t_start": 5.463399648666382,
+   "t_end": 6.29814600944519,
+   "wall_s": 0.8347463607788086,
+   "core_s": 0.915560000000001,
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "store_bytes": 64662858,
+   "raw_bytes": 334619250,
+   "timing_s": {
+    "prefetch": 0.0601667738519609,
+    "runtime_load": 6.319023668766022e-06,
+    "decode": 0.6783039099536836,
+    "arrow_write": 0.04249159526079893,
+    "close": 0.0005033630877733231
+   },
+   "cpu_s": {
+    "prefetch": 0.05939030700000014,
+    "runtime_load": 6.390000000244811e-06,
+    "decode": 0.7410553120000012,
+    "arrow_write": 0.05043943400000028
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    6.2992637157440186,
+    6.328060865402222
+   ],
+   "gpu_wait_s": 1.6927719116210938e-05,
+   "search_t": [
+    6.974937438964844,
+    7.074736595153809
+   ],
+   "search_wall_s": 0.09979915618896484,
+   "gpu_ms": {
+    "k0": 7.484320163726807,
+    "hyp": 45.73868942260742,
+    "k1": 5.698272228240967,
+    "topk": 5.245567798614502,
+    "k2": 3.8000640869140625,
+    "features": 9.236031532287598
+   },
+   "h2d_bytes": 22270160,
+   "n_psms": 10623,
+   "n_searched": 15149,
+   "write_t": [
+    7.075937747955322,
+    7.109108924865723
+   ]
+  },
+  {
+   "run": "Velos005137_r01",
+   "raw": "data/raw/PXD001077/Velos005137.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/Velos005137_r01.vspec.arrow",
+   "pid": 958958,
+   "t_start": 5.612428426742554,
+   "t_end": 6.446869134902954,
+   "wall_s": 0.8344407081604004,
+   "core_s": 1.01966,
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "store_bytes": 64662874,
+   "raw_bytes": 334619250,
+   "timing_s": {
+    "prefetch": 0.0630028578452766,
+    "runtime_load": 8.733011782169342e-06,
+    "decode": 0.6694488385692239,
+    "arrow_write": 0.043457530438899994,
+    "close": 0.0005114548839628696
+   },
+   "cpu_s": {
+    "prefetch": 0.07243296700000013,
+    "runtime_load": 8.33299999936088e-06,
+    "decode": 0.688409225,
+    "arrow_write": 0.043433037000000674
+   },
+   "instrument": "LTQ Orbitrap Velos",
+   "load_t": [
+    6.447885990142822,
+    6.480466842651367
+   ],
+   "gpu_wait_s": 9.5367431640625e-06,
+   "search_t": [
+    7.0757927894592285,
+    7.131906747817993
+   ],
+   "search_wall_s": 0.05611395835876465,
+   "gpu_ms": {
+    "k0": 6.717472076416016,
+    "hyp": 29.640512466430664,
+    "k1": 4.7584638595581055,
+    "topk": 4.346752166748047,
+    "k2": 2.465791940689087,
+    "features": 7.677248001098633
+   },
+   "h2d_bytes": 22270160,
+   "n_psms": 10623,
+   "n_searched": 15149,
+   "write_t": [
+    7.132097959518433,
+    7.159785032272339
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool2_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.vspec.arrow",
+   "pid": 958961,
+   "t_start": 6.180801153182983,
+   "t_end": 6.569188833236694,
+   "wall_s": 0.38838768005371094,
+   "core_s": 0.5625090000000004,
+   "n_spectra": 7728,
+   "n_ms2": 3538,
+   "n_peaks": 3094405,
+   "store_bytes": 26234930,
+   "raw_bytes": 218563894,
+   "timing_s": {
+    "prefetch": 0.027490556705743074,
+    "runtime_load": 4.988163709640503e-06,
+    "decode": 0.28873730916529894,
+    "arrow_write": 0.02089822292327881,
+    "close": 0.0005136877298355103
+   },
+   "cpu_s": {
+    "prefetch": 0.025816596999999497,
+    "runtime_load": 5.008000000472634e-06,
+    "decode": 0.32023753300000024,
+    "arrow_write": 0.02944762399999945
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    6.569957733154297,
+    6.58139967918396
+   ],
+   "gpu_wait_s": 9.059906005859375e-06,
+   "search_t": [
+    7.131978511810303,
+    7.148071050643921
+   ],
+   "search_wall_s": 0.016092538833618164,
+   "gpu_ms": {
+    "k0": 2.6021759510040283,
+    "hyp": 6.932831764221191,
+    "k1": 1.32150399684906,
+    "topk": 1.1293439865112305,
+    "k2": 0.6748160123825073,
+    "features": 3.092128038406372
+   },
+   "h2d_bytes": 4472104,
+   "n_psms": 963,
+   "n_searched": 3507,
+   "write_t": [
+    7.1482603549957275,
+    7.159064531326294
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool2_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool2_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 958967,
+   "t_start": 6.2818310260772705,
+   "t_end": 6.642132520675659,
+   "wall_s": 0.36030149459838867,
+   "core_s": 0.6765959999999991,
+   "n_spectra": 7728,
+   "n_ms2": 3538,
+   "n_peaks": 3094405,
+   "store_bytes": 26234930,
+   "raw_bytes": 218563894,
+   "timing_s": {
+    "prefetch": 0.0283451359719038,
+    "runtime_load": 4.627276211977005e-06,
+    "decode": 0.25078198220580816,
+    "arrow_write": 0.01904916437342763,
+    "close": 0.00047217682003974915
+   },
+   "cpu_s": {
+    "prefetch": 0.0377141209999996,
+    "runtime_load": 4.4969999999366905e-06,
+    "decode": 0.2751673830000003,
+    "arrow_write": 0.023782695999999603
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    6.64287805557251,
+    6.65233039855957
+   ],
+   "gpu_wait_s": 1.1682510375976562e-05,
+   "search_t": [
+    7.148375749588013,
+    7.167700290679932
+   ],
+   "search_wall_s": 0.019324541091918945,
+   "gpu_ms": {
+    "k0": 3.133375883102417,
+    "hyp": 7.140192031860352,
+    "k1": 1.5151679515838623,
+    "topk": 1.1136000156402588,
+    "k2": 0.711679995059967,
+    "features": 5.1062397956848145
+   },
+   "h2d_bytes": 4472104,
+   "n_psms": 963,
+   "n_searched": 3507,
+   "write_t": [
+    7.167919874191284,
+    7.177567958831787
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool3_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.vspec.arrow",
+   "pid": 958965,
+   "t_start": 6.298411130905151,
+   "t_end": 6.652736663818359,
+   "wall_s": 0.354325532913208,
+   "core_s": 0.4100730000000006,
+   "n_spectra": 7524,
+   "n_ms2": 3064,
+   "n_peaks": 3080903,
+   "store_bytes": 26080034,
+   "raw_bytes": 218366958,
+   "timing_s": {
+    "prefetch": 0.024282685946673155,
+    "runtime_load": 5.537644028663635e-06,
+    "decode": 0.26878814678639174,
+    "arrow_write": 0.018086375202983618,
+    "close": 0.0005097929388284683
+   },
+   "cpu_s": {
+    "prefetch": 0.03513915799999978,
+    "runtime_load": 5.5990000005223806e-06,
+    "decode": 0.3018457640000003,
+    "arrow_write": 0.018080635000000456
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    6.653710126876831,
+    6.660440444946289
+   ],
+   "gpu_wait_s": 1.6450881958007812e-05,
+   "search_t": [
+    7.167807340621948,
+    7.1946775913238525
+   ],
+   "search_wall_s": 0.026870250701904297,
+   "gpu_ms": {
+    "k0": 3.578847885131836,
+    "hyp": 7.738815784454346,
+    "k1": 1.3214720487594604,
+    "topk": 1.1356480121612549,
+    "k2": 0.609279990196228,
+    "features": 11.994815826416016
+   },
+   "h2d_bytes": 3270704,
+   "n_psms": 749,
+   "n_searched": 3046,
+   "write_t": [
+    7.194839715957642,
+    7.206153869628906
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool3_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool3_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 958958,
+   "t_start": 6.44713282585144,
+   "t_end": 6.7815492153167725,
+   "wall_s": 0.33441638946533203,
+   "core_s": 0.3684720000000006,
+   "n_spectra": 7524,
+   "n_ms2": 3064,
+   "n_peaks": 3080903,
+   "store_bytes": 26080034,
+   "raw_bytes": 218366958,
+   "timing_s": {
+    "prefetch": 0.039294770918786526,
+    "runtime_load": 4.476867616176605e-06,
+    "decode": 0.2321349191479385,
+    "arrow_write": 0.017572134267538786,
+    "close": 0.0006104633212089539
+   },
+   "cpu_s": {
+    "prefetch": 0.050779963000000095,
+    "runtime_load": 4.126000000326258e-06,
+    "decode": 0.23221088099999943,
+    "arrow_write": 0.01754251699999898
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    6.782445907592773,
+    6.791374444961548
+   ],
+   "gpu_wait_s": 9.5367431640625e-06,
+   "search_t": [
+    7.194743633270264,
+    7.208863019943237
+   ],
+   "search_wall_s": 0.014119386672973633,
+   "gpu_ms": {
+    "k0": 2.627392053604126,
+    "hyp": 5.904831886291504,
+    "k1": 1.122431993484497,
+    "topk": 0.9433599710464478,
+    "k2": 0.5898240208625793,
+    "features": 2.523616075515747
+   },
+   "h2d_bytes": 3270704,
+   "n_psms": 749,
+   "n_searched": 3046,
+   "write_t": [
+    7.2090232372283936,
+    7.219869136810303
+   ]
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "raw": "data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/b1906_293T_proteinID_01A_QE3_122212.vspec.arrow",
+   "pid": 958956,
+   "t_start": 0.6167604923248291,
+   "t_end": 6.853205442428589,
+   "wall_s": 6.23644495010376,
+   "core_s": 6.931616999999999,
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "store_bytes": 486587666,
+   "raw_bytes": 3470679015,
+   "timing_s": {
+    "prefetch": 0.8910193177871406,
+    "runtime_load": 8.06199386715889e-06,
+    "decode": 4.647671960294247,
+    "arrow_write": 0.49017730448395014,
+    "close": 0.0006760619580745697
+   },
+   "cpu_s": {
+    "prefetch": 0.8919729919999999,
+    "runtime_load": 8.092000000070598e-06,
+    "decode": 5.265723319000002,
+    "arrow_write": 0.5282011260000008
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    6.85407567024231,
+    7.014131307601929
+   ],
+   "gpu_wait_s": 9.5367431640625e-06,
+   "search_t": [
+    7.208924293518066,
+    7.372222661972046
+   ],
+   "search_wall_s": 0.1632983684539795,
+   "gpu_ms": {
+    "k0": 19.38153648376465,
+    "hyp": 77.3691177368164,
+    "k1": 23.422399520874023,
+    "topk": 10.649087905883789,
+    "k2": 6.3651838302612305,
+    "features": 25.22643280029297
+   },
+   "h2d_bytes": 73845952,
+   "n_psms": 35084,
+   "n_searched": 41769,
+   "write_t": [
+    7.373102188110352,
+    7.505298852920532
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool4_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.vspec.arrow",
+   "pid": 958967,
+   "t_start": 6.642700433731079,
+   "t_end": 6.998819351196289,
+   "wall_s": 0.35611891746520996,
+   "core_s": 0.6962460000000004,
+   "n_spectra": 7603,
+   "n_ms2": 3407,
+   "n_peaks": 2942708,
+   "store_bytes": 24996266,
+   "raw_bytes": 210734906,
+   "timing_s": {
+    "prefetch": 0.02568398369476199,
+    "runtime_load": 2.6137568056583405e-06,
+    "decode": 0.23947121715173125,
+    "arrow_write": 0.021176117938011885,
+    "close": 0.00043498072773218155
+   },
+   "cpu_s": {
+    "prefetch": 0.028455682999999787,
+    "runtime_load": 2.533000000859431e-06,
+    "decode": 0.2589657340000002,
+    "arrow_write": 0.02115997299999961
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    7.015537738800049,
+    7.026192665100098
+   ],
+   "gpu_wait_s": 1.3828277587890625e-05,
+   "search_t": [
+    7.3728415966033936,
+    7.396252155303955
+   ],
+   "search_wall_s": 0.023410558700561523,
+   "gpu_ms": {
+    "k0": 4.1615681648254395,
+    "hyp": 8.557632446289062,
+    "k1": 1.5553920269012451,
+    "topk": 1.2132799625396729,
+    "k2": 1.9456000328063965,
+    "features": 5.533631801605225
+   },
+   "h2d_bytes": 4217536,
+   "n_psms": 1254,
+   "n_searched": 3383,
+   "write_t": [
+    7.3964715003967285,
+    7.410430431365967
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool4_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool4_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 958965,
+   "t_start": 6.65301251411438,
+   "t_end": 7.002250671386719,
+   "wall_s": 0.34923815727233887,
+   "core_s": 0.395404000000001,
+   "n_spectra": 7603,
+   "n_ms2": 3407,
+   "n_peaks": 2942708,
+   "store_bytes": 24996266,
+   "raw_bytes": 210734906,
+   "timing_s": {
+    "prefetch": 0.02641888288781047,
+    "runtime_load": 4.696659743785858e-06,
+    "decode": 0.224302698392421,
+    "arrow_write": 0.020454918034374714,
+    "close": 0.0004759817384183407
+   },
+   "cpu_s": {
+    "prefetch": 0.030410608000000394,
+    "runtime_load": 4.307000000203232e-06,
+    "decode": 0.23526316400000002,
+    "arrow_write": 0.020202518000000502
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    7.026249170303345,
+    7.036166429519653
+   ],
+   "gpu_wait_s": 1.4066696166992188e-05,
+   "search_t": [
+    7.396348237991333,
+    7.416337013244629
+   ],
+   "search_wall_s": 0.0199887752532959,
+   "gpu_ms": {
+    "k0": 2.8144640922546387,
+    "hyp": 7.057983875274658,
+    "k1": 1.4631999731063843,
+    "topk": 1.055359959602356,
+    "k2": 0.7331839799880981,
+    "features": 6.4339518547058105
+   },
+   "h2d_bytes": 4217536,
+   "n_psms": 1254,
+   "n_searched": 3383,
+   "write_t": [
+    7.416475057601929,
+    7.427679538726807
+   ]
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212_r01",
+   "raw": "data/raw/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/b1906_293T_proteinID_01A_QE3_122212_r01.vspec.arrow",
+   "pid": 958966,
+   "t_start": 0.6180124282836914,
+   "t_end": 6.865332365036011,
+   "wall_s": 6.247319936752319,
+   "core_s": 7.0311010000000005,
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "store_bytes": 486587682,
+   "raw_bytes": 3470679015,
+   "timing_s": {
+    "prefetch": 0.8816731018014252,
+    "runtime_load": 7.481779903173447e-06,
+    "decode": 4.74341393308714,
+    "arrow_write": 0.4931820812635124,
+    "close": 0.0006689508445560932
+   },
+   "cpu_s": {
+    "prefetch": 0.882582551,
+    "runtime_load": 7.651999999858106e-06,
+    "decode": 5.329553559999998,
+    "arrow_write": 0.5654772950000022
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    6.866317510604858,
+    7.0609681606292725
+   ],
+   "gpu_wait_s": 1.049041748046875e-05,
+   "search_t": [
+    7.416409492492676,
+    7.572935581207275
+   ],
+   "search_wall_s": 0.1565260887145996,
+   "gpu_ms": {
+    "k0": 21.95427131652832,
+    "hyp": 78.21647644042969,
+    "k1": 14.404928207397461,
+    "topk": 11.818943977355957,
+    "k2": 6.244351863861084,
+    "features": 23.05878448486328
+   },
+   "h2d_bytes": 73845952,
+   "n_psms": 35084,
+   "n_searched": 41769,
+   "write_t": [
+    7.573815107345581,
+    7.707830905914307
+   ]
+  },
+  {
+   "run": "dq_00106_11cell_90min_sps_B11",
+   "raw": "data/raw/PXD016766/dq_00106_11cell_90min_sps_B11.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00106_11cell_90min_sps_B11.vspec.arrow",
+   "pid": 958952,
+   "t_start": 5.7476019859313965,
+   "t_end": 7.219867706298828,
+   "wall_s": 1.4722657203674316,
+   "core_s": 1.6184660000000015,
+   "n_spectra": 44973,
+   "n_ms2": 20807,
+   "n_peaks": 15886813,
+   "store_bytes": 138171210,
+   "raw_bytes": 232375511,
+   "timing_s": {
+    "prefetch": 0.018392101861536503,
+    "runtime_load": 4.285946488380432e-06,
+    "decode": 1.310797058045864,
+    "arrow_write": 0.09476506616920233,
+    "close": 0.0004609301686286926
+   },
+   "cpu_s": {
+    "prefetch": 0.019681057000000557,
+    "runtime_load": 4.4060000004009225e-06,
+    "decode": 1.4260033209999987,
+    "arrow_write": 0.09807035799999841
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.220713138580322,
+    7.320500612258911
+   ],
+   "gpu_wait_s": 1.621246337890625e-05,
+   "search_t": [
+    7.573657035827637,
+    7.671024322509766
+   ],
+   "search_wall_s": 0.0973672866821289,
+   "gpu_ms": {
+    "k0": 21.302719116210938,
+    "hyp": 36.95366287231445,
+    "k1": 19.39580726623535,
+    "topk": 4.060927867889404,
+    "k2": 3.01363205909729,
+    "features": 11.962783813476562
+   },
+   "h2d_bytes": 86036392,
+   "n_psms": 1707,
+   "n_searched": 20760,
+   "write_t": [
+    7.672296047210693,
+    7.705934524536133
+   ]
+  },
+  {
+   "run": "dq_00098_11cell_90min_sps_A7",
+   "raw": "data/raw/PXD016766/dq_00098_11cell_90min_sps_A7.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00098_11cell_90min_sps_A7.vspec.arrow",
+   "pid": 958959,
+   "t_start": 5.739388465881348,
+   "t_end": 7.3262715339660645,
+   "wall_s": 1.5868830680847168,
+   "core_s": 1.7567240000000002,
+   "n_spectra": 44981,
+   "n_ms2": 20755,
+   "n_peaks": 16367563,
+   "store_bytes": 142013130,
+   "raw_bytes": 234723755,
+   "timing_s": {
+    "prefetch": 0.08809015899896622,
+    "runtime_load": 3.905966877937317e-06,
+    "decode": 1.338679727166891,
+    "arrow_write": 0.1002216194756329,
+    "close": 0.00041253725066781044
+   },
+   "cpu_s": {
+    "prefetch": 0.07302686700000027,
+    "runtime_load": 3.836000000312367e-06,
+    "decode": 1.4526089959999977,
+    "arrow_write": 0.10102128099999952
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.327090263366699,
+    7.462684869766235
+   ],
+   "gpu_wait_s": 1.5497207641601562e-05,
+   "search_t": [
+    7.671929359436035,
+    7.780998706817627
+   ],
+   "search_wall_s": 0.1090693473815918,
+   "gpu_ms": {
+    "k0": 25.629152297973633,
+    "hyp": 37.308990478515625,
+    "k1": 6.7860798835754395,
+    "topk": 4.363071918487549,
+    "k2": 3.0607359409332275,
+    "features": 14.099967956542969
+   },
+   "h2d_bytes": 91404000,
+   "n_psms": 1218,
+   "n_searched": 20728,
+   "write_t": [
+    7.782290458679199,
+    7.8199827671051025
+   ]
+  },
+  {
+   "run": "dq_00099_11cell_90min_sps_A9",
+   "raw": "data/raw/PXD016766/dq_00099_11cell_90min_sps_A9.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00099_11cell_90min_sps_A9.vspec.arrow",
+   "pid": 958955,
+   "t_start": 5.699672698974609,
+   "t_end": 7.34483528137207,
+   "wall_s": 1.645162582397461,
+   "core_s": 1.8540269999999994,
+   "n_spectra": 45863,
+   "n_ms2": 21260,
+   "n_peaks": 16370202,
+   "store_bytes": 142267074,
+   "raw_bytes": 235081101,
+   "timing_s": {
+    "prefetch": 0.02157952217385173,
+    "runtime_load": 3.795139491558075e-06,
+    "decode": 1.4594082795083523,
+    "arrow_write": 0.09835839457809925,
+    "close": 0.000421411357820034
+   },
+   "cpu_s": {
+    "prefetch": 0.02038977700000011,
+    "runtime_load": 3.6659999995691805e-06,
+    "decode": 1.6542569460000012,
+    "arrow_write": 0.09902555799999924
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.345551013946533,
+    7.48278021812439
+   ],
+   "gpu_wait_s": 1.6450881958007812e-05,
+   "search_t": [
+    7.782069444656372,
+    7.898883104324341
+   ],
+   "search_wall_s": 0.11681365966796875,
+   "gpu_ms": {
+    "k0": 25.624767303466797,
+    "hyp": 38.49657440185547,
+    "k1": 39.00755310058594,
+    "topk": 3.8196799755096436,
+    "k2": 2.8088319301605225,
+    "features": 6.402688026428223
+   },
+   "h2d_bytes": 92243928,
+   "n_psms": 1065,
+   "n_searched": 21231,
+   "write_t": [
+    7.899968862533569,
+    7.9343438148498535
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool1_HCDOT_rep1",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.vspec.arrow",
+   "pid": 958952,
+   "t_start": 7.2200927734375,
+   "t_end": 7.535869359970093,
+   "wall_s": 0.3157765865325928,
+   "core_s": 0.35944799999999866,
+   "n_spectra": 7465,
+   "n_ms2": 3097,
+   "n_peaks": 2807267,
+   "store_bytes": 23881194,
+   "raw_bytes": 202338736,
+   "timing_s": {
+    "prefetch": 0.030981782358139753,
+    "runtime_load": 1.676473766565323e-05,
+    "decode": 0.21226912131533027,
+    "arrow_write": 0.015489079058170319,
+    "close": 0.0005827923305332661
+   },
+   "cpu_s": {
+    "prefetch": 0.030550175000000124,
+    "runtime_load": 3.3940000001564385e-06,
+    "decode": 0.21919693000000073,
+    "arrow_write": 0.015481378000002266
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    7.5367419719696045,
+    7.546181678771973
+   ],
+   "gpu_wait_s": 1.5735626220703125e-05,
+   "search_t": [
+    7.899843215942383,
+    7.913225173950195
+   ],
+   "search_wall_s": 0.0133819580078125,
+   "gpu_ms": {
+    "k0": 2.128448009490967,
+    "hyp": 5.810336112976074,
+    "k1": 1.1015679836273193,
+    "topk": 0.9603520035743713,
+    "k2": 0.6451200246810913,
+    "features": 2.41375994682312
+   },
+   "h2d_bytes": 2728640,
+   "n_psms": 630,
+   "n_searched": 3073,
+   "write_t": [
+    7.913341522216797,
+    7.925652503967285
+   ]
+  },
+  {
+   "run": "dq_00101_11cell_90min_sps_B1",
+   "raw": "data/raw/PXD016766/dq_00101_11cell_90min_sps_B1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00101_11cell_90min_sps_B1.vspec.arrow",
+   "pid": 958963,
+   "t_start": 5.85524320602417,
+   "t_end": 7.603002309799194,
+   "wall_s": 1.7477591037750244,
+   "core_s": 1.9003830000000015,
+   "n_spectra": 45091,
+   "n_ms2": 21086,
+   "n_peaks": 15762844,
+   "store_bytes": 137241898,
+   "raw_bytes": 229691147,
+   "timing_s": {
+    "prefetch": 0.02240404626354575,
+    "runtime_load": 2.614222466945648e-06,
+    "decode": 1.5660519520752132,
+    "arrow_write": 0.09413318103179336,
+    "close": 0.0004029031842947006
+   },
+   "cpu_s": {
+    "prefetch": 0.02207174000000034,
+    "runtime_load": 2.6239999995070207e-06,
+    "decode": 1.7020795720000015,
+    "arrow_write": 0.10093243800000007
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.603790283203125,
+    7.732445955276489
+   ],
+   "gpu_wait_s": 1.0013580322265625e-05,
+   "search_t": [
+    7.913285255432129,
+    7.990081310272217
+   ],
+   "search_wall_s": 0.07679605484008789,
+   "gpu_ms": {
+    "k0": 19.436992645263672,
+    "hyp": 37.26473617553711,
+    "k1": 6.070528030395508,
+    "topk": 3.9588160514831543,
+    "k2": 2.6695680618286133,
+    "features": 6.937535762786865
+   },
+   "h2d_bytes": 86833264,
+   "n_psms": 2464,
+   "n_searched": 21041,
+   "write_t": [
+    7.9921300411224365,
+    8.033214330673218
+   ]
+  },
+  {
+   "run": "LM2481_DDA",
+   "raw": "data/raw/PXD031616/LM2481_DDA.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/LM2481_DDA.vspec.arrow",
+   "pid": 958957,
+   "t_start": 0.6413414478302002,
+   "t_end": 7.511982202529907,
+   "wall_s": 6.870640754699707,
+   "core_s": 6.133366,
+   "n_spectra": 76493,
+   "n_ms2": 64585,
+   "n_peaks": 40870122,
+   "store_bytes": 342165122,
+   "raw_bytes": 1365148534,
+   "timing_s": {
+    "prefetch": 2.3078087926842272,
+    "runtime_load": 9.404029697179794e-06,
+    "decode": 3.9624806963838637,
+    "arrow_write": 0.43961311131715775,
+    "close": 0.0005893521010875702
+   },
+   "cpu_s": {
+    "prefetch": 0.7603080609999999,
+    "runtime_load": 9.825000000018846e-06,
+    "decode": 4.6059900610000035,
+    "arrow_write": 0.5351683609999984
+   },
+   "instrument": "Orbitrap Fusion Lumos",
+   "load_t": [
+    7.512913942337036,
+    7.766353368759155
+   ],
+   "gpu_wait_s": 1.2874603271484375e-05,
+   "search_t": [
+    7.992020845413208,
+    8.215996742248535
+   ],
+   "search_wall_s": 0.22397589683532715,
+   "gpu_ms": {
+    "k0": 51.7191047668457,
+    "hyp": 93.81629180908203,
+    "k1": 21.056095123291016,
+    "topk": 18.488256454467773,
+    "k2": 11.104255676269531,
+    "features": 27.143936157226562
+   },
+   "h2d_bytes": 211047688,
+   "n_psms": 49152,
+   "n_searched": 64511,
+   "write_t": [
+    8.217592716217041,
+    8.339130401611328
+   ]
+  },
+  {
+   "run": "SF_200217_pPeptideLibrary_pool1_HCDOT_rep1_r01",
+   "raw": "data/raw/PXD007058/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/SF_200217_pPeptideLibrary_pool1_HCDOT_rep1_r01.vspec.arrow",
+   "pid": 958959,
+   "t_start": 7.326425790786743,
+   "t_end": 7.640304327011108,
+   "wall_s": 0.31387853622436523,
+   "core_s": 0.3779950000000003,
+   "n_spectra": 7465,
+   "n_ms2": 3097,
+   "n_peaks": 2807267,
+   "store_bytes": 23881194,
+   "raw_bytes": 202338736,
+   "timing_s": {
+    "prefetch": 0.04533686302602291,
+    "runtime_load": 1.1146999895572662e-05,
+    "decode": 0.20015619602054358,
+    "arrow_write": 0.01554000424221158,
+    "close": 0.0004153209738433361
+   },
+   "cpu_s": {
+    "prefetch": 0.04510394199999901,
+    "runtime_load": 1.1016000000196868e-05,
+    "decode": 0.20988826900000035,
+    "arrow_write": 0.023313463000000922
+   },
+   "instrument": "Orbitrap Fusion",
+   "load_t": [
+    7.766628265380859,
+    7.771843671798706
+   ],
+   "gpu_wait_s": 1.4781951904296875e-05,
+   "search_t": [
+    8.217315912246704,
+    8.235020637512207
+   ],
+   "search_wall_s": 0.01770472526550293,
+   "gpu_ms": {
+    "k0": 2.373471975326538,
+    "hyp": 8.545248031616211,
+    "k1": 1.1987839937210083,
+    "topk": 1.0268800258636475,
+    "k2": 0.6656000018119812,
+    "features": 3.5254719257354736
+   },
+   "h2d_bytes": 2728640,
+   "n_psms": 630,
+   "n_searched": 3073,
+   "write_t": [
+    8.235164642333984,
+    8.248391389846802
+   ]
+  },
+  {
+   "run": "dq_00097_11cell_90min_sps_A5",
+   "raw": "data/raw/PXD016766/dq_00097_11cell_90min_sps_A5.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00097_11cell_90min_sps_A5.vspec.arrow",
+   "pid": 958968,
+   "t_start": 6.153855562210083,
+   "t_end": 7.644290208816528,
+   "wall_s": 1.4904346466064453,
+   "core_s": 1.6404259999999997,
+   "n_spectra": 43424,
+   "n_ms2": 20159,
+   "n_peaks": 15425326,
+   "store_bytes": 134112082,
+   "raw_bytes": 221882856,
+   "timing_s": {
+    "prefetch": 0.049408004619181156,
+    "runtime_load": 2.7650967240333557e-06,
+    "decode": 1.3002214301377535,
+    "arrow_write": 0.09101794054731727,
+    "close": 0.0005675889551639557
+   },
+   "cpu_s": {
+    "prefetch": 0.056536346999999765,
+    "runtime_load": 2.8739999997640098e-06,
+    "decode": 1.4315522290000002,
+    "arrow_write": 0.09211304199999937
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.77187705039978,
+    7.864765644073486
+   ],
+   "gpu_wait_s": 1.3828277587890625e-05,
+   "search_t": [
+    8.235114336013794,
+    8.324134111404419
+   ],
+   "search_wall_s": 0.089019775390625,
+   "gpu_ms": {
+    "k0": 22.380863189697266,
+    "hyp": 45.88777542114258,
+    "k1": 6.7454400062561035,
+    "topk": 3.7705280780792236,
+    "k2": 2.6173439025878906,
+    "features": 7.0992960929870605
+   },
+   "h2d_bytes": 87008488,
+   "n_psms": 2290,
+   "n_searched": 20135,
+   "write_t": [
+    8.324595928192139,
+    8.365422487258911
+   ]
+  },
+  {
+   "run": "dq_00100_11cell_90min_sps_A11",
+   "raw": "data/raw/PXD016766/dq_00100_11cell_90min_sps_A11.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00100_11cell_90min_sps_A11.vspec.arrow",
+   "pid": 958964,
+   "t_start": 5.75652551651001,
+   "t_end": 7.637920141220093,
+   "wall_s": 1.881394624710083,
+   "core_s": 2.1386640000000003,
+   "n_spectra": 44812,
+   "n_ms2": 20442,
+   "n_peaks": 15961971,
+   "store_bytes": 138693714,
+   "raw_bytes": 231970426,
+   "timing_s": {
+    "prefetch": 0.04638425866141915,
+    "runtime_load": 4.297122359275818e-06,
+    "decode": 1.6691110297106206,
+    "arrow_write": 0.10328839253634214,
+    "close": 0.0007404978387057781
+   },
+   "cpu_s": {
+    "prefetch": 0.05753071799999976,
+    "runtime_load": 4.2469999996797014e-06,
+    "decode": 1.8800889649999997,
+    "arrow_write": 0.10367503999999883
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    7.732546329498291,
+    7.871656656265259
+   ],
+   "gpu_wait_s": 8.58306884765625e-06,
+   "search_t": [
+    8.324493169784546,
+    8.400627851486206
+   ],
+   "search_wall_s": 0.07613468170166016,
+   "gpu_ms": {
+    "k0": 20.980575561523438,
+    "hyp": 34.17817687988281,
+    "k1": 6.861663818359375,
+    "topk": 4.0372161865234375,
+    "k2": 2.9378559589385986,
+    "features": 6.613471984863281
+   },
+   "h2d_bytes": 87483784,
+   "n_psms": 1773,
+   "n_searched": 20409,
+   "write_t": [
+    8.401826620101929,
+    8.430184841156006
+   ]
+  },
+  {
+   "run": "dq_00095_11cell_90min_sps_A1",
+   "raw": "data/raw/PXD016766/dq_00095_11cell_90min_sps_A1.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00095_11cell_90min_sps_A1.vspec.arrow",
+   "pid": 958958,
+   "t_start": 6.781841516494751,
+   "t_end": 8.107502937316895,
+   "wall_s": 1.3256614208221436,
+   "core_s": 1.542618,
+   "n_spectra": 40306,
+   "n_ms2": 18469,
+   "n_peaks": 14444594,
+   "store_bytes": 125459946,
+   "raw_bytes": 209342012,
+   "timing_s": {
+    "prefetch": 0.021973310969769955,
+    "runtime_load": 4.898291081190109e-06,
+    "decode": 1.1514477860182524,
+    "arrow_write": 0.09009494818747044,
+    "close": 0.0007158108055591583
+   },
+   "cpu_s": {
+    "prefetch": 0.032013781999999935,
+    "runtime_load": 4.897999999364799e-06,
+    "decode": 1.2572167010000008,
+    "arrow_write": 0.100835180999999
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.10838794708252,
+    8.19980764389038
+   ],
+   "gpu_wait_s": 1.6689300537109375e-05,
+   "search_t": [
+    8.4016592502594,
+    8.478853940963745
+   ],
+   "search_wall_s": 0.0771946907043457,
+   "gpu_ms": {
+    "k0": 20.07491111755371,
+    "hyp": 37.46521759033203,
+    "k1": 5.60537576675415,
+    "topk": 4.3397440910339355,
+    "k2": 2.565119981765747,
+    "features": 6.20147180557251
+   },
+   "h2d_bytes": 79746760,
+   "n_psms": 2160,
+   "n_searched": 18444,
+   "write_t": [
+    8.47967267036438,
+    8.506283283233643
+   ]
+  },
+  {
+   "run": "dq_00105_11cell_90min_sps_B9",
+   "raw": "data/raw/PXD016766/dq_00105_11cell_90min_sps_B9.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00105_11cell_90min_sps_B9.vspec.arrow",
+   "pid": 958961,
+   "t_start": 6.56938624382019,
+   "t_end": 8.204190254211426,
+   "wall_s": 1.6348040103912354,
+   "core_s": 1.7490429999999995,
+   "n_spectra": 41024,
+   "n_ms2": 19142,
+   "n_peaks": 14928395,
+   "store_bytes": 129555994,
+   "raw_bytes": 215470314,
+   "timing_s": {
+    "prefetch": 0.0464400933124125,
+    "runtime_load": 6.12996518611908e-06,
+    "decode": 1.4294009655714035,
+    "arrow_write": 0.10944972233846784,
+    "close": 0.0006650849245488644
+   },
+   "cpu_s": {
+    "prefetch": 0.04800563499999999,
+    "runtime_load": 6.178999999661983e-06,
+    "decode": 1.5199321370000005,
+    "arrow_write": 0.11011450900000241
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.204867124557495,
+    8.302674770355225
+   ],
+   "gpu_wait_s": 1.0013580322265625e-05,
+   "search_t": [
+    8.479567766189575,
+    8.54797077178955
+   ],
+   "search_wall_s": 0.06840300559997559,
+   "gpu_ms": {
+    "k0": 18.09343910217285,
+    "hyp": 31.074655532836914,
+    "k1": 6.540832042694092,
+    "topk": 3.56496000289917,
+    "k2": 2.5221118927001953,
+    "features": 6.1495361328125
+   },
+   "h2d_bytes": 82275040,
+   "n_psms": 1395,
+   "n_searched": 19087,
+   "write_t": [
+    8.54887843132019,
+    8.586421251296997
+   ]
+  },
+  {
+   "run": "dq_00104_11cell_90min_sps_B7",
+   "raw": "data/raw/PXD016766/dq_00104_11cell_90min_sps_B7.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00104_11cell_90min_sps_B7.vspec.arrow",
+   "pid": 958967,
+   "t_start": 6.998985528945923,
+   "t_end": 8.288744449615479,
+   "wall_s": 1.2897589206695557,
+   "core_s": 1.4616560000000014,
+   "n_spectra": 40835,
+   "n_ms2": 18557,
+   "n_peaks": 14080738,
+   "store_bytes": 122655018,
+   "raw_bytes": 208561029,
+   "timing_s": {
+    "prefetch": 0.025427270215004683,
+    "runtime_load": 3.1851232051849365e-06,
+    "decode": 1.1131873717531562,
+    "arrow_write": 0.08807741990312934,
+    "close": 0.00042719999328255653
+   },
+   "cpu_s": {
+    "prefetch": 0.030848033999999913,
+    "runtime_load": 3.1449999990940114e-06,
+    "decode": 1.190731728000003,
+    "arrow_write": 0.088827282000004
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.289588689804077,
+    8.365246295928955
+   ],
+   "gpu_wait_s": 1.1205673217773438e-05,
+   "search_t": [
+    8.548729658126831,
+    8.623419523239136
+   ],
+   "search_wall_s": 0.07468986511230469,
+   "gpu_ms": {
+    "k0": 26.501344680786133,
+    "hyp": 30.852672576904297,
+    "k1": 5.225215911865234,
+    "topk": 3.4256958961486816,
+    "k2": 2.3756799697875977,
+    "features": 5.882783889770508
+   },
+   "h2d_bytes": 75437240,
+   "n_psms": 1298,
+   "n_searched": 18482,
+   "write_t": [
+    8.623542308807373,
+    8.652692794799805
+   ]
+  },
+  {
+   "run": "dq_00103_11cell_90min_sps_B5",
+   "raw": "data/raw/PXD016766/dq_00103_11cell_90min_sps_B5.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00103_11cell_90min_sps_B5.vspec.arrow",
+   "pid": 958966,
+   "t_start": 6.865680694580078,
+   "t_end": 8.37432336807251,
+   "wall_s": 1.5086426734924316,
+   "core_s": 1.7195329999999993,
+   "n_spectra": 40769,
+   "n_ms2": 18744,
+   "n_peaks": 14228061,
+   "store_bytes": 123848642,
+   "raw_bytes": 209090667,
+   "timing_s": {
+    "prefetch": 0.03912058100104332,
+    "runtime_load": 5.468260496854782e-06,
+    "decode": 1.325203763321042,
+    "arrow_write": 0.08665835577994585,
+    "close": 0.000450334046036005
+   },
+   "cpu_s": {
+    "prefetch": 0.038651376999999876,
+    "runtime_load": 5.167999999500239e-06,
+    "decode": 1.5269708769999992,
+    "arrow_write": 0.08840129500000327
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.375222444534302,
+    8.45882797241211
+   ],
+   "gpu_wait_s": 1.0013580322265625e-05,
+   "search_t": [
+    8.62349271774292,
+    8.691365003585815
+   ],
+   "search_wall_s": 0.06787228584289551,
+   "gpu_ms": {
+    "k0": 16.095680236816406,
+    "hyp": 34.4411506652832,
+    "k1": 5.354976177215576,
+    "topk": 3.3392319679260254,
+    "k2": 2.3961598873138428,
+    "features": 5.834688186645508
+   },
+   "h2d_bytes": 77149344,
+   "n_psms": 1013,
+   "n_searched": 18679,
+   "write_t": [
+    8.69195818901062,
+    8.719918727874756
+   ]
+  },
+  {
+   "run": "dq_00102_11cell_90min_sps_B3",
+   "raw": "data/raw/PXD016766/dq_00102_11cell_90min_sps_B3.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00102_11cell_90min_sps_B3.vspec.arrow",
+   "pid": 958956,
+   "t_start": 6.85353422164917,
+   "t_end": 8.464315176010132,
+   "wall_s": 1.610780954360962,
+   "core_s": 2.0565549999999995,
+   "n_spectra": 40490,
+   "n_ms2": 18790,
+   "n_peaks": 14325130,
+   "store_bytes": 124581250,
+   "raw_bytes": 209226080,
+   "timing_s": {
+    "prefetch": 0.03966979216784239,
+    "runtime_load": 6.820075213909149e-06,
+    "decode": 1.3864486115053296,
+    "arrow_write": 0.09000838780775666,
+    "close": 0.0004783160984516144
+   },
+   "cpu_s": {
+    "prefetch": 0.03913578399999995,
+    "runtime_load": 6.849999999225531e-06,
+    "decode": 1.598526049000002,
+    "arrow_write": 0.0946235049999995
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    8.465253591537476,
+    8.561468362808228
+   ],
+   "gpu_wait_s": 1.049041748046875e-05,
+   "search_t": [
+    8.691845655441284,
+    8.762492895126343
+   ],
+   "search_wall_s": 0.0706472396850586,
+   "gpu_ms": {
+    "k0": 18.513216018676758,
+    "hyp": 33.88800048828125,
+    "k1": 5.353024005889893,
+    "topk": 3.771104097366333,
+    "k2": 2.5384960174560547,
+    "features": 6.137087821960449
+   },
+   "h2d_bytes": 78162480,
+   "n_psms": 1380,
+   "n_searched": 18727,
+   "write_t": [
+    8.763652801513672,
+    8.790492057800293
+   ]
+  },
+  {
+   "run": "20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2",
+   "raw": "data/raw/PXD029252/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/20210409_QExHFX2_RSLC3_DSSO_mainlib_rep2.vspec.arrow",
+   "pid": 958969,
+   "t_start": 0.6412959098815918,
+   "t_end": 12.551522254943848,
+   "wall_s": 11.910226345062256,
+   "core_s": 4.95949,
+   "n_spectra": 53050,
+   "n_ms2": 43596,
+   "n_peaks": 21208326,
+   "store_bytes": 180214962,
+   "raw_bytes": 1425918096,
+   "timing_s": {
+    "prefetch": 0.6121051488444209,
+    "runtime_load": 5.437992513179779e-06,
+    "decode": 10.809338223654777,
+    "arrow_write": 0.32766198366880417,
+    "close": 0.000466356985270977
+   },
+   "cpu_s": {
+    "prefetch": 0.561384714,
+    "runtime_load": 5.53899999999885e-06,
+    "decode": 3.8367449599999977,
+    "arrow_write": 0.3492245579999995
+   },
+   "instrument": "Q Exactive HF-X Orbitrap",
+   "load_t": [
+    12.552865028381348,
+    12.678560256958008
+   ],
+   "gpu_wait_s": 3.9152767658233643,
+   "search_t": [
+    12.67887258529663,
+    12.81772780418396
+   ],
+   "search_wall_s": 0.1388552188873291,
+   "gpu_ms": {
+    "k0": 23.94812774658203,
+    "hyp": 62.95212936401367,
+    "k1": 14.494976043701172,
+    "topk": 9.674559593200684,
+    "k2": 7.814144134521484,
+    "features": 19.205631256103516
+   },
+   "h2d_bytes": 105603688,
+   "n_psms": 29785,
+   "n_searched": 43167,
+   "write_t": [
+    12.818519830703735,
+    12.885797023773193
+   ]
+  },
+  {
+   "run": "b1937_293T_proteinID_01B_QE3_122212",
+   "raw": "data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/b1937_293T_proteinID_01B_QE3_122212.vspec.arrow",
+   "pid": 958962,
+   "t_start": 0.6406779289245605,
+   "t_end": 50.46041417121887,
+   "wall_s": 49.81973624229431,
+   "core_s": 8.090385,
+   "n_spectra": 71295,
+   "n_ms2": 46816,
+   "n_peaks": 57190690,
+   "store_bytes": 471031410,
+   "raw_bytes": 3368964863,
+   "timing_s": {
+    "prefetch": 2.9951606313697994,
+    "runtime_load": 9.634997695684433e-06,
+    "decode": 46.09599476447329,
+    "arrow_write": 0.532373477704823,
+    "close": 0.0006501018069684505
+   },
+   "cpu_s": {
+    "prefetch": 1.0002892540000001,
+    "runtime_load": 9.895000000037513e-06,
+    "decode": 6.251940051000001,
+    "arrow_write": 0.6126537119999975
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    50.46144247055054,
+    50.589969635009766
+   ],
+   "gpu_wait_s": 37.77178978919983,
+   "search_t": [
+    50.59022665023804,
+    50.73421621322632
+   ],
+   "search_wall_s": 0.14398956298828125,
+   "gpu_ms": {
+    "k0": 17.960479736328125,
+    "hyp": 72.06928253173828,
+    "k1": 15.40771198272705,
+    "topk": 10.841055870056152,
+    "k2": 6.187007904052734,
+    "features": 20.733760833740234
+   },
+   "h2d_bytes": 71225456,
+   "n_psms": 38028,
+   "n_searched": 46699,
+   "write_t": [
+    50.73435688018799,
+    50.835588216781616
+   ]
+  },
+  {
+   "run": "dq_00096_11cell_90min_sps_A3",
+   "raw": "data/raw/PXD016766/dq_00096_11cell_90min_sps_A3.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/dq_00096_11cell_90min_sps_A3.vspec.arrow",
+   "pid": 958965,
+   "t_start": 7.002482891082764,
+   "t_end": 61.78341627120972,
+   "wall_s": 54.78093338012695,
+   "core_s": 2.7851180000000006,
+   "n_spectra": 39249,
+   "n_ms2": 18089,
+   "n_peaks": 14112925,
+   "store_bytes": 122562434,
+   "raw_bytes": 203822033,
+   "timing_s": {
+    "prefetch": 0.04119456419721246,
+    "runtime_load": 4.255678504705429e-06,
+    "decode": 54.596424530725926,
+    "arrow_write": 0.10157435666769743,
+    "close": 0.0005537476390600204
+   },
+   "cpu_s": {
+    "prefetch": 0.0501866350000002,
+    "runtime_load": 4.327000000081682e-06,
+    "decode": 2.5512446230000014,
+    "arrow_write": 0.10865010099999672
+   },
+   "instrument": "Orbitrap Eclipse",
+   "load_t": [
+    61.7845139503479,
+    61.87805199623108
+   ],
+   "gpu_wait_s": 11.1439368724823,
+   "search_t": [
+    61.8782160282135,
+    61.95050287246704
+   ],
+   "search_wall_s": 0.07228684425354004,
+   "gpu_ms": {
+    "k0": 18.273759841918945,
+    "hyp": 32.453216552734375,
+    "k1": 5.234687805175781,
+    "topk": 3.682784080505371,
+    "k2": 2.4586238861083984,
+    "features": 6.504223823547363
+   },
+   "h2d_bytes": 78500880,
+   "n_psms": 2446,
+   "n_searched": 18054,
+   "write_t": [
+    61.95115041732788,
+    61.980488538742065
+   ]
+  },
+  {
+   "run": "b1937_293T_proteinID_01B_QE3_122212_r01",
+   "raw": "data/raw/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw",
+   "store": "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage/b1937_293T_proteinID_01B_QE3_122212_r01.vspec.arrow",
+   "pid": 958960,
+   "t_start": 0.6412274837493896,
+   "t_end": 81.24007272720337,
+   "wall_s": 80.59884524345398,
+   "core_s": 9.491135,
+   "n_spectra": 71295,
+   "n_ms2": 46816,
+   "n_peaks": 57190690,
+   "store_bytes": 471031426,
+   "raw_bytes": 3368964863,
+   "timing_s": {
+    "prefetch": 2.9964071572758257,
+    "runtime_load": 1.081591472029686e-05,
+    "decode": 76.97068426664919,
+    "arrow_write": 0.4984635296277702,
+    "close": 0.000533148180693388
+   },
+   "cpu_s": {
+    "prefetch": 1.084239271,
+    "runtime_load": 1.0857000000141781e-05,
+    "decode": 7.6378837000000015,
+    "arrow_write": 0.5856621209999995
+   },
+   "instrument": "Q Exactive Orbitrap",
+   "load_t": [
+    81.24094200134277,
+    81.36358428001404
+   ],
+   "gpu_wait_s": 19.41271185874939,
+   "search_t": [
+    81.36374998092651,
+    81.50861358642578
+   ],
+   "search_wall_s": 0.14486360549926758,
+   "gpu_ms": {
+    "k0": 17.727039337158203,
+    "hyp": 74.22627258300781,
+    "k1": 15.047776222229004,
+    "topk": 10.860735893249512,
+    "k2": 6.193151950836182,
+    "features": 20.082687377929688
+   },
+   "h2d_bytes": 71225456,
+   "n_psms": 38028,
+   "n_searched": 46699,
+   "write_t": [
+    81.50888252258301,
+    81.62071347236633
+   ]
+  }
+ ],
+ "gpu_util_samples": [
+  [
+   0.05,
+   0,
+   0.75
+  ],
+  [
+   0.58,
+   0,
+   0.75
+  ],
+  [
+   0.7,
+   0,
+   0.75
+  ],
+  [
+   0.8,
+   0,
+   0.75
+  ],
+  [
+   0.9,
+   0,
+   0.75
+  ],
+  [
+   1.0,
+   0,
+   0.75
+  ],
+  [
+   1.23,
+   0,
+   0.75
+  ],
+  [
+   1.34,
+   0,
+   0.75
+  ],
+  [
+   1.47,
+   0,
+   0.75
+  ],
+  [
+   1.64,
+   0,
+   0.75
+  ],
+  [
+   1.74,
+   0,
+   0.77
+  ],
+  [
+   1.84,
+   0,
+   1.24
+  ],
+  [
+   1.95,
+   0,
+   1.24
+  ],
+  [
+   2.06,
+   7,
+   1.24
+  ],
+  [
+   2.38,
+   0,
+   1.24
+  ],
+  [
+   2.48,
+   0,
+   1.24
+  ],
+  [
+   2.58,
+   0,
+   1.24
+  ],
+  [
+   2.68,
+   0,
+   1.53
+  ],
+  [
+   2.78,
+   6,
+   9.61
+  ],
+  [
+   2.88,
+   6,
+   9.61
+  ],
+  [
+   2.98,
+   39,
+   9.61
+  ],
+  [
+   3.08,
+   39,
+   9.62
+  ],
+  [
+   3.18,
+   13,
+   9.62
+  ],
+  [
+   3.28,
+   13,
+   9.62
+  ],
+  [
+   3.38,
+   8,
+   9.62
+  ],
+  [
+   3.48,
+   8,
+   9.62
+  ],
+  [
+   3.58,
+   0,
+   9.62
+  ],
+  [
+   3.68,
+   0,
+   9.62
+  ],
+  [
+   3.78,
+   16,
+   9.62
+  ],
+  [
+   3.88,
+   16,
+   9.62
+  ],
+  [
+   3.99,
+   12,
+   9.62
+  ],
+  [
+   4.09,
+   12,
+   9.62
+  ],
+  [
+   4.19,
+   5,
+   9.62
+  ],
+  [
+   4.29,
+   5,
+   9.62
+  ],
+  [
+   4.39,
+   19,
+   9.62
+  ],
+  [
+   4.49,
+   19,
+   9.62
+  ],
+  [
+   4.59,
+   0,
+   9.62
+  ],
+  [
+   4.69,
+   0,
+   9.62
+  ],
+  [
+   4.79,
+   0,
+   9.62
+  ],
+  [
+   4.89,
+   0,
+   9.62
+  ],
+  [
+   4.99,
+   16,
+   9.63
+  ],
+  [
+   5.09,
+   16,
+   9.63
+  ],
+  [
+   5.19,
+   17,
+   9.63
+  ],
+  [
+   5.29,
+   17,
+   9.63
+  ],
+  [
+   5.39,
+   0,
+   9.63
+  ],
+  [
+   5.49,
+   0,
+   9.63
+  ],
+  [
+   5.61,
+   20,
+   9.63
+  ],
+  [
+   5.72,
+   20,
+   9.63
+  ],
+  [
+   5.82,
+   22,
+   9.63
+  ],
+  [
+   5.92,
+   22,
+   9.63
+  ],
+  [
+   6.02,
+   29,
+   9.63
+  ],
+  [
+   6.12,
+   29,
+   9.63
+  ],
+  [
+   6.22,
+   33,
+   9.63
+  ],
+  [
+   6.32,
+   33,
+   9.63
+  ],
+  [
+   6.42,
+   32,
+   9.63
+  ],
+  [
+   6.52,
+   32,
+   9.63
+  ],
+  [
+   6.62,
+   34,
+   9.63
+  ],
+  [
+   6.72,
+   34,
+   9.63
+  ],
+  [
+   6.82,
+   38,
+   9.63
+  ],
+  [
+   6.92,
+   38,
+   9.63
+  ],
+  [
+   7.02,
+   28,
+   9.63
+  ],
+  [
+   7.12,
+   28,
+   9.63
+  ],
+  [
+   7.22,
+   16,
+   9.63
+  ],
+  [
+   7.32,
+   16,
+   9.63
+  ],
+  [
+   7.42,
+   23,
+   9.63
+  ],
+  [
+   7.52,
+   23,
+   9.63
+  ],
+  [
+   7.62,
+   24,
+   9.63
+  ],
+  [
+   7.73,
+   24,
+   9.63
+  ],
+  [
+   7.83,
+   28,
+   9.63
+  ],
+  [
+   7.93,
+   28,
+   9.63
+  ],
+  [
+   8.03,
+   23,
+   9.63
+  ],
+  [
+   8.13,
+   23,
+   9.63
+  ],
+  [
+   8.23,
+   43,
+   9.63
+  ],
+  [
+   8.33,
+   43,
+   9.63
+  ],
+  [
+   8.44,
+   32,
+   9.63
+  ],
+  [
+   8.54,
+   32,
+   9.63
+  ],
+  [
+   8.64,
+   32,
+   9.63
+  ],
+  [
+   8.74,
+   32,
+   9.63
+  ],
+  [
+   8.84,
+   34,
+   9.63
+  ],
+  [
+   8.94,
+   34,
+   9.63
+  ],
+  [
+   9.04,
+   15,
+   9.63
+  ],
+  [
+   9.14,
+   15,
+   9.63
+  ],
+  [
+   9.24,
+   0,
+   9.63
+  ],
+  [
+   9.34,
+   0,
+   9.63
+  ],
+  [
+   9.44,
+   0,
+   9.63
+  ],
+  [
+   9.54,
+   0,
+   9.63
+  ],
+  [
+   9.64,
+   0,
+   9.63
+  ],
+  [
+   9.74,
+   0,
+   9.63
+  ],
+  [
+   9.84,
+   0,
+   9.63
+  ],
+  [
+   9.94,
+   0,
+   9.63
+  ],
+  [
+   10.04,
+   0,
+   9.63
+  ],
+  [
+   10.14,
+   0,
+   9.63
+  ],
+  [
+   10.24,
+   0,
+   9.63
+  ],
+  [
+   10.34,
+   0,
+   9.63
+  ],
+  [
+   10.44,
+   0,
+   9.63
+  ],
+  [
+   10.54,
+   0,
+   9.63
+  ],
+  [
+   10.64,
+   0,
+   9.63
+  ],
+  [
+   10.74,
+   0,
+   9.63
+  ],
+  [
+   10.84,
+   0,
+   9.63
+  ],
+  [
+   10.94,
+   0,
+   9.63
+  ],
+  [
+   11.04,
+   0,
+   9.63
+  ],
+  [
+   11.14,
+   0,
+   9.63
+  ],
+  [
+   11.24,
+   0,
+   9.63
+  ],
+  [
+   11.34,
+   0,
+   9.63
+  ],
+  [
+   11.45,
+   0,
+   9.63
+  ],
+  [
+   11.55,
+   0,
+   9.63
+  ],
+  [
+   11.65,
+   0,
+   9.63
+  ],
+  [
+   11.75,
+   0,
+   9.63
+  ],
+  [
+   11.85,
+   0,
+   9.63
+  ],
+  [
+   11.95,
+   0,
+   9.63
+  ],
+  [
+   12.05,
+   0,
+   9.63
+  ],
+  [
+   12.15,
+   0,
+   9.63
+  ],
+  [
+   12.25,
+   0,
+   9.63
+  ],
+  [
+   12.35,
+   0,
+   9.63
+  ],
+  [
+   12.45,
+   0,
+   9.63
+  ],
+  [
+   12.55,
+   0,
+   9.63
+  ],
+  [
+   12.65,
+   0,
+   9.63
+  ],
+  [
+   12.75,
+   0,
+   9.63
+  ],
+  [
+   12.85,
+   10,
+   9.63
+  ],
+  [
+   12.95,
+   10,
+   9.63
+  ],
+  [
+   13.05,
+   14,
+   9.63
+  ],
+  [
+   13.15,
+   14,
+   9.63
+  ],
+  [
+   13.25,
+   0,
+   9.63
+  ],
+  [
+   13.35,
+   0,
+   9.63
+  ],
+  [
+   13.45,
+   0,
+   9.63
+  ],
+  [
+   13.55,
+   0,
+   9.63
+  ],
+  [
+   13.65,
+   0,
+   9.63
+  ],
+  [
+   13.75,
+   0,
+   9.63
+  ],
+  [
+   13.85,
+   0,
+   9.63
+  ],
+  [
+   13.95,
+   0,
+   9.63
+  ],
+  [
+   14.05,
+   0,
+   9.63
+  ],
+  [
+   14.15,
+   0,
+   9.63
+  ],
+  [
+   14.26,
+   0,
+   9.63
+  ],
+  [
+   14.36,
+   0,
+   9.63
+  ],
+  [
+   14.46,
+   0,
+   9.63
+  ],
+  [
+   14.56,
+   0,
+   9.63
+  ],
+  [
+   14.66,
+   0,
+   9.63
+  ],
+  [
+   14.76,
+   0,
+   9.63
+  ],
+  [
+   14.86,
+   0,
+   9.63
+  ],
+  [
+   14.96,
+   0,
+   9.63
+  ],
+  [
+   15.06,
+   0,
+   9.63
+  ],
+  [
+   15.16,
+   0,
+   9.63
+  ],
+  [
+   15.26,
+   0,
+   9.63
+  ],
+  [
+   15.36,
+   0,
+   9.63
+  ],
+  [
+   15.46,
+   0,
+   9.63
+  ],
+  [
+   15.56,
+   0,
+   9.63
+  ],
+  [
+   15.66,
+   0,
+   9.63
+  ],
+  [
+   15.76,
+   0,
+   9.63
+  ],
+  [
+   15.86,
+   0,
+   9.63
+  ],
+  [
+   15.96,
+   0,
+   9.63
+  ],
+  [
+   16.06,
+   0,
+   9.63
+  ],
+  [
+   16.16,
+   0,
+   9.63
+  ],
+  [
+   16.26,
+   0,
+   9.63
+  ],
+  [
+   16.36,
+   0,
+   9.63
+  ],
+  [
+   16.46,
+   0,
+   9.63
+  ],
+  [
+   16.56,
+   0,
+   9.63
+  ],
+  [
+   16.67,
+   0,
+   9.63
+  ],
+  [
+   16.95,
+   0,
+   9.63
+  ],
+  [
+   17.06,
+   0,
+   9.63
+  ],
+  [
+   17.16,
+   0,
+   9.63
+  ],
+  [
+   17.45,
+   0,
+   9.63
+  ],
+  [
+   17.55,
+   0,
+   9.63
+  ],
+  [
+   17.65,
+   0,
+   9.63
+  ],
+  [
+   17.75,
+   0,
+   9.63
+  ],
+  [
+   17.85,
+   0,
+   9.63
+  ],
+  [
+   17.95,
+   0,
+   9.63
+  ],
+  [
+   18.05,
+   0,
+   9.63
+  ],
+  [
+   18.15,
+   0,
+   9.63
+  ],
+  [
+   18.25,
+   0,
+   9.63
+  ],
+  [
+   18.35,
+   0,
+   9.63
+  ],
+  [
+   18.45,
+   0,
+   9.63
+  ],
+  [
+   18.55,
+   0,
+   9.63
+  ],
+  [
+   18.65,
+   0,
+   9.63
+  ],
+  [
+   18.75,
+   0,
+   9.63
+  ],
+  [
+   18.85,
+   0,
+   9.63
+  ],
+  [
+   18.95,
+   0,
+   9.63
+  ],
+  [
+   19.06,
+   0,
+   9.63
+  ],
+  [
+   19.16,
+   0,
+   9.63
+  ],
+  [
+   19.26,
+   0,
+   9.63
+  ],
+  [
+   19.36,
+   0,
+   9.63
+  ],
+  [
+   19.5,
+   0,
+   9.63
+  ],
+  [
+   19.6,
+   0,
+   9.63
+  ],
+  [
+   19.7,
+   0,
+   9.63
+  ],
+  [
+   19.8,
+   0,
+   9.63
+  ],
+  [
+   19.9,
+   0,
+   9.63
+  ],
+  [
+   20.0,
+   0,
+   9.63
+  ],
+  [
+   20.1,
+   0,
+   9.63
+  ],
+  [
+   20.2,
+   0,
+   9.63
+  ],
+  [
+   20.3,
+   0,
+   9.63
+  ],
+  [
+   20.4,
+   0,
+   9.63
+  ],
+  [
+   20.5,
+   0,
+   9.63
+  ],
+  [
+   20.6,
+   0,
+   9.63
+  ],
+  [
+   20.7,
+   0,
+   9.63
+  ],
+  [
+   20.8,
+   0,
+   9.63
+  ],
+  [
+   20.9,
+   0,
+   9.63
+  ],
+  [
+   21.0,
+   0,
+   9.63
+  ],
+  [
+   21.1,
+   0,
+   9.63
+  ],
+  [
+   21.2,
+   0,
+   9.63
+  ],
+  [
+   21.3,
+   0,
+   9.63
+  ],
+  [
+   21.4,
+   0,
+   9.63
+  ],
+  [
+   21.5,
+   0,
+   9.63
+  ],
+  [
+   21.6,
+   0,
+   9.63
+  ],
+  [
+   21.7,
+   0,
+   9.63
+  ],
+  [
+   21.8,
+   0,
+   9.63
+  ],
+  [
+   22.12,
+   0,
+   9.63
+  ],
+  [
+   22.22,
+   0,
+   9.63
+  ],
+  [
+   22.32,
+   0,
+   9.63
+  ],
+  [
+   22.42,
+   0,
+   9.63
+  ],
+  [
+   22.52,
+   0,
+   9.63
+  ],
+  [
+   22.62,
+   0,
+   9.63
+  ],
+  [
+   22.72,
+   0,
+   9.63
+  ],
+  [
+   22.82,
+   0,
+   9.63
+  ],
+  [
+   22.92,
+   0,
+   9.63
+  ],
+  [
+   23.02,
+   0,
+   9.63
+  ],
+  [
+   23.12,
+   0,
+   9.63
+  ],
+  [
+   23.22,
+   0,
+   9.63
+  ],
+  [
+   23.32,
+   0,
+   9.63
+  ],
+  [
+   23.42,
+   0,
+   9.63
+  ],
+  [
+   23.52,
+   0,
+   9.63
+  ],
+  [
+   23.62,
+   0,
+   9.63
+  ],
+  [
+   23.72,
+   0,
+   9.63
+  ],
+  [
+   23.82,
+   0,
+   9.63
+  ],
+  [
+   24.17,
+   0,
+   9.63
+  ],
+  [
+   24.27,
+   0,
+   9.63
+  ],
+  [
+   24.37,
+   0,
+   9.63
+  ],
+  [
+   24.47,
+   0,
+   9.63
+  ],
+  [
+   24.57,
+   0,
+   9.63
+  ],
+  [
+   24.68,
+   0,
+   9.63
+  ],
+  [
+   24.78,
+   0,
+   9.64
+  ],
+  [
+   25.09,
+   0,
+   9.65
+  ],
+  [
+   25.19,
+   1,
+   10.04
+  ],
+  [
+   25.29,
+   1,
+   10.04
+  ],
+  [
+   25.39,
+   1,
+   10.04
+  ],
+  [
+   25.49,
+   1,
+   10.04
+  ],
+  [
+   25.59,
+   0,
+   10.04
+  ],
+  [
+   25.69,
+   0,
+   10.04
+  ],
+  [
+   25.79,
+   0,
+   10.04
+  ],
+  [
+   25.89,
+   0,
+   10.04
+  ],
+  [
+   25.99,
+   0,
+   10.04
+  ],
+  [
+   26.09,
+   0,
+   10.04
+  ],
+  [
+   26.19,
+   0,
+   10.04
+  ],
+  [
+   26.29,
+   0,
+   10.04
+  ],
+  [
+   26.39,
+   0,
+   10.04
+  ],
+  [
+   26.49,
+   0,
+   10.04
+  ],
+  [
+   26.59,
+   0,
+   10.04
+  ],
+  [
+   26.69,
+   0,
+   10.04
+  ],
+  [
+   26.79,
+   0,
+   10.04
+  ],
+  [
+   26.89,
+   0,
+   10.04
+  ],
+  [
+   27.0,
+   0,
+   10.04
+  ],
+  [
+   27.1,
+   0,
+   10.04
+  ],
+  [
+   27.2,
+   0,
+   10.04
+  ],
+  [
+   27.3,
+   0,
+   10.04
+  ],
+  [
+   27.4,
+   0,
+   10.04
+  ],
+  [
+   27.5,
+   0,
+   10.04
+  ],
+  [
+   27.6,
+   0,
+   10.04
+  ],
+  [
+   27.7,
+   0,
+   10.04
+  ],
+  [
+   27.8,
+   0,
+   10.04
+  ],
+  [
+   27.9,
+   0,
+   10.04
+  ],
+  [
+   28.0,
+   0,
+   10.04
+  ],
+  [
+   28.1,
+   0,
+   10.04
+  ],
+  [
+   28.2,
+   0,
+   10.04
+  ],
+  [
+   28.3,
+   0,
+   10.04
+  ],
+  [
+   28.4,
+   0,
+   10.11
+  ],
+  [
+   28.5,
+   0,
+   10.11
+  ],
+  [
+   28.6,
+   5,
+   10.11
+  ],
+  [
+   28.7,
+   5,
+   10.11
+  ],
+  [
+   28.8,
+   0,
+   10.11
+  ],
+  [
+   28.9,
+   0,
+   10.11
+  ],
+  [
+   29.0,
+   0,
+   10.11
+  ],
+  [
+   29.1,
+   0,
+   10.11
+  ],
+  [
+   29.2,
+   0,
+   10.11
+  ],
+  [
+   29.3,
+   0,
+   10.11
+  ],
+  [
+   29.4,
+   0,
+   10.11
+  ],
+  [
+   29.5,
+   0,
+   10.11
+  ],
+  [
+   29.6,
+   0,
+   10.11
+  ],
+  [
+   29.7,
+   0,
+   10.11
+  ],
+  [
+   29.8,
+   0,
+   10.11
+  ],
+  [
+   29.91,
+   0,
+   10.11
+  ],
+  [
+   30.01,
+   0,
+   10.11
+  ],
+  [
+   30.11,
+   0,
+   10.11
+  ],
+  [
+   30.21,
+   0,
+   10.11
+  ],
+  [
+   30.31,
+   0,
+   10.11
+  ],
+  [
+   30.41,
+   0,
+   10.11
+  ],
+  [
+   30.51,
+   0,
+   10.11
+  ],
+  [
+   30.61,
+   0,
+   10.11
+  ],
+  [
+   30.71,
+   0,
+   10.11
+  ],
+  [
+   30.81,
+   0,
+   10.11
+  ],
+  [
+   30.91,
+   0,
+   10.11
+  ],
+  [
+   31.01,
+   0,
+   10.11
+  ],
+  [
+   31.11,
+   0,
+   10.11
+  ],
+  [
+   31.21,
+   0,
+   10.11
+  ],
+  [
+   31.31,
+   0,
+   10.11
+  ],
+  [
+   31.41,
+   0,
+   10.11
+  ],
+  [
+   31.51,
+   0,
+   10.11
+  ],
+  [
+   31.61,
+   0,
+   10.11
+  ],
+  [
+   31.71,
+   0,
+   10.11
+  ],
+  [
+   31.81,
+   0,
+   10.11
+  ],
+  [
+   31.91,
+   0,
+   10.11
+  ],
+  [
+   32.01,
+   0,
+   10.11
+  ],
+  [
+   32.11,
+   0,
+   10.11
+  ],
+  [
+   32.21,
+   0,
+   10.11
+  ],
+  [
+   32.31,
+   0,
+   10.11
+  ],
+  [
+   32.41,
+   0,
+   10.11
+  ],
+  [
+   32.51,
+   0,
+   10.11
+  ],
+  [
+   32.61,
+   0,
+   10.11
+  ],
+  [
+   32.71,
+   0,
+   10.11
+  ],
+  [
+   32.82,
+   0,
+   10.11
+  ],
+  [
+   32.92,
+   0,
+   10.11
+  ],
+  [
+   33.02,
+   0,
+   10.11
+  ],
+  [
+   33.12,
+   0,
+   10.11
+  ],
+  [
+   33.22,
+   0,
+   10.11
+  ],
+  [
+   33.32,
+   0,
+   10.11
+  ],
+  [
+   33.42,
+   0,
+   10.11
+  ],
+  [
+   33.52,
+   0,
+   10.11
+  ],
+  [
+   33.62,
+   0,
+   10.11
+  ],
+  [
+   33.72,
+   0,
+   10.11
+  ],
+  [
+   33.82,
+   0,
+   10.11
+  ],
+  [
+   33.92,
+   0,
+   10.11
+  ],
+  [
+   34.02,
+   0,
+   10.11
+  ],
+  [
+   34.12,
+   0,
+   10.11
+  ],
+  [
+   34.22,
+   0,
+   10.11
+  ],
+  [
+   34.32,
+   0,
+   10.11
+  ],
+  [
+   34.42,
+   0,
+   10.11
+  ],
+  [
+   34.52,
+   0,
+   10.11
+  ],
+  [
+   34.62,
+   0,
+   10.11
+  ],
+  [
+   34.72,
+   0,
+   10.11
+  ],
+  [
+   34.82,
+   0,
+   10.11
+  ],
+  [
+   34.92,
+   0,
+   10.11
+  ],
+  [
+   35.02,
+   0,
+   10.11
+  ],
+  [
+   35.12,
+   0,
+   10.11
+  ],
+  [
+   35.22,
+   0,
+   10.11
+  ],
+  [
+   35.32,
+   0,
+   10.11
+  ],
+  [
+   35.42,
+   0,
+   10.11
+  ],
+  [
+   35.52,
+   0,
+   10.11
+  ],
+  [
+   35.62,
+   0,
+   10.11
+  ],
+  [
+   35.72,
+   0,
+   10.11
+  ],
+  [
+   35.83,
+   0,
+   10.11
+  ],
+  [
+   35.93,
+   0,
+   10.11
+  ],
+  [
+   36.03,
+   0,
+   10.11
+  ],
+  [
+   36.13,
+   0,
+   10.11
+  ],
+  [
+   36.23,
+   0,
+   10.11
+  ],
+  [
+   36.33,
+   0,
+   10.11
+  ],
+  [
+   36.43,
+   0,
+   10.11
+  ],
+  [
+   36.53,
+   0,
+   10.11
+  ],
+  [
+   36.63,
+   0,
+   10.11
+  ],
+  [
+   36.73,
+   0,
+   10.11
+  ],
+  [
+   36.83,
+   0,
+   10.11
+  ],
+  [
+   36.93,
+   0,
+   10.11
+  ],
+  [
+   37.03,
+   0,
+   10.11
+  ],
+  [
+   37.13,
+   0,
+   10.11
+  ],
+  [
+   37.23,
+   0,
+   10.11
+  ],
+  [
+   37.33,
+   0,
+   10.11
+  ],
+  [
+   37.43,
+   0,
+   10.11
+  ],
+  [
+   37.53,
+   0,
+   10.11
+  ],
+  [
+   37.63,
+   0,
+   10.11
+  ],
+  [
+   37.73,
+   0,
+   10.11
+  ],
+  [
+   37.83,
+   0,
+   10.11
+  ],
+  [
+   37.93,
+   0,
+   10.11
+  ],
+  [
+   38.03,
+   0,
+   10.11
+  ],
+  [
+   38.13,
+   0,
+   10.11
+  ],
+  [
+   38.23,
+   0,
+   10.11
+  ],
+  [
+   38.33,
+   0,
+   10.11
+  ],
+  [
+   38.43,
+   0,
+   10.11
+  ],
+  [
+   38.53,
+   0,
+   10.11
+  ],
+  [
+   38.63,
+   0,
+   10.11
+  ],
+  [
+   38.73,
+   0,
+   10.11
+  ],
+  [
+   38.84,
+   0,
+   10.11
+  ],
+  [
+   38.94,
+   0,
+   10.11
+  ],
+  [
+   39.04,
+   0,
+   10.11
+  ],
+  [
+   39.14,
+   0,
+   10.11
+  ],
+  [
+   39.24,
+   0,
+   10.11
+  ],
+  [
+   39.34,
+   0,
+   10.11
+  ],
+  [
+   39.44,
+   0,
+   10.11
+  ],
+  [
+   39.54,
+   0,
+   10.11
+  ],
+  [
+   39.64,
+   0,
+   10.11
+  ],
+  [
+   39.74,
+   0,
+   10.11
+  ],
+  [
+   39.84,
+   0,
+   10.11
+  ],
+  [
+   39.94,
+   0,
+   10.11
+  ],
+  [
+   40.04,
+   0,
+   10.11
+  ],
+  [
+   40.14,
+   0,
+   10.11
+  ],
+  [
+   40.24,
+   0,
+   10.11
+  ],
+  [
+   40.34,
+   0,
+   10.11
+  ],
+  [
+   40.44,
+   0,
+   10.11
+  ],
+  [
+   40.54,
+   0,
+   10.11
+  ],
+  [
+   40.64,
+   0,
+   10.11
+  ],
+  [
+   40.74,
+   0,
+   10.11
+  ],
+  [
+   40.84,
+   0,
+   10.11
+  ],
+  [
+   40.94,
+   0,
+   10.11
+  ],
+  [
+   41.04,
+   0,
+   10.11
+  ],
+  [
+   41.14,
+   0,
+   10.11
+  ],
+  [
+   41.24,
+   0,
+   10.11
+  ],
+  [
+   41.34,
+   0,
+   10.11
+  ],
+  [
+   41.44,
+   0,
+   10.11
+  ],
+  [
+   41.54,
+   0,
+   10.11
+  ],
+  [
+   41.64,
+   0,
+   10.11
+  ],
+  [
+   41.74,
+   0,
+   10.11
+  ],
+  [
+   41.85,
+   0,
+   10.11
+  ],
+  [
+   41.95,
+   0,
+   10.11
+  ],
+  [
+   42.05,
+   0,
+   10.11
+  ],
+  [
+   42.15,
+   0,
+   10.11
+  ],
+  [
+   42.25,
+   0,
+   10.11
+  ],
+  [
+   42.35,
+   0,
+   10.11
+  ],
+  [
+   42.45,
+   0,
+   10.11
+  ],
+  [
+   42.55,
+   0,
+   10.11
+  ],
+  [
+   42.65,
+   0,
+   10.11
+  ],
+  [
+   42.75,
+   0,
+   10.11
+  ],
+  [
+   42.85,
+   0,
+   10.11
+  ],
+  [
+   42.95,
+   0,
+   10.11
+  ],
+  [
+   43.05,
+   0,
+   10.11
+  ],
+  [
+   43.15,
+   0,
+   10.11
+  ],
+  [
+   43.25,
+   0,
+   10.11
+  ],
+  [
+   43.35,
+   0,
+   10.11
+  ],
+  [
+   43.45,
+   0,
+   10.11
+  ],
+  [
+   43.55,
+   0,
+   10.11
+  ],
+  [
+   43.65,
+   0,
+   10.11
+  ],
+  [
+   43.75,
+   0,
+   10.11
+  ],
+  [
+   43.85,
+   0,
+   10.11
+  ],
+  [
+   43.95,
+   0,
+   10.11
+  ],
+  [
+   44.05,
+   0,
+   10.11
+  ],
+  [
+   44.15,
+   0,
+   10.11
+  ],
+  [
+   44.25,
+   0,
+   10.11
+  ],
+  [
+   44.35,
+   0,
+   10.11
+  ],
+  [
+   44.45,
+   0,
+   10.11
+  ],
+  [
+   44.55,
+   0,
+   10.11
+  ],
+  [
+   44.65,
+   0,
+   10.11
+  ],
+  [
+   44.75,
+   0,
+   10.11
+  ],
+  [
+   44.86,
+   0,
+   10.11
+  ],
+  [
+   44.96,
+   0,
+   10.11
+  ],
+  [
+   45.06,
+   0,
+   10.11
+  ],
+  [
+   45.16,
+   0,
+   10.11
+  ],
+  [
+   45.26,
+   0,
+   10.11
+  ],
+  [
+   45.36,
+   0,
+   10.11
+  ],
+  [
+   45.46,
+   0,
+   10.11
+  ],
+  [
+   45.56,
+   0,
+   10.11
+  ],
+  [
+   45.66,
+   0,
+   10.11
+  ],
+  [
+   45.76,
+   0,
+   10.11
+  ],
+  [
+   45.86,
+   0,
+   10.11
+  ],
+  [
+   45.96,
+   0,
+   10.11
+  ],
+  [
+   46.06,
+   0,
+   10.11
+  ],
+  [
+   46.16,
+   0,
+   10.22
+  ],
+  [
+   46.26,
+   0,
+   10.22
+  ],
+  [
+   46.36,
+   0,
+   10.34
+  ],
+  [
+   46.46,
+   0,
+   10.39
+  ],
+  [
+   46.56,
+   10,
+   10.83
+  ],
+  [
+   46.66,
+   10,
+   10.83
+  ],
+  [
+   46.76,
+   15,
+   10.83
+  ],
+  [
+   46.86,
+   15,
+   10.83
+  ],
+  [
+   46.96,
+   0,
+   10.94
+  ],
+  [
+   47.06,
+   0,
+   10.94
+  ],
+  [
+   47.16,
+   0,
+   11.04
+  ],
+  [
+   47.26,
+   0,
+   11.04
+  ],
+  [
+   47.36,
+   0,
+   11.04
+  ],
+  [
+   47.46,
+   0,
+   11.04
+  ],
+  [
+   47.56,
+   0,
+   11.04
+  ],
+  [
+   47.67,
+   0,
+   11.04
+  ],
+  [
+   47.77,
+   0,
+   11.04
+  ],
+  [
+   47.87,
+   0,
+   11.04
+  ],
+  [
+   47.97,
+   0,
+   11.04
+  ],
+  [
+   48.07,
+   0,
+   11.04
+  ],
+  [
+   48.17,
+   0,
+   11.04
+  ],
+  [
+   48.27,
+   0,
+   11.04
+  ],
+  [
+   48.37,
+   0,
+   11.04
+  ],
+  [
+   48.47,
+   0,
+   11.04
+  ],
+  [
+   48.57,
+   0,
+   11.04
+  ],
+  [
+   48.67,
+   0,
+   11.04
+  ],
+  [
+   48.77,
+   0,
+   11.04
+  ],
+  [
+   48.87,
+   0,
+   11.04
+  ],
+  [
+   48.97,
+   0,
+   11.04
+  ],
+  [
+   49.07,
+   0,
+   11.04
+  ],
+  [
+   49.17,
+   0,
+   11.04
+  ],
+  [
+   49.27,
+   0,
+   11.04
+  ],
+  [
+   49.37,
+   2,
+   11.04
+  ],
+  [
+   49.47,
+   2,
+   11.04
+  ],
+  [
+   49.57,
+   0,
+   11.04
+  ],
+  [
+   49.67,
+   0,
+   11.04
+  ],
+  [
+   49.77,
+   0,
+   11.04
+  ],
+  [
+   49.87,
+   0,
+   11.04
+  ],
+  [
+   49.97,
+   0,
+   11.04
+  ],
+  [
+   50.07,
+   0,
+   11.04
+  ],
+  [
+   50.17,
+   0,
+   11.04
+  ],
+  [
+   50.27,
+   0,
+   11.04
+  ],
+  [
+   50.37,
+   0,
+   11.04
+  ],
+  [
+   50.47,
+   0,
+   11.04
+  ],
+  [
+   50.59,
+   0,
+   11.04
+  ],
+  [
+   50.69,
+   0,
+   11.04
+  ],
+  [
+   50.79,
+   7,
+   11.04
+  ],
+  [
+   50.89,
+   7,
+   11.04
+  ],
+  [
+   50.99,
+   13,
+   11.04
+  ],
+  [
+   51.09,
+   13,
+   11.04
+  ],
+  [
+   51.19,
+   0,
+   11.04
+  ],
+  [
+   51.29,
+   0,
+   13.66
+  ],
+  [
+   51.39,
+   9,
+   18.89
+  ],
+  [
+   51.49,
+   9,
+   21.5
+  ],
+  [
+   51.59,
+   2,
+   21.5
+  ],
+  [
+   51.69,
+   2,
+   21.5
+  ],
+  [
+   51.79,
+   0,
+   21.5
+  ],
+  [
+   51.9,
+   0,
+   21.5
+  ],
+  [
+   52.0,
+   0,
+   26.8
+  ],
+  [
+   52.1,
+   0,
+   26.8
+  ],
+  [
+   52.2,
+   1,
+   26.8
+  ],
+  [
+   52.3,
+   1,
+   26.8
+  ],
+  [
+   52.4,
+   0,
+   26.8
+  ],
+  [
+   52.5,
+   0,
+   26.8
+  ],
+  [
+   52.6,
+   0,
+   26.8
+  ],
+  [
+   52.7,
+   0,
+   26.8
+  ],
+  [
+   52.8,
+   31,
+   26.8
+  ],
+  [
+   52.9,
+   31,
+   26.8
+  ],
+  [
+   53.0,
+   0,
+   26.8
+  ],
+  [
+   53.1,
+   0,
+   26.8
+  ],
+  [
+   53.2,
+   0,
+   26.8
+  ],
+  [
+   53.3,
+   0,
+   26.8
+  ],
+  [
+   53.4,
+   2,
+   26.8
+  ],
+  [
+   53.5,
+   2,
+   26.8
+  ],
+  [
+   53.6,
+   0,
+   26.8
+  ],
+  [
+   53.7,
+   0,
+   26.8
+  ],
+  [
+   53.8,
+   1,
+   26.8
+  ],
+  [
+   53.9,
+   1,
+   26.8
+  ],
+  [
+   54.0,
+   2,
+   26.8
+  ],
+  [
+   54.1,
+   2,
+   26.8
+  ],
+  [
+   54.2,
+   0,
+   26.8
+  ],
+  [
+   54.3,
+   0,
+   26.8
+  ],
+  [
+   54.4,
+   4,
+   26.8
+  ],
+  [
+   54.5,
+   4,
+   26.8
+  ],
+  [
+   54.61,
+   0,
+   26.8
+  ],
+  [
+   54.71,
+   0,
+   26.8
+  ],
+  [
+   54.81,
+   2,
+   26.8
+  ],
+  [
+   54.91,
+   2,
+   26.8
+  ],
+  [
+   55.01,
+   2,
+   26.8
+  ],
+  [
+   55.11,
+   2,
+   26.8
+  ],
+  [
+   55.21,
+   5,
+   26.8
+  ],
+  [
+   55.31,
+   5,
+   26.8
+  ],
+  [
+   55.41,
+   2,
+   26.8
+  ],
+  [
+   55.51,
+   2,
+   26.8
+  ],
+  [
+   55.61,
+   0,
+   26.8
+  ],
+  [
+   55.71,
+   0,
+   26.8
+  ],
+  [
+   55.81,
+   1,
+   26.8
+  ],
+  [
+   55.91,
+   1,
+   26.8
+  ],
+  [
+   56.01,
+   10,
+   26.8
+  ],
+  [
+   56.11,
+   10,
+   26.8
+  ],
+  [
+   56.21,
+   0,
+   26.8
+  ],
+  [
+   56.31,
+   0,
+   26.8
+  ],
+  [
+   56.41,
+   0,
+   26.8
+  ],
+  [
+   56.51,
+   0,
+   26.8
+  ],
+  [
+   56.61,
+   0,
+   26.8
+  ],
+  [
+   56.71,
+   0,
+   26.8
+  ],
+  [
+   56.81,
+   0,
+   26.8
+  ],
+  [
+   56.91,
+   0,
+   26.8
+  ],
+  [
+   57.01,
+   3,
+   26.8
+  ],
+  [
+   57.11,
+   3,
+   26.8
+  ],
+  [
+   57.21,
+   0,
+   26.8
+  ],
+  [
+   57.31,
+   0,
+   26.8
+  ],
+  [
+   57.42,
+   0,
+   26.8
+  ],
+  [
+   57.52,
+   0,
+   26.8
+  ],
+  [
+   57.62,
+   0,
+   26.8
+  ],
+  [
+   57.72,
+   0,
+   26.8
+  ],
+  [
+   57.82,
+   0,
+   26.8
+  ],
+  [
+   57.92,
+   0,
+   26.8
+  ],
+  [
+   58.02,
+   0,
+   26.8
+  ],
+  [
+   58.12,
+   0,
+   26.8
+  ],
+  [
+   58.22,
+   0,
+   26.8
+  ],
+  [
+   58.32,
+   0,
+   26.8
+  ],
+  [
+   58.42,
+   0,
+   26.8
+  ],
+  [
+   58.52,
+   0,
+   26.8
+  ],
+  [
+   58.62,
+   0,
+   26.8
+  ],
+  [
+   58.72,
+   0,
+   26.8
+  ],
+  [
+   58.82,
+   0,
+   26.8
+  ],
+  [
+   58.92,
+   0,
+   26.8
+  ],
+  [
+   59.02,
+   0,
+   26.8
+  ],
+  [
+   59.12,
+   0,
+   26.8
+  ],
+  [
+   59.22,
+   0,
+   26.8
+  ],
+  [
+   59.32,
+   0,
+   26.8
+  ],
+  [
+   59.42,
+   0,
+   26.8
+  ],
+  [
+   59.52,
+   0,
+   26.8
+  ],
+  [
+   59.62,
+   0,
+   26.8
+  ],
+  [
+   59.72,
+   0,
+   26.8
+  ],
+  [
+   59.82,
+   0,
+   26.8
+  ],
+  [
+   59.92,
+   0,
+   26.8
+  ],
+  [
+   60.02,
+   0,
+   26.8
+  ],
+  [
+   60.13,
+   0,
+   26.8
+  ],
+  [
+   60.23,
+   0,
+   26.8
+  ],
+  [
+   60.33,
+   3,
+   26.8
+  ],
+  [
+   60.43,
+   3,
+   26.8
+  ],
+  [
+   60.53,
+   2,
+   26.8
+  ],
+  [
+   60.63,
+   2,
+   26.8
+  ],
+  [
+   60.73,
+   0,
+   26.8
+  ],
+  [
+   60.83,
+   0,
+   26.8
+  ],
+  [
+   60.93,
+   0,
+   26.8
+  ],
+  [
+   61.03,
+   0,
+   26.8
+  ],
+  [
+   61.13,
+   0,
+   26.8
+  ],
+  [
+   61.23,
+   0,
+   26.8
+  ],
+  [
+   61.33,
+   5,
+   26.8
+  ],
+  [
+   61.43,
+   5,
+   26.8
+  ],
+  [
+   61.53,
+   4,
+   26.8
+  ],
+  [
+   61.63,
+   4,
+   26.8
+  ],
+  [
+   61.73,
+   0,
+   26.8
+  ],
+  [
+   61.83,
+   0,
+   26.8
+  ],
+  [
+   61.93,
+   3,
+   26.8
+  ],
+  [
+   62.03,
+   3,
+   26.8
+  ],
+  [
+   62.13,
+   13,
+   26.8
+  ],
+  [
+   62.23,
+   13,
+   26.8
+  ],
+  [
+   62.33,
+   1,
+   26.8
+  ],
+  [
+   62.43,
+   1,
+   26.8
+  ],
+  [
+   62.53,
+   6,
+   26.8
+  ],
+  [
+   62.63,
+   6,
+   26.8
+  ],
+  [
+   62.74,
+   2,
+   26.8
+  ],
+  [
+   62.84,
+   2,
+   26.8
+  ],
+  [
+   62.94,
+   0,
+   26.8
+  ],
+  [
+   63.04,
+   0,
+   26.8
+  ],
+  [
+   63.14,
+   0,
+   26.8
+  ],
+  [
+   63.24,
+   0,
+   26.8
+  ],
+  [
+   63.34,
+   0,
+   26.8
+  ],
+  [
+   63.44,
+   0,
+   26.8
+  ],
+  [
+   63.54,
+   9,
+   26.8
+  ],
+  [
+   63.64,
+   9,
+   26.8
+  ],
+  [
+   63.74,
+   21,
+   26.8
+  ],
+  [
+   63.84,
+   21,
+   26.8
+  ],
+  [
+   63.94,
+   0,
+   26.8
+  ],
+  [
+   64.04,
+   0,
+   26.8
+  ],
+  [
+   64.14,
+   0,
+   26.8
+  ],
+  [
+   64.24,
+   0,
+   26.8
+  ],
+  [
+   64.34,
+   0,
+   26.8
+  ],
+  [
+   64.44,
+   0,
+   26.8
+  ],
+  [
+   64.54,
+   0,
+   26.8
+  ],
+  [
+   64.64,
+   0,
+   26.8
+  ],
+  [
+   64.74,
+   0,
+   26.8
+  ],
+  [
+   64.84,
+   0,
+   26.8
+  ],
+  [
+   64.94,
+   0,
+   26.8
+  ],
+  [
+   65.04,
+   0,
+   26.8
+  ],
+  [
+   65.14,
+   0,
+   26.8
+  ],
+  [
+   65.25,
+   0,
+   26.8
+  ],
+  [
+   65.35,
+   0,
+   26.8
+  ],
+  [
+   65.45,
+   0,
+   26.8
+  ],
+  [
+   65.55,
+   0,
+   26.8
+  ],
+  [
+   65.65,
+   0,
+   26.8
+  ],
+  [
+   65.75,
+   0,
+   26.8
+  ],
+  [
+   65.85,
+   0,
+   26.8
+  ],
+  [
+   65.95,
+   0,
+   26.8
+  ],
+  [
+   66.05,
+   0,
+   26.8
+  ],
+  [
+   66.15,
+   0,
+   26.8
+  ],
+  [
+   66.25,
+   0,
+   26.8
+  ],
+  [
+   66.35,
+   0,
+   26.8
+  ],
+  [
+   66.45,
+   0,
+   26.8
+  ],
+  [
+   66.55,
+   0,
+   26.8
+  ],
+  [
+   66.65,
+   0,
+   26.8
+  ],
+  [
+   66.75,
+   0,
+   26.8
+  ],
+  [
+   66.85,
+   0,
+   26.8
+  ],
+  [
+   66.95,
+   0,
+   26.8
+  ],
+  [
+   67.05,
+   0,
+   26.8
+  ],
+  [
+   67.15,
+   0,
+   26.8
+  ],
+  [
+   67.25,
+   0,
+   26.8
+  ],
+  [
+   67.35,
+   0,
+   26.8
+  ],
+  [
+   67.45,
+   0,
+   26.8
+  ],
+  [
+   67.55,
+   0,
+   26.8
+  ],
+  [
+   67.65,
+   0,
+   26.8
+  ],
+  [
+   67.76,
+   0,
+   26.8
+  ],
+  [
+   67.86,
+   0,
+   26.8
+  ],
+  [
+   67.96,
+   0,
+   26.8
+  ],
+  [
+   68.06,
+   0,
+   26.8
+  ],
+  [
+   68.16,
+   0,
+   26.8
+  ],
+  [
+   68.26,
+   0,
+   26.8
+  ],
+  [
+   68.36,
+   0,
+   26.8
+  ],
+  [
+   68.46,
+   0,
+   26.8
+  ],
+  [
+   68.56,
+   0,
+   26.8
+  ],
+  [
+   68.66,
+   0,
+   26.8
+  ],
+  [
+   68.76,
+   0,
+   26.8
+  ],
+  [
+   68.86,
+   0,
+   26.8
+  ],
+  [
+   68.96,
+   0,
+   26.8
+  ],
+  [
+   69.06,
+   0,
+   26.8
+  ],
+  [
+   69.16,
+   0,
+   26.8
+  ],
+  [
+   69.26,
+   0,
+   26.8
+  ],
+  [
+   69.36,
+   0,
+   26.8
+  ],
+  [
+   69.46,
+   0,
+   26.8
+  ],
+  [
+   69.56,
+   0,
+   26.8
+  ],
+  [
+   69.66,
+   0,
+   26.8
+  ],
+  [
+   69.76,
+   0,
+   26.8
+  ],
+  [
+   69.86,
+   0,
+   26.8
+  ],
+  [
+   69.96,
+   0,
+   26.8
+  ],
+  [
+   70.06,
+   0,
+   26.8
+  ],
+  [
+   70.16,
+   0,
+   26.8
+  ],
+  [
+   70.26,
+   0,
+   26.8
+  ],
+  [
+   70.37,
+   0,
+   26.8
+  ],
+  [
+   70.47,
+   0,
+   26.8
+  ],
+  [
+   70.57,
+   0,
+   26.8
+  ],
+  [
+   70.67,
+   0,
+   26.8
+  ],
+  [
+   70.77,
+   0,
+   26.8
+  ],
+  [
+   70.87,
+   0,
+   26.8
+  ],
+  [
+   70.97,
+   0,
+   26.8
+  ],
+  [
+   71.07,
+   0,
+   26.8
+  ],
+  [
+   71.17,
+   0,
+   26.8
+  ],
+  [
+   71.27,
+   0,
+   26.8
+  ],
+  [
+   71.37,
+   0,
+   26.8
+  ],
+  [
+   71.47,
+   0,
+   26.8
+  ],
+  [
+   71.57,
+   0,
+   26.8
+  ],
+  [
+   71.67,
+   0,
+   26.8
+  ],
+  [
+   71.77,
+   0,
+   26.8
+  ],
+  [
+   71.87,
+   0,
+   26.8
+  ],
+  [
+   71.97,
+   0,
+   26.8
+  ],
+  [
+   72.07,
+   0,
+   26.8
+  ],
+  [
+   72.17,
+   0,
+   26.8
+  ],
+  [
+   72.27,
+   0,
+   26.8
+  ],
+  [
+   72.37,
+   0,
+   26.8
+  ],
+  [
+   72.47,
+   0,
+   26.8
+  ],
+  [
+   72.58,
+   0,
+   26.8
+  ],
+  [
+   72.68,
+   0,
+   26.8
+  ],
+  [
+   72.78,
+   0,
+   26.8
+  ],
+  [
+   72.88,
+   0,
+   26.8
+  ],
+  [
+   72.98,
+   0,
+   26.8
+  ],
+  [
+   73.08,
+   0,
+   26.8
+  ],
+  [
+   73.18,
+   0,
+   26.8
+  ],
+  [
+   73.28,
+   0,
+   26.8
+  ],
+  [
+   73.38,
+   0,
+   26.8
+  ],
+  [
+   73.48,
+   0,
+   26.8
+  ],
+  [
+   73.58,
+   0,
+   26.8
+  ],
+  [
+   73.68,
+   0,
+   26.8
+  ],
+  [
+   73.78,
+   0,
+   26.8
+  ],
+  [
+   73.88,
+   0,
+   26.8
+  ],
+  [
+   73.98,
+   0,
+   26.8
+  ],
+  [
+   74.08,
+   0,
+   26.8
+  ],
+  [
+   74.18,
+   0,
+   26.8
+  ],
+  [
+   74.28,
+   0,
+   26.8
+  ],
+  [
+   74.38,
+   0,
+   26.8
+  ],
+  [
+   74.48,
+   0,
+   26.8
+  ],
+  [
+   74.58,
+   0,
+   26.8
+  ],
+  [
+   74.68,
+   0,
+   26.8
+  ],
+  [
+   74.78,
+   0,
+   26.8
+  ],
+  [
+   74.88,
+   0,
+   26.8
+  ],
+  [
+   74.98,
+   0,
+   26.8
+  ],
+  [
+   75.08,
+   0,
+   26.8
+  ],
+  [
+   75.19,
+   0,
+   26.8
+  ],
+  [
+   75.29,
+   0,
+   26.8
+  ],
+  [
+   75.39,
+   0,
+   26.8
+  ],
+  [
+   75.49,
+   0,
+   26.8
+  ],
+  [
+   75.59,
+   0,
+   26.8
+  ],
+  [
+   75.69,
+   0,
+   26.8
+  ],
+  [
+   75.79,
+   0,
+   26.8
+  ],
+  [
+   75.89,
+   0,
+   26.8
+  ],
+  [
+   75.99,
+   0,
+   26.8
+  ],
+  [
+   76.09,
+   0,
+   26.8
+  ],
+  [
+   76.19,
+   0,
+   26.8
+  ],
+  [
+   76.29,
+   0,
+   26.8
+  ],
+  [
+   76.39,
+   0,
+   26.8
+  ],
+  [
+   76.49,
+   0,
+   26.8
+  ],
+  [
+   76.59,
+   0,
+   26.8
+  ],
+  [
+   76.92,
+   0,
+   26.8
+  ],
+  [
+   77.02,
+   0,
+   26.8
+  ],
+  [
+   77.12,
+   0,
+   26.8
+  ],
+  [
+   77.41,
+   0,
+   26.8
+  ],
+  [
+   77.51,
+   0,
+   26.8
+  ],
+  [
+   77.61,
+   0,
+   26.8
+  ],
+  [
+   77.71,
+   0,
+   26.8
+  ],
+  [
+   77.81,
+   0,
+   26.8
+  ],
+  [
+   77.91,
+   0,
+   26.8
+  ],
+  [
+   78.01,
+   0,
+   26.8
+  ],
+  [
+   78.11,
+   0,
+   26.8
+  ],
+  [
+   78.22,
+   0,
+   26.8
+  ],
+  [
+   78.32,
+   0,
+   26.8
+  ],
+  [
+   78.42,
+   0,
+   26.8
+  ],
+  [
+   78.52,
+   0,
+   26.8
+  ],
+  [
+   78.62,
+   0,
+   26.8
+  ],
+  [
+   78.72,
+   0,
+   26.8
+  ],
+  [
+   78.82,
+   0,
+   26.8
+  ],
+  [
+   78.92,
+   0,
+   26.8
+  ],
+  [
+   79.03,
+   0,
+   26.8
+  ],
+  [
+   79.13,
+   0,
+   26.8
+  ],
+  [
+   79.51,
+   0,
+   26.8
+  ],
+  [
+   79.67,
+   0,
+   9.63
+  ],
+  [
+   79.77,
+   0,
+   9.63
+  ],
+  [
+   79.87,
+   0,
+   9.63
+  ],
+  [
+   79.97,
+   0,
+   9.63
+  ],
+  [
+   80.07,
+   96,
+   9.63
+  ],
+  [
+   80.17,
+   96,
+   9.63
+  ],
+  [
+   80.27,
+   100,
+   9.63
+  ],
+  [
+   80.37,
+   100,
+   9.63
+  ],
+  [
+   80.47,
+   38,
+   9.63
+  ],
+  [
+   80.57,
+   38,
+   9.63
+  ],
+  [
+   80.67,
+   0,
+   9.63
+  ],
+  [
+   80.77,
+   0,
+   9.63
+  ],
+  [
+   80.87,
+   0,
+   9.63
+  ],
+  [
+   80.97,
+   0,
+   9.63
+  ],
+  [
+   81.07,
+   0,
+   9.63
+  ],
+  [
+   81.18,
+   0,
+   9.63
+  ],
+  [
+   81.28,
+   0,
+   9.63
+  ],
+  [
+   81.38,
+   0,
+   9.63
+  ],
+  [
+   81.48,
+   0,
+   9.63
+  ],
+  [
+   81.58,
+   0,
+   9.63
+  ],
+  [
+   81.68,
+   7,
+   9.63
+  ],
+  [
+   81.78,
+   7,
+   9.63
+  ],
+  [
+   81.88,
+   12,
+   9.63
+  ],
+  [
+   82.16,
+   12,
+   9.63
+  ],
+  [
+   82.26,
+   0,
+   9.63
+  ],
+  [
+   82.36,
+   0,
+   9.63
+  ],
+  [
+   82.46,
+   0,
+   9.63
+  ],
+  [
+   82.56,
+   0,
+   9.63
+  ],
+  [
+   82.66,
+   0,
+   9.63
+  ],
+  [
+   82.76,
+   0,
+   9.63
+  ],
+  [
+   82.86,
+   0,
+   9.63
+  ],
+  [
+   82.96,
+   0,
+   9.63
+  ],
+  [
+   83.06,
+   0,
+   9.63
+  ]
+ ],
+ "host_busy_samples": [
+  [
+   0.59,
+   17.8
+  ],
+  [
+   1.09,
+   22.7
+  ],
+  [
+   1.64,
+   24.8
+  ],
+  [
+   2.14,
+   24.8
+  ],
+  [
+   2.64,
+   24.9
+  ],
+  [
+   3.14,
+   25.2
+  ],
+  [
+   3.64,
+   23.8
+  ],
+  [
+   4.15,
+   23.1
+  ],
+  [
+   4.65,
+   20.0
+  ],
+  [
+   5.15,
+   21.8
+  ],
+  [
+   5.65,
+   23.9
+  ],
+  [
+   6.15,
+   26.0
+  ],
+  [
+   6.65,
+   24.8
+  ],
+  [
+   7.15,
+   25.3
+  ],
+  [
+   7.65,
+   24.1
+  ],
+  [
+   8.16,
+   19.3
+  ],
+  [
+   8.66,
+   12.4
+  ],
+  [
+   9.16,
+   5.2
+  ],
+  [
+   9.66,
+   3.9
+  ],
+  [
+   10.16,
+   3.6
+  ],
+  [
+   10.66,
+   3.6
+  ],
+  [
+   11.16,
+   3.6
+  ],
+  [
+   11.66,
+   4.1
+  ],
+  [
+   12.16,
+   4.2
+  ],
+  [
+   12.68,
+   4.2
+  ],
+  [
+   13.18,
+   4.2
+  ],
+  [
+   13.68,
+   3.3
+  ],
+  [
+   14.18,
+   3.5
+  ],
+  [
+   14.68,
+   3.7
+  ],
+  [
+   15.19,
+   3.6
+  ],
+  [
+   15.69,
+   3.3
+  ],
+  [
+   16.19,
+   3.3
+  ],
+  [
+   16.69,
+   3.7
+  ],
+  [
+   17.19,
+   4.5
+  ],
+  [
+   17.69,
+   4.7
+  ],
+  [
+   18.19,
+   4.6
+  ],
+  [
+   18.69,
+   4.9
+  ],
+  [
+   19.19,
+   5.6
+  ],
+  [
+   19.69,
+   5.5
+  ],
+  [
+   20.2,
+   5.5
+  ],
+  [
+   20.7,
+   4.9
+  ],
+  [
+   21.2,
+   4.3
+  ],
+  [
+   21.7,
+   4.4
+  ],
+  [
+   22.2,
+   5.3
+  ],
+  [
+   22.7,
+   5.4
+  ],
+  [
+   23.2,
+   5.5
+  ],
+  [
+   23.7,
+   5.5
+  ],
+  [
+   24.2,
+   5.6
+  ],
+  [
+   24.7,
+   5.6
+  ],
+  [
+   25.21,
+   5.6
+  ],
+  [
+   25.71,
+   5.3
+  ],
+  [
+   26.21,
+   4.3
+  ],
+  [
+   26.71,
+   4.2
+  ],
+  [
+   27.21,
+   3.8
+  ],
+  [
+   27.71,
+   5.6
+  ],
+  [
+   28.21,
+   5.6
+  ],
+  [
+   28.71,
+   5.7
+  ],
+  [
+   29.21,
+   5.7
+  ],
+  [
+   29.71,
+   5.6
+  ],
+  [
+   30.22,
+   5.5
+  ],
+  [
+   30.72,
+   5.6
+  ],
+  [
+   31.22,
+   6.2
+  ],
+  [
+   31.72,
+   6.0
+  ],
+  [
+   32.22,
+   5.6
+  ],
+  [
+   32.72,
+   5.7
+  ],
+  [
+   33.22,
+   5.5
+  ],
+  [
+   33.72,
+   5.4
+  ],
+  [
+   34.22,
+   5.5
+  ],
+  [
+   34.72,
+   5.5
+  ],
+  [
+   35.23,
+   4.9
+  ],
+  [
+   35.73,
+   5.9
+  ],
+  [
+   36.23,
+   5.5
+  ],
+  [
+   36.73,
+   5.3
+  ],
+  [
+   37.23,
+   5.1
+  ],
+  [
+   37.73,
+   4.7
+  ],
+  [
+   38.23,
+   4.7
+  ],
+  [
+   38.73,
+   4.6
+  ],
+  [
+   39.23,
+   4.5
+  ],
+  [
+   39.73,
+   4.4
+  ],
+  [
+   40.24,
+   4.9
+  ],
+  [
+   40.74,
+   4.7
+  ],
+  [
+   41.24,
+   4.6
+  ],
+  [
+   41.74,
+   4.8
+  ],
+  [
+   42.24,
+   4.6
+  ],
+  [
+   42.74,
+   4.4
+  ],
+  [
+   43.24,
+   4.3
+  ],
+  [
+   43.74,
+   4.5
+  ],
+  [
+   44.24,
+   5.0
+  ],
+  [
+   44.74,
+   4.4
+  ],
+  [
+   45.25,
+   4.5
+  ],
+  [
+   45.75,
+   4.8
+  ],
+  [
+   46.25,
+   4.4
+  ],
+  [
+   46.75,
+   4.8
+  ],
+  [
+   47.25,
+   4.4
+  ],
+  [
+   47.75,
+   4.3
+  ],
+  [
+   48.25,
+   4.4
+  ],
+  [
+   48.75,
+   4.3
+  ],
+  [
+   49.25,
+   4.7
+  ],
+  [
+   49.75,
+   4.4
+  ],
+  [
+   50.26,
+   4.5
+  ],
+  [
+   50.76,
+   4.8
+  ],
+  [
+   51.26,
+   4.6
+  ],
+  [
+   51.76,
+   4.3
+  ],
+  [
+   52.26,
+   5.3
+  ],
+  [
+   52.76,
+   5.5
+  ],
+  [
+   53.26,
+   5.6
+  ],
+  [
+   53.76,
+   5.5
+  ],
+  [
+   54.26,
+   5.7
+  ],
+  [
+   54.77,
+   5.6
+  ],
+  [
+   55.27,
+   5.3
+  ],
+  [
+   55.77,
+   5.3
+  ],
+  [
+   56.27,
+   5.6
+  ],
+  [
+   56.77,
+   5.6
+  ],
+  [
+   57.27,
+   5.4
+  ],
+  [
+   57.77,
+   5.4
+  ],
+  [
+   58.27,
+   5.6
+  ],
+  [
+   58.77,
+   5.5
+  ],
+  [
+   59.28,
+   5.7
+  ],
+  [
+   59.78,
+   5.4
+  ],
+  [
+   60.28,
+   5.5
+  ],
+  [
+   60.78,
+   5.7
+  ],
+  [
+   61.28,
+   5.3
+  ],
+  [
+   61.78,
+   4.7
+  ],
+  [
+   62.28,
+   4.9
+  ],
+  [
+   62.78,
+   4.5
+  ],
+  [
+   63.28,
+   4.8
+  ],
+  [
+   63.78,
+   5.3
+  ],
+  [
+   64.29,
+   4.9
+  ],
+  [
+   64.79,
+   4.2
+  ],
+  [
+   65.29,
+   4.3
+  ],
+  [
+   65.79,
+   4.2
+  ],
+  [
+   66.29,
+   4.3
+  ],
+  [
+   66.79,
+   3.7
+  ],
+  [
+   67.29,
+   4.3
+  ],
+  [
+   67.79,
+   4.2
+  ],
+  [
+   68.29,
+   4.3
+  ],
+  [
+   68.8,
+   4.3
+  ],
+  [
+   69.3,
+   4.8
+  ],
+  [
+   69.8,
+   4.2
+  ],
+  [
+   70.3,
+   4.2
+  ],
+  [
+   70.8,
+   4.3
+  ],
+  [
+   71.3,
+   4.4
+  ],
+  [
+   71.8,
+   4.3
+  ],
+  [
+   72.3,
+   4.1
+  ],
+  [
+   72.8,
+   4.4
+  ],
+  [
+   73.31,
+   4.2
+  ],
+  [
+   73.81,
+   4.3
+  ],
+  [
+   74.31,
+   4.2
+  ],
+  [
+   74.81,
+   4.5
+  ],
+  [
+   75.31,
+   4.2
+  ],
+  [
+   75.81,
+   4.2
+  ],
+  [
+   76.31,
+   4.4
+  ],
+  [
+   76.81,
+   4.8
+  ],
+  [
+   77.31,
+   7.0
+  ],
+  [
+   77.82,
+   6.6
+  ],
+  [
+   78.32,
+   6.6
+  ],
+  [
+   78.82,
+   6.4
+  ],
+  [
+   79.32,
+   6.7
+  ],
+  [
+   79.82,
+   7.0
+  ],
+  [
+   80.32,
+   6.6
+  ],
+  [
+   80.82,
+   6.2
+  ],
+  [
+   81.32,
+   6.6
+  ],
+  [
+   81.82,
+   12.5
+  ],
+  [
+   82.33,
+   23.0
+  ],
+  [
+   82.83,
+   14.5
+  ]
+ ],
+ "params": {
+  "precursor_ppm": [
+   -10.0,
+   10.0
+  ],
+  "fragment_ppm": [
+   -20.0,
+   20.0
+  ],
+  "isotope_errors": [
+   0,
+   2
+  ],
+  "precursor_charge": [
+   2,
+   4
+  ],
+  "max_peaks": 150,
+  "min_peaks": 15,
+  "fragment_min_mz": 150.0,
+  "fragment_max_mz": 2000.0,
+  "min_ion_index": 2,
+  "max_fragment_charge": 1,
+  "min_matched_peaks": 4,
+  "topk": 500,
+  "k1_threshold": 1,
+  "pair_closure": true,
+  "report_psms": 1,
+  "peak_mode": "global",
+  "window_th": 100.0,
+  "window_k": 15,
+  "chunk_size": 8192,
+  "bin_ppm": 20.0,
+  "tile": 1024,
+  "k2_threads": 128,
+  "max_slice_entries": 2147483647
+ },
+ "family_top2": false,
+ "ms1_stage": false,
+ "gpu_max_mem_bytes": 8965620224,
+ "process": {
+  "age_at_main_s": 0.09000000031664968,
+  "argv": [
+   "$VULCAN_ROOT/vulcan/cohort.py",
+   "--index",
+   "/tmp/vulcan_e2/index/human_contam_prod",
+   "--raw-list",
+   "$VULCAN_ROOT/scripts/m2b/dev_dda_raws.txt",
+   "--out",
+   "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16",
+   "--stage",
+   "$VULCAN_SCRATCH/vulcan_m2b/cohort_c50_w16.stage",
+   "--workers",
+   "16",
+   "--stats",
+   "$VULCAN_ROOT/results/2026-10-27_M2b_cohort/runs/c50_w16.json",
+   "--repeat-to",
+   "50"
+  ],
+  "python": "$VULCAN_SCRATCH/vulcan_env/pe/bin/python",
+  "age_at_end_s": 83.18000000016764
+ },
+ "hw": {
+  "hostname": "gpu-node",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "os_cpu_count": 64,
+  "affinity_count": 32,
+  "n_threads": 4,
+  "VULCAN_THREADS": "4",
+  "avx2": true,
+  "avx512": [
+   "avx512_bf16",
+   "avx512_bitalg",
+   "avx512_vbmi2",
+   "avx512_vnni",
+   "avx512_vpopcntdq",
+   "avx512bw",
+   "avx512cd",
+   "avx512dq",
+   "avx512f",
+   "avx512ifma",
+   "avx512vbmi",
+   "avx512vl"
+  ],
+  "ram_gb": 1503.3,
+  "cgroup_mem_limit_gb": null,
+  "kernel": "5.15.0-194-generic",
+  "python": "3.12.16",
+  "physical_cores_in_affinity": 32,
+  "sockets_in_affinity": 2,
+  "gpus": [
+   {
+    "name": "NVIDIA A100 80GB PCIe",
+    "mem_mib": 81920,
+    "compute_cap": "8.0"
+   }
+  ],
+  "driver": "580.178.04",
+  "cuda_driver": "13.0",
+  "nvcc": null,
+  "torch_cuda": {
+   "torch": "2.14.1",
+   "cuda": "12.9",
+   "available": true
+  },
+  "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+ }
+}

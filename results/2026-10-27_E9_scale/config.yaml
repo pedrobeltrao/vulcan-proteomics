@@ -1,0 +1,44 @@
+# E9 scale test + L6 global FDR (tree 3d), dev-grade, dataset D8
+experiment: E9
+design_refs: [DESIGN §4 L6, §6.3, §6.0 A1.1, §7 E9]
+data:
+  set: D8 (dev)                      # data/manifests/e9_d8.tsv; selector scripts/e9/select_e9.py (seed 11)
+  runs_total: 1000
+  projects_total: 142
+  nested_N: [1, 10, 100, 1000]       # prefixes of the round-robin order
+  exclusions: [t4_selection.tsv, tier_s.tsv, dev_sealed.tsv, dev_sealed_extra.tsv, train.tsv, predictor_training_accessions.tsv]
+  frame: human, DDA, LFQ, no enrichment, Thermo OT-HCD (QE / QE Plus / HF / HF-X / Exploris 240/480)
+  file_size_bytes: [1.0e8, 2.0e9]
+  per_project_max: 8
+stream:
+  driver: scripts/e9/stream.py
+  work: /tmp/vulcan_e9               # local NVMe, stream-and-delete (RAW and Arrow stores deleted after scoring)
+  download: curl HTTPS via cluster proxy, 32-64 parallel streams, resumable, size + PRIDE SHA-1 check, sha256 recorded
+  max_pending_raw_gb: 150
+  max_unscored_batches: 3
+  batch_runs: [10, 30, 40]
+search:
+  engine: python -m vulcan.cohort (24 decode workers, --keep-stores --skip-failed) + python -m vulcan.gpu.run (arm C)
+  params: {report_psms: 5}           # E2 defaults otherwise (10 ppm precursor, 20 ppm fragment, isotope 0-2)
+  static_mods: {C: 57.021464}
+  var_mods: {M: 15.9949}
+  index_P: /tmp/vulcan_e2/index/human_contam_E2001    # human+contaminants + paired shuffled entrapment seed 2001 + decoys (seed 1001)
+  index_C: /tmp/vulcan_m3/index/human_contam_C        # human+contaminants + Arabidopsis foreign (neighbour-filtered, r=1.022) + decoys
+scoring:
+  model: results/2026-10-27_M3_scoring/models/static_gbm_pred.pkl   # frozen default (D7, A1.1)
+  features: vulcan.rescore.features (AlphaPeptDeep, per-run label-blind NCE, chunk 50k)
+  worker: scripts/e9/score_worker.py (persistent, NVMe-staged pred env scripts/e9/stage_pred_env.sh), 2-3 concurrent
+  reference_score: hyperscore (fixed, own spectrum-level winners)
+statistics:
+  module: vulcan/stats/global_fdr.py
+  unit: peptidoform (pf_id)
+  tiebreak: hash(pf_id, 11)
+  global: per-run spectrum competition -> best evidence per unit across runs -> paired competition -> (D+1)/T
+  naive: per-run paired double competition, union of q_run <= alpha lists
+  protein: picked protein groups (vulcan.stats.protein.picked_group_fdr, rescued subsets), arm P paired protein entrapment
+  entrapment: arm P paired (r=1) + arm C combined (r=1.022); 1 entrapment seed (2001) x 1 decoy seed (1001) (pre-registered for E9 N=1000)
+  bootstrap: 1000 Poisson pair bootstraps
+  alphas: [0.001, 0.01, 0.05]
+  score_variants: [score_raw (primary), score_cal (runner-up label-blind calibration), score_bulk (low-quantile label-blind calibration), hyperscore]
+  comparability: G4-style KS on decoy PSM winners, per run (and x charge) vs all other runs, per instrument; null = KS of two halves
+concurrency: shared node (other agents' Sage/Comet/Java/vLLM jobs; loadavg 50-117); no bench lock for long E9 runs

@@ -1,0 +1,115 @@
+{
+ "seed": 11,
+ "allow": [
+  "Staphylococcus aureus",
+  "Bacillus cereus",
+  "Pseudomonas aeruginosa",
+  "Synechocystis",
+  "Mycobacterium tuberculosis",
+  "Streptomyces",
+  "Myxococcus xanthus",
+  "Klebsiella pneumoniae",
+  "Francisella tularensis",
+  "Neisseria gonorrhoeae",
+  "Synechococcus",
+  "Cupriavidus necator",
+  "Trypanosoma brucei",
+  "Plasmodium falciparum",
+  "Toxoplasma gondii",
+  "Dictyostelium discoideum",
+  "Chlamydomonas reinhardtii",
+  "Leishmania donovani",
+  "Tetrahymena thermophila"
+ ],
+ "n_candidates": 116,
+ "tried": [
+  [
+   "PXD015648",
+   "Trypanosoma brucei",
+   "selected 3 of 32",
+   {
+    "upid": "UP000008524",
+    "organism": "Trypanosoma brucei brucei (strain 927/4 GUTat10.1)",
+    "taxid": "185431",
+    "n_proteins": 8588
+   }
+  ],
+  [
+   "PXD019665",
+   "Trypanosoma brucei",
+   "organism taken"
+  ],
+  [
+   "PXD026833",
+   "Pseudomonas aeruginosa",
+   "0 usable raw"
+  ],
+  [
+   "PXD016370",
+   "Trypanosoma brucei",
+   "organism taken"
+  ],
+  [
+   "PXD048354",
+   "Plasmodium falciparum",
+   "0 usable raw"
+  ],
+  [
+   "PXD023811",
+   "Staphylococcus aureus",
+   "selected 3 of 19",
+   {
+    "upid": "UP000001939",
+    "organism": "Staphylococcus aureus (strain USA300)",
+    "taxid": "367830",
+    "n_proteins": 2607
+   }
+  ],
+  [
+   "PXD033511",
+   "Trypanosoma brucei",
+   "organism taken"
+  ],
+  [
+   "PXD052518",
+   "Trypanosoma brucei",
+   "organism taken"
+  ],
+  [
+   "PXD013401",
+   "Synechocystis sp.",
+   "0 usable raw"
+  ],
+  [
+   "PXD021787",
+   "Synechococcus sp.",
+   "selected 3 of 4",
+   {
+    "upid": "UP000001566",
+    "organism": "Synechococcus sp. (strain WH7803)",
+    "taxid": "32051",
+    "n_proteins": 2530
+   }
+  ],
+  [
+   "PXD062516",
+   "Staphylococcus aureus",
+   "organism taken"
+  ],
+  [
+   "PXD055392",
+   "Bacillus cereus",
+   "selected 3 of 12",
+   {
+    "upid": "UP000001417",
+    "organism": "Bacillus cereus (strain ATCC 14579 / DSM 31 / CCUG 7414 / JCM 2152 / NBRC 15305 / NCIMB 9373 / NCTC 2599 / NRRL B-3711)",
+    "taxid": "226900",
+    "n_proteins": 5240
+   }
+  ]
+ ],
+ "corrections": [
+  "2026-10-27, before any DN data was fetched: PXD021787 is Synechococcus sp. PCC 7002 (frame metadata); the free-text proteome lookup returned strain WH7803 (UP000001566). Replaced with UP000001688 (taxid 32049, PCC 7002).",
+  "PXD023811 strain unspecified: homolog filter uses USA300 (UP000001939) + NCTC 8325 (UP000008816)."
+ ]
+}

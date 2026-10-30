@@ -1,0 +1,226 @@
+# A3.0 Q1: changed files in the v1 import closure (scripts/a3/v1_closure_guard.py) with their accepted justification.
+# Each entry pins the sha256 of the EXACT `git diff prereg-v0.4.2 <commit> -- <path>`; any further edit voids it.
+# kind: deviation (walk-agent dated deviation; `note` = where it is recorded) | bit_identity (`evidence` = committed
+# path(s) with the bit-identity evidence on the v1 path).  Not listed here (guard FAILS until evidence exists):
+#   bench/t1_driver.py, bench/t1/{comparators,evaluate,ours_chimeric}.py, vulcan/chimeric/*, vulcan/rescore/features_v2.py
+#   -- in the closure of bench/t1_driver.py only (not gates_a2.py); their evidence is the A3.1.6 dry run (v1 columns
+#   bitwise identical with and without the A3 additions on D0 and D1), which is an open adoption precondition.
+- path: vulcan/gpu/_lib.py
+  diff_sha256: 11d2b7ad153fa10575824fe2667a911aab9badc88340f2b994c10d163c84e965
+  kind: bit_identity
+  commit: 8e887f7
+  evidence: [results/2026-10-27_3c_itcid/NOTES.md]
+  summary: "3c Da fragment tolerance (vk_set_tol_da binding); OT-HCD ppm path: D0 (2 runs) and D1 top-5 PSM tables re-searched bit-identical to M3 (NOTES 'What was built')"
+- path: vulcan/gpu/engine.py
+  diff_sha256: fad8df7c1401375a7e8dc99218318bce48a8564da6dba6ae0084695a47ab4957
+  kind: bit_identity
+  commit: 8e887f7
+  evidence: [results/2026-10-27_3c_itcid/NOTES.md]
+  summary: "3c fragment_unit plumbing; ppm arithmetic unchanged; OT-HCD bit-identical (NOTES)"
+- path: vulcan/gpu/host.py
+  diff_sha256: 93cf347f7f85bfcaefe0084cabc012f571473f4c0cc41a3266144b48af908009
+  kind: bit_identity
+  commit: 8e887f7
+  evidence: [results/2026-10-27_3c_itcid/NOTES.md]
+  summary: "3c SearchParams.fragment_unit (default ppm); OT-HCD bit-identical (NOTES)"
+- path: vulcan/gpu/kernels.cu
+  diff_sha256: f70657941cb4c6e7602c4b3237d88c8c68bd2895a6af55d5c6370cc88ddb0841
+  kind: bit_identity
+  commit: 8e887f7
+  evidence: [results/2026-10-27_3c_itcid/NOTES.md, results/2026-10-27_3c_itcid/check_da.json]
+  summary: "3c tol_bound __constant__ flag, ppm op-for-op unchanged; OT-HCD D0/D1 top-5 PSM tables bit-identical to M3 (NOTES)"
+
+# A3 freeze rehearsal (2026-10-28, A3 freeze agent): changed files of the bench/t1_driver.py closure, diffs pinned
+# at the dry-run code commit e0b94aa.  Evidence: the whole driver at prereg-v0.4.2 (A1 set) vs at e0b94aa (--a3) gives
+# byte-identical v1 artefacts and A1 comparator artefacts (same Sage/Comet searches) and identical v1 metrics on every
+# common key, on D0 and D1 (IMPLEMENTATION_NOTES 37).  End-to-end evidence for all files jointly, not per hunk.
+# Files changed after e0b94aa (e.g. the cec4f37 GPU MS1 merge) have different diffs and are NOT covered.
+- path: bench/t1/a3.py
+  diff_sha256: 97e5d9ebd37542abec6232393eaef6a07141c8ebd26f150040eb0310a2a158bb
+  kind: bit_identity
+  commit: c6116ec
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: bench/t1/comparators.py
+  diff_sha256: 579e66bd47bcc3bc38577fe5bf903b06f6abee7c7ce190e12ab91c8160f89512
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: bench/t1/evaluate.py
+  diff_sha256: 7cf03b263a9e171c59e95e7c9b214fd7da32db1f0fc24c30510d24c3b171a419
+  kind: bit_identity
+  commit: c6116ec
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: bench/t1/ours_chimeric.py
+  diff_sha256: d7da6f9b78960d29bc448035906727c17814fd7bc82a173f313573fe535d946c
+  kind: bit_identity
+  commit: dac5ec3
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: bench/t1_driver.py
+  diff_sha256: 26449927cd07b61d05661fb0938e2c149757b63be700fa9e490b8cfc0907a59a
+  kind: bit_identity
+  commit: e0b94aa
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: scripts/e7/strata.py
+  diff_sha256: 7c39fefcb2aded5766d01b984dd70abd39f648818277e089b0e7a132ed7a1b90
+  kind: bit_identity
+  commit: d64664a
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: scripts/e7b/sage_rank_strata.py
+  diff_sha256: 14b40e4b22b30e71ff07108c79cf0cbcb2f840ea6356d64f630bc842d9fea587
+  kind: bit_identity
+  commit: 7865f8e
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/chimeric/__init__.py
+  diff_sha256: bd7fbba01bd177eb4cf39add378bed2a78090153027de520c8bf401564a07488
+  kind: bit_identity
+  commit: d64664a
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/chimeric/compete.py
+  diff_sha256: bf7d9d0ca3ed04a23f320a8b6a0d416f60fd327e81a3ac92c2368e640afa0b78
+  kind: bit_identity
+  commit: d64664a
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/chimeric/fast_compete.py
+  diff_sha256: eaf7425482f0c6afe9cd179f8475c76b988e44e2f8e8535f3c0bf93356392b1f
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/chimeric/search.py
+  diff_sha256: 956bd1f98c1403cdda44c98ecbfc649cbe1ba2194dea5bd80897557eeaed6386
+  kind: bit_identity
+  commit: d64664a
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/cohort.py
+  diff_sha256: b634b0d335139fb5c5e8e4cc02eeda633dac703eac60c4fe1fa2db80aeb2d990
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/gates/a3_config.py
+  diff_sha256: 574431d971e2ee51d0322ce365d5fb5ba058dee6a40404850b8928b6f43f3982
+  kind: bit_identity
+  commit: c6116ec
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/ms1/features.py
+  diff_sha256: fce91377ebc02a90f5e59ebc0185cd1974d9387510f24fe487000fd1840a44f2
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/ms1/hills.py
+  diff_sha256: 1f0ad231770bb78ff23aff4849be296a1d7daca8a78d1754a078140c67bbcbe7
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/ms1/isotopes.py
+  diff_sha256: 1fe2630fc133943947fc69311402af7e7c786eb420d50062dac12617e33bc438
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/predict/library.py
+  diff_sha256: 548fc9455131cc14e4b5690e2c5c9e773b839bb2a8782f2de52d3062a0289ae9
+  kind: bit_identity
+  commit: ed98d7c
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/rescore/cohort_scoring.py
+  diff_sha256: f2a7ae048f63b996d9db04312586e358350846b5b4c0f1056d5710d2e3829d1c
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/rescore/fast.py
+  diff_sha256: 407d33fd2971104d2c4ddfa0f76a494a3e749eaa2b835b977a1e938459e8e1e7
+  kind: bit_identity
+  commit: bd2cfb2
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/rescore/features_v2.py
+  diff_sha256: d99be65468415edc828f4e5d5c44cd71747671cd70bd5c02336a0fc1a94f942d
+  kind: bit_identity
+  commit: d64664a
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/rescore/post.py
+  diff_sha256: 7a8e7aef2975ae6e93830e37053803e0bc02f4f0866d5f5d9f5e4535c1100637
+  kind: bit_identity
+  commit: ed98d7c
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+- path: vulcan/rescore/prod.py
+  diff_sha256: 3718a6aef1734c51194c7c0650a441c2d15c94d77d2d5f93d3f5445ef0fe457a
+  kind: bit_identity
+  commit: ed98d7c
+  evidence: [results/2026-10-28_A3_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "A3.1.6 dry run, prereg-v0.4.2 vs e0b94aa: v1 artefacts and metrics bitwise identical on D0/D1 (results/2026-10-28_A3_freeze/NOTES.md)"
+
+# A3/A5 FINAL freeze (2026-10-28, A5 implementer; D32): changed files of the v1 closure at the freeze code commit 7af9b9c.
+# Evidence: the whole driver at prereg-v0.4.2 vs at 7af9b9c (--a3) on D1 (final dry run) and the rehearsal's D0 byte-identity at e0b94aa; D0 is not re-run at the final commit (D32 deviation, argued per diff in results/2026-10-28_A3A5_final_freeze/NOTES.md).
+- path: bench/env_manifest.py
+  diff_sha256: 2ab96a93f4c994b1281dc50fc8fc5b3f0f30e2800f29ae0cb5046d8359f92933
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: bench/sealed_run.py
+  diff_sha256: 7aac5f83f96bd2471be29bb8778d3cc33ad40dd6ac626418830b23d71c2a0bbe
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: bench/t1/a5.py
+  diff_sha256: 6173df065259d43fff2b436bd358f5f0ae69e455b9e1ae3bd0e9971ce4518acb
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: bench/t1/completeness.py
+  diff_sha256: 714d95d23a3e886524378722ace6c583cd198205ce235dc2731e90221ad93ae7
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: bench/t1_driver.py
+  diff_sha256: 02a1fc433522675c38b8f14f8ed6f575c7b7aa71335ec0ad31e6f00a754cf9b6
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: vulcan/cohort.py
+  diff_sha256: 7e2ef5cbd0f9540a30d1e1f2a2e166bfca63f66272d48c6be3f6f963a69d7b63
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: vulcan/gates/a3_config.py
+  diff_sha256: ac90b6bd11635008fd0c1abbec96e500f2ee1a40a322b5bc7616e0516aa61a95
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: vulcan/ms1/features.py
+  diff_sha256: 6444ba66963338027508e902fbb406eb71ccb5dfeadeb43a8138393bb60e0161
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"
+- path: vulcan/ms1/gpu.py
+  diff_sha256: 4ab0a9256f2b0e3c9fc09bcc8e9890ab3c7e8a54fcafff2edc3855b85d109aa5
+  kind: bit_identity
+  commit: 7af9b9c
+  evidence: [results/2026-10-28_A3A5_final_freeze/dryrun_D1.json, results/2026-10-28_A3_freeze/D0/v1_artefacts_tag_vs_freeze.json, results/2026-10-28_A3_freeze/D0/a1_comparator_artefacts_tag_vs_freeze.json]
+  summary: "final A3/A5 freeze; D1 end-to-end bit identity at 7af9b9c; D0 per D32 (NOTES)"

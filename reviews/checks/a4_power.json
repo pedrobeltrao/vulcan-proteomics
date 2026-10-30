@@ -1,0 +1,2040 @@
+{
+ "seed": 131,
+ "spec": "Amendment A4 (draft): power, cluster-robustness and feasibility check of the fresh null set DN3.\n\nSYNTHETIC SIMULATION + LABEL-FREE DN2 YIELDS ONLY.  Seed 131 (SEEDS[4]).\nInputs that are read (all label-free; none is a per-label, tail-label or gate quantity):\n  * results/2026-10-27_A2_dn2/admission_counts.json -- per-project |A|, A with an exhaustive candidate, tail proxy\n    (label-collapsed: max over T u D hyperscore >= host 1% threshold), B candidates;\n  * data/cache/a2/admission/<acc>/<run>.npz -- only len(codes) and len(A_spec) (per-run spectra and |A|);\n  * results/2026-10-27_A2_dn2/walk_events.jsonl -- only download sizes and timestamps (feasibility);\n  * results/2026-10-27_A2_dn2/selection_log.tsv is NOT needed (walk decision counts are copied from NOTES.md).\nNo DN2 mixture exists, no label array is opened, no sealed file and no E7b output is read.\n\nRules simulated are the A4 rules (reviews/amendment_A4_draft.md), built from the implemented A2/A3 statistics:\n  * tail-G2 = vulcan.gates.a2_stats.tail_g2_a2 unchanged in form, with conf 0.975 (A4 alpha split) and the cluster\n    unit of A4.3 (genus/lab component) instead of the project;\n  * G1 = A2.6 statistic with a 99.5% Fisher-z CI, hulled with a cluster-jackknife 99.5% t-interval (A4.5);\n  * TOST rows (G3, V4-V6, V12) = Newcombe interval at conf 0.95 (two one-sided 97.5%), hulled with a cluster\n    percentile bootstrap 95% interval (A4.5);\n  * the A2 rule (conf 0.95/0.99/0.90, no cluster term outside tail-G2) is simulated next to it for comparison.\nSections (json keys):\n  S0 dn2_yields      label-free per-run / per-project yields and their variance components (design-effect inputs)\n  S1 n_min           A4 n_min of G1, G3, V6, V12 (definitions of A2.6 / A3.1.9, re-derived under the A4 rule)\n  S2 tost_cluster    TOST rows: clean pass and margin false-pass, with between-cluster heterogeneity of the gap\n  S3 g1_cluster      G1: clean pass and margin false-pass with heterogeneity of rho\n  S4 walk            the DN3 walk under the A4 stopping rule: runs, projects, clusters, GB, hours, P(stop before\n                     pool exhausted), for a grid of unknowns (runs per project, admission rate, tail-proxy yield)\n  S5 tail_g2         tail-G2 at the walk's stopping point: clean pass, margin false-pass (tau = 0 / 0.05 / 0.10),\n                     A2 rule vs A4 rule, and concentration of a leak in few clusters\n  S6 joint           joint tier bounds (Frechet lower, min upper, independence product) for v1 and v2_sep",
+ "S0_dn2_yields": {
+  "projects": {
+   "PXD006818": {
+    "runs": 3,
+    "n_spectra": 40150,
+    "n_A": 352,
+    "n_A_cand": 143,
+    "tail_proxy": 3,
+    "n_B": 39798
+   },
+   "PXD018953": {
+    "runs": 3,
+    "n_spectra": 141124,
+    "n_A": 5561,
+    "n_A_cand": 1634,
+    "tail_proxy": 2,
+    "n_B": 135563
+   },
+   "PXD044078": {
+    "runs": 3,
+    "n_spectra": 160805,
+    "n_A": 6494,
+    "n_A_cand": 2975,
+    "tail_proxy": 4,
+    "n_B": 154311
+   },
+   "PXD011591": {
+    "runs": 3,
+    "n_spectra": 194576,
+    "n_A": 2750,
+    "n_A_cand": 2022,
+    "tail_proxy": 2,
+    "n_B": 191826
+   },
+   "PXD062500": {
+    "runs": 3,
+    "n_spectra": 382856,
+    "n_A": 9037,
+    "n_A_cand": 2771,
+    "tail_proxy": 10,
+    "n_B": 373819
+   },
+   "PXD038243": {
+    "runs": 3,
+    "n_spectra": 86929,
+    "n_A": 387,
+    "n_A_cand": 63,
+    "tail_proxy": 1,
+    "n_B": 86542
+   }
+  },
+  "totals": {
+   "runs": 18,
+   "n_spectra": 1006440,
+   "n_A": 24581,
+   "n_A_cand": 9608,
+   "tail_proxy": 22,
+   "n_B": 981859
+  },
+  "per_run_A": {
+   "mean": 1365.611111111111,
+   "median": 1276.0,
+   "sd": 1218.6563545386846,
+   "log_sd_between_projects": 1.345744213286805,
+   "log_sd_within_project": 0.3173663587312744,
+   "zero_run_fraction": 0.05555555555555555,
+   "geo_mean_positive": 840.4739823434033
+  },
+  "per_run_spectra_mean": 55913.333333333336,
+  "B_over_A": 39.943818396322364,
+  "tail_proxy_per_A": {
+   "pooled": 0.0008950002034091372,
+   "per_project": [
+    0.008522727272727272,
+    0.0007272727272727272,
+    0.0003596475454055026,
+    0.002583979328165375,
+    0.0006159531875577456,
+    0.0011065619121389842
+   ],
+   "log_sd_between_projects": 1.1465654994311973
+  },
+  "A_cand_per_A": {
+   "pooled": 0.3908709979252268,
+   "per_project": [
+    0.40625,
+    0.7352727272727273,
+    0.29383204459629564,
+    0.16279069767441862,
+    0.4581151832460733,
+    0.30662830585371254
+   ],
+   "logit_sd_between_projects": 0.8913376015828308
+  },
+  "effective_projects": {
+   "A": 3.716017527126442,
+   "tail_proxy": 3.6119402985074633,
+   "A_cand": 3.959933294223162
+  },
+  "download": {
+   "n_files": 105,
+   "mean_GB": 1.0445477990190477,
+   "median_GB": 1.12204116
+  },
+  "walk_decisions_dn2": {
+   "candidates": 58,
+   "protocol_text_or_sdrf": 29,
+   "genus_slot": 10,
+   "marker_screen_excluded": 6,
+   "admitted": 6,
+   "no_reference_proteome": 3,
+   "too_few_raws": 4,
+   "source": "results/2026-10-27_A2_dn2/NOTES.md"
+  },
+  "runs": [
+   {
+    "project": "PXD006818",
+    "run": "SL203_set1_rep1",
+    "n_spectra": 13414,
+    "n_A": 180
+   },
+   {
+    "project": "PXD006818",
+    "run": "SL203_set1_rep6",
+    "n_spectra": 12752,
+    "n_A": 172
+   },
+   {
+    "project": "PXD006818",
+    "run": "SL322_set1_rep5",
+    "n_spectra": 13984,
+    "n_A": 0
+   },
+   {
+    "project": "PXD011591",
+    "run": "1010_1",
+    "n_spectra": 64969,
+    "n_A": 962
+   },
+   {
+    "project": "PXD011591",
+    "run": "101_G",
+    "n_spectra": 66712,
+    "n_A": 1039
+   },
+   {
+    "project": "PXD011591",
+    "run": "D2_G",
+    "n_spectra": 62895,
+    "n_A": 749
+   },
+   {
+    "project": "PXD018953",
+    "run": "Q06711_MS18-007_Biotite_GB1",
+    "n_spectra": 46320,
+    "n_A": 1513
+   },
+   {
+    "project": "PXD018953",
+    "run": "Q06717_MS18-007_Biotite_GBB3",
+    "n_spectra": 42409,
+    "n_A": 2196
+   },
+   {
+    "project": "PXD018953",
+    "run": "Q06722_MS18-007_Biotite_MBB4",
+    "n_spectra": 52395,
+    "n_A": 1852
+   },
+   {
+    "project": "PXD038243",
+    "run": "RCC911_23_SubOpt_1",
+    "n_spectra": 29043,
+    "n_A": 67
+   },
+   {
+    "project": "PXD038243",
+    "run": "RCC911_28_SupraOpt_1",
+    "n_spectra": 28890,
+    "n_A": 125
+   },
+   {
+    "project": "PXD038243",
+    "run": "RCC911_28_SupraOpt_2",
+    "n_spectra": 28996,
+    "n_A": 195
+   },
+   {
+    "project": "PXD044078",
+    "run": "Q12238_MS21-015_Bp2",
+    "n_spectra": 53724,
+    "n_A": 2166
+   },
+   {
+    "project": "PXD044078",
+    "run": "Q12239_MS21-015_Bp3",
+    "n_spectra": 54947,
+    "n_A": 2206
+   },
+   {
+    "project": "PXD044078",
+    "run": "Q12240_MS21-015_Bp4",
+    "n_spectra": 52134,
+    "n_A": 2122
+   },
+   {
+    "project": "PXD062500",
+    "run": "HFX_BIT_LF_DR1_20231107",
+    "n_spectra": 125930,
+    "n_A": 2138
+   },
+   {
+    "project": "PXD062500",
+    "run": "HFX_BIT_LF_DR2_20231107",
+    "n_spectra": 126171,
+    "n_A": 2193
+   },
+   {
+    "project": "PXD062500",
+    "run": "HFX_BIT_LF_pprI4_20231107",
+    "n_spectra": 130755,
+    "n_A": 4706
+   }
+  ]
+ },
+ "S1_n_min": {
+  "V6": {
+   "A4": {
+    "n_min": 30600,
+    "pass_prob_at_n_min": 0.9,
+    "p": 0.882,
+    "J": 20,
+    "conf": 0.95,
+    "n_rep": 1000,
+    "cluster_hull": true
+   },
+   "A4_no_cluster_term": {
+    "n_min": 27500,
+    "pass_prob_at_n_min": 0.906,
+    "p": 0.882,
+    "J": 20,
+    "conf": 0.95,
+    "n_rep": 1000,
+    "cluster_hull": false
+   },
+   "A3_reference": 22700
+  },
+  "V12": {
+   "A4": {
+    "n_min": 26800,
+    "pass_prob_at_n_min": 0.914,
+    "p": 0.9019,
+    "J": 20,
+    "conf": 0.95,
+    "n_rep": 1000,
+    "cluster_hull": true
+   },
+   "A4_no_cluster_term": {
+    "n_min": 23200,
+    "pass_prob_at_n_min": 0.917,
+    "p": 0.9019,
+    "J": 20,
+    "conf": 0.95,
+    "n_rep": 1000,
+    "cluster_hull": false
+   },
+   "A3_reference": 19200
+  },
+  "G3": {
+   "A2_n_min": 2000,
+   "A4_pass_prob_one_bin_at_recall_0.998": {
+    "2000": 0.999,
+    "3000": 1.0
+   },
+   "rule": "A4 keeps 2,000 iff one-bin pass >= 0.99 (10 bins must pass); else raise"
+  },
+  "G1": {
+   "n_min": 11100,
+   "pass_prob_at_n_min": 0.905,
+   "J": 20,
+   "conf": 0.995,
+   "n_rep": 400,
+   "A2_n_min": 7200
+  },
+  "V12_row": {
+   "grid": {
+    "30000": {
+     "one_bin": 0.9425,
+     "row_10_bins_indep": 0.553112646987258
+    },
+    "35000": {
+     "one_bin": 0.9695,
+     "row_10_bins_indep": 0.7336317766056326
+    },
+    "40000": {
+     "one_bin": 0.985,
+     "row_10_bins_indep": 0.859730442259143
+    },
+    "45000": {
+     "one_bin": 0.995,
+     "row_10_bins_indep": 0.9511101304657719
+    }
+   },
+   "n_per_label_per_bin_for_row_pass_0.80": 40000,
+   "note": "all bins at the max-variance dev rate (conservative); bins independent"
+  }
+ },
+ "S2_tost_cluster": {
+  "V6": {
+   "n_per_label_per_bin": 30600,
+   "J10": {
+    "clean": 0.87,
+    "gap0.01_tau0": 0.022,
+    "gap0.01_tau0.005": 0.035,
+    "A2_rule_gap0.01_tau0.005": 0.111
+   },
+   "J20": {
+    "clean": 0.888,
+    "gap0.01_tau0": 0.019,
+    "gap0.01_tau0.005": 0.036,
+    "A2_rule_gap0.01_tau0.005": 0.091
+   },
+   "J40": {
+    "clean": 0.909,
+    "gap0.01_tau0": 0.023,
+    "gap0.01_tau0.005": 0.024,
+    "A2_rule_gap0.01_tau0.005": 0.081
+   }
+  },
+  "V12": {
+   "n_per_label_per_bin": 26800,
+   "J10": {
+    "clean": 0.863,
+    "gap0.01_tau0": 0.021,
+    "gap0.01_tau0.005": 0.028,
+    "A2_rule_gap0.01_tau0.005": 0.112
+   },
+   "J20": {
+    "clean": 0.902,
+    "gap0.01_tau0": 0.03,
+    "gap0.01_tau0.005": 0.031,
+    "A2_rule_gap0.01_tau0.005": 0.083
+   },
+   "J40": {
+    "clean": 0.935,
+    "gap0.01_tau0": 0.019,
+    "gap0.01_tau0.005": 0.026,
+    "A2_rule_gap0.01_tau0.005": 0.049
+   }
+  },
+  "G3": {
+   "n_per_label_per_bin": 2000,
+   "J10": {
+    "clean": 0.997,
+    "gap0.01_tau0": 0.016,
+    "gap0.01_tau0.005": 0.031,
+    "A2_rule_gap0.01_tau0.005": 0.103
+   },
+   "J20": {
+    "clean": 1.0,
+    "gap0.01_tau0": 0.02,
+    "gap0.01_tau0.005": 0.038,
+    "A2_rule_gap0.01_tau0.005": 0.083
+   },
+   "J40": {
+    "clean": 1.0,
+    "gap0.01_tau0": 0.015,
+    "gap0.01_tau0.005": 0.022,
+    "A2_rule_gap0.01_tau0.005": 0.06
+   }
+  }
+ },
+ "S3_g1_cluster": {
+  "J10": {
+   "n_top": 11100,
+   "clean": 0.7133333333333334,
+   "rho0.05_tau0": 0.0,
+   "rho0.05_tau0.03": 0.0033333333333333335,
+   "A2_rule_rho0.05_tau0.03": 0.05333333333333334
+  },
+  "J20": {
+   "n_top": 11100,
+   "clean": 0.8966666666666666,
+   "rho0.05_tau0": 0.0,
+   "rho0.05_tau0.03": 0.006666666666666667,
+   "A2_rule_rho0.05_tau0.03": 0.04
+  },
+  "J40": {
+   "n_top": 11100,
+   "clean": 0.96,
+   "rho0.05_tau0": 0.0033333333333333335,
+   "rho0.05_tau0.03": 0.0033333333333333335,
+   "A2_rule_rho0.05_tau0.03": 0.02666666666666667
+  }
+ },
+ "S4_stopping_rule": {
+  "full_stop": {
+   "J_min": 20,
+   "proxy_min": 1200,
+   "A_cand_min": 450000,
+   "cap_share": 0.2
+  },
+  "v1_minimum": {
+   "J_min": 20,
+   "proxy_min": 1200,
+   "A_cand_min": 120000,
+   "cap_share": 0.2
+  },
+  "max_runs": 2000,
+  "run_cap_per_project": 24,
+  "max_projects_per_cluster": 3
+ },
+ "S4_walk": [
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.028,
+   "P_v1_minimum": 0.129,
+   "runs_at_end_p10_50_90": [
+    250.0,
+    320.0,
+    401.0
+   ],
+   "admitted_p10_50_90": [
+    34.0,
+    41.0,
+    49.0
+   ],
+   "clusters_p10_50_90": [
+    29.0,
+    35.0,
+    42.0
+   ],
+   "candidates_walked_p10_50_90": [
+    198.0,
+    198.0,
+    198.0
+   ],
+   "A_p10_50_90": [
+    375853.11797907914,
+    607497.0393554138,
+    1016859.9329679627
+   ],
+   "A_cand_p10_50_90": [
+    142918.0,
+    245169.5,
+    440079.70000000007
+   ],
+   "proxy_p10_50_90": [
+    484.70000000000005,
+    926.0,
+    1984.2
+   ],
+   "B_p10_50_90": [
+    13520729.466644771,
+    17176007.255059313,
+    21538237.331036963
+   ],
+   "downloaded_files_p10_50_90": [
+    365.0,
+    436.0,
+    511.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    233.4,
+    315.0,
+    378.2
+   ]
+  },
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 0.778,
+   "P_v1_minimum": 0.95,
+   "runs_at_end_p10_50_90": [
+    454.9,
+    608.5,
+    740.1
+   ],
+   "admitted_p10_50_90": [
+    56.0,
+    79.0,
+    96.0
+   ],
+   "clusters_p10_50_90": [
+    47.0,
+    67.0,
+    82.0
+   ],
+   "candidates_walked_p10_50_90": [
+    257.9,
+    376.0,
+    457.0
+   ],
+   "A_p10_50_90": [
+    978865.0734191854,
+    1193429.7191954695,
+    1506190.8583135006
+   ],
+   "A_cand_p10_50_90": [
+    406990.9,
+    477865.5,
+    618663.2000000001
+   ],
+   "proxy_p10_50_90": [
+    1234.9,
+    1830.5,
+    3250.4
+   ],
+   "B_p10_50_90": [
+    24216426.945964128,
+    32799473.55968324,
+    40283720.90590492
+   ],
+   "downloaded_files_p10_50_90": [
+    612.8,
+    837.0,
+    994.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    335.0,
+    471.0,
+    634.1
+   ]
+  },
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 0.986,
+   "P_v1_minimum": 0.999,
+   "runs_at_end_p10_50_90": [
+    444.9,
+    623.0,
+    797.1
+   ],
+   "admitted_p10_50_90": [
+    55.0,
+    80.0,
+    104.0
+   ],
+   "clusters_p10_50_90": [
+    47.0,
+    68.0,
+    89.0
+   ],
+   "candidates_walked_p10_50_90": [
+    256.8,
+    373.0,
+    518.0
+   ],
+   "A_p10_50_90": [
+    1046684.3698482697,
+    1226014.5374296568,
+    1530141.5381115035
+   ],
+   "A_cand_p10_50_90": [
+    452834.8,
+    483702.5,
+    632364.4
+   ],
+   "proxy_p10_50_90": [
+    1282.0,
+    1862.0,
+    3321.1000000000004
+   ],
+   "B_p10_50_90": [
+    23555358.09231431,
+    33588155.38673282,
+    43292686.12005322
+   ],
+   "downloaded_files_p10_50_90": [
+    603.8,
+    844.5,
+    1095.5
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    331.0,
+    474.0,
+    667.2
+   ]
+  },
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.249,
+   "P_v1_minimum": 0.576,
+   "runs_at_end_p10_50_90": [
+    396.0,
+    483.0,
+    573.1
+   ],
+   "admitted_p10_50_90": [
+    53.0,
+    63.0,
+    71.0
+   ],
+   "clusters_p10_50_90": [
+    44.0,
+    54.0,
+    61.0
+   ],
+   "candidates_walked_p10_50_90": [
+    167.0,
+    198.0,
+    198.0
+   ],
+   "A_p10_50_90": [
+    641367.5304478218,
+    969590.9637473054,
+    1398260.5598096428
+   ],
+   "A_cand_p10_50_90": [
+    252017.9,
+    392148.0,
+    570028.9
+   ],
+   "proxy_p10_50_90": [
+    879.6,
+    1459.5,
+    2829.1
+   ],
+   "B_p10_50_90": [
+    21192468.031877242,
+    25924263.363732927,
+    30983987.18487212
+   ],
+   "downloaded_files_p10_50_90": [
+    564.0,
+    662.0,
+    749.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    289.0,
+    405.0,
+    506.0
+   ]
+  },
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    456.0,
+    619.5,
+    792.1
+   ],
+   "admitted_p10_50_90": [
+    57.0,
+    79.0,
+    103.0
+   ],
+   "clusters_p10_50_90": [
+    48.0,
+    67.0,
+    88.0
+   ],
+   "candidates_walked_p10_50_90": [
+    171.0,
+    238.5,
+    327.0
+   ],
+   "A_p10_50_90": [
+    1056384.4126361574,
+    1221781.6229426544,
+    1597893.1882368554
+   ],
+   "A_cand_p10_50_90": [
+    453340.9,
+    486965.5,
+    647113.1000000001
+   ],
+   "proxy_p10_50_90": [
+    1284.9,
+    1910.5,
+    3392.8
+   ],
+   "B_p10_50_90": [
+    24243086.627738103,
+    33397318.28261125,
+    42848471.61809766
+   ],
+   "downloaded_files_p10_50_90": [
+    621.0,
+    835.0,
+    1087.1
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    328.9,
+    479.0,
+    656.0
+   ]
+  },
+  {
+   "med_runs_per_project": 6,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    456.0,
+    619.5,
+    792.1
+   ],
+   "admitted_p10_50_90": [
+    57.0,
+    79.0,
+    103.0
+   ],
+   "clusters_p10_50_90": [
+    48.0,
+    67.0,
+    88.0
+   ],
+   "candidates_walked_p10_50_90": [
+    171.0,
+    238.5,
+    327.0
+   ],
+   "A_p10_50_90": [
+    1056384.4126361574,
+    1221781.6229426544,
+    1597893.1882368554
+   ],
+   "A_cand_p10_50_90": [
+    453340.9,
+    486965.5,
+    647113.1000000001
+   ],
+   "proxy_p10_50_90": [
+    1284.9,
+    1910.5,
+    3392.8
+   ],
+   "B_p10_50_90": [
+    24243086.627738103,
+    33397318.28261125,
+    42848471.61809766
+   ],
+   "downloaded_files_p10_50_90": [
+    621.0,
+    835.0,
+    1087.1
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    328.9,
+    479.0,
+    656.0
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.292,
+   "P_v1_minimum": 0.572,
+   "runs_at_end_p10_50_90": [
+    419.0,
+    526.0,
+    641.0
+   ],
+   "admitted_p10_50_90": [
+    32.0,
+    39.0,
+    47.0
+   ],
+   "clusters_p10_50_90": [
+    27.0,
+    34.0,
+    41.0
+   ],
+   "candidates_walked_p10_50_90": [
+    160.0,
+    198.0,
+    198.0
+   ],
+   "A_p10_50_90": [
+    660317.2394102602,
+    1061842.0826554336,
+    1553995.1617244587
+   ],
+   "A_cand_p10_50_90": [
+    253803.3,
+    425453.0,
+    621743.3
+   ],
+   "proxy_p10_50_90": [
+    846.9,
+    1602.5,
+    3249.7000000000007
+   ],
+   "B_p10_50_90": [
+    22398281.71973373,
+    28317625.167461302,
+    34664373.91155113
+   ],
+   "downloaded_files_p10_50_90": [
+    536.0,
+    644.5,
+    758.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    345.0,
+    453.0,
+    573.0
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    479.9,
+    663.0,
+    869.3000000000001
+   ],
+   "admitted_p10_50_90": [
+    35.900000000000006,
+    50.0,
+    66.0
+   ],
+   "clusters_p10_50_90": [
+    30.0,
+    42.0,
+    57.0
+   ],
+   "candidates_walked_p10_50_90": [
+    161.0,
+    235.0,
+    324.1
+   ],
+   "A_p10_50_90": [
+    1078274.4275170204,
+    1321910.0912729504,
+    1775201.5494576304
+   ],
+   "A_cand_p10_50_90": [
+    457915.8,
+    516103.0,
+    728293.0
+   ],
+   "proxy_p10_50_90": [
+    1330.5,
+    2027.0,
+    3886.2
+   ],
+   "B_p10_50_90": [
+    25362164.394062296,
+    35650493.12132676,
+    47186353.853388496
+   ],
+   "downloaded_files_p10_50_90": [
+    578.7,
+    808.5,
+    1061.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    377.0,
+    536.5,
+    738.0
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    479.9,
+    663.0,
+    869.3000000000001
+   ],
+   "admitted_p10_50_90": [
+    35.900000000000006,
+    50.0,
+    66.0
+   ],
+   "clusters_p10_50_90": [
+    30.0,
+    42.0,
+    57.0
+   ],
+   "candidates_walked_p10_50_90": [
+    161.0,
+    235.0,
+    324.1
+   ],
+   "A_p10_50_90": [
+    1078274.4275170204,
+    1321910.0912729504,
+    1775201.5494576304
+   ],
+   "A_cand_p10_50_90": [
+    457915.8,
+    516103.0,
+    728293.0
+   ],
+   "proxy_p10_50_90": [
+    1330.5,
+    2027.0,
+    3886.2
+   ],
+   "B_p10_50_90": [
+    25362164.394062296,
+    35650493.12132676,
+    47186353.853388496
+   ],
+   "downloaded_files_p10_50_90": [
+    578.7,
+    808.5,
+    1061.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    377.0,
+    536.5,
+    738.0
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.855,
+   "P_v1_minimum": 0.969,
+   "runs_at_end_p10_50_90": [
+    470.0,
+    654.5,
+    826.3000000000001
+   ],
+   "admitted_p10_50_90": [
+    35.0,
+    49.0,
+    62.0
+   ],
+   "clusters_p10_50_90": [
+    29.0,
+    42.0,
+    54.0
+   ],
+   "candidates_walked_p10_50_90": [
+    104.9,
+    151.5,
+    198.0
+   ],
+   "A_p10_50_90": [
+    1035202.8377252787,
+    1263741.9222803614,
+    1649129.8145186207
+   ],
+   "A_cand_p10_50_90": [
+    447350.6,
+    505533.5,
+    679073.9
+   ],
+   "proxy_p10_50_90": [
+    1295.9,
+    1918.5,
+    3459.9
+   ],
+   "B_p10_50_90": [
+    24845646.420858253,
+    35384581.892811924,
+    45004589.340135925
+   ],
+   "downloaded_files_p10_50_90": [
+    580.0,
+    808.5,
+    1005.2
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    378.0,
+    524.0,
+    705.0
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    474.6,
+    661.0,
+    869.0
+   ],
+   "admitted_p10_50_90": [
+    35.0,
+    50.0,
+    66.0
+   ],
+   "clusters_p10_50_90": [
+    30.0,
+    43.0,
+    57.0
+   ],
+   "candidates_walked_p10_50_90": [
+    105.0,
+    154.0,
+    209.0
+   ],
+   "A_p10_50_90": [
+    1081528.1333376267,
+    1289650.1521951281,
+    1675938.575210479
+   ],
+   "A_cand_p10_50_90": [
+    458092.8,
+    511845.5,
+    692238.1000000001
+   ],
+   "proxy_p10_50_90": [
+    1339.9,
+    1978.0,
+    3590.2000000000007
+   ],
+   "B_p10_50_90": [
+    25115144.3242333,
+    35616704.740331456,
+    47130772.41244137
+   ],
+   "downloaded_files_p10_50_90": [
+    584.5,
+    810.5,
+    1067.3000000000002
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    373.8,
+    530.5,
+    723.1
+   ]
+  },
+  {
+   "med_runs_per_project": 12,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    474.6,
+    661.0,
+    869.0
+   ],
+   "admitted_p10_50_90": [
+    35.0,
+    50.0,
+    66.0
+   ],
+   "clusters_p10_50_90": [
+    30.0,
+    43.0,
+    57.0
+   ],
+   "candidates_walked_p10_50_90": [
+    105.0,
+    154.0,
+    209.0
+   ],
+   "A_p10_50_90": [
+    1081528.1333376267,
+    1289650.1521951281,
+    1675938.575210479
+   ],
+   "A_cand_p10_50_90": [
+    458092.8,
+    511845.5,
+    692238.1000000001
+   ],
+   "proxy_p10_50_90": [
+    1339.9,
+    1978.0,
+    3590.2000000000007
+   ],
+   "B_p10_50_90": [
+    25115144.3242333,
+    35616704.740331456,
+    47130772.41244137
+   ],
+   "downloaded_files_p10_50_90": [
+    584.5,
+    810.5,
+    1067.3000000000002
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    373.8,
+    530.5,
+    723.1
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.678,
+   "P_v1_minimum": 0.846,
+   "runs_at_end_p10_50_90": [
+    497.9,
+    664.0,
+    813.0
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    35.0,
+    43.0
+   ],
+   "clusters_p10_50_90": [
+    22.0,
+    30.0,
+    37.0
+   ],
+   "candidates_walked_p10_50_90": [
+    115.0,
+    172.0,
+    198.0
+   ],
+   "A_p10_50_90": [
+    935361.5762742274,
+    1268197.1096999263,
+    1840106.7610302698
+   ],
+   "A_cand_p10_50_90": [
+    375382.0,
+    510651.0,
+    787452.6
+   ],
+   "proxy_p10_50_90": [
+    1199.6,
+    1864.5,
+    3647.1
+   ],
+   "B_p10_50_90": [
+    26425792.642630894,
+    35925308.60774717,
+    44007270.93663725
+   ],
+   "downloaded_files_p10_50_90": [
+    567.9,
+    774.0,
+    930.0
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    443.0,
+    556.0,
+    727.5
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    492.9,
+    699.0,
+    943.0
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    37.0,
+    50.0
+   ],
+   "clusters_p10_50_90": [
+    21.0,
+    32.0,
+    43.0
+   ],
+   "candidates_walked_p10_50_90": [
+    114.9,
+    174.0,
+    245.30000000000007
+   ],
+   "A_p10_50_90": [
+    1105606.3601522807,
+    1356245.3545162226,
+    1936224.2729452935
+   ],
+   "A_cand_p10_50_90": [
+    462841.8,
+    538220.5,
+    835596.1
+   ],
+   "proxy_p10_50_90": [
+    1347.8,
+    2032.5,
+    3863.4000000000005
+   ],
+   "B_p10_50_90": [
+    26122106.540621992,
+    37664717.68351871,
+    51214832.88792918
+   ],
+   "downloaded_files_p10_50_90": [
+    570.7,
+    805.5,
+    1085.5
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    443.0,
+    582.0,
+    816.0
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.45,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    492.9,
+    699.0,
+    943.0
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    37.0,
+    50.0
+   ],
+   "clusters_p10_50_90": [
+    21.0,
+    32.0,
+    43.0
+   ],
+   "candidates_walked_p10_50_90": [
+    114.9,
+    174.0,
+    245.30000000000007
+   ],
+   "A_p10_50_90": [
+    1105606.3601522807,
+    1356245.3545162226,
+    1936224.2729452935
+   ],
+   "A_cand_p10_50_90": [
+    462841.8,
+    538220.5,
+    835596.1
+   ],
+   "proxy_p10_50_90": [
+    1347.8,
+    2032.5,
+    3863.4000000000005
+   ],
+   "B_p10_50_90": [
+    26122106.540621992,
+    37664717.68351871,
+    51214832.88792918
+   ],
+   "downloaded_files_p10_50_90": [
+    570.7,
+    805.5,
+    1085.5
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    443.0,
+    582.0,
+    816.0
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I",
+   "pool_sizes": [
+    198
+   ],
+   "P_full_stop": 0.989,
+   "P_v1_minimum": 0.998,
+   "runs_at_end_p10_50_90": [
+    504.9,
+    705.0,
+    930.1
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    37.0,
+    49.0
+   ],
+   "clusters_p10_50_90": [
+    22.0,
+    32.0,
+    42.0
+   ],
+   "candidates_walked_p10_50_90": [
+    78.0,
+    113.0,
+    156.0
+   ],
+   "A_p10_50_90": [
+    1096762.632254268,
+    1352174.8302387241,
+    1926700.793255111
+   ],
+   "A_cand_p10_50_90": [
+    461487.8,
+    535284.0,
+    770813.8
+   ],
+   "proxy_p10_50_90": [
+    1339.9,
+    2074.0,
+    3935.5
+   ],
+   "B_p10_50_90": [
+    26705272.31877625,
+    38121631.63692735,
+    50592663.32552323
+   ],
+   "downloaded_files_p10_50_90": [
+    579.9,
+    815.0,
+    1076.3000000000002
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    440.7,
+    583.5,
+    803.0
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II",
+   "pool_sizes": [
+    198,
+    259
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    502.9,
+    706.5,
+    937.2
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    37.0,
+    49.0
+   ],
+   "clusters_p10_50_90": [
+    22.0,
+    32.0,
+    42.0
+   ],
+   "candidates_walked_p10_50_90": [
+    77.9,
+    114.0,
+    157.0
+   ],
+   "A_p10_50_90": [
+    1098431.7589738343,
+    1364264.3681376849,
+    1926700.793255111
+   ],
+   "A_cand_p10_50_90": [
+    462240.0,
+    536052.0,
+    771442.6000000001
+   ],
+   "proxy_p10_50_90": [
+    1344.9,
+    2043.5,
+    3935.5
+   ],
+   "B_p10_50_90": [
+    26575006.877163935,
+    38177263.01116078,
+    50878860.80499658
+   ],
+   "downloaded_files_p10_50_90": [
+    578.9,
+    819.5,
+    1079.3000000000002
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    446.9,
+    588.5,
+    809.2
+   ]
+  },
+  {
+   "med_runs_per_project": 24,
+   "p_protocol_pass": 0.7,
+   "p_marker_pass": 0.5,
+   "pool": "I+II+III",
+   "pool_sizes": [
+    198,
+    259,
+    135
+   ],
+   "P_full_stop": 1.0,
+   "P_v1_minimum": 1.0,
+   "runs_at_end_p10_50_90": [
+    502.9,
+    706.5,
+    937.2
+   ],
+   "admitted_p10_50_90": [
+    26.0,
+    37.0,
+    49.0
+   ],
+   "clusters_p10_50_90": [
+    22.0,
+    32.0,
+    42.0
+   ],
+   "candidates_walked_p10_50_90": [
+    77.9,
+    114.0,
+    157.0
+   ],
+   "A_p10_50_90": [
+    1098431.7589738343,
+    1364264.3681376849,
+    1926700.793255111
+   ],
+   "A_cand_p10_50_90": [
+    462240.0,
+    536052.0,
+    771442.6000000001
+   ],
+   "proxy_p10_50_90": [
+    1344.9,
+    2043.5,
+    3935.5
+   ],
+   "B_p10_50_90": [
+    26575006.877163935,
+    38177263.01116078,
+    50878860.80499658
+   ],
+   "downloaded_files_p10_50_90": [
+    578.9,
+    819.5,
+    1079.3000000000002
+   ],
+   "runs_when_v1_minimum_first_met_p10_50_90": [
+    446.9,
+    588.5,
+    809.2
+   ]
+  }
+ ],
+ "S5_tail_g2": {
+  "tail_scale1.0_kappa1.0": {
+   "clean_A4": {
+    "pass": 0.94,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_median": 1273.0
+   },
+   "clean_A2rule": {
+    "pass": 0.9425,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0575,
+    "n_tail_median": 1272.0
+   },
+   "margin0.60_tau0_A4": {
+    "pass": 0.005,
+    "fail": 0.94,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.055,
+    "n_tail_median": 1266.0
+   },
+   "margin0.60_tau0.05_A4": {
+    "pass": 0.015,
+    "fail": 0.9275,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0575,
+    "n_tail_median": 1274.5
+   },
+   "margin0.60_tau0.10_A4": {
+    "pass": 0.0275,
+    "fail": 0.915,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0575,
+    "n_tail_median": 1268.0
+   },
+   "margin0.60_tau0.10_A2rule": {
+    "pass": 0.0575,
+    "fail": 0.9025,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 1270.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.06,
+    "fail": 0.8875,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0525,
+    "n_tail_median": 1271.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A2rule": {
+    "pass": 0.1075,
+    "fail": 0.83,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0625,
+    "n_tail_median": 1264.5
+   },
+   "mean0.60_leak1.00_in_20pct_clusters_A4": {
+    "pass": 0.0975,
+    "fail": 0.8425,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_median": 1270.0
+   },
+   "UNCAPPED_mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.0875,
+    "fail": 0.835,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0775
+   },
+   "UNCAPPED_clean_A4": {
+    "pass": 0.9575,
+    "fail": 0.0025,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04
+   },
+   "FULL_STOP_clean_A4": {
+    "pass": 0.95,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.05,
+    "n_walks": 400
+   },
+   "FULL_STOP_margin0.60_tau0.10_A4": {
+    "pass": 0.02,
+    "fail": 0.9175,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0625
+   },
+   "J_median": 34.0,
+   "runs_median": 533.0
+  },
+  "tail_scale1.0_kappa0.5": {
+   "clean_A4": {
+    "pass": 0.9,
+    "fail": 0.06,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 639.0
+   },
+   "clean_A2rule": {
+    "pass": 0.935,
+    "fail": 0.025,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 635.5
+   },
+   "margin0.60_tau0_A4": {
+    "pass": 0.0075,
+    "fail": 0.9625,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.03,
+    "n_tail_median": 633.5
+   },
+   "margin0.60_tau0.05_A4": {
+    "pass": 0.0125,
+    "fail": 0.955,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0325,
+    "n_tail_median": 633.5
+   },
+   "margin0.60_tau0.10_A4": {
+    "pass": 0.0275,
+    "fail": 0.9375,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.035,
+    "n_tail_median": 634.0
+   },
+   "margin0.60_tau0.10_A2rule": {
+    "pass": 0.0375,
+    "fail": 0.9,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0625,
+    "n_tail_median": 634.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.0475,
+    "fail": 0.8975,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.055,
+    "n_tail_median": 638.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A2rule": {
+    "pass": 0.0775,
+    "fail": 0.89,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0325,
+    "n_tail_median": 637.5
+   },
+   "mean0.60_leak1.00_in_20pct_clusters_A4": {
+    "pass": 0.07,
+    "fail": 0.8875,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0425,
+    "n_tail_median": 635.0
+   },
+   "UNCAPPED_mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.06,
+    "fail": 0.905,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.035
+   },
+   "UNCAPPED_clean_A4": {
+    "pass": 0.8975,
+    "fail": 0.05,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0525
+   },
+   "FULL_STOP_clean_A4": {
+    "pass": 0.9,
+    "fail": 0.0275,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0725,
+    "n_walks": 400
+   },
+   "FULL_STOP_margin0.60_tau0.10_A4": {
+    "pass": 0.015,
+    "fail": 0.935,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.05
+   },
+   "J_median": 34.0,
+   "runs_median": 533.0
+  },
+  "tail_scale0.5_kappa1.0": {
+   "clean_A4": {
+    "pass": 0.96,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 1243.0
+   },
+   "clean_A2rule": {
+    "pass": 0.9525,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0475,
+    "n_tail_median": 1246.0
+   },
+   "margin0.60_tau0_A4": {
+    "pass": 0.0075,
+    "fail": 0.935,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0575,
+    "n_tail_median": 1248.5
+   },
+   "margin0.60_tau0.05_A4": {
+    "pass": 0.005,
+    "fail": 0.935,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.06,
+    "n_tail_median": 1242.0
+   },
+   "margin0.60_tau0.10_A4": {
+    "pass": 0.02,
+    "fail": 0.9325,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0475,
+    "n_tail_median": 1241.0
+   },
+   "margin0.60_tau0.10_A2rule": {
+    "pass": 0.0425,
+    "fail": 0.91,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0475,
+    "n_tail_median": 1241.5
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.045,
+    "fail": 0.9175,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0375,
+    "n_tail_median": 1245.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A2rule": {
+    "pass": 0.08,
+    "fail": 0.8675,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0525,
+    "n_tail_median": 1238.5
+   },
+   "mean0.60_leak1.00_in_20pct_clusters_A4": {
+    "pass": 0.0875,
+    "fail": 0.87,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0425,
+    "n_tail_median": 1245.0
+   },
+   "UNCAPPED_mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.0825,
+    "fail": 0.875,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0425
+   },
+   "UNCAPPED_clean_A4": {
+    "pass": 0.9525,
+    "fail": 0.0025,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.045
+   },
+   "FULL_STOP_clean_A4": {
+    "pass": 0.945,
+    "fail": 0.0,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.055,
+    "n_walks": 400
+   },
+   "FULL_STOP_margin0.60_tau0.10_A4": {
+    "pass": 0.03,
+    "fail": 0.905,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.065
+   },
+   "J_median": 57.0,
+   "runs_median": 901.5
+  },
+  "tail_scale0.5_kappa0.5": {
+   "clean_A4": {
+    "pass": 0.89,
+    "fail": 0.055,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.055,
+    "n_tail_median": 626.0
+   },
+   "clean_A2rule": {
+    "pass": 0.91,
+    "fail": 0.0325,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0575,
+    "n_tail_median": 622.0
+   },
+   "margin0.60_tau0_A4": {
+    "pass": 0.0075,
+    "fail": 0.9525,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 619.0
+   },
+   "margin0.60_tau0.05_A4": {
+    "pass": 0.0075,
+    "fail": 0.93,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0625,
+    "n_tail_median": 622.0
+   },
+   "margin0.60_tau0.10_A4": {
+    "pass": 0.015,
+    "fail": 0.92,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.065,
+    "n_tail_median": 624.0
+   },
+   "margin0.60_tau0.10_A2rule": {
+    "pass": 0.0375,
+    "fail": 0.91,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0525,
+    "n_tail_median": 623.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.0475,
+    "fail": 0.9125,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04,
+    "n_tail_median": 620.0
+   },
+   "mean0.60_leak0.90_in_25pct_clusters_A2rule": {
+    "pass": 0.0475,
+    "fail": 0.9,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0525,
+    "n_tail_median": 623.0
+   },
+   "mean0.60_leak1.00_in_20pct_clusters_A4": {
+    "pass": 0.05,
+    "fail": 0.9025,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0475,
+    "n_tail_median": 625.5
+   },
+   "UNCAPPED_mean0.60_leak0.90_in_25pct_clusters_A4": {
+    "pass": 0.0525,
+    "fail": 0.9075,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.04
+   },
+   "UNCAPPED_clean_A4": {
+    "pass": 0.895,
+    "fail": 0.0625,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0425
+   },
+   "FULL_STOP_clean_A4": {
+    "pass": 0.8975,
+    "fail": 0.0675,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.035,
+    "n_walks": 400
+   },
+   "FULL_STOP_margin0.60_tau0.10_A4": {
+    "pass": 0.0075,
+    "fail": 0.96,
+    "not-evaluable": 0.0,
+    "not-evaluable (invalid pool)": 0.0325
+   },
+   "J_median": 57.0,
+   "runs_median": 901.5
+  }
+ },
+ "S6_joint": {
+  "kappa1": {
+   "v1_at_v1_minimum": {
+    "rows": {
+     "tail_G2": 0.94,
+     "G1": 0.9033749999999999,
+     "G3_A": 1.0,
+     "G3_AuB": 1.0,
+     "G2_original": 0.9999999999998554,
+     "G5": 1.0
+    },
+    "independence": 0.8491724999998771,
+    "frechet_lower": 0.8433749999998552,
+    "upper_min": 0.9033749999999999
+   },
+   "v1_at_full_stop": {
+    "rows": {
+     "tail_G2": 0.95,
+     "G1": 0.99,
+     "G3_A": 1.0,
+     "G3_AuB": 1.0,
+     "G2_original": 0.9999999999998554,
+     "G5": 1.0
+    },
+    "independence": 0.940499999999864,
+    "frechet_lower": 0.9399999999998556,
+    "upper_min": 0.95
+   },
+   "v2_sep_tier1_at_full_stop": {
+    "rows": {
+     "V1": 0.95,
+     "V2": 0.99,
+     "V3": 1.0,
+     "V4": 1.0,
+     "V6_class1": 1.0,
+     "V7": 0.9999999999998554,
+     "V9ab": 1.0,
+     "V10": 1.0,
+     "V12": 0.859730442259143
+    },
+    "independence": 0.808576480944607,
+    "frechet_lower": 0.7997304422589977,
+    "upper_min": 0.859730442259143
+   },
+   "v2_sep_tier2_at_full_stop": {
+    "rows": {
+     "V1": 0.95,
+     "V2": 0.99,
+     "V3": 1.0,
+     "V4": 1.0,
+     "V6_class1": 1.0,
+     "V7": 0.9999999999998554,
+     "V9ab": 1.0,
+     "V10": 1.0,
+     "V12": 0.859730442259143,
+     "V5": 1.0,
+     "V6_class2": 1.0,
+     "V8": 0.9999999999998554,
+     "V9c": 1.0,
+     "V13": 0.95,
+     "V14": 0.99
+    },
+    "independence": 0.7604661803282928,
+    "frechet_lower": 0.7397304422588533,
+    "upper_min": 0.859730442259143
+   }
+  },
+  "kappa0.5": {
+   "v1_at_v1_minimum": {
+    "rows": {
+     "tail_G2": 0.9,
+     "G1": 0.9033749999999999,
+     "G3_A": 1.0,
+     "G3_AuB": 1.0,
+     "G2_original": 0.9999999999998554,
+     "G5": 1.0
+    },
+    "independence": 0.8130374999998824,
+    "frechet_lower": 0.8033749999998552,
+    "upper_min": 0.9
+   },
+   "v1_at_full_stop": {
+    "rows": {
+     "tail_G2": 0.9,
+     "G1": 0.99,
+     "G3_A": 1.0,
+     "G3_AuB": 1.0,
+     "G2_original": 0.9999999999998554,
+     "G5": 1.0
+    },
+    "independence": 0.8909999999998712,
+    "frechet_lower": 0.8899999999998558,
+    "upper_min": 0.9
+   },
+   "v2_sep_tier1_at_full_stop": {
+    "rows": {
+     "V1": 0.9,
+     "V2": 0.99,
+     "V3": 1.0,
+     "V4": 1.0,
+     "V6_class1": 1.0,
+     "V7": 0.9999999999998554,
+     "V9ab": 1.0,
+     "V10": 1.0,
+     "V12": 0.859730442259143
+    },
+    "independence": 0.7660198240527857,
+    "frechet_lower": 0.7497304422589988,
+    "upper_min": 0.859730442259143
+   },
+   "v2_sep_tier2_at_full_stop": {
+    "rows": {
+     "V1": 0.9,
+     "V2": 0.99,
+     "V3": 1.0,
+     "V4": 1.0,
+     "V6_class1": 1.0,
+     "V7": 0.9999999999998554,
+     "V9ab": 1.0,
+     "V10": 1.0,
+     "V12": 0.859730442259143,
+     "V5": 1.0,
+     "V6_class2": 1.0,
+     "V8": 0.9999999999998554,
+     "V9c": 1.0,
+     "V13": 0.9,
+     "V14": 0.99
+    },
+    "independence": 0.6825236632309334,
+    "frechet_lower": 0.6397304422588537,
+    "upper_min": 0.859730442259143
+   }
+  },
+  "assumptions": "G1 at n_top = A_cand/10 (J = 20); V6 at 4x n_min (B/A ~ 40 in DN2 makes V6 large); V12 row at the A_cand criterion; G5 at n >= 1e5 passes ~1; FS rows never block when not evaluable; V13 taken equal to V1 (A-syn tail fraction unknown); rows treated as independent for the product; Frechet/min bounds hold under any dependence"
+ },
+ "wall_s": 996.4037692560814
+}

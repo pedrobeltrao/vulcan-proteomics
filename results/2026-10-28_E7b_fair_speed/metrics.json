@@ -1,0 +1,6745 @@
+{
+ "experiment": "E7b fair chimeric comparator + v2_sep speed (dev only)",
+ "preregistration": "config.yaml (commit 7a2d6ee, before any Sage chimera search / comparator evaluation)",
+ "comparator": {
+  "D0": {
+   "runs": [
+    "b1906_293T_proteinID_01A_QE3_122212",
+    "b1937_293T_proteinID_01B_QE3_122212"
+   ],
+   "methods": {
+    "vulcan_v2_sep": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 25793.2,
+       "0.005": 28811.6,
+       "0.01": 29483.8,
+       "0.05": 31650.8
+      },
+      "sequence": {
+       "0.001": 24454.8,
+       "0.005": 27149.8,
+       "0.01": 27746.2,
+       "0.05": 29798.4
+      },
+      "protein": {
+       "0.001": 6571.2,
+       "0.005": 6890.0,
+       "0.01": 6979.0,
+       "0.05": 6982.0
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.000996161720142027,
+        "P_ci95_a": [
+         0.0007836142504310685,
+         0.0012087091898529854
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0011267181549264576,
+        "C_ci95_a": [
+         0.0008204511707027483,
+         0.001432985139150167
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005221429312210771,
+        "P_ci95_a": [
+         0.0047984324906265195,
+         0.005644426133795022
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004036432731554853,
+        "C_ci95_a": [
+         0.00353812747297827,
+         0.004534737990131436
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010744534811743096,
+        "P_ci95_a": [
+         0.010060404289937855,
+         0.011428665333548338
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.007723170339106309,
+        "C_ci95_a": [
+         0.0070245263634111715,
+         0.008421814314801445
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.050878685346176934,
+        "P_ci95_a": [
+         0.049651705652390715,
+         0.05210566503996315
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04078063254609043,
+        "C_ci95_a": [
+         0.0390886755659717,
+         0.04247258952620915
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0010436544057182522,
+        "P_ci95_a": [
+         0.0008183491007565879,
+         0.0012689597106799165
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.001226941362745835,
+        "C_ci95_a": [
+         0.0008983333868749942,
+         0.0015555493386166758
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0054893096465967375,
+        "P_ci95_a": [
+         0.005048747499810604,
+         0.005929871793382871
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004420390984221665,
+        "C_ci95_a": [
+         0.003879220530151224,
+         0.0049615614382921055
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.011292933955406557,
+        "P_ci95_a": [
+         0.0105706195506582,
+         0.012015248360154916
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008472115775608512,
+        "C_ci95_a": [
+         0.007703068132576774,
+         0.00924116341864025
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.053570190497127794,
+        "P_ci95_a": [
+         0.052281632702626646,
+         0.05485874829162894
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.044602849572603395,
+        "C_ci95_a": [
+         0.04270418476617102,
+         0.04650151437903577
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011964208632755222,
+        "P_ci95_a": [
+         0.0008169419279703425,
+         0.001575899798580702
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.00450664845629952,
+        "P_ci95_a": [
+         0.003639377869302007,
+         0.005373919043297033
+        ],
+        "P_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010636580787244967,
+        "P_ci95_a": [
+         0.009298015092980361,
+         0.011975146481509573
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.010961503951391529,
+        "P_ci95_a": [
+         0.009647652502868847,
+         0.012275355399914211
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 23529.8,
+       "0.005": 24366.4,
+       "0.01": 24576.2,
+       "0.05": 25656.4
+      },
+      "sequence": {
+       "0.001": 22207.4,
+       "0.005": 22981.4,
+       "0.01": 23180.4,
+       "0.05": 24243.2
+      },
+      "protein": {
+       "0.001": 6255.4,
+       "0.005": 6419.8,
+       "0.01": 6465.4,
+       "0.05": 6467.8
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0011605810392901245,
+        "P_ci95_a": [
+         0.0009147520767471825,
+         0.0014064100018330665
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0011735878196174922,
+        "C_ci95_a": [
+         0.0008800262711013582,
+         0.001467149368133626
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005422302483599216,
+        "P_ci95_a": [
+         0.004922951032912983,
+         0.005921653934285448
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004907508699753862,
+        "C_ci95_a": [
+         0.0038645056362275297,
+         0.005950511763280195
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01045118539615205,
+        "P_ci95_a": [
+         0.009784032712669833,
+         0.011118338079634268
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009308585697063344,
+        "C_ci95_a": [
+         0.008472619963703186,
+         0.010144551430423502
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.04984893050719257,
+        "P_ci95_a": [
+         0.04827478048536864,
+         0.05142308052901651
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.04429467469197861,
+        "C_ci95_a": [
+         0.04177242043717324,
+         0.046816928946783985
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0012225288693216085,
+        "P_ci95_a": [
+         0.0009672207583434414,
+         0.0014778369802997755
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0012851018768797143,
+        "C_ci95_a": [
+         0.0009717029778631406,
+         0.001598500775896288
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005698914950083248,
+        "P_ci95_a": [
+         0.005177192387578732,
+         0.006220637512587765
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.005374956464842552,
+        "C_ci95_a": [
+         0.004230973228649929,
+         0.006518939701035175
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010980382846540218,
+        "P_ci95_a": [
+         0.010295619760749075,
+         0.011665145932331361
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.010195140190956506,
+        "C_ci95_a": [
+         0.009267441762781175,
+         0.011122838619131837
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05223148761671684,
+        "P_ci95_a": [
+         0.05056699754210217,
+         0.053895977691331504
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.048353364410297625,
+        "C_ci95_a": [
+         0.04565060477515718,
+         0.05105612404543807
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0012644217082062406,
+        "P_ci95_a": [
+         0.0007676978505621331,
+         0.001761145565850348
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005243935527588777,
+        "P_ci95_a": [
+         0.004199891749566602,
+         0.006287979305610952
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01126343350236957,
+        "P_ci95_a": [
+         0.00982048540698369,
+         0.012706381597755449
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.011345096563462958,
+        "P_ci95_a": [
+         0.009917242440043664,
+         0.01277295068688225
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 21094.4,
+       "0.005": 23255.0,
+       "0.01": 23944.4,
+       "0.05": 25795.0
+      },
+      "sequence": {
+       "0.001": 19999.4,
+       "0.005": 22002.8,
+       "0.01": 22644.2,
+       "0.05": 24419.8
+      },
+      "protein": {
+       "0.001": 5884.0,
+       "0.005": 6236.6,
+       "0.01": 6338.8,
+       "0.05": 6342.2
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011110640397973379,
+        "P_ci95_a": [
+         0.0009047437626074192,
+         0.0013173843169872565
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0010097752446118992,
+        "C_ci95_a": [
+         0.0006977566138144834,
+         0.0013217938754093148
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005498070452389183,
+        "P_ci95_a": [
+         0.004922098754273082,
+         0.006074042150505284
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004399124938051215,
+        "C_ci95_a": [
+         0.003660982980215898,
+         0.005137266895886531
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01085753233947142,
+        "P_ci95_a": [
+         0.010240944984113732,
+         0.011474119694829107
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008704840733416656,
+        "C_ci95_a": [
+         0.007858779374645757,
+         0.009550902092187554
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05285683607416927,
+        "P_ci95_a": [
+         0.051500225815105626,
+         0.05421344633323292
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04678788492475177,
+        "C_ci95_a": [
+         0.04487339378984451,
+         0.04870237605965903
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011653255563689015,
+        "P_ci95_a": [
+         0.0009481298418825737,
+         0.0013825212708552294
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0011008940964716755,
+        "C_ci95_a": [
+         0.0007516825015561315,
+         0.0014501056913872195
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005754910281467715,
+        "P_ci95_a": [
+         0.00515151196083195,
+         0.00635830860210348
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004804229308655166,
+        "C_ci95_a": [
+         0.004006502138477093,
+         0.005601956478833239
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.011381769037696717,
+        "P_ci95_a": [
+         0.010722638871619571,
+         0.012040899203773863
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009511011196460903,
+        "C_ci95_a": [
+         0.008610814457190733,
+         0.010411207935731073
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05526221747229256,
+        "P_ci95_a": [
+         0.05387409406100469,
+         0.05665034088358043
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.05095717390570158,
+        "C_ci95_a": [
+         0.04889335964838728,
+         0.05302098816301588
+        ],
+        "C_verdict_a": "inconclusive"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0015179718382480581,
+        "P_ci95_a": [
+         0.0010809544787167506,
+         0.0019549891977793657
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.006192121224065763,
+        "P_ci95_a": [
+         0.0052390235419342256,
+         0.007145218906197301
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.012076348847911322,
+        "P_ci95_a": [
+         0.010588026337046258,
+         0.013564671358776386
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.01224872544967869,
+        "P_ci95_a": [
+         0.010709215203958457,
+         0.013788235695398924
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 24010.0,
+       "0.005": 25036.2,
+       "0.01": 25293.2,
+       "0.05": 26513.6
+      },
+      "sequence": {
+       "0.001": 22656.0,
+       "0.005": 23611.4,
+       "0.01": 23851.6,
+       "0.05": 25046.4
+      },
+      "protein": {
+       "0.001": 6324.6,
+       "0.005": 6486.8,
+       "0.01": 6553.2,
+       "0.05": 6555.2
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0011077811690259824,
+        "P_ci95_a": [
+         0.0008612931963521196,
+         0.0013542691416998452
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0009639418484099452,
+        "C_ci95_a": [
+         0.0007078245853394901,
+         0.0012200591114804003
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005487824169544425,
+        "P_ci95_a": [
+         0.005054081608521778,
+         0.005921566730567072
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0044172257391069305,
+        "C_ci95_a": [
+         0.0037680990159079048,
+         0.005066352462305956
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01023795050787888,
+        "P_ci95_a": [
+         0.009621848776117532,
+         0.010854052239640229
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008569801010584504,
+        "C_ci95_a": [
+         0.007831996640101802,
+         0.009307605381067206
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0503476326376866,
+        "P_ci95_a": [
+         0.04869419734260491,
+         0.05200106793276829
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04180840135635418,
+        "C_ci95_a": [
+         0.03964329515952851,
+         0.043973507553179844
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.001166986869984773,
+        "P_ci95_a": [
+         0.0009091653591518946,
+         0.0014248083808176516
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0010558118879443147,
+        "C_ci95_a": [
+         0.0007820124123037603,
+         0.001329611363584869
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0057734546878359955,
+        "P_ci95_a": [
+         0.00531822272515314,
+         0.006228686650518851
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004838237438670698,
+        "C_ci95_a": [
+         0.00413385193745664,
+         0.0055426229398847565
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010766081438694702,
+        "P_ci95_a": [
+         0.010112257953158352,
+         0.011419904924231053
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009388831276806748,
+        "C_ci95_a": [
+         0.008566630494529832,
+         0.010211032059083663
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0527795318321994,
+        "P_ci95_a": [
+         0.05101717399910497,
+         0.05454188966529382
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.045701008210082175,
+        "C_ci95_a": [
+         0.043329956068310777,
+         0.048072060351853574
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011535345593181596,
+        "P_ci95_a": [
+         0.0006422443639435224,
+         0.0016648247546927968
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005600002160280349,
+        "P_ci95_a": [
+         0.0047091180018042295,
+         0.006490886318756468
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01128261909836318,
+        "P_ci95_a": [
+         0.009950119225567624,
+         0.012615118971158735
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.01165503141261841,
+        "P_ci95_a": [
+         0.010294786677077622,
+         0.013015276148159198
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim5": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 20702.2,
+       "0.005": 23071.4,
+       "0.01": 23821.8,
+       "0.05": 25752.8
+      },
+      "sequence": {
+       "0.001": 19629.6,
+       "0.005": 21833.8,
+       "0.01": 22534.4,
+       "0.05": 24390.0
+      },
+      "protein": {
+       "0.001": 5829.6,
+       "0.005": 6217.2,
+       "0.01": 6321.4,
+       "0.05": 6328.0
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.001087929925003274,
+        "P_ci95_a": [
+         0.0008705358247178798,
+         0.0013053240252886681
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0007878224248921217,
+        "C_ci95_a": [
+         0.0005343155699891928,
+         0.0010413292797950505
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0052583565665809675,
+        "P_ci95_a": [
+         0.004703725247325885,
+         0.00581298788583605
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004420275275758287,
+        "C_ci95_a": [
+         0.0037188377727293384,
+         0.005121712778787237
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010440207038595576,
+        "P_ci95_a": [
+         0.009803368150221568,
+         0.011077045926969585
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008564198920763436,
+        "C_ci95_a": [
+         0.0077586610096824675,
+         0.009369736831844406
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.052502776765904965,
+        "P_ci95_a": [
+         0.05108244936476048,
+         0.05392310416704945
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04592481452408561,
+        "C_ci95_a": [
+         0.044041813267137984,
+         0.047807815781033235
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011405359209589498,
+        "P_ci95_a": [
+         0.0009104749093191293,
+         0.00137059693259877
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0008584308106728536,
+        "C_ci95_a": [
+         0.0005847153041346215,
+         0.0011321463172110856
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005507782014815762,
+        "P_ci95_a": [
+         0.00493192847931343,
+         0.006083635550318094
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004826491571423499,
+        "C_ci95_a": [
+         0.004059854505725603,
+         0.005593128637121396
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010939189228143093,
+        "P_ci95_a": [
+         0.010287088392228184,
+         0.011591290064058003
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.00935419806197246,
+        "C_ci95_a": [
+         0.00847564690943116,
+         0.010232749214513759
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05485029648443951,
+        "P_ci95_a": [
+         0.053352193790952636,
+         0.05634839917792638
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04998848307610214,
+        "C_ci95_a": [
+         0.04791946785888064,
+         0.05205749829332364
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.001649689691728138,
+        "P_ci95_a": [
+         0.0011602277748591174,
+         0.0021391516085971585
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.006406152655255089,
+        "P_ci95_a": [
+         0.005438533992255868,
+         0.0073737713182543095
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01155990677868127,
+        "P_ci95_a": [
+         0.010223360196163166,
+         0.012896453361199375
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.011870394276638517,
+        "P_ci95_a": [
+         0.010471795992620948,
+         0.013268992560656086
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 24084.4,
+       "0.005": 25163.6,
+       "0.01": 25458.0,
+       "0.05": 26794.8
+      },
+      "sequence": {
+       "0.001": 22725.4,
+       "0.005": 23735.2,
+       "0.01": 24008.4,
+       "0.05": 25310.8
+      },
+      "protein": {
+       "0.001": 6328.8,
+       "0.005": 6506.2,
+       "0.01": 6570.8,
+       "0.05": 6573.6
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.000953681163980652,
+        "P_ci95_a": [
+         0.0007424978319261655,
+         0.0011648644960351386
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0011073654701521675,
+        "C_ci95_a": [
+         0.0008232370326531706,
+         0.0013914939076511645
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005272373544736583,
+        "P_ci95_a": [
+         0.0048753215089571205,
+         0.005669425580516045
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004366469927670456,
+        "C_ci95_a": [
+         0.003767736553816731,
+         0.00496520330152418
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010670935624301433,
+        "P_ci95_a": [
+         0.010016915933947403,
+         0.011324955314655463
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008423903765082858,
+        "C_ci95_a": [
+         0.0077024056388036504,
+         0.009145401891362065
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.04964236712542973,
+        "P_ci95_a": [
+         0.04818706083914825,
+         0.05109767341171121
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.040629057134346204,
+        "C_ci95_a": [
+         0.038680855206512196,
+         0.04257725906218021
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0010046774580828896,
+        "P_ci95_a": [
+         0.000779159360083923,
+         0.0012301955560818562
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.0012127761691883023,
+        "C_ci95_a": [
+         0.000895967492514322,
+         0.0015295848458622826
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005554764896042722,
+        "P_ci95_a": [
+         0.005131695682636909,
+         0.005977834109448535
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004782090590782523,
+        "C_ci95_a": [
+         0.004112817127309566,
+         0.00545136405425548
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.011225230117685387,
+        "P_ci95_a": [
+         0.010552253667279056,
+         0.011898206568091717
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009227830597264498,
+        "C_ci95_a": [
+         0.00844370611046772,
+         0.010011955084061275
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05202788927248205,
+        "P_ci95_a": [
+         0.05049521197843958,
+         0.053560566566524526
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04437052974939909,
+        "C_ci95_a": [
+         0.04225471845479367,
+         0.04648634104400451
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.001221221419848749,
+        "P_ci95_a": [
+         0.0007724372178500106,
+         0.0016700056218474876
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005314765370865797,
+        "P_ci95_a": [
+         0.004472740228655159,
+         0.006156790513076435
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010792970108605918,
+        "P_ci95_a": [
+         0.009645541123350986,
+         0.01194039909386085
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.010973420521716534,
+        "P_ci95_a": [
+         0.009797203705268362,
+         0.012149637338164706
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    }
+   },
+   "ratios_v2_sep_over": {
+    "sage+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2124537460709028,
+        "ci95": [
+         1.205393859253985,
+         1.2202692726825326
+        ],
+        "ours_ids": 30472.6,
+        "comparator_ids": 25133.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.246319352846545,
+        "ci95": [
+         1.239767548810569,
+         1.254241646480393
+        ],
+        "ours_ids": 32693.2,
+        "comparator_ids": 26231.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.109597121943519,
+        "ci95": [
+         1.0736648250460405,
+         1.1478259283577734
+        ],
+        "ours_ids": 26710.0,
+        "comparator_ids": 24071.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.210805347555825,
+        "ci95": [
+         1.2075510571327353,
+         1.214456337434077
+        ],
+        "ours_ids": 30412.162338744347,
+        "comparator_ids": 25117.300976689134,
+        "ours_q_at_match": 0.009190448342546712,
+        "comparator_q_at_match": 0.009558659733069578
+       },
+       "0.05": {
+        "ratio": 1.2446382784433156,
+        "ci95": [
+         1.2396646893889516,
+         1.247494558514066
+        ],
+        "ours_ids": 32658.173606908036,
+        "comparator_ids": 26239.088233534014,
+        "ours_q_at_match": 0.04909285297916904,
+        "comparator_q_at_match": 0.050252939526036294
+       },
+       "0.001": {
+        "ratio": 1.1200911654084753,
+        "ci95": [
+         1.052759314102378,
+         1.1416505304386524
+        ],
+        "ours_ids": 26730.475159923288,
+        "comparator_ids": 23864.553159095052,
+        "ours_q_at_match": 0.0010201715332222511,
+        "comparator_q_at_match": 0.0008171784742504906
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2128499911951902,
+        "ci95": [
+         1.2060983786419603,
+         1.2202843460599624
+        ],
+        "ours_ids": 28927.2,
+        "comparator_ids": 23850.6,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.2448442651222857,
+        "ci95": [
+         1.2382341356973052,
+         1.2526140158983223
+        ],
+        "ours_ids": 31038.2,
+        "comparator_ids": 24933.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.118072626431402,
+        "ci95": [
+         1.081733490671516,
+         1.15662182129248
+        ],
+        "ours_ids": 25561.6,
+        "comparator_ids": 22862.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.2105811841455465,
+        "ci95": [
+         1.2075092310283433,
+         1.2142100499731205
+        ],
+        "ours_ids": 28843.334242035733,
+        "comparator_ids": 23826.022260864695,
+        "ours_q_at_match": 0.008839570743843677,
+        "comparator_q_at_match": 0.009172086579513839
+       },
+       "0.05": {
+        "ratio": 1.2424009411475134,
+        "ci95": [
+         1.2361126620189358,
+         1.2456582955204805
+        ],
+        "ours_ids": 30920.306554190684,
+        "comparator_ids": 24887.542765085072,
+        "ours_q_at_match": 0.04681542977216004,
+        "comparator_q_at_match": 0.048179058493717265
+       },
+       "0.001": {
+        "ratio": 1.1265104976425993,
+        "ci95": [
+         1.055453322198015,
+         1.1480854094087958
+        ],
+        "ours_ids": 25504.22479461466,
+        "comparator_ids": 22640.024081432235,
+        "ours_q_at_match": 0.0009622694329815252,
+        "comparator_q_at_match": 0.000782973830247264
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1437834842046923,
+        "ci95": [
+         1.1290461494294122,
+         1.160495920126763
+        ],
+        "ours_ids": 12382.6,
+        "comparator_ids": 10826.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1439230243596137,
+        "ci95": [
+         1.1291121076233184,
+         1.1609129705837524
+        ],
+        "ours_ids": 12388.0,
+        "comparator_ids": 10829.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.116470588235294,
+        "ci95": [
+         1.0925241929526484,
+         1.1406988092914307
+        ],
+        "ours_ids": 11767.6,
+        "comparator_ids": 10540.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1436377397500506,
+        "ci95": [
+         1.1288229177870999,
+         1.160702626257972
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 10834.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.05": {
+        "ratio": 1.1436377397500506,
+        "ci95": [
+         1.1288229177870999,
+         1.160702048275337
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 10834.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.112199282322736,
+        "ci95": [
+         1.0969505706212617,
+         1.140719420041515
+        ],
+        "ours_ids": 11774.240805862826,
+        "comparator_ids": 10586.448843298389,
+        "ours_q_at_match": 0.0010787846367954416,
+        "comparator_q_at_match": 0.0011284461508897035
+       }
+      }
+     }
+    },
+    "sage_chim2": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2320225763934374,
+        "ci95": [
+         1.227572547701993,
+         1.236588875901302
+        ],
+        "ours_ids": 30472.6,
+        "comparator_ids": 24733.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.2271853698087145,
+        "ci95": [
+         1.2239138507240996,
+         1.2310414983679456
+        ],
+        "ours_ids": 32693.2,
+        "comparator_ids": 26640.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.2241848697899957,
+        "ci95": [
+         1.2004243596105473,
+         1.2451502623628559
+        ],
+        "ours_ids": 26710.0,
+        "comparator_ids": 21818.6,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.234723427969218,
+        "ci95": [
+         1.2303610649853223,
+         1.2399037314422199
+        ],
+        "ours_ids": 30412.162338744347,
+        "comparator_ids": 24630.748595063127,
+        "ours_q_at_match": 0.009190448342546712,
+        "comparator_q_at_match": 0.008971602686497394
+       },
+       "0.05": {
+        "ratio": 1.2323698129998597,
+        "ci95": [
+         1.2271268941942672,
+         1.2359690490859485
+        ],
+        "ours_ids": 32658.173606908036,
+        "comparator_ids": 26500.303125253322,
+        "ours_q_at_match": 0.04909285297916904,
+        "comparator_q_at_match": 0.04613599572851463
+       },
+       "0.001": {
+        "ratio": 1.2365716415379011,
+        "ci95": [
+         1.1357493997316286,
+         1.2926750634208521
+        ],
+        "ours_ids": 26730.475159923288,
+        "comparator_ids": 21616.60049609345,
+        "ours_q_at_match": 0.0010201715332222511,
+        "comparator_q_at_match": 0.0008961898918282702
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2270806821074065,
+        "ci95": [
+         1.222479201127588,
+         1.2318689524283626
+        ],
+        "ours_ids": 28927.2,
+        "comparator_ids": 23574.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.2213032186983552,
+        "ci95": [
+         1.2184939076022219,
+         1.2250118959649707
+        ],
+        "ours_ids": 31038.2,
+        "comparator_ids": 25414.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.2257173546110172,
+        "ci95": [
+         1.2013848799220839,
+         1.2476351916959652
+        ],
+        "ours_ids": 25561.6,
+        "comparator_ids": 20854.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.2301760802527923,
+        "ci95": [
+         1.225398453140047,
+         1.2357644064790128
+        ],
+        "ours_ids": 28843.334242035733,
+        "comparator_ids": 23446.508760037534,
+        "ours_q_at_match": 0.008839570743843677,
+        "comparator_q_at_match": 0.008643858997133375
+       },
+       "0.05": {
+        "ratio": 1.2269383089585573,
+        "ci95": [
+         1.2202460871715635,
+         1.231056292639835
+        ],
+        "ours_ids": 30920.306554190684,
+        "comparator_ids": 25201.190906196643,
+        "ours_q_at_match": 0.04681542977216004,
+        "comparator_q_at_match": 0.04407671710538381
+       },
+       "0.001": {
+        "ratio": 1.2397357276933791,
+        "ci95": [
+         1.1332932911964837,
+         1.2965580372435732
+        ],
+        "ours_ids": 25504.22479461466,
+        "comparator_ids": 20572.30764984661,
+        "ours_q_at_match": 0.0009622694329815252,
+        "comparator_q_at_match": 0.0008503849620202772
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.0903631432496215,
+        "ci95": [
+         1.08840964660768,
+         1.0919161139989246
+        ],
+        "ours_ids": 12382.6,
+        "comparator_ids": 11356.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.0903010033444815,
+        "ci95": [
+         1.088455075261897,
+         1.0919021777433222
+        ],
+        "ours_ids": 12388.0,
+        "comparator_ids": 11362.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.1068512735618345,
+        "ci95": [
+         1.0922087057497412,
+         1.1212573703958955
+        ],
+        "ours_ids": 11767.6,
+        "comparator_ids": 10631.6,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0937791091794369,
+        "ci95": [
+         1.089531063061203,
+         1.0968641258564367
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11328.064227973226,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.009258671030885119
+       },
+       "0.05": {
+        "ratio": 1.0898216233332159,
+        "ci95": [
+         1.0879161399072903,
+         1.0914999295476961
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11369.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.1375255423984612,
+        "ci95": [
+         1.117070204389241,
+         1.1550906951876254
+        ],
+        "ours_ids": 11774.240805862826,
+        "comparator_ids": 10350.748503666087,
+        "ours_q_at_match": 0.0010787846367954416,
+        "comparator_q_at_match": 0.0005588575521392051
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1679890225298775,
+        "ci95": [
+         1.1622446978399124,
+         1.1750539014758064
+        ],
+        "ours_ids": 30472.6,
+        "comparator_ids": 26089.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1955736290098444,
+        "ci95": [
+         1.189556834823576,
+         1.2043602018372364
+        ],
+        "ours_ids": 32693.2,
+        "comparator_ids": 27345.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0778071003720473,
+        "ci95": [
+         1.046547573046399,
+         1.110653043091959
+        ],
+        "ours_ids": 26710.0,
+        "comparator_ids": 24781.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1663796564494373,
+        "ci95": [
+         1.1644009898774097,
+         1.170567433997079
+        ],
+        "ours_ids": 30412.162338744347,
+        "comparator_ids": 26073.98214687802,
+        "ours_q_at_match": 0.009190448342546712,
+        "comparator_q_at_match": 0.009635717816927215
+       },
+       "0.05": {
+        "ratio": 1.1946309945171616,
+        "ci95": [
+         1.1899183974492131,
+         1.1976861310548024
+        ],
+        "ours_ids": 32658.173606908036,
+        "comparator_ids": 27337.45713680199,
+        "ours_q_at_match": 0.04909285297916904,
+        "comparator_q_at_match": 0.049635341365839546
+       },
+       "0.001": {
+        "ratio": 1.0838410090842747,
+        "ci95": [
+         1.0140928343778128,
+         1.104039081288593
+        ],
+        "ours_ids": 26730.475159923288,
+        "comparator_ids": 24662.727222794027,
+        "ours_q_at_match": 0.0010201715332222511,
+        "comparator_q_at_match": 0.0009052642580209534
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.166739267218431,
+        "ci95": [
+         1.1617007083411401,
+         1.1734021209515622
+        ],
+        "ours_ids": 28927.2,
+        "comparator_ids": 24793.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1924010756819055,
+        "ci95": [
+         1.186833934715113,
+         1.2007173968741993
+        ],
+        "ours_ids": 31038.2,
+        "comparator_ids": 26030.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0846168860374923,
+        "ci95": [
+         1.0534003235440519,
+         1.1173805456508163
+        ],
+        "ours_ids": 25561.6,
+        "comparator_ids": 23567.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1652225075354983,
+        "ci95": [
+         1.1627213142155404,
+         1.1684647840581024
+        ],
+        "ours_ids": 28843.334242035733,
+        "comparator_ids": 24753.49905748111,
+        "ours_q_at_match": 0.008839570743843677,
+        "comparator_q_at_match": 0.009096666104744036
+       },
+       "0.05": {
+        "ratio": 1.1909255839253166,
+        "ci95": [
+         1.1857488980891229,
+         1.1945513896746147
+        ],
+        "ours_ids": 30920.306554190684,
+        "comparator_ids": 25963.256622866964,
+        "ours_q_at_match": 0.04681542977216004,
+        "comparator_q_at_match": 0.04742475593127914
+       },
+       "0.001": {
+        "ratio": 1.0892387270046993,
+        "ci95": [
+         1.014021013622256,
+         1.1088253485996815
+        ],
+        "ours_ids": 25504.22479461466,
+        "comparator_ids": 23414.72457993557,
+        "ours_q_at_match": 0.0009622694329815252,
+        "comparator_q_at_match": 0.0008598107980785333
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.0595191238127835,
+        "ci95": [
+         1.0567013772253948,
+         1.0624454605745401
+        ],
+        "ours_ids": 12382.6,
+        "comparator_ids": 11687.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.059654765367047,
+        "ci95": [
+         1.056735257646878,
+         1.0627921579571618
+        ],
+        "ours_ids": 12388.0,
+        "comparator_ids": 11690.6,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.0387881569887536,
+        "ci95": [
+         1.0279325741580423,
+         1.048932066576184
+        ],
+        "ours_ids": 11767.6,
+        "comparator_ids": 11328.2,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.060146806405248,
+        "ci95": [
+         1.057514266322346,
+         1.0635164845492813
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11687.43793325515,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.010028158096492974
+       },
+       "0.05": {
+        "ratio": 1.0594250731056656,
+        "ci95": [
+         1.0565398295416415,
+         1.0625196136545905
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11695.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.0415848379260797,
+        "ci95": [
+         1.0337501433146383,
+         1.0611761432021536
+        ],
+        "ours_ids": 11774.240805862826,
+        "comparator_ids": 11304.159178532927,
+        "ours_q_at_match": 0.0010787846367954416,
+        "comparator_q_at_match": 0.0009308828539170679
+       }
+      }
+     }
+    },
+    "sage_chim5": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2268737720230618,
+        "ci95": [
+         1.2188516090479287,
+         1.2338929118403639
+        ],
+        "ours_ids": 30472.6,
+        "comparator_ids": 24837.6,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.2178143322232902,
+        "ci95": [
+         1.2138085360077095,
+         1.2217167287875466
+        ],
+        "ours_ids": 32693.2,
+        "comparator_ids": 26845.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.2350645507342877,
+        "ci95": [
+         1.2121831772489047,
+         1.2554057032925192
+        ],
+        "ours_ids": 26710.0,
+        "comparator_ids": 21626.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.2276207060079025,
+        "ci95": [
+         1.2179099862530793,
+         1.2368931804417354
+        ],
+        "ours_ids": 30412.162338744347,
+        "comparator_ids": 24773.256258964222,
+        "ours_q_at_match": 0.009190448342546712,
+        "comparator_q_at_match": 0.009389875967533557
+       },
+       "0.05": {
+        "ratio": 1.2225823927529014,
+        "ci95": [
+         1.2134952394455996,
+         1.230241027160558
+        ],
+        "ours_ids": 32658.173606908036,
+        "comparator_ids": 26712.452101793555,
+        "ours_q_at_match": 0.04909285297916904,
+        "comparator_q_at_match": 0.04645557561578342
+       },
+       "0.001": {
+        "ratio": 1.2499833544928485,
+        "ci95": [
+         1.1452641823815444,
+         1.3090330904851473
+        ],
+        "ours_ids": 26730.475159923288,
+        "comparator_ids": 21384.66489481258,
+        "ours_q_at_match": 0.0010201715332222511,
+        "comparator_q_at_match": 0.000887903385844532
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.2200113029615447,
+        "ci95": [
+         1.211421380854568,
+         1.2276074856194863
+        ],
+        "ours_ids": 28927.2,
+        "comparator_ids": 23710.6,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.209500428649365,
+        "ci95": [
+         1.204711700264432,
+         1.2142887737182506
+        ],
+        "ours_ids": 31038.2,
+        "comparator_ids": 25662.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.2348599033816425,
+        "ci95": [
+         1.2110196575550358,
+         1.2558670689799682
+        ],
+        "ours_ids": 25561.6,
+        "comparator_ids": 20700.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.2213841771616176,
+        "ci95": [
+         1.2103650195967146,
+         1.2308844275307562
+        ],
+        "ours_ids": 28843.334242035733,
+        "comparator_ids": 23615.284020679668,
+        "ours_q_at_match": 0.008839570743843677,
+        "comparator_q_at_match": 0.009044418666901132
+       },
+       "0.05": {
+        "ratio": 1.2147031246875961,
+        "ci95": [
+         1.2031537805280168,
+         1.223431138775451
+        ],
+        "ours_ids": 30920.306554190684,
+        "comparator_ids": 25455.031707556474,
+        "ours_q_at_match": 0.04681542977216004,
+        "comparator_q_at_match": 0.04450152140229063
+       },
+       "0.001": {
+        "ratio": 1.2502544677274934,
+        "ci95": [
+         1.1396418030268807,
+         1.3210665334082685
+        ],
+        "ours_ids": 25504.22479461466,
+        "comparator_ids": 20399.22707972565,
+        "ours_q_at_match": 0.0009622694329815252,
+        "comparator_q_at_match": 0.00085484048845817
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.051297289954493,
+        "ci95": [
+         1.0435766448383448,
+         1.0587371012046793
+        ],
+        "ours_ids": 12382.6,
+        "comparator_ids": 11778.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.0507744244830102,
+        "ci95": [
+         1.042730071843996,
+         1.058457711442786
+        ],
+        "ours_ids": 12388.0,
+        "comparator_ids": 11789.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.0777177397197546,
+        "ci95": [
+         1.0633410630489164,
+         1.09426364534905
+        ],
+        "ours_ids": 11767.6,
+        "comparator_ids": 10919.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0566798227894667,
+        "ci95": [
+         1.0486348864374735,
+         1.06441002071265
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11725.784606439549,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.008627677844367588
+       },
+       "0.05": {
+        "ratio": 1.0503365376464404,
+        "ci95": [
+         1.0422704072894187,
+         1.0580153184627787
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 11796.6,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.1013821459297353,
+        "ci95": [
+         1.0801856338777376,
+         1.128877764003385
+        ],
+        "ours_ids": 11774.240805862826,
+        "comparator_ids": 10690.422801364337,
+        "ours_q_at_match": 0.0010787846367954416,
+        "comparator_q_at_match": 0.0006829923930526127
+       }
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.149987546323901,
+        "ci95": [
+         1.1468701614687016,
+         1.1538474639603264
+        ],
+        "ours_ids": 30472.6,
+        "comparator_ids": 26498.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1723119069987593,
+        "ci95": [
+         1.1690789560014174,
+         1.178375897971455
+        ],
+        "ours_ids": 32693.2,
+        "comparator_ids": 27887.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.0645845290478924,
+        "ci95": [
+         1.0337093466158804,
+         1.0962218467487677
+        ],
+        "ours_ids": 26710.0,
+        "comparator_ids": 25089.6,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1489263332940989,
+        "ci95": [
+         1.1468257971827451,
+         1.1524724211829191
+        ],
+        "ours_ids": 30412.162338744347,
+        "comparator_ids": 26470.071629004546,
+        "ours_q_at_match": 0.009190448342546712,
+        "comparator_q_at_match": 0.009301713392292814
+       },
+       "0.05": {
+        "ratio": 1.1706134381734494,
+        "ci95": [
+         1.164511064645531,
+         1.17496455119362
+        ],
+        "ours_ids": 32658.173606908036,
+        "comparator_ids": 27898.341623231125,
+        "ours_q_at_match": 0.04909285297916904,
+        "comparator_q_at_match": 0.050360198853943605
+       },
+       "0.001": {
+        "ratio": 1.0624990422650165,
+        "ci95": [
+         0.9963269993247822,
+         1.0854441553176417
+        ],
+        "ours_ids": 26730.475159923288,
+        "comparator_ids": 25158.11694563012,
+        "ours_q_at_match": 0.0010201715332222511,
+        "comparator_q_at_match": 0.0010423168846892567
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1470763178973915,
+        "ci95": [
+         1.1446791896230097,
+         1.1501694498586457
+        ],
+        "ours_ids": 28927.2,
+        "comparator_ids": 25218.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1676309711009623,
+        "ci95": [
+         1.165215005829504,
+         1.172663430582662
+        ],
+        "ours_ids": 31038.2,
+        "comparator_ids": 26582.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0699080003683332,
+        "ci95": [
+         1.039426523297491,
+         1.100514705882353
+        ],
+        "ours_ids": 25561.6,
+        "comparator_ids": 23891.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1456700931654338,
+        "ci95": [
+         1.1429936700002228,
+         1.1500122600590366
+        ],
+        "ours_ids": 28843.334242035733,
+        "comparator_ids": 25175.95109979953,
+        "ours_q_at_match": 0.008839570743843677,
+        "comparator_q_at_match": 0.008959427723448234
+       },
+       "0.05": {
+        "ratio": 1.165793746666052,
+        "ci95": [
+         1.1575120148969589,
+         1.17042295235976
+        ],
+        "ours_ids": 30920.306554190684,
+        "comparator_ids": 26522.96484057911,
+        "ours_q_at_match": 0.04681542977216004,
+        "comparator_q_at_match": 0.048239567192564205
+       },
+       "0.001": {
+        "ratio": 1.066083234562298,
+        "ci95": [
+         0.9957166316598696,
+         1.0888522696595213
+        ],
+        "ours_ids": 25504.22479461466,
+        "comparator_ids": 23923.296012703864,
+        "ours_q_at_match": 0.0009622694329815252,
+        "comparator_q_at_match": 0.0010188435059540293
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.0152002098842356,
+        "ci95": [
+         1.0097867569883978,
+         1.02061989365841
+        ],
+        "ours_ids": 12382.6,
+        "comparator_ids": 12197.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.015210122598833,
+        "ci95": [
+         1.0098234435151998,
+         1.0207394925305422
+        ],
+        "ours_ids": 12388.0,
+        "comparator_ids": 12202.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.9988286621284398,
+        "ci95": [
+         0.9921105455087968,
+         1.0085271186152773
+        ],
+        "ours_ids": 11767.6,
+        "comparator_ids": 11781.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0158424256329304,
+        "ci95": [
+         1.0094393219982338,
+         1.0210628772438493
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 12197.167284365036,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.009997264449061325
+       },
+       "0.05": {
+        "ratio": 1.0150407969328572,
+        "ci95": [
+         1.0097538318625174,
+         1.0205052578563214
+        ],
+        "ours_ids": 12390.4,
+        "comparator_ids": 12206.8,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.0024058895506862,
+        "ci95": [
+         0.9890876441743213,
+         1.023537424056993
+        ],
+        "ours_ids": 11774.240805862826,
+        "comparator_ids": 11745.981272257346,
+        "ours_q_at_match": 0.0010787846367954416,
+        "comparator_q_at_match": 0.0008214727032027907
+       }
+      }
+     }
+    }
+   }
+  },
+  "D1": {
+   "runs": [
+    "Velos005137"
+   ],
+   "methods": {
+    "vulcan_v2_sep": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 5786.0,
+       "0.005": 6898.2,
+       "0.01": 6995.4,
+       "0.05": 7456.2
+      },
+      "sequence": {
+       "0.001": 5668.2,
+       "0.005": 6733.6,
+       "0.01": 6823.4,
+       "0.05": 7272.8
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 931.6,
+       "0.01": 951.4,
+       "0.05": 951.4
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.000685324944083273,
+        "P_ci95_a": [
+         0.000357976587422838,
+         0.001012673300743708
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0004955912123258148,
+        "C_ci95_a": [
+         9.598353603492571e-05,
+         0.0008951988886167039
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.0043041946731588445,
+        "P_ci95_a": [
+         0.003309979667112397,
+         0.005298409679205292
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004112305670803154,
+        "C_ci95_a": [
+         0.00317753699540689,
+         0.005047074346199417
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009015628670429212,
+        "P_ci95_a": [
+         0.007877360089039971,
+         0.010153897251818452
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.008422828237865772,
+        "C_ci95_a": [
+         0.006758507904095251,
+         0.010087148571636294
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05115847282351457,
+        "P_ci95_a": [
+         0.04811161781610834,
+         0.0542053278309208
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04814290120436051,
+        "C_ci95_a": [
+         0.04415024643418192,
+         0.0521355559745391
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0006990239276510395,
+        "P_ci95_a": [
+         0.0003756915299563718,
+         0.0010223563253457073
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0005073281873775118,
+        "C_ci95_a": [
+         8.90882430965916e-05,
+         0.0009255681316584319
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004401057879636982,
+        "P_ci95_a": [
+         0.003400250885693972,
+         0.005401864873579992
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004220324964177962,
+        "C_ci95_a": [
+         0.0032713770007999415,
+         0.005169272927555983
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.00922647331652161,
+        "P_ci95_a": [
+         0.008040067375827232,
+         0.010412879257215988
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.008649121022021996,
+        "C_ci95_a": [
+         0.0069447898475813105,
+         0.010353452196462682
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05214044129544742,
+        "P_ci95_a": [
+         0.04901900628929271,
+         0.05526187630160213
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04947271694370561,
+        "C_ci95_a": [
+         0.04533477265757142,
+         0.05361066122983979
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0027746831480530607,
+        "P_ci95_a": [
+         0.0013741322458059306,
+         0.004175234050300191
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.007660569174291339,
+        "P_ci95_a": [
+         0.004643680150257434,
+         0.010677458198325244
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.007660569174291339,
+        "P_ci95_a": [
+         0.004643680150257434,
+         0.010677458198325244
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 5567.8,
+       "0.005": 6017.2,
+       "0.01": 6050.0,
+       "0.05": 6272.4
+      },
+      "sequence": {
+       "0.001": 5446.0,
+       "0.005": 5883.2,
+       "0.01": 5914.8,
+       "0.05": 6133.4
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 824.0,
+       "0.01": 838.6,
+       "0.05": 838.6
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0010116765489908872,
+        "P_ci95_a": [
+         0.0006255371363919826,
+         0.001397815961589792
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0007225286814177172,
+        "C_ci95_a": [
+         0.00033702708573032236,
+         0.0011080302771051122
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004608876738478446,
+        "P_ci95_a": [
+         0.003631757370599128,
+         0.005585996106357765
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.003636054074641309,
+        "C_ci95_a": [
+         0.00254180075955989,
+         0.004730307389722728
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.008968492874081517,
+        "P_ci95_a": [
+         0.0077957564411387376,
+         0.010141229307024296
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.008820167743350413,
+        "C_ci95_a": [
+         0.007086094958588369,
+         0.010554240528112456
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.047997015811644395,
+        "P_ci95_a": [
+         0.04480591315030485,
+         0.05118811847298394
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.04623250742389415,
+        "C_ci95_a": [
+         0.04143001358747808,
+         0.051035001260310214
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0010329441920991507,
+        "P_ci95_a": [
+         0.0006434365478240601,
+         0.001422451836374241
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.000740682642370983,
+        "C_ci95_a": [
+         0.00034796316615986073,
+         0.0011334021185821052
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004661560264056608,
+        "P_ci95_a": [
+         0.003687471874995032,
+         0.005635648653118183
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.003730747421187927,
+        "C_ci95_a": [
+         0.0026335646141944116,
+         0.004827930228181442
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009045724921642127,
+        "P_ci95_a": [
+         0.007866139660601217,
+         0.010225310182683037
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.009051166600124273,
+        "C_ci95_a": [
+         0.0072872607873935465,
+         0.010815072412854999
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.0486624377968624,
+        "P_ci95_a": [
+         0.04541051228076899,
+         0.051914363312955805
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.047402170696232995,
+        "C_ci95_a": [
+         0.0424810029128584,
+         0.052323338479607594
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.006136936109554277,
+        "P_ci95_a": [
+         0.003427177339130861,
+         0.008846694879977694
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.010625626546958079,
+        "P_ci95_a": [
+         0.007104048594278999,
+         0.014147204499637158
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.010625626546958079,
+        "P_ci95_a": [
+         0.007104048594278999,
+         0.014147204499637158
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 5711.6,
+       "0.005": 6017.2,
+       "0.01": 6106.2,
+       "0.05": 6444.0
+      },
+      "sequence": {
+       "0.001": 5594.4,
+       "0.005": 5883.4,
+       "0.01": 5969.2,
+       "0.05": 6294.8
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 825.8,
+       "0.01": 836.2,
+       "0.05": 836.2
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0004896686621924667,
+        "P_ci95_a": [
+         0.00020528913396725736,
+         0.000774048190417676
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0006955829127141072,
+        "C_ci95_a": [
+         0.00033942941218508997,
+         0.0010517364132431246
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005191029843716424,
+        "P_ci95_a": [
+         0.004234874739972557,
+         0.006147184947460291
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004010302065397069,
+        "C_ci95_a": [
+         0.0027930435817155753,
+         0.005227560549078563
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010190856891100141,
+        "P_ci95_a": [
+         0.008780273539124018,
+         0.011601440243076265
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008775947396297609,
+        "C_ci95_a": [
+         0.006847522140329606,
+         0.010704372652265612
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.04889873490738877,
+        "P_ci95_a": [
+         0.04582897797092573,
+         0.051968491843851806
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.05381271631037715,
+        "C_ci95_a": [
+         0.05008238800361797,
+         0.05754304461713633
+        ],
+        "C_verdict_a": "inconclusive"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0004991890881138725,
+        "P_ci95_a": [
+         0.00020625315715512625,
+         0.0007921250190726187
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0007132928612483427,
+        "C_ci95_a": [
+         0.0003772453380968796,
+         0.001049340384399806
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005253259933836709,
+        "P_ci95_a": [
+         0.004289489478348407,
+         0.006217030389325011
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004114310846766748,
+        "C_ci95_a": [
+         0.002879947770634505,
+         0.005348673922898992
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010347972876434216,
+        "P_ci95_a": [
+         0.008908562183395063,
+         0.011787383569473368
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009003953937552739,
+        "C_ci95_a": [
+         0.007038881936079062,
+         0.010969025939026416
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.049663143973732525,
+        "P_ci95_a": [
+         0.04659662642821445,
+         0.0527296615192506
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.05521412637351643,
+        "C_ci95_a": [
+         0.051388581852923707,
+         0.05903967089410915
+        ],
+        "C_verdict_a": "inconclusive"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.002704825638324747,
+        "P_ci95_a": [
+         0.0009904280030148052,
+         0.004419223273634689
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.008166190904208165,
+        "P_ci95_a": [
+         0.0046528734720360804,
+         0.01167950833638025
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.008166190904208165,
+        "P_ci95_a": [
+         0.0046528734720360804,
+         0.01167950833638025
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 6000.0,
+       "0.005": 6177.2,
+       "0.01": 6224.8,
+       "0.05": 6483.6
+      },
+      "sequence": {
+       "0.001": 5860.8,
+       "0.005": 6029.4,
+       "0.01": 6075.0,
+       "0.05": 6330.2
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 857.2,
+       "0.01": 871.0,
+       "0.05": 871.0
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0012391854414632827,
+        "P_ci95_a": [
+         0.0007679349328439341,
+         0.0017104359500826312
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0002623706150085193,
+        "C_ci95_a": [
+         1.94636235455311e-05,
+         0.0005052776064715075
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004572897451168653,
+        "P_ci95_a": [
+         0.0037218094090304393,
+         0.005423985493306867
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004144092508445137,
+        "C_ci95_a": [
+         0.0029942772266556526,
+         0.005293907790234621
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009181460251504864,
+        "P_ci95_a": [
+         0.007930690509223248,
+         0.010432229993786481
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.00845375918980743,
+        "C_ci95_a": [
+         0.005983539050423557,
+         0.010923979329191303
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.0448786219770129,
+        "P_ci95_a": [
+         0.042229436423419545,
+         0.04752780753060626
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.044081024847246096,
+        "C_ci95_a": [
+         0.04053935313878978,
+         0.047622696555702414
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0012550599418572723,
+        "P_ci95_a": [
+         0.0007788316788702026,
+         0.001731288204844342
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0002692376348079382,
+        "C_ci95_a": [
+         1.4495007664680254e-05,
+         0.000523980261951196
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004653191223530357,
+        "P_ci95_a": [
+         0.003783722610357227,
+         0.005522659836703486
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004257097792119668,
+        "C_ci95_a": [
+         0.0030735265377917,
+         0.005440669046447636
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.00927780656524432,
+        "P_ci95_a": [
+         0.008018663030465886,
+         0.010536950100022754
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.008685221369697724,
+        "C_ci95_a": [
+         0.006152880634947032,
+         0.011217562104448416
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.04557635927986225,
+        "P_ci95_a": [
+         0.0429132215630696,
+         0.0482394969966549
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.045254492889167705,
+        "C_ci95_a": [
+         0.04161399957242705,
+         0.04889498620590836
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.007120630123697374,
+        "P_ci95_a": [
+         0.004145155516904283,
+         0.010096104730490465
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.012229801737266696,
+        "P_ci95_a": [
+         0.008288240017242984,
+         0.016171363457290408
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.012229801737266696,
+        "P_ci95_a": [
+         0.008288240017242984,
+         0.016171363457290408
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim5": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 5699.4,
+       "0.005": 6025.8,
+       "0.01": 6119.8,
+       "0.05": 6448.6
+      },
+      "sequence": {
+       "0.001": 5585.4,
+       "0.005": 5892.4,
+       "0.01": 5983.2,
+       "0.05": 6299.2
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 826.4,
+       "0.01": 842.4,
+       "0.05": 842.4
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0005609496152959778,
+        "P_ci95_a": [
+         0.00021909091141254626,
+         0.0009028083191794094
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0005880720860287761,
+        "C_ci95_a": [
+         0.0002535032754160637,
+         0.0009226408966414887
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005234272183181882,
+        "P_ci95_a": [
+         0.0042269786384251645,
+         0.006241565727938599
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.003867346619347692,
+        "C_ci95_a": [
+         0.0025098650283188577,
+         0.005224828210376526
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010670141146591665,
+        "P_ci95_a": [
+         0.009401498217944854,
+         0.011938784075238476
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008357377235348096,
+        "C_ci95_a": [
+         0.006017154488037062,
+         0.01069759998265913
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.050561757060779616,
+        "P_ci95_a": [
+         0.04776902368082462,
+         0.05335449044073461
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.05600588911637355,
+        "C_ci95_a": [
+         0.05241652809309556,
+         0.05959525013965154
+        ],
+        "C_verdict_a": "inconclusive"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.000571825832081301,
+        "P_ci95_a": [
+         0.00023071764269411203,
+         0.00091293402146849
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0006029527045616703,
+        "C_ci95_a": [
+         0.00023892689208175757,
+         0.000966978517041583
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005297392840669399,
+        "P_ci95_a": [
+         0.004290561155023916,
+         0.006304224526314883
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.003967422850703868,
+        "C_ci95_a": [
+         0.002567482516223506,
+         0.005367363185184231
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010837254553101477,
+        "P_ci95_a": [
+         0.009551136149930658,
+         0.012123372956272296
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008574604647755057,
+        "C_ci95_a": [
+         0.006179498109233778,
+         0.010969711186276338
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05130714944010078,
+        "P_ci95_a": [
+         0.048477726883654974,
+         0.05413657199654658
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.057457819796532396,
+        "C_ci95_a": [
+         0.053793778332123406,
+         0.061121861260941386
+        ],
+        "C_verdict_a": "inconclusive"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0026193238003539,
+        "P_ci95_a": [
+         0.001033173746920479,
+         0.004205473853787322
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.00827923378442364,
+        "P_ci95_a": [
+         0.004697531711967062,
+         0.011860935856880216
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.00827923378442364,
+        "P_ci95_a": [
+         0.004697531711967062,
+         0.011860935856880216
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 6020.4,
+       "0.005": 6186.8,
+       "0.01": 6231.6,
+       "0.05": 6486.4
+      },
+      "sequence": {
+       "0.001": 5879.8,
+       "0.005": 6038.8,
+       "0.01": 6081.8,
+       "0.05": 6332.0
+      },
+      "protein": {
+       "0.001": 0.0,
+       "0.005": 858.6,
+       "0.01": 871.4,
+       "0.05": 871.4
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0012364415034194487,
+        "P_ci95_a": [
+         0.0007395961093283875,
+         0.00173328689751051
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0003954709268409442,
+        "C_ci95_a": [
+         8.548753414300525e-05,
+         0.0007054543195388831
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004449764977101687,
+        "P_ci95_a": [
+         0.0035659759235367092,
+         0.005333554030666665
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.003161241311331466,
+        "C_ci95_a": [
+         0.0024320837118780095,
+         0.003890398910784923
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009082939748599948,
+        "P_ci95_a": [
+         0.007910692403881394,
+         0.010255187093318501
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.007581835037896006,
+        "C_ci95_a": [
+         0.005800517890771421,
+         0.009363152185020592
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.045106363243188105,
+        "P_ci95_a": [
+         0.04246802493027888,
+         0.04774470155609733
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.04224978777119189,
+        "C_ci95_a": [
+         0.03733174006043615,
+         0.04716783548194763
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0012635454482264562,
+        "P_ci95_a": [
+         0.0007591698429935469,
+         0.0017679210534593654
+        ],
+        "P_verdict_a": "not-evaluable",
+        "C_mean_fdp": 0.0004060101143377336,
+        "C_ci95_a": [
+         7.307993146566673e-05,
+         0.0007389402972098005
+        ],
+        "C_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004538298378408594,
+        "P_ci95_a": [
+         0.0036502012662864647,
+         0.005426395490530723
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0032477260399750747,
+        "C_ci95_a": [
+         0.0024896859697939155,
+         0.004005766110156234
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009211020080215583,
+        "P_ci95_a": [
+         0.008039580225807561,
+         0.010382459934623604
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.007791099408953522,
+        "C_ci95_a": [
+         0.005946700513357672,
+         0.009635498304549371
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.045806586070817445,
+        "P_ci95_a": [
+         0.04311221667986339,
+         0.0485009554617715
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0433866060507926,
+        "C_ci95_a": [
+         0.03840670477881173,
+         0.04836650732277347
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0,
+        "P_ci95_a": [
+         0.0,
+         0.0
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.006272348145449411,
+        "P_ci95_a": [
+         0.003649967828695281,
+         0.00889472846220354
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.01": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.010995560900117139,
+        "P_ci95_a": [
+         0.007613196906729783,
+         0.014377924893504493
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.010995560900117139,
+        "P_ci95_a": [
+         0.007613196906729783,
+         0.014377924893504493
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    }
+   },
+   "ratios_v2_sep_over": {
+    "sage+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1562644628099172,
+        "ci95": [
+         1.1400852807985984,
+         1.1724468542334778
+        ],
+        "ours_ids": 6995.4,
+        "comparator_ids": 6050.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.1887315859957912,
+        "ci95": [
+         1.1871138289062997,
+         1.190368217673171
+        ],
+        "ours_ids": 7456.2,
+        "comparator_ids": 6272.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.0391896260641547,
+        "ci95": [
+         0.9844229721496884,
+         1.1335370590023028
+        ],
+        "ours_ids": 5786.0,
+        "comparator_ids": 5567.8,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1711446690020082,
+        "ci95": [
+         1.1547068315198492,
+         1.1745631516232318
+        ],
+        "ours_ids": 7096.145232930059,
+        "comparator_ids": 6059.153425491869,
+        "ours_q_at_match": 0.011659554426772021,
+        "comparator_q_at_match": 0.011026942826795028
+       },
+       "0.05": {
+        "ratio": 1.1860629209800742,
+        "ci95": [
+         1.185230981884114,
+         1.1878185249611704
+        ],
+        "ours_ids": 7453.013680830892,
+        "comparator_ids": 6283.826556749852,
+        "ours_q_at_match": 0.048968797680230554,
+        "comparator_q_at_match": 0.05192564534215769
+       },
+       "0.001": {
+        "ratio": 1.0723516816185603,
+        "ci95": [
+         0.9901757897543301,
+         1.2347757455128636
+        ],
+        "ours_ids": 5969.4,
+        "comparator_ids": 5566.6439492966065,
+        "ours_q_at_match": 0.0012861627336761524,
+        "comparator_q_at_match": 0.0009097728202394797
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1536146615270169,
+        "ci95": [
+         1.1375777657560184,
+         1.169653726498039
+        ],
+        "ours_ids": 6823.4,
+        "comparator_ids": 5914.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.185769719894349,
+        "ci95": [
+         1.1840270992117778,
+         1.1875694036187863
+        ],
+        "ours_ids": 7272.8,
+        "comparator_ids": 6133.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.04080058758722,
+        "ci95": [
+         0.9861453653038231,
+         1.135454632728093
+        ],
+        "ours_ids": 5668.2,
+        "comparator_ids": 5446.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1676874692224197,
+        "ci95": [
+         1.1450226884576693,
+         1.17133834161031
+        ],
+        "ours_ids": 6915.917539165444,
+        "comparator_ids": 5922.747071843509,
+        "ours_q_at_match": 0.011110492524376287,
+        "comparator_q_at_match": 0.01089280982595063
+       },
+       "0.05": {
+        "ratio": 1.1834562287614125,
+        "ci95": [
+         1.1818015315150154,
+         1.1852232109180394
+        ],
+        "ours_ids": 7268.109343358393,
+        "comparator_ids": 6141.426414194538,
+        "ours_q_at_match": 0.048159715724740135,
+        "comparator_q_at_match": 0.051268434778000554
+       },
+       "0.001": {
+        "ratio": 1.0735799802307742,
+        "ci95": [
+         0.9886394487148633,
+         1.2351661277557127
+        ],
+        "ours_ids": 5843.6,
+        "comparator_ids": 5443.097028266002,
+        "ours_q_at_match": 0.001265983830401492,
+        "comparator_q_at_match": 0.0008995956098612902
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1345098974481278,
+        "ci95": [
+         1.1247327156094085,
+         1.1483529694638135
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 838.6,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1345098974481278,
+        "ci95": [
+         1.1247327156094085,
+         1.1483529694638135
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 838.6,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": null,
+        "ci95": [
+         0.0,
+         0.0
+        ],
+        "ours_ids": 0.0,
+        "comparator_ids": 0.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1376430264858262,
+        "ci95": [
+         1.1294308402872815,
+         1.1495551815340228
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 837.1694616209788,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.009530325036541337
+       },
+       "0.05": {
+        "ratio": 1.135702361077987,
+        "ci95": [
+         1.12592064623426,
+         1.1495551815340228
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 838.6,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 6.512965358693928,
+        "ci95": [
+         1.2124907485751066,
+         143.44792833764546
+        ],
+        "ours_ids": 922.1034098165056,
+        "comparator_ids": 141.57965827126998,
+        "ours_q_at_match": 0.0032120006363970935,
+        "comparator_q_at_match": 0.0012486333744101982
+       }
+      }
+     }
+    },
+    "sage_chim2": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1456224820674068,
+        "ci95": [
+         1.1288392040258233,
+         1.1627213114754098
+        ],
+        "ours_ids": 6995.4,
+        "comparator_ids": 6106.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1570763500931098,
+        "ci95": [
+         1.1546909692451748,
+         1.159471228615863
+        ],
+        "ours_ids": 7456.2,
+        "comparator_ids": 6444.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0130261222774704,
+        "ci95": [
+         1.0071438528017842,
+         1.0210278733412905
+        ],
+        "ours_ids": 5786.0,
+        "comparator_ids": 5711.6,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1628105380260234,
+        "ci95": [
+         1.1445805710863701,
+         1.165811583133194
+        ],
+        "ours_ids": 7096.145232930059,
+        "comparator_ids": 6102.580773800357,
+        "ours_q_at_match": 0.011659554426772021,
+        "comparator_q_at_match": 0.009686072834490965
+       },
+       "0.05": {
+        "ratio": 1.1552448322268773,
+        "ci95": [
+         1.1536423092014871,
+         1.1569679680406155
+        ],
+        "ours_ids": 7453.013680830892,
+        "comparator_ids": 6451.458143694342,
+        "ours_q_at_match": 0.048968797680230554,
+        "comparator_q_at_match": 0.051157951825255524
+       },
+       "0.001": {
+        "ratio": 1.0239367449963068,
+        "ci95": [
+         0.9950210090604527,
+         1.1144808153195318
+        ],
+        "ours_ids": 5969.4,
+        "comparator_ids": 5829.85231184523,
+        "ours_q_at_match": 0.0012861627336761524,
+        "comparator_q_at_match": 0.0014930168054961902
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1431012530992428,
+        "ci95": [
+         1.1264032702348052,
+         1.1601207445916486
+        ],
+        "ours_ids": 6823.4,
+        "comparator_ids": 5969.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.155366334117049,
+        "ci95": [
+         1.1528689674603338,
+         1.1579081470157333
+        ],
+        "ours_ids": 7272.8,
+        "comparator_ids": 6294.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0131917631917633,
+        "ci95": [
+         1.007579262000498,
+         1.0207519443747537
+        ],
+        "ours_ids": 5668.2,
+        "comparator_ids": 5594.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1597953881658565,
+        "ci95": [
+         1.1358633421626338,
+         1.1628002767784344
+        ],
+        "ours_ids": 6915.917539165444,
+        "comparator_ids": 5963.049698018314,
+        "ours_q_at_match": 0.011110492524376287,
+        "comparator_q_at_match": 0.009486311424531615
+       },
+       "0.05": {
+        "ratio": 1.1542162437463985,
+        "ci95": [
+         1.1524987458609914,
+         1.1560449814130855
+        ],
+        "ours_ids": 7268.109343358393,
+        "comparator_ids": 6297.008366272242,
+        "ours_q_at_match": 0.048159715724740135,
+        "comparator_q_at_match": 0.05034899377410423
+       },
+       "0.001": {
+        "ratio": 1.0242888879031036,
+        "ci95": [
+         0.9947491049221594,
+         1.0905609852250278
+        ],
+        "ours_ids": 5843.6,
+        "comparator_ids": 5705.031138200532,
+        "ours_q_at_match": 0.001265983830401492,
+        "comparator_q_at_match": 0.0014804691750632901
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1377660846687394,
+        "ci95": [
+         1.1276190476190477,
+         1.148645408774874
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 836.2,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1377660846687394,
+        "ci95": [
+         1.1276190476190477,
+         1.148645408774874
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 836.2,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": null,
+        "ci95": [
+         0.0,
+         0.0
+        ],
+        "ours_ids": 0.0,
+        "comparator_ids": 0.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1386896221903395,
+        "ci95": [
+         1.128809523809524,
+         1.1494154088579733
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 836.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.05": {
+        "ratio": 1.1386896221903395,
+        "ci95": [
+         1.128809523809524,
+         1.1494154088579733
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 836.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.1552710062540466,
+        "ci95": [
+         1.1362122248992745,
+         1.173274948653705
+        ],
+        "ours_ids": 922.1034098165056,
+        "comparator_ids": 798.1706498516012,
+        "ours_q_at_match": 0.0032120006363970935,
+        "comparator_q_at_match": 0.0025728785958827583
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1237951420125947,
+        "ci95": [
+         1.1093564053906275,
+         1.138203292999968
+        ],
+        "ours_ids": 6995.4,
+        "comparator_ids": 6224.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.1500092541180824,
+        "ci95": [
+         1.1474041736700404,
+         1.1531754375115948
+        ],
+        "ours_ids": 7456.2,
+        "comparator_ids": 6483.6,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.9643333333333334,
+        "ci95": [
+         0.9589573302341027,
+         0.9709748448655502
+        ],
+        "ours_ids": 5786.0,
+        "comparator_ids": 6000.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1374080458956886,
+        "ci95": [
+         1.1202786573859913,
+         1.1403765113203097
+        ],
+        "ours_ids": 7096.145232930059,
+        "comparator_ids": 6238.873778444192,
+        "ours_q_at_match": 0.011659554426772021,
+        "comparator_q_at_match": 0.011349871752183797
+       },
+       "0.05": {
+        "ratio": 1.145110991538157,
+        "ci95": [
+         1.1420188599376964,
+         1.1480639755810964
+        ],
+        "ours_ids": 7453.013680830892,
+        "comparator_ids": 6508.551342101535,
+        "ours_q_at_match": 0.048968797680230554,
+        "comparator_q_at_match": 0.05534489616590741
+       },
+       "0.001": {
+        "ratio": 1.0125299797260425,
+        "ci95": [
+         0.9768436260993048,
+         1.0978701661301173
+        ],
+        "ours_ids": 5969.4,
+        "comparator_ids": 5895.529139408913,
+        "ours_q_at_match": 0.0012861627336761524,
+        "comparator_q_at_match": 0.0008432814336066424
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.12319341563786,
+        "ci95": [
+         1.1088224631710772,
+         1.1375341204327951
+        ],
+        "ours_ids": 6823.4,
+        "comparator_ids": 6075.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.1489052478594675,
+        "ci95": [
+         1.1463249875846957,
+         1.1520871603217837
+        ],
+        "ours_ids": 7272.8,
+        "comparator_ids": 6330.2,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.9671375921375921,
+        "ci95": [
+         0.9621871599564743,
+         0.9729923518164435
+        ],
+        "ours_ids": 5668.2,
+        "comparator_ids": 5860.8,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1362502865939867,
+        "ci95": [
+         1.114115798835621,
+         1.1392518987696922
+        ],
+        "ours_ids": 6915.917539165444,
+        "comparator_ids": 6086.614560861,
+        "ours_q_at_match": 0.011110492524376287,
+        "comparator_q_at_match": 0.011144191240343413
+       },
+       "0.05": {
+        "ratio": 1.1444630464638619,
+        "ci95": [
+         1.1411989634024495,
+         1.147390906096976
+        ],
+        "ours_ids": 7268.109343358393,
+        "comparator_ids": 6350.6719293517135,
+        "ours_q_at_match": 0.048159715724740135,
+        "comparator_q_at_match": 0.05463997768133382
+       },
+       "0.001": {
+        "ratio": 1.019276373286033,
+        "ci95": [
+         0.9823410791061746,
+         1.0750189053165076
+        ],
+        "ours_ids": 5843.6,
+        "comparator_ids": 5733.086877272439,
+        "ours_q_at_match": 0.001265983830401492,
+        "comparator_q_at_match": 0.0008341382652039402
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.0923076923076922,
+        "ci95": [
+         1.0835286451205772,
+         1.1004386977603324
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 871.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.0923076923076922,
+        "ci95": [
+         1.0835286451205772,
+         1.1004386977603324
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 871.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": null,
+        "ci95": [
+         0.0,
+         0.0
+        ],
+        "ours_ids": 0.0,
+        "comparator_ids": 0.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1003390958421835,
+        "ci95": [
+         1.0937862687571278,
+         1.1063675664239032
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 865.5513592117228,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.008186476955632684
+       },
+       "0.05": {
+        "ratio": 1.0927030748049564,
+        "ci95": [
+         1.0836335931380954,
+         1.1010846988229863
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 871.6,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.378743136687359,
+        "ci95": [
+         1.1026661918279872,
+         2.4477671561061434
+        ],
+        "ours_ids": 922.1034098165056,
+        "comparator_ids": 668.8,
+        "ours_q_at_match": 0.0032120006363970935,
+        "comparator_q_at_match": 0.0012461175360066008
+       }
+      }
+     }
+    },
+    "sage_chim5": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1430765711297755,
+        "ci95": [
+         1.1265914301298225,
+         1.1597933086960788
+        ],
+        "ours_ids": 6995.4,
+        "comparator_ids": 6119.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1562509692026175,
+        "ci95": [
+         1.1544249137116602,
+         1.1580843530654077
+        ],
+        "ours_ids": 7456.2,
+        "comparator_ids": 6448.6,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.0151945818858126,
+        "ci95": [
+         1.0085146312643358,
+         1.0212254988521985
+        ],
+        "ours_ids": 5786.0,
+        "comparator_ids": 5699.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1609406243423925,
+        "ci95": [
+         1.1441618917570364,
+         1.1640123388222239
+        ],
+        "ours_ids": 7096.145232930059,
+        "comparator_ids": 6112.410130319649,
+        "ours_q_at_match": 0.011659554426772021,
+        "comparator_q_at_match": 0.009489390187928836
+       },
+       "0.05": {
+        "ratio": 1.1563748134214766,
+        "ci95": [
+         1.1547865386143281,
+         1.1583463353467867
+        ],
+        "ours_ids": 7453.013680830892,
+        "comparator_ids": 6445.153936532869,
+        "ours_q_at_match": 0.048968797680230554,
+        "comparator_q_at_match": 0.049463717107913634
+       },
+       "0.001": {
+        "ratio": 1.0272977884344032,
+        "ci95": [
+         0.9971063213539841,
+         1.11885618236965
+        ],
+        "ours_ids": 5969.4,
+        "comparator_ids": 5810.778595267236,
+        "ours_q_at_match": 0.0012861627336761524,
+        "comparator_q_at_match": 0.0013918265735113206
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1404265276106431,
+        "ci95": [
+         1.1241428160942477,
+         1.157093633961128
+        ],
+        "ours_ids": 6823.4,
+        "comparator_ids": 5983.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1545593091186184,
+        "ci95": [
+         1.1527315387298265,
+         1.1563920770673701
+        ],
+        "ours_ids": 7272.8,
+        "comparator_ids": 6299.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.014824363519175,
+        "ci95": [
+         1.0082650491291547,
+         1.0209031607020578
+        ],
+        "ours_ids": 5668.2,
+        "comparator_ids": 5585.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1576437465384661,
+        "ci95": [
+         1.134420513871543,
+         1.161396020933247
+        ],
+        "ours_ids": 6915.917539165444,
+        "comparator_ids": 5974.132853777432,
+        "ours_q_at_match": 0.011110492524376287,
+        "comparator_q_at_match": 0.009364675406560337
+       },
+       "0.05": {
+        "ratio": 1.1553028073576008,
+        "ci95": [
+         1.153849460838429,
+         1.1569110571090682
+        ],
+        "ours_ids": 7268.109343358393,
+        "comparator_ids": 6291.0860227042585,
+        "ours_q_at_match": 0.048159715724740135,
+        "comparator_q_at_match": 0.04877708438608664
+       },
+       "0.001": {
+        "ratio": 1.0272076713014147,
+        "ci95": [
+         0.995742599104517,
+         1.094879122738034
+        ],
+        "ours_ids": 5843.6,
+        "comparator_ids": 5688.8204432862985,
+        "ours_q_at_match": 0.001265983830401492,
+        "comparator_q_at_match": 0.001380133420338252
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.129392212725546,
+        "ci95": [
+         1.1190926275992439,
+         1.139790076335878
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 842.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.129392212725546,
+        "ci95": [
+         1.1190926275992439,
+         1.139790076335878
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 842.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": null,
+        "ci95": [
+         0.0,
+         0.0
+        ],
+        "ours_ids": 0.0,
+        "comparator_ids": 0.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1305792972459638,
+        "ci95": [
+         1.1202741020793952,
+         1.140982824427481
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 842.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.05": {
+        "ratio": 1.1305792972459638,
+        "ci95": [
+         1.1202741020793952,
+         1.140982824427481
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 842.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.1427058947899673,
+        "ci95": [
+         1.1318977818685203,
+         1.1637168336447956
+        ],
+        "ours_ids": 922.1034098165056,
+        "comparator_ids": 806.9472766533605,
+        "ours_q_at_match": 0.0032120006363970935,
+        "comparator_q_at_match": 0.0036655037039945116
+       }
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1225688426728286,
+        "ci95": [
+         1.107464076280222,
+         1.1379111182416173
+        ],
+        "ours_ids": 6995.4,
+        "comparator_ids": 6231.6,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.1495128268376913,
+        "ci95": [
+         1.1464652679505323,
+         1.1525743247419493
+        ],
+        "ours_ids": 7456.2,
+        "comparator_ids": 6486.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.9610657099196067,
+        "ci95": [
+         0.9563430238339908,
+         0.9668500917125229
+        ],
+        "ours_ids": 5786.0,
+        "comparator_ids": 6020.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1375086690415175,
+        "ci95": [
+         1.1210564664980807,
+         1.1411489269898678
+        ],
+        "ours_ids": 7096.145232930059,
+        "comparator_ids": 6238.3218924470975,
+        "ours_q_at_match": 0.011659554426772021,
+        "comparator_q_at_match": 0.0110692706144407
+       },
+       "0.05": {
+        "ratio": 1.1440121239531926,
+        "ci95": [
+         1.142271652606533,
+         1.146115970328313
+        ],
+        "ours_ids": 7453.013680830892,
+        "comparator_ids": 6514.803055649988,
+        "ours_q_at_match": 0.048968797680230554,
+        "comparator_q_at_match": 0.05483878942697268
+       },
+       "0.001": {
+        "ratio": 1.0029938074315934,
+        "ci95": [
+         0.972695259572211,
+         1.0896602636461474
+        ],
+        "ours_ids": 5969.4,
+        "comparator_ids": 5951.582109251584,
+        "ours_q_at_match": 0.0012861627336761524,
+        "comparator_q_at_match": 0.0008245281333467972
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1219375842678154,
+        "ci95": [
+         1.1069388444612207,
+         1.1371975276170436
+        ],
+        "ours_ids": 6823.4,
+        "comparator_ids": 6081.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.1485786481364497,
+        "ci95": [
+         1.1454591290098948,
+         1.1517127841448744
+        ],
+        "ours_ids": 7272.8,
+        "comparator_ids": 6332.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.9640123813735161,
+        "ci95": [
+         0.9597677734772866,
+         0.9693431653693843
+        ],
+        "ours_ids": 5668.2,
+        "comparator_ids": 5879.8,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1361507087482547,
+        "ci95": [
+         1.1135535873632751,
+         1.1398384191795545
+        ],
+        "ours_ids": 6915.917539165444,
+        "comparator_ids": 6087.148021748807,
+        "ours_q_at_match": 0.011110492524376287,
+        "comparator_q_at_match": 0.010948302469783892
+       },
+       "0.05": {
+        "ratio": 1.1436331737145813,
+        "ci95": [
+         1.1414614201247655,
+         1.1458592316438572
+        ],
+        "ours_ids": 7268.109343358393,
+        "comparator_ids": 6355.280268542043,
+        "ours_q_at_match": 0.048159715724740135,
+        "comparator_q_at_match": 0.05406932619493786
+       },
+       "0.001": {
+        "ratio": 1.006962418850905,
+        "ci95": [
+         0.9761802434898023,
+         1.0767437927478636
+        ],
+        "ours_ids": 5843.6,
+        "comparator_ids": 5803.195720718578,
+        "ours_q_at_match": 0.001265983830401492,
+        "comparator_q_at_match": 0.0008112853856012338
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.091806288730778,
+        "ci95": [
+         1.077568609662055,
+         1.1034961796712204
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 871.4,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.091806288730778,
+        "ci95": [
+         1.077568609662055,
+         1.1034961796712204
+        ],
+        "ours_ids": 951.4,
+        "comparator_ids": 871.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": null,
+        "ci95": [
+         0.0,
+         0.0
+        ],
+        "ours_ids": 0.0,
+        "comparator_ids": 0.0,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0948299401963113,
+        "ci95": [
+         1.083896993631662,
+         1.1060507085651239
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 869.9067910302375,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.008271997786772747
+       },
+       "0.05": {
+        "ratio": 1.0919513872964914,
+        "ci95": [
+         1.0774807430901678,
+         1.1039869433434368
+        ],
+        "ours_ids": 952.4,
+        "comparator_ids": 872.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.4172172294593892,
+        "ci95": [
+         1.0976599773676758,
+         2.8800232000185333
+        ],
+        "ours_ids": 922.1034098165056,
+        "comparator_ids": 650.6436632641353,
+        "ours_q_at_match": 0.0032120006363970935,
+        "comparator_q_at_match": 0.0012285004162014249
+       }
+      }
+     }
+    }
+   }
+  },
+  "D8h": {
+   "runs": [
+    "E9_0000__H0799BL",
+    "E9_0001__QE-B_2018-09_E02_Pro10k_Calu1_P1_25cm",
+    "E9_0002__MGP2",
+    "E9_0003__20180623_PC463-Graves-McDonald_Sample1",
+    "E9_0004__20210122-YP202104470-xh-BT1-3",
+    "E9_0005__20240423_LennonR_HassanS_d22_ECM_R3r",
+    "E9_0006__CL_CTL_p53_ZNF_061025_1",
+    "E9_0007__170413_gc_M5-013-14-18-19-21_Stress-granules_6B",
+    "E9_0008__lgg1",
+    "E9_0009__20170210_MCF7_LysC_WT_2b"
+   ],
+   "methods": {
+    "vulcan_v2_sep": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 67442.2,
+       "0.005": 76292.8,
+       "0.01": 79307.2,
+       "0.05": 86696.8
+      },
+      "sequence": {
+       "0.001": 65082.8,
+       "0.005": 73448.2,
+       "0.01": 76286.6,
+       "0.05": 83374.6
+      },
+      "protein": {
+       "0.001": 5669.0,
+       "0.005": 6180.0,
+       "0.01": 6375.2,
+       "0.05": 6386.6
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0010227554933023224,
+        "P_ci95_a": [
+         0.0008620188807586312,
+         0.0011834921058460136
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.00169184996097245,
+        "C_ci95_a": [
+         0.001466656281094472,
+         0.0019170436408504283
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005334700658741714,
+        "P_ci95_a": [
+         0.005050480390317524,
+         0.005618920927165904
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.004886501393726523,
+        "C_ci95_a": [
+         0.004499683914898086,
+         0.0052733188725549605
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010577364720986231,
+        "P_ci95_a": [
+         0.010115766911020967,
+         0.011038962530951496
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.008694928233962262,
+        "C_ci95_a": [
+         0.00824111368303275,
+         0.009148742784891774
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05065109935162717,
+        "P_ci95_a": [
+         0.049732441938687276,
+         0.051569756764567064
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.045198482026991865,
+        "C_ci95_a": [
+         0.04426387185036447,
+         0.04613309220361926
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0010562115915977819,
+        "P_ci95_a": [
+         0.0008885491338591656,
+         0.001223874049336398
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.001803990431867676,
+        "C_ci95_a": [
+         0.001562197620733756,
+         0.002045783243001596
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0055166660304158295,
+        "P_ci95_a": [
+         0.005216128345635958,
+         0.005817203715195701
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.005186185436969635,
+        "C_ci95_a": [
+         0.00475824782377006,
+         0.00561412305016921
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010944594507669944,
+        "P_ci95_a": [
+         0.010464890217056709,
+         0.01142429879828318
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009282035831564254,
+        "C_ci95_a": [
+         0.008787294284910804,
+         0.009776777378217704
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05235359921137293,
+        "P_ci95_a": [
+         0.05142088850135747,
+         0.053286309921388386
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.04840994444989892,
+        "C_ci95_a": [
+         0.047399115926165525,
+         0.049420772973632315
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0007280594314934781,
+        "P_ci95_a": [
+         0.0003007343329153161,
+         0.00115538453007164
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004397292727020644,
+        "P_ci95_a": [
+         0.0034213715716673422,
+         0.0053732138823739456
+        ],
+        "P_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010171410092120619,
+        "P_ci95_a": [
+         0.008951734635614461,
+         0.011391085548626776
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.0105547286850107,
+        "P_ci95_a": [
+         0.009215706486101597,
+         0.011893750883919803
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 50358.6,
+       "0.005": 59383.6,
+       "0.01": 62757.4,
+       "0.05": 71292.2
+      },
+      "sequence": {
+       "0.001": 48475.2,
+       "0.005": 57088.6,
+       "0.01": 60310.4,
+       "0.05": 68534.0
+      },
+      "protein": {
+       "0.001": 4998.2,
+       "0.005": 5498.8,
+       "0.01": 5679.8,
+       "0.05": 5690.4
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0009226470070290581,
+        "P_ci95_a": [
+         0.0007784671858967809,
+         0.0010668268281613354
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0014227497946154963,
+        "C_ci95_a": [
+         0.001182882578012661,
+         0.0016626170112183315
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004830032295394724,
+        "P_ci95_a": [
+         0.0045034286619257515,
+         0.005156635928863697
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004663889497395638,
+        "C_ci95_a": [
+         0.0041987318682713244,
+         0.005129047126519951
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009917254693953648,
+        "P_ci95_a": [
+         0.009534048847842563,
+         0.010300460540064733
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.00850235343311582,
+        "C_ci95_a": [
+         0.007833637322341337,
+         0.009171069543890303
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.04892650632616362,
+        "P_ci95_a": [
+         0.04812115778214841,
+         0.049731854870178824
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.04629599260892838,
+        "C_ci95_a": [
+         0.0449683038240121,
+         0.04762368139384466
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0009567627682682383,
+        "P_ci95_a": [
+         0.0008050750541805616,
+         0.0011084504823559152
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0015196248106786401,
+        "C_ci95_a": [
+         0.001270663832208008,
+         0.0017685857891492722
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004990398960108094,
+        "P_ci95_a": [
+         0.0046533526179861374,
+         0.00532744530223005
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.004979870060796208,
+        "C_ci95_a": [
+         0.004479698984356869,
+         0.005480041137235547
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.010258726113690953,
+        "P_ci95_a": [
+         0.009862732259026275,
+         0.010654719968355632
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.009110815552930732,
+        "C_ci95_a": [
+         0.008387793094185546,
+         0.009833838011675918
+        ],
+        "C_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.05055930351961722,
+        "P_ci95_a": [
+         0.049717984588955794,
+         0.05140062245027864
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.049650521925852384,
+        "C_ci95_a": [
+         0.048234692954495985,
+         0.05106635089720878
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0011393021576182915,
+        "P_ci95_a": [
+         0.0006997291944458464,
+         0.0015788751207907366
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005232233567712874,
+        "P_ci95_a": [
+         0.004396126056660807,
+         0.006068341078764941
+        ],
+        "P_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009573600456483106,
+        "P_ci95_a": [
+         0.008014953674995242,
+         0.01113224723797097
+        ],
+        "P_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009947643242328542,
+        "P_ci95_a": [
+         0.008253520543563313,
+         0.01164176594109377
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "ids": {
+      "peptidoform": {
+       "0.001": 65539.8,
+       "0.005": 70568.2,
+       "0.01": 72122.8,
+       "0.05": 76467.0
+      },
+      "sequence": {
+       "0.001": 62865.6,
+       "0.005": 67708.6,
+       "0.01": 69194.0,
+       "0.05": 73412.4
+      },
+      "protein": {
+       "0.001": 5748.2,
+       "0.005": 6086.2,
+       "0.01": 6210.6,
+       "0.05": 6215.4
+      }
+     },
+     "entrapment": {
+      "peptidoform": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.0008952067931235461,
+        "P_ci95_a": [
+         0.0007603698621878243,
+         0.0010300437240592679
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0019046015736654,
+        "C_ci95_a": [
+         0.0016773336262424841,
+         0.002131869521088316
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.004838490246542265,
+        "P_ci95_a": [
+         0.004556655027083091,
+         0.005120325466001439
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0055295740406146165,
+        "C_ci95_a": [
+         0.005120745155446171,
+         0.005938402925783062
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.009671516708106594,
+        "P_ci95_a": [
+         0.009218394246858174,
+         0.010124639169355014
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.010236496465796076,
+        "C_ci95_a": [
+         0.009689497572018198,
+         0.010783495359573955
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.047956134929164146,
+        "P_ci95_a": [
+         0.046972178194764846,
+         0.048940091663563445
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.04519676525456893,
+        "C_ci95_a": [
+         0.043904732805171244,
+         0.04648879770396661
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "sequence": {
+       "0.001": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.000930604071696639,
+        "P_ci95_a": [
+         0.0007889433646774675,
+         0.0010722647787158104
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.002019575331156371,
+        "C_ci95_a": [
+         0.0017739552355162862,
+         0.002265195426796456
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.005": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.005018819730418266,
+        "P_ci95_a": [
+         0.004731820880949421,
+         0.00530581857988711
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.005920371523352215,
+        "C_ci95_a": [
+         0.005489820322195669,
+         0.0063509227245087604
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.01": {
+        "deciding": "inconclusive",
+        "P_mean_fdp": 0.01002592174218503,
+        "P_ci95_a": [
+         0.009561951757121247,
+         0.010489891727248814
+        ],
+        "P_verdict_a": "inconclusive",
+        "C_mean_fdp": 0.010983528310502515,
+        "C_ci95_a": [
+         0.010400167383919315,
+         0.011566889237085716
+        ],
+        "C_verdict_a": "inconclusive"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.04952119994045621,
+        "P_ci95_a": [
+         0.048499650565548585,
+         0.05054274931536383
+        ],
+        "P_verdict_a": "supported",
+        "C_mean_fdp": 0.0484526351518047,
+        "C_ci95_a": [
+         0.047094652742914696,
+         0.04981061756069471
+        ],
+        "C_verdict_a": "supported"
+       }
+      },
+      "protein": {
+       "0.001": {
+        "deciding": "not-evaluable",
+        "P_mean_fdp": 0.0004013214670123162,
+        "P_ci95_a": [
+         0.00013593909269573527,
+         0.0006667038413288971
+        ],
+        "P_verdict_a": "not-evaluable"
+       },
+       "0.005": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.004094924045592629,
+        "P_ci95_a": [
+         0.003346700354544435,
+         0.004843147736640824
+        ],
+        "P_verdict_a": "supported"
+       },
+       "0.01": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.009972871508774968,
+        "P_ci95_a": [
+         0.0085882936788841,
+         0.011357449338665835
+        ],
+        "P_verdict_a": "supported"
+       },
+       "0.05": {
+        "deciding": "supported",
+        "P_mean_fdp": 0.01028141464747442,
+        "P_ci95_a": [
+         0.008885540762424206,
+         0.011677288532524635
+        ],
+        "P_verdict_a": "supported"
+       }
+      }
+     }
+    }
+   },
+   "ratios_v2_sep_over": {
+    "sage_chim2": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.258396488101894,
+        "ci95": [
+         1.1425873607337909,
+         1.3429835477110208
+        ],
+        "ours_ids": 139545.6,
+        "comparator_ids": 110891.6,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.2239582301305802,
+        "ci95": [
+         1.1181967243834634,
+         1.2963934811831805
+        ],
+        "ours_ids": 148246.8,
+        "comparator_ids": 121120.8,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.3116503586087163,
+        "ci95": [
+         1.1967224940370667,
+         1.3991020259945206
+        ],
+        "ours_ids": 124505.0,
+        "comparator_ids": 94922.4,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.251215860492155,
+        "ci95": [
+         1.1365307147558443,
+         1.3294863134387118
+        ],
+        "ours_ids": 140419.78664729185,
+        "comparator_ids": 112226.66774065583,
+        "ours_q_at_match": 0.011979257652599093,
+        "comparator_q_at_match": 0.012544732036416734
+       },
+       "0.05": {
+        "ratio": 1.2178362433228405,
+        "ci95": [
+         1.112454014728405,
+         1.286406326478525
+        ],
+        "ours_ids": 150467.76924459412,
+        "comparator_ids": 123553.36776153582,
+        "ours_q_at_match": 0.06587392166545884,
+        "comparator_q_at_match": 0.06606189208912361
+       },
+       "0.001": {
+        "ratio": 1.2974440936363905,
+        "ci95": [
+         1.168046690152248,
+         1.3905884493612928
+        ],
+        "ours_ids": 125727.61318350153,
+        "comparator_ids": 96904.06993269396,
+        "ours_q_at_match": 0.0011149864298094512,
+        "comparator_q_at_match": 0.0012640331227661045
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.257002763629382,
+        "ci95": [
+         1.139405336769485,
+         1.342262390723532
+        ],
+        "ours_ids": 136178.4,
+        "comparator_ids": 108335.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.2223812984905598,
+        "ci95": [
+         1.1151400014668607,
+         1.2950996213565822
+        ],
+        "ours_ids": 144634.6,
+        "comparator_ids": 118322.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.001": {
+        "ratio": 1.3113168157439372,
+        "ci95": [
+         1.1951736830683175,
+         1.3994254044290715
+        ],
+        "ours_ids": 121857.0,
+        "comparator_ids": 92927.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.2504101635763114,
+        "ci95": [
+         1.1337966705054843,
+         1.329893912483198
+        ],
+        "ours_ids": 136867.77860518236,
+        "comparator_ids": 109458.30623587174,
+        "ours_q_at_match": 0.011610206320724646,
+        "comparator_q_at_match": 0.012196414217080724
+       },
+       "0.05": {
+        "ratio": 1.2171969521514965,
+        "ci95": [
+         1.1097961078216265,
+         1.2857095447771267
+        ],
+        "ours_ids": 146550.08989550034,
+        "comparator_ids": 120399.65236230743,
+        "ours_q_at_match": 0.06390137274037887,
+        "comparator_q_at_match": 0.06378098563627875
+       },
+       "0.001": {
+        "ratio": 1.296777231063848,
+        "ci95": [
+         1.1665177680694778,
+         1.3903328710348009
+        ],
+        "ours_ids": 122768.61326565612,
+        "comparator_ids": 94672.09195594791,
+        "ours_q_at_match": 0.0010863450663418346,
+        "comparator_q_at_match": 0.001238547942448277
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.0683952339156677,
+        "ci95": [
+         1.0114310993119235,
+         1.113649649000769
+        ],
+        "ours_ids": 35543.8,
+        "comparator_ids": 33268.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 1.0679128547619332,
+        "ci95": [
+         1.0116477735284595,
+         1.1127539018660069
+        ],
+        "ours_ids": 35626.0,
+        "comparator_ids": 33360.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.08095295008167,
+        "ci95": [
+         1.023393997388474,
+         1.1337976708344049
+        ],
+        "ours_ids": 32559.6,
+        "comparator_ids": 30121.2,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.0700030537642133,
+        "ci95": [
+         1.0138441257698894,
+         1.1143448169075438
+        ],
+        "ours_ids": 35739.6,
+        "comparator_ids": 33401.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.05": {
+        "ratio": 1.0700030537642133,
+        "ci95": [
+         1.0138441257698894,
+         1.1149926891984026
+        ],
+        "ours_ids": 35739.6,
+        "comparator_ids": 33401.4,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 1.1310926674990183,
+        "ci95": [
+         1.0597456957078153,
+         1.1997751738073839
+        ],
+        "ours_ids": 33340.99234133506,
+        "comparator_ids": 29476.8,
+        "ours_q_at_match": 0.001580168960366614,
+        "comparator_q_at_match": 0.0006750926490863132
+       }
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "peptidoform": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1490360308878529,
+        "ci95": [
+         1.074348514068981,
+         1.1962612269785098
+        ],
+        "ours_ids": 139545.6,
+        "comparator_ids": 121445.8,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1720689736960697,
+        "ci95": [
+         1.0897516281202464,
+         1.223114123853896
+        ],
+        "ours_ids": 148246.8,
+        "comparator_ids": 126483.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.096458010426941,
+        "ci95": [
+         1.0428174464708686,
+         1.133173267508664
+        ],
+        "ours_ids": 124505.0,
+        "comparator_ids": 113552.0,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1495246043129559,
+        "ci95": [
+         1.0694995336806254,
+         1.2026291919001602
+        ],
+        "ours_ids": 140419.78664729185,
+        "comparator_ids": 122154.65951789479,
+        "ours_q_at_match": 0.011979257652599093,
+        "comparator_q_at_match": 0.013050785237536531
+       },
+       "0.05": {
+        "ratio": 1.1731948151140394,
+        "ci95": [
+         1.0849639591649307,
+         1.2307245318207094
+        ],
+        "ours_ids": 150467.76924459412,
+        "comparator_ids": 128254.71720991882,
+        "ours_q_at_match": 0.06587392166545884,
+        "comparator_q_at_match": 0.06971247364599764
+       },
+       "0.001": {
+        "ratio": 1.0964532907518272,
+        "ci95": [
+         1.0240194485865726,
+         1.1500543733545052
+        ],
+        "ours_ids": 125727.61318350153,
+        "comparator_ids": 114667.55058693959,
+        "ours_q_at_match": 0.0011149864298094512,
+        "comparator_q_at_match": 0.001254378624580754
+       }
+      }
+     },
+     "sequence": {
+      "own_q": {
+       "0.01": {
+        "ratio": 1.1501048940418157,
+        "ci95": [
+         1.0751468422479955,
+         1.1970889994213672
+        ],
+        "ours_ids": 136178.4,
+        "comparator_ids": 118405.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       },
+       "0.05": {
+        "ratio": 1.1719711469118737,
+        "ci95": [
+         1.0897094716581397,
+         1.2230474615984461
+        ],
+        "ours_ids": 144634.6,
+        "comparator_ids": 123411.4,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 1.100356500444271,
+        "ci95": [
+         1.0469849383928083,
+         1.1353145387680454
+        ],
+        "ours_ids": 121857.0,
+        "comparator_ids": 110743.2,
+        "comparator_verdict_deciding": "inconclusive",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 1.1499797311993794,
+        "ci95": [
+         1.0699387398146933,
+         1.202879831921285
+        ],
+        "ours_ids": 136867.77860518236,
+        "comparator_ids": 119017.55734636747,
+        "ours_q_at_match": 0.011610206320724646,
+        "comparator_q_at_match": 0.01260408257851844
+       },
+       "0.05": {
+        "ratio": 1.1726649653053731,
+        "ci95": [
+         1.0841661383413033,
+         1.2304480494923111
+        ],
+        "ours_ids": 146550.08989550034,
+        "comparator_ids": 124971.83273258044,
+        "ours_q_at_match": 0.06390137274037887,
+        "comparator_q_at_match": 0.06716168682947932
+       },
+       "0.001": {
+        "ratio": 1.0989077873886837,
+        "ci95": [
+         1.028479456694202,
+         1.1519543287715495
+        ],
+        "ours_ids": 122768.61326565612,
+        "comparator_ids": 111718.75809287796,
+        "ours_q_at_match": 0.0010863450663418346,
+        "comparator_q_at_match": 0.0012264844476591583
+       }
+      }
+     },
+     "protein": {
+      "own_q": {
+       "0.01": {
+        "ratio": 0.9969930717230934,
+        "ci95": [
+         0.9489378952206396,
+         1.0369951967995061
+        ],
+        "ours_ids": 35543.8,
+        "comparator_ids": 35651.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.05": {
+        "ratio": 0.9982347502031438,
+        "ci95": [
+         0.950427656812696,
+         1.0381375743593382
+        ],
+        "ours_ids": 35626.0,
+        "comparator_ids": 35689.0,
+        "comparator_verdict_deciding": "supported",
+        "counts_for_noninferiority": true
+       },
+       "0.001": {
+        "ratio": 0.972056031239924,
+        "ci95": [
+         0.9284591663842633,
+         1.0136919533855289
+        ],
+        "ours_ids": 32559.6,
+        "comparator_ids": 33495.6,
+        "comparator_verdict_deciding": "not-evaluable",
+        "counts_for_noninferiority": false
+       }
+      },
+      "matched_fdp": {
+       "0.01": {
+        "ratio": 0.9986420104950794,
+        "ci95": [
+         0.9505404933046272,
+         1.0391061655344835
+        ],
+        "ours_ids": 35739.6,
+        "comparator_ids": 35788.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.05": {
+        "ratio": 0.9986420104950794,
+        "ci95": [
+         0.9506045590547713,
+         1.0387732240174479
+        ],
+        "ours_ids": 35739.6,
+        "comparator_ids": 35788.2,
+        "ours_q_at_match": 0.25,
+        "comparator_q_at_match": 0.25
+       },
+       "0.001": {
+        "ratio": 0.9749500704294247,
+        "ci95": [
+         0.9318769101375821,
+         1.0175474577051329
+        ],
+        "ours_ids": 33340.99234133506,
+        "comparator_ids": 34197.64083575044,
+        "ours_q_at_match": 0.001580168960366614,
+        "comparator_q_at_match": 0.001876379116212661
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "R_rule": {
+  "D0": {
+   "R2": 26073.98214687802,
+   "R5": 26470.071629004546,
+   "R5_more": true
+  },
+  "D1": {
+   "R2": 6238.873778444192,
+   "R5": 6238.3218924470975,
+   "R5_more": false
+  },
+  "run_R5_on_D8h": false
+ },
+ "sage_rank_strata": {
+  "D0": {
+   "dataset": "D0",
+   "methods": {
+    "sage_chim2": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 23535.4,
+       "mean_fdp": 0.010343935229307908,
+       "ci95": [
+        0.009264412794276259,
+        0.011423457664339557
+       ],
+       "verdict": "inconclusive",
+       "mean_lb": 0.0052643649125496675,
+       "mean_n_t": 22961.933333333334
+      },
+      "0.05": {
+       "prod_ids_mean": 24985.4,
+       "mean_fdp": 0.04348072422414418,
+       "ci95": [
+        0.04117342656705624,
+        0.04578802188123212
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.022123794440599143,
+       "mean_n_t": 24137.066666666666
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 409.0,
+       "mean_fdp": 0.04343705977023641,
+       "ci95": [
+        0.0269352526733165,
+        0.05993886686715632
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.022996983446152277,
+       "mean_n_t": 353.8666666666667
+      },
+      "0.05": {
+       "prod_ids_mean": 809.6,
+       "mean_fdp": 0.347562347100351,
+       "ci95": [
+        0.3127106461786605,
+        0.3824140480220415
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.1789593228231605,
+       "mean_n_t": 642.2
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 24406.4,
+       "mean_fdp": 0.007694995041615781,
+       "ci95": [
+        0.006802664157061063,
+        0.008587325926170498
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.00392217605207132,
+       "mean_n_t": 24005.666666666668
+      },
+      "0.05": {
+       "prod_ids_mean": 25070.0,
+       "mean_fdp": 0.029997072499088683,
+       "ci95": [
+        0.0281525178134134,
+        0.031841627184763965
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.015274314188383108,
+       "mean_n_t": 24401.6
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 886.8,
+       "mean_fdp": 0.08302993427087238,
+       "ci95": [
+        0.0698848960214426,
+        0.09617497252030216
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.04305498372528347,
+       "mean_n_t": 803.8666666666667
+      },
+      "0.05": {
+       "prod_ids_mean": 1443.6,
+       "mean_fdp": 0.40126492060732516,
+       "ci95": [
+        0.3767102862069875,
+        0.42581955500766283
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.2062251298380346,
+       "mean_n_t": 1137.9333333333334
+      }
+     }
+    },
+    "sage_chim5": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 23368.8,
+       "mean_fdp": 0.009694331284337738,
+       "ci95": [
+        0.00863502013043021,
+        0.010753642438245265
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.004944967817301004,
+       "mean_n_t": 22722.866666666665
+      },
+      "0.05": {
+       "prod_ids_mean": 24789.4,
+       "mean_fdp": 0.040371120673992844,
+       "ci95": [
+        0.03817491070590863,
+        0.04256733064207706
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.02056449668379682,
+       "mean_n_t": 23945.066666666666
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 453.0,
+       "mean_fdp": 0.0529696585926207,
+       "ci95": [
+        0.03527365246337498,
+        0.07066566472186642
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.027566058778577793,
+       "mean_n_t": 386.93333333333334
+      },
+      "0.05": {
+       "prod_ids_mean": 963.4,
+       "mean_fdp": 0.3777196970890967,
+       "ci95": [
+        0.3450885425652835,
+        0.4103508516129099
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.1939936780203147,
+       "mean_n_t": 733.8
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 24335.6,
+       "mean_fdp": 0.006952614096583723,
+       "ci95": [
+        0.006076870375263978,
+        0.007828357817903468
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.0035470333808806016,
+       "mean_n_t": 23952.333333333332
+      },
+      "0.05": {
+       "prod_ids_mean": 24869.4,
+       "mean_fdp": 0.023893037967391825,
+       "ci95": [
+        0.02229370879755968,
+        0.02549236713722397
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.012177008657802541,
+       "mean_n_t": 24286.6
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 1122.4,
+       "mean_fdp": 0.0941784242914342,
+       "ci95": [
+        0.08043761924505242,
+        0.10791922933781599
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.04914836280684378,
+       "mean_n_t": 1014.1333333333333
+      },
+      "0.05": {
+       "prod_ids_mean": 1925.4,
+       "mean_fdp": 0.38441968951541106,
+       "ci95": [
+        0.3624778577194171,
+        0.406361521311405
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.1990720737525478,
+       "mean_n_t": 1512.0666666666666
+      }
+     }
+    }
+   }
+  },
+  "D1": {
+   "dataset": "D1",
+   "methods": {
+    "sage_chim2": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 6013.8,
+       "mean_fdp": 0.009769676148171274,
+       "ci95": [
+        0.0077279535722156005,
+        0.011811398724126947
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.0050410996047903596,
+       "mean_n_t": 5945.266666666666
+      },
+      "0.05": {
+       "prod_ids_mean": 6197.6,
+       "mean_fdp": 0.03905653633525241,
+       "ci95": [
+        0.03471895489246321,
+        0.04339411777804161
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.02023697799360841,
+       "mean_n_t": 6082.733333333334
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 92.4,
+       "mean_fdp": 0.036858331887540265,
+       "ci95": [
+        0.008666412656230055,
+        0.06505025111885047
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.021922208124637563,
+       "mean_n_t": 91.66666666666667
+      },
+      "0.05": {
+       "prod_ids_mean": 246.4,
+       "mean_fdp": 0.31629671032854834,
+       "ci95": [
+        0.25385954777587044,
+        0.37873387288122623
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.17873376496268542,
+       "mean_n_t": 184.33333333333334
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 6010.6,
+       "mean_fdp": 0.005604411224950526,
+       "ci95": [
+        0.004236579539092972,
+        0.00697224291080808
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.002902270844403574,
+       "mean_n_t": 5975.933333333333
+      },
+      "0.05": {
+       "prod_ids_mean": 6106.2,
+       "mean_fdp": 0.020051509917795918,
+       "ci95": [
+        0.017395725409476717,
+        0.02270729442611512
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.010370373217541782,
+       "mean_n_t": 6030.466666666666
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 214.2,
+       "mean_fdp": 0.11539705542175889,
+       "ci95": [
+        0.08235769883101024,
+        0.14843641201250754
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.06809062331374176,
+       "mean_n_t": 186.4
+      },
+      "0.05": {
+       "prod_ids_mean": 377.4,
+       "mean_fdp": 0.4516800618686277,
+       "ci95": [
+        0.4008733456917165,
+        0.5024867780455389
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.2561279124944156,
+       "mean_n_t": 275.6666666666667
+      }
+     }
+    },
+    "sage_chim5": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 5990.2,
+       "mean_fdp": 0.008610671629964902,
+       "ci95": [
+        0.006763000738521254,
+        0.010458342521408549
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.004428745500222996,
+       "mean_n_t": 5918.133333333333
+      },
+      "0.05": {
+       "prod_ids_mean": 6142.0,
+       "mean_fdp": 0.02905057543533272,
+       "ci95": [
+        0.0254534533074261,
+        0.03264769756323934
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.015057761195482728,
+       "mean_n_t": 6043.066666666667
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 129.6,
+       "mean_fdp": 0.1016159334548853,
+       "ci95": [
+        0.06303401930282604,
+        0.14019784760694456
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.05853769441815255,
+       "mean_n_t": 125.6
+      },
+      "0.05": {
+       "prod_ids_mean": 306.6,
+       "mean_fdp": 0.4639303757888725,
+       "ci95": [
+        0.403428060759423,
+        0.524432690818322
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.25773737939646474,
+       "mean_n_t": 236.0
+      }
+     }
+    },
+    "sage_chim5+pred+mokapot": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 6011.2,
+       "mean_fdp": 0.0047290332278542985,
+       "ci95": [
+        0.0034573078763474293,
+        0.006000758579361168
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.002447967866310443,
+       "mean_n_t": 5975.933333333333
+      },
+      "0.05": {
+       "prod_ids_mean": 6095.0,
+       "mean_fdp": 0.01852086297532427,
+       "ci95": [
+        0.01592099046224708,
+        0.021120735488401456
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.009572625981602943,
+       "mean_n_t": 6027.866666666667
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 220.4,
+       "mean_fdp": 0.13034958847542158,
+       "ci95": [
+        0.09593207403625092,
+        0.16476710291459223
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.07603135181644867,
+       "mean_n_t": 196.6
+      },
+      "0.05": {
+       "prod_ids_mean": 391.4,
+       "mean_fdp": 0.4470334887957578,
+       "ci95": [
+        0.39551750895248167,
+        0.498549468639034
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.25319969838588097,
+       "mean_n_t": 299.4
+      }
+     }
+    }
+   }
+  },
+  "D8h": {
+   "dataset": "D8h",
+   "methods": {
+    "sage_chim2": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 61929.0,
+       "mean_fdp": 0.00934511134514633,
+       "ci95": [
+        0.008721134116243014,
+        0.009969088574049646
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.004844455235190183,
+       "mean_n_t": 59442.666666666664
+      },
+      "0.05": {
+       "prod_ids_mean": 69398.2,
+       "mean_fdp": 0.04369748279983335,
+       "ci95": [
+        0.04236347989198985,
+        0.045031485707676844
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.022611824608276033,
+       "mean_n_t": 66181.2
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 828.4,
+       "mean_fdp": 0.05640462340546544,
+       "ci95": [
+        0.0433418690895183,
+        0.06946737772141258
+       ],
+       "verdict": "not-evaluable",
+       "mean_lb": 0.029200086838685135,
+       "mean_n_t": 712.9333333333333
+      },
+      "0.05": {
+       "prod_ids_mean": 1894.0,
+       "mean_fdp": 0.24026519375626018,
+       "ci95": [
+        0.2228223564759139,
+        0.25770803103660644
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.12456173808987407,
+       "mean_n_t": 1619.6
+      }
+     }
+    },
+    "sage_chim2+pred+mokapot": {
+     "rank_1": {
+      "0.01": {
+       "prod_ids_mean": 69492.0,
+       "mean_fdp": 0.00802902885377901,
+       "ci95": [
+        0.007450613813562303,
+        0.008607443893995717
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.004212194140293626,
+       "mean_n_t": 67499.8
+      },
+      "0.05": {
+       "prod_ids_mean": 72378.8,
+       "mean_fdp": 0.03587103719857634,
+       "ci95": [
+        0.03475492830948283,
+        0.03698714608766984
+       ],
+       "verdict": "supported",
+       "mean_lb": 0.018724789096815922,
+       "mean_n_t": 69746.86666666667
+      }
+     },
+     "rank_ge2": {
+      "0.01": {
+       "prod_ids_mean": 2630.8,
+       "mean_fdp": 0.05344291074922712,
+       "ci95": [
+        0.0469659540369528,
+        0.05991986746150144
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.02780958733900719,
+       "mean_n_t": 2467.4666666666667
+      },
+      "0.05": {
+       "prod_ids_mean": 4088.2,
+       "mean_fdp": 0.2597618806497251,
+       "ci95": [
+        0.247345766485988,
+        0.2721779948134622
+       ],
+       "verdict": "violated",
+       "mean_lb": 0.13566832530179998,
+       "mean_n_t": 3501.266666666667
+      }
+     }
+    }
+   }
+  }
+ },
+ "speed": {
+  "bench_before": {
+   "median_over_13_runs": {
+    "ms1": {
+     "wall_s": 3.130192610900849,
+     "core_s": 6.903738000000089
+    },
+    "search": {
+     "wall_s": 0.2840289301238954,
+     "core_s": 0.283952000000113,
+     "gpu_s": 0.21263055682182314
+    },
+    "features": {
+     "wall_s": 2.328423149883747,
+     "core_s": 2.3285050000000638,
+     "gpu_stream_s_features_model": 2.472826904296875
+    },
+    "model": {
+     "wall_s": 0.06091921590268612,
+     "core_s": 0.06093599999996968
+    },
+    "compete": {
+     "wall_s": 0.9246098301373422,
+     "core_s": 0.9246439999999438
+    },
+    "proteins": {
+     "wall_s": 0.6786076831631362,
+     "core_s": 0.6782069999999294
+    },
+    "total": {
+     "wall_s": 7.768826917745173,
+     "core_s": 12.837109000000055
+    }
+   },
+   "sum_over_13_runs": {
+    "ms1": {
+     "wall_s": 70.259064885322,
+     "core_s": 177.9646509999996
+    },
+    "search": {
+     "wall_s": 4.631427980493754,
+     "core_s": 4.625551000000172,
+     "gpu_s": 3.2832183396816252
+    },
+    "features": {
+     "wall_s": 32.12964773643762,
+     "core_s": 31.695223,
+     "gpu_stream_s_features_model": 32.98531231689453
+    },
+    "model": {
+     "wall_s": 1.1149402284063399,
+     "core_s": 1.0863900000000797
+    },
+    "compete": {
+     "wall_s": 16.76022863155231,
+     "core_s": 16.70000499999965
+    },
+    "proteins": {
+     "wall_s": 7.957241905853152,
+     "core_s": 7.955516000000017
+    },
+    "total": {
+     "wall_s": 133.8202449111268,
+     "core_s": 241.54642200000004
+    }
+   },
+   "threads": 8,
+   "loadavg_start": [
+    46.41455078125,
+    42.73974609375,
+    33.66748046875
+   ],
+   "loadavg_end": [
+    19.3759765625,
+    26.65283203125,
+    31.5244140625
+   ],
+   "per_dataset_median": {
+    "D0": {
+     "ms1": {
+      "wall_s": 11.294699213001877,
+      "core_s": 28.199547000000003
+     },
+     "search": {
+      "wall_s": 0.4040603297762573,
+      "core_s": 0.4039860000000033
+     },
+     "features": {
+      "wall_s": 3.1867327699437737,
+      "core_s": 3.023438999999996
+     },
+     "model": {
+      "wall_s": 0.11705819144845009,
+      "core_s": 0.1155430000000024
+     },
+     "compete": {
+      "wall_s": 1.4823835450224578,
+      "core_s": 1.4539810000000273
+     },
+     "proteins": {
+      "wall_s": 0.9698817357420921,
+      "core_s": 0.9695440000000133
+     },
+     "total": {
+      "wall_s": 17.07179715530947,
+      "core_s": 33.780570000000004
+     }
+    },
+    "D1": {
+     "ms1": {
+      "wall_s": 1.1958582480438054,
+      "core_s": 1.940320999999983
+     },
+     "search": {
+      "wall_s": 0.08084811316803098,
+      "core_s": 0.07735199999996212
+     },
+     "features": {
+      "wall_s": 0.825122841168195,
+      "core_s": 0.7414660000000026
+     },
+     "model": {
+      "wall_s": 0.019754882901906967,
+      "core_s": 0.009972000000004755
+     },
+     "compete": {
+      "wall_s": 0.2442212449386716,
+      "core_s": 0.24305399999997235
+     },
+     "proteins": {
+      "wall_s": 0.04889079323038459,
+      "core_s": 0.048870000000022173
+     },
+     "total": {
+      "wall_s": 2.4045760184526443,
+      "core_s": 3.0685260000000767
+     }
+    },
+    "D8h": {
+     "ms1": {
+      "wall_s": 3.130192610900849,
+      "core_s": 6.903738000000089
+     },
+     "search": {
+      "wall_s": 0.2840289301238954,
+      "core_s": 0.283952000000113
+     },
+     "features": {
+      "wall_s": 2.328423149883747,
+      "core_s": 2.3285050000000638
+     },
+     "model": {
+      "wall_s": 0.06091921590268612,
+      "core_s": 0.06093599999996968
+     },
+     "compete": {
+      "wall_s": 0.9246098301373422,
+      "core_s": 0.9246439999999438
+     },
+     "proteins": {
+      "wall_s": 0.6786076831631362,
+      "core_s": 0.6782069999999294
+     },
+     "total": {
+      "wall_s": 7.768826917745173,
+      "core_s": 12.837109000000055
+     }
+    }
+   }
+  },
+  "bench_after": {
+   "median_over_13_runs": {
+    "ms1": {
+     "wall_s": 2.4551654560491443,
+     "core_s": 4.78046599999999
+    },
+    "search": {
+     "wall_s": 0.26204496482387185,
+     "core_s": 0.26210899999995263,
+     "gpu_s": 0.19207865667343138
+    },
+    "features": {
+     "wall_s": 0.6930640009231865,
+     "core_s": 0.6929650000000009,
+     "gpu_stream_s_features_model": 0.74539892578125
+    },
+    "model": {
+     "wall_s": 0.0750277261249721,
+     "core_s": 0.07508300000000645
+    },
+    "compete": {
+     "wall_s": 0.15907438192516565,
+     "core_s": 0.15920499999998583
+    },
+    "proteins": {
+     "wall_s": 0.464664398226887,
+     "core_s": 0.46462200000001985
+    },
+    "total": {
+     "wall_s": 4.596054520457983,
+     "core_s": 7.3347060000000965
+    }
+   },
+   "sum_over_13_runs": {
+    "ms1": {
+     "wall_s": 48.995817779097706,
+     "core_s": 92.40289999999992
+    },
+    "search": {
+     "wall_s": 4.475341270212084,
+     "core_s": 4.4735399999999075,
+     "gpu_s": 3.1265208714604382
+    },
+    "features": {
+     "wall_s": 8.918454478960484,
+     "core_s": 8.918178999999967,
+     "gpu_stream_s_features_model": 9.725022590637206
+    },
+    "model": {
+     "wall_s": 1.1402405500411987,
+     "core_s": 1.1396810000000315
+    },
+    "compete": {
+     "wall_s": 3.013299814425409,
+     "core_s": 3.0142800000000634
+    },
+    "proteins": {
+     "wall_s": 6.964952559676021,
+     "core_s": 6.953196999999932
+    },
+    "total": {
+     "wall_s": 74.15881959488615,
+     "core_s": 116.78486200000032
+    }
+   },
+   "threads": 8,
+   "loadavg_start": [
+    20.60791015625,
+    26.5576171875,
+    31.4150390625
+   ],
+   "loadavg_end": [
+    16.95751953125,
+    20.2626953125,
+    26.99462890625
+   ],
+   "per_dataset_median": {
+    "D0": {
+     "ms1": {
+      "wall_s": 6.884460157249123,
+      "core_s": 13.135053999999997
+     },
+     "search": {
+      "wall_s": 0.40954807214438915,
+      "core_s": 0.40954499999998006
+     },
+     "features": {
+      "wall_s": 0.9461284871213138,
+      "core_s": 0.9461459999999988
+     },
+     "model": {
+      "wall_s": 0.12428591074422002,
+      "core_s": 0.1243119999999891
+     },
+     "compete": {
+      "wall_s": 0.31848747190088034,
+      "core_s": 0.3186100000000067
+     },
+     "proteins": {
+      "wall_s": 0.9033076367340982,
+      "core_s": 0.9036720000000003
+     },
+     "total": {
+      "wall_s": 9.582935275975615,
+      "core_s": 15.843568999999988
+     }
+    },
+    "D1": {
+     "ms1": {
+      "wall_s": 0.8819078570231795,
+      "core_s": 1.6940930000000094
+     },
+     "search": {
+      "wall_s": 0.07498360192403197,
+      "core_s": 0.07489599999999541
+     },
+     "features": {
+      "wall_s": 0.11829230980947614,
+      "core_s": 0.11825600000000236
+     },
+     "model": {
+      "wall_s": 0.010664988774806261,
+      "core_s": 0.01066800000000967
+     },
+     "compete": {
+      "wall_s": 0.03545047901570797,
+      "core_s": 0.03542400000000612
+     },
+     "proteins": {
+      "wall_s": 0.05217480706050992,
+      "core_s": 0.05225999999998976
+     },
+     "total": {
+      "wall_s": 1.1717871935106814,
+      "core_s": 1.9840350000000058
+     }
+    },
+    "D8h": {
+     "ms1": {
+      "wall_s": 2.4551654560491443,
+      "core_s": 4.78046599999999
+     },
+     "search": {
+      "wall_s": 0.26204496482387185,
+      "core_s": 0.26210899999995263
+     },
+     "features": {
+      "wall_s": 0.808292998932302,
+      "core_s": 0.8084570000000326
+     },
+     "model": {
+      "wall_s": 0.0750277261249721,
+      "core_s": 0.07508300000000645
+     },
+     "compete": {
+      "wall_s": 0.15907438192516565,
+      "core_s": 0.15920499999998583
+     },
+     "proteins": {
+      "wall_s": 0.464664398226887,
+      "core_s": 0.46462200000001985
+     },
+     "total": {
+      "wall_s": 4.596054520457983,
+      "core_s": 7.3347060000000965
+     }
+    }
+   }
+  },
+  "cohorts": {
+   "chim": {
+    "n_runs": 96,
+    "workers": 24,
+    "makespan_s": 115.70759630203247,
+    "runs_per_hour": 2986.8393350586725,
+    "runs_per_hour_steady": 4642.845540440826,
+    "bottleneck": "decode_pool",
+    "stage_busy_fraction": {
+     "decode_pool": 0.6820802854212863,
+     "loader": 0.03881477921105214,
+     "gpu_stage_wall": 0.35658401112878874,
+     "gpu_kernels_events": 0.263094397223637,
+     "writer": 0.19748712023552215
+    },
+    "core_s": {
+     "main_process": 136.176728,
+     "decode_workers": 1691.50549,
+     "total": 1827.682218,
+     "per_run": 19.0383564375,
+     "per_1e5_ms2": 39.04556345622718,
+     "decode_jobs_sum": 612.955855,
+     "ms1_jobs_sum": 806.3149930000002,
+     "decode_worker_fixed": 272.23464199999967
+    },
+    "gpu_s": {
+     "events_total": 30.44202030327916,
+     "per_run": 0.31710437815915793,
+     "util_mean_pct_after_setup": 41.6938950988822,
+     "util_samples": 1181
+    },
+    "ms1_stage": true,
+    "chimeric": true,
+    "scoring": {
+     "n_scored": 96,
+     "gpu_stage_wall_s_median": 0.33746814727783203,
+     "post_wall_s_median": 0.8969541788101196,
+     "post_core_s_sum": 99.783202,
+     "ids_1pct_sum": 1300944,
+     "proteins_1pct_sum": 248152
+    },
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 4,
+     "VULCAN_THREADS": "4",
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": {
+      "torch": "2.14.1",
+      "cuda": "12.9",
+      "available": true
+     },
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    }
+   },
+   "chim_ms1ref": {
+    "n_runs": 96,
+    "workers": 24,
+    "makespan_s": 140.03600549697876,
+    "runs_per_hour": 2467.936719370764,
+    "runs_per_hour_steady": 3217.2937719371917,
+    "bottleneck": "decode_pool",
+    "stage_busy_fraction": {
+     "decode_pool": 0.7590759223370788,
+     "loader": 0.0293843081006991,
+     "gpu_stage_wall": 0.29914272523593954,
+     "gpu_kernels_events": 0.22653547696853607,
+     "writer": 0.14395519099059612
+    },
+    "core_s": {
+     "main_process": 139.36331400000003,
+     "decode_workers": 2567.519202,
+     "total": 2706.882516,
+     "per_run": 28.196692875,
+     "per_1e5_ms2": 57.828298599242544,
+     "decode_jobs_sum": 636.37114,
+     "ms1_jobs_sum": 1623.729038,
+     "decode_worker_fixed": 307.41902400000004
+    },
+    "gpu_s": {
+     "events_total": 31.72312329802662,
+     "per_run": 0.33044920102111064,
+     "util_mean_pct_after_setup": 64.08994334277621,
+     "util_samples": 1435
+    },
+    "ms1_stage": true,
+    "chimeric": true,
+    "scoring": {
+     "n_scored": 96,
+     "gpu_stage_wall_s_median": 0.36279428005218506,
+     "post_wall_s_median": 0.8391736745834351,
+     "post_core_s_sum": 95.88798899999998,
+     "ids_1pct_sum": 1300944,
+     "proteins_1pct_sum": 248152
+    },
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 4,
+     "VULCAN_THREADS": "4",
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": {
+      "torch": "2.14.1",
+      "cuda": "12.9",
+      "available": true
+     },
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    }
+   },
+   "closed": {
+    "n_runs": 96,
+    "workers": 24,
+    "makespan_s": 63.607038736343384,
+    "runs_per_hour": 5433.360943472649,
+    "runs_per_hour_steady": 13501.119908100838,
+    "bottleneck": "decode_pool",
+    "stage_busy_fraction": {
+     "decode_pool": 0.5938263904161409,
+     "loader": 0.0099602058579582,
+     "gpu_stage_wall": 0.168864478410976,
+     "gpu_kernels_events": 0.1673403432616091,
+     "writer": 0.1770832311529782
+    },
+    "core_s": {
+     "main_process": 77.179932,
+     "decode_workers": 795.679404,
+     "total": 872.859336,
+     "per_run": 9.09228475,
+     "per_1e5_ms2": 18.647270437112894,
+     "decode_jobs_sum": 683.444081,
+     "ms1_jobs_sum": 0.0,
+     "decode_worker_fixed": 112.235323
+    },
+    "gpu_s": {
+     "events_total": 10.644023695994168,
+     "per_run": 0.11087524683327259,
+     "util_mean_pct_after_setup": 61.21283783783784,
+     "util_samples": 617
+    },
+    "ms1_stage": false,
+    "chimeric": false,
+    "scoring": {
+     "n_scored": 96,
+     "gpu_stage_wall_s_median": 0.20970571041107178,
+     "post_wall_s_median": 0.36828577518463135,
+     "post_core_s_sum": 44.096177000000026,
+     "ids_1pct_sum": 1080160,
+     "proteins_1pct_sum": 226680
+    },
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 4,
+     "VULCAN_THREADS": "4",
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": {
+      "torch": "2.14.1",
+      "cuda": "12.9",
+      "available": true
+     },
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    }
+   },
+   "base12": {
+    "n_runs": 12,
+    "workers": 12,
+    "makespan_s": 74.39113306999207,
+    "runs_per_hour": 580.7143703451136,
+    "runs_per_hour_steady": 1490.6200113305722,
+    "bottleneck": "decode_pool",
+    "stage_busy_fraction": {
+     "decode_pool": 0.4075897333017451,
+     "loader": 0.00528751087990541,
+     "gpu_stage_wall": 0.05398484240513961,
+     "gpu_kernels_events": 0.037887501464073374,
+     "writer": 0.026303046576707644
+    },
+    "core_s": {
+     "main_process": 36.031527999999994,
+     "decode_workers": 285.960705,
+     "total": 321.992233,
+     "per_run": 26.832686083333332,
+     "per_1e5_ms2": 55.03087152545154,
+     "decode_jobs_sum": 83.790201,
+     "ms1_jobs_sum": 99.55067599999998,
+     "decode_worker_fixed": 102.61982800000004
+    },
+    "gpu_s": {
+     "events_total": 2.8184941631034017,
+     "per_run": 0.23487451359195013,
+     "util_mean_pct_after_setup": 6.364016736401673,
+     "util_samples": 740
+    },
+    "ms1_stage": true,
+    "chimeric": true,
+    "scoring": {
+     "n_scored": 12,
+     "gpu_stage_wall_s_median": 0.5321279764175415,
+     "post_wall_s_median": 0.869173526763916,
+     "post_core_s_sum": 12.128701999999997,
+     "ids_1pct_sum": 162618,
+     "proteins_1pct_sum": 31019
+    },
+    "hw": {
+     "hostname": "gpu-node",
+     "cpu_model": "AMD EPYC 9354 32-Core Processor",
+     "os_cpu_count": 64,
+     "affinity_count": 32,
+     "n_threads": 4,
+     "VULCAN_THREADS": "4",
+     "avx2": true,
+     "avx512": [
+      "avx512_bf16",
+      "avx512_bitalg",
+      "avx512_vbmi2",
+      "avx512_vnni",
+      "avx512_vpopcntdq",
+      "avx512bw",
+      "avx512cd",
+      "avx512dq",
+      "avx512f",
+      "avx512ifma",
+      "avx512vbmi",
+      "avx512vl"
+     ],
+     "ram_gb": 1503.3,
+     "cgroup_mem_limit_gb": null,
+     "kernel": "5.15.0-194-generic",
+     "python": "3.12.16",
+     "physical_cores_in_affinity": 32,
+     "sockets_in_affinity": 2,
+     "gpus": [
+      {
+       "name": "NVIDIA A100 80GB PCIe",
+       "mem_mib": 81920,
+       "compute_cap": "8.0"
+      }
+     ],
+     "driver": "580.178.04",
+     "cuda_driver": "13.0",
+     "nvcc": null,
+     "torch_cuda": {
+      "torch": "2.14.1",
+      "cuda": "12.9",
+      "available": true
+     },
+     "gpu_summary": "NVIDIA A100 80GB PCIe 80GB drv 580.178.04"
+    }
+   }
+  }
+ },
+ "equivalence": {
+  "ms1": {
+   "all_ok": true,
+   "n_runs": 13
+  },
+  "scoring": {
+   "D0": {
+    "all_features_bitwise": true,
+    "all_scores_bitwise": true,
+    "all_nce_equal": true,
+    "lib_misses_total": 0,
+    "all_prod_id_sets_identical": true,
+    "all_prod_competition_equal": true
+   },
+   "D1": {
+    "all_features_bitwise": true,
+    "all_scores_bitwise": true,
+    "all_nce_equal": true,
+    "lib_misses_total": 0,
+    "all_prod_id_sets_identical": true,
+    "all_prod_competition_equal": true
+   },
+   "D8h": {
+    "all_features_bitwise": false,
+    "all_scores_bitwise": false,
+    "all_nce_equal": true,
+    "lib_misses_total": 0,
+    "all_prod_id_sets_identical": true,
+    "all_prod_competition_equal": false
+   }
+  },
+  "rt_history_check": {
+   "run": "E9_0008__lgg1",
+   "replicate": "prod_1001",
+   "nce": 29.0,
+   "columns": {
+    "rt_abs_resid": {
+     "slow_vs_fast_bitwise": true,
+     "slow_vs_E7_bitwise": false,
+     "fast_vs_E7_n_diff": 1,
+     "max_abs_diff_vs_E7": 0.00047576427459716797
+    },
+    "rt_resid_z": {
+     "slow_vs_fast_bitwise": true,
+     "slow_vs_E7_bitwise": false,
+     "fast_vs_E7_n_diff": 1,
+     "max_abs_diff_vs_E7": 0.00012239813804626465
+    },
+    "pred_sa": {
+     "slow_vs_fast_bitwise": true,
+     "slow_vs_E7_bitwise": true,
+     "fast_vs_E7_n_diff": 0,
+     "max_abs_diff_vs_E7": 0.0
+    },
+    "rt_pred_slow_vs_fast_bitwise": true
+   }
+  },
+  "history_check_all_D8h": {
+   "n_pairs": 62,
+   "all_slow_equals_fast": true,
+   "total_psms_differing_vs_E7": 260,
+   "total_psms_in_pairs": 25980906
+  },
+  "cohort_reference": {
+   "all_ok": true,
+   "n_runs": 12
+  },
+  "cohort_copies": {
+   "chim": {
+    "all_ok": true,
+    "n_runs": 96,
+    "n_bases": 12
+   },
+   "chim_ms1ref": {
+    "all_ok": true,
+    "n_runs": 96,
+    "n_bases": 12
+   }
+  }
+ }
+}

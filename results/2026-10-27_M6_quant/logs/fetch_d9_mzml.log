@@ -1,0 +1,29 @@
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.raw (2575809564 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.raw (2570363257 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.raw (2609608387 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.raw (2607202935 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.raw (2560259209 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.raw (2616510784 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Human_01.raw (2306611179 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Human_02.raw (2304558655 B)
+[skip] D9 LFQ_Astral_DDA_15min_50ng_Human_03.raw (2292420546 B)
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.mzML from 0/1865232955
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.mzML from 0/1857921823
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.mzML from 0/1863099476
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.mzML from 0/1871699068
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.mzML from 0/1871989673
+[skip] D9-truth ProteoBenchFASTA_MixedSpecies_HYE.zip (9455814 B)
+[get ] D9 LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.mzML from 0/1877418295
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.mzML
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.mzML
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.mzML
+[done] LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.mzML
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.mzML
+[done] LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP1.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP2.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_A_REP3.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP1.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP2.mzML
+[hash] raw/ProteoBench-DDA-Astral/LFQ_Astral_DDA_15min_50ng_Condition_B_REP3.mzML
+wrote $VULCAN_ROOT/data/manifests/d9.sha256 (16 files)

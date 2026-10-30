@@ -1,0 +1,374 @@
+{
+ "engines": {
+  "xiSEARCH": {
+   "version": "1.8.12 (built from github Rappsilber-Laboratory/XiSearch @62d2b1c with Maven 3.9.9; RUtils/XLMOD/CSVParser deps from github lutzfischer forks)",
+   "license": "Apache-2.0",
+   "jar": "/tmp/vulcan_m5/comparators/tools/bin/xiSEARCH-1.8.12-jar-with-dependencies.jar"
+  },
+  "xiFDR": {
+   "version": "2.4.2 (built from github Rappsilber-Laboratory/xiFDR @7de6dc4; jmzIdentML lutzfischer fork branch mzIdentML1_3 installed as 1.2.13-lf; minimal mzidlib 1.7 subset from PGB-LIV/mzidlib)",
+   "license": "Apache-2.0",
+   "jar": "/tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar"
+  },
+  "java": "openjdk version \"21.0.10-internal\" 2026-01-20"
+ },
+ "host": "32-core EPYC 9354 (shared node, other agents active)",
+ "runs": {
+  "xiSEARCH_D3": {
+   "timing": {
+    "wall_s": 3812.0,
+    "user_s": 52925.98,
+    "sys_s": 744.74,
+    "core_s": 53670.72,
+    "max_rss_kb": 103411720,
+    "exit_status": 0
+   },
+   "threads": 32,
+   "java_heap": "-Xmx96g",
+   "command": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx96g -jar /tmp/vulcan_m5/comparators/tools/bin/xiSEARCH-1.8.12-jar-with-dependencies.jar --config=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --peaks=/tmp/vulcan_m5/comparators/mgf/XLpeplib_Beveridge_QEx-HFX_DSS_R1.mgf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta --output=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv --locale=en",
+   "config_file": "/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf",
+   "config": "tolerance:precursor:10ppm\ntolerance:fragment:20ppm\nUseCPUs:32\ncrosslinker:SymetricSingleAminoAcidRestrictedCrossLinker:Name:DSS;MASS:138.06807961;LINKEDAMINOACIDS:K(0),S(0.2),T(0.2),Y(0.2),nterm(0)\ncrosslinker:NonCovalentBound:Name:NonCovalent\nmodification:fixed::SYMBOLEXT:cm;MODIFIED:C;DELTAMASS:57.021464\nmodification:variable::SYMBOLEXT:ox;MODIFIED:M;DELTAMASS:15.99491463\nmodification:variable::SYMBOLEXT:dss_hyd;MODIFIED:S,T,Y;DELTAMASS:156.0786347\nmodification:variable::SYMBOLEXT:dss_ami;MODIFIED:S,T,Y;DELTAMASS:155.094619105\nmodification:variable::SYMBOLEXT:dss_hyd;MODIFIED:K,nterm;DELTAMASS:156.0786347\nmodification:variable::SYMBOLEXT:dss_ami;MODIFIED:K,nterm;DELTAMASS:155.094619105\ndigestion:PostAAConstrainedDigestion:DIGESTED:K,R;ConstrainingAminoAcids:;NAME:Trypsin\\P\nfragment:BIon\nfragment:YIon\nfragment:PeptideIon\nloss:AminoAcidRestrictedLoss:NAME:H20;aminoacids:S,T,D,E;MASS:18.01056027;cterm\nloss:AminoAcidRestrictedLoss:NAME:NH3;aminoacids:R,K,N,Q;MASS:17.02654493;nterm\nloss:AIonLoss\nEVALUATELINEARS:true\nConservativeLosses:3\nMATCH_MISSING_MONOISOTOPIC:true\nmgcpeaks:10\ntopmgchits:150\ntopmgxhits:10\nmissedcleavages:3\nBufferInput:100\nBufferOutput:100\nTOPMATCHESONLY:true\nMAX_MODIFIED_PEPTIDES_PER_PEPTIDE:20\nFRAGMENTTREE:FU\nmissing_isotope_peaks:3\n",
+   "timed_under": "flock /tmp/vulcan_bench.lock /usr/bin/time -v",
+   "lock_acquired_utc": "2026-10-27T14:53:31Z",
+   "per_spectrum": {
+    "wall_s": 0.6928389676481279,
+    "core_s": 9.754765539803708
+   },
+   "xifdr": {
+    "csm_1pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=1 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=100 --uniquePSMs=false --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/csm_1pct --csvBaseName=xifdr_D3_csm_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 2.0072646141052246,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/csm_1pct",
+     "timing": {
+      "wall_s": 2.0,
+      "user_s": 2.93,
+      "sys_s": 0.2,
+      "core_s": 3.1300000000000003,
+      "max_rss_kb": 240312,
+      "exit_status": 0
+     }
+    },
+    "csm_5pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=5 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=100 --uniquePSMs=false --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/csm_5pct --csvBaseName=xifdr_D3_csm_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.6881358623504639,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/csm_5pct",
+     "timing": {
+      "wall_s": 1.68,
+      "user_s": 3.05,
+      "sys_s": 0.09,
+      "core_s": 3.1399999999999997,
+      "max_rss_kb": 320256,
+      "exit_status": 0
+     }
+    },
+    "rp_1pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=1 --ppifdr=100 --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/rp_1pct --csvBaseName=xifdr_D3_rp_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.9564876556396484,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/rp_1pct",
+     "timing": {
+      "wall_s": 1.95,
+      "user_s": 3.52,
+      "sys_s": 0.14,
+      "core_s": 3.66,
+      "max_rss_kb": 346872,
+      "exit_status": 0
+     }
+    },
+    "rp_5pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=5 --ppifdr=100 --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/rp_5pct --csvBaseName=xifdr_D3_rp_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.970712661743164,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/rp_5pct",
+     "timing": {
+      "wall_s": 1.96,
+      "user_s": 3.48,
+      "sys_s": 0.17,
+      "core_s": 3.65,
+      "max_rss_kb": 359696,
+      "exit_status": 0
+     }
+    },
+    "ppi_1pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=1 --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/ppi_1pct --csvBaseName=xifdr_D3_ppi_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 2.0313880443573,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/ppi_1pct",
+     "timing": {
+      "wall_s": 2.02,
+      "user_s": 3.66,
+      "sys_s": 0.17,
+      "core_s": 3.83,
+      "max_rss_kb": 358028,
+      "exit_status": 0
+     }
+    },
+    "ppi_5pct": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=5 --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3/ppi_5pct --csvBaseName=xifdr_D3_ppi_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 2.090428352355957,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3/ppi_5pct",
+     "timing": {
+      "wall_s": 2.08,
+      "user_s": 3.67,
+      "sys_s": 0.18,
+      "core_s": 3.85,
+      "max_rss_kb": 365876,
+      "exit_status": 0
+     }
+    },
+    "csm_1pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=1 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=100 --uniquePSMs=false --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/csm_1pct --csvBaseName=xifdr_D3_csm_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.8554978370666504,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/csm_1pct",
+     "timing": {
+      "wall_s": 1.85,
+      "user_s": 2.92,
+      "sys_s": 0.17,
+      "core_s": 3.09,
+      "max_rss_kb": 208676,
+      "exit_status": 0
+     }
+    },
+    "csm_5pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=5 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=100 --uniquePSMs=false --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/csm_5pct --csvBaseName=xifdr_D3_csm_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.8017563819885254,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/csm_5pct",
+     "timing": {
+      "wall_s": 1.79,
+      "user_s": 3.03,
+      "sys_s": 0.18,
+      "core_s": 3.21,
+      "max_rss_kb": 297848,
+      "exit_status": 0
+     }
+    },
+    "rp_1pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=1 --ppifdr=100 --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/rp_1pct --csvBaseName=xifdr_D3_rp_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 2.0892319679260254,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/rp_1pct",
+     "timing": {
+      "wall_s": 2.08,
+      "user_s": 3.3,
+      "sys_s": 0.22,
+      "core_s": 3.52,
+      "max_rss_kb": 352576,
+      "exit_status": 0
+     }
+    },
+    "rp_5pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=5 --ppifdr=100 --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/rp_5pct --csvBaseName=xifdr_D3_rp_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.888319969177246,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/rp_5pct",
+     "timing": {
+      "wall_s": 1.88,
+      "user_s": 3.26,
+      "sys_s": 0.23,
+      "core_s": 3.4899999999999998,
+      "max_rss_kb": 352964,
+      "exit_status": 0
+     }
+    },
+    "ppi_1pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=1 --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/ppi_1pct --csvBaseName=xifdr_D3_ppi_1pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.7924582958221436,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/ppi_1pct",
+     "timing": {
+      "wall_s": 1.79,
+      "user_s": 3.22,
+      "sys_s": 0.18,
+      "core_s": 3.4000000000000004,
+      "max_rss_kb": 350116,
+      "exit_status": 0
+     }
+    },
+    "ppi_5pct_nogroups": {
+     "cmd": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx32g -cp /tmp/vulcan_m5/comparators/tools/bin/xiFDR-2.4.2-jar-with-dependencies.jar org.rappsilber.fdr.XiCSVinFDR --psmfdr=100 --pepfdr=100 --proteinfdr=100 --linkfdr=100 --ppifdr=5 --ignoregroups --csvOutDir=/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/ppi_5pct --csvBaseName=xifdr_D3_ppi_5pct --xiconfig=/tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.conf --fasta=/tmp/vulcan_m5/fasta/D3_cas9_contam.fasta /tmp/vulcan_m5/comparators/xisearch/D3/xi_D3.csv",
+     "wall_s": 1.9349005222320557,
+     "outdir": "/tmp/vulcan_m5/comparators/xifdr/D3_nogroups/ppi_5pct",
+     "timing": {
+      "wall_s": 1.93,
+      "user_s": 3.36,
+      "sys_s": 0.28,
+      "core_s": 3.6399999999999997,
+      "max_rss_kb": 352364,
+      "exit_status": 0
+     }
+    }
+   },
+   "counts": {
+    "xifdr_default_groups": {
+     "file": "D3",
+     "n_xisearch_rows": 5998,
+     "n_scans_with_match": 5446,
+     "csm_1pct": {
+      "all": 961,
+      "TT": 958,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self ": 873,
+       "Self Overlapping ": 82,
+       "Between ": 3
+      }
+     },
+     "csm_5pct": {
+      "all": 961,
+      "TT": 958,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self ": 873,
+       "Self Overlapping ": 82,
+       "Between ": 3
+      }
+     },
+     "rp_1pct": {
+      "all": 268,
+      "TT": 265,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self": 228,
+       "Self Overlapping": 37
+      }
+     },
+     "rp_5pct": {
+      "all": 268,
+      "TT": 265,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self": 228,
+       "Self Overlapping": 37
+      }
+     },
+     "ppi_1pct": {
+      "all": 8,
+      "TT": 5,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self": 2,
+       "Between": 2,
+       "Self Overlapping": 1
+      }
+     },
+     "ppi_5pct": {
+      "all": 8,
+      "TT": 5,
+      "TD": 0,
+      "DD": 3,
+      "TT_by_group": {
+       "Self": 2,
+       "Between": 2,
+       "Self Overlapping": 1
+      }
+     }
+    },
+    "xifdr_nogroups": {
+     "file": "D3",
+     "n_xisearch_rows": 5998,
+     "n_scans_with_match": 5446,
+     "csm_1pct": {
+      "all": 289,
+      "TT": 286,
+      "TD": 3,
+      "DD": 0,
+      "TT_by_group": {
+       "Self ": 232,
+       "Self Overlapping ": 50,
+       "Between ": 4
+      }
+     },
+     "csm_5pct": {
+      "all": 502,
+      "TT": 476,
+      "TD": 25,
+      "DD": 1,
+      "TT_by_group": {
+       "Self ": 374,
+       "Self Overlapping ": 57,
+       "Between ": 45
+      }
+     },
+     "rp_1pct": {
+      "all": 132,
+      "TT": 131,
+      "TD": 1,
+      "DD": 0,
+      "TT_by_group": {
+       "Self": 113,
+       "Self Overlapping": 16,
+       "Between": 2
+      }
+     },
+     "rp_5pct": {
+      "all": 181,
+      "TT": 173,
+      "TD": 8,
+      "DD": 0,
+      "TT_by_group": {
+       "Self": 137,
+       "Self Overlapping": 20,
+       "Between": 16
+      }
+     },
+     "ppi_1pct": {
+      "all": 4,
+      "TT": 4,
+      "TD": 0,
+      "DD": 0,
+      "TT_by_group": {
+       "Between": 2,
+       "Self": 1,
+       "Self Overlapping": 1
+      }
+     },
+     "ppi_5pct": {
+      "all": 4,
+      "TT": 4,
+      "TD": 0,
+      "DD": 0,
+      "TT_by_group": {
+       "Between": 2,
+       "Self": 1,
+       "Self Overlapping": 1
+      }
+     }
+    }
+   },
+   "xifdr_note": "_nogroups variant = same plus --ignoregroups (single FDR pool). xiFDR runs untimed w.r.t. the bench lock (light, single-run); boosting OFF (no --boost); default FDR groups (self/between/self-overlapping separated); CSM-level run uses --uniquePSMs=false, RP/PPI runs use xiFDR default uniquePSMs=true; min peptide length 5 (default)"
+  },
+  "xiSEARCH_D3b": {
+   "timing": {
+    "wall_s": 4490.0,
+    "user_s": 67172.35,
+    "sys_s": 774.48,
+    "core_s": 67946.83,
+    "max_rss_kb": 103588768,
+    "exit_status": 0
+   },
+   "threads": 32,
+   "java_heap": "-Xmx96g",
+   "command": "$VULCAN_ROOT/conda_envs/java/bin/java -Xmx96g -jar /tmp/vulcan_m5/comparators/tools/bin/xiSEARCH-1.8.12-jar-with-dependencies.jar --config=/tmp/vulcan_m5/comparators/xisearch/D3b/xi_D3b.conf --peaks=/tmp/vulcan_m5/comparators/mgf/D3b_subset2000_seed11.mgf --fasta=/tmp/vulcan_m5/fasta/D3b_ribo_human671.fasta --output=/tmp/vulcan_m5/comparators/xisearch/D3b/xi_D3b.csv --locale=en",
+   "config_file": "/tmp/vulcan_m5/comparators/xisearch/D3b/xi_D3b.conf",
+   "config": "tolerance:precursor:10ppm\ntolerance:fragment:20ppm\nUseCPUs:32\ncrosslinker:SymetricSingleAminoAcidRestrictedCrossLinker:Name:DSSO;MASS:158.0037648;LINKEDAMINOACIDS:K(0),S(0.2),T(0.2),Y(0.2),nterm(0);STUBS:A,54.0105647,S,103.9932001,T,85.9826354\ncrosslinker:NonCovalentBound:Name:NonCovalent\nmodification:fixed::SYMBOLEXT:cm;MODIFIED:C;DELTAMASS:57.021464\nmodification:variable::SYMBOLEXT:ox;MODIFIED:M;DELTAMASS:15.99491463\nmodification:variable::SYMBOLEXT:dsso_hyd;MODIFIED:S,T,Y;DELTAMASS:176.0143295\nmodification:variable::SYMBOLEXT:dsso_ami;MODIFIED:S,T,Y;DELTAMASS:175.030313905\nmodification:variable::SYMBOLEXT:dsso_hyd;MODIFIED:K,nterm;DELTAMASS:176.0143295\nmodification:variable::SYMBOLEXT:dsso_ami;MODIFIED:K,nterm;DELTAMASS:175.030313905\ndigestion:PostAAConstrainedDigestion:DIGESTED:K,R;ConstrainingAminoAcids:;NAME:Trypsin\\P\nfragment:BIon\nfragment:YIon\nfragment:PeptideIon\nloss:AminoAcidRestrictedLoss:NAME:H20;aminoacids:S,T,D,E;MASS:18.01056027;cterm\nloss:AminoAcidRestrictedLoss:NAME:NH3;aminoacids:R,K,N,Q;MASS:17.02654493;nterm\nloss:AIonLoss\nEVALUATELINEARS:true\nConservativeLosses:3\nMATCH_MISSING_MONOISOTOPIC:true\nmgcpeaks:10\ntopmgchits:150\ntopmgxhits:10\nmissedcleavages:3\nBufferInput:100\nBufferOutput:100\nTOPMATCHESONLY:true\nMAX_MODIFICATION_PER_PEPTIDE:3\nMAX_MODIFIED_PEPTIDES_PER_PEPTIDE:20\nFRAGMENTTREE:FU\nmissing_isotope_peaks:3\n",
+   "timed_under": "flock /tmp/vulcan_bench.lock /usr/bin/time -v",
+   "lock_acquired_utc": "2026-10-27T16:04:47Z",
+   "label": "subset extrapolation",
+   "subset": {
+    "mgf": "/tmp/vulcan_m5/comparators/mgf/D3b_subset2000_seed11.mgf",
+    "n_spectra": 2000,
+    "n_total_ms2": 43596,
+    "selection": "random.Random(11).sample over MGF spectrum blocks (subset_mgf.py)"
+   },
+   "per_spectrum": {
+    "wall_s": 2.245,
+    "core_s": 33.973415
+   },
+   "extrapolated_full_file": {
+    "wall_s": 97873.02,
+    "core_s": 1481105.00034,
+    "note": "linear extrapolation from the 2000-spectrum subset (includes fixed startup/DB-build overhead, so slightly pessimistic)"
+   },
+   "full_run_note": "a full-file run was started (lock acquired 2026-10-27T15:57:04Z) and killed per lead's instruction at <1% progress; partial log in xisearch/D3b_full_killed/"
+  }
+ }
+}

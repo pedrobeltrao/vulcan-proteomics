@@ -1,0 +1,514 @@
+{
+ "runtime_load": {
+  "core_s": 0.24371299999999999,
+  "wall_s": 0.3037790753878653
+ },
+ "runs": [
+  {
+   "run": "Velos005137",
+   "rep": 0,
+   "instrument": "LTQ Orbitrap Velos",
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "raw_bytes": 334619250,
+   "core_s": 2.66067,
+   "wall_s": 2.222013857215643,
+   "core_s_per_1e5_ms2": 17.30629634447769,
+   "cpu_s": {
+    "prefetch": 2.843999999946334e-06,
+    "runtime_load": 3.256000000062542e-06,
+    "decode": 2.1177264379999996,
+    "arrow_write": 0.32701313099999996
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.021539529,
+    "scan_event_ms2": 0.155536853,
+    "trailer": 0.042719748,
+    "filter_obj": 0.077093948,
+    "filter_string": 0.134023018,
+    "peak_fetch": 1.274062644,
+    "peak_copy": 0.063089475,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.3496612229999996,
+   "per_1e5_ms2": {
+    "scan_stats": 0.14010360999089372,
+    "scan_event_ms2": 1.0116876089501756,
+    "trailer": 0.27787009236373095,
+    "filter_obj": 0.5014566671002991,
+    "filter_string": 0.8717511252764407,
+    "peak_fetch": 8.287125302458696,
+    "peak_copy": 0.41036473917002736,
+    "other": 0.0,
+    "python_batch_copy": 2.2743672629114062,
+    "arrow_write": 2.1270530180824765
+   }
+  },
+  {
+   "run": "Velos005137",
+   "rep": 1,
+   "instrument": "LTQ Orbitrap Velos",
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "raw_bytes": 334619250,
+   "core_s": 1.0435960000000009,
+   "wall_s": 0.7993779829703271,
+   "core_s_per_1e5_ms2": 6.788057759854304,
+   "cpu_s": {
+    "prefetch": 2.5140000001755425e-06,
+    "runtime_load": 2.223000000078912e-06,
+    "decode": 0.8825546679999996,
+    "arrow_write": 0.05500814599999915
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.005459919,
+    "scan_event_ms2": 0.147781061,
+    "trailer": 0.015583328,
+    "filter_obj": 0.014879912,
+    "filter_string": 0.033977056,
+    "peak_fetch": 0.387710163,
+    "peak_copy": 0.042460372,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.2347028569999996,
+   "per_1e5_ms2": {
+    "scan_stats": 0.035513978144919994,
+    "scan_event_ms2": 0.9612401522050215,
+    "trailer": 0.10136157148432419,
+    "filter_obj": 0.09678621048523481,
+    "filter_string": 0.22100335631585794,
+    "peak_fetch": 2.5218561402367636,
+    "peak_copy": 0.27618298425913884,
+    "other": 0.0,
+    "python_batch_copy": 1.5266219396383478,
+    "arrow_write": 0.35779983088330397
+   }
+  },
+  {
+   "run": "Velos005137",
+   "rep": 2,
+   "instrument": "LTQ Orbitrap Velos",
+   "n_spectra": 18949,
+   "n_ms2": 15374,
+   "n_peaks": 7626536,
+   "raw_bytes": 334619250,
+   "core_s": 0.7980680000000007,
+   "wall_s": 0.7296553337946534,
+   "core_s_per_1e5_ms2": 5.191023806426438,
+   "cpu_s": {
+    "prefetch": 2.043000000284678e-06,
+    "runtime_load": 2.16300000044356e-06,
+    "decode": 0.6582871960000007,
+    "arrow_write": 0.046742777999999596
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.004923692,
+    "scan_event_ms2": 0.122271264,
+    "trailer": 0.01614694,
+    "filter_obj": 0.014074846,
+    "filter_string": 0.032779303,
+    "peak_fetch": 0.341601091,
+    "peak_copy": 0.056475806,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.07001425400000072,
+   "per_1e5_ms2": {
+    "scan_stats": 0.03202609600624431,
+    "scan_event_ms2": 0.7953119812670744,
+    "trailer": 0.10502757902953037,
+    "filter_obj": 0.09154966827110707,
+    "filter_string": 0.2132125861844673,
+    "peak_fetch": 2.2219402302588787,
+    "peak_copy": 0.3673462078834396,
+    "other": 0.0,
+    "python_batch_copy": 0.4554068817484111,
+    "arrow_write": 0.3040378431117445
+   }
+  },
+  {
+   "run": "dq_00095_11cell_90min_sps_A1",
+   "rep": 0,
+   "instrument": "Orbitrap Eclipse",
+   "n_spectra": 40306,
+   "n_ms2": 18469,
+   "n_peaks": 14444594,
+   "raw_bytes": 209342012,
+   "core_s": 1.4015749999999993,
+   "wall_s": 1.204723243135959,
+   "core_s_per_1e5_ms2": 7.588797444366232,
+   "cpu_s": {
+    "prefetch": 3.214999999556767e-06,
+    "runtime_load": 3.1839999996563506e-06,
+    "decode": 1.2124119960000002,
+    "arrow_write": 0.09441492300000043
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.069073447,
+    "scan_event_ms2": 0.207809309,
+    "trailer": 0.009223677,
+    "filter_obj": 0.042803421,
+    "filter_string": 0.095682528,
+    "peak_fetch": 0.46624559,
+    "peak_copy": 0.123033008,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.19854101600000007,
+   "per_1e5_ms2": {
+    "scan_stats": 0.3739966809247929,
+    "scan_event_ms2": 1.125178997238616,
+    "trailer": 0.0499413991011966,
+    "filter_obj": 0.23175819481292975,
+    "filter_string": 0.5180709729817532,
+    "peak_fetch": 2.524476636526071,
+    "peak_copy": 0.6661595538469868,
+    "other": 0.0,
+    "python_batch_copy": 1.074996025772917,
+    "arrow_write": 0.5112075531972518
+   }
+  },
+  {
+   "run": "dq_00095_11cell_90min_sps_A1",
+   "rep": 1,
+   "instrument": "Orbitrap Eclipse",
+   "n_spectra": 40306,
+   "n_ms2": 18469,
+   "n_peaks": 14444594,
+   "raw_bytes": 209342012,
+   "core_s": 1.2598209999999996,
+   "wall_s": 1.141108714044094,
+   "core_s_per_1e5_ms2": 6.821273485299689,
+   "cpu_s": {
+    "prefetch": 2.0029999996395986e-06,
+    "runtime_load": 1.6819999997252921e-06,
+    "decode": 1.0638421950000039,
+    "arrow_write": 0.10065217900000079
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.011817901,
+    "scan_event_ms2": 0.181058537,
+    "trailer": 0.009089497,
+    "filter_obj": 0.040502771,
+    "filter_string": 0.092568795,
+    "peak_fetch": 0.443213073,
+    "peak_copy": 0.139503222,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.14608839900000392,
+   "per_1e5_ms2": {
+    "scan_stats": 0.06398776869348638,
+    "scan_event_ms2": 0.980337522334723,
+    "trailer": 0.049214884400887976,
+    "filter_obj": 0.219301375277492,
+    "filter_string": 0.5012117331745086,
+    "peak_fetch": 2.3997675726893712,
+    "peak_copy": 0.7553371703936326,
+    "other": 0.0,
+    "python_batch_copy": 0.790992468460685,
+    "arrow_write": 0.5449790405544468
+   }
+  },
+  {
+   "run": "dq_00095_11cell_90min_sps_A1",
+   "rep": 2,
+   "instrument": "Orbitrap Eclipse",
+   "n_spectra": 40306,
+   "n_ms2": 18469,
+   "n_peaks": 14444594,
+   "raw_bytes": 209342012,
+   "core_s": 1.2832229999999996,
+   "wall_s": 1.1066001928411424,
+   "core_s_per_1e5_ms2": 6.947983106827655,
+   "cpu_s": {
+    "prefetch": 2.012999999578824e-06,
+    "runtime_load": 2.6140000013441522e-06,
+    "decode": 1.0491483489999993,
+    "arrow_write": 0.09027378300000244
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.011467309,
+    "scan_event_ms2": 0.213606552,
+    "trailer": 0.009202812,
+    "filter_obj": 0.042262333,
+    "filter_string": 0.093654225,
+    "peak_fetch": 0.407370028,
+    "peak_copy": 0.115405126,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.15617996399999934,
+   "per_1e5_ms2": {
+    "scan_stats": 0.06208949591206887,
+    "scan_event_ms2": 1.156568043748985,
+    "trailer": 0.04982842601115382,
+    "filter_obj": 0.2288284855704153,
+    "filter_string": 0.5070887703719746,
+    "peak_fetch": 2.205696182792788,
+    "peak_copy": 0.6248585521684986,
+    "other": 0.0,
+    "python_batch_copy": 0.845633028317718,
+    "arrow_write": 0.48878544046782413
+   }
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "rep": 0,
+   "instrument": "Q Exactive Orbitrap",
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "raw_bytes": 3470679015,
+   "core_s": 3.7279160000000005,
+   "wall_s": 3.569763410836458,
+   "core_s_per_1e5_ms2": 8.914194165471068,
+   "cpu_s": {
+    "prefetch": 4.016000000106601e-06,
+    "runtime_load": 4.006000001055554e-06,
+    "decode": 3.2373847500000004,
+    "arrow_write": 0.29923262699999675
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.016848485,
+    "scan_event_ms2": 0.285078359,
+    "trailer": 0.029276712,
+    "filter_obj": 0.05124128,
+    "filter_string": 0.116183475,
+    "peak_fetch": 2.098616224,
+    "peak_copy": 0.422426766,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.21771344900000011,
+   "per_1e5_ms2": {
+    "scan_stats": 0.04028810377809661,
+    "scan_event_ms2": 0.681679481109517,
+    "trailer": 0.07000648493543758,
+    "filter_obj": 0.12252816834050692,
+    "filter_string": 0.2778179698708752,
+    "peak_fetch": 5.018211917742708,
+    "peak_copy": 1.0101070444763272,
+    "other": 0.0,
+    "python_batch_copy": 0.5205964825442375,
+    "arrow_write": 0.7155251721664198
+   }
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "rep": 1,
+   "instrument": "Q Exactive Orbitrap",
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "raw_bytes": 3470679015,
+   "core_s": 3.8459020000000024,
+   "wall_s": 3.702962907962501,
+   "core_s_per_1e5_ms2": 9.19632233381158,
+   "cpu_s": {
+    "prefetch": 2.814000000128658e-06,
+    "runtime_load": 3.6659999995691805e-06,
+    "decode": 3.0988197699999986,
+    "arrow_write": 0.2918804229999914
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.018697266,
+    "scan_event_ms2": 0.174715001,
+    "trailer": 0.027831169,
+    "filter_obj": 0.050733113,
+    "filter_string": 0.116697216,
+    "peak_fetch": 2.106189342,
+    "peak_copy": 0.410681457,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.1932752059999987,
+   "per_1e5_ms2": {
+    "scan_stats": 0.04470890961262554,
+    "scan_event_ms2": 0.4177785772357724,
+    "trailer": 0.06654990196078431,
+    "filter_obj": 0.12131303921568629,
+    "filter_string": 0.27904642754662845,
+    "peak_fetch": 5.036320760401721,
+    "peak_copy": 0.9820216571018652,
+    "other": 0.0,
+    "python_batch_copy": 0.4621597465327563,
+    "arrow_write": 0.6979445791487121
+   }
+  },
+  {
+   "run": "b1906_293T_proteinID_01A_QE3_122212",
+   "rep": 2,
+   "instrument": "Q Exactive Orbitrap",
+   "n_spectra": 67599,
+   "n_ms2": 41820,
+   "n_peaks": 59228868,
+   "raw_bytes": 3470679015,
+   "core_s": 3.777291999999999,
+   "wall_s": 3.4806242091581225,
+   "core_s_per_1e5_ms2": 9.03226207556193,
+   "cpu_s": {
+    "prefetch": 2.2229999991907334e-06,
+    "runtime_load": 4.477000000946418e-06,
+    "decode": 3.0356435499999996,
+    "arrow_write": 0.2915490839999926
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.017418103,
+    "scan_event_ms2": 0.124844885,
+    "trailer": 0.027091421,
+    "filter_obj": 0.049558892,
+    "filter_string": 0.116609517,
+    "peak_fetch": 2.07664269,
+    "peak_copy": 0.427932965,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.1955450769999998,
+   "per_1e5_ms2": {
+    "scan_stats": 0.04165017455762793,
+    "scan_event_ms2": 0.2985291367766619,
+    "trailer": 0.0647810162601626,
+    "filter_obj": 0.11850524151123863,
+    "filter_string": 0.2788367216642755,
+    "peak_fetch": 4.965668794835008,
+    "peak_copy": 1.0232734696317551,
+    "other": 0.0,
+    "python_batch_copy": 0.4675874629363936,
+    "arrow_write": 0.6971522812051473
+   }
+  },
+  {
+   "run": "LM2480_DDA",
+   "rep": 0,
+   "instrument": "Orbitrap Fusion Lumos",
+   "n_spectra": 79274,
+   "n_ms2": 68204,
+   "n_peaks": 45629707,
+   "raw_bytes": 1477148524,
+   "core_s": 3.0844819999999977,
+   "wall_s": 2.977316523902118,
+   "core_s_per_1e5_ms2": 4.522435634273647,
+   "cpu_s": {
+    "prefetch": 3.3540000003995374e-06,
+    "runtime_load": 3.876000000957447e-06,
+    "decode": 2.728123952999997,
+    "arrow_write": 0.2413980779999889
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.01826992,
+    "scan_event_ms2": 0.40239465,
+    "trailer": 0.015840572,
+    "filter_obj": 0.074523086,
+    "filter_string": 0.144995446,
+    "peak_fetch": 1.555368611,
+    "peak_copy": 0.322544012,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.19418765599999732,
+   "per_1e5_ms2": {
+    "scan_stats": 0.026787167908040584,
+    "scan_event_ms2": 0.5899868776024867,
+    "trailer": 0.023225282974605594,
+    "filter_obj": 0.10926497859363088,
+    "filter_string": 0.2125908245850683,
+    "peak_fetch": 2.2804653847281684,
+    "peak_copy": 0.4729106973198053,
+    "other": 0.0,
+    "python_batch_copy": 0.2847159345492894,
+    "arrow_write": 0.3539353674271141
+   }
+  },
+  {
+   "run": "LM2480_DDA",
+   "rep": 1,
+   "instrument": "Orbitrap Fusion Lumos",
+   "n_spectra": 79274,
+   "n_ms2": 68204,
+   "n_peaks": 45629707,
+   "raw_bytes": 1477148524,
+   "core_s": 3.3841889999999957,
+   "wall_s": 3.2438108869828284,
+   "core_s_per_1e5_ms2": 4.961862940589988,
+   "cpu_s": {
+    "prefetch": 2.1130000007474337e-06,
+    "runtime_load": 4.025999999157648e-06,
+    "decode": 2.8597356840000074,
+    "arrow_write": 0.2425646529999952
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.018638191,
+    "scan_event_ms2": 0.489818935,
+    "trailer": 0.015864381,
+    "filter_obj": 0.075105819,
+    "filter_string": 0.146505186,
+    "peak_fetch": 1.609527274,
+    "peak_copy": 0.299758329,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.20451756900000762,
+   "per_1e5_ms2": {
+    "scan_stats": 0.027327123042636795,
+    "scan_event_ms2": 0.7181674608527359,
+    "trailer": 0.02326019148437042,
+    "filter_obj": 0.11011937569644009,
+    "filter_string": 0.2148043897718609,
+    "peak_fetch": 2.3598722567591346,
+    "peak_copy": 0.4395025643657263,
+    "other": 0.0,
+    "python_batch_copy": 0.2998615462436332,
+    "arrow_write": 0.3556457876370817
+   }
+  },
+  {
+   "run": "LM2480_DDA",
+   "rep": 2,
+   "instrument": "Orbitrap Fusion Lumos",
+   "n_spectra": 79274,
+   "n_ms2": 68204,
+   "n_peaks": 45629707,
+   "raw_bytes": 1477148524,
+   "core_s": 3.2831319999999984,
+   "wall_s": 3.158807871863246,
+   "core_s_per_1e5_ms2": 4.813694211483195,
+   "cpu_s": {
+    "prefetch": 2.9939999990347133e-06,
+    "runtime_load": 4.536999998805413e-06,
+    "decode": 2.8509404779999983,
+    "arrow_write": 0.24087818600001043
+   },
+   "dotnet_profile_s": {
+    "scan_stats": 0.018469908,
+    "scan_event_ms2": 0.50438571,
+    "trailer": 0.015581356,
+    "filter_obj": 0.074786443,
+    "filter_string": 0.144754445,
+    "peak_fetch": 1.601216394,
+    "peak_copy": 0.292711868,
+    "other": 0.0
+   },
+   "python_side_decode_s": 0.19903435399999836,
+   "per_1e5_ms2": {
+    "scan_stats": 0.027080388247023635,
+    "scan_event_ms2": 0.7395251158289836,
+    "trailer": 0.022845223154067208,
+    "filter_obj": 0.10965110990557737,
+    "filter_string": 0.21223747140930152,
+    "peak_fetch": 2.3476869303853145,
+    "peak_copy": 0.429171116063574,
+    "other": 0.0,
+    "python_batch_copy": 0.29182211307254463,
+    "arrow_write": 0.3531731071491561
+   }
+  }
+ ],
+ "steady_core_s_per_1e5_ms2": 6.490447079594346,
+ "steady_sections_per_1e5_ms2": {
+  "scan_stats": 0.037149689991450435,
+  "scan_event_ms2": 0.6806571155998248,
+  "trailer": 0.047401733545566385,
+  "filter_obj": 0.1257773252378933,
+  "filter_string": 0.27023074888612403,
+  "peak_fetch": 3.1186686505591967,
+  "peak_copy": 0.6203400171686348,
+  "other": 0.0,
+  "python_batch_copy": 0.4863372698395073,
+  "arrow_write": 0.47250211375784285
+ },
+ "first_conversion_core_s_per_1e5_ms2": 17.30629634447769
+}

@@ -1,0 +1,72 @@
+{
+ "hyperscore": {
+  "0.01": {
+   "T_null": 106,
+   "D_null": 91,
+   "T_all": 12429,
+   "binom_p_two_sided": 0.3185443080515233
+  },
+  "0.05": {
+   "T_null": 657,
+   "D_null": 700,
+   "T_all": 17841,
+   "binom_p_two_sided": 0.254217961611514
+  }
+ },
+ "static_linear_base": {
+  "0.01": {
+   "T_null": 141,
+   "D_null": 91,
+   "T_all": 21766,
+   "binom_p_two_sided": 0.0012466473351903948
+  },
+  "0.05": {
+   "T_null": 681,
+   "D_null": 602,
+   "T_all": 25516,
+   "binom_p_two_sided": 0.029395186746659904
+  }
+ },
+ "static_gbm_base": {
+  "0.01": {
+   "T_null": 179,
+   "D_null": 132,
+   "T_all": 22558,
+   "binom_p_two_sided": 0.008988058096973894
+  },
+  "0.05": {
+   "T_null": 804,
+   "D_null": 784,
+   "T_all": 25485,
+   "binom_p_two_sided": 0.6335245026044063
+  }
+ },
+ "static_linear_pred": {
+  "0.01": {
+   "T_null": 136,
+   "D_null": 96,
+   "T_all": 24870,
+   "binom_p_two_sided": 0.010298702390910422
+  },
+  "0.05": {
+   "T_null": 689,
+   "D_null": 627,
+   "T_all": 26953,
+   "binom_p_two_sided": 0.09262429522442284
+  }
+ },
+ "static_gbm_pred": {
+  "0.01": {
+   "T_null": 159,
+   "D_null": 115,
+   "T_all": 24404,
+   "binom_p_two_sided": 0.009259938768714357
+  },
+  "0.05": {
+   "T_null": 835,
+   "D_null": 781,
+   "T_all": 26407,
+   "binom_p_two_sided": 0.1873448768615872
+  }
+ }
+}
